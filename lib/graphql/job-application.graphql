@@ -1,0 +1,1988 @@
+query getJobApplications {
+  getJobApplications {
+    id
+    firstName
+    lastName
+    email
+    message
+    cv {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    cover {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    status
+    jobDefinition {
+      id
+      title
+      status
+      department {
+        id
+        name
+        createdAt
+        updatedAt
+      }
+      specs {
+        key
+        value
+      }
+      description {
+        description
+        descriptionList
+      }
+      responsibility {
+        description
+        descriptionList
+      }
+      offer {
+        description
+        descriptionList
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+query jobApplication($id: ID!) {
+  jobApplication(id: $id) {
+    id
+    firstName
+    lastName
+    email
+    message
+    cv {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    cover {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    status
+    jobDefinition {
+      id
+      title
+      status
+      department {
+        id
+        name
+        createdAt
+        updatedAt
+      }
+      specs {
+        key
+        value
+      }
+      description {
+        description
+        descriptionList
+      }
+      responsibility {
+        description
+        descriptionList
+      }
+      offer {
+        description
+        descriptionList
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getJobApplicationsByTarget($target: TargetACIInput!) {
+  getJobApplicationsByTarget(target: $target) {
+    id
+    firstName
+    lastName
+    email
+    message
+    cv {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    cover {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    status
+    jobDefinition {
+      id
+      title
+      status
+      department {
+        id
+        name
+        createdAt
+        updatedAt
+      }
+      specs {
+        key
+        value
+      }
+      description {
+        description
+        descriptionList
+      }
+      responsibility {
+        description
+        descriptionList
+      }
+      offer {
+        description
+        descriptionList
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination: PaginationInput) {
+  getJobApplicationsByTargetPagination(target: $target, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      firstName
+      lastName
+      email
+      message
+      cv {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      cover {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      status
+      jobDefinition {
+        id
+        title
+        status
+        department {
+          id
+          name
+          createdAt
+          updatedAt
+        }
+        specs {
+          key
+          value
+        }
+        description {
+          description
+          descriptionList
+        }
+        responsibility {
+          description
+          descriptionList
+        }
+        offer {
+          description
+          descriptionList
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: PaginationInput) {
+  getJobApplicationsByJobDefinition(jobDefinition: $jobDefinition, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      firstName
+      lastName
+      email
+      message
+      cv {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      cover {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      status
+      jobDefinition {
+        id
+        title
+        status
+        department {
+          id
+          name
+          createdAt
+          updatedAt
+        }
+        specs {
+          key
+          value
+        }
+        description {
+          description
+          descriptionList
+        }
+        responsibility {
+          description
+          descriptionList
+        }
+        offer {
+          description
+          descriptionList
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getJobApplicationsByTargetAndStatusPagination(
+  $target: TargetACIInput!
+  $status: JobApplicationStatusEnum!
+  $pagination: PaginationInput
+) {
+  getJobApplicationsByTargetAndStatusPagination(target: $target, status: $status, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      firstName
+      lastName
+      email
+      message
+      cv {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      cover {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      status
+      jobDefinition {
+        id
+        title
+        status
+        department {
+          id
+          name
+          createdAt
+          updatedAt
+        }
+        specs {
+          key
+          value
+        }
+        description {
+          description
+          descriptionList
+        }
+        responsibility {
+          description
+          descriptionList
+        }
+        offer {
+          description
+          descriptionList
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getJobApplicationsByTargetWithFilterPagination(
+  $target: TargetACIInput!
+  $filter: JobApplicationFilterInput!
+  $pagination: PaginationInput
+) {
+  getJobApplicationsByTargetWithFilterPagination(target: $target, filter: $filter, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      firstName
+      lastName
+      email
+      message
+      cv {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      cover {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      status
+      jobDefinition {
+        id
+        title
+        status
+        department {
+          id
+          name
+          createdAt
+          updatedAt
+        }
+        specs {
+          key
+          value
+        }
+        description {
+          description
+          descriptionList
+        }
+        responsibility {
+          description
+          descriptionList
+        }
+        offer {
+          description
+          descriptionList
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getJobApplicationsByExcel($target: TargetACIInput!, $filter: JobApplicationFilterInput, $searchString: String, $path: String) {
+  getJobApplicationsByExcel(target: $target, filter: $filter, searchString: $searchString, path: $path) {
+    content
+  }
+}
+query sendJobApplicationsByMail(
+  $target: TargetACIInput!
+  $filter: JobApplicationFilterInput
+  $searchString: String
+  $email: String!
+  $subject: String!
+) {
+  sendJobApplicationsByMail(target: $target, filter: $filter, searchString: $searchString, email: $email, subject: $subject) {
+    accepted
+    rejected
+    response
+    messageId
+    messageTime
+    messageSize
+    envelopeTime
+  }
+}
+
+mutation createJobApplication($input: JobApplicationInput!) {
+  createJobApplication(input: $input) {
+    id
+    firstName
+    lastName
+    email
+    message
+    cv {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    cover {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    status
+    jobDefinition {
+      id
+      title
+      status
+      department {
+        id
+        name
+        createdAt
+        updatedAt
+      }
+      specs {
+        key
+        value
+      }
+      description {
+        description
+        descriptionList
+      }
+      responsibility {
+        description
+        descriptionList
+      }
+      offer {
+        description
+        descriptionList
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
+  updateJobApplication(id: $id, input: $input) {
+    id
+    firstName
+    lastName
+    email
+    message
+    cv {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    cover {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    status
+    jobDefinition {
+      id
+      title
+      status
+      department {
+        id
+        name
+        createdAt
+        updatedAt
+      }
+      specs {
+        key
+        value
+      }
+      description {
+        description
+        descriptionList
+      }
+      responsibility {
+        description
+        descriptionList
+      }
+      offer {
+        description
+        descriptionList
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteJobApplication($id: ID!) {
+  deleteJobApplication(id: $id) {
+    success
+    message
+  }
+}

@@ -1,0 +1,1497 @@
+query shoppingCart($id: ID!) {
+  shoppingCart(id: $id) {
+    id
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    price {
+      net {
+        beforeReduction
+        afterReduction
+      }
+      gross {
+        beforeReduction
+        afterReduction
+      }
+    }
+    discount {
+      amount
+      discountType
+    }
+    taxValue {
+      beforeReduction
+      afterReduction
+    }
+    products {
+      quantity
+      price {
+        unitNet
+        unitGross
+        net
+        gross
+      }
+      taxValue {
+        unit
+        total
+      }
+      priceCredit {
+        periodCycle
+        periodValue
+        amount
+      }
+      barcode {
+        id
+        name
+        price
+        barcode
+        createdAt
+        updatedAt
+        discount {
+          amount
+          discountType
+        }
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        priceList {
+          price {
+            id
+            label
+          }
+          value
+        }
+        catalogueCategory {
+          id
+          name
+          rank
+          layer
+        }
+        productAttributesValues {
+          attributesValues {
+            id
+            label
+            attribute {
+              id
+              label
+            }
+          }
+        }
+        maintenance {
+          active
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          technician {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          prevMaintenanceDuration
+          maintenanceDuration
+          expectedMeantime
+        }
+      }
+    }
+  }
+}
+query findShoppingCartByUser($id: ID) {
+  findShoppingCartByUser(id: $id) {
+    id
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    price {
+      net {
+        beforeReduction
+        afterReduction
+      }
+      gross {
+        beforeReduction
+        afterReduction
+      }
+    }
+    discount {
+      amount
+      discountType
+    }
+    taxValue {
+      beforeReduction
+      afterReduction
+    }
+    products {
+      quantity
+      price {
+        unitNet
+        unitGross
+        net
+        gross
+      }
+      taxValue {
+        unit
+        total
+      }
+      priceCredit {
+        periodCycle
+        periodValue
+        amount
+      }
+      barcode {
+        id
+        name
+        price
+        barcode
+        createdAt
+        updatedAt
+        discount {
+          amount
+          discountType
+        }
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        priceList {
+          price {
+            id
+            label
+          }
+          value
+        }
+        catalogueCategory {
+          id
+          name
+          rank
+          layer
+        }
+        productAttributesValues {
+          attributesValues {
+            id
+            label
+            attribute {
+              id
+              label
+            }
+          }
+        }
+        maintenance {
+          active
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          technician {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          prevMaintenanceDuration
+          maintenanceDuration
+          expectedMeantime
+        }
+      }
+    }
+  }
+}
+query calculateShoppingCart($products: [CartProductInput!]!) {
+  calculateShoppingCart(products: $products) {
+    price {
+      net {
+        beforeReduction
+        afterReduction
+      }
+      gross {
+        beforeReduction
+        afterReduction
+      }
+    }
+    discount {
+      amount
+      discountType
+    }
+    taxValue {
+      beforeReduction
+      afterReduction
+    }
+  }
+}
+query validateShoppingCartByCurrentUser($location: LonLatInput) {
+  validateShoppingCartByCurrentUser(location: $location) {
+    deliveryFees
+    mobilePickup
+    portalPickup
+    mobileDelivery
+    portalDelivery
+    inDeliveryZone
+    activatePickup
+    facebookPickup
+    activateDelivery
+    facebookDelivery
+    quantity
+    price {
+      unitNet
+      unitGross
+      net
+      gross
+    }
+    taxValue {
+      unit
+      total
+    }
+    priceCredit {
+      periodCycle
+      periodValue
+      amount
+    }
+    barcode {
+      id
+      name
+      price
+      barcode
+      createdAt
+      updatedAt
+      discount {
+        amount
+        discountType
+      }
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      priceList {
+        price {
+          id
+          label
+        }
+        value
+      }
+      catalogueCategory {
+        id
+        name
+        rank
+        layer
+      }
+      productAttributesValues {
+        attributesValues {
+          id
+          label
+          attribute {
+            id
+            label
+          }
+        }
+      }
+      maintenance {
+        active
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        technician {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        prevMaintenanceDuration
+        maintenanceDuration
+        expectedMeantime
+      }
+    }
+  }
+}
+query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationInput, $searchString: String) {
+  findTargetShoppingCarts(target: $target, pagination: $pagination, searchString: $searchString) {
+    count
+    isLast
+    objects {
+      id
+      createdAt
+      updatedAt
+      user {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      price {
+        net {
+          beforeReduction
+          afterReduction
+        }
+        gross {
+          beforeReduction
+          afterReduction
+        }
+      }
+      discount {
+        amount
+        discountType
+      }
+      taxValue {
+        beforeReduction
+        afterReduction
+      }
+      products {
+        quantity
+        price {
+          unitNet
+          unitGross
+          net
+          gross
+        }
+        taxValue {
+          unit
+          total
+        }
+        priceCredit {
+          periodCycle
+          periodValue
+          amount
+        }
+        barcode {
+          id
+          name
+          price
+          barcode
+          condition
+          status
+          createdAt
+          updatedAt
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          discount {
+            amount
+            discountType
+          }
+          priceList {
+            price {
+              id
+              label
+            }
+            value
+          }
+          taxes {
+            tax {
+              id
+              label
+              externalId
+              value {
+                sign
+                value
+                type
+              }
+              use
+              product
+              company {
+                id
+                name
+              }
+            }
+            rank
+          }
+          priceCredit {
+            periodCycle
+            periodValue
+            amount
+          }
+          catalogueCategory {
+            id
+            name
+            rank
+            layer
+          }
+          pixel {
+            include
+          }
+          maintenance {
+            active
+            owner {
+              id
+              email
+              gender
+              lastName
+              username
+              firstName
+              picture {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            technician {
+              id
+              email
+              gender
+              lastName
+              username
+              firstName
+              picture {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            prevMaintenanceDuration
+            maintenanceDuration
+            expectedMeantime
+          }
+          productAttributesValues {
+            attributesValues {
+              id
+              label
+              externalId
+              createdAt
+              updatedAt
+              attribute {
+                id
+                label
+                externalId
+                variety
+                createdAt
+                updatedAt
+                isRequired
+                isMultipleChoice
+                pixel {
+                  pixelAttribute
+                }
+              }
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
+  addToCart(product: $product, target: $target) {
+    id
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    price {
+      net {
+        beforeReduction
+        afterReduction
+      }
+      gross {
+        beforeReduction
+        afterReduction
+      }
+    }
+    discount {
+      amount
+      discountType
+    }
+    taxValue {
+      beforeReduction
+      afterReduction
+    }
+    products {
+      quantity
+      price {
+        unitNet
+        unitGross
+        net
+        gross
+      }
+      taxValue {
+        unit
+        total
+      }
+      priceCredit {
+        periodCycle
+        periodValue
+        amount
+      }
+      barcode {
+        id
+        name
+        price
+        barcode
+        createdAt
+        updatedAt
+        discount {
+          amount
+          discountType
+        }
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        priceList {
+          price {
+            id
+            label
+          }
+          value
+        }
+        catalogueCategory {
+          id
+          name
+          rank
+          layer
+        }
+        productAttributesValues {
+          attributesValues {
+            id
+            label
+            attribute {
+              id
+              label
+            }
+          }
+        }
+        maintenance {
+          active
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          technician {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          prevMaintenanceDuration
+          maintenanceDuration
+          expectedMeantime
+        }
+      }
+    }
+  }
+}
+mutation removeFromCart($product: CartProductInput!) {
+  removeFromCart(product: $product) {
+    id
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    price {
+      net {
+        beforeReduction
+        afterReduction
+      }
+      gross {
+        beforeReduction
+        afterReduction
+      }
+    }
+    discount {
+      amount
+      discountType
+    }
+    taxValue {
+      beforeReduction
+      afterReduction
+    }
+    products {
+      quantity
+      price {
+        unitNet
+        unitGross
+        net
+        gross
+      }
+      taxValue {
+        unit
+        total
+      }
+      priceCredit {
+        periodCycle
+        periodValue
+        amount
+      }
+      barcode {
+        id
+        name
+        price
+        barcode
+        createdAt
+        updatedAt
+        discount {
+          amount
+          discountType
+        }
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        priceList {
+          price {
+            id
+            label
+          }
+          value
+        }
+        catalogueCategory {
+          id
+          name
+          rank
+          layer
+        }
+        productAttributesValues {
+          attributesValues {
+            id
+            label
+            attribute {
+              id
+              label
+            }
+          }
+        }
+        maintenance {
+          active
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          technician {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          prevMaintenanceDuration
+          maintenanceDuration
+          expectedMeantime
+        }
+      }
+    }
+  }
+}
+mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
+  addDiscoutToCart(id: $id, input: $input) {
+    id
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    price {
+      net {
+        beforeReduction
+        afterReduction
+      }
+      gross {
+        beforeReduction
+        afterReduction
+      }
+    }
+    discount {
+      amount
+      discountType
+    }
+    taxValue {
+      beforeReduction
+      afterReduction
+    }
+    products {
+      quantity
+      price {
+        unitNet
+        unitGross
+        net
+        gross
+      }
+      taxValue {
+        unit
+        total
+      }
+      priceCredit {
+        periodCycle
+        periodValue
+        amount
+      }
+      barcode {
+        id
+        name
+        price
+        barcode
+        createdAt
+        updatedAt
+        discount {
+          amount
+          discountType
+        }
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        priceList {
+          price {
+            id
+            label
+          }
+          value
+        }
+        catalogueCategory {
+          id
+          name
+          rank
+          layer
+        }
+        productAttributesValues {
+          attributesValues {
+            id
+            label
+            attribute {
+              id
+              label
+            }
+          }
+        }
+        maintenance {
+          active
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          technician {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          prevMaintenanceDuration
+          maintenanceDuration
+          expectedMeantime
+        }
+      }
+    }
+  }
+}
+mutation emptyCart {
+  emptyCart {
+    id
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    price {
+      net {
+        beforeReduction
+        afterReduction
+      }
+      gross {
+        beforeReduction
+        afterReduction
+      }
+    }
+    discount {
+      amount
+      discountType
+    }
+    taxValue {
+      beforeReduction
+      afterReduction
+    }
+    products {
+      quantity
+      price {
+        unitNet
+        unitGross
+        net
+        gross
+      }
+      taxValue {
+        unit
+        total
+      }
+      priceCredit {
+        periodCycle
+        periodValue
+        amount
+      }
+      barcode {
+        id
+        name
+        price
+        barcode
+        createdAt
+        updatedAt
+        discount {
+          amount
+          discountType
+        }
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        priceList {
+          price {
+            id
+            label
+          }
+          value
+        }
+        catalogueCategory {
+          id
+          name
+          rank
+          layer
+        }
+        productAttributesValues {
+          attributesValues {
+            id
+            label
+            attribute {
+              id
+              label
+            }
+          }
+        }
+        maintenance {
+          active
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          technician {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          prevMaintenanceDuration
+          maintenanceDuration
+          expectedMeantime
+        }
+      }
+    }
+  }
+}
+mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $productToRemove: CartProductInput!) {
+  updateProductCredit(productToAdd: $productToAdd, productToRemove: $productToRemove) {
+    id
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    price {
+      net {
+        beforeReduction
+        afterReduction
+      }
+      gross {
+        beforeReduction
+        afterReduction
+      }
+    }
+    discount {
+      amount
+      discountType
+    }
+    taxValue {
+      beforeReduction
+      afterReduction
+    }
+    products {
+      quantity
+      price {
+        unitNet
+        unitGross
+        net
+        gross
+      }
+      taxValue {
+        unit
+        total
+      }
+      priceCredit {
+        periodCycle
+        periodValue
+        amount
+      }
+      barcode {
+        id
+        name
+        price
+        barcode
+        createdAt
+        updatedAt
+        discount {
+          amount
+          discountType
+        }
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        priceList {
+          price {
+            id
+            label
+          }
+          value
+        }
+        catalogueCategory {
+          id
+          name
+          rank
+          layer
+        }
+        productAttributesValues {
+          attributesValues {
+            id
+            label
+            attribute {
+              id
+              label
+            }
+          }
+        }
+        maintenance {
+          active
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          technician {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          prevMaintenanceDuration
+          maintenanceDuration
+          expectedMeantime
+        }
+      }
+    }
+  }
+}

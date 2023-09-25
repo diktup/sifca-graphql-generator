@@ -1,0 +1,247 @@
+query getTaskSection($id: ID!) {
+  getTaskSection(id: $id) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    description
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getTaskSections($target: TargetACIInput!) {
+  getTaskSections(target: $target) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    description
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getTaskSectionsWithTasks($target: TargetACIInput!, $searchString: String) {
+  getTaskSectionsWithTasks(target: $target, searchString: $searchString) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    description
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+
+    tasks {
+      id
+      title
+      description
+      tags
+      priority
+      dueDate
+      completed
+      archived
+      rank
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getTaskSectionsByTargetPaginated($target: TargetACIInput!, $pagination: PaginationInput) {
+  getTaskSectionsByTargetPaginated(target: $target, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      rank
+      tags
+      title
+      dueDate
+      archived
+      priority
+      completed
+      description
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation createTaskSection(
+  $rank: Int!
+  $title: String!
+  $tags: [String!]
+  $dueDate: DateTime
+  $archived: Boolean
+  $completed: Boolean
+  $description: String
+  $target: TargetACIInput!
+  $priority: TaskPriorityEnum!
+) {
+  createTaskSection(
+    tags: $tags
+    rank: $rank
+    title: $title
+    target: $target
+    dueDate: $dueDate
+    priority: $priority
+    archived: $archived
+    completed: $completed
+    description: $description
+  ) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    description
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation reorderTaskSections($id: ID!, $rank: Int!) {
+  reorderTaskSections(id: $id, rank: $rank) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    description
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation updateTaskSection(
+  $id: ID!
+  $rank: Int
+  $title: String
+  $tags: [String!]
+  $dueDate: DateTime
+  $archived: Boolean
+  $completed: Boolean
+  $description: String
+  $priority: TaskPriorityEnum
+) {
+  updateTaskSection(
+    id: $id
+    tags: $tags
+    rank: $rank
+    title: $title
+    dueDate: $dueDate
+    priority: $priority
+    archived: $archived
+    completed: $completed
+    description: $description
+  ) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    description
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteTaskSection($id: ID!) {
+  deleteTaskSection(id: $id) {
+    success
+    message
+  }
+}

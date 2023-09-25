@@ -1,0 +1,1536 @@
+query findPaymentById($id: ID!) {
+  findPaymentById(id: $id) {
+    id
+    name
+    code
+    paymentType
+    materialIcon
+    createdAt
+    updatedAt
+    images {
+      png {
+        alt {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      svg {
+        alt {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+    }
+  }
+}
+query findPayments {
+  findPayments {
+    id
+    name
+    code
+    paymentType
+    materialIcon
+    createdAt
+    updatedAt
+    images {
+      png {
+        alt {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      svg {
+        alt {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+    }
+  }
+}
+query findPaymentsPagination($pagination: PaginationInput) {
+  findPaymentsPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      name
+      code
+      paymentType
+      materialIcon
+      createdAt
+      updatedAt
+      images {
+        png {
+          alt {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          alt2x {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          alt_128 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          alt_256 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          alt_512 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          card_flat {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          card_flat2x {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          card_flat_128 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          card_flat_256 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          card_flat_512 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          dark {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          dark2x {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          dark_128 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          dark_256 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          dark_512 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flat {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flat2x {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flat_128 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flat_256 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flat_512 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          light {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          light2x {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          light_128 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          light_256 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          light_512 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          default {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          default2x {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          default_128 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          default_256 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          default_512 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        svg {
+          alt {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          card_flat {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          dark {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flat {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          light {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          default {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+      }
+    }
+  }
+}
+
+mutation createPayment($input: PaymentInput!) {
+  createPayment(input: $input) {
+    id
+    name
+    code
+    paymentType
+    materialIcon
+    createdAt
+    updatedAt
+    images {
+      png {
+        alt {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      svg {
+        alt {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+    }
+  }
+}
+mutation updatePayment($id: ID!, $input: PaymentInput!) {
+  updatePayment(id: $id, input: $input) {
+    id
+    name
+    code
+    paymentType
+    materialIcon
+    createdAt
+    updatedAt
+    images {
+      png {
+        alt {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        alt_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default2x {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default_512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      svg {
+        alt {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        card_flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        dark {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flat {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        light {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+    }
+  }
+}
+mutation deletePayment($id: ID!) {
+  deletePayment(id: $id) {
+    success
+    message
+  }
+}

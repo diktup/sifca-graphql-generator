@@ -1,0 +1,918 @@
+query corporateRating($id: ID!) {
+  corporateRating(id: $id) {
+    id
+    mark
+    comment
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    product {
+      id
+      sku
+      name
+      tags
+      price
+      status
+      condition
+      createdAt
+      updatedAt
+      externalId
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      descriptionList
+      discount {
+        amount
+        discountType
+      }
+      priceBeforeReduction
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      catalogueCategory {
+        id
+        name
+      }
+    }
+    reviewType {
+      id
+      reviewType
+    }
+  }
+}
+query getAllCorporateRatings {
+  getAllCorporateRatings {
+    id
+    mark
+    comment
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    product {
+      id
+      sku
+      name
+      tags
+      price
+      status
+      condition
+      createdAt
+      updatedAt
+      externalId
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      descriptionList
+      discount {
+        amount
+        discountType
+      }
+      priceBeforeReduction
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      catalogueCategory {
+        id
+        name
+      }
+    }
+    reviewType {
+      id
+      reviewType
+    }
+  }
+}
+query getCorporateRatingsBytarget($target: TargetACIInput!, $pagination: PaginationInput) {
+  getCorporateRatingsBytarget(target: $target, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      mark
+      comment
+      createdAt
+      updatedAt
+      user {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      product {
+        id
+        sku
+        name
+        tags
+        price
+        status
+        condition
+        createdAt
+        updatedAt
+        externalId
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        descriptionList
+        discount {
+          amount
+          discountType
+        }
+        priceBeforeReduction
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        catalogueCategory {
+          id
+          name
+        }
+      }
+      reviewType {
+        id
+        reviewType
+      }
+    }
+  }
+}
+query getCorporateRatings($pagination: PaginationInput) {
+  getCorporateRatings(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      mark
+      comment
+      createdAt
+      updatedAt
+      user {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      product {
+        id
+        sku
+        name
+        tags
+        price
+        status
+        condition
+        createdAt
+        updatedAt
+        externalId
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        descriptionList
+        discount {
+          amount
+          discountType
+        }
+        priceBeforeReduction
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        catalogueCategory {
+          id
+          name
+        }
+      }
+      reviewType {
+        id
+        reviewType
+      }
+    }
+  }
+}
+query getCurrentUserCorporateRatingsByProduct($productId: ID!) {
+  getCurrentUserCorporateRatingsByProduct(productId: $productId) {
+    id
+    mark
+    comment
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    product {
+      id
+      sku
+      name
+      tags
+      price
+      status
+      condition
+      createdAt
+      updatedAt
+      externalId
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      descriptionList
+      discount {
+        amount
+        discountType
+      }
+      priceBeforeReduction
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      catalogueCategory {
+        id
+        name
+      }
+    }
+    reviewType {
+      id
+      reviewType
+    }
+  }
+}
+query getCorporateRatingsByProduct($productId: ID!, $pagination: PaginationInput) {
+  getCorporateRatingsByProduct(productId: $productId, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      mark
+      comment
+      createdAt
+      updatedAt
+      user {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      product {
+        id
+        sku
+        name
+        tags
+        price
+        status
+        condition
+        createdAt
+        updatedAt
+        externalId
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        descriptionList
+        discount {
+          amount
+          discountType
+        }
+        priceBeforeReduction
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        catalogueCategory {
+          id
+          name
+        }
+      }
+      reviewType {
+        id
+        reviewType
+      }
+    }
+  }
+}
+query getCorporateRatingsByProductWithStats($productId: ID!, $pagination: PaginationInput) {
+  getCorporateRatingsByProductWithStats(productId: $productId, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      mark
+      comment
+      createdAt
+      updatedAt
+      user {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      product {
+        id
+        sku
+        name
+        tags
+        price
+        status
+        condition
+        createdAt
+        updatedAt
+        externalId
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        descriptionList
+        discount {
+          amount
+          discountType
+        }
+        priceBeforeReduction
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        catalogueCategory {
+          id
+          name
+        }
+      }
+      reviewType {
+        id
+        reviewType
+      }
+    }
+    stats {
+      mark
+      count
+    }
+  }
+}
+query getAverageCorporateProductRatingsByProduct($productId: ID!) {
+  getAverageCorporateProductRatingsByProduct(productId: $productId) {
+    overAllAverage
+    byMark {
+      mark
+      count
+    }
+  }
+}
+
+mutation createCorporateRating($input: CorporateRatingInput!) {
+  createCorporateRating(input: $input) {
+    id
+    mark
+    comment
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    product {
+      id
+      sku
+      name
+      tags
+      price
+      status
+      condition
+      createdAt
+      updatedAt
+      externalId
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      descriptionList
+      discount {
+        amount
+        discountType
+      }
+      priceBeforeReduction
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      catalogueCategory {
+        id
+        name
+      }
+    }
+    reviewType {
+      id
+      reviewType
+    }
+  }
+}
+mutation updateCorporateRating($input: CorporateUpdateRatingInput!, $id: ID!) {
+  updateCorporateRating(input: $input, id: $id) {
+    id
+    mark
+    comment
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    product {
+      id
+      sku
+      name
+      tags
+      price
+      status
+      condition
+      createdAt
+      updatedAt
+      externalId
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      descriptionList
+      discount {
+        amount
+        discountType
+      }
+      priceBeforeReduction
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      catalogueCategory {
+        id
+        name
+      }
+    }
+    reviewType {
+      id
+      reviewType
+    }
+  }
+}
+mutation deleteCorporateRating($id: ID!) {
+  deleteCorporateRating(id: $id) {
+    success
+    message
+  }
+}

@@ -1,0 +1,172 @@
+targets:
+  $default:
+    sources:
+      - lib/**
+    builders:
+      json_serializable:
+        options:
+          include_if_null: false
+      artemis:
+        options:
+          custom_parser_import: lib/time_parser.dart
+          scalar_mapping:
+            - graphql_type: DateTime
+              dart_type: DateTime
+              use_custom_parser: true
+          schema_mapping:
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/account.graphql
+              output: lib/dart/account.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/authentication.graphql
+              output: lib/dart/authentication.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/board-card.graphql
+              output: lib/dart/board-card.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/board-list.graphql
+              output: lib/dart/board-list.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/board.graphql
+              output: lib/dart/board.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/comment.graphql
+              output: lib/dart/comment.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/company.graphql
+              output: lib/dart/company.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/point-of-sale.graphql
+              output: lib/dart/point-of-sale.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/tickets.graphql
+              output: lib/dart/tickets.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/user.graphql
+              output: lib/dart/user.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/country.graphql
+              output: lib/dart/country.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/notes.graphql
+              output: lib/dart/notes.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/project.graphql
+              output: lib/dart/project.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/brand.graphql
+              output: lib/dart/brand.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/catalogue-category.graphql
+              output: lib/dart/catalogue-category.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/internal-product.graphql
+              output: lib/dart/internal-product.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/contact.graphql
+              output: lib/dart/contact.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/quotation.graphql
+              output: lib/dart/quotation.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/message.graphql
+              output: lib/dart/message.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/message-group.graphql
+              output: lib/dart/message-group.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/job-definition.graphql
+              output: lib/dart/job-definition.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/job-application.graphql
+              output: lib/dart/job-application.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/department.graphql
+              output: lib/dart/department.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/task.graphql
+              output: lib/dart/task.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/task-section.graphql
+              output: lib/dart/task-section.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/payment.graphql
+              output: lib/dart/payment.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/request.graphql
+              output: lib/dart/request.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/blog.graphql
+              output: lib/dart/blog.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/bank.graphql
+              output: lib/dart/bank.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/bank-details.graphql
+              output: lib/dart/bank-details.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/barcode.graphql
+              output: lib/dart/barcode.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/corporate-rating-assignment.graphql
+              output: lib/dart/corporate-rating-assignment.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/corporate-rating.graphql
+              output: lib/dart/corporate-rating.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/corporate-rating-definition.graphql
+              output: lib/dart/corporate-rating-definition.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/coupons.graphql
+              output: lib/dart/coupons.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/order-settings.graphql
+              output: lib/dart/order-settings.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/promotion.graphql
+              output: lib/dart/promotion.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/shopping-cart.graphql
+              output: lib/dart/shopping-cart.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/newsletter.graphql
+              output: lib/dart/newsletter.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/corporate-notification.graphql
+              output: lib/dart/corporate-notification.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/corporate-authentication.graphql
+              output: lib/dart/corporate-authentication.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/target-order.graphql
+              output: lib/dart/target-order.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/manufacturer.graphql
+              output: lib/dart/manufacturer.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/pos-category.graphql
+              output: lib/dart/pos-category.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/state.graphql
+              output: lib/dart/state.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/attribute-values.graphql
+              output: lib/dart/attribute-values.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/attribute.graphql
+              output: lib/dart/attribute.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/wallet.graphql
+              output: lib/dart/wallet.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/onsite-converter.graphql
+              output: lib/dart/onsite-converter.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/modules-definition.graphql
+              output: lib/dart/modules-definition.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/modules-assignment.graphql
+              output: lib/dart/modules-assignment.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/product.graphql
+              output: lib/dart/product.graphql.dart

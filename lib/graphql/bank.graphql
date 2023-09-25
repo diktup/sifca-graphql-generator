@@ -1,0 +1,486 @@
+query findBankById($id: ID!) {
+  findBankById(id: $id) {
+    id
+    name
+    code
+    bic
+    logo {
+      svg {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      png {
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size16 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size24 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size32 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size48 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size64 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      icon
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getBanks {
+  getBanks {
+    id
+    name
+    code
+    bic
+    logo {
+      svg {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      png {
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size16 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size24 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size32 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size48 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size64 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      icon
+    }
+    createdAt
+    updatedAt
+  }
+}
+query findBanksPagination($pagination: PaginationInput) {
+  findBanksPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      name
+      code
+      bic
+      logo {
+        svg {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        png {
+          default {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size16 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size24 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size32 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size64 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size128 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size256 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size512 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        icon
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation createBank($input: BankInput!) {
+  createBank(input: $input) {
+    id
+    name
+    code
+    bic
+    logo {
+      svg {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      png {
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size16 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size24 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size32 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size48 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size64 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      icon
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation updateBank($id: ID!, $input: BankInput!) {
+  updateBank(id: $id, input: $input) {
+    id
+    name
+    code
+    bic
+    logo {
+      svg {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      png {
+        default {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size16 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size24 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size32 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size48 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size64 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size128 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size256 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        size512 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      icon
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteBank($id: ID!) {
+  deleteBank(id: $id) {
+    success
+    message
+  }
+}

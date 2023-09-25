@@ -1,0 +1,47 @@
+query getCorporateRatingDefinitions($pagination: PaginationInput) {
+  getCorporateRatingDefinitions(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      reviewType
+    }
+  }
+}
+query getAllCorporateRatingDefinitions {
+  getAllCorporateRatingDefinitions {
+    id
+    reviewType
+  }
+}
+query corporateRatingDefinition($id: String!) {
+  corporateRatingDefinition(id: $id) {
+    id
+    reviewType
+  }
+}
+query getCorporateRatingDefinitionByReviewType($reviewType: String!) {
+  getCorporateRatingDefinitionByReviewType(reviewType: $reviewType) {
+    id
+    reviewType
+  }
+}
+
+mutation createCorporateRatingDefinition($reviewType: String!) {
+  createCorporateRatingDefinition(reviewType: $reviewType) {
+    id
+    reviewType
+  }
+}
+mutation updateCorporateRatingDefinition($id: String!, $reviewType: String!) {
+  updateCorporateRatingDefinition(id: $id, reviewType: $reviewType) {
+    id
+    reviewType
+  }
+}
+mutation deleteCorporateRatingDefinition($id: ID!) {
+  deleteCorporateRatingDefinition(id: $id) {
+    success
+    message
+  }
+}

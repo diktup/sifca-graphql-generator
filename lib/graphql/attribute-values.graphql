@@ -1,0 +1,458 @@
+query getAttributeValuesPagination($pagination: PaginationInput) {
+  getAttributeValuesPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      label
+      externalId
+      createdAt
+      updatedAt
+      attribute {
+        id
+        label
+        externalId
+        variety
+        createdAt
+        updatedAt
+        isRequired
+        isMultipleChoice
+        pixel {
+          pixelAttribute
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+    }
+  }
+}
+query getAttributeValuesByTargetPaginated($target: TargetACIInput!, $pagination: PaginationInput) {
+  getAttributeValuesByTargetPaginated(target: $target, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      label
+      externalId
+      createdAt
+      updatedAt
+      attribute {
+        id
+        label
+        externalId
+        variety
+        createdAt
+        updatedAt
+        isRequired
+        isMultipleChoice
+        pixel {
+          pixelAttribute
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+    }
+  }
+}
+query getAttributeValues {
+  getAttributeValues {
+    id
+    label
+    externalId
+    createdAt
+    updatedAt
+    attribute {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+query getAttributeValuesByTarget($target: TargetACIInput!) {
+  getAttributeValuesByTarget(target: $target) {
+    id
+    label
+    externalId
+    createdAt
+    updatedAt
+    attribute {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+query getAttributeValuesByAttribute($attributId: ID!) {
+  getAttributeValuesByAttribute(attributId: $attributId) {
+    id
+    label
+    externalId
+    createdAt
+    updatedAt
+    attribute {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+query attributeValue($id: ID!) {
+  attributeValue(id: $id) {
+    id
+    label
+    externalId
+    createdAt
+    updatedAt
+    attribute {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+query searchAttributeValue($pagination: PaginationInput, $searchString: String!) {
+  searchAttributeValue(pagination: $pagination, searchString: $searchString) {
+    count
+    isLast
+    objects {
+      id
+      label
+      externalId
+      createdAt
+      updatedAt
+      attribute {
+        id
+        label
+        externalId
+        variety
+        createdAt
+        updatedAt
+        isRequired
+        isMultipleChoice
+        pixel {
+          pixelAttribute
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+    }
+  }
+}
+query getAttributeValuesByAttributePaginated($pagination: PaginationInput, $attributId: ID!) {
+  getAttributeValuesByAttributePaginated(pagination: $pagination, attributId: $attributId) {
+    count
+    isLast
+    objects {
+      id
+      label
+      externalId
+      createdAt
+      updatedAt
+      attribute {
+        id
+        label
+        externalId
+        variety
+        createdAt
+        updatedAt
+        isRequired
+        isMultipleChoice
+        pixel {
+          pixelAttribute
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+    }
+  }
+}
+query searchAttributeValueByTarget($pagination: PaginationInput, $searchString: String!, $target: TargetACIInput!) {
+  searchAttributeValueByTarget(target: $target, pagination: $pagination, searchString: $searchString) {
+    count
+    isLast
+    objects {
+      id
+      label
+      externalId
+      createdAt
+      updatedAt
+      attribute {
+        id
+        label
+        externalId
+        variety
+        createdAt
+        updatedAt
+        isRequired
+        isMultipleChoice
+        pixel {
+          pixelAttribute
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+    }
+  }
+}
+
+query findAttributeValueByExternalIdAndTarget($externalId: String!, $target: TargetACIInput!) {
+  findAttributeValueByExternalIdAndTarget(externalId: $externalId, target: $target) {
+    id
+    label
+    externalId
+    createdAt
+    updatedAt
+    attribute {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+
+mutation syncOneAttributeValue($input: AttributeValueInput!) {
+  syncOneAttributeValue(input: $input) {
+    id
+    label
+    externalId
+    createdAt
+    updatedAt
+    attribute {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+
+mutation createAttributeValue($input: AttributeValueInput!) {
+  createAttributeValue(input: $input) {
+    id
+    label
+    externalId
+    createdAt
+    updatedAt
+    attribute {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+mutation updateAttributeValue($input: AttributeValueUpdateInput!) {
+  updateAttributeValue(input: $input) {
+    id
+    label
+    externalId
+    createdAt
+    updatedAt
+    attribute {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+mutation deleteAttributeValue($id: ID!) {
+  deleteAttributeValue(id: $id) {
+    success
+    message
+  }
+}

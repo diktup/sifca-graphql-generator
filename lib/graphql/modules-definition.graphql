@@ -1,0 +1,55 @@
+query getModuleDefinitions {
+  getModuleDefinitions {
+    id
+    name
+    target
+    createdAt
+    updatedAt
+  }
+}
+query moduleDefinition($id: String!) {
+  moduleDefinition(id: $id) {
+    id
+    name
+    target
+    createdAt
+    updatedAt
+  }
+}
+query findModuleDefinitionsByTarget($target: TargetTypeEnum!) {
+  findModuleDefinitionsByTarget(target: $target) {
+    id
+    name
+    target
+    createdAt
+    updatedAt
+  }
+}
+
+mutation createModuleDefinition($input: ModulesDefinitionInput!) {
+  createModuleDefinition(input: $input) {
+    id
+    name
+    target
+    createdAt
+    updatedAt
+  }
+}
+mutation updateModuleDefinition($input: ModulesDefinitionInput!, $id: String!) {
+  updateModuleDefinition(input: $input, id: $id) {
+    id
+    name
+    target
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteModuleDefinition($id: ID!) {
+  deleteModuleDefinition(id: $id) {
+    id
+    name
+    target
+    createdAt
+    updatedAt
+  }
+}

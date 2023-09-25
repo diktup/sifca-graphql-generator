@@ -1,0 +1,333 @@
+query findStateById($id: ID!) {
+  findStateById(id: $id) {
+    id
+    name
+    code
+    created
+    surface
+    dialCode
+    country {
+      id
+      name
+      code
+      dialCode
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+query getStates {
+  getStates {
+    id
+    name
+    code
+    created
+    surface
+    dialCode
+    country {
+      id
+      name
+      code
+      dialCode
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+query findStatesPagination($pagination: PaginationInput) {
+  findStatesPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      name
+      code
+      created
+      surface
+      dialCode
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+  }
+}
+query findStatesByCountryPagination($country: ID!, $pagination: PaginationInput) {
+  findStatesByCountryPagination(country: $country, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      name
+      code
+      created
+      surface
+      dialCode
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+  }
+}
+
+mutation createState($input: StateInput!) {
+  createState(input: $input) {
+    id
+    name
+    code
+    created
+    surface
+    dialCode
+    country {
+      id
+      name
+      code
+      dialCode
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+mutation updateState($id: ID!, $input: StateInput!) {
+  updateState(id: $id, input: $input) {
+    id
+    name
+    code
+    created
+    surface
+    dialCode
+    country {
+      id
+      name
+      code
+      dialCode
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+mutation deleteState($id: ID!) {
+  deleteState(id: $id) {
+    success
+    message
+  }
+}

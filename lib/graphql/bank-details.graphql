@@ -1,0 +1,811 @@
+query findBankDetailsById($id: ID!) {
+  findBankDetailsById(id: $id) {
+    id
+    holder {
+      name
+      type
+      address {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        state {
+          id
+          name
+          code
+          created
+          surface
+          dialCode
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+    }
+    account
+    iban
+    bank {
+      id
+      name
+      code
+      bic
+      logo {
+        svg {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        png {
+          default {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size16 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size24 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size32 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size64 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size128 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size256 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size512 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        icon
+      }
+      createdAt
+      updatedAt
+    }
+    externalId
+    createdAt
+    updatedAt
+  }
+}
+query findBanksDetailsPagination($pagination: PaginationInput) {
+  findBanksDetailsPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      holder {
+        name
+        type
+        address {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          state {
+            id
+            name
+            code
+            created
+            surface
+            dialCode
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+      }
+      account
+      iban
+      bank {
+        id
+        name
+        code
+        bic
+        logo {
+          svg {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          png {
+            default {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            size16 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            size24 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            size32 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            size48 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            size64 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            size128 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            size256 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            size512 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          icon
+        }
+        createdAt
+        updatedAt
+      }
+      externalId
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation createBankDetails($input: BankDetailsInput!) {
+  createBankDetails(input: $input) {
+    id
+    holder {
+      name
+      type
+      address {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        state {
+          id
+          name
+          code
+          created
+          surface
+          dialCode
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+    }
+    account
+    iban
+    bank {
+      id
+      name
+      code
+      bic
+      logo {
+        svg {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        png {
+          default {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size16 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size24 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size32 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size64 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size128 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size256 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size512 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        icon
+      }
+      createdAt
+      updatedAt
+    }
+    externalId
+    createdAt
+    updatedAt
+  }
+}
+mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
+  updateBankDetails(id: $id, input: $input) {
+    id
+    holder {
+      name
+      type
+      address {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        state {
+          id
+          name
+          code
+          created
+          surface
+          dialCode
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+    }
+    account
+    iban
+    bank {
+      id
+      name
+      code
+      bic
+      logo {
+        svg {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        png {
+          default {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size16 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size24 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size32 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size64 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size128 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size256 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+          size512 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        icon
+      }
+      createdAt
+      updatedAt
+    }
+    externalId
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteBankDetails($id: ID!) {
+  deleteBankDetails(id: $id) {
+    success
+    message
+  }
+}

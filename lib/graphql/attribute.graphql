@@ -1,0 +1,316 @@
+query getAttributesPagination($pagination: PaginationInput) {
+  getAttributesPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+    }
+  }
+}
+query getAttributesTargetPaginated($target: TargetACIInput!, $pagination: PaginationInput) {
+  getAttributesTargetPaginated(target: $target, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+    }
+  }
+}
+query getAttributes {
+  getAttributes {
+    id
+    label
+    externalId
+    variety
+    createdAt
+    updatedAt
+    isRequired
+    isMultipleChoice
+    pixel {
+      pixelAttribute
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+query getAttributesByTarget($target: TargetACIInput!) {
+  getAttributesByTarget(target: $target) {
+    id
+    label
+    externalId
+    variety
+    createdAt
+    updatedAt
+    isRequired
+    isMultipleChoice
+    pixel {
+      pixelAttribute
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+query attribute($id: String!) {
+  attribute(id: $id) {
+    id
+    label
+    externalId
+    variety
+    createdAt
+    updatedAt
+    isRequired
+    isMultipleChoice
+    pixel {
+      pixelAttribute
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+query searchAttribute($pagination: PaginationInput, $searchString: String!) {
+  searchAttribute(pagination: $pagination, searchString: $searchString) {
+    count
+    isLast
+    objects {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+    }
+  }
+}
+query searchAttributeByTarget(
+  $pagination: PaginationInput
+  $searchString: String!
+  $variety: ProductVarietyEnum
+  $target: TargetACIInput!
+) {
+  searchAttributeByTarget(target: $target, pagination: $pagination, variety: $variety, searchString: $searchString) {
+    count
+    isLast
+    objects {
+      id
+      label
+      externalId
+      variety
+      createdAt
+      updatedAt
+      isRequired
+      isMultipleChoice
+      pixel {
+        pixelAttribute
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+    }
+  }
+}
+
+query findAttributeByExternalIdAndTarget($externalId: String!, $target: TargetACIInput!) {
+  findAttributeByExternalIdAndTarget(externalId: $externalId, target: $target) {
+    id
+    label
+    externalId
+    variety
+    createdAt
+    updatedAt
+    isRequired
+    isMultipleChoice
+    pixel {
+      pixelAttribute
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+
+mutation syncOneAttribute($input: AttributeCreateInput!) {
+  syncOneAttribute(input: $input) {
+    id
+    label
+    externalId
+    variety
+    createdAt
+    updatedAt
+    isRequired
+    isMultipleChoice
+    pixel {
+      pixelAttribute
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+
+mutation createAttribute($input: AttributeCreateInput!) {
+  createAttribute(input: $input) {
+    id
+    label
+    externalId
+    variety
+    createdAt
+    updatedAt
+    isRequired
+    isMultipleChoice
+    pixel {
+      pixelAttribute
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+mutation updateAttribute($input: AttributeUpdateInput!) {
+  updateAttribute(input: $input) {
+    id
+    label
+    externalId
+    variety
+    createdAt
+    updatedAt
+    isRequired
+    isMultipleChoice
+    pixel {
+      pixelAttribute
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+mutation deleteAttribute($id: String!) {
+  deleteAttribute(id: $id) {
+    success
+    message
+  }
+}

@@ -1,0 +1,27 @@
+name: sharedgraphqlgenerator
+description: A new Flutter package project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  json_serializable: ^6.7.0
+  artemis: ^7.13.0-beta.2
+  json_annotation: ^4.8.1
+  build_runner: ^2.4.5
+  equatable: ^2.0.5
+  intl: ^0.18.0
+  gql: ^0.14.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+

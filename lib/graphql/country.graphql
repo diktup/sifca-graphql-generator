@@ -1,0 +1,146 @@
+query findCounteryById($id: ID!) {
+  findCounteryById(id: $id) {
+    id
+    name
+    code
+    dialCode
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+query getCountries {
+  getCountries {
+    id
+    name
+    code
+    dialCode
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+query findCountriesPagination($pagination: PaginationInput) {
+  findCountriesPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      name
+      code
+      dialCode
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+  }
+}
+
+mutation createCountry($input: CountryInput!) {
+  createCountry(input: $input) {
+    id
+    name
+    code
+    dialCode
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+mutation updateCountry($id: ID!, $input: CountryInput!) {
+  updateCountry(id: $id, input: $input) {
+    id
+    name
+    code
+    dialCode
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+mutation deleteCountry($id: ID!) {
+  deleteCountry(id: $id) {
+    success
+    message
+  }
+}

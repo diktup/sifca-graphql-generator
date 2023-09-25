@@ -1,0 +1,335 @@
+query getNotes {
+  getNotes {
+    id
+    title
+    isArchived
+    description
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    labels {
+      id
+      name
+      icon
+      color
+      category
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getNote($id: ID!) {
+  getNote(id: $id) {
+    id
+    title
+    isArchived
+    description
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    labels {
+      id
+      name
+      icon
+      color
+      category
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getNotesByTarget($target: TargetACIInput!) {
+  getNotesByTarget(target: $target) {
+    id
+    title
+    isArchived
+    description
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    labels {
+      id
+      name
+      icon
+      color
+      category
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+query findNotesByLabelAndTarget($target: TargetACIInput!, $label: ID!) {
+  findNotesByLabelAndTarget(target: $target, label: $label) {
+    id
+    title
+    isArchived
+    description
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    labels {
+      id
+      name
+      icon
+      color
+      category
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+
+mutation createNote(
+  $title: String!
+  $isArchived: Boolean
+  $description: String!
+  $picture: PictureInput!
+  $tasks: [TaskInput!]
+  $labels: [ID!]!
+  $target: TargetACIInput!
+) {
+  createNote(
+    title: $title
+    isArchived: $isArchived
+    description: $description
+    picture: $picture
+    tasks: $tasks
+    labels: $labels
+    target: $target
+  ) {
+    id
+    title
+    isArchived
+    description
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    labels {
+      id
+      name
+      icon
+      color
+      category
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation updateNote(
+  $id: ID!
+  $title: String!
+  $isArchived: Boolean
+  $description: String!
+  $picture: PictureInput!
+  $tasks: [TaskInput!]
+  $labels: [ID!]
+  $target: TargetACIInput!
+) {
+  updateNote(
+    id: $id
+    title: $title
+    isArchived: $isArchived
+    description: $description
+    picture: $picture
+    tasks: $tasks
+    labels: $labels
+    target: $target
+  ) {
+    id
+    title
+    isArchived
+    description
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    labels {
+      id
+      name
+      icon
+      color
+      category
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteNote($id: ID!) {
+  deleteNote(id: $id) {
+    success
+    message
+  }
+}

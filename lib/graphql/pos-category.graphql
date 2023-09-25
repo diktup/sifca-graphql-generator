@@ -1,0 +1,146 @@
+query getPOSCategoriesPagination($pagination: PaginationInput) {
+  getPOSCategoriesPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      name
+      mapPicture
+      createdAt
+      updatedAt
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+  }
+}
+query getPOSCategories {
+  getPOSCategories {
+    id
+    name
+    mapPicture
+    createdAt
+    updatedAt
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+query posCategory($id: String!) {
+  posCategory(id: $id) {
+    id
+    name
+    mapPicture
+    createdAt
+    updatedAt
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+query searchPosCategory($pagination: PaginationInput, $searchString: String!) {
+  searchPosCategory(pagination: $pagination, searchString: $searchString) {
+    count
+    isLast
+    objects {
+      id
+      name
+      mapPicture
+      createdAt
+      updatedAt
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+  }
+}
+
+mutation createPOSCategory($input: POSCategoryInput!) {
+  createPOSCategory(input: $input) {
+    id
+    name
+    mapPicture
+    createdAt
+    updatedAt
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+mutation updatePOSCategory($input: POSCategoryInput!, $id: String!) {
+  updatePOSCategory(input: $input, id: $id) {
+    id
+    name
+    mapPicture
+    createdAt
+    updatedAt
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+mutation deletePOSCategory($id: String!) {
+  deletePOSCategory(id: $id) {
+    id
+    name
+    mapPicture
+    createdAt
+    updatedAt
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}
+
+subscription listenForPOSCategoryCreated {
+  listenForPOSCategoryCreated {
+    id
+    name
+    mapPicture
+    createdAt
+    updatedAt
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+  }
+}

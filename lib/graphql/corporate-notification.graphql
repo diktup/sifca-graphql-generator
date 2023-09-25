@@ -1,0 +1,122 @@
+query sendAdhocCorporateNotificationTest($input: CorporateNotificationInput!) {
+  sendAdhocCorporateNotificationTest(input: $input) {
+    event
+    executed
+    executedAt
+    action {
+      adhocNotification {
+        title
+        description
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+    }
+  }
+}
+query getCorporateNotificationsByUser($target: TargetACIInput!, $pagination: PaginationInput) {
+  getCorporateNotificationsByUser(target: $target, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      seen
+      event
+      executed
+      executedAt
+      action {
+        adhocNotification {
+          title
+          description
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+      }
+    }
+  }
+}
+
+mutation createAdhocCorporateNotification($input: CorporateNotificationInput!) {
+  createAdhocCorporateNotification(input: $input) {
+    id
+    seen
+    event
+    executed
+    executedAt
+    action {
+      adhocNotification {
+        title
+        description
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+    }
+  }
+}
+mutation markAllCorporateNotificationsAsSeenForUser($target: TargetACIInput!) {
+  markAllCorporateNotificationsAsSeenForUser(target: $target) {
+    success
+  }
+}
+
+subscription listenForNewAdhocCorporateNotification($userId: ID!) {
+  listenForNewAdhocCorporateNotification(userId: $userId) {
+    id
+    seen
+    event
+    executed
+    executedAt
+    action {
+      adhocNotification {
+        title
+        description
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+    }
+  }
+}
+subscription listenForSendAdhocCorporateNotificationTest($userId: ID!) {
+  listenForSendAdhocCorporateNotificationTest(userId: $userId) {
+    event
+    executed
+    executedAt
+    action {
+      adhocNotification {
+        title
+        description
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1426 @@
+query getProjects {
+  getProjects {
+    id
+    name
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    privacy
+    tags
+    deadline
+    priority
+    status
+    color
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    members {
+      member {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      role
+    }
+    resources {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    attachments {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+query project($id: ID!) {
+  project(id: $id) {
+    id
+    name
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    privacy
+    tags
+    deadline
+    priority
+    status
+    color
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    members {
+      member {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      role
+    }
+    resources {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    attachments {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getProjectsByTarget($target: TargetACIInput!) {
+  getProjectsByTarget(target: $target) {
+    id
+    name
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    privacy
+    tags
+    deadline
+    priority
+    status
+    color
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    members {
+      member {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      role
+    }
+    resources {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    attachments {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getProjectsByTargetWithFilter(
+  $searchString: String
+  $target: TargetACIInput!
+  $filter: ProjectFilterInput
+  $pagination: PaginationInput
+) {
+  getProjectsByTargetWithFilter(searchString: $searchString, target: $target, filter: $filter, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      name
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      privacy
+      tags
+      deadline
+      priority
+      status
+      color
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      members {
+        member {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        role
+      }
+      resources {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      attachments {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation createProject($input: ProjectInput!) {
+  createProject(input: $input) {
+    id
+    name
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    privacy
+    tags
+    deadline
+    priority
+    status
+    color
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    members {
+      member {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      role
+    }
+    resources {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    attachments {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation updateProject($input: ProjectUpdateInput!) {
+  updateProject(input: $input) {
+    id
+    name
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+      }
+    }
+    privacy
+    tags
+    deadline
+    priority
+    status
+    color
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+    }
+    members {
+      member {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      role
+    }
+    resources {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    attachments {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteProject($id: ID!) {
+  deleteProject(id: $id) {
+    success
+    message
+  }
+}

@@ -1,0 +1,283 @@
+query getTasks {
+  getTasks {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    createdAt
+    updatedAt
+    description
+    taskSection {
+      id
+      rank
+      tags
+      title
+      dueDate
+      archived
+      priority
+      completed
+      description
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getTask($id: ID!) {
+  getTask(id: $id) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    createdAt
+    updatedAt
+    description
+    taskSection {
+      id
+      rank
+      tags
+      title
+      dueDate
+      archived
+      priority
+      completed
+      description
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getTasksBySection($taskSection: ID!) {
+  getTasksBySection(taskSection: $taskSection) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    createdAt
+    updatedAt
+    description
+    taskSection {
+      id
+      rank
+      tags
+      title
+      dueDate
+      archived
+      priority
+      completed
+      description
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation createTask(
+  $rank: Int!
+  $title: String!
+  $tags: [String!]
+  $taskSection: ID!
+  $dueDate: DateTime
+  $archived: Boolean
+  $completed: Boolean
+  $description: String
+  $priority: TaskPriorityEnum!
+) {
+  createTask(
+    tags: $tags
+    rank: $rank
+    title: $title
+    dueDate: $dueDate
+    priority: $priority
+    archived: $archived
+    completed: $completed
+    description: $description
+    taskSection: $taskSection
+  ) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    createdAt
+    updatedAt
+    description
+    taskSection {
+      id
+      rank
+      tags
+      title
+      dueDate
+      archived
+      priority
+      completed
+      description
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+mutation reorderTask($id: ID!, $rank: Int!) {
+  reorderTask(id: $id, rank: $rank) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    createdAt
+    updatedAt
+    description
+    taskSection {
+      id
+      rank
+      tags
+      title
+      dueDate
+      archived
+      priority
+      completed
+      description
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+mutation updateTask(
+  $id: ID!
+  $rank: Int
+  $title: String
+  $tags: [String!]
+  $taskSection: ID
+  $dueDate: DateTime
+  $archived: Boolean
+  $completed: Boolean
+  $description: String
+  $priority: TaskPriorityEnum
+) {
+  updateTask(
+    id: $id
+    tags: $tags
+    rank: $rank
+    title: $title
+    dueDate: $dueDate
+    priority: $priority
+    archived: $archived
+    completed: $completed
+    description: $description
+    taskSection: $taskSection
+  ) {
+    id
+    rank
+    tags
+    title
+    dueDate
+    archived
+    priority
+    completed
+    createdAt
+    updatedAt
+    description
+    taskSection {
+      id
+      rank
+      tags
+      title
+      dueDate
+      archived
+      priority
+      completed
+      description
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+mutation deleteTask($id: ID!) {
+  deleteTask(id: $id) {
+    success
+    message
+  }
+}
