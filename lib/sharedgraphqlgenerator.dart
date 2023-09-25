@@ -1,1 +1,1 @@
-library sharedgraphqlgenerator;
+library sifcagraphqlgenerator;
