@@ -746,7 +746,7 @@ query getBarcodes {
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -3816,7 +3816,7 @@ query barcode($id: String!) {
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -6886,7 +6886,7 @@ query getProductBarcodes($productId: String!) {
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -9956,7 +9956,7 @@ query getBarcodeByProductAndAttributes($input: BarcodeFindInput!) {
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -13029,7 +13029,7 @@ query getBarcodesPagination($pagination: PaginationInput) {
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -16101,7 +16101,7 @@ mutation updateBarcode($input: BarcodeUpdateInput!) {
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -19172,7 +19172,7 @@ mutation bulkUpdateBarcodeMedia($input: [UpdateMediaInput!]!) {
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -22278,7 +22278,7 @@ mutation createBarcode($input: BarcodeInput!, $target: TargetACIInput!) {
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published

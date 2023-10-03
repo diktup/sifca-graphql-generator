@@ -12,7 +12,7 @@ query getDepartments {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -2303,7 +2303,7 @@ query department($id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -4594,7 +4594,7 @@ query getDepartmentsByTarget($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -6888,7 +6888,7 @@ query searchDepartmentsByTarget($searchString: String, $target: TargetACIInput!,
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -9181,7 +9181,7 @@ mutation createDepartment($input: DepartmentInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -11472,7 +11472,7 @@ mutation updateDepartment($id: ID!, $input: DepartmentInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

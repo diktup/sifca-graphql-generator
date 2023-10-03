@@ -1521,7 +1521,7 @@ query getQuotations {
                   phone
                   website
                   subtitle
-                  currency
+                  
                   turnover
                   reference
                   published
@@ -5772,7 +5772,7 @@ query getQuotations {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -9926,7 +9926,7 @@ query quotation($id: ID!) {
                   phone
                   website
                   subtitle
-                  currency
+                  
                   turnover
                   reference
                   published
@@ -14177,7 +14177,7 @@ query quotation($id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -18331,7 +18331,7 @@ query getQuotationsByTarget($target: TargetACIInput!) {
                   phone
                   website
                   subtitle
-                  currency
+                  
                   turnover
                   reference
                   published
@@ -22582,7 +22582,7 @@ query getQuotationsByTarget($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -26749,7 +26749,7 @@ query getQuotationsByTargetPaginated($target: TargetACIInput!, $filter: Invoicin
                     phone
                     website
                     subtitle
-                    currency
+                    
                     turnover
                     reference
                     published
@@ -31000,7 +31000,7 @@ query getQuotationsByTargetPaginated($target: TargetACIInput!, $filter: Invoicin
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -35156,7 +35156,7 @@ mutation createQuotation($input: QuotationInput!) {
                   phone
                   website
                   subtitle
-                  currency
+                  
                   turnover
                   reference
                   published
@@ -39407,7 +39407,7 @@ mutation createQuotation($input: QuotationInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -43561,7 +43561,7 @@ mutation updateQuotation($input: QuotationUpdateInput!) {
                   phone
                   website
                   subtitle
-                  currency
+                  
                   turnover
                   reference
                   published
@@ -47812,7 +47812,7 @@ mutation updateQuotation($input: QuotationUpdateInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

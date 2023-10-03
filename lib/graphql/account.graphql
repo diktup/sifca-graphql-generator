@@ -624,7 +624,7 @@ query getAccounts($target: TargetACIInput, $pagination: PaginationInput) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -3528,7 +3528,7 @@ query getAccountsByTargetAndRoles($target: TargetACIInput!, $role: [UserRole!]!,
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -6432,7 +6432,7 @@ query getWaitersByPoss($posId: String!, $pagination: PaginationInput) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -9336,7 +9336,7 @@ query getDeliveryManByPos($posId: String!, $pagination: PaginationInput) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -12237,7 +12237,7 @@ query currentAccount {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -15137,7 +15137,7 @@ query account($id: String!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -18037,7 +18037,7 @@ query accountByUserId($userId: String!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -20940,7 +20940,7 @@ query searchAccount($pagination: PaginationInput, $searchString: String!, $targe
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -23842,7 +23842,7 @@ mutation createAccount($input: AccountInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -26742,7 +26742,7 @@ mutation updateAccount($expiresAt: DateTime!, $accountId: String!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -29642,7 +29642,7 @@ mutation updateAccountByAdmin($input: AccountUpdateInput!, $accountId: String!) 
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

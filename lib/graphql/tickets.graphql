@@ -3672,7 +3672,7 @@ query getTickets {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -9615,7 +9615,7 @@ query ticket($id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -15558,7 +15558,7 @@ query getTicketsByTarget($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -21504,7 +21504,7 @@ query getTicketsByTargetWithFilter($target: TargetACIInput!, $filter: TicketsFil
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -27449,7 +27449,7 @@ mutation createTicket($input: TicketInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -33392,7 +33392,7 @@ mutation updateTicket($input: TicketUpdateInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

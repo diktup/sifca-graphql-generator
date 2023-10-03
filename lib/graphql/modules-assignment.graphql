@@ -627,7 +627,7 @@ query getModulesAssignment {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -3541,7 +3541,7 @@ query moduleAssignment($id: String!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -6455,7 +6455,7 @@ query getModuleAssignmentsByAssignee($assignee: AssigneeInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -9369,7 +9369,7 @@ query findModuleAssignmentsByOrigin {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -12283,7 +12283,7 @@ query findModuleAssignmentsforFrame($posId: String!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -15198,7 +15198,7 @@ mutation createModuleAssignment($input: ModulesAssignmentInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -18112,7 +18112,7 @@ mutation updateModuleAssignment($input: ModulesAssignmentInput!, $id: String!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -21026,7 +21026,7 @@ mutation deleteModuleAssignment($id: String!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

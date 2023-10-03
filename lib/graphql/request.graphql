@@ -130,7 +130,7 @@ query getRequests {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -2540,7 +2540,7 @@ query getRequest($id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -4953,7 +4953,7 @@ query getRequestsPaginated($pagination: PaginationInput) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -7367,7 +7367,7 @@ query getRequestsByTypePaginated($pagination: PaginationInput, $type: RequestTyp
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -9786,7 +9786,7 @@ query getRequestsByTypeAndTargetPaginated(
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -12214,7 +12214,7 @@ mutation createRequest($input: RequestInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -14624,7 +14624,7 @@ mutation updateRequestStatus($id: ID!, $status: RequestStatusEnum!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -17035,7 +17035,7 @@ subscription listenForRequest {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

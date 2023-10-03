@@ -3869,8 +3869,6 @@ PointOfSale$Query$PointOfSaleType _$PointOfSale$Query$PointOfSaleTypeFromJson(
           (json['phone'] as List<dynamic>?)?.map((e) => e as String).toList()
       ..website = json['website'] as String?
       ..subtitle = json['subtitle'] as String?
-      ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-          unknownValue: Currency.artemisUnknown)
       ..turnover = json['turnover'] as String?
       ..reference = json['reference'] as String?
       ..published = json['published'] as bool?
@@ -3962,7 +3960,6 @@ Map<String, dynamic> _$PointOfSale$Query$PointOfSaleTypeToJson(
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
   writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('turnover', instance.turnover);
   writeNotNull('reference', instance.reference);
   writeNotNull('published', instance.published);
@@ -3998,13 +3995,6 @@ Map<String, dynamic> _$PointOfSale$Query$PointOfSaleTypeToJson(
       instance.loyaltyPrograms?.map((e) => e.toJson()).toList());
   return val;
 }
-
-const _$CurrencyEnumMap = {
-  Currency.eur: 'EUR',
-  Currency.usd: 'USD',
-  Currency.tnd: 'TND',
-  Currency.artemisUnknown: 'ARTEMIS_UNKNOWN',
-};
 
 PointOfSale$Query _$PointOfSale$QueryFromJson(Map<String, dynamic> json) =>
     PointOfSale$Query()
@@ -7779,8 +7769,6 @@ PointOfSaleByOrigin$Query$PointOfSaleType
               .toList()
           ..website = json['website'] as String?
           ..subtitle = json['subtitle'] as String?
-          ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-              unknownValue: Currency.artemisUnknown)
           ..turnover = json['turnover'] as String?
           ..reference = json['reference'] as String?
           ..published = json['published'] as bool?
@@ -7873,7 +7861,6 @@ Map<String, dynamic> _$PointOfSaleByOrigin$Query$PointOfSaleTypeToJson(
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
   writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('turnover', instance.turnover);
   writeNotNull('reference', instance.reference);
   writeNotNull('published', instance.published);
@@ -11697,8 +11684,6 @@ GetPointOfSalesPagination$Query$PointOfSalePaginateType$PointOfSaleType
               .toList()
           ..website = json['website'] as String?
           ..subtitle = json['subtitle'] as String?
-          ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-              unknownValue: Currency.artemisUnknown)
           ..turnover = json['turnover'] as String?
           ..reference = json['reference'] as String?
           ..published = json['published'] as bool?
@@ -11796,7 +11781,6 @@ Map<String, dynamic>
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
   writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('turnover', instance.turnover);
   writeNotNull('reference', instance.reference);
   writeNotNull('published', instance.published);
@@ -15669,8 +15653,6 @@ SearchPos$Query$PointOfSalePaginateType$PointOfSaleType
               .toList()
           ..website = json['website'] as String?
           ..subtitle = json['subtitle'] as String?
-          ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-              unknownValue: Currency.artemisUnknown)
           ..turnover = json['turnover'] as String?
           ..reference = json['reference'] as String?
           ..published = json['published'] as bool?
@@ -15767,7 +15749,6 @@ Map<String, dynamic>
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
   writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('turnover', instance.turnover);
   writeNotNull('reference', instance.reference);
   writeNotNull('published', instance.published);
@@ -19616,8 +19597,6 @@ FindPOSNearbyPagination$Query$PointOfSalePaginateType$PointOfSaleType
               .toList()
           ..website = json['website'] as String?
           ..subtitle = json['subtitle'] as String?
-          ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-              unknownValue: Currency.artemisUnknown)
           ..turnover = json['turnover'] as String?
           ..reference = json['reference'] as String?
           ..published = json['published'] as bool?
@@ -19715,7 +19694,6 @@ Map<String, dynamic>
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
   writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('turnover', instance.turnover);
   writeNotNull('reference', instance.reference);
   writeNotNull('published', instance.published);
@@ -23568,8 +23546,6 @@ SearchPOSNearbyPagination$Query$PointOfSalePaginateType$PointOfSaleType
               .toList()
           ..website = json['website'] as String?
           ..subtitle = json['subtitle'] as String?
-          ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-              unknownValue: Currency.artemisUnknown)
           ..turnover = json['turnover'] as String?
           ..reference = json['reference'] as String?
           ..published = json['published'] as bool?
@@ -23667,7 +23643,6 @@ Map<String, dynamic>
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
   writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('turnover', instance.turnover);
   writeNotNull('reference', instance.reference);
   writeNotNull('published', instance.published);
@@ -27532,8 +27507,6 @@ CreatePointOfSale$Mutation$PointOfSaleType
               .toList()
           ..website = json['website'] as String?
           ..subtitle = json['subtitle'] as String?
-          ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-              unknownValue: Currency.artemisUnknown)
           ..turnover = json['turnover'] as String?
           ..reference = json['reference'] as String?
           ..published = json['published'] as bool?
@@ -27629,7 +27602,6 @@ Map<String, dynamic> _$CreatePointOfSale$Mutation$PointOfSaleTypeToJson(
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
   writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('turnover', instance.turnover);
   writeNotNull('reference', instance.reference);
   writeNotNull('published', instance.published);
@@ -27790,6 +27762,13 @@ Map<String, dynamic> _$PointOfSaleInputToJson(PointOfSaleInput instance) {
       instance.loyaltyPrograms?.map((e) => e.toJson()).toList());
   return val;
 }
+
+const _$CurrencyEnumMap = {
+  Currency.eur: 'EUR',
+  Currency.usd: 'USD',
+  Currency.tnd: 'TND',
+  Currency.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -31770,8 +31749,6 @@ UpdatePointOfSale$Mutation$PointOfSaleType
               .toList()
           ..website = json['website'] as String?
           ..subtitle = json['subtitle'] as String?
-          ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-              unknownValue: Currency.artemisUnknown)
           ..turnover = json['turnover'] as String?
           ..reference = json['reference'] as String?
           ..published = json['published'] as bool?
@@ -31867,7 +31844,6 @@ Map<String, dynamic> _$UpdatePointOfSale$Mutation$PointOfSaleTypeToJson(
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
   writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('turnover', instance.turnover);
   writeNotNull('reference', instance.reference);
   writeNotNull('published', instance.published);
@@ -35679,8 +35655,6 @@ DeletePointOfSale$Mutation$PointOfSaleType
               .toList()
           ..website = json['website'] as String?
           ..subtitle = json['subtitle'] as String?
-          ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-              unknownValue: Currency.artemisUnknown)
           ..turnover = json['turnover'] as String?
           ..reference = json['reference'] as String?
           ..published = json['published'] as bool?
@@ -35776,7 +35750,6 @@ Map<String, dynamic> _$DeletePointOfSale$Mutation$PointOfSaleTypeToJson(
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
   writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('turnover', instance.turnover);
   writeNotNull('reference', instance.reference);
   writeNotNull('published', instance.published);
@@ -39595,8 +39568,6 @@ PointOfSaleCreated$Subscription$PointOfSaleType
               .toList()
           ..website = json['website'] as String?
           ..subtitle = json['subtitle'] as String?
-          ..currency = $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-              unknownValue: Currency.artemisUnknown)
           ..turnover = json['turnover'] as String?
           ..reference = json['reference'] as String?
           ..published = json['published'] as bool?
@@ -39692,7 +39663,6 @@ Map<String, dynamic> _$PointOfSaleCreated$Subscription$PointOfSaleTypeToJson(
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
   writeNotNull('subtitle', instance.subtitle);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
   writeNotNull('turnover', instance.turnover);
   writeNotNull('reference', instance.reference);
   writeNotNull('published', instance.published);

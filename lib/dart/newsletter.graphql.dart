@@ -4516,9 +4516,6 @@ class GetSubscribersToNewsletter$Query$NewsletterType$TargetType$PointOfSaleType
 
   String? subtitle;
 
-  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
-  Currency? currency;
-
   String? turnover;
 
   String? reference;
@@ -4588,7 +4585,6 @@ class GetSubscribersToNewsletter$Query$NewsletterType$TargetType$PointOfSaleType
         phone,
         website,
         subtitle,
-        currency,
         turnover,
         reference,
         published,
@@ -12372,9 +12368,6 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   String? subtitle;
 
-  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
-  Currency? currency;
-
   String? turnover;
 
   String? reference;
@@ -12444,7 +12437,6 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         phone,
         website,
         subtitle,
-        currency,
         turnover,
         reference,
         published,
@@ -20340,9 +20332,6 @@ class AddUserToNewsLetter$Mutation$NewsletterType$TargetType$PointOfSaleType
 
   String? subtitle;
 
-  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
-  Currency? currency;
-
   String? turnover;
 
   String? reference;
@@ -20412,7 +20401,6 @@ class AddUserToNewsLetter$Mutation$NewsletterType$TargetType$PointOfSaleType
         phone,
         website,
         subtitle,
-        currency,
         turnover,
         reference,
         published,
@@ -23866,17 +23854,6 @@ enum SocialImageStyleEnum {
   sticker,
   @JsonValue('COLOR_HAND_DROWN')
   colorHandDrown,
-  @JsonValue('ARTEMIS_UNKNOWN')
-  artemisUnknown,
-}
-
-enum Currency {
-  @JsonValue('EUR')
-  eur,
-  @JsonValue('USD')
-  usd,
-  @JsonValue('TND')
-  tnd,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -27823,13 +27800,6 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'subtitle'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'currency'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -46037,13 +46007,6 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'subtitle'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'currency'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -64864,13 +64827,6 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'subtitle'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'currency'),
                     alias: null,
                     arguments: [],
                     directives: [],

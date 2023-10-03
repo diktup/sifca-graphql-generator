@@ -5337,9 +5337,6 @@ class CreateProduct$Mutation$ProductType$BrandType$TargetType$PointOfSaleType
 
   String? subtitle;
 
-  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
-  Currency? currency;
-
   String? turnover;
 
   String? reference;
@@ -5412,7 +5409,6 @@ class CreateProduct$Mutation$ProductType$BrandType$TargetType$PointOfSaleType
         phone,
         website,
         subtitle,
-        currency,
         turnover,
         reference,
         published,
@@ -9297,17 +9293,6 @@ enum BankDetailsHolderTypeEnum {
   artemisUnknown,
 }
 
-enum Currency {
-  @JsonValue('EUR')
-  eur,
-  @JsonValue('USD')
-  usd,
-  @JsonValue('TND')
-  tnd,
-  @JsonValue('ARTEMIS_UNKNOWN')
-  artemisUnknown,
-}
-
 enum OpeningStatus {
   @JsonValue('ALWAYS_OPEN')
   alwaysOpen,
@@ -12915,13 +12900,6 @@ final CREATE_PRODUCT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'subtitle'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'currency'),
                         alias: null,
                         arguments: [],
                         directives: [],

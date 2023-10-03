@@ -343,7 +343,7 @@ query getCompanies {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -2957,7 +2957,7 @@ query company($id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -5574,7 +5574,7 @@ query getCompaniesPagination($pagination: PaginationInput) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -8192,7 +8192,7 @@ query getCustomers($phase: CustomerPhaseEnum!, $target: TargetACIInput!, $pagina
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -10810,7 +10810,7 @@ query searchCompany($pagination: PaginationInput, $searchString: String!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -13433,7 +13433,7 @@ query searchCustomersByTargetAndPhase(
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -16051,7 +16051,7 @@ query searchLogisticCompaniesByTarget($target: TargetACIInput!, $pagination: Pag
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -18667,7 +18667,7 @@ mutation createCompany($input: CompanyInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -21281,7 +21281,7 @@ mutation updateCompany($input: CompanyUpdateInput!, $id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -23902,7 +23902,7 @@ subscription listenForCompanyCreated {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

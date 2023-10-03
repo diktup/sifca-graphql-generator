@@ -18,7 +18,7 @@ query pointOfSale($id: ID!) {
     phone
     website
     subtitle
-    currency
+    
     turnover
     reference
     published
@@ -1399,7 +1399,7 @@ query pointOfSaleByOrigin($website: String!) {
     phone
     website
     subtitle
-    currency
+    
     turnover
     reference
     published
@@ -2783,7 +2783,7 @@ query getPointOfSalesPagination($pagination: PaginationInput, $posCategory: ID) 
       phone
       website
       subtitle
-      currency
+      
       turnover
       reference
       published
@@ -4168,7 +4168,7 @@ query searchPos($pagination: PaginationInput, $searchString: String!) {
       phone
       website
       subtitle
-      currency
+      
       turnover
       reference
       published
@@ -5553,7 +5553,7 @@ query findPOSNearbyPagination($pagination: PaginationInput, $rad: Float!, $lat: 
       phone
       website
       subtitle
-      currency
+      
       turnover
       reference
       published
@@ -6952,7 +6952,7 @@ query searchPOSNearbyPagination(
       phone
       website
       subtitle
-      currency
+      
       turnover
       reference
       published
@@ -8340,7 +8340,7 @@ mutation createPointOfSale($input: PointOfSaleInput!) {
     phone
     website
     subtitle
-    currency
+    
     turnover
     reference
     published
@@ -9721,7 +9721,7 @@ mutation updatePointOfSale($input: PointOfSaleInput!, $id: ID!) {
     phone
     website
     subtitle
-    currency
+    
     turnover
     reference
     published
@@ -11102,7 +11102,7 @@ mutation deletePointOfSale($id: ID!) {
     phone
     website
     subtitle
-    currency
+    
     turnover
     reference
     published
@@ -12484,7 +12484,7 @@ subscription pointOfSaleCreated {
     phone
     website
     subtitle
-    currency
+    
     turnover
     reference
     published

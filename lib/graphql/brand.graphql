@@ -467,7 +467,7 @@ query getBrands {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -3203,7 +3203,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -5939,7 +5939,7 @@ query brand($id: String!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -8678,7 +8678,7 @@ query getBrandsPagination($pagination: PaginationInput) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -11418,7 +11418,7 @@ query getBrandsByTargetPaginated($target: TargetACIInput!, $pagination: Paginati
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -14158,7 +14158,7 @@ query searchBrand($pagination: PaginationInput, $searchString: String!, $target:
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -16896,7 +16896,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -19633,7 +19633,7 @@ mutation syncOneBrand($input: BrandInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -22370,7 +22370,7 @@ mutation createBrand($input: BrandInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -25106,7 +25106,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -27849,7 +27849,7 @@ subscription listenForBrandCreated {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

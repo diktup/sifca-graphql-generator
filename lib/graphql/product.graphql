@@ -561,7 +561,7 @@ mutation createProduct($input: ProductInput!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published

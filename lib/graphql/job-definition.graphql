@@ -16,7 +16,7 @@ query getJobDefinitions {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -2318,7 +2318,7 @@ query getJobDefinitions {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -4613,7 +4613,7 @@ query jobDefinition($id: ID!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -6915,7 +6915,7 @@ query jobDefinition($id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -9210,7 +9210,7 @@ query getJobDefinitionsByTarget($target: TargetACIInput!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -11512,7 +11512,7 @@ query getJobDefinitionsByTarget($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -13810,7 +13810,7 @@ query getJobDefinitionsByTargetPagination($target: TargetACIInput!, $pagination:
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -16112,7 +16112,7 @@ query getJobDefinitionsByTargetPagination($target: TargetACIInput!, $pagination:
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -18416,7 +18416,7 @@ query searchJobDefinitionsByTarget(
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -20718,7 +20718,7 @@ query searchJobDefinitionsByTarget(
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -23021,7 +23021,7 @@ query getJobDefinitionsByTargetAndStatusPagination(
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -25323,7 +25323,7 @@ query getJobDefinitionsByTargetAndStatusPagination(
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -27642,7 +27642,7 @@ mutation createJobDefinition($input: JobDefinitionInput!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -29944,7 +29944,7 @@ mutation createJobDefinition($input: JobDefinitionInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -32239,7 +32239,7 @@ mutation updateJobDefinition($id: ID!, $input: JobDefinitionUpdateInput!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -34541,7 +34541,7 @@ mutation updateJobDefinition($id: ID!, $input: JobDefinitionUpdateInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

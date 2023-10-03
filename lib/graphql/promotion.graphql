@@ -801,7 +801,7 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                 phone
                 website
                 subtitle
-                currency
+                
                 turnover
                 reference
                 published
@@ -3887,7 +3887,7 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                     phone
                     website
                     subtitle
-                    currency
+                    
                     turnover
                     reference
                     published

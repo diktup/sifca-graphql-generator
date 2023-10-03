@@ -38,7 +38,7 @@ query getOnsiteConverterByTarget($target: TargetACIInput!) {
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -2333,7 +2333,7 @@ query getOnsiteConverterByTarget($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -4659,7 +4659,7 @@ mutation createOrUpdateOnsiteConverter($target: TargetACIInput!, $input: OnsiteC
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -6954,7 +6954,7 @@ mutation createOrUpdateOnsiteConverter($target: TargetACIInput!, $input: OnsiteC
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

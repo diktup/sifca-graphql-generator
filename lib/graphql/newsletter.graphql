@@ -621,7 +621,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -3524,7 +3524,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -6442,7 +6442,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

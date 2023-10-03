@@ -482,7 +482,7 @@ query getInternalProduct($id: ID!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -3520,7 +3520,7 @@ query getInternalProduct($id: ID!) {
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -6506,7 +6506,7 @@ query getInternalProductBarcodes($id: String!) {
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -9544,7 +9544,7 @@ query getInternalProductBarcodes($id: String!) {
                 phone
                 website
                 subtitle
-                currency
+                
                 turnover
                 reference
                 published
@@ -12536,7 +12536,7 @@ query getInternalProductBarcodesPaginated(
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -15574,7 +15574,7 @@ query getInternalProductBarcodesPaginated(
                   phone
                   website
                   subtitle
-                  currency
+                  
                   turnover
                   reference
                   published
@@ -18607,7 +18607,7 @@ mutation updateInternalProduct($input: UpdateInternalProductInput!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -21645,7 +21645,7 @@ mutation updateInternalProduct($input: UpdateInternalProductInput!) {
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -24641,7 +24641,7 @@ query getBarcodesWithVarietyAndStructureWithFilter(
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -27679,7 +27679,7 @@ query getBarcodesWithVarietyAndStructureWithFilter(
                   phone
                   website
                   subtitle
-                  currency
+                  
                   turnover
                   reference
                   published
@@ -30627,7 +30627,7 @@ query getInternalProducts(
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -33665,7 +33665,7 @@ query getInternalProducts(
                 phone
                 website
                 subtitle
-                currency
+                
                 turnover
                 reference
                 published
@@ -36778,7 +36778,7 @@ mutation createBarcode($input: BarcodeInput!, $target: TargetACIInput!) {
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -39591,7 +39591,7 @@ mutation createSimpleProduct($input: CreateSimpleProductInput!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -42677,7 +42677,7 @@ mutation createSimpleProduct($input: CreateSimpleProductInput!) {
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -45525,7 +45525,7 @@ mutation updateSimpleProduct($input: UpdateSimpleProductInput!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -48611,7 +48611,7 @@ mutation updateSimpleProduct($input: UpdateSimpleProductInput!) {
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -51468,7 +51468,7 @@ query getInternalProductsByCatalogueCategory(
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -54601,7 +54601,7 @@ query getInternalProductsByCatalogueCategory(
                 phone
                 website
                 subtitle
-                currency
+                
                 turnover
                 reference
                 published
@@ -57469,7 +57469,7 @@ query searchInternalProductByCatalogueCategory(
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -60599,7 +60599,7 @@ query searchInternalProductByCatalogueCategory(
                 phone
                 website
                 subtitle
-                currency
+                
                 turnover
                 reference
                 published
@@ -63768,7 +63768,7 @@ query searchBarcodesByTarget(
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -66583,7 +66583,7 @@ mutation createInternalProduct($input: CreateInternalProductInput!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -69713,7 +69713,7 @@ mutation createInternalProduct($input: CreateInternalProductInput!) {
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published

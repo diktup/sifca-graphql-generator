@@ -629,7 +629,7 @@ query getBoardLists {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -3532,7 +3532,7 @@ query getBoardList($id: ID!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -6435,7 +6435,7 @@ query getBoardListByBoard($boardId: ID!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -11345,7 +11345,7 @@ query getCRMBoard($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -13656,7 +13656,7 @@ query getCRMBoard($target: TargetACIInput!) {
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -22209,7 +22209,7 @@ query getMaintenanceBoard($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -24520,7 +24520,7 @@ query getMaintenanceBoard($target: TargetACIInput!) {
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -31067,7 +31067,7 @@ mutation createBoardList($name: String!, $rank: Int, $board: ID!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -33970,7 +33970,7 @@ mutation reorderBoardList($id: ID!, $rank: Int!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -36873,7 +36873,7 @@ mutation updateBoardList($id: ID!, $name: String!, $rank: Int, $board: ID!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published

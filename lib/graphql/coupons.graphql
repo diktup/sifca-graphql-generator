@@ -630,7 +630,7 @@ query getCoupons {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -3535,7 +3535,7 @@ query coupon($id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -6450,7 +6450,7 @@ query getPaginatedCoupons($pagination: PaginationInput) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -9358,7 +9358,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -12273,7 +12273,7 @@ query findCouponsByTargetWithFilterPaginated(
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -15181,7 +15181,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -18105,7 +18105,7 @@ mutation createCoupon($input: CouponInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -21012,7 +21012,7 @@ mutation updateCoupon($input: UpdateCouponInput!, $id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -23919,7 +23919,7 @@ mutation generateCoupons($input: CouponsInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -26826,7 +26826,7 @@ mutation redeemCoupon($couponCode: String!, $target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -29733,7 +29733,7 @@ mutation disableCoupon($id: String!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

@@ -3535,9 +3535,6 @@ class GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$PointOfSal
 
   String? subtitle;
 
-  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
-  Currency? currency;
-
   String? turnover;
 
   String? reference;
@@ -3607,7 +3604,6 @@ class GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$PointOfSal
         phone,
         website,
         subtitle,
-        currency,
         turnover,
         reference,
         published,
@@ -10449,9 +10445,6 @@ class CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleT
 
   String? subtitle;
 
-  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
-  Currency? currency;
-
   String? turnover;
 
   String? reference;
@@ -10521,7 +10514,6 @@ class CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleT
         phone,
         website,
         subtitle,
-        currency,
         turnover,
         reference,
         published,
@@ -17446,9 +17438,6 @@ class UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleT
 
   String? subtitle;
 
-  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
-  Currency? currency;
-
   String? turnover;
 
   String? reference;
@@ -17518,7 +17507,6 @@ class UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleT
         phone,
         website,
         subtitle,
-        currency,
         turnover,
         reference,
         published,
@@ -20870,17 +20858,6 @@ class OrderSettingsUpdateInput extends JsonSerializable with EquatableMixin {
   Map<String, dynamic> toJson() => _$OrderSettingsUpdateInputToJson(this);
 }
 
-enum Currency {
-  @JsonValue('EUR')
-  eur,
-  @JsonValue('USD')
-  usd,
-  @JsonValue('TND')
-  tnd,
-  @JsonValue('ARTEMIS_UNKNOWN')
-  artemisUnknown,
-}
-
 enum OpeningStatus {
   @JsonValue('ALWAYS_OPEN')
   alwaysOpen,
@@ -21233,13 +21210,6 @@ final GET_ORDER_SETTINGS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'subtitle'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'currency'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -35767,13 +35737,6 @@ final CREATE_ORDER_SETTINGS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'subtitle'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'currency'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -50319,13 +50282,6 @@ final UPDATE_ORDER_SETTINGS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'subtitle'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'currency'),
                     alias: null,
                     arguments: [],
                     directives: [],

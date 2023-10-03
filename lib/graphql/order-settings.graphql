@@ -36,7 +36,7 @@ query getOrderSettingsByTarget($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -2352,7 +2352,7 @@ mutation createOrderSettings($input: OrderSettingsInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -4667,7 +4667,7 @@ mutation updateOrderSettings($id: String!, $input: OrderSettingsUpdateInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

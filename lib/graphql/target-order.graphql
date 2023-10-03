@@ -1045,7 +1045,7 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $pagination: Pagina
             phone
             website
             subtitle
-            currency
+            
             turnover
             reference
             published
@@ -4131,7 +4131,7 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $pagination: Pagina
                     phone
                     website
                     subtitle
-                    currency
+                    
                     turnover
                     reference
                     published

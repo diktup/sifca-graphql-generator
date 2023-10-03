@@ -620,7 +620,7 @@ query getCurrentUserQuantitativeWallet {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -2916,7 +2916,7 @@ query getCurrentUserQuantitativeWallet {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -5854,7 +5854,7 @@ query walletByOwner($pos: ID, $user: ID, $wholesaler: ID, $manufacturer: ID) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -8150,7 +8150,7 @@ query walletByOwner($pos: ID, $user: ID, $wholesaler: ID, $manufacturer: ID) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -11059,7 +11059,7 @@ mutation initTargetWallet($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -13355,7 +13355,7 @@ mutation initTargetWallet($target: TargetACIInput!) {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -16270,7 +16270,7 @@ mutation initUserWallet {
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -18577,7 +18577,7 @@ query getPointOfSalesWithWalletsForModule(
       phone
       website
       subtitle
-      currency
+      
       turnover
       reference
       published
@@ -19975,7 +19975,7 @@ query getPointOfSalesWithWalletsForModule(
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published

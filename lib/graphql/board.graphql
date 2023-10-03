@@ -2636,7 +2636,7 @@ query getBoards {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -7543,7 +7543,7 @@ query getBoard($id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -12450,7 +12450,7 @@ query getBoardsByTarget($target: TargetACIInput!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -17360,7 +17360,7 @@ query getBoardsByTargetPaginated($target: TargetACIInput!, $category: BoardCateg
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -22268,7 +22268,7 @@ query getBoardsByMemberAndTarget($target: TargetACIInput!, $member: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -27183,7 +27183,7 @@ query getBoardsByMemberAndTargetPaginated(
           phone
           website
           subtitle
-          currency
+          
           turnover
           reference
           published
@@ -32091,7 +32091,7 @@ query getBoardWithListsAndCards($id: ID!) {
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -34402,7 +34402,7 @@ query getBoardWithListsAndCards($id: ID!) {
               phone
               website
               subtitle
-              currency
+              
               turnover
               reference
               published
@@ -42956,7 +42956,7 @@ mutation createBoard($title: String!, $description: String, $icon: String, $memb
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published
@@ -47863,7 +47863,7 @@ mutation updateBoard($id: ID!, $title: String!, $description: String, $icon: Str
         phone
         website
         subtitle
-        currency
+        
         turnover
         reference
         published

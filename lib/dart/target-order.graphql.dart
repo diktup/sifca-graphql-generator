@@ -5266,9 +5266,6 @@ class FindTargetOrders$Query$MarketPlaceOrderPaginateType$MarketPlaceOrderDtoTyp
 
   String? subtitle;
 
-  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
-  Currency? currency;
-
   String? turnover;
 
   String? reference;
@@ -5341,7 +5338,6 @@ class FindTargetOrders$Query$MarketPlaceOrderPaginateType$MarketPlaceOrderDtoTyp
         phone,
         website,
         subtitle,
-        currency,
         turnover,
         reference,
         published,
@@ -14886,9 +14882,6 @@ class FindTargetOrders$Query$MarketPlaceOrderPaginateType$MarketPlaceOrderDtoTyp
 
   String? subtitle;
 
-  @JsonKey(unknownEnumValue: Currency.artemisUnknown)
-  Currency? currency;
-
   String? turnover;
 
   String? reference;
@@ -14961,7 +14954,6 @@ class FindTargetOrders$Query$MarketPlaceOrderPaginateType$MarketPlaceOrderDtoTyp
         phone,
         website,
         subtitle,
-        currency,
         turnover,
         reference,
         published,
@@ -19179,17 +19171,6 @@ enum PaymentStatusEnum {
   refunded,
   @JsonValue('REFUND_REQUESTED')
   refundRequested,
-  @JsonValue('ARTEMIS_UNKNOWN')
-  artemisUnknown,
-}
-
-enum Currency {
-  @JsonValue('EUR')
-  eur,
-  @JsonValue('USD')
-  usd,
-  @JsonValue('TND')
-  tnd,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -25909,13 +25890,6 @@ final FIND_TARGET_ORDERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'subtitle'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'currency'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -46447,14 +46421,6 @@ final FIND_TARGET_ORDERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                               FieldNode(
                                                 name:
                                                     NameNode(value: 'subtitle'),
-                                                alias: null,
-                                                arguments: [],
-                                                directives: [],
-                                                selectionSet: null,
-                                              ),
-                                              FieldNode(
-                                                name:
-                                                    NameNode(value: 'currency'),
                                                 alias: null,
                                                 arguments: [],
                                                 directives: [],
