@@ -27680,8 +27680,9 @@ PointOfSaleInput _$PointOfSaleInputFromJson(Map<String, dynamic> json) =>
       contactEmails: (json['contactEmails'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
-      currency: $enumDecodeNullable(_$CurrencyEnumMap, json['currency'],
-          unknownValue: Currency.artemisUnknown),
+      currencies: (json['currencies'] as List<dynamic>?)
+          ?.map((e) => TargetCurrencyInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
       languages: (json['languages'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
@@ -27740,7 +27741,8 @@ Map<String, dynamic> _$PointOfSaleInputToJson(PointOfSaleInput instance) {
       'locations', instance.locations?.map((e) => e.toJson()).toList());
   writeNotNull('email', instance.email);
   writeNotNull('contactEmails', instance.contactEmails);
-  writeNotNull('currency', _$CurrencyEnumMap[instance.currency]);
+  writeNotNull(
+      'currencies', instance.currencies?.map((e) => e.toJson()).toList());
   writeNotNull('languages', instance.languages);
   writeNotNull('phone', instance.phone);
   writeNotNull('website', instance.website);
@@ -27758,13 +27760,6 @@ Map<String, dynamic> _$PointOfSaleInputToJson(PointOfSaleInput instance) {
       instance.loyaltyPrograms?.map((e) => e.toJson()).toList());
   return val;
 }
-
-const _$CurrencyEnumMap = {
-  Currency.eur: 'EUR',
-  Currency.usd: 'USD',
-  Currency.tnd: 'TND',
-  Currency.artemisUnknown: 'ARTEMIS_UNKNOWN',
-};
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -27947,6 +27942,26 @@ Map<String, dynamic> _$LonLatInputToJson(LonLatInput instance) =>
       'type': instance.type,
       'coordinates': instance.coordinates,
     };
+
+TargetCurrencyInput _$TargetCurrencyInputFromJson(Map<String, dynamic> json) =>
+    TargetCurrencyInput(
+      currency: json['currency'] as String?,
+      kw$default: json['default'] as bool?,
+    );
+
+Map<String, dynamic> _$TargetCurrencyInputToJson(TargetCurrencyInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('currency', instance.currency);
+  writeNotNull('default', instance.kw$default);
+  return val;
+}
 
 SocialValueInput _$SocialValueInputFromJson(Map<String, dynamic> json) =>
     SocialValueInput(

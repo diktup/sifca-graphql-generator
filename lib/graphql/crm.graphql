@@ -1,0 +1,34 @@
+query getCrmAnalyticsStats($input: AnalyticsDashboardInput!) {
+  getCrmAnalyticsStats(input: $input) {
+    sent
+    annualProfit
+    leadConversion
+    dailyIncome
+    annualDeals
+  }
+}
+query getCrmAnalyticsSalesForecast($input: AnalyticsDashboardInput!) {
+  getCrmAnalyticsSalesForecast(input: $input) {
+    goal
+    pending
+    revenue
+  }
+}
+query getCrmAnalyticsDealType($input: AnalyticsDashboardInput!) {
+  getCrmAnalyticsDealType(input: $input) {
+    year
+    class
+    value
+  }
+}
+query getCrmAnalyticsBalanceOverview($input: AnalyticsDashboardInput!) {
+  getCrmAnalyticsBalanceOverview(input: $input) {
+    revenue
+    expense
+    profit
+    chart {
+      kind
+      data
+    }
+  }
+}

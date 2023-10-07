@@ -1,0 +1,113 @@
+query getSalesAnalyticsStats($input: AnalyticsDashboardInput!) {
+  getSalesAnalyticsStats(input: $input) {
+    totalEarnings {
+      value
+      percentage
+    }
+    orders {
+      value
+      percentage
+    }
+    customers {
+      value
+      percentage
+    }
+    balance {
+      value
+      percentage
+    }
+  }
+}
+query getSalesRevenueChartStats($input: AnalyticsDashboardInput!) {
+  getSalesRevenueChartStats(input: $input) {
+    orders
+    earnings
+    refunds
+    conversions
+    chart {
+      orders
+      earnings
+      refunds
+    }
+  }
+}
+query getSalesByLocation($input: AnalyticsDashboardInput!) {
+  getSalesByLocation(input: $input) {
+    layers {
+      coordination {
+        lat
+        lng
+      }
+      radius
+    }
+    segments {
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      value
+    }
+  }
+}
+query getSalesTopCatalogueCategories($input: AnalyticsDashboardInput!) {
+  getSalesTopCatalogueCategories(input: $input) {
+    category {
+      id
+      name
+      rank
+      layer
+      createdAt
+      updatedAt
+      variety
+      externalId
+      hasChildren
+      description
+      portal
+      pickup
+      booking
+      delivery
+      seo {
+        urlKey
+        metaTitle
+        metaDesription
+        metaKeywords {
+          name
+          content
+        }
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    value
+  }
+}

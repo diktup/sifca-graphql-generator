@@ -6770,6 +6770,9 @@ ManufacturerCreateInput _$ManufacturerCreateInputFromJson(
           ?.map((e) => e as String)
           .toList(),
       website: json['website'] as String?,
+      currencies: (json['currencies'] as List<dynamic>?)
+          ?.map((e) => TargetCurrencyInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$ManufacturerCreateInputToJson(
@@ -6790,6 +6793,8 @@ Map<String, dynamic> _$ManufacturerCreateInputToJson(
   writeNotNull('company', instance.company);
   writeNotNull('contactEmails', instance.contactEmails);
   writeNotNull('website', instance.website);
+  writeNotNull(
+      'currencies', instance.currencies?.map((e) => e.toJson()).toList());
   return val;
 }
 
@@ -6918,6 +6923,26 @@ Map<String, dynamic> _$LonLatInputToJson(LonLatInput instance) =>
       'type': instance.type,
       'coordinates': instance.coordinates,
     };
+
+TargetCurrencyInput _$TargetCurrencyInputFromJson(Map<String, dynamic> json) =>
+    TargetCurrencyInput(
+      currency: json['currency'] as String?,
+      kw$default: json['default'] as bool?,
+    );
+
+Map<String, dynamic> _$TargetCurrencyInputToJson(TargetCurrencyInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('currency', instance.currency);
+  writeNotNull('default', instance.kw$default);
+  return val;
+}
 
 UpdateManufacturer$Mutation$ManufacturerType$PictureType
     _$UpdateManufacturer$Mutation$ManufacturerType$PictureTypeFromJson(
@@ -8601,6 +8626,9 @@ ManufacturerUpdateInput _$ManufacturerUpdateInputFromJson(
           ?.map((e) => e as String)
           .toList(),
       website: json['website'] as String?,
+      currencies: (json['currencies'] as List<dynamic>?)
+          ?.map((e) => TargetCurrencyInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
       id: json['id'] as String,
     );
 
@@ -8622,6 +8650,8 @@ Map<String, dynamic> _$ManufacturerUpdateInputToJson(
   writeNotNull('company', instance.company);
   writeNotNull('contactEmails', instance.contactEmails);
   writeNotNull('website', instance.website);
+  writeNotNull(
+      'currencies', instance.currencies?.map((e) => e.toJson()).toList());
   val['id'] = instance.id;
   return val;
 }

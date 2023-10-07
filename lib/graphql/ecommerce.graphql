@@ -1,0 +1,113 @@
+query getEcommerceAnalyticsStats($input: AnalyticsDashboardInput!) {
+  getEcommerceAnalyticsStats(input: $input) {
+    totalEarnings {
+      value
+      percentage
+    }
+    orders {
+      value
+      percentage
+    }
+    customers {
+      value
+      percentage
+    }
+    balance {
+      value
+      percentage
+    }
+  }
+}
+query getEcommerceRevenueChartStats($input: AnalyticsDashboardInput!) {
+  getEcommerceRevenueChartStats(input: $input) {
+    orders
+    earnings
+    refunds
+    conversions
+    chart {
+      orders
+      earnings
+      refunds
+    }
+  }
+}
+query getEcommerceSalesByLocation($input: AnalyticsDashboardInput!) {
+  getEcommerceSalesByLocation(input: $input) {
+    layers {
+      coordination {
+        lat
+        lng
+      }
+      radius
+    }
+    segments {
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      value
+    }
+  }
+}
+query getEcommerceTopCatalogueCategories($input: AnalyticsDashboardInput!) {
+  getEcommerceTopCatalogueCategories(input: $input) {
+    category {
+      id
+      name
+      rank
+      layer
+      createdAt
+      updatedAt
+      variety
+      externalId
+      hasChildren
+      description
+      portal
+      pickup
+      booking
+      delivery
+      seo {
+        urlKey
+        metaTitle
+        metaDesription
+        metaKeywords {
+          name
+          content
+        }
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    value
+  }
+}

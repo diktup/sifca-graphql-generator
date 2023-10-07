@@ -170,3 +170,16 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/product.graphql
               output: lib/dart/product.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/collaboration.graphql
+              output: lib/dart/collaboration.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/crm.graphql
+              output: lib/dart/crm.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/ecommerce.graphql
+              output: lib/dart/ecommerce.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/sales.graphql
+              output: lib/dart/sales.graphql.dart
+              

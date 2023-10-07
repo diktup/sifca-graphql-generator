@@ -527,6 +527,24 @@ type ContentTypePaginatedType {
   objects: [ContentTypeType!]!
 }
 
+type CurrencyType {
+  id: ID!
+  name: String!
+  code: String
+  symbol: String
+  flagSquare: PictureType
+  flagWide: PictureType
+  iconFlag: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type CurrencyPaginatedType {
+  count: Int
+  isLast: Boolean
+  objects: [CurrencyType!]!
+}
+
 type SocialValueType {
   name: SocialType
   value: String
@@ -635,6 +653,11 @@ type CompanyType {
   updatedAt: DateTime!
 }
 
+type TargetCurrencyType {
+  currency: CurrencyType
+  default: Boolean
+}
+
 type WholesalerType {
   id: ID!
   name: String
@@ -646,6 +669,7 @@ type WholesalerType {
   phone: IPhoneType
   contactEmails: [String!]
   fax: IPhoneType
+  currencies: [TargetCurrencyType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   company: CompanyType
@@ -742,7 +766,7 @@ type PointOfSaleType {
   specialOffers: [SpecialOfferType!]
   email: [String!]
   contactEmails: [String!]
-  currency: Currency
+  currencies: [TargetCurrencyType!]
   languages: [LanguageType!]
   phone: [String!]
   website: String
@@ -761,12 +785,6 @@ type PointOfSaleType {
   loyaltyPrograms: [POSLoyaltyType!]
 }
 
-enum Currency {
-  EUR
-  USD
-  TND
-}
-
 type ManufacturerType {
   id: ID!
   name: String
@@ -777,6 +795,7 @@ type ManufacturerType {
   email: String
   website: String
   contactEmails: [String!]
+  currencies: [TargetCurrencyType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   company: CompanyType
@@ -3026,8 +3045,75 @@ type InternalProductWithFavoriteStatusType {
   createdAt: DateTime!
   updatedAt: DateTime!
   class: [ProductClassEnum!]
+  isFavorite: Boolean
+  barcodes: [BarcodeWithPublicPriceType!]
+}
+
+type RecentlyViewedInternalProductWithFavoriteStatusType {
+  id: ID
+  name: String
+  description: String
+  descriptionList: [String!]
+  specs: [ProductSpecsType!]
+  externalId: String
+  tags: [String!]
+  sku: String
+  condition: ProductConditionEnum
+  status: ProductStatusEnum
+  picture: PictureType
+  pictures: [PictureType!]
+  media: MediaType
+  structure: ProductStructureEnum
+  rent: Boolean
+  variety: ProductVarietyEnum
+  price: String
+  priceBeforeReduction: String
+  discount: DiscountDtoType
+  product: ProductType
+  target: TargetType!
+  catalogueCategory: [CatalogueCategoryType!]
+  globalCategory: GlobalCategoryProductType
+  tax: String
+  seo: CatalogueCategorySeoType
+  brand: BrandType
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  class: [ProductClassEnum!]
   barcodes: [BarcodeType!]
   isFavorite: Boolean
+}
+
+type InternalProductWithBarcodesWithPublicPriceType {
+  id: ID
+  name: String
+  description: String
+  descriptionList: [String!]
+  specs: [ProductSpecsType!]
+  externalId: String
+  tags: [String!]
+  sku: String
+  condition: ProductConditionEnum
+  status: ProductStatusEnum
+  picture: PictureType
+  pictures: [PictureType!]
+  media: MediaType
+  structure: ProductStructureEnum
+  rent: Boolean
+  variety: ProductVarietyEnum
+  price: String
+  priceBeforeReduction: String
+  discount: DiscountDtoType
+  product: ProductType
+  target: TargetType!
+  catalogueCategory: [CatalogueCategoryType!]
+  globalCategory: GlobalCategoryProductType
+  tax: String
+  seo: CatalogueCategorySeoType
+  brand: BrandType
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  class: [ProductClassEnum!]
+  barcodes: [BarcodeWithPublicPriceType!]
 }
 
 type InternalProductWithoutClassType {
@@ -3174,10 +3260,10 @@ type InternalProductWithRatingsWithFavoriteStatusType {
   createdAt: DateTime!
   updatedAt: DateTime!
   class: [ProductClassEnum!]
-  barcodes: [BarcodeType!]
   target: TargetFilterType!
   ratings: String
   isFavorite: Boolean
+  barcodes: [BarcodeWithPublicPriceType!]
 }
 
 type BarcodePeriodCreditType {
@@ -3232,6 +3318,29 @@ type BarcodeType {
   product: ProductType
   internalProduct: InternalProductType
   productAttributesValues: InternalProductAttributesValuesType
+}
+
+type BarcodeWithPublicPriceType {
+  id: ID!
+  barcode: String!
+  name: String
+  price: String
+  priceCredit: [BarcodePeriodCreditType!]
+  discount: DiscountDtoType
+  condition: ProductConditionEnum
+  status: ProductStatusEnum
+  media: MediaType
+  catalogueCategory: [CatalogueCategoryType!]
+  maintenance: InternalProductMaintenanceType
+  supplier: CompanyType
+  pixel: PixelBarcodeType
+  priceList: [ProductPriceListType!]
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  product: ProductType
+  internalProduct: InternalProductType
+  productAttributesValues: InternalProductAttributesValuesType
+  publicPrice: String
 }
 
 type BarcodeWithStockDataType {
@@ -4598,7 +4707,7 @@ type InternalProductsByPOSCountType {
   specialOffers: [SpecialOfferType!]
   email: [String!]
   contactEmails: [String!]
-  currency: Currency
+  currencies: [TargetCurrencyType!]
   languages: [LanguageType!]
   phone: [String!]
   website: String
@@ -4624,6 +4733,7 @@ type InternalProductsByWholesalerCountType {
   phone: IPhoneType
   contactEmails: [String!]
   fax: IPhoneType
+  currencies: [TargetCurrencyType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   numberOfWholesalerProducts: Int!
@@ -4639,6 +4749,7 @@ type InternalProductsByManufacturerCountType {
   email: String
   website: String
   contactEmails: [String!]
+  currencies: [TargetCurrencyType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   numberOfManufacturerProducts: Int!
@@ -5215,6 +5326,18 @@ type InternalProductWithFavoriteStatusPaginateType {
   objects: [InternalProductWithFavoriteStatusType!]!
 }
 
+type RecentlyViewedInternalProductWithFavoriteStatusPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [RecentlyViewedInternalProductWithFavoriteStatusType!]!
+}
+
+type InternalProductWithBarcodesWithPublicPricePaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [InternalProductWithBarcodesWithPublicPriceType!]!
+}
+
 type BarcodesPaginatedWithFilterType {
   count: Int
   isLast: Boolean
@@ -5414,6 +5537,269 @@ type CorporateNotificationPaginateType {
 
 type CorporateNotificationResponse {
   success: Boolean!
+}
+
+type GoogleMapsAuditDataOrderType {
+  name: String
+  url: String
+}
+
+type GoogleMapsAuditDataReviewsType {
+  oneStar: Float
+  twoStar: Float
+  threeStar: Float
+  fourStar: Float
+  fiveStar: Float
+}
+
+type GoogleMapsAuditDataLocationType {
+  lat: Float
+  lng: Float
+}
+
+type GoogleMapsAuditDataType {
+  title: String
+  subTitle: String
+  price: String
+  menu: String
+  categoryName: String
+  address: String
+  locatedIn: String
+  neighborhood: String
+  street: String
+  city: String
+  postalCode: String
+  state: String
+  countryCode: String
+  plusCode: String
+  website: String
+  phone: String
+  temporarilyClosed: Boolean
+  location: GoogleMapsAuditDataLocationType
+  permanentlyClosed: Boolean
+  totalScore: String
+  isAdvertisement: Boolean
+  rank: Float
+  placeId: String
+  categories: [String!]
+  cid: String
+  url: String
+  searchPageUrl: String
+  searchString: String
+  scrapedAt: DateTime
+  reviewsCount: Float
+  reviewsDistribution: GoogleMapsAuditDataReviewsType
+  reviews: [String!]
+  orderBy: GoogleMapsAuditDataOrderType
+}
+
+type GoogleMapsAuditType {
+  id: ID
+  data: [GoogleMapsAuditDataType!]!
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type AnalyticsStatsInfoType {
+  value: Float!
+  percentage: Float!
+}
+
+type AnalyticsStatsType {
+  users: AnalyticsStatsInfoType
+  sessions: AnalyticsStatsInfoType
+  visitDuration: AnalyticsStatsInfoType
+  bounceRate: AnalyticsStatsInfoType
+}
+
+type AnalyticsUsersByCountryLayersType {
+  coordination: GoogleMapsAuditDataLocationType
+  radius: Float
+}
+
+type AnalyticsUsersByCountrySegmentsType {
+  duration: String
+  sessions: Float
+  views: Float
+}
+
+type AnalyticsUsersByCountryType {
+  layers: [AnalyticsUsersByCountryLayersType!]
+  segments: [AnalyticsUsersByCountrySegmentsType!]
+}
+
+type AnalyticsSessionsByCountriesType {
+  country: CountryType
+  value: Int
+  color: String
+}
+
+type AnalyticsRateCompareType {
+  rate: Float!
+  compare: Float!
+}
+
+type AnalyticsAudienceMetricsChartType {
+  last: [Float!]!
+  current: [Float!]!
+}
+
+type AnalyticsAudienceMetricsType {
+  avgSession: AnalyticsRateCompareType
+  conversion: AnalyticsRateCompareType
+  duration: AnalyticsRateCompareType
+  chart: AnalyticsAudienceMetricsChartType
+}
+
+type AnalyticsAudienceSessionsByCountryChartDataType {
+  week: String
+  value: Int
+}
+
+type AnalyticsAudienceSessionsByCountryType {
+  day: Days
+  data: [AnalyticsAudienceSessionsByCountryChartDataType!]
+}
+
+type AnalyticsUsersByDeviceDeviceType {
+  value: Int
+  compare: Float
+}
+
+type AnalyticsUsersByDeviceType {
+  desktop: AnalyticsUsersByDeviceDeviceType
+  mobile: AnalyticsUsersByDeviceDeviceType
+  tablet: AnalyticsUsersByDeviceDeviceType
+}
+
+type AnalyticsTopReferralPagesSegmentType {
+  source: String
+  color: String
+  value: Float
+}
+
+type AnalyticsTopReferralPagesType {
+  total: Int
+  compare: Float
+  segments: [AnalyticsTopReferralPagesSegmentType!]
+}
+
+type AnalyticsTopPagesType {
+  page: String
+  active: Int
+  users: Float
+}
+
+type CrmAnalyticsStatsInfoType {
+  sent: Float
+  annualProfit: Float
+  leadConversion: Float
+  dailyIncome: Float
+  annualDeals: Float
+}
+
+type CrmAnalyticsSalesForecastType {
+  goal: Float
+  pending: Float
+  revenue: Float
+}
+
+type CrmAnalyticsDealTypeType {
+  year: Float
+  class: Float
+  value: Float
+}
+
+type CrmAnalyticsBalanceOverviewChartType {
+  kind: CrmKindEnum
+  data: [Float!]
+}
+
+enum CrmKindEnum {
+  REVENUE
+  EXPENSE
+}
+
+type CrmAnalyticsBalanceOverviewType {
+  revenue: Float
+  expense: Float
+  profit: Float
+  chart: [CrmAnalyticsBalanceOverviewChartType!]
+}
+
+type SalesAnalyticsStatsType {
+  totalEarnings: AnalyticsStatsInfoType
+  orders: AnalyticsStatsInfoType
+  customers: AnalyticsStatsInfoType
+  balance: AnalyticsStatsInfoType
+}
+
+type SalesAnalyticsRevenueStatsChartType {
+  orders: [Float!]
+  earnings: [Float!]
+  refunds: [Float!]
+}
+
+type SalesAnalyticsRevenueStatsType {
+  orders: Float
+  earnings: Float
+  refunds: Float
+  conversions: Float
+  chart: SalesAnalyticsRevenueStatsChartType
+}
+
+type SalesAnalyticsSalesByCountrySegmentsType {
+  country: CountryType
+  value: Float
+}
+
+type SalesAnalyticsSalesByCountryType {
+  layers: [AnalyticsUsersByCountryLayersType!]
+  segments: [SalesAnalyticsSalesByCountrySegmentsType!]
+}
+
+type SalesAnalyticsTopCatalogueCategoriesType {
+  category: CatalogueCategoryType
+  value: Float
+}
+
+type CollaborationAnalyticsStatsType {
+  activeProjects: AnalyticsStatsInfoType
+  activeBoards: AnalyticsStatsInfoType
+  totalHours: AnalyticsStatsInfoType
+}
+
+type CollaborationAnalyticsProjectsOverviewChartType {
+  totalProjects: [Int!]
+  activeProjects: [Int!]
+  revenue: [Float!]
+}
+
+type CollaborationAnalyticsProjectsOverviewType {
+  totalProjects: Int
+  activeProjects: Int
+  revenue: Float
+  hours: Int
+  chart: CollaborationAnalyticsProjectsOverviewChartType
+}
+
+type CollaborationAnalyticsProjectsStatusChartDetailType {
+  count: Int
+  hours: Int
+}
+
+type CollaborationAnalyticsProjectsStatusChartType {
+  completed: CollaborationAnalyticsProjectsStatusChartDetailType
+  inProgress: CollaborationAnalyticsProjectsStatusChartDetailType
+  open: CollaborationAnalyticsProjectsStatusChartDetailType
+  canceled: CollaborationAnalyticsProjectsStatusChartDetailType
+}
+
+type CollaborationAnalyticsProjectsStatusType {
+  totalProjects: Int
+  newProjects: Int
+  chart: CollaborationAnalyticsProjectsStatusChartType
 }
 
 type SEOType {
@@ -7478,68 +7864,6 @@ type FacebookProfileAuditDataType {
   verified: Boolean
 }
 
-type GoogleMapsAuditDataOrderType {
-  name: String
-  url: String
-}
-
-type GoogleMapsAuditDataReviewsType {
-  oneStar: Float
-  twoStar: Float
-  threeStar: Float
-  fourStar: Float
-  fiveStar: Float
-}
-
-type GoogleMapsAuditDataLocationType {
-  lat: Float
-  lng: Float
-}
-
-type GoogleMapsAuditDataType {
-  title: String
-  subTitle: String
-  price: String
-  menu: String
-  categoryName: String
-  address: String
-  locatedIn: String
-  neighborhood: String
-  street: String
-  city: String
-  postalCode: String
-  state: String
-  countryCode: String
-  plusCode: String
-  website: String
-  phone: String
-  temporarilyClosed: Boolean
-  location: GoogleMapsAuditDataLocationType
-  permanentlyClosed: Boolean
-  totalScore: String
-  isAdvertisement: Boolean
-  rank: Float
-  placeId: String
-  categories: [String!]
-  cid: String
-  url: String
-  searchPageUrl: String
-  searchString: String
-  scrapedAt: DateTime
-  reviewsCount: Float
-  reviewsDistribution: GoogleMapsAuditDataReviewsType
-  reviews: [String!]
-  orderBy: GoogleMapsAuditDataOrderType
-}
-
-type GoogleMapsAuditType {
-  id: ID
-  data: [GoogleMapsAuditDataType!]!
-  target: TargetType!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
 type GoogleMapsAuditConfigType {
   id: ID
   searchStringsArray: [String!]
@@ -8426,7 +8750,7 @@ type POSWithWalletType {
   specialOffers: [SpecialOfferType!]
   email: [String!]
   contactEmails: [String!]
-  currency: Currency
+  currencies: [TargetCurrencyType!]
   languages: [LanguageType!]
   phone: [String!]
   website: String
@@ -8510,7 +8834,7 @@ type PointOfSaleWithFollowShipStatusType {
   specialOffers: [SpecialOfferType!]
   email: [String!]
   contactEmails: [String!]
-  currency: Currency
+  currencies: [TargetCurrencyType!]
   languages: [LanguageType!]
   phone: [String!]
   website: String
@@ -9312,7 +9636,7 @@ type Query {
   ): CloudinarySignatureType!
   getImagesFromFolder(path: String!): [CloudinaryResourceType!]!
   getGuidanceTypes: StringListType!
-  getCurrencies: StringListType!
+  getCurrencies: [CurrencyType!]!
   getApps: StringListType!
   getBrandColors: [KeyValueListType!]!
   getOrderStatuses: StringListType!
@@ -10077,7 +10401,7 @@ type Query {
     # search in out of stock products if true and in instock products if false, in both if not passed.
     outOfStock: Boolean
     pagination: PaginationInput = { page: 0, limit: 20 }
-    warehouse: ID
+    warehouses: [ID!]
   ): StockPaginateType!
   searchSimpleStocksByTarget(
     searchString: String
@@ -10092,7 +10416,7 @@ type Query {
     # search in out of stock products if true and in instock products if false, in both if not passed.
     outOfStock: Boolean
     pagination: PaginationInput = { page: 0, limit: 20 }
-    warehouse: ID
+    warehouses: [ID!]
   ): StockPaginateType!
   getWarehouses: [WarehouseType!]!
   warehouse(id: ID!): WarehouseType!
@@ -10439,7 +10763,7 @@ type Query {
   ): InternalProductPaginateType!
   getFavoriteSimpleProductByCurrentUser(
     pagination: PaginationInput = { page: 0, limit: 20 }
-  ): InternalProductPaginateType!
+  ): InternalProductWithBarcodesWithPublicPricePaginateType!
   searchFavoriteInternalProduct(
     searchString: String
     pagination: PaginationInput = { page: 0, limit: 20 }
@@ -10447,7 +10771,7 @@ type Query {
   isFavoriteInternalProduct(productId: String!): IsFavoriteInternalProductType!
   getRecentlyViewedProductsByUserPaginated(
     pagination: PaginationInput = { page: 0, limit: 20 }
-  ): InternalProductWithFavoriteStatusPaginateType!
+  ): RecentlyViewedInternalProductWithFavoriteStatusPaginateType!
   getDepartments: [DepartmentType!]!
   department(id: ID!): DepartmentType!
   getDepartmentsByTarget(target: TargetACIInput!): [DepartmentType!]!
@@ -11079,6 +11403,10 @@ type Query {
   findCountriesPagination(
     pagination: PaginationInput = { page: 0, limit: 20 }
   ): CountryPaginatedType!
+  findCurrencyById(id: ID!): CurrencyType!
+  findCurrenciesPagination(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): CurrencyPaginatedType!
   findStateById(id: ID!): StateType!
   getStates: [StateType!]!
   findStatesPagination(
@@ -11523,6 +11851,73 @@ type Query {
   getInventoryDashboardData: InventoryDashboardType!
   getBookingDashboardData(to: DateTime, from: DateTime): BookingDashboardType!
   getIntegrationSQL: u!
+  getAnalyticsStats(input: AnalyticsDashboardInput!): AnalyticsStatsType!
+  getAnalyticsUserByCountry(
+    input: AnalyticsDashboardInput!
+  ): AnalyticsUsersByCountryType!
+  getAnalyticsSessionsByCountries(
+    input: AnalyticsDashboardInput!
+  ): [AnalyticsSessionsByCountriesType!]!
+  getAnalyticsAudienceMetrics(
+    input: AnalyticsDashboardInput!
+  ): AnalyticsAudienceMetricsType!
+  getAnalyticsAudienceSessionsByCountry(
+    input: AnalyticsDashboardInput!
+  ): [AnalyticsAudienceSessionsByCountryType!]!
+  getAnalyticsUsersByDevice(
+    input: AnalyticsDashboardInput!
+  ): AnalyticsUsersByDeviceType!
+  getAnalyticsTopReferralPages(
+    input: AnalyticsDashboardInput!
+  ): AnalyticsTopReferralPagesType!
+  getAnalyticsTopPages(
+    input: AnalyticsDashboardInput!
+  ): [AnalyticsTopPagesType!]!
+  getCollaborationAnalyticsStats(
+    input: AnalyticsDashboardInput!
+  ): CollaborationAnalyticsStatsType!
+  getCollaborationProjectsOverview(
+    input: AnalyticsDashboardInput!
+  ): CollaborationAnalyticsProjectsOverviewType!
+  getCollaborationProjectsStatus(
+    input: AnalyticsDashboardInput!
+  ): CollaborationAnalyticsProjectsStatusType!
+  getCrmAnalyticsStats(
+    input: AnalyticsDashboardInput!
+  ): CrmAnalyticsStatsInfoType!
+  getCrmAnalyticsSalesForecast(
+    input: AnalyticsDashboardInput!
+  ): CrmAnalyticsSalesForecastType!
+  getCrmAnalyticsDealType(
+    input: AnalyticsDashboardInput!
+  ): [CrmAnalyticsDealTypeType!]!
+  getCrmAnalyticsBalanceOverview(
+    input: AnalyticsDashboardInput!
+  ): CrmAnalyticsBalanceOverviewType!
+  getEcommerceAnalyticsStats(
+    input: AnalyticsDashboardInput!
+  ): SalesAnalyticsStatsType!
+  getEcommerceRevenueChartStats(
+    input: AnalyticsDashboardInput!
+  ): SalesAnalyticsRevenueStatsType!
+  getEcommerceSalesByLocation(
+    input: AnalyticsDashboardInput!
+  ): SalesAnalyticsSalesByCountryType!
+  getEcommerceTopCatalogueCategories(
+    input: AnalyticsDashboardInput!
+  ): [SalesAnalyticsTopCatalogueCategoriesType!]!
+  getSalesAnalyticsStats(
+    input: AnalyticsDashboardInput!
+  ): SalesAnalyticsStatsType!
+  getSalesRevenueChartStats(
+    input: AnalyticsDashboardInput!
+  ): SalesAnalyticsRevenueStatsType!
+  getSalesByLocation(
+    input: AnalyticsDashboardInput!
+  ): SalesAnalyticsSalesByCountryType!
+  getSalesTopCatalogueCategories(
+    input: AnalyticsDashboardInput!
+  ): [SalesAnalyticsTopCatalogueCategoriesType!]!
 }
 
 input EmailTempInput {
@@ -12508,6 +12903,12 @@ input FreeBusyCalendarInput {
 
 input CalendarIdInput {
   id: String
+}
+
+input AnalyticsDashboardInput {
+  to: DateTime!
+  from: DateTime!
+  target: TargetACIInput
 }
 
 type Mutation {
@@ -13554,6 +13955,9 @@ type Mutation {
   createCountry(input: CountryInput!): CountryType!
   updateCountry(input: CountryInput!, id: ID!): CountryType!
   deleteCountry(id: ID!): DeleteResponseDtoType!
+  createCurrency(input: CurrencyInput!): CurrencyType!
+  updateCurrency(input: CurrencyInput!, id: ID!): CurrencyType!
+  deleteCurrency(id: ID!): DeleteResponseDtoType!
   createState(input: StateInput!): StateType!
   updateState(input: StateInput!, id: ID!): StateType!
   deleteState(id: ID!): DeleteResponseDtoType!
@@ -14316,6 +14720,12 @@ input ManufacturerCreateInput {
   company: String
   contactEmails: [String!]
   website: String
+  currencies: [TargetCurrencyInput!]
+}
+
+input TargetCurrencyInput {
+  currency: ID
+  default: Boolean
 }
 
 input ManufacturerUpdateInput {
@@ -14327,6 +14737,7 @@ input ManufacturerUpdateInput {
   company: String
   contactEmails: [String!]
   website: String
+  currencies: [TargetCurrencyInput!]
   id: String!
 }
 
@@ -14347,7 +14758,7 @@ input PointOfSaleInput {
   locations: [FullAddressInput!]
   email: [String!]
   contactEmails: [String!]
-  currency: Currency
+  currencies: [TargetCurrencyInput!]
   languages: [ID!]
   phone: [String!]
   website: String
@@ -14488,6 +14899,7 @@ input WholesalerCreateInput {
   contactEmails: [String!]
   phone: IPhoneInput
   fax: IPhoneInput
+  currencies: [TargetCurrencyInput!]
 }
 
 input WholesalerUpdateInput {
@@ -14501,6 +14913,7 @@ input WholesalerUpdateInput {
   contactEmails: [String!]
   phone: IPhoneInput
   fax: IPhoneInput
+  currencies: [TargetCurrencyInput!]
   id: String!
 }
 
@@ -16019,6 +16432,7 @@ enum UpdateOrderProductStatusForPOSEnum {
   OPEN
   CONFIRMED
   DELIVERED
+  READY_FOR_PICKUP
 }
 
 input ShortcutInput {
@@ -16394,6 +16808,15 @@ input CountryInput {
   name: String!
   code: String
   dialCode: String
+  flagSquare: PictureInput
+  flagWide: PictureInput
+  iconFlag: String
+}
+
+input CurrencyInput {
+  name: String!
+  code: String
+  symbol: String
   flagSquare: PictureInput
   flagWide: PictureInput
   iconFlag: String

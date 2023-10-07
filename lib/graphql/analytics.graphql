@@ -1,0 +1,132 @@
+query getAnalyticsStats($input: AnalyticsDashboardInput!) {
+  getAnalyticsStats(input: $input) {
+    users {
+      value
+      percentage
+    }
+    sessions {
+      value
+      percentage
+    }
+    visitDuration {
+      value
+      percentage
+    }
+    bounceRate {
+      value
+      percentage
+    }
+  }
+}
+query getAnalyticsUserByCountry($input: AnalyticsDashboardInput!) {
+  getAnalyticsUserByCountry(input: $input) {
+    layers {
+      coordination {
+        lat
+        lng
+      }
+      radius
+    }
+    segments {
+      duration
+      sessions
+      views
+    }
+  }
+}
+query getAnalyticsSessionsByCountries($input: AnalyticsDashboardInput!) {
+  getAnalyticsSessionsByCountries(input: $input) {
+    country {
+      id
+      name
+      code
+      dialCode
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    value
+    color
+  }
+}
+query getAnalyticsAudienceMetrics($input: AnalyticsDashboardInput!) {
+  getAnalyticsAudienceMetrics(input: $input) {
+    avgSession {
+      rate
+      compare
+    }
+    conversion {
+      rate
+      compare
+    }
+    duration {
+      rate
+      compare
+    }
+    chart {
+      last
+      current
+    }
+  }
+}
+query getAnalyticsAudienceSessionsByCountry($input: AnalyticsDashboardInput!) {
+  getAnalyticsAudienceSessionsByCountry(input: $input) {
+    day
+    data {
+      week
+      value
+    }
+  }
+}
+query getAnalyticsUsersByDevice($input: AnalyticsDashboardInput!) {
+  getAnalyticsUsersByDevice(input: $input) {
+    desktop {
+      value
+      compare
+    }
+    mobile {
+      value
+      compare
+    }
+    tablet {
+      value
+      compare
+    }
+  }
+}
+query getAnalyticsTopReferralPages($input: AnalyticsDashboardInput!) {
+  getAnalyticsTopReferralPages(input: $input) {
+    total
+    compare
+    segments {
+      source
+      color
+      value
+    }
+  }
+}
+query getAnalyticsTopPages($input: AnalyticsDashboardInput!) {
+  getAnalyticsTopPages(input: $input) {
+    page
+    active
+    users
+  }
+}

@@ -6337,6 +6337,7 @@ class ManufacturerCreateInput extends JsonSerializable with EquatableMixin {
     this.company,
     this.contactEmails,
     this.website,
+    this.currencies,
   });
 
   factory ManufacturerCreateInput.fromJson(Map<String, dynamic> json) =>
@@ -6358,6 +6359,8 @@ class ManufacturerCreateInput extends JsonSerializable with EquatableMixin {
 
   String? website;
 
+  List<TargetCurrencyInput>? currencies;
+
   @override
   List<Object?> get props => [
         name,
@@ -6367,7 +6370,8 @@ class ManufacturerCreateInput extends JsonSerializable with EquatableMixin {
         email,
         company,
         contactEmails,
-        website
+        website,
+        currencies
       ];
   @override
   Map<String, dynamic> toJson() => _$ManufacturerCreateInputToJson(this);
@@ -6505,6 +6509,27 @@ class LonLatInput extends JsonSerializable with EquatableMixin {
   List<Object?> get props => [type, coordinates];
   @override
   Map<String, dynamic> toJson() => _$LonLatInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class TargetCurrencyInput extends JsonSerializable with EquatableMixin {
+  TargetCurrencyInput({
+    this.currency,
+    this.kw$default,
+  });
+
+  factory TargetCurrencyInput.fromJson(Map<String, dynamic> json) =>
+      _$TargetCurrencyInputFromJson(json);
+
+  String? currency;
+
+  @JsonKey(name: 'default')
+  bool? kw$default;
+
+  @override
+  List<Object?> get props => [currency, kw$default];
+  @override
+  Map<String, dynamic> toJson() => _$TargetCurrencyInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -8077,6 +8102,7 @@ class ManufacturerUpdateInput extends JsonSerializable with EquatableMixin {
     this.company,
     this.contactEmails,
     this.website,
+    this.currencies,
     required this.id,
   });
 
@@ -8099,6 +8125,8 @@ class ManufacturerUpdateInput extends JsonSerializable with EquatableMixin {
 
   String? website;
 
+  List<TargetCurrencyInput>? currencies;
+
   late String id;
 
   @override
@@ -8111,6 +8139,7 @@ class ManufacturerUpdateInput extends JsonSerializable with EquatableMixin {
         company,
         contactEmails,
         website,
+        currencies,
         id
       ];
   @override

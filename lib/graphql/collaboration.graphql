@@ -1,0 +1,53 @@
+query getCollaborationAnalyticsStats($input: AnalyticsDashboardInput!) {
+  getCollaborationAnalyticsStats(input: $input) {
+    activeProjects {
+      value
+      percentage
+    }
+    activeBoards {
+      value
+      percentage
+    }
+    totalHours {
+      value
+      percentage
+    }
+  }
+}
+query getCollaborationProjectsOverview($input: AnalyticsDashboardInput!) {
+  getCollaborationProjectsOverview(input: $input) {
+    totalProjects
+    activeProjects
+    revenue
+    hours
+    chart {
+      totalProjects
+      activeProjects
+      revenue
+    }
+  }
+}
+query getCollaborationProjectsStatus($input: AnalyticsDashboardInput!) {
+  getCollaborationProjectsStatus(input: $input) {
+    totalProjects
+    newProjects
+    chart {
+      completed {
+        count
+        hours
+      }
+      inProgress {
+        count
+        hours
+      }
+      open {
+        count
+        hours
+      }
+      canceled {
+        count
+        hours
+      }
+    }
+  }
+}
