@@ -127,20 +127,4 @@ mutation deletePOSCategory($id: String!) {
   }
 }
 
-subscription listenForPOSCategoryCreated {
-  listenForPOSCategoryCreated {
-    id
-    name
-    mapPicture
-    createdAt
-    updatedAt
-    picture {
-      baseUrl
-      path
-      width
-      height
-      x
-      y
-    }
-  }
-}
+ 
