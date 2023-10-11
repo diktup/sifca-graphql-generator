@@ -82,82 +82,6 @@ const _$GenderEnumMap = {
   Gender.artemisUnknown: 'ARTEMIS_UNKNOWN',
 };
 
-CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType
-    _$CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-            CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType
-    _$CorporateRating$Query$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CorporateRating$Query$CorporateRatingType$TargetType$WholesalerTypeToJson(
-            CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType
-    _$CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-            CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CorporateRating$Query$CorporateRatingType$TargetType
-    _$CorporateRating$Query$CorporateRatingType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CorporateRating$Query$CorporateRatingType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CorporateRating$Query$CorporateRatingType$TargetTypeToJson(
-        CorporateRating$Query$CorporateRatingType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$PictureType
     _$CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -444,9 +368,6 @@ CorporateRating$Query$CorporateRatingType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..user = CorporateRating$Query$CorporateRatingType$UserType.fromJson(
               json['user'] as Map<String, dynamic>)
-          ..target =
-              CorporateRating$Query$CorporateRatingType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..product = json['product'] == null
               ? null
               : CorporateRating$Query$CorporateRatingType$InternalProductType
@@ -472,7 +393,6 @@ Map<String, dynamic> _$CorporateRating$Query$CorporateRatingTypeToJson(
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['user'] = instance.user.toJson();
-  val['target'] = instance.target.toJson();
   writeNotNull('product', instance.product?.toJson());
   val['reviewType'] = instance.reviewType.toJson();
   return val;
@@ -557,82 +477,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType
-    _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType
-    _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType
-    _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAllCorporateRatings$Query$CorporateRatingType$TargetType
-    _$GetAllCorporateRatings$Query$CorporateRatingType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAllCorporateRatings$Query$CorporateRatingType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetAllCorporateRatings$Query$CorporateRatingType$TargetTypeToJson(
-        GetAllCorporateRatings$Query$CorporateRatingType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -903,8 +747,6 @@ GetAllCorporateRatings$Query$CorporateRatingType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..user = GetAllCorporateRatings$Query$CorporateRatingType$UserType
               .fromJson(json['user'] as Map<String, dynamic>)
-          ..target = GetAllCorporateRatings$Query$CorporateRatingType$TargetType
-              .fromJson(json['target'] as Map<String, dynamic>)
           ..product = json['product'] == null
               ? null
               : GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType
@@ -930,7 +772,6 @@ Map<String, dynamic> _$GetAllCorporateRatings$Query$CorporateRatingTypeToJson(
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['user'] = instance.user.toJson();
-  val['target'] = instance.target.toJson();
   writeNotNull('product', instance.product?.toJson());
   val['reviewType'] = instance.reviewType.toJson();
   return val;
@@ -1020,83 +861,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-    _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-    _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-    _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-    _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeToJson(
-        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -1368,9 +1132,6 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
           ..user =
               GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
                   .fromJson(json['user'] as Map<String, dynamic>)
-          ..target =
-              GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..product = json['product'] == null
               ? null
               : GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
@@ -1398,7 +1159,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['user'] = instance.user.toJson();
-  val['target'] = instance.target.toJson();
   writeNotNull('product', instance.product?.toJson());
   val['reviewType'] = instance.reviewType.toJson();
   return val;
@@ -1561,83 +1321,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-    _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-    _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-    _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-    _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeToJson(
-        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -1909,9 +1592,6 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType
           ..user =
               GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
                   .fromJson(json['user'] as Map<String, dynamic>)
-          ..target =
-              GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..product = json['product'] == null
               ? null
               : GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
@@ -1939,7 +1619,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['user'] = instance.user.toJson();
-  val['target'] = instance.target.toJson();
   writeNotNull('product', instance.product?.toJson());
   val['reviewType'] = instance.reviewType.toJson();
   return val;
@@ -2055,83 +1734,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType
-    _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType
-    _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType
-    _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType
-    _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetTypeToJson(
-        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -2403,9 +2005,6 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType
           ..user =
               GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
                   .fromJson(json['user'] as Map<String, dynamic>)
-          ..target =
-              GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..product = json['product'] == null
               ? null
               : GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType
@@ -2433,7 +2032,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['user'] = instance.user.toJson();
-  val['target'] = instance.target.toJson();
   writeNotNull('product', instance.product?.toJson());
   val['reviewType'] = instance.reviewType.toJson();
   return val;
@@ -2523,83 +2121,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-    _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-    _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-    _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-    _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeToJson(
-        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -2871,9 +2392,6 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
           ..user =
               GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
                   .fromJson(json['user'] as Map<String, dynamic>)
-          ..target =
-              GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..product = json['product'] == null
               ? null
               : GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
@@ -2901,7 +2419,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['user'] = instance.user.toJson();
-  val['target'] = instance.target.toJson();
   writeNotNull('product', instance.product?.toJson());
   val['reviewType'] = instance.reviewType.toJson();
   return val;
@@ -3020,83 +2537,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType
-    _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType
-    _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType
-    _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType
-    _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetTypeToJson(
-        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -3368,9 +2808,6 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
           ..user =
               GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType
                   .fromJson(json['user'] as Map<String, dynamic>)
-          ..target =
-              GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..product = json['product'] == null
               ? null
               : GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType
@@ -3398,7 +2835,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['user'] = instance.user.toJson();
-  val['target'] = instance.target.toJson();
   writeNotNull('product', instance.product?.toJson());
   val['reviewType'] = instance.reviewType.toJson();
   return val;
@@ -3591,83 +3027,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType
-    _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType
-    _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType
-    _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateCorporateRating$Mutation$CorporateRatingType$TargetType
-    _$CreateCorporateRating$Mutation$CorporateRatingType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateCorporateRating$Mutation$CorporateRatingType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CreateCorporateRating$Mutation$CorporateRatingType$TargetTypeToJson(
-        CreateCorporateRating$Mutation$CorporateRatingType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -3938,9 +3297,6 @@ CreateCorporateRating$Mutation$CorporateRatingType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..user = CreateCorporateRating$Mutation$CorporateRatingType$UserType
               .fromJson(json['user'] as Map<String, dynamic>)
-          ..target =
-              CreateCorporateRating$Mutation$CorporateRatingType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..product = json['product'] == null
               ? null
               : CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType
@@ -3966,7 +3322,6 @@ Map<String, dynamic> _$CreateCorporateRating$Mutation$CorporateRatingTypeToJson(
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['user'] = instance.user.toJson();
-  val['target'] = instance.target.toJson();
   writeNotNull('product', instance.product?.toJson());
   val['reviewType'] = instance.reviewType.toJson();
   return val;
@@ -4081,83 +3436,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType
-    _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType
-    _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType
-    _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateCorporateRating$Mutation$CorporateRatingType$TargetType
-    _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateCorporateRating$Mutation$CorporateRatingType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetTypeToJson(
-        UpdateCorporateRating$Mutation$CorporateRatingType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -4428,9 +3706,6 @@ UpdateCorporateRating$Mutation$CorporateRatingType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..user = UpdateCorporateRating$Mutation$CorporateRatingType$UserType
               .fromJson(json['user'] as Map<String, dynamic>)
-          ..target =
-              UpdateCorporateRating$Mutation$CorporateRatingType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..product = json['product'] == null
               ? null
               : UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType
@@ -4456,7 +3731,6 @@ Map<String, dynamic> _$UpdateCorporateRating$Mutation$CorporateRatingTypeToJson(
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['user'] = instance.user.toJson();
-  val['target'] = instance.target.toJson();
   writeNotNull('product', instance.product?.toJson());
   val['reviewType'] = instance.reviewType.toJson();
   return val;

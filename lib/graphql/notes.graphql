@@ -18,31 +18,11 @@ query getNotes {
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }
@@ -67,31 +47,11 @@ query getNote($id: ID!) {
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }
@@ -116,31 +76,11 @@ query getNotesByTarget($target: TargetACIInput!) {
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }
@@ -165,31 +105,11 @@ query findNotesByLabelAndTarget($target: TargetACIInput!, $label: ID!) {
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }
@@ -231,31 +151,11 @@ mutation createNote(
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }
@@ -298,31 +198,11 @@ mutation updateNote(
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }

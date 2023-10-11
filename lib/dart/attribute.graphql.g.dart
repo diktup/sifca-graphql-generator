@@ -28,83 +28,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-    _$GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleTypeToJson(
-            GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-    _$GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$WholesalerTypeToJson(
-            GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-    _$GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerTypeToJson(
-            GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType
-    _$GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetTypeToJson(
-        GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetAttributesPagination$Query$AttributePaginateType$AttributeType
     _$GetAttributesPagination$Query$AttributePaginateType$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -122,11 +45,7 @@ GetAttributesPagination$Query$AttributePaginateType$AttributeType
           ..pixel = json['pixel'] == null
               ? null
               : GetAttributesPagination$Query$AttributePaginateType$AttributeType$AttributePixelType
-                  .fromJson(json['pixel'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : GetAttributesPagination$Query$AttributePaginateType$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$GetAttributesPagination$Query$AttributePaginateType$AttributeTypeToJson(
@@ -150,7 +69,6 @@ Map<String, dynamic>
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 
@@ -246,83 +164,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-    _$GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleTypeToJson(
-            GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-    _$GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$WholesalerTypeToJson(
-            GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-    _$GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerTypeToJson(
-            GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType
-    _$GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetTypeToJson(
-        GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType
     _$GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -340,11 +181,7 @@ GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType
           ..pixel = json['pixel'] == null
               ? null
               : GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$AttributePixelType
-                  .fromJson(json['pixel'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$GetAttributesTargetPaginated$Query$AttributePaginateType$AttributeTypeToJson(
@@ -368,7 +205,6 @@ Map<String, dynamic>
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 
@@ -460,81 +296,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetAttributes$Query$AttributeType$TargetType$PointOfSaleType
-    _$GetAttributes$Query$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributes$Query$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributes$Query$AttributeType$TargetType$PointOfSaleTypeToJson(
-            GetAttributes$Query$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributes$Query$AttributeType$TargetType$WholesalerType
-    _$GetAttributes$Query$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributes$Query$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributes$Query$AttributeType$TargetType$WholesalerTypeToJson(
-            GetAttributes$Query$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributes$Query$AttributeType$TargetType$ManufacturerType
-    _$GetAttributes$Query$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributes$Query$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributes$Query$AttributeType$TargetType$ManufacturerTypeToJson(
-            GetAttributes$Query$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributes$Query$AttributeType$TargetType
-    _$GetAttributes$Query$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributes$Query$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetAttributes$Query$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetAttributes$Query$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetAttributes$Query$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$GetAttributes$Query$AttributeType$TargetTypeToJson(
-    GetAttributes$Query$AttributeType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetAttributes$Query$AttributeType _$GetAttributes$Query$AttributeTypeFromJson(
         Map<String, dynamic> json) =>
     GetAttributes$Query$AttributeType()
@@ -551,11 +312,7 @@ GetAttributes$Query$AttributeType _$GetAttributes$Query$AttributeTypeFromJson(
       ..pixel = json['pixel'] == null
           ? null
           : GetAttributes$Query$AttributeType$AttributePixelType.fromJson(
-              json['pixel'] as Map<String, dynamic>)
-      ..target = json['target'] == null
-          ? null
-          : GetAttributes$Query$AttributeType$TargetType.fromJson(
-              json['target'] as Map<String, dynamic>);
+              json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetAttributes$Query$AttributeTypeToJson(
     GetAttributes$Query$AttributeType instance) {
@@ -577,7 +334,6 @@ Map<String, dynamic> _$GetAttributes$Query$AttributeTypeToJson(
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 
@@ -615,82 +371,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetAttributesByTarget$Query$AttributeType$TargetType$PointOfSaleType
-    _$GetAttributesByTarget$Query$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesByTarget$Query$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributesByTarget$Query$AttributeType$TargetType$PointOfSaleTypeToJson(
-            GetAttributesByTarget$Query$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributesByTarget$Query$AttributeType$TargetType$WholesalerType
-    _$GetAttributesByTarget$Query$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesByTarget$Query$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributesByTarget$Query$AttributeType$TargetType$WholesalerTypeToJson(
-            GetAttributesByTarget$Query$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributesByTarget$Query$AttributeType$TargetType$ManufacturerType
-    _$GetAttributesByTarget$Query$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesByTarget$Query$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetAttributesByTarget$Query$AttributeType$TargetType$ManufacturerTypeToJson(
-            GetAttributesByTarget$Query$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetAttributesByTarget$Query$AttributeType$TargetType
-    _$GetAttributesByTarget$Query$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetAttributesByTarget$Query$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetAttributesByTarget$Query$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetAttributesByTarget$Query$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetAttributesByTarget$Query$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetAttributesByTarget$Query$AttributeType$TargetTypeToJson(
-        GetAttributesByTarget$Query$AttributeType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetAttributesByTarget$Query$AttributeType
     _$GetAttributesByTarget$Query$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -708,11 +388,7 @@ GetAttributesByTarget$Query$AttributeType
           ..pixel = json['pixel'] == null
               ? null
               : GetAttributesByTarget$Query$AttributeType$AttributePixelType
-                  .fromJson(json['pixel'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : GetAttributesByTarget$Query$AttributeType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>);
+                  .fromJson(json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetAttributesByTarget$Query$AttributeTypeToJson(
     GetAttributesByTarget$Query$AttributeType instance) {
@@ -734,7 +410,6 @@ Map<String, dynamic> _$GetAttributesByTarget$Query$AttributeTypeToJson(
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 
@@ -773,78 +448,6 @@ Map<String, dynamic> _$Attribute$Query$AttributeType$AttributePixelTypeToJson(
   return val;
 }
 
-Attribute$Query$AttributeType$TargetType$PointOfSaleType
-    _$Attribute$Query$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        Attribute$Query$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String,
-    dynamic> _$Attribute$Query$AttributeType$TargetType$PointOfSaleTypeToJson(
-        Attribute$Query$AttributeType$TargetType$PointOfSaleType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-Attribute$Query$AttributeType$TargetType$WholesalerType
-    _$Attribute$Query$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Attribute$Query$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Attribute$Query$AttributeType$TargetType$WholesalerTypeToJson(
-            Attribute$Query$AttributeType$TargetType$WholesalerType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Attribute$Query$AttributeType$TargetType$ManufacturerType
-    _$Attribute$Query$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Attribute$Query$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String,
-    dynamic> _$Attribute$Query$AttributeType$TargetType$ManufacturerTypeToJson(
-        Attribute$Query$AttributeType$TargetType$ManufacturerType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-Attribute$Query$AttributeType$TargetType
-    _$Attribute$Query$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        Attribute$Query$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : Attribute$Query$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : Attribute$Query$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : Attribute$Query$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$Attribute$Query$AttributeType$TargetTypeToJson(
-    Attribute$Query$AttributeType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 Attribute$Query$AttributeType _$Attribute$Query$AttributeTypeFromJson(
         Map<String, dynamic> json) =>
     Attribute$Query$AttributeType()
@@ -861,11 +464,7 @@ Attribute$Query$AttributeType _$Attribute$Query$AttributeTypeFromJson(
       ..pixel = json['pixel'] == null
           ? null
           : Attribute$Query$AttributeType$AttributePixelType.fromJson(
-              json['pixel'] as Map<String, dynamic>)
-      ..target = json['target'] == null
-          ? null
-          : Attribute$Query$AttributeType$TargetType.fromJson(
-              json['target'] as Map<String, dynamic>);
+              json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Attribute$Query$AttributeTypeToJson(
     Attribute$Query$AttributeType instance) {
@@ -887,7 +486,6 @@ Map<String, dynamic> _$Attribute$Query$AttributeTypeToJson(
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 
@@ -923,83 +521,6 @@ Map<String, dynamic>
   return val;
 }
 
-SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-    _$SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleTypeToJson(
-            SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-    _$SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$WholesalerTypeToJson(
-            SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-    _$SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerTypeToJson(
-            SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType
-    _$SearchAttribute$Query$AttributePaginateType$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$SearchAttribute$Query$AttributePaginateType$AttributeType$TargetTypeToJson(
-        SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 SearchAttribute$Query$AttributePaginateType$AttributeType
     _$SearchAttribute$Query$AttributePaginateType$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -1017,11 +538,7 @@ SearchAttribute$Query$AttributePaginateType$AttributeType
           ..pixel = json['pixel'] == null
               ? null
               : SearchAttribute$Query$AttributePaginateType$AttributeType$AttributePixelType
-                  .fromJson(json['pixel'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : SearchAttribute$Query$AttributePaginateType$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$SearchAttribute$Query$AttributePaginateType$AttributeTypeToJson(
@@ -1044,7 +561,6 @@ Map<String, dynamic>
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 
@@ -1110,83 +626,6 @@ Map<String, dynamic>
   return val;
 }
 
-SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-    _$SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleTypeToJson(
-            SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-    _$SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$WholesalerTypeToJson(
-            SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-    _$SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerTypeToJson(
-            SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType
-    _$SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetTypeToJson(
-        SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 SearchAttributeByTarget$Query$AttributePaginateType$AttributeType
     _$SearchAttributeByTarget$Query$AttributePaginateType$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -1204,11 +643,7 @@ SearchAttributeByTarget$Query$AttributePaginateType$AttributeType
           ..pixel = json['pixel'] == null
               ? null
               : SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$AttributePixelType
-                  .fromJson(json['pixel'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : SearchAttributeByTarget$Query$AttributePaginateType$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$SearchAttributeByTarget$Query$AttributePaginateType$AttributeTypeToJson(
@@ -1232,7 +667,6 @@ Map<String, dynamic>
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 
@@ -1300,83 +734,6 @@ Map<String, dynamic>
   return val;
 }
 
-FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$PointOfSaleType
-    _$FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$PointOfSaleTypeToJson(
-            FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$WholesalerType
-    _$FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$WholesalerTypeToJson(
-            FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$ManufacturerType
-    _$FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$ManufacturerTypeToJson(
-            FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType
-    _$FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetTypeToJson(
-        FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 FindAttributeByExternalIdAndTarget$Query$AttributeType
     _$FindAttributeByExternalIdAndTarget$Query$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -1394,11 +751,7 @@ FindAttributeByExternalIdAndTarget$Query$AttributeType
           ..pixel = json['pixel'] == null
               ? null
               : FindAttributeByExternalIdAndTarget$Query$AttributeType$AttributePixelType
-                  .fromJson(json['pixel'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : FindAttributeByExternalIdAndTarget$Query$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$FindAttributeByExternalIdAndTarget$Query$AttributeTypeToJson(
@@ -1421,7 +774,6 @@ Map<String, dynamic>
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 
@@ -1462,81 +814,6 @@ Map<String, dynamic>
   return val;
 }
 
-SyncOneAttribute$Mutation$AttributeType$TargetType$PointOfSaleType
-    _$SyncOneAttribute$Mutation$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        SyncOneAttribute$Mutation$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SyncOneAttribute$Mutation$AttributeType$TargetType$PointOfSaleTypeToJson(
-            SyncOneAttribute$Mutation$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SyncOneAttribute$Mutation$AttributeType$TargetType$WholesalerType
-    _$SyncOneAttribute$Mutation$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        SyncOneAttribute$Mutation$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SyncOneAttribute$Mutation$AttributeType$TargetType$WholesalerTypeToJson(
-            SyncOneAttribute$Mutation$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SyncOneAttribute$Mutation$AttributeType$TargetType$ManufacturerType
-    _$SyncOneAttribute$Mutation$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        SyncOneAttribute$Mutation$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SyncOneAttribute$Mutation$AttributeType$TargetType$ManufacturerTypeToJson(
-            SyncOneAttribute$Mutation$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SyncOneAttribute$Mutation$AttributeType$TargetType
-    _$SyncOneAttribute$Mutation$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        SyncOneAttribute$Mutation$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : SyncOneAttribute$Mutation$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : SyncOneAttribute$Mutation$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : SyncOneAttribute$Mutation$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$SyncOneAttribute$Mutation$AttributeType$TargetTypeToJson(
-    SyncOneAttribute$Mutation$AttributeType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 SyncOneAttribute$Mutation$AttributeType
     _$SyncOneAttribute$Mutation$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -1554,11 +831,7 @@ SyncOneAttribute$Mutation$AttributeType
           ..pixel = json['pixel'] == null
               ? null
               : SyncOneAttribute$Mutation$AttributeType$AttributePixelType
-                  .fromJson(json['pixel'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : SyncOneAttribute$Mutation$AttributeType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>);
+                  .fromJson(json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$SyncOneAttribute$Mutation$AttributeTypeToJson(
     SyncOneAttribute$Mutation$AttributeType instance) {
@@ -1580,7 +853,6 @@ Map<String, dynamic> _$SyncOneAttribute$Mutation$AttributeTypeToJson(
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 
@@ -1673,81 +945,6 @@ Map<String, dynamic>
   return val;
 }
 
-CreateAttribute$Mutation$AttributeType$TargetType$PointOfSaleType
-    _$CreateAttribute$Mutation$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateAttribute$Mutation$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateAttribute$Mutation$AttributeType$TargetType$PointOfSaleTypeToJson(
-            CreateAttribute$Mutation$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateAttribute$Mutation$AttributeType$TargetType$WholesalerType
-    _$CreateAttribute$Mutation$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateAttribute$Mutation$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateAttribute$Mutation$AttributeType$TargetType$WholesalerTypeToJson(
-            CreateAttribute$Mutation$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateAttribute$Mutation$AttributeType$TargetType$ManufacturerType
-    _$CreateAttribute$Mutation$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateAttribute$Mutation$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateAttribute$Mutation$AttributeType$TargetType$ManufacturerTypeToJson(
-            CreateAttribute$Mutation$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateAttribute$Mutation$AttributeType$TargetType
-    _$CreateAttribute$Mutation$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateAttribute$Mutation$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateAttribute$Mutation$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateAttribute$Mutation$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateAttribute$Mutation$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$CreateAttribute$Mutation$AttributeType$TargetTypeToJson(
-    CreateAttribute$Mutation$AttributeType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CreateAttribute$Mutation$AttributeType
     _$CreateAttribute$Mutation$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -1765,11 +962,7 @@ CreateAttribute$Mutation$AttributeType
           ..pixel = json['pixel'] == null
               ? null
               : CreateAttribute$Mutation$AttributeType$AttributePixelType
-                  .fromJson(json['pixel'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : CreateAttribute$Mutation$AttributeType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>);
+                  .fromJson(json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateAttribute$Mutation$AttributeTypeToJson(
     CreateAttribute$Mutation$AttributeType instance) {
@@ -1791,7 +984,6 @@ Map<String, dynamic> _$CreateAttribute$Mutation$AttributeTypeToJson(
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 
@@ -1828,81 +1020,6 @@ Map<String, dynamic>
   return val;
 }
 
-UpdateAttribute$Mutation$AttributeType$TargetType$PointOfSaleType
-    _$UpdateAttribute$Mutation$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateAttribute$Mutation$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateAttribute$Mutation$AttributeType$TargetType$PointOfSaleTypeToJson(
-            UpdateAttribute$Mutation$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateAttribute$Mutation$AttributeType$TargetType$WholesalerType
-    _$UpdateAttribute$Mutation$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateAttribute$Mutation$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateAttribute$Mutation$AttributeType$TargetType$WholesalerTypeToJson(
-            UpdateAttribute$Mutation$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateAttribute$Mutation$AttributeType$TargetType$ManufacturerType
-    _$UpdateAttribute$Mutation$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateAttribute$Mutation$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateAttribute$Mutation$AttributeType$TargetType$ManufacturerTypeToJson(
-            UpdateAttribute$Mutation$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateAttribute$Mutation$AttributeType$TargetType
-    _$UpdateAttribute$Mutation$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateAttribute$Mutation$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateAttribute$Mutation$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateAttribute$Mutation$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateAttribute$Mutation$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$UpdateAttribute$Mutation$AttributeType$TargetTypeToJson(
-    UpdateAttribute$Mutation$AttributeType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 UpdateAttribute$Mutation$AttributeType
     _$UpdateAttribute$Mutation$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -1920,11 +1037,7 @@ UpdateAttribute$Mutation$AttributeType
           ..pixel = json['pixel'] == null
               ? null
               : UpdateAttribute$Mutation$AttributeType$AttributePixelType
-                  .fromJson(json['pixel'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : UpdateAttribute$Mutation$AttributeType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>);
+                  .fromJson(json['pixel'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateAttribute$Mutation$AttributeTypeToJson(
     UpdateAttribute$Mutation$AttributeType instance) {
@@ -1946,7 +1059,6 @@ Map<String, dynamic> _$UpdateAttribute$Mutation$AttributeTypeToJson(
   writeNotNull('isRequired', instance.isRequired);
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   return val;
 }
 

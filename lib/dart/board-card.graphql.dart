@@ -55,90 +55,6 @@ class GetBoardCards$Query$BoardCardType$BoardCardTasksType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleType();
-
-  factory GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerType();
-
-  factory GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerType();
-
-  factory GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCards$Query$BoardCardType$LabelType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCards$Query$BoardCardType$LabelType$TargetType();
-
-  factory GetBoardCards$Query$BoardCardType$LabelType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCards$Query$BoardCardType$LabelType$TargetTypeFromJson(json);
-
-  GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleType? pos;
-
-  GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCards$Query$BoardCardType$LabelType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetBoardCards$Query$BoardCardType$LabelType extends JsonSerializable
     with EquatableMixin {
   GetBoardCards$Query$BoardCardType$LabelType();
@@ -158,15 +74,13 @@ class GetBoardCards$Query$BoardCardType$LabelType extends JsonSerializable
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
-  late GetBoardCards$Query$BoardCardType$LabelType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, target, createdAt, updatedAt];
+      [id, name, icon, color, category, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardCards$Query$BoardCardType$LabelTypeToJson(this);
@@ -767,93 +681,6 @@ class GetBoardCards$Query$BoardCardType$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType();
-
-  factory GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType();
-
-  factory GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType();
-
-  factory GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType();
-
-  factory GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-          json);
-
-  GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType?
-      pos;
-
-  GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetBoardCards$Query$BoardCardType$BoardListType$BoardType
     extends JsonSerializable with EquatableMixin {
   GetBoardCards$Query$BoardCardType$BoardListType$BoardType();
@@ -876,25 +703,13 @@ class GetBoardCards$Query$BoardCardType$BoardListType$BoardType
   List<GetBoardCards$Query$BoardCardType$BoardListType$BoardType$UserType>?
       members;
 
-  late GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType
-      target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [
-        id,
-        icon,
-        title,
-        description,
-        category,
-        members,
-        target,
-        createdAt,
-        updatedAt
-      ];
+  List<Object?> get props =>
+      [id, icon, title, description, category, members, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardCards$Query$BoardCardType$BoardListType$BoardTypeToJson(this);
@@ -2435,93 +2250,6 @@ class GetBoardCardsByBoardList$Query$BoardCardType$BoardCardTasksType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleType();
-
-  factory GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerType();
-
-  factory GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerType();
-
-  factory GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType();
-
-  factory GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetTypeFromJson(
-          json);
-
-  GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleType?
-      pos;
-
-  GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetBoardCardsByBoardList$Query$BoardCardType$LabelType
     extends JsonSerializable with EquatableMixin {
   GetBoardCardsByBoardList$Query$BoardCardType$LabelType();
@@ -2541,15 +2269,13 @@ class GetBoardCardsByBoardList$Query$BoardCardType$LabelType
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
-  late GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, target, createdAt, updatedAt];
+      [id, name, icon, color, category, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardCardsByBoardList$Query$BoardCardType$LabelTypeToJson(this);
@@ -3160,93 +2886,6 @@ class GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$UserT
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType();
-
-  factory GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType();
-
-  factory GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType();
-
-  factory GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType();
-
-  factory GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-          json);
-
-  GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType?
-      pos;
-
-  GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType
     extends JsonSerializable with EquatableMixin {
   GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType();
@@ -3270,25 +2909,13 @@ class GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType
   List<GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$UserType>?
       members;
 
-  late GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType
-      target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [
-        id,
-        icon,
-        title,
-        description,
-        category,
-        members,
-        target,
-        createdAt,
-        updatedAt
-      ];
+  List<Object?> get props =>
+      [id, icon, title, description, category, members, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardTypeToJson(
@@ -4844,90 +4471,6 @@ class GetBoardCard$Query$BoardCardType$BoardCardTasksType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleType();
-
-  factory GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerType();
-
-  factory GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerType();
-
-  factory GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCard$Query$BoardCardType$LabelType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCard$Query$BoardCardType$LabelType$TargetType();
-
-  factory GetBoardCard$Query$BoardCardType$LabelType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCard$Query$BoardCardType$LabelType$TargetTypeFromJson(json);
-
-  GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleType? pos;
-
-  GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCard$Query$BoardCardType$LabelType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetBoardCard$Query$BoardCardType$LabelType extends JsonSerializable
     with EquatableMixin {
   GetBoardCard$Query$BoardCardType$LabelType();
@@ -4947,15 +4490,13 @@ class GetBoardCard$Query$BoardCardType$LabelType extends JsonSerializable
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
-  late GetBoardCard$Query$BoardCardType$LabelType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, target, createdAt, updatedAt];
+      [id, name, icon, color, category, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardCard$Query$BoardCardType$LabelTypeToJson(this);
@@ -5554,93 +5095,6 @@ class GetBoardCard$Query$BoardCardType$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType();
-
-  factory GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType();
-
-  factory GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType();
-
-  factory GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType();
-
-  factory GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-          json);
-
-  GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType?
-      pos;
-
-  GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetBoardCard$Query$BoardCardType$BoardListType$BoardType
     extends JsonSerializable with EquatableMixin {
   GetBoardCard$Query$BoardCardType$BoardListType$BoardType();
@@ -5663,25 +5117,13 @@ class GetBoardCard$Query$BoardCardType$BoardListType$BoardType
   List<GetBoardCard$Query$BoardCardType$BoardListType$BoardType$UserType>?
       members;
 
-  late GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType
-      target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [
-        id,
-        icon,
-        title,
-        description,
-        category,
-        members,
-        target,
-        createdAt,
-        updatedAt
-      ];
+  List<Object?> get props =>
+      [id, icon, title, description, category, members, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardCard$Query$BoardCardType$BoardListType$BoardTypeToJson(this);
@@ -7223,93 +6665,6 @@ class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardC
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleType();
-
-  factory GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerType();
-
-  factory GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerType();
-
-  factory GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType();
-
-  factory GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetTypeFromJson(
-          json);
-
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleType?
-      pos;
-
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType
     extends JsonSerializable with EquatableMixin {
   GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType();
@@ -7330,16 +6685,13 @@ class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardC
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
-  late GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType
-      target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, target, createdAt, updatedAt];
+      [id, name, icon, color, category, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelTypeToJson(
@@ -7958,93 +7310,6 @@ class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardC
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType();
-
-  factory GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType();
-
-  factory GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType();
-
-  factory GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType();
-
-  factory GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-          json);
-
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType?
-      pos;
-
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType
     extends JsonSerializable with EquatableMixin {
   GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType();
@@ -8068,25 +7333,13 @@ class GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardC
   List<GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$UserType>?
       members;
 
-  late GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType
-      target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [
-        id,
-        icon,
-        title,
-        description,
-        category,
-        members,
-        target,
-        createdAt,
-        updatedAt
-      ];
+  List<Object?> get props =>
+      [id, icon, title, description, category, members, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardTypeToJson(
@@ -9756,92 +9009,6 @@ class CreateBoardCard$Mutation$BoardCardType$BoardCardTasksType
 }
 
 @JsonSerializable(explicitToJson: true)
-class CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType();
-
-  factory CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType();
-
-  factory CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType();
-
-  factory CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType();
-
-  factory CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetTypeFromJson(
-          json);
-
-  CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType?
-      pos;
-
-  CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType?
-      wholesaler;
-
-  CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CreateBoardCard$Mutation$BoardCardType$LabelType extends JsonSerializable
     with EquatableMixin {
   CreateBoardCard$Mutation$BoardCardType$LabelType();
@@ -9861,15 +9028,13 @@ class CreateBoardCard$Mutation$BoardCardType$LabelType extends JsonSerializable
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
-  late CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, target, createdAt, updatedAt];
+      [id, name, icon, color, category, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBoardCard$Mutation$BoardCardType$LabelTypeToJson(this);
@@ -10479,93 +9644,6 @@ class CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
-class CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType();
-
-  factory CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType();
-
-  factory CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType();
-
-  factory CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType();
-
-  factory CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-          json);
-
-  CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType?
-      pos;
-
-  CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType?
-      wholesaler;
-
-  CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType
     extends JsonSerializable with EquatableMixin {
   CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType();
@@ -10589,25 +9667,13 @@ class CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType
   List<CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType>?
       members;
 
-  late CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-      target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [
-        id,
-        icon,
-        title,
-        description,
-        category,
-        members,
-        target,
-        createdAt,
-        updatedAt
-      ];
+  List<Object?> get props =>
+      [id, icon, title, description, category, members, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardTypeToJson(
@@ -12237,93 +11303,6 @@ class ReorderBoardCards$Mutation$BoardCardType$BoardCardTasksType
 }
 
 @JsonSerializable(explicitToJson: true)
-class ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType();
-
-  factory ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerType();
-
-  factory ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType();
-
-  factory ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType();
-
-  factory ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetTypeFromJson(
-          json);
-
-  ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType?
-      pos;
-
-  ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerType?
-      wholesaler;
-
-  ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class ReorderBoardCards$Mutation$BoardCardType$LabelType
     extends JsonSerializable with EquatableMixin {
   ReorderBoardCards$Mutation$BoardCardType$LabelType();
@@ -12343,15 +11322,13 @@ class ReorderBoardCards$Mutation$BoardCardType$LabelType
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
-  late ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, target, createdAt, updatedAt];
+      [id, name, icon, color, category, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderBoardCards$Mutation$BoardCardType$LabelTypeToJson(this);
@@ -12962,93 +11939,6 @@ class ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
-class ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType();
-
-  factory ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType();
-
-  factory ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType();
-
-  factory ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType();
-
-  factory ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-          json);
-
-  ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType?
-      pos;
-
-  ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType?
-      wholesaler;
-
-  ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType
     extends JsonSerializable with EquatableMixin {
   ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType();
@@ -13072,25 +11962,13 @@ class ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType
   List<ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$UserType>?
       members;
 
-  late ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-      target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [
-        id,
-        icon,
-        title,
-        description,
-        category,
-        members,
-        target,
-        createdAt,
-        updatedAt
-      ];
+  List<Object?> get props =>
+      [id, icon, title, description, category, members, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardTypeToJson(
@@ -14640,92 +13518,6 @@ class UpdateBoardCard$Mutation$BoardCardType$BoardCardTasksType
 }
 
 @JsonSerializable(explicitToJson: true)
-class UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType();
-
-  factory UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType();
-
-  factory UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType();
-
-  factory UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType();
-
-  factory UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetTypeFromJson(
-          json);
-
-  UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType?
-      pos;
-
-  UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType?
-      wholesaler;
-
-  UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class UpdateBoardCard$Mutation$BoardCardType$LabelType extends JsonSerializable
     with EquatableMixin {
   UpdateBoardCard$Mutation$BoardCardType$LabelType();
@@ -14745,15 +13537,13 @@ class UpdateBoardCard$Mutation$BoardCardType$LabelType extends JsonSerializable
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
-  late UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, target, createdAt, updatedAt];
+      [id, name, icon, color, category, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBoardCard$Mutation$BoardCardType$LabelTypeToJson(this);
@@ -15363,93 +14153,6 @@ class UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
-class UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType();
-
-  factory UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType();
-
-  factory UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType();
-
-  factory UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType();
-
-  factory UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-          json);
-
-  UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType?
-      pos;
-
-  UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType?
-      wholesaler;
-
-  UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType
     extends JsonSerializable with EquatableMixin {
   UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType();
@@ -15473,25 +14176,13 @@ class UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType
   List<UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType>?
       members;
 
-  late UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-      target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [
-        id,
-        icon,
-        title,
-        description,
-        category,
-        members,
-        target,
-        createdAt,
-        updatedAt
-      ];
+  List<Object?> get props =>
+      [id, icon, title, description, category, members, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardTypeToJson(
@@ -17323,59 +16014,6 @@ final GET_BOARD_CARDS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -19065,59 +17703,6 @@ final GET_BOARD_CARDS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
-                        ]),
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'target'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'pos'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'wholesaler'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'manufacturer'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
                         ]),
                       ),
                     ]),
@@ -22008,59 +20593,6 @@ final GET_BOARD_CARDS_BY_BOARD_LIST_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -23750,59 +22282,6 @@ final GET_BOARD_CARDS_BY_BOARD_LIST_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
-                        ]),
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'target'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'pos'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'wholesaler'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'manufacturer'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
                         ]),
                       ),
                     ]),
@@ -26693,59 +25172,6 @@ final GET_BOARD_CARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -28435,59 +26861,6 @@ final GET_BOARD_CARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
-                        ]),
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'target'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'pos'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'wholesaler'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'manufacturer'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
                         ]),
                       ),
                     ]),
@@ -31436,59 +29809,6 @@ final GET_BOARD_CARDS_BY_BOARD_WITH_FILTER_PAGINATED_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'target'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'pos'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'wholesaler'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'manufacturer'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'createdAt'),
                     alias: null,
                     arguments: [],
@@ -33190,59 +31510,6 @@ final GET_BOARD_CARDS_BY_BOARD_WITH_FILTER_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
-                            ]),
-                          ),
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'target'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'pos'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: SelectionSetNode(selections: [
-                              FieldNode(
-                                name: NameNode(value: 'id'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              )
-                            ]),
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'wholesaler'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: SelectionSetNode(selections: [
-                              FieldNode(
-                                name: NameNode(value: 'id'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              )
-                            ]),
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'manufacturer'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: SelectionSetNode(selections: [
-                              FieldNode(
-                                name: NameNode(value: 'id'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              )
                             ]),
                           ),
                         ]),
@@ -36438,59 +34705,6 @@ final CREATE_BOARD_CARD_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -38180,59 +36394,6 @@ final CREATE_BOARD_CARD_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
-                        ]),
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'target'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'pos'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'wholesaler'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'manufacturer'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
                         ]),
                       ),
                     ]),
@@ -41142,59 +39303,6 @@ final REORDER_BOARD_CARDS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -42884,59 +40992,6 @@ final REORDER_BOARD_CARDS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
-                        ]),
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'target'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'pos'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'wholesaler'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'manufacturer'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
                         ]),
                       ),
                     ]),
@@ -46142,59 +44197,6 @@ final UPDATE_BOARD_CARD_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -47884,59 +45886,6 @@ final UPDATE_BOARD_CARD_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
-                        ]),
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'target'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'pos'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'wholesaler'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'manufacturer'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
                         ]),
                       ),
                     ]),

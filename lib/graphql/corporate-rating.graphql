@@ -21,17 +21,7 @@ query corporateRating($id: ID!) {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     product {
       id
       sku
@@ -119,17 +109,7 @@ query getAllCorporateRatings {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     product {
       id
       sku
@@ -220,17 +200,7 @@ query getCorporateRatingsBytarget($target: TargetACIInput!, $pagination: Paginat
           y
         }
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       product {
         id
         sku
@@ -322,17 +292,7 @@ query getCorporateRatings($pagination: PaginationInput) {
           y
         }
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       product {
         id
         sku
@@ -421,17 +381,7 @@ query getCurrentUserCorporateRatingsByProduct($productId: ID!) {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     product {
       id
       sku
@@ -522,17 +472,7 @@ query getCorporateRatingsByProduct($productId: ID!, $pagination: PaginationInput
           y
         }
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       product {
         id
         sku
@@ -624,17 +564,7 @@ query getCorporateRatingsByProductWithStats($productId: ID!, $pagination: Pagina
           y
         }
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       product {
         id
         sku
@@ -737,17 +667,7 @@ mutation createCorporateRating($input: CorporateRatingInput!) {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     product {
       id
       sku
@@ -835,17 +755,7 @@ mutation updateCorporateRating($input: CorporateUpdateRatingInput!, $id: ID!) {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     product {
       id
       sku

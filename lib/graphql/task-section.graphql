@@ -9,17 +9,7 @@ query getTaskSection($id: ID!) {
     priority
     completed
     description
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }
@@ -35,17 +25,7 @@ query getTaskSections($target: TargetACIInput!) {
     priority
     completed
     description
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }
@@ -61,17 +41,7 @@ query getTaskSectionsWithTasks($target: TargetACIInput!, $searchString: String) 
     priority
     completed
     description
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
 
@@ -104,17 +74,7 @@ query getTaskSectionsByTargetPaginated($target: TargetACIInput!, $pagination: Pa
       priority
       completed
       description
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -152,17 +112,7 @@ mutation createTaskSection(
     priority
     completed
     description
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }
@@ -178,17 +128,7 @@ mutation reorderTaskSections($id: ID!, $rank: Int!) {
     priority
     completed
     description
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }
@@ -224,17 +164,7 @@ mutation updateTaskSection(
     priority
     completed
     description
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     createdAt
     updatedAt
   }

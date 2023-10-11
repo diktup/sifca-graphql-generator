@@ -1060,82 +1060,6 @@ class GetBlogs$Query$BlogType$PictureType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetBlogs$Query$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetBlogs$Query$BlogType$TargetType$PointOfSaleType();
-
-  factory GetBlogs$Query$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBlogs$Query$BlogType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBlogs$Query$BlogType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBlogs$Query$BlogType$TargetType$WholesalerType extends JsonSerializable
-    with EquatableMixin {
-  GetBlogs$Query$BlogType$TargetType$WholesalerType();
-
-  factory GetBlogs$Query$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBlogs$Query$BlogType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBlogs$Query$BlogType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBlogs$Query$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetBlogs$Query$BlogType$TargetType$ManufacturerType();
-
-  factory GetBlogs$Query$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBlogs$Query$BlogType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBlogs$Query$BlogType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetBlogs$Query$BlogType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  GetBlogs$Query$BlogType$TargetType();
-
-  factory GetBlogs$Query$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetBlogs$Query$BlogType$TargetTypeFromJson(json);
-
-  GetBlogs$Query$BlogType$TargetType$PointOfSaleType? pos;
-
-  GetBlogs$Query$BlogType$TargetType$WholesalerType? wholesaler;
-
-  GetBlogs$Query$BlogType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetBlogs$Query$BlogType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetBlogs$Query$BlogType$BlogDataType$PictureType extends JsonSerializable
     with EquatableMixin {
   GetBlogs$Query$BlogType$BlogDataType$PictureType();
@@ -1209,8 +1133,6 @@ class GetBlogs$Query$BlogType extends JsonSerializable with EquatableMixin {
 
   List<GetBlogs$Query$BlogType$PictureType>? pictures;
 
-  late GetBlogs$Query$BlogType$TargetType target;
-
   List<GetBlogs$Query$BlogType$BlogDataType>? sectionData;
 
   late String status;
@@ -1228,7 +1150,6 @@ class GetBlogs$Query$BlogType extends JsonSerializable with EquatableMixin {
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -2359,93 +2280,6 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType();
-
-  factory GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType();
-
-  factory GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType();
-
-  factory GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType();
-
-  factory GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetTypeFromJson(
-          json);
-
-  GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType?
-      pos;
-
-  GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType();
@@ -2527,8 +2361,6 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType
   List<GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureType>?
       pictures;
 
-  late GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType target;
-
   List<GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType>?
       sectionData;
 
@@ -2547,7 +2379,6 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -3658,80 +3489,6 @@ class Blog$Query$BlogType$PictureType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class Blog$Query$BlogType$TargetType$PointOfSaleType extends JsonSerializable
-    with EquatableMixin {
-  Blog$Query$BlogType$TargetType$PointOfSaleType();
-
-  factory Blog$Query$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$Blog$Query$BlogType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$Blog$Query$BlogType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class Blog$Query$BlogType$TargetType$WholesalerType extends JsonSerializable
-    with EquatableMixin {
-  Blog$Query$BlogType$TargetType$WholesalerType();
-
-  factory Blog$Query$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$Blog$Query$BlogType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$Blog$Query$BlogType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class Blog$Query$BlogType$TargetType$ManufacturerType extends JsonSerializable
-    with EquatableMixin {
-  Blog$Query$BlogType$TargetType$ManufacturerType();
-
-  factory Blog$Query$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$Blog$Query$BlogType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$Blog$Query$BlogType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class Blog$Query$BlogType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  Blog$Query$BlogType$TargetType();
-
-  factory Blog$Query$BlogType$TargetType.fromJson(Map<String, dynamic> json) =>
-      _$Blog$Query$BlogType$TargetTypeFromJson(json);
-
-  Blog$Query$BlogType$TargetType$PointOfSaleType? pos;
-
-  Blog$Query$BlogType$TargetType$WholesalerType? wholesaler;
-
-  Blog$Query$BlogType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() => _$Blog$Query$BlogType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class Blog$Query$BlogType$BlogDataType$PictureType extends JsonSerializable
     with EquatableMixin {
   Blog$Query$BlogType$BlogDataType$PictureType();
@@ -3805,8 +3562,6 @@ class Blog$Query$BlogType extends JsonSerializable with EquatableMixin {
 
   List<Blog$Query$BlogType$PictureType>? pictures;
 
-  late Blog$Query$BlogType$TargetType target;
-
   List<Blog$Query$BlogType$BlogDataType>? sectionData;
 
   late String status;
@@ -3824,7 +3579,6 @@ class Blog$Query$BlogType extends JsonSerializable with EquatableMixin {
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -4923,86 +4677,6 @@ class FindBlogsByTarget$Query$BlogType$PictureType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleType();
-
-  factory FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByTarget$Query$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByTarget$Query$BlogType$TargetType$WholesalerType();
-
-  factory FindBlogsByTarget$Query$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTarget$Query$BlogType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTarget$Query$BlogType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerType();
-
-  factory FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByTarget$Query$BlogType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  FindBlogsByTarget$Query$BlogType$TargetType();
-
-  factory FindBlogsByTarget$Query$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTarget$Query$BlogType$TargetTypeFromJson(json);
-
-  FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleType? pos;
-
-  FindBlogsByTarget$Query$BlogType$TargetType$WholesalerType? wholesaler;
-
-  FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTarget$Query$BlogType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class FindBlogsByTarget$Query$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   FindBlogsByTarget$Query$BlogType$BlogDataType$PictureType();
@@ -5079,8 +4753,6 @@ class FindBlogsByTarget$Query$BlogType extends JsonSerializable
 
   List<FindBlogsByTarget$Query$BlogType$PictureType>? pictures;
 
-  late FindBlogsByTarget$Query$BlogType$TargetType target;
-
   List<FindBlogsByTarget$Query$BlogType$BlogDataType>? sectionData;
 
   late String status;
@@ -5098,7 +4770,6 @@ class FindBlogsByTarget$Query$BlogType extends JsonSerializable
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -6242,89 +5913,6 @@ class FindBlogsByTargetAndUrl$Query$BlogType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleType();
-
-  factory FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerType();
-
-  factory FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerType();
-
-  factory FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByTargetAndUrl$Query$BlogType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  FindBlogsByTargetAndUrl$Query$BlogType$TargetType();
-
-  factory FindBlogsByTargetAndUrl$Query$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTargetAndUrl$Query$BlogType$TargetTypeFromJson(json);
-
-  FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleType? pos;
-
-  FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerType? wholesaler;
-
-  FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTargetAndUrl$Query$BlogType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureType();
@@ -6403,8 +5991,6 @@ class FindBlogsByTargetAndUrl$Query$BlogType extends JsonSerializable
 
   List<FindBlogsByTargetAndUrl$Query$BlogType$PictureType>? pictures;
 
-  late FindBlogsByTargetAndUrl$Query$BlogType$TargetType target;
-
   List<FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType>? sectionData;
 
   late String status;
@@ -6422,7 +6008,6 @@ class FindBlogsByTargetAndUrl$Query$BlogType extends JsonSerializable
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -7556,93 +7141,6 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType();
-
-  factory FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType();
-
-  factory FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType();
-
-  factory FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType();
-
-  factory FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetTypeFromJson(
-          json);
-
-  FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType?
-      pos;
-
-  FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType?
-      wholesaler;
-
-  FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType();
@@ -7727,9 +7225,6 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType
   List<FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureType>?
       pictures;
 
-  late FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType
-      target;
-
   List<FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType>?
       sectionData;
 
@@ -7748,7 +7243,6 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -8876,86 +8370,6 @@ class FindBlogsByAuthor$Query$BlogType$PictureType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleType();
-
-  factory FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerType();
-
-  factory FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerType();
-
-  factory FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByAuthor$Query$BlogType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  FindBlogsByAuthor$Query$BlogType$TargetType();
-
-  factory FindBlogsByAuthor$Query$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByAuthor$Query$BlogType$TargetTypeFromJson(json);
-
-  FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleType? pos;
-
-  FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerType? wholesaler;
-
-  FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByAuthor$Query$BlogType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureType();
@@ -9032,8 +8446,6 @@ class FindBlogsByAuthor$Query$BlogType extends JsonSerializable
 
   List<FindBlogsByAuthor$Query$BlogType$PictureType>? pictures;
 
-  late FindBlogsByAuthor$Query$BlogType$TargetType target;
-
   List<FindBlogsByAuthor$Query$BlogType$BlogDataType>? sectionData;
 
   late String status;
@@ -9051,7 +8463,6 @@ class FindBlogsByAuthor$Query$BlogType extends JsonSerializable
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -10184,93 +9595,6 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType();
-
-  factory FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType();
-
-  factory FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType();
-
-  factory FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType();
-
-  factory FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetTypeFromJson(
-          json);
-
-  FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType?
-      pos;
-
-  FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType?
-      wholesaler;
-
-  FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType();
@@ -10355,9 +9679,6 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType
   List<FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureType>?
       pictures;
 
-  late FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType
-      target;
-
   List<FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType>?
       sectionData;
 
@@ -10376,7 +9697,6 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -11531,90 +10851,6 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType();
-
-  factory SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType();
-
-  factory SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType();
-
-  factory SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType();
-
-  factory SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetTypeFromJson(json);
-
-  SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType? pos;
-
-  SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType?
-      wholesaler;
-
-  SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType();
@@ -11694,8 +10930,6 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType extends JsonSerializable
 
   List<SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureType>? pictures;
 
-  late SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType target;
-
   List<SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType>? sectionData;
 
   late String status;
@@ -11713,7 +10947,6 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType extends JsonSerializable
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -12827,82 +12060,6 @@ class CreateBlog$Mutation$BlogType$PictureType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class CreateBlog$Mutation$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateBlog$Mutation$BlogType$TargetType$PointOfSaleType();
-
-  factory CreateBlog$Mutation$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBlog$Mutation$BlogType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBlog$Mutation$BlogType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBlog$Mutation$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBlog$Mutation$BlogType$TargetType$WholesalerType();
-
-  factory CreateBlog$Mutation$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBlog$Mutation$BlogType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBlog$Mutation$BlogType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBlog$Mutation$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBlog$Mutation$BlogType$TargetType$ManufacturerType();
-
-  factory CreateBlog$Mutation$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBlog$Mutation$BlogType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBlog$Mutation$BlogType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBlog$Mutation$BlogType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  CreateBlog$Mutation$BlogType$TargetType();
-
-  factory CreateBlog$Mutation$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBlog$Mutation$BlogType$TargetTypeFromJson(json);
-
-  CreateBlog$Mutation$BlogType$TargetType$PointOfSaleType? pos;
-
-  CreateBlog$Mutation$BlogType$TargetType$WholesalerType? wholesaler;
-
-  CreateBlog$Mutation$BlogType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBlog$Mutation$BlogType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CreateBlog$Mutation$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   CreateBlog$Mutation$BlogType$BlogDataType$PictureType();
@@ -12977,8 +12134,6 @@ class CreateBlog$Mutation$BlogType extends JsonSerializable
 
   List<CreateBlog$Mutation$BlogType$PictureType>? pictures;
 
-  late CreateBlog$Mutation$BlogType$TargetType target;
-
   List<CreateBlog$Mutation$BlogType$BlogDataType>? sectionData;
 
   late String status;
@@ -12996,7 +12151,6 @@ class CreateBlog$Mutation$BlogType extends JsonSerializable
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -14229,82 +13383,6 @@ class PublishBlog$Mutation$BlogType$PictureType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class PublishBlog$Mutation$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  PublishBlog$Mutation$BlogType$TargetType$PointOfSaleType();
-
-  factory PublishBlog$Mutation$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$PublishBlog$Mutation$BlogType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$PublishBlog$Mutation$BlogType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class PublishBlog$Mutation$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  PublishBlog$Mutation$BlogType$TargetType$WholesalerType();
-
-  factory PublishBlog$Mutation$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$PublishBlog$Mutation$BlogType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$PublishBlog$Mutation$BlogType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class PublishBlog$Mutation$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  PublishBlog$Mutation$BlogType$TargetType$ManufacturerType();
-
-  factory PublishBlog$Mutation$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$PublishBlog$Mutation$BlogType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$PublishBlog$Mutation$BlogType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class PublishBlog$Mutation$BlogType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  PublishBlog$Mutation$BlogType$TargetType();
-
-  factory PublishBlog$Mutation$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$PublishBlog$Mutation$BlogType$TargetTypeFromJson(json);
-
-  PublishBlog$Mutation$BlogType$TargetType$PointOfSaleType? pos;
-
-  PublishBlog$Mutation$BlogType$TargetType$WholesalerType? wholesaler;
-
-  PublishBlog$Mutation$BlogType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$PublishBlog$Mutation$BlogType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class PublishBlog$Mutation$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   PublishBlog$Mutation$BlogType$BlogDataType$PictureType();
@@ -14379,8 +13457,6 @@ class PublishBlog$Mutation$BlogType extends JsonSerializable
 
   List<PublishBlog$Mutation$BlogType$PictureType>? pictures;
 
-  late PublishBlog$Mutation$BlogType$TargetType target;
-
   List<PublishBlog$Mutation$BlogType$BlogDataType>? sectionData;
 
   late String status;
@@ -14398,7 +13474,6 @@ class PublishBlog$Mutation$BlogType extends JsonSerializable
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -15489,82 +14564,6 @@ class UpdateBlog$Mutation$BlogType$PictureType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleType();
-
-  factory UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateBlog$Mutation$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBlog$Mutation$BlogType$TargetType$WholesalerType();
-
-  factory UpdateBlog$Mutation$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBlog$Mutation$BlogType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBlog$Mutation$BlogType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateBlog$Mutation$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateBlog$Mutation$BlogType$TargetType$ManufacturerType();
-
-  factory UpdateBlog$Mutation$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBlog$Mutation$BlogType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBlog$Mutation$BlogType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateBlog$Mutation$BlogType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  UpdateBlog$Mutation$BlogType$TargetType();
-
-  factory UpdateBlog$Mutation$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateBlog$Mutation$BlogType$TargetTypeFromJson(json);
-
-  UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleType? pos;
-
-  UpdateBlog$Mutation$BlogType$TargetType$WholesalerType? wholesaler;
-
-  UpdateBlog$Mutation$BlogType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateBlog$Mutation$BlogType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class UpdateBlog$Mutation$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   UpdateBlog$Mutation$BlogType$BlogDataType$PictureType();
@@ -15639,8 +14638,6 @@ class UpdateBlog$Mutation$BlogType extends JsonSerializable
 
   List<UpdateBlog$Mutation$BlogType$PictureType>? pictures;
 
-  late UpdateBlog$Mutation$BlogType$TargetType target;
-
   List<UpdateBlog$Mutation$BlogType$BlogDataType>? sectionData;
 
   late String status;
@@ -15658,7 +14655,6 @@ class UpdateBlog$Mutation$BlogType extends JsonSerializable
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -16781,82 +15777,6 @@ class DeleteBlog$Mutation$BlogType$PictureType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleType();
-
-  factory DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class DeleteBlog$Mutation$BlogType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  DeleteBlog$Mutation$BlogType$TargetType$WholesalerType();
-
-  factory DeleteBlog$Mutation$BlogType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$DeleteBlog$Mutation$BlogType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$DeleteBlog$Mutation$BlogType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class DeleteBlog$Mutation$BlogType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  DeleteBlog$Mutation$BlogType$TargetType$ManufacturerType();
-
-  factory DeleteBlog$Mutation$BlogType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$DeleteBlog$Mutation$BlogType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$DeleteBlog$Mutation$BlogType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class DeleteBlog$Mutation$BlogType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  DeleteBlog$Mutation$BlogType$TargetType();
-
-  factory DeleteBlog$Mutation$BlogType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$DeleteBlog$Mutation$BlogType$TargetTypeFromJson(json);
-
-  DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleType? pos;
-
-  DeleteBlog$Mutation$BlogType$TargetType$WholesalerType? wholesaler;
-
-  DeleteBlog$Mutation$BlogType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$DeleteBlog$Mutation$BlogType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class DeleteBlog$Mutation$BlogType$BlogDataType$PictureType
     extends JsonSerializable with EquatableMixin {
   DeleteBlog$Mutation$BlogType$BlogDataType$PictureType();
@@ -16931,8 +15851,6 @@ class DeleteBlog$Mutation$BlogType extends JsonSerializable
 
   List<DeleteBlog$Mutation$BlogType$PictureType>? pictures;
 
-  late DeleteBlog$Mutation$BlogType$TargetType target;
-
   List<DeleteBlog$Mutation$BlogType$BlogDataType>? sectionData;
 
   late String status;
@@ -16950,7 +15868,6 @@ class DeleteBlog$Mutation$BlogType extends JsonSerializable
         tags,
         seo,
         pictures,
-        target,
         sectionData,
         status,
         createdAt,
@@ -21050,59 +19967,6 @@ final GET_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'sectionData'),
             alias: null,
             arguments: [],
@@ -25179,59 +24043,6 @@ final GET_PAGINATED_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'sectionData'),
                 alias: null,
                 arguments: [],
@@ -29275,59 +28086,6 @@ final BLOG_QUERY_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'sectionData'),
             alias: null,
             arguments: [],
@@ -33362,59 +32120,6 @@ final FIND_BLOGS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),
@@ -37478,59 +36183,6 @@ final FIND_BLOGS_BY_TARGET_AND_URL_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),
@@ -41675,59 +40327,6 @@ final FIND_BLOGS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'sectionData'),
                 alias: null,
                 arguments: [],
@@ -45767,59 +44366,6 @@ final FIND_BLOGS_BY_AUTHOR_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),
@@ -49928,59 +48474,6 @@ final FIND_BLOGS_BY_AUTHOR_PAGINATED_QUERY_DOCUMENT =
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'sectionData'),
                 alias: null,
                 arguments: [],
@@ -54082,59 +52575,6 @@ final SEARCH_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'sectionData'),
                 alias: null,
                 arguments: [],
@@ -58177,59 +56617,6 @@ final CREATE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'sectionData'),
             alias: null,
             arguments: [],
@@ -62266,59 +60653,6 @@ final PUBLISH_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),
@@ -66381,59 +64715,6 @@ final UPDATE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'sectionData'),
             alias: null,
             arguments: [],
@@ -70470,59 +68751,6 @@ final DELETE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),

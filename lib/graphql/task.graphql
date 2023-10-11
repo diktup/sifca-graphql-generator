@@ -21,17 +21,7 @@ query getTasks {
       priority
       completed
       description
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -60,17 +50,7 @@ query getTask($id: ID!) {
       priority
       completed
       description
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -99,17 +79,7 @@ query getTasksBySection($taskSection: ID!) {
       priority
       completed
       description
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -159,17 +129,7 @@ mutation createTask(
       priority
       completed
       description
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -198,17 +158,7 @@ mutation reorderTask($id: ID!, $rank: Int!) {
       priority
       completed
       description
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -259,17 +209,7 @@ mutation updateTask(
       priority
       completed
       description
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }

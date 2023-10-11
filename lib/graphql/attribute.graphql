@@ -14,17 +14,7 @@ query getAttributesPagination($pagination: PaginationInput) {
       pixel {
         pixelAttribute
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
     }
   }
 }
@@ -44,17 +34,7 @@ query getAttributesTargetPaginated($target: TargetACIInput!, $pagination: Pagina
       pixel {
         pixelAttribute
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
     }
   }
 }
@@ -71,17 +51,7 @@ query getAttributes {
     pixel {
       pixelAttribute
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 query getAttributesByTarget($target: TargetACIInput!) {
@@ -97,17 +67,7 @@ query getAttributesByTarget($target: TargetACIInput!) {
     pixel {
       pixelAttribute
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 query attribute($id: String!) {
@@ -123,17 +83,7 @@ query attribute($id: String!) {
     pixel {
       pixelAttribute
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 query searchAttribute($pagination: PaginationInput, $searchString: String!) {
@@ -152,17 +102,7 @@ query searchAttribute($pagination: PaginationInput, $searchString: String!) {
       pixel {
         pixelAttribute
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
     }
   }
 }
@@ -187,17 +127,7 @@ query searchAttributeByTarget(
       pixel {
         pixelAttribute
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
     }
   }
 }
@@ -215,17 +145,7 @@ query findAttributeByExternalIdAndTarget($externalId: String!, $target: TargetAC
     pixel {
       pixelAttribute
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 
@@ -242,17 +162,7 @@ mutation syncOneAttribute($input: AttributeCreateInput!) {
     pixel {
       pixelAttribute
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 
@@ -269,17 +179,7 @@ mutation createAttribute($input: AttributeCreateInput!) {
     pixel {
       pixelAttribute
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 mutation updateAttribute($input: AttributeUpdateInput!) {
@@ -295,17 +195,7 @@ mutation updateAttribute($input: AttributeUpdateInput!) {
     pixel {
       pixelAttribute
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 mutation deleteAttribute($id: String!) {

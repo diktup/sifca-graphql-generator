@@ -7,89 +7,6 @@ import 'package:gql/ast.dart';
 part 'task-section.graphql.g.dart';
 
 @JsonSerializable(explicitToJson: true)
-class GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleType();
-
-  factory GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSection$Query$TaskSectionType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSection$Query$TaskSectionType$TargetType$WholesalerType();
-
-  factory GetTaskSection$Query$TaskSectionType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSection$Query$TaskSectionType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSection$Query$TaskSectionType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerType();
-
-  factory GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSection$Query$TaskSectionType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  GetTaskSection$Query$TaskSectionType$TargetType();
-
-  factory GetTaskSection$Query$TaskSectionType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSection$Query$TaskSectionType$TargetTypeFromJson(json);
-
-  GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleType? pos;
-
-  GetTaskSection$Query$TaskSectionType$TargetType$WholesalerType? wholesaler;
-
-  GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSection$Query$TaskSectionType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetTaskSection$Query$TaskSectionType extends JsonSerializable
     with EquatableMixin {
   GetTaskSection$Query$TaskSectionType();
@@ -117,8 +34,6 @@ class GetTaskSection$Query$TaskSectionType extends JsonSerializable
 
   String? description;
 
-  late GetTaskSection$Query$TaskSectionType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -134,7 +49,6 @@ class GetTaskSection$Query$TaskSectionType extends JsonSerializable
         priority,
         completed,
         description,
-        target,
         createdAt,
         updatedAt
       ];
@@ -156,89 +70,6 @@ class GetTaskSection$Query extends JsonSerializable with EquatableMixin {
   List<Object?> get props => [getTaskSection];
   @override
   Map<String, dynamic> toJson() => _$GetTaskSection$QueryToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleType();
-
-  factory GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSections$Query$TaskSectionType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSections$Query$TaskSectionType$TargetType$WholesalerType();
-
-  factory GetTaskSections$Query$TaskSectionType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSections$Query$TaskSectionType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSections$Query$TaskSectionType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerType();
-
-  factory GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSections$Query$TaskSectionType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  GetTaskSections$Query$TaskSectionType$TargetType();
-
-  factory GetTaskSections$Query$TaskSectionType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSections$Query$TaskSectionType$TargetTypeFromJson(json);
-
-  GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleType? pos;
-
-  GetTaskSections$Query$TaskSectionType$TargetType$WholesalerType? wholesaler;
-
-  GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSections$Query$TaskSectionType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -269,8 +100,6 @@ class GetTaskSections$Query$TaskSectionType extends JsonSerializable
 
   String? description;
 
-  late GetTaskSections$Query$TaskSectionType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -286,7 +115,6 @@ class GetTaskSections$Query$TaskSectionType extends JsonSerializable
         priority,
         completed,
         description,
-        target,
         createdAt,
         updatedAt
       ];
@@ -334,93 +162,6 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleType();
-
-  factory GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerType();
-
-  factory GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerType();
-
-  factory GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType();
-
-  factory GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetTypeFromJson(
-          json);
-
-  GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleType?
-      pos;
-
-  GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetTypeToJson(
-          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -504,9 +245,6 @@ class GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType
 
   String? description;
 
-  late GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType
-      target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -526,7 +264,6 @@ class GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType
         priority,
         completed,
         description,
-        target,
         createdAt,
         updatedAt,
         tasks
@@ -551,93 +288,6 @@ class GetTaskSectionsWithTasks$Query extends JsonSerializable
   List<Object?> get props => [getTaskSectionsWithTasks];
   @override
   Map<String, dynamic> toJson() => _$GetTaskSectionsWithTasks$QueryToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleType();
-
-  factory GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerType();
-
-  factory GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerType();
-
-  factory GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType();
-
-  factory GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetTypeFromJson(
-          json);
-
-  GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleType?
-      pos;
-
-  GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetTypeToJson(
-          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -669,9 +319,6 @@ class GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectio
 
   String? description;
 
-  late GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType
-      target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -687,7 +334,6 @@ class GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectio
         priority,
         completed,
         description,
-        target,
         createdAt,
         updatedAt
       ];
@@ -763,90 +409,6 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
-class CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType();
-
-  factory CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType();
-
-  factory CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType();
-
-  factory CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateTaskSection$Mutation$TaskSectionType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CreateTaskSection$Mutation$TaskSectionType$TargetType();
-
-  factory CreateTaskSection$Mutation$TaskSectionType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateTaskSection$Mutation$TaskSectionType$TargetTypeFromJson(json);
-
-  CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType? pos;
-
-  CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType?
-      wholesaler;
-
-  CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateTaskSection$Mutation$TaskSectionType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CreateTaskSection$Mutation$TaskSectionType extends JsonSerializable
     with EquatableMixin {
   CreateTaskSection$Mutation$TaskSectionType();
@@ -874,8 +436,6 @@ class CreateTaskSection$Mutation$TaskSectionType extends JsonSerializable
 
   String? description;
 
-  late CreateTaskSection$Mutation$TaskSectionType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -891,7 +451,6 @@ class CreateTaskSection$Mutation$TaskSectionType extends JsonSerializable
         priority,
         completed,
         description,
-        target,
         createdAt,
         updatedAt
       ];
@@ -913,90 +472,6 @@ class CreateTaskSection$Mutation extends JsonSerializable with EquatableMixin {
   List<Object?> get props => [createTaskSection];
   @override
   Map<String, dynamic> toJson() => _$CreateTaskSection$MutationToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleType();
-
-  factory ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerType();
-
-  factory ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerType();
-
-  factory ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderTaskSections$Mutation$TaskSectionType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  ReorderTaskSections$Mutation$TaskSectionType$TargetType();
-
-  factory ReorderTaskSections$Mutation$TaskSectionType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderTaskSections$Mutation$TaskSectionType$TargetTypeFromJson(json);
-
-  ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleType? pos;
-
-  ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerType?
-      wholesaler;
-
-  ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderTaskSections$Mutation$TaskSectionType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -1027,8 +502,6 @@ class ReorderTaskSections$Mutation$TaskSectionType extends JsonSerializable
 
   String? description;
 
-  late ReorderTaskSections$Mutation$TaskSectionType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -1044,7 +517,6 @@ class ReorderTaskSections$Mutation$TaskSectionType extends JsonSerializable
         priority,
         completed,
         description,
-        target,
         createdAt,
         updatedAt
       ];
@@ -1067,90 +539,6 @@ class ReorderTaskSections$Mutation extends JsonSerializable
   List<Object?> get props => [reorderTaskSections];
   @override
   Map<String, dynamic> toJson() => _$ReorderTaskSections$MutationToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType();
-
-  factory UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType();
-
-  factory UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType();
-
-  factory UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateTaskSection$Mutation$TaskSectionType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  UpdateTaskSection$Mutation$TaskSectionType$TargetType();
-
-  factory UpdateTaskSection$Mutation$TaskSectionType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateTaskSection$Mutation$TaskSectionType$TargetTypeFromJson(json);
-
-  UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType? pos;
-
-  UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType?
-      wholesaler;
-
-  UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateTaskSection$Mutation$TaskSectionType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -1181,8 +569,6 @@ class UpdateTaskSection$Mutation$TaskSectionType extends JsonSerializable
 
   String? description;
 
-  late UpdateTaskSection$Mutation$TaskSectionType$TargetType target;
-
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -1198,7 +584,6 @@ class UpdateTaskSection$Mutation$TaskSectionType extends JsonSerializable
         priority,
         completed,
         description,
-        target,
         createdAt,
         updatedAt
       ];
@@ -1377,59 +762,6 @@ final GET_TASK_SECTION_QUERY_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'createdAt'),
             alias: null,
             arguments: [],
@@ -1576,59 +908,6 @@ final GET_TASK_SECTIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
           ),
           FieldNode(
             name: NameNode(value: 'createdAt'),
@@ -1799,59 +1078,6 @@ final GET_TASK_SECTIONS_WITH_TASKS_QUERY_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
           ),
           FieldNode(
             name: NameNode(value: 'createdAt'),
@@ -2129,59 +1355,6 @@ final GET_TASK_SECTIONS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
               ),
               FieldNode(
                 name: NameNode(value: 'createdAt'),
@@ -2482,59 +1655,6 @@ final CREATE_TASK_SECTION_MUTATION_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'createdAt'),
             alias: null,
             arguments: [],
@@ -2702,59 +1822,6 @@ final REORDER_TASK_SECTIONS_MUTATION_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
           ),
           FieldNode(
             name: NameNode(value: 'createdAt'),
@@ -3049,59 +2116,6 @@ final UPDATE_TASK_SECTION_MUTATION_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
           ),
           FieldNode(
             name: NameNode(value: 'createdAt'),

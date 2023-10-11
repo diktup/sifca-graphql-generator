@@ -6,81 +6,6 @@ part of 'task-section.graphql.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleType
-    _$GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-            GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSection$Query$TaskSectionType$TargetType$WholesalerType
-    _$GetTaskSection$Query$TaskSectionType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSection$Query$TaskSectionType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSection$Query$TaskSectionType$TargetType$WholesalerTypeToJson(
-            GetTaskSection$Query$TaskSectionType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerType
-    _$GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerTypeToJson(
-            GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSection$Query$TaskSectionType$TargetType
-    _$GetTaskSection$Query$TaskSectionType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSection$Query$TaskSectionType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTaskSection$Query$TaskSectionType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTaskSection$Query$TaskSectionType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTaskSection$Query$TaskSectionType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$GetTaskSection$Query$TaskSectionType$TargetTypeToJson(
-    GetTaskSection$Query$TaskSectionType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTaskSection$Query$TaskSectionType
     _$GetTaskSection$Query$TaskSectionTypeFromJson(Map<String, dynamic> json) =>
         GetTaskSection$Query$TaskSectionType()
@@ -97,8 +22,6 @@ GetTaskSection$Query$TaskSectionType
               unknownValue: TaskPriorityEnum.artemisUnknown)
           ..completed = json['completed'] as bool
           ..description = json['description'] as String?
-          ..target = GetTaskSection$Query$TaskSectionType$TargetType.fromJson(
-              json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -122,7 +45,6 @@ Map<String, dynamic> _$GetTaskSection$Query$TaskSectionTypeToJson(
   val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
   val['completed'] = instance.completed;
   writeNotNull('description', instance.description);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -147,81 +69,6 @@ Map<String, dynamic> _$GetTaskSection$QueryToJson(
       'getTaskSection': instance.getTaskSection.toJson(),
     };
 
-GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleType
-    _$GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-            GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSections$Query$TaskSectionType$TargetType$WholesalerType
-    _$GetTaskSections$Query$TaskSectionType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSections$Query$TaskSectionType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSections$Query$TaskSectionType$TargetType$WholesalerTypeToJson(
-            GetTaskSections$Query$TaskSectionType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerType
-    _$GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerTypeToJson(
-            GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSections$Query$TaskSectionType$TargetType
-    _$GetTaskSections$Query$TaskSectionType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSections$Query$TaskSectionType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTaskSections$Query$TaskSectionType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTaskSections$Query$TaskSectionType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTaskSections$Query$TaskSectionType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$GetTaskSections$Query$TaskSectionType$TargetTypeToJson(
-    GetTaskSections$Query$TaskSectionType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTaskSections$Query$TaskSectionType
     _$GetTaskSections$Query$TaskSectionTypeFromJson(
             Map<String, dynamic> json) =>
@@ -239,8 +86,6 @@ GetTaskSections$Query$TaskSectionType
               unknownValue: TaskPriorityEnum.artemisUnknown)
           ..completed = json['completed'] as bool
           ..description = json['description'] as String?
-          ..target = GetTaskSections$Query$TaskSectionType$TargetType.fromJson(
-              json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -264,7 +109,6 @@ Map<String, dynamic> _$GetTaskSections$Query$TaskSectionTypeToJson(
   val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
   val['completed'] = instance.completed;
   writeNotNull('description', instance.description);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -306,83 +150,6 @@ Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
   writeNotNull('wholesaler', instance.wholesaler);
   writeNotNull('manufacturer', instance.manufacturer);
   writeNotNull('user', instance.user);
-  return val;
-}
-
-GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleType
-    _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleTypeToJson(
-            GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerType
-    _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerTypeToJson(
-            GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerType
-    _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerTypeToJson(
-            GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType
-    _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetTypeToJson(
-        GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -450,9 +217,6 @@ GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType
               unknownValue: TaskPriorityEnum.artemisUnknown)
           ..completed = json['completed'] as bool
           ..description = json['description'] as String?
-          ..target =
-              GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..tasks = (json['tasks'] as List<dynamic>)
@@ -482,7 +246,6 @@ Map<String, dynamic>
   val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
   val['completed'] = instance.completed;
   writeNotNull('description', instance.description);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['tasks'] = instance.tasks.map((e) => e.toJson()).toList();
@@ -506,83 +269,6 @@ Map<String, dynamic> _$GetTaskSectionsWithTasks$QueryToJson(
           instance.getTaskSectionsWithTasks.map((e) => e.toJson()).toList(),
     };
 
-GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleType
-    _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-            GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerType
-    _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerTypeToJson(
-            GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerType
-    _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerTypeToJson(
-            GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType
-    _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetTypeToJson(
-        GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType
     _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionTypeFromJson(
             Map<String, dynamic> json) =>
@@ -600,9 +286,6 @@ GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType
               unknownValue: TaskPriorityEnum.artemisUnknown)
           ..completed = json['completed'] as bool
           ..description = json['description'] as String?
-          ..target =
-              GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -628,7 +311,6 @@ Map<String, dynamic>
   val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
   val['completed'] = instance.completed;
   writeNotNull('description', instance.description);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -700,82 +382,6 @@ Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
   return val;
 }
 
-CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType
-    _$CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-            CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType
-    _$CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerTypeToJson(
-            CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType
-    _$CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerTypeToJson(
-            CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTaskSection$Mutation$TaskSectionType$TargetType
-    _$CreateTaskSection$Mutation$TaskSectionType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTaskSection$Mutation$TaskSectionType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CreateTaskSection$Mutation$TaskSectionType$TargetTypeToJson(
-        CreateTaskSection$Mutation$TaskSectionType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CreateTaskSection$Mutation$TaskSectionType
     _$CreateTaskSection$Mutation$TaskSectionTypeFromJson(
             Map<String, dynamic> json) =>
@@ -793,9 +399,6 @@ CreateTaskSection$Mutation$TaskSectionType
               unknownValue: TaskPriorityEnum.artemisUnknown)
           ..completed = json['completed'] as bool
           ..description = json['description'] as String?
-          ..target =
-              CreateTaskSection$Mutation$TaskSectionType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -819,7 +422,6 @@ Map<String, dynamic> _$CreateTaskSection$Mutation$TaskSectionTypeToJson(
   val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
   val['completed'] = instance.completed;
   writeNotNull('description', instance.description);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -836,82 +438,6 @@ Map<String, dynamic> _$CreateTaskSection$MutationToJson(
     <String, dynamic>{
       'createTaskSection': instance.createTaskSection.toJson(),
     };
-
-ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleType
-    _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-            ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerType
-    _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerTypeToJson(
-            ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerType
-    _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerTypeToJson(
-            ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ReorderTaskSections$Mutation$TaskSectionType$TargetType
-    _$ReorderTaskSections$Mutation$TaskSectionType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderTaskSections$Mutation$TaskSectionType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : ReorderTaskSections$Mutation$TaskSectionType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : ReorderTaskSections$Mutation$TaskSectionType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : ReorderTaskSections$Mutation$TaskSectionType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$ReorderTaskSections$Mutation$TaskSectionType$TargetTypeToJson(
-        ReorderTaskSections$Mutation$TaskSectionType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
 
 ReorderTaskSections$Mutation$TaskSectionType
     _$ReorderTaskSections$Mutation$TaskSectionTypeFromJson(
@@ -930,9 +456,6 @@ ReorderTaskSections$Mutation$TaskSectionType
               unknownValue: TaskPriorityEnum.artemisUnknown)
           ..completed = json['completed'] as bool
           ..description = json['description'] as String?
-          ..target =
-              ReorderTaskSections$Mutation$TaskSectionType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -956,7 +479,6 @@ Map<String, dynamic> _$ReorderTaskSections$Mutation$TaskSectionTypeToJson(
   val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
   val['completed'] = instance.completed;
   writeNotNull('description', instance.description);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -977,82 +499,6 @@ Map<String, dynamic> _$ReorderTaskSections$MutationToJson(
           instance.reorderTaskSections.map((e) => e.toJson()).toList(),
     };
 
-UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType
-    _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleTypeToJson(
-            UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType
-    _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerTypeToJson(
-            UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType
-    _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerTypeToJson(
-            UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTaskSection$Mutation$TaskSectionType$TargetType
-    _$UpdateTaskSection$Mutation$TaskSectionType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTaskSection$Mutation$TaskSectionType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateTaskSection$Mutation$TaskSectionType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateTaskSection$Mutation$TaskSectionType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateTaskSection$Mutation$TaskSectionType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateTaskSection$Mutation$TaskSectionType$TargetTypeToJson(
-        UpdateTaskSection$Mutation$TaskSectionType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 UpdateTaskSection$Mutation$TaskSectionType
     _$UpdateTaskSection$Mutation$TaskSectionTypeFromJson(
             Map<String, dynamic> json) =>
@@ -1070,9 +516,6 @@ UpdateTaskSection$Mutation$TaskSectionType
               unknownValue: TaskPriorityEnum.artemisUnknown)
           ..completed = json['completed'] as bool
           ..description = json['description'] as String?
-          ..target =
-              UpdateTaskSection$Mutation$TaskSectionType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -1096,7 +539,6 @@ Map<String, dynamic> _$UpdateTaskSection$Mutation$TaskSectionTypeToJson(
   val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
   val['completed'] = instance.completed;
   writeNotNull('description', instance.description);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;

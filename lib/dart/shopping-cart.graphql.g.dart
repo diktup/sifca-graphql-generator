@@ -81,81 +81,6 @@ const _$GenderEnumMap = {
   Gender.artemisUnknown: 'ARTEMIS_UNKNOWN',
 };
 
-ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleType
-    _$ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerType
-    _$ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerType
-    _$ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ShoppingCart$Query$ShoppingCartType$TargetType
-    _$ShoppingCart$Query$ShoppingCartType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        ShoppingCart$Query$ShoppingCartType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$ShoppingCart$Query$ShoppingCartType$TargetTypeToJson(
-    ShoppingCart$Query$ShoppingCartType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 ShoppingCart$Query$ShoppingCartType$PriceFullType$ReduciblePriceType
     _$ShoppingCart$Query$ShoppingCartType$PriceFullType$ReduciblePriceTypeFromJson(
             Map<String, dynamic> json) =>
@@ -817,10 +742,6 @@ ShoppingCart$Query$ShoppingCartType
               ? null
               : ShoppingCart$Query$ShoppingCartType$UserType.fromJson(
                   json['user'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : ShoppingCart$Query$ShoppingCartType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..price = json['price'] == null
               ? null
               : ShoppingCart$Query$ShoppingCartType$PriceFullType.fromJson(
@@ -854,7 +775,6 @@ Map<String, dynamic> _$ShoppingCart$Query$ShoppingCartTypeToJson(
   }
 
   writeNotNull('user', instance.user?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   writeNotNull('price', instance.price?.toJson());
   writeNotNull('discount', instance.discount?.toJson());
   writeNotNull('taxValue', instance.taxValue?.toJson());
@@ -939,82 +859,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleType
-    _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerType
-    _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerType
-    _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindShoppingCartByUser$Query$ShoppingCartType$TargetType
-    _$FindShoppingCartByUser$Query$ShoppingCartType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindShoppingCartByUser$Query$ShoppingCartType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$FindShoppingCartByUser$Query$ShoppingCartType$TargetTypeToJson(
-        FindShoppingCartByUser$Query$ShoppingCartType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -1669,10 +1513,6 @@ FindShoppingCartByUser$Query$ShoppingCartType
               ? null
               : FindShoppingCartByUser$Query$ShoppingCartType$UserType.fromJson(
                   json['user'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : FindShoppingCartByUser$Query$ShoppingCartType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..price = json['price'] == null
               ? null
               : FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType
@@ -1706,7 +1546,6 @@ Map<String, dynamic> _$FindShoppingCartByUser$Query$ShoppingCartTypeToJson(
   }
 
   writeNotNull('user', instance.user?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   writeNotNull('price', instance.price?.toJson());
   writeNotNull('discount', instance.discount?.toJson());
   writeNotNull('taxValue', instance.taxValue?.toJson());
@@ -2655,83 +2494,6 @@ Map<String, dynamic>
   return val;
 }
 
-FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleType
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerType
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerType
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetTypeToJson(
-        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType$ReduciblePriceType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType$ReduciblePriceTypeFromJson(
             Map<String, dynamic> json) =>
@@ -3463,83 +3225,6 @@ const _$ProductVarietyEnumEnumMap = {
   ProductVarietyEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
 };
 
-FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
-        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
             Map<String, dynamic> json) =>
@@ -3551,10 +3236,7 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..attribute =
               FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target =
-              FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -3567,7 +3249,6 @@ Map<String, dynamic>
           'createdAt': instance.createdAt.toIso8601String(),
           'updatedAt': instance.updatedAt.toIso8601String(),
           'attribute': instance.attribute.toJson(),
-          'target': instance.target.toJson(),
         };
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType
@@ -3757,10 +3438,6 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
               ? null
               : FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserType
                   .fromJson(json['user'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..price = json['price'] == null
               ? null
               : FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType
@@ -3796,7 +3473,6 @@ Map<String, dynamic>
   }
 
   writeNotNull('user', instance.user?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   writeNotNull('price', instance.price?.toJson());
   writeNotNull('discount', instance.discount?.toJson());
   writeNotNull('taxValue', instance.taxValue?.toJson());
@@ -3957,81 +3633,6 @@ Map<String, dynamic> _$AddToCart$Mutation$ShoppingCartType$UserTypeToJson(
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-    _$AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-    _$AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-    _$AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-AddToCart$Mutation$ShoppingCartType$TargetType
-    _$AddToCart$Mutation$ShoppingCartType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        AddToCart$Mutation$ShoppingCartType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$AddToCart$Mutation$ShoppingCartType$TargetTypeToJson(
-    AddToCart$Mutation$ShoppingCartType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -4681,10 +4282,6 @@ AddToCart$Mutation$ShoppingCartType
               ? null
               : AddToCart$Mutation$ShoppingCartType$UserType.fromJson(
                   json['user'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : AddToCart$Mutation$ShoppingCartType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..price = json['price'] == null
               ? null
               : AddToCart$Mutation$ShoppingCartType$PriceFullType.fromJson(
@@ -4718,7 +4315,6 @@ Map<String, dynamic> _$AddToCart$Mutation$ShoppingCartTypeToJson(
   }
 
   writeNotNull('user', instance.user?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   writeNotNull('price', instance.price?.toJson());
   writeNotNull('discount', instance.discount?.toJson());
   writeNotNull('taxValue', instance.taxValue?.toJson());
@@ -4802,82 +4398,6 @@ Map<String, dynamic> _$RemoveFromCart$Mutation$ShoppingCartType$UserTypeToJson(
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-    _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-    _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-    _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-RemoveFromCart$Mutation$ShoppingCartType$TargetType
-    _$RemoveFromCart$Mutation$ShoppingCartType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        RemoveFromCart$Mutation$ShoppingCartType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$RemoveFromCart$Mutation$ShoppingCartType$TargetTypeToJson(
-        RemoveFromCart$Mutation$ShoppingCartType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -5529,10 +5049,6 @@ RemoveFromCart$Mutation$ShoppingCartType
               ? null
               : RemoveFromCart$Mutation$ShoppingCartType$UserType.fromJson(
                   json['user'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : RemoveFromCart$Mutation$ShoppingCartType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..price = json['price'] == null
               ? null
               : RemoveFromCart$Mutation$ShoppingCartType$PriceFullType.fromJson(
@@ -5566,7 +5082,6 @@ Map<String, dynamic> _$RemoveFromCart$Mutation$ShoppingCartTypeToJson(
   }
 
   writeNotNull('user', instance.user?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   writeNotNull('price', instance.price?.toJson());
   writeNotNull('discount', instance.discount?.toJson());
   writeNotNull('taxValue', instance.taxValue?.toJson());
@@ -5653,82 +5168,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-    _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-    _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-    _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-AddDiscoutToCart$Mutation$ShoppingCartType$TargetType
-    _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        AddDiscoutToCart$Mutation$ShoppingCartType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetTypeToJson(
-        AddDiscoutToCart$Mutation$ShoppingCartType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -6381,10 +5820,6 @@ AddDiscoutToCart$Mutation$ShoppingCartType
               ? null
               : AddDiscoutToCart$Mutation$ShoppingCartType$UserType.fromJson(
                   json['user'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : AddDiscoutToCart$Mutation$ShoppingCartType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..price = json['price'] == null
               ? null
               : AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType
@@ -6418,7 +5853,6 @@ Map<String, dynamic> _$AddDiscoutToCart$Mutation$ShoppingCartTypeToJson(
   }
 
   writeNotNull('user', instance.user?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   writeNotNull('price', instance.price?.toJson());
   writeNotNull('discount', instance.discount?.toJson());
   writeNotNull('taxValue', instance.taxValue?.toJson());
@@ -6525,81 +5959,6 @@ Map<String, dynamic> _$EmptyCart$Mutation$ShoppingCartType$UserTypeToJson(
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-    _$EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-    _$EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-    _$EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-EmptyCart$Mutation$ShoppingCartType$TargetType
-    _$EmptyCart$Mutation$ShoppingCartType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        EmptyCart$Mutation$ShoppingCartType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$EmptyCart$Mutation$ShoppingCartType$TargetTypeToJson(
-    EmptyCart$Mutation$ShoppingCartType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -7249,10 +6608,6 @@ EmptyCart$Mutation$ShoppingCartType
               ? null
               : EmptyCart$Mutation$ShoppingCartType$UserType.fromJson(
                   json['user'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : EmptyCart$Mutation$ShoppingCartType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..price = json['price'] == null
               ? null
               : EmptyCart$Mutation$ShoppingCartType$PriceFullType.fromJson(
@@ -7286,7 +6641,6 @@ Map<String, dynamic> _$EmptyCart$Mutation$ShoppingCartTypeToJson(
   }
 
   writeNotNull('user', instance.user?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   writeNotNull('price', instance.price?.toJson());
   writeNotNull('discount', instance.discount?.toJson());
   writeNotNull('taxValue', instance.taxValue?.toJson());
@@ -7371,82 +6725,6 @@ Map<String, dynamic>
   writeNotNull('username', instance.username);
   writeNotNull('firstName', instance.firstName);
   writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
-
-UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-    _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerType
-    _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerType
-    _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateProductCredit$Mutation$ShoppingCartType$TargetType
-    _$UpdateProductCredit$Mutation$ShoppingCartType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateProductCredit$Mutation$ShoppingCartType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateProductCredit$Mutation$ShoppingCartType$TargetTypeToJson(
-        UpdateProductCredit$Mutation$ShoppingCartType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -8101,10 +7379,6 @@ UpdateProductCredit$Mutation$ShoppingCartType
               ? null
               : UpdateProductCredit$Mutation$ShoppingCartType$UserType.fromJson(
                   json['user'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : UpdateProductCredit$Mutation$ShoppingCartType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..price = json['price'] == null
               ? null
               : UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType
@@ -8138,7 +7412,6 @@ Map<String, dynamic> _$UpdateProductCredit$Mutation$ShoppingCartTypeToJson(
   }
 
   writeNotNull('user', instance.user?.toJson());
-  writeNotNull('target', instance.target?.toJson());
   writeNotNull('price', instance.price?.toJson());
   writeNotNull('discount', instance.discount?.toJson());
   writeNotNull('taxValue', instance.taxValue?.toJson());

@@ -59,82 +59,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerType
-    _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCards$Query$BoardCardType$LabelType$TargetType
-    _$GetBoardCards$Query$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCards$Query$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetBoardCards$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetBoardCards$Query$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetBoardCards$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetBoardCards$Query$BoardCardType$LabelType$TargetTypeToJson(
-        GetBoardCards$Query$BoardCardType$LabelType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetBoardCards$Query$BoardCardType$LabelType
     _$GetBoardCards$Query$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -146,9 +70,6 @@ GetBoardCards$Query$BoardCardType$LabelType
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              GetBoardCards$Query$BoardCardType$LabelType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -168,7 +89,6 @@ Map<String, dynamic> _$GetBoardCards$Query$BoardCardType$LabelTypeToJson(
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -898,83 +818,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType
-    _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetBoardCards$Query$BoardCardType$BoardListType$BoardType
     _$GetBoardCards$Query$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -991,9 +834,6 @@ GetBoardCards$Query$BoardCardType$BoardListType$BoardType
                   GetBoardCards$Query$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              GetBoardCards$Query$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -1015,7 +855,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -2745,83 +2584,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerType
-    _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType
-    _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetTypeToJson(
-        GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetBoardCardsByBoardList$Query$BoardCardType$LabelType
     _$GetBoardCardsByBoardList$Query$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -2833,9 +2595,6 @@ GetBoardCardsByBoardList$Query$BoardCardType$LabelType
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              GetBoardCardsByBoardList$Query$BoardCardType$LabelType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -2856,7 +2615,6 @@ Map<String, dynamic>
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -3551,83 +3309,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType
-    _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType
     _$GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -3644,9 +3325,6 @@ GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType
                   GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              GetBoardCardsByBoardList$Query$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -3669,7 +3347,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -5382,82 +5059,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerType
-    _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCard$Query$BoardCardType$LabelType$TargetType
-    _$GetBoardCard$Query$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCard$Query$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetBoardCard$Query$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetBoardCard$Query$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetBoardCard$Query$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetBoardCard$Query$BoardCardType$LabelType$TargetTypeToJson(
-        GetBoardCard$Query$BoardCardType$LabelType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetBoardCard$Query$BoardCardType$LabelType
     _$GetBoardCard$Query$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -5469,9 +5070,6 @@ GetBoardCard$Query$BoardCardType$LabelType
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              GetBoardCard$Query$BoardCardType$LabelType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -5491,7 +5089,6 @@ Map<String, dynamic> _$GetBoardCard$Query$BoardCardType$LabelTypeToJson(
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -6180,83 +5777,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType
-    _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetBoardCard$Query$BoardCardType$BoardListType$BoardType
     _$GetBoardCard$Query$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -6273,9 +5793,6 @@ GetBoardCard$Query$BoardCardType$BoardListType$BoardType
                   GetBoardCard$Query$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              GetBoardCard$Query$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -6297,7 +5814,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -7994,83 +7510,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerType
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetTypeToJson(
-        GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType
     _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -8082,9 +7521,6 @@ GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardTyp
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$LabelType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -8106,7 +7542,6 @@ Map<String, dynamic>
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -8803,83 +8238,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType
     _$GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -8896,9 +8254,6 @@ GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardTyp
                   GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -8921,7 +8276,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -10746,82 +10100,6 @@ Map<String, dynamic>
   return val;
 }
 
-CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-    _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType
-    _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CreateBoardCard$Mutation$BoardCardType$LabelType$TargetTypeToJson(
-        CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CreateBoardCard$Mutation$BoardCardType$LabelType
     _$CreateBoardCard$Mutation$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -10833,8 +10111,6 @@ CreateBoardCard$Mutation$BoardCardType$LabelType
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target = CreateBoardCard$Mutation$BoardCardType$LabelType$TargetType
-              .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -10854,7 +10130,6 @@ Map<String, dynamic> _$CreateBoardCard$Mutation$BoardCardType$LabelTypeToJson(
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -11545,83 +10820,6 @@ Map<String, dynamic>
   return val;
 }
 
-CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-    _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType
     _$CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -11638,9 +10836,6 @@ CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType
                   CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              CreateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -11663,7 +10858,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -13446,83 +12640,6 @@ Map<String, dynamic>
   return val;
 }
 
-ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-    _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType
-    _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetTypeToJson(
-        ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 ReorderBoardCards$Mutation$BoardCardType$LabelType
     _$ReorderBoardCards$Mutation$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -13534,9 +12651,6 @@ ReorderBoardCards$Mutation$BoardCardType$LabelType
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              ReorderBoardCards$Mutation$BoardCardType$LabelType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -13556,7 +12670,6 @@ Map<String, dynamic> _$ReorderBoardCards$Mutation$BoardCardType$LabelTypeToJson(
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -14250,83 +13363,6 @@ Map<String, dynamic>
   return val;
 }
 
-ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-    _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType
     _$ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -14343,9 +13379,6 @@ ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType
                   ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              ReorderBoardCards$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -14368,7 +13401,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -16080,82 +15112,6 @@ Map<String, dynamic>
   return val;
 }
 
-UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-    _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType
-    _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetTypeToJson(
-        UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 UpdateBoardCard$Mutation$BoardCardType$LabelType
     _$UpdateBoardCard$Mutation$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -16167,8 +15123,6 @@ UpdateBoardCard$Mutation$BoardCardType$LabelType
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target = UpdateBoardCard$Mutation$BoardCardType$LabelType$TargetType
-              .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -16188,7 +15142,6 @@ Map<String, dynamic> _$UpdateBoardCard$Mutation$BoardCardType$LabelTypeToJson(
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -16879,83 +15832,6 @@ Map<String, dynamic>
   return val;
 }
 
-UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-    _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType
     _$UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -16972,9 +15848,6 @@ UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType
                   UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              UpdateBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -16997,7 +15870,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;

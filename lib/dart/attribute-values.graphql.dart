@@ -75,93 +75,6 @@ class GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeVal
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType();
-
-  factory GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType();
-
-  factory GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType();
-
-  factory GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType
     extends JsonSerializable with EquatableMixin {
   GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType();
@@ -184,12 +97,9 @@ class GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeVal
   late GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
       attribute;
 
-  late GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$TargetType
-      target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueTypeToJson(
@@ -330,93 +240,6 @@ class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$Attri
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType();
-
-  factory GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType();
-
-  factory GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType();
-
-  factory GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType
     extends JsonSerializable with EquatableMixin {
   GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType();
@@ -439,12 +262,9 @@ class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$Attri
   late GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
       attribute;
 
-  late GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType
-      target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueTypeToJson(
@@ -589,90 +409,6 @@ class GetAttributeValues$Query$AttributeValueType$AttributeType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetAttributeValues$Query$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValues$Query$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory GetAttributeValues$Query$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValues$Query$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValues$Query$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValues$Query$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValues$Query$AttributeValueType$TargetType$WholesalerType();
-
-  factory GetAttributeValues$Query$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValues$Query$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValues$Query$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValues$Query$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValues$Query$AttributeValueType$TargetType$ManufacturerType();
-
-  factory GetAttributeValues$Query$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValues$Query$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValues$Query$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValues$Query$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValues$Query$AttributeValueType$TargetType();
-
-  factory GetAttributeValues$Query$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValues$Query$AttributeValueType$TargetTypeFromJson(json);
-
-  GetAttributeValues$Query$AttributeValueType$TargetType$PointOfSaleType? pos;
-
-  GetAttributeValues$Query$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetAttributeValues$Query$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValues$Query$AttributeValueType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetAttributeValues$Query$AttributeValueType extends JsonSerializable
     with EquatableMixin {
   GetAttributeValues$Query$AttributeValueType();
@@ -693,11 +429,9 @@ class GetAttributeValues$Query$AttributeValueType extends JsonSerializable
 
   late GetAttributeValues$Query$AttributeValueType$AttributeType attribute;
 
-  late GetAttributeValues$Query$AttributeValueType$TargetType target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValues$Query$AttributeValueTypeToJson(this);
@@ -787,93 +521,6 @@ class GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$WholesalerType();
-
-  factory GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$ManufacturerType();
-
-  factory GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByTarget$Query$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByTarget$Query$AttributeValueType$TargetType();
-
-  factory GetAttributeValuesByTarget$Query$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByTarget$Query$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetAttributeValuesByTarget$Query$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByTarget$Query$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetAttributeValuesByTarget$Query$AttributeValueType
     extends JsonSerializable with EquatableMixin {
   GetAttributeValuesByTarget$Query$AttributeValueType();
@@ -895,11 +542,9 @@ class GetAttributeValuesByTarget$Query$AttributeValueType
   late GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType
       attribute;
 
-  late GetAttributeValuesByTarget$Query$AttributeValueType$TargetType target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTarget$Query$AttributeValueTypeToJson(this);
@@ -993,93 +638,6 @@ class GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$WholesalerType();
-
-  factory GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$ManufacturerType();
-
-  factory GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType();
-
-  factory GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByAttribute$Query$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByAttribute$Query$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetAttributeValuesByAttribute$Query$AttributeValueType
     extends JsonSerializable with EquatableMixin {
   GetAttributeValuesByAttribute$Query$AttributeValueType();
@@ -1101,11 +659,9 @@ class GetAttributeValuesByAttribute$Query$AttributeValueType
   late GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType
       attribute;
 
-  late GetAttributeValuesByAttribute$Query$AttributeValueType$TargetType target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttribute$Query$AttributeValueTypeToJson(this);
@@ -1197,89 +753,6 @@ class AttributeValue$Query$AttributeValueType$AttributeType
 }
 
 @JsonSerializable(explicitToJson: true)
-class AttributeValue$Query$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  AttributeValue$Query$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory AttributeValue$Query$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AttributeValue$Query$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AttributeValue$Query$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AttributeValue$Query$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  AttributeValue$Query$AttributeValueType$TargetType$WholesalerType();
-
-  factory AttributeValue$Query$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AttributeValue$Query$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AttributeValue$Query$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AttributeValue$Query$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  AttributeValue$Query$AttributeValueType$TargetType$ManufacturerType();
-
-  factory AttributeValue$Query$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AttributeValue$Query$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AttributeValue$Query$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AttributeValue$Query$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  AttributeValue$Query$AttributeValueType$TargetType();
-
-  factory AttributeValue$Query$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AttributeValue$Query$AttributeValueType$TargetTypeFromJson(json);
-
-  AttributeValue$Query$AttributeValueType$TargetType$PointOfSaleType? pos;
-
-  AttributeValue$Query$AttributeValueType$TargetType$WholesalerType? wholesaler;
-
-  AttributeValue$Query$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AttributeValue$Query$AttributeValueType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class AttributeValue$Query$AttributeValueType extends JsonSerializable
     with EquatableMixin {
   AttributeValue$Query$AttributeValueType();
@@ -1300,11 +773,9 @@ class AttributeValue$Query$AttributeValueType extends JsonSerializable
 
   late AttributeValue$Query$AttributeValueType$AttributeType attribute;
 
-  late AttributeValue$Query$AttributeValueType$TargetType target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$AttributeValue$Query$AttributeValueTypeToJson(this);
@@ -1394,93 +865,6 @@ class SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$A
 }
 
 @JsonSerializable(explicitToJson: true)
-class SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType();
-
-  factory SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType();
-
-  factory SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType();
-
-  factory SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType
     extends JsonSerializable with EquatableMixin {
   SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType();
@@ -1503,12 +887,9 @@ class SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType
   late SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
       attribute;
 
-  late SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$TargetType
-      target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueTypeToJson(
@@ -1624,93 +1005,6 @@ class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$At
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType();
-
-  factory GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType();
-
-  factory GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType();
-
-  factory GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType
     extends JsonSerializable with EquatableMixin {
   GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType();
@@ -1733,12 +1027,9 @@ class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$At
   late GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
       attribute;
 
-  late GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$TargetType
-      target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueTypeToJson(
@@ -1859,93 +1150,6 @@ class SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeVal
 }
 
 @JsonSerializable(explicitToJson: true)
-class SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType();
-
-  factory SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType();
-
-  factory SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType();
-
-  factory SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType
     extends JsonSerializable with EquatableMixin {
   SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType();
@@ -1968,12 +1172,9 @@ class SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeVal
   late SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
       attribute;
 
-  late SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$TargetType
-      target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueTypeToJson(
@@ -2094,93 +1295,6 @@ class FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$Attribute
 }
 
 @JsonSerializable(explicitToJson: true)
-class FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$WholesalerType();
-
-  factory FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$ManufacturerType();
-
-  factory FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType();
-
-  factory FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType
     extends JsonSerializable with EquatableMixin {
   FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType();
@@ -2203,12 +1317,9 @@ class FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType
   late FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeType
       attribute;
 
-  late FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$TargetType
-      target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueTypeToJson(
@@ -2303,93 +1414,6 @@ class SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType
 }
 
 @JsonSerializable(explicitToJson: true)
-class SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType();
-
-  factory SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType();
-
-  factory SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SyncOneAttributeValue$Mutation$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  SyncOneAttributeValue$Mutation$AttributeValueType$TargetType();
-
-  factory SyncOneAttributeValue$Mutation$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SyncOneAttributeValue$Mutation$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  SyncOneAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SyncOneAttributeValue$Mutation$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class SyncOneAttributeValue$Mutation$AttributeValueType extends JsonSerializable
     with EquatableMixin {
   SyncOneAttributeValue$Mutation$AttributeValueType();
@@ -2411,11 +1435,9 @@ class SyncOneAttributeValue$Mutation$AttributeValueType extends JsonSerializable
   late SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType
       attribute;
 
-  late SyncOneAttributeValue$Mutation$AttributeValueType$TargetType target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$SyncOneAttributeValue$Mutation$AttributeValueTypeToJson(this);
@@ -2532,92 +1554,6 @@ class CreateAttributeValue$Mutation$AttributeValueType$AttributeType
 }
 
 @JsonSerializable(explicitToJson: true)
-class CreateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory CreateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType();
-
-  factory CreateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType();
-
-  factory CreateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateAttributeValue$Mutation$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CreateAttributeValue$Mutation$AttributeValueType$TargetType();
-
-  factory CreateAttributeValue$Mutation$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateAttributeValue$Mutation$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  CreateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  CreateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  CreateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateAttributeValue$Mutation$AttributeValueType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CreateAttributeValue$Mutation$AttributeValueType extends JsonSerializable
     with EquatableMixin {
   CreateAttributeValue$Mutation$AttributeValueType();
@@ -2638,11 +1574,9 @@ class CreateAttributeValue$Mutation$AttributeValueType extends JsonSerializable
 
   late CreateAttributeValue$Mutation$AttributeValueType$AttributeType attribute;
 
-  late CreateAttributeValue$Mutation$AttributeValueType$TargetType target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateAttributeValue$Mutation$AttributeValueTypeToJson(this);
@@ -2733,92 +1667,6 @@ class UpdateAttributeValue$Mutation$AttributeValueType$AttributeType
 }
 
 @JsonSerializable(explicitToJson: true)
-class UpdateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  UpdateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory UpdateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType();
-
-  factory UpdateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType();
-
-  factory UpdateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateAttributeValue$Mutation$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  UpdateAttributeValue$Mutation$AttributeValueType$TargetType();
-
-  factory UpdateAttributeValue$Mutation$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateAttributeValue$Mutation$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  UpdateAttributeValue$Mutation$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  UpdateAttributeValue$Mutation$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  UpdateAttributeValue$Mutation$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateAttributeValue$Mutation$AttributeValueType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class UpdateAttributeValue$Mutation$AttributeValueType extends JsonSerializable
     with EquatableMixin {
   UpdateAttributeValue$Mutation$AttributeValueType();
@@ -2839,11 +1687,9 @@ class UpdateAttributeValue$Mutation$AttributeValueType extends JsonSerializable
 
   late UpdateAttributeValue$Mutation$AttributeValueType$AttributeType attribute;
 
-  late UpdateAttributeValue$Mutation$AttributeValueType$TargetType target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateAttributeValue$Mutation$AttributeValueTypeToJson(this);
@@ -3121,59 +1967,6 @@ final GET_ATTRIBUTE_VALUES_PAGINATION_QUERY_DOCUMENT =
                   ),
                 ]),
               ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
             ]),
           ),
         ]),
@@ -3405,59 +2198,6 @@ final GET_ATTRIBUTE_VALUES_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                   ),
                 ]),
               ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
             ]),
           ),
         ]),
@@ -3608,59 +2348,6 @@ final GET_ATTRIBUTE_VALUES_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: SelectionSetNode(selections: [
                   FieldNode(
                     name: NameNode(value: 'pixelAttribute'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -3849,59 +2536,6 @@ final GET_ATTRIBUTE_VALUES_BY_TARGET_QUERY_DOCUMENT =
                 selectionSet: SelectionSetNode(selections: [
                   FieldNode(
                     name: NameNode(value: 'pixelAttribute'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -4102,59 +2736,6 @@ final GET_ATTRIBUTE_VALUES_BY_ATTRIBUTE_QUERY_DOCUMENT =
               ),
             ]),
           ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
         ]),
       )
     ]),
@@ -4334,59 +2915,6 @@ final ATTRIBUTE_VALUE_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: SelectionSetNode(selections: [
                   FieldNode(
                     name: NameNode(value: 'pixelAttribute'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -4621,59 +3149,6 @@ final SEARCH_ATTRIBUTE_VALUE_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                 ]),
               ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
             ]),
           ),
         ]),
@@ -4896,59 +3371,6 @@ final GET_ATTRIBUTE_VALUES_BY_ATTRIBUTE_PAGINATED_QUERY_DOCUMENT =
                     selectionSet: SelectionSetNode(selections: [
                       FieldNode(
                         name: NameNode(value: 'pixelAttribute'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -5208,59 +3630,6 @@ final SEARCH_ATTRIBUTE_VALUE_BY_TARGET_QUERY_DOCUMENT =
                   ),
                 ]),
               ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
             ]),
           ),
         ]),
@@ -5472,59 +3841,6 @@ final FIND_ATTRIBUTE_VALUE_BY_EXTERNAL_ID_AND_TARGET_QUERY_DOCUMENT =
               ),
             ]),
           ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
         ]),
       )
     ]),
@@ -5707,59 +4023,6 @@ final SYNC_ONE_ATTRIBUTE_VALUE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: SelectionSetNode(selections: [
                   FieldNode(
                     name: NameNode(value: 'pixelAttribute'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -5957,59 +4220,6 @@ final CREATE_ATTRIBUTE_VALUE_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
         ]),
       )
     ]),
@@ -6189,59 +4399,6 @@ final UPDATE_ATTRIBUTE_VALUE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: SelectionSetNode(selections: [
                   FieldNode(
                     name: NameNode(value: 'pixelAttribute'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
                     alias: null,
                     arguments: [],
                     directives: [],

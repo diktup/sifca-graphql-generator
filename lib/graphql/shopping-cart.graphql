@@ -19,17 +19,7 @@ query shoppingCart($id: ID!) {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     price {
       net {
         beforeReduction
@@ -181,17 +171,7 @@ query findShoppingCartByUser($id: ID) {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     price {
       net {
         beforeReduction
@@ -490,17 +470,7 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
           y
         }
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       price {
         net {
           beforeReduction
@@ -666,17 +636,7 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
                   pixelAttribute
                 }
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
         }
@@ -706,17 +666,7 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     price {
       net {
         beforeReduction
@@ -868,17 +818,7 @@ mutation removeFromCart($product: CartProductInput!) {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     price {
       net {
         beforeReduction
@@ -1030,17 +970,7 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     price {
       net {
         beforeReduction
@@ -1192,17 +1122,7 @@ mutation emptyCart {
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     price {
       net {
         beforeReduction
@@ -1354,17 +1274,7 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
         y
       }
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     price {
       net {
         beforeReduction

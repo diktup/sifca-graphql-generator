@@ -629,17 +629,7 @@ query getBlogs {
       x
       y
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     sectionData {
       sectionTitle
       sectionContent
@@ -1292,17 +1282,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
         x
         y
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       sectionData {
         sectionTitle
         sectionContent
@@ -1953,17 +1933,7 @@ query blog($id: String!) {
       x
       y
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     sectionData {
       sectionTitle
       sectionContent
@@ -2613,17 +2583,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
       x
       y
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     sectionData {
       sectionTitle
       sectionContent
@@ -3273,17 +3233,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
       x
       y
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     sectionData {
       sectionTitle
       sectionContent
@@ -3941,17 +3891,7 @@ query findBlogsByTargetPaginated(
         x
         y
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       sectionData {
         sectionTitle
         sectionContent
@@ -4602,17 +4542,7 @@ query findBlogsByAuthor($author: String!) {
       x
       y
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     sectionData {
       sectionTitle
       sectionContent
@@ -5265,17 +5195,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
         x
         y
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       sectionData {
         sectionTitle
         sectionContent
@@ -5929,17 +5849,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
         x
         y
       }
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       sectionData {
         sectionTitle
         sectionContent
@@ -6591,17 +6501,7 @@ mutation createBlog($input: BlogInput!) {
       x
       y
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     sectionData {
       sectionTitle
       sectionContent
@@ -7251,17 +7151,7 @@ mutation publishBlog($id: String!) {
       x
       y
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     sectionData {
       sectionTitle
       sectionContent
@@ -7911,17 +7801,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
       x
       y
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     sectionData {
       sectionTitle
       sectionContent
@@ -8571,17 +8451,7 @@ mutation deleteBlog($id: ID!) {
       x
       y
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     sectionData {
       sectionTitle
       sectionContent

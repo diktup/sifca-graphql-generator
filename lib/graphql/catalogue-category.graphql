@@ -32,17 +32,7 @@ query getCatalogueCategories($target: TargetACIInput!) {
       y
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 query catalogueCategory($id: ID!) {
@@ -79,17 +69,7 @@ query catalogueCategory($id: ID!) {
       y
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 query getCatalogueCategoryPath($id: ID!) {
@@ -126,17 +106,7 @@ query getCatalogueCategoryPath($id: ID!) {
       y
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 query getCatalogueCategoriesByTargetForPortal($target: TargetACIInput!) {
@@ -173,17 +143,7 @@ query getCatalogueCategoriesByTargetForPortal($target: TargetACIInput!) {
       y
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
@@ -220,17 +180,7 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
       y
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
 
     children {
       id
@@ -265,17 +215,7 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
         y
       }
 
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
 
       children {
         id
@@ -310,17 +250,7 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
           y
         }
 
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
 
         children {
           id
@@ -355,17 +285,7 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
             y
           }
 
-          target {
-            pos {
-              id
-            }
-            wholesaler {
-              id
-            }
-            manufacturer {
-              id
-            }
-          }
+
 
           children {
             id
@@ -400,17 +320,7 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
               y
             }
 
-            target {
-              pos {
-                id
-              }
-              wholesaler {
-                id
-              }
-              manufacturer {
-                id
-              }
-            }
+            
 
             children {
               id
@@ -445,17 +355,7 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
                 y
               }
 
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
         }
@@ -500,17 +400,7 @@ query getCatalogueCategoriesByTargetAndUrlKey(
       y
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 query getCatalogueCategoriesByTargetPaginated(
@@ -556,17 +446,7 @@ query getCatalogueCategoriesByTargetPaginated(
         y
       }
 
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
     }
   }
 }
@@ -613,17 +493,7 @@ query getCatalogueCategoriesByLayerAndParent(
       x
       y
     }
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
     parent {
       id
       name
@@ -701,17 +571,7 @@ query getCatalogueCategoriesByLayerAndParentForPortal(
       y
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 query searchCatalogueCategories(
@@ -757,17 +617,7 @@ query searchCatalogueCategories(
         y
       }
 
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
     }
   }
 }
@@ -806,17 +656,7 @@ mutation createCatalogueCategory($input: CatalogueCategoryInput!) {
       y
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 mutation updateCatalogueCategory($input: CatalogueCategoryUpdateInput!) {
@@ -853,17 +693,7 @@ mutation updateCatalogueCategory($input: CatalogueCategoryUpdateInput!) {
       y
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }
 mutation deleteCatalogueCategory($id: ID!) {
@@ -914,16 +744,6 @@ mutation reorderCatalogueCategories(
       y
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+
   }
 }

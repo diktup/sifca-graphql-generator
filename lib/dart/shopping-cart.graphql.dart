@@ -67,88 +67,6 @@ class ShoppingCart$Query$ShoppingCartType$UserType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleType();
-
-  factory ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerType();
-
-  factory ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerType();
-
-  factory ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ShoppingCart$Query$ShoppingCartType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  ShoppingCart$Query$ShoppingCartType$TargetType();
-
-  factory ShoppingCart$Query$ShoppingCartType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ShoppingCart$Query$ShoppingCartType$TargetTypeFromJson(json);
-
-  ShoppingCart$Query$ShoppingCartType$TargetType$PointOfSaleType? pos;
-
-  ShoppingCart$Query$ShoppingCartType$TargetType$WholesalerType? wholesaler;
-
-  ShoppingCart$Query$ShoppingCartType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ShoppingCart$Query$ShoppingCartType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class ShoppingCart$Query$ShoppingCartType$PriceFullType$ReduciblePriceType
     extends JsonSerializable with EquatableMixin {
   ShoppingCart$Query$ShoppingCartType$PriceFullType$ReduciblePriceType();
@@ -733,8 +651,6 @@ class ShoppingCart$Query$ShoppingCartType extends JsonSerializable
 
   ShoppingCart$Query$ShoppingCartType$UserType? user;
 
-  ShoppingCart$Query$ShoppingCartType$TargetType? target;
-
   ShoppingCart$Query$ShoppingCartType$PriceFullType? price;
 
   ShoppingCart$Query$ShoppingCartType$DiscountDtoType? discount;
@@ -744,17 +660,8 @@ class ShoppingCart$Query$ShoppingCartType extends JsonSerializable
   List<ShoppingCart$Query$ShoppingCartType$CartProductType>? products;
 
   @override
-  List<Object?> get props => [
-        id,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        price,
-        discount,
-        taxValue,
-        products
-      ];
+  List<Object?> get props =>
+      [id, createdAt, updatedAt, user, price, discount, taxValue, products];
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartTypeToJson(this);
@@ -835,90 +742,6 @@ class FindShoppingCartByUser$Query$ShoppingCartType$UserType
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$UserTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleType();
-
-  factory FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerType();
-
-  factory FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerType();
-
-  factory FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindShoppingCartByUser$Query$ShoppingCartType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  FindShoppingCartByUser$Query$ShoppingCartType$TargetType();
-
-  factory FindShoppingCartByUser$Query$ShoppingCartType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindShoppingCartByUser$Query$ShoppingCartType$TargetTypeFromJson(json);
-
-  FindShoppingCartByUser$Query$ShoppingCartType$TargetType$PointOfSaleType? pos;
-
-  FindShoppingCartByUser$Query$ShoppingCartType$TargetType$WholesalerType?
-      wholesaler;
-
-  FindShoppingCartByUser$Query$ShoppingCartType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindShoppingCartByUser$Query$ShoppingCartType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -1516,8 +1339,6 @@ class FindShoppingCartByUser$Query$ShoppingCartType extends JsonSerializable
 
   FindShoppingCartByUser$Query$ShoppingCartType$UserType? user;
 
-  FindShoppingCartByUser$Query$ShoppingCartType$TargetType? target;
-
   FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType? price;
 
   FindShoppingCartByUser$Query$ShoppingCartType$DiscountDtoType? discount;
@@ -1527,17 +1348,8 @@ class FindShoppingCartByUser$Query$ShoppingCartType extends JsonSerializable
   List<FindShoppingCartByUser$Query$ShoppingCartType$CartProductType>? products;
 
   @override
-  List<Object?> get props => [
-        id,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        price,
-        discount,
-        taxValue,
-        products
-      ];
+  List<Object?> get props =>
+      [id, createdAt, updatedAt, user, price, discount, taxValue, products];
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartTypeToJson(this);
@@ -2423,93 +2235,6 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 }
 
 @JsonSerializable(explicitToJson: true)
-class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleType();
-
-  factory FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerType();
-
-  factory FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerType();
-
-  factory FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType();
-
-  factory FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetTypeFromJson(
-          json);
-
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$PointOfSaleType?
-      pos;
-
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$WholesalerType?
-      wholesaler;
-
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType$ReduciblePriceType
     extends JsonSerializable with EquatableMixin {
   FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType$ReduciblePriceType();
@@ -3148,93 +2873,6 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 }
 
 @JsonSerializable(explicitToJson: true)
-class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType();
-
-  factory FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType();
-
-  factory FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType();
-
-  factory FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType
     extends JsonSerializable with EquatableMixin {
   FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType();
@@ -3257,12 +2895,9 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
   late FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
       attribute;
 
-  late FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-      target;
-
   @override
   List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute, target];
+      [id, label, externalId, createdAt, updatedAt, attribute];
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -3422,9 +3057,6 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
   FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserType?
       user;
 
-  FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$TargetType?
-      target;
-
   FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType?
       price;
 
@@ -3438,17 +3070,8 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
       products;
 
   @override
-  List<Object?> get props => [
-        id,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        price,
-        discount,
-        taxValue,
-        products
-      ];
+  List<Object?> get props =>
+      [id, createdAt, updatedAt, user, price, discount, taxValue, products];
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetTypeToJson(
@@ -3602,88 +3225,6 @@ class AddToCart$Mutation$ShoppingCartType$UserType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$UserTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType();
-
-  factory AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerType();
-
-  factory AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType();
-
-  factory AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToCart$Mutation$ShoppingCartType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  AddToCart$Mutation$ShoppingCartType$TargetType();
-
-  factory AddToCart$Mutation$ShoppingCartType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToCart$Mutation$ShoppingCartType$TargetTypeFromJson(json);
-
-  AddToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType? pos;
-
-  AddToCart$Mutation$ShoppingCartType$TargetType$WholesalerType? wholesaler;
-
-  AddToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToCart$Mutation$ShoppingCartType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -4271,8 +3812,6 @@ class AddToCart$Mutation$ShoppingCartType extends JsonSerializable
 
   AddToCart$Mutation$ShoppingCartType$UserType? user;
 
-  AddToCart$Mutation$ShoppingCartType$TargetType? target;
-
   AddToCart$Mutation$ShoppingCartType$PriceFullType? price;
 
   AddToCart$Mutation$ShoppingCartType$DiscountDtoType? discount;
@@ -4282,17 +3821,8 @@ class AddToCart$Mutation$ShoppingCartType extends JsonSerializable
   List<AddToCart$Mutation$ShoppingCartType$CartProductType>? products;
 
   @override
-  List<Object?> get props => [
-        id,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        price,
-        discount,
-        taxValue,
-        products
-      ];
+  List<Object?> get props =>
+      [id, createdAt, updatedAt, user, price, discount, taxValue, products];
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartTypeToJson(this);
@@ -4373,90 +3903,6 @@ class RemoveFromCart$Mutation$ShoppingCartType$UserType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$UserTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType();
-
-  factory RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerType();
-
-  factory RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerType();
-
-  factory RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromCart$Mutation$ShoppingCartType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromCart$Mutation$ShoppingCartType$TargetType();
-
-  factory RemoveFromCart$Mutation$ShoppingCartType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromCart$Mutation$ShoppingCartType$TargetTypeFromJson(json);
-
-  RemoveFromCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType? pos;
-
-  RemoveFromCart$Mutation$ShoppingCartType$TargetType$WholesalerType?
-      wholesaler;
-
-  RemoveFromCart$Mutation$ShoppingCartType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromCart$Mutation$ShoppingCartType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -5047,8 +4493,6 @@ class RemoveFromCart$Mutation$ShoppingCartType extends JsonSerializable
 
   RemoveFromCart$Mutation$ShoppingCartType$UserType? user;
 
-  RemoveFromCart$Mutation$ShoppingCartType$TargetType? target;
-
   RemoveFromCart$Mutation$ShoppingCartType$PriceFullType? price;
 
   RemoveFromCart$Mutation$ShoppingCartType$DiscountDtoType? discount;
@@ -5058,17 +4502,8 @@ class RemoveFromCart$Mutation$ShoppingCartType extends JsonSerializable
   List<RemoveFromCart$Mutation$ShoppingCartType$CartProductType>? products;
 
   @override
-  List<Object?> get props => [
-        id,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        price,
-        discount,
-        taxValue,
-        products
-      ];
+  List<Object?> get props =>
+      [id, createdAt, updatedAt, user, price, discount, taxValue, products];
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartTypeToJson(this);
@@ -5149,90 +4584,6 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$UserType
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$UserTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType();
-
-  factory AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerType();
-
-  factory AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType();
-
-  factory AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddDiscoutToCart$Mutation$ShoppingCartType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  AddDiscoutToCart$Mutation$ShoppingCartType$TargetType();
-
-  factory AddDiscoutToCart$Mutation$ShoppingCartType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetTypeFromJson(json);
-
-  AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType? pos;
-
-  AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$WholesalerType?
-      wholesaler;
-
-  AddDiscoutToCart$Mutation$ShoppingCartType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddDiscoutToCart$Mutation$ShoppingCartType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -5827,8 +5178,6 @@ class AddDiscoutToCart$Mutation$ShoppingCartType extends JsonSerializable
 
   AddDiscoutToCart$Mutation$ShoppingCartType$UserType? user;
 
-  AddDiscoutToCart$Mutation$ShoppingCartType$TargetType? target;
-
   AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType? price;
 
   AddDiscoutToCart$Mutation$ShoppingCartType$DiscountDtoType? discount;
@@ -5838,17 +5187,8 @@ class AddDiscoutToCart$Mutation$ShoppingCartType extends JsonSerializable
   List<AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType>? products;
 
   @override
-  List<Object?> get props => [
-        id,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        price,
-        discount,
-        taxValue,
-        products
-      ];
+  List<Object?> get props =>
+      [id, createdAt, updatedAt, user, price, discount, taxValue, products];
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartTypeToJson(this);
@@ -5948,88 +5288,6 @@ class EmptyCart$Mutation$ShoppingCartType$UserType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$UserTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType();
-
-  factory EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerType();
-
-  factory EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerType();
-
-  factory EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class EmptyCart$Mutation$ShoppingCartType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  EmptyCart$Mutation$ShoppingCartType$TargetType();
-
-  factory EmptyCart$Mutation$ShoppingCartType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$EmptyCart$Mutation$ShoppingCartType$TargetTypeFromJson(json);
-
-  EmptyCart$Mutation$ShoppingCartType$TargetType$PointOfSaleType? pos;
-
-  EmptyCart$Mutation$ShoppingCartType$TargetType$WholesalerType? wholesaler;
-
-  EmptyCart$Mutation$ShoppingCartType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$EmptyCart$Mutation$ShoppingCartType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -6617,8 +5875,6 @@ class EmptyCart$Mutation$ShoppingCartType extends JsonSerializable
 
   EmptyCart$Mutation$ShoppingCartType$UserType? user;
 
-  EmptyCart$Mutation$ShoppingCartType$TargetType? target;
-
   EmptyCart$Mutation$ShoppingCartType$PriceFullType? price;
 
   EmptyCart$Mutation$ShoppingCartType$DiscountDtoType? discount;
@@ -6628,17 +5884,8 @@ class EmptyCart$Mutation$ShoppingCartType extends JsonSerializable
   List<EmptyCart$Mutation$ShoppingCartType$CartProductType>? products;
 
   @override
-  List<Object?> get props => [
-        id,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        price,
-        discount,
-        taxValue,
-        products
-      ];
+  List<Object?> get props =>
+      [id, createdAt, updatedAt, user, price, discount, taxValue, products];
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartTypeToJson(this);
@@ -6719,90 +5966,6 @@ class UpdateProductCredit$Mutation$ShoppingCartType$UserType
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$UserTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleType();
-
-  factory UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerType();
-
-  factory UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerType();
-
-  factory UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateProductCredit$Mutation$ShoppingCartType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  UpdateProductCredit$Mutation$ShoppingCartType$TargetType();
-
-  factory UpdateProductCredit$Mutation$ShoppingCartType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateProductCredit$Mutation$ShoppingCartType$TargetTypeFromJson(json);
-
-  UpdateProductCredit$Mutation$ShoppingCartType$TargetType$PointOfSaleType? pos;
-
-  UpdateProductCredit$Mutation$ShoppingCartType$TargetType$WholesalerType?
-      wholesaler;
-
-  UpdateProductCredit$Mutation$ShoppingCartType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateProductCredit$Mutation$ShoppingCartType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -7400,8 +6563,6 @@ class UpdateProductCredit$Mutation$ShoppingCartType extends JsonSerializable
 
   UpdateProductCredit$Mutation$ShoppingCartType$UserType? user;
 
-  UpdateProductCredit$Mutation$ShoppingCartType$TargetType? target;
-
   UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType? price;
 
   UpdateProductCredit$Mutation$ShoppingCartType$DiscountDtoType? discount;
@@ -7411,17 +6572,8 @@ class UpdateProductCredit$Mutation$ShoppingCartType extends JsonSerializable
   List<UpdateProductCredit$Mutation$ShoppingCartType$CartProductType>? products;
 
   @override
-  List<Object?> get props => [
-        id,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        price,
-        discount,
-        taxValue,
-        products
-      ];
+  List<Object?> get props =>
+      [id, createdAt, updatedAt, user, price, discount, taxValue, products];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartTypeToJson(this);
@@ -7733,59 +6885,6 @@ final SHOPPING_CART_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
                 ]),
               ),
             ]),
@@ -8727,59 +7826,6 @@ final FIND_SHOPPING_CART_BY_USER_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
                 ]),
               ),
             ]),
@@ -10746,59 +9792,6 @@ final FIND_TARGET_SHOPPING_CARTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'price'),
                 alias: null,
                 arguments: [],
@@ -11781,59 +10774,6 @@ final FIND_TARGET_SHOPPING_CARTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                 ]),
                               ),
-                              FieldNode(
-                                name: NameNode(value: 'target'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: SelectionSetNode(selections: [
-                                  FieldNode(
-                                    name: NameNode(value: 'pos'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: SelectionSetNode(selections: [
-                                      FieldNode(
-                                        name: NameNode(value: 'id'),
-                                        alias: null,
-                                        arguments: [],
-                                        directives: [],
-                                        selectionSet: null,
-                                      )
-                                    ]),
-                                  ),
-                                  FieldNode(
-                                    name: NameNode(value: 'wholesaler'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: SelectionSetNode(selections: [
-                                      FieldNode(
-                                        name: NameNode(value: 'id'),
-                                        alias: null,
-                                        arguments: [],
-                                        directives: [],
-                                        selectionSet: null,
-                                      )
-                                    ]),
-                                  ),
-                                  FieldNode(
-                                    name: NameNode(value: 'manufacturer'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: SelectionSetNode(selections: [
-                                      FieldNode(
-                                        name: NameNode(value: 'id'),
-                                        alias: null,
-                                        arguments: [],
-                                        directives: [],
-                                        selectionSet: null,
-                                      )
-                                    ]),
-                                  ),
-                                ]),
-                              ),
                             ]),
                           )
                         ]),
@@ -12051,59 +10991,6 @@ final ADD_TO_CART_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
                 ]),
               ),
             ]),
@@ -13042,59 +11929,6 @@ final REMOVE_FROM_CART_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
                 ]),
               ),
             ]),
@@ -14057,59 +12891,6 @@ final ADD_DISCOUT_TO_CART_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'price'),
             alias: null,
             arguments: [],
@@ -15013,59 +13794,6 @@ final EMPTY_CART_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
                 ]),
               ),
             ]),
@@ -16021,59 +14749,6 @@ final UPDATE_PRODUCT_CREDIT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
                 ]),
               ),
             ]),

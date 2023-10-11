@@ -69,90 +69,6 @@ class CorporateRating$Query$CorporateRatingType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
-class CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType();
-
-  factory CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType();
-
-  factory CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CorporateRating$Query$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CorporateRating$Query$CorporateRatingType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType();
-
-  factory CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CorporateRating$Query$CorporateRatingType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CorporateRating$Query$CorporateRatingType$TargetType();
-
-  factory CorporateRating$Query$CorporateRatingType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CorporateRating$Query$CorporateRatingType$TargetTypeFromJson(json);
-
-  CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType? pos;
-
-  CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType?
-      wholesaler;
-
-  CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CorporateRating$Query$CorporateRatingType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$PictureType
     extends JsonSerializable with EquatableMixin {
   CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$PictureType();
@@ -406,25 +322,14 @@ class CorporateRating$Query$CorporateRatingType extends JsonSerializable
 
   late CorporateRating$Query$CorporateRatingType$UserType user;
 
-  late CorporateRating$Query$CorporateRatingType$TargetType target;
-
   CorporateRating$Query$CorporateRatingType$InternalProductType? product;
 
   late CorporateRating$Query$CorporateRatingType$CorporateRatingDefinitionType
       reviewType;
 
   @override
-  List<Object?> get props => [
-        id,
-        mark,
-        comment,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        product,
-        reviewType
-      ];
+  List<Object?> get props =>
+      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingTypeToJson(this);
@@ -506,92 +411,6 @@ class GetAllCorporateRatings$Query$CorporateRatingType$UserType
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$UserTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType();
-
-  factory GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType();
-
-  factory GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType();
-
-  factory GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetAllCorporateRatings$Query$CorporateRatingType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetAllCorporateRatings$Query$CorporateRatingType$TargetType();
-
-  factory GetAllCorporateRatings$Query$CorporateRatingType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetTypeFromJson(
-          json);
-
-  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType?
-      pos;
-
-  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -848,25 +667,14 @@ class GetAllCorporateRatings$Query$CorporateRatingType extends JsonSerializable
 
   late GetAllCorporateRatings$Query$CorporateRatingType$UserType user;
 
-  late GetAllCorporateRatings$Query$CorporateRatingType$TargetType target;
-
   GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType? product;
 
   late GetAllCorporateRatings$Query$CorporateRatingType$CorporateRatingDefinitionType
       reviewType;
 
   @override
-  List<Object?> get props => [
-        id,
-        mark,
-        comment,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        product,
-        reviewType
-      ];
+  List<Object?> get props =>
+      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingTypeToJson(this);
@@ -951,93 +759,6 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType();
-
-  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType();
-
-  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType();
-
-  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType();
-
-  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeFromJson(
-          json);
-
-  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeToJson(
           this);
 }
 
@@ -1297,9 +1018,6 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
   late GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
       user;
 
-  late GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-      target;
-
   GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType?
       product;
 
@@ -1307,17 +1025,8 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
       reviewType;
 
   @override
-  List<Object?> get props => [
-        id,
-        mark,
-        comment,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        product,
-        reviewType
-      ];
+  List<Object?> get props =>
+      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTypeToJson(
@@ -1477,93 +1186,6 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType();
-
-  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType();
-
-  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType();
-
-  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType();
-
-  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeFromJson(
-          json);
-
-  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeToJson(
           this);
 }
 
@@ -1823,9 +1445,6 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType
   late GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
       user;
 
-  late GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-      target;
-
   GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType?
       product;
 
@@ -1833,17 +1452,8 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType
       reviewType;
 
   @override
-  List<Object?> get props => [
-        id,
-        mark,
-        comment,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        product,
-        reviewType
-      ];
+  List<Object?> get props =>
+      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingTypeToJson(
@@ -1952,93 +1562,6 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType();
-
-  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType();
-
-  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType();
-
-  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType();
-
-  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetTypeFromJson(
-          json);
-
-  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetTypeToJson(
           this);
 }
 
@@ -2298,9 +1821,6 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType
   late GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
       user;
 
-  late GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType
-      target;
-
   GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType?
       product;
 
@@ -2308,17 +1828,8 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType
       reviewType;
 
   @override
-  List<Object?> get props => [
-        id,
-        mark,
-        comment,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        product,
-        reviewType
-      ];
+  List<Object?> get props =>
+      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingTypeToJson(
@@ -2406,93 +1917,6 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType();
-
-  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType();
-
-  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType();
-
-  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType();
-
-  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeFromJson(
-          json);
-
-  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeToJson(
           this);
 }
 
@@ -2752,9 +2176,6 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
   late GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
       user;
 
-  late GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
-      target;
-
   GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType?
       product;
 
@@ -2762,17 +2183,8 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
       reviewType;
 
   @override
-  List<Object?> get props => [
-        id,
-        mark,
-        comment,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        product,
-        reviewType
-      ];
+  List<Object?> get props =>
+      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTypeToJson(
@@ -2886,93 +2298,6 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType();
-
-  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType();
-
-  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType();
-
-  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType();
-
-  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetTypeFromJson(
-          json);
-
-  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetTypeToJson(
           this);
 }
 
@@ -3232,9 +2557,6 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
   late GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType
       user;
 
-  late GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType
-      target;
-
   GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType?
       product;
 
@@ -3242,17 +2564,8 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
       reviewType;
 
   @override
-  List<Object?> get props => [
-        id,
-        mark,
-        comment,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        product,
-        reviewType
-      ];
+  List<Object?> get props =>
+      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingTypeToJson(
@@ -3456,93 +2769,6 @@ class CreateCorporateRating$Mutation$CorporateRatingType$UserType
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$UserTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType();
-
-  factory CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType();
-
-  factory CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType();
-
-  factory CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateCorporateRating$Mutation$CorporateRatingType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CreateCorporateRating$Mutation$CorporateRatingType$TargetType();
-
-  factory CreateCorporateRating$Mutation$CorporateRatingType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetTypeFromJson(
-          json);
-
-  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType?
-      pos;
-
-  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType?
-      wholesaler;
-
-  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetTypeToJson(
-          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -3799,8 +3025,6 @@ class CreateCorporateRating$Mutation$CorporateRatingType
 
   late CreateCorporateRating$Mutation$CorporateRatingType$UserType user;
 
-  late CreateCorporateRating$Mutation$CorporateRatingType$TargetType target;
-
   CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType?
       product;
 
@@ -3808,17 +3032,8 @@ class CreateCorporateRating$Mutation$CorporateRatingType
       reviewType;
 
   @override
-  List<Object?> get props => [
-        id,
-        mark,
-        comment,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        product,
-        reviewType
-      ];
+  List<Object?> get props =>
+      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingTypeToJson(this);
@@ -3931,93 +3146,6 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$UserType
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$UserTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType();
-
-  factory UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType();
-
-  factory UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType();
-
-  factory UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateCorporateRating$Mutation$CorporateRatingType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType();
-
-  factory UpdateCorporateRating$Mutation$CorporateRatingType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetTypeFromJson(
-          json);
-
-  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType?
-      pos;
-
-  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType?
-      wholesaler;
-
-  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetTypeToJson(
-          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -4274,8 +3402,6 @@ class UpdateCorporateRating$Mutation$CorporateRatingType
 
   late UpdateCorporateRating$Mutation$CorporateRatingType$UserType user;
 
-  late UpdateCorporateRating$Mutation$CorporateRatingType$TargetType target;
-
   UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType?
       product;
 
@@ -4283,17 +3409,8 @@ class UpdateCorporateRating$Mutation$CorporateRatingType
       reviewType;
 
   @override
-  List<Object?> get props => [
-        id,
-        mark,
-        comment,
-        createdAt,
-        updatedAt,
-        user,
-        target,
-        product,
-        reviewType
-      ];
+  List<Object?> get props =>
+      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingTypeToJson(this);
@@ -4591,59 +3708,6 @@ final CORPORATE_RATING_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
                 ]),
               ),
             ]),
@@ -5200,59 +4264,6 @@ final GET_ALL_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
                 ]),
               ),
             ]),
@@ -5885,59 +4896,6 @@ final GET_CORPORATE_RATINGS_BYTARGET_QUERY_DOCUMENT =
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'product'),
                 alias: null,
                 arguments: [],
@@ -6549,59 +5507,6 @@ final GET_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'product'),
                 alias: null,
                 arguments: [],
@@ -7191,59 +6096,6 @@ final GET_CURRENT_USER_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                     directives: [],
                     selectionSet: null,
                   ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
                 ]),
               ),
             ]),
@@ -7882,59 +6734,6 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'product'),
                 alias: null,
                 arguments: [],
@@ -8562,59 +7361,6 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_WITH_STATS_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
                     ]),
                   ),
                 ]),
@@ -9346,59 +8092,6 @@ final CREATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'product'),
             alias: null,
             arguments: [],
@@ -10001,59 +8694,6 @@ final UPDATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
                 ]),
               ),
             ]),

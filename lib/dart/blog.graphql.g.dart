@@ -1263,75 +1263,6 @@ Map<String, dynamic> _$GetBlogs$Query$BlogType$PictureTypeToJson(
   return val;
 }
 
-GetBlogs$Query$BlogType$TargetType$PointOfSaleType
-    _$GetBlogs$Query$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBlogs$Query$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic> _$GetBlogs$Query$BlogType$TargetType$PointOfSaleTypeToJson(
-        GetBlogs$Query$BlogType$TargetType$PointOfSaleType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-GetBlogs$Query$BlogType$TargetType$WholesalerType
-    _$GetBlogs$Query$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBlogs$Query$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic> _$GetBlogs$Query$BlogType$TargetType$WholesalerTypeToJson(
-        GetBlogs$Query$BlogType$TargetType$WholesalerType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-GetBlogs$Query$BlogType$TargetType$ManufacturerType
-    _$GetBlogs$Query$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetBlogs$Query$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetBlogs$Query$BlogType$TargetType$ManufacturerTypeToJson(
-            GetBlogs$Query$BlogType$TargetType$ManufacturerType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetBlogs$Query$BlogType$TargetType _$GetBlogs$Query$BlogType$TargetTypeFromJson(
-        Map<String, dynamic> json) =>
-    GetBlogs$Query$BlogType$TargetType()
-      ..pos = json['pos'] == null
-          ? null
-          : GetBlogs$Query$BlogType$TargetType$PointOfSaleType.fromJson(
-              json['pos'] as Map<String, dynamic>)
-      ..wholesaler = json['wholesaler'] == null
-          ? null
-          : GetBlogs$Query$BlogType$TargetType$WholesalerType.fromJson(
-              json['wholesaler'] as Map<String, dynamic>)
-      ..manufacturer = json['manufacturer'] == null
-          ? null
-          : GetBlogs$Query$BlogType$TargetType$ManufacturerType.fromJson(
-              json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$GetBlogs$Query$BlogType$TargetTypeToJson(
-    GetBlogs$Query$BlogType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetBlogs$Query$BlogType$BlogDataType$PictureType
     _$GetBlogs$Query$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -1410,8 +1341,6 @@ GetBlogs$Query$BlogType _$GetBlogs$Query$BlogTypeFromJson(
           ?.map((e) => GetBlogs$Query$BlogType$PictureType.fromJson(
               e as Map<String, dynamic>))
           .toList()
-      ..target = GetBlogs$Query$BlogType$TargetType.fromJson(
-          json['target'] as Map<String, dynamic>)
       ..sectionData = (json['sectionData'] as List<dynamic>?)
           ?.map((e) => GetBlogs$Query$BlogType$BlogDataType.fromJson(
               e as Map<String, dynamic>))
@@ -1438,7 +1367,6 @@ Map<String, dynamic> _$GetBlogs$Query$BlogTypeToJson(
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -2644,83 +2572,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType
-    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetTypeToJson(
-        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -2807,9 +2658,6 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType
                   GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..sectionData = (json['sectionData'] as List<dynamic>?)
               ?.map((e) =>
                   GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType
@@ -2838,7 +2686,6 @@ Map<String, dynamic>
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -4055,74 +3902,6 @@ Map<String, dynamic> _$Blog$Query$BlogType$PictureTypeToJson(
   return val;
 }
 
-Blog$Query$BlogType$TargetType$PointOfSaleType
-    _$Blog$Query$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        Blog$Query$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic> _$Blog$Query$BlogType$TargetType$PointOfSaleTypeToJson(
-        Blog$Query$BlogType$TargetType$PointOfSaleType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-Blog$Query$BlogType$TargetType$WholesalerType
-    _$Blog$Query$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Blog$Query$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic> _$Blog$Query$BlogType$TargetType$WholesalerTypeToJson(
-        Blog$Query$BlogType$TargetType$WholesalerType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-Blog$Query$BlogType$TargetType$ManufacturerType
-    _$Blog$Query$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Blog$Query$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic> _$Blog$Query$BlogType$TargetType$ManufacturerTypeToJson(
-        Blog$Query$BlogType$TargetType$ManufacturerType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-Blog$Query$BlogType$TargetType _$Blog$Query$BlogType$TargetTypeFromJson(
-        Map<String, dynamic> json) =>
-    Blog$Query$BlogType$TargetType()
-      ..pos = json['pos'] == null
-          ? null
-          : Blog$Query$BlogType$TargetType$PointOfSaleType.fromJson(
-              json['pos'] as Map<String, dynamic>)
-      ..wholesaler = json['wholesaler'] == null
-          ? null
-          : Blog$Query$BlogType$TargetType$WholesalerType.fromJson(
-              json['wholesaler'] as Map<String, dynamic>)
-      ..manufacturer = json['manufacturer'] == null
-          ? null
-          : Blog$Query$BlogType$TargetType$ManufacturerType.fromJson(
-              json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$Blog$Query$BlogType$TargetTypeToJson(
-    Blog$Query$BlogType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 Blog$Query$BlogType$BlogDataType$PictureType
     _$Blog$Query$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -4199,8 +3978,6 @@ Blog$Query$BlogType _$Blog$Query$BlogTypeFromJson(Map<String, dynamic> json) =>
           ?.map((e) => Blog$Query$BlogType$PictureType.fromJson(
               e as Map<String, dynamic>))
           .toList()
-      ..target = Blog$Query$BlogType$TargetType.fromJson(
-          json['target'] as Map<String, dynamic>)
       ..sectionData = (json['sectionData'] as List<dynamic>?)
           ?.map((e) => Blog$Query$BlogType$BlogDataType.fromJson(
               e as Map<String, dynamic>))
@@ -4226,7 +4003,6 @@ Map<String, dynamic> _$Blog$Query$BlogTypeToJson(Blog$Query$BlogType instance) {
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -5415,80 +5191,6 @@ Map<String, dynamic> _$FindBlogsByTarget$Query$BlogType$PictureTypeToJson(
   return val;
 }
 
-FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleType
-    _$FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleTypeToJson(
-            FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByTarget$Query$BlogType$TargetType$WholesalerType
-    _$FindBlogsByTarget$Query$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTarget$Query$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String,
-    dynamic> _$FindBlogsByTarget$Query$BlogType$TargetType$WholesalerTypeToJson(
-        FindBlogsByTarget$Query$BlogType$TargetType$WholesalerType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerType
-    _$FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerTypeToJson(
-            FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByTarget$Query$BlogType$TargetType
-    _$FindBlogsByTarget$Query$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTarget$Query$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : FindBlogsByTarget$Query$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : FindBlogsByTarget$Query$BlogType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : FindBlogsByTarget$Query$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$FindBlogsByTarget$Query$BlogType$TargetTypeToJson(
-    FindBlogsByTarget$Query$BlogType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 FindBlogsByTarget$Query$BlogType$BlogDataType$PictureType
     _$FindBlogsByTarget$Query$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -5569,8 +5271,6 @@ FindBlogsByTarget$Query$BlogType _$FindBlogsByTarget$Query$BlogTypeFromJson(
           ?.map((e) => FindBlogsByTarget$Query$BlogType$PictureType.fromJson(
               e as Map<String, dynamic>))
           .toList()
-      ..target = FindBlogsByTarget$Query$BlogType$TargetType.fromJson(
-          json['target'] as Map<String, dynamic>)
       ..sectionData = (json['sectionData'] as List<dynamic>?)
           ?.map((e) => FindBlogsByTarget$Query$BlogType$BlogDataType.fromJson(
               e as Map<String, dynamic>))
@@ -5597,7 +5297,6 @@ Map<String, dynamic> _$FindBlogsByTarget$Query$BlogTypeToJson(
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -6822,81 +6521,6 @@ Map<String, dynamic> _$FindBlogsByTargetAndUrl$Query$BlogType$PictureTypeToJson(
   return val;
 }
 
-FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleType
-    _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerType
-    _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerType
-    _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByTargetAndUrl$Query$BlogType$TargetType
-    _$FindBlogsByTargetAndUrl$Query$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTargetAndUrl$Query$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : FindBlogsByTargetAndUrl$Query$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : FindBlogsByTargetAndUrl$Query$BlogType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : FindBlogsByTargetAndUrl$Query$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$FindBlogsByTargetAndUrl$Query$BlogType$TargetTypeToJson(
-    FindBlogsByTargetAndUrl$Query$BlogType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -6981,8 +6605,6 @@ FindBlogsByTargetAndUrl$Query$BlogType
                   FindBlogsByTargetAndUrl$Query$BlogType$PictureType.fromJson(
                       e as Map<String, dynamic>))
               .toList()
-          ..target = FindBlogsByTargetAndUrl$Query$BlogType$TargetType.fromJson(
-              json['target'] as Map<String, dynamic>)
           ..sectionData = (json['sectionData'] as List<dynamic>?)
               ?.map((e) =>
                   FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType.fromJson(
@@ -7010,7 +6632,6 @@ Map<String, dynamic> _$FindBlogsByTargetAndUrl$Query$BlogTypeToJson(
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -8218,83 +7839,6 @@ Map<String, dynamic>
   return val;
 }
 
-FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType
-    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetTypeToJson(
-        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -8381,9 +7925,6 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType
                   FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..sectionData = (json['sectionData'] as List<dynamic>?)
               ?.map((e) =>
                   FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
@@ -8412,7 +7953,6 @@ Map<String, dynamic>
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -9636,80 +9176,6 @@ Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogType$PictureTypeToJson(
   return val;
 }
 
-FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleType
-    _$FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerType
-    _$FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String,
-    dynamic> _$FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerTypeToJson(
-        FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerType
-    _$FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByAuthor$Query$BlogType$TargetType
-    _$FindBlogsByAuthor$Query$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByAuthor$Query$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : FindBlogsByAuthor$Query$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : FindBlogsByAuthor$Query$BlogType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : FindBlogsByAuthor$Query$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogType$TargetTypeToJson(
-    FindBlogsByAuthor$Query$BlogType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -9790,8 +9256,6 @@ FindBlogsByAuthor$Query$BlogType _$FindBlogsByAuthor$Query$BlogTypeFromJson(
           ?.map((e) => FindBlogsByAuthor$Query$BlogType$PictureType.fromJson(
               e as Map<String, dynamic>))
           .toList()
-      ..target = FindBlogsByAuthor$Query$BlogType$TargetType.fromJson(
-          json['target'] as Map<String, dynamic>)
       ..sectionData = (json['sectionData'] as List<dynamic>?)
           ?.map((e) => FindBlogsByAuthor$Query$BlogType$BlogDataType.fromJson(
               e as Map<String, dynamic>))
@@ -9818,7 +9282,6 @@ Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogTypeToJson(
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -11028,83 +10491,6 @@ Map<String, dynamic>
   return val;
 }
 
-FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType
-    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetTypeToJson(
-        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -11191,9 +10577,6 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType
                   FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..sectionData = (json['sectionData'] as List<dynamic>?)
               ?.map((e) =>
                   FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
@@ -11222,7 +10605,6 @@ Map<String, dynamic>
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -12458,82 +11840,6 @@ Map<String, dynamic>
   return val;
 }
 
-SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType
-    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetTypeToJson(
-        SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -12619,9 +11925,6 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType
                   SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              SearchBlogs$Query$PaginatedBlogsType$BlogType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>)
           ..sectionData = (json['sectionData'] as List<dynamic>?)
               ?.map((e) =>
                   SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType
@@ -12649,7 +11952,6 @@ Map<String, dynamic> _$SearchBlogs$Query$PaginatedBlogsType$BlogTypeToJson(
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -13857,78 +13159,6 @@ Map<String, dynamic> _$CreateBlog$Mutation$BlogType$PictureTypeToJson(
   return val;
 }
 
-CreateBlog$Mutation$BlogType$TargetType$PointOfSaleType
-    _$CreateBlog$Mutation$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBlog$Mutation$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateBlog$Mutation$BlogType$TargetType$PointOfSaleTypeToJson(
-            CreateBlog$Mutation$BlogType$TargetType$PointOfSaleType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateBlog$Mutation$BlogType$TargetType$WholesalerType
-    _$CreateBlog$Mutation$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBlog$Mutation$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateBlog$Mutation$BlogType$TargetType$WholesalerTypeToJson(
-            CreateBlog$Mutation$BlogType$TargetType$WholesalerType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateBlog$Mutation$BlogType$TargetType$ManufacturerType
-    _$CreateBlog$Mutation$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBlog$Mutation$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String,
-    dynamic> _$CreateBlog$Mutation$BlogType$TargetType$ManufacturerTypeToJson(
-        CreateBlog$Mutation$BlogType$TargetType$ManufacturerType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-CreateBlog$Mutation$BlogType$TargetType
-    _$CreateBlog$Mutation$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateBlog$Mutation$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateBlog$Mutation$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateBlog$Mutation$BlogType$TargetType$WholesalerType.fromJson(
-                  json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateBlog$Mutation$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$CreateBlog$Mutation$BlogType$TargetTypeToJson(
-    CreateBlog$Mutation$BlogType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CreateBlog$Mutation$BlogType$BlogDataType$PictureType
     _$CreateBlog$Mutation$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -14008,8 +13238,6 @@ CreateBlog$Mutation$BlogType _$CreateBlog$Mutation$BlogTypeFromJson(
           ?.map((e) => CreateBlog$Mutation$BlogType$PictureType.fromJson(
               e as Map<String, dynamic>))
           .toList()
-      ..target = CreateBlog$Mutation$BlogType$TargetType.fromJson(
-          json['target'] as Map<String, dynamic>)
       ..sectionData = (json['sectionData'] as List<dynamic>?)
           ?.map((e) => CreateBlog$Mutation$BlogType$BlogDataType.fromJson(
               e as Map<String, dynamic>))
@@ -14036,7 +13264,6 @@ Map<String, dynamic> _$CreateBlog$Mutation$BlogTypeToJson(
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -15362,78 +14589,6 @@ Map<String, dynamic> _$PublishBlog$Mutation$BlogType$PictureTypeToJson(
   return val;
 }
 
-PublishBlog$Mutation$BlogType$TargetType$PointOfSaleType
-    _$PublishBlog$Mutation$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        PublishBlog$Mutation$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String,
-    dynamic> _$PublishBlog$Mutation$BlogType$TargetType$PointOfSaleTypeToJson(
-        PublishBlog$Mutation$BlogType$TargetType$PointOfSaleType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-PublishBlog$Mutation$BlogType$TargetType$WholesalerType
-    _$PublishBlog$Mutation$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        PublishBlog$Mutation$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$PublishBlog$Mutation$BlogType$TargetType$WholesalerTypeToJson(
-            PublishBlog$Mutation$BlogType$TargetType$WholesalerType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-PublishBlog$Mutation$BlogType$TargetType$ManufacturerType
-    _$PublishBlog$Mutation$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        PublishBlog$Mutation$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String,
-    dynamic> _$PublishBlog$Mutation$BlogType$TargetType$ManufacturerTypeToJson(
-        PublishBlog$Mutation$BlogType$TargetType$ManufacturerType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-PublishBlog$Mutation$BlogType$TargetType
-    _$PublishBlog$Mutation$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        PublishBlog$Mutation$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : PublishBlog$Mutation$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : PublishBlog$Mutation$BlogType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : PublishBlog$Mutation$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$PublishBlog$Mutation$BlogType$TargetTypeToJson(
-    PublishBlog$Mutation$BlogType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 PublishBlog$Mutation$BlogType$BlogDataType$PictureType
     _$PublishBlog$Mutation$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -15514,8 +14669,6 @@ PublishBlog$Mutation$BlogType _$PublishBlog$Mutation$BlogTypeFromJson(
           ?.map((e) => PublishBlog$Mutation$BlogType$PictureType.fromJson(
               e as Map<String, dynamic>))
           .toList()
-      ..target = PublishBlog$Mutation$BlogType$TargetType.fromJson(
-          json['target'] as Map<String, dynamic>)
       ..sectionData = (json['sectionData'] as List<dynamic>?)
           ?.map((e) => PublishBlog$Mutation$BlogType$BlogDataType.fromJson(
               e as Map<String, dynamic>))
@@ -15542,7 +14695,6 @@ Map<String, dynamic> _$PublishBlog$Mutation$BlogTypeToJson(
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -16725,78 +15877,6 @@ Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$PictureTypeToJson(
   return val;
 }
 
-UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleType
-    _$UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleTypeToJson(
-            UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateBlog$Mutation$BlogType$TargetType$WholesalerType
-    _$UpdateBlog$Mutation$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBlog$Mutation$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateBlog$Mutation$BlogType$TargetType$WholesalerTypeToJson(
-            UpdateBlog$Mutation$BlogType$TargetType$WholesalerType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateBlog$Mutation$BlogType$TargetType$ManufacturerType
-    _$UpdateBlog$Mutation$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBlog$Mutation$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String,
-    dynamic> _$UpdateBlog$Mutation$BlogType$TargetType$ManufacturerTypeToJson(
-        UpdateBlog$Mutation$BlogType$TargetType$ManufacturerType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-UpdateBlog$Mutation$BlogType$TargetType
-    _$UpdateBlog$Mutation$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateBlog$Mutation$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateBlog$Mutation$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateBlog$Mutation$BlogType$TargetType$WholesalerType.fromJson(
-                  json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateBlog$Mutation$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$TargetTypeToJson(
-    UpdateBlog$Mutation$BlogType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 UpdateBlog$Mutation$BlogType$BlogDataType$PictureType
     _$UpdateBlog$Mutation$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -16876,8 +15956,6 @@ UpdateBlog$Mutation$BlogType _$UpdateBlog$Mutation$BlogTypeFromJson(
           ?.map((e) => UpdateBlog$Mutation$BlogType$PictureType.fromJson(
               e as Map<String, dynamic>))
           .toList()
-      ..target = UpdateBlog$Mutation$BlogType$TargetType.fromJson(
-          json['target'] as Map<String, dynamic>)
       ..sectionData = (json['sectionData'] as List<dynamic>?)
           ?.map((e) => UpdateBlog$Mutation$BlogType$BlogDataType.fromJson(
               e as Map<String, dynamic>))
@@ -16904,7 +15982,6 @@ Map<String, dynamic> _$UpdateBlog$Mutation$BlogTypeToJson(
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;
@@ -18121,78 +17198,6 @@ Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$PictureTypeToJson(
   return val;
 }
 
-DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleType
-    _$DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleTypeToJson(
-            DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-DeleteBlog$Mutation$BlogType$TargetType$WholesalerType
-    _$DeleteBlog$Mutation$BlogType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        DeleteBlog$Mutation$BlogType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$DeleteBlog$Mutation$BlogType$TargetType$WholesalerTypeToJson(
-            DeleteBlog$Mutation$BlogType$TargetType$WholesalerType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-DeleteBlog$Mutation$BlogType$TargetType$ManufacturerType
-    _$DeleteBlog$Mutation$BlogType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        DeleteBlog$Mutation$BlogType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String,
-    dynamic> _$DeleteBlog$Mutation$BlogType$TargetType$ManufacturerTypeToJson(
-        DeleteBlog$Mutation$BlogType$TargetType$ManufacturerType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
-
-DeleteBlog$Mutation$BlogType$TargetType
-    _$DeleteBlog$Mutation$BlogType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        DeleteBlog$Mutation$BlogType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : DeleteBlog$Mutation$BlogType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : DeleteBlog$Mutation$BlogType$TargetType$WholesalerType.fromJson(
-                  json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : DeleteBlog$Mutation$BlogType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$TargetTypeToJson(
-    DeleteBlog$Mutation$BlogType$TargetType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 DeleteBlog$Mutation$BlogType$BlogDataType$PictureType
     _$DeleteBlog$Mutation$BlogType$BlogDataType$PictureTypeFromJson(
             Map<String, dynamic> json) =>
@@ -18272,8 +17277,6 @@ DeleteBlog$Mutation$BlogType _$DeleteBlog$Mutation$BlogTypeFromJson(
           ?.map((e) => DeleteBlog$Mutation$BlogType$PictureType.fromJson(
               e as Map<String, dynamic>))
           .toList()
-      ..target = DeleteBlog$Mutation$BlogType$TargetType.fromJson(
-          json['target'] as Map<String, dynamic>)
       ..sectionData = (json['sectionData'] as List<dynamic>?)
           ?.map((e) => DeleteBlog$Mutation$BlogType$BlogDataType.fromJson(
               e as Map<String, dynamic>))
@@ -18300,7 +17303,6 @@ Map<String, dynamic> _$DeleteBlog$Mutation$BlogTypeToJson(
   writeNotNull('tags', instance.tags);
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
   val['status'] = instance.status;

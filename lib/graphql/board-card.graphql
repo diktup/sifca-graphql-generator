@@ -26,17 +26,7 @@ query getBoardCards {
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -316,17 +306,7 @@ query getBoardCards {
             y
           }
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
@@ -791,17 +771,7 @@ query getBoardCardsByBoardList($boardList: ID!) {
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -1081,17 +1051,7 @@ query getBoardCardsByBoardList($boardList: ID!) {
             y
           }
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
@@ -1556,17 +1516,7 @@ query getBoardCard($id: ID!) {
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -1846,17 +1796,7 @@ query getBoardCard($id: ID!) {
             y
           }
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
@@ -2324,17 +2264,7 @@ query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFil
         icon
         color
         category
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
@@ -2614,17 +2544,7 @@ query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFil
               y
             }
           }
-          target {
-            pos {
-              id
-            }
-            wholesaler {
-              id
-            }
-            manufacturer {
-              id
-            }
-          }
+
           createdAt
           updatedAt
         }
@@ -3127,17 +3047,7 @@ mutation createBoardCard(
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -3417,17 +3327,7 @@ mutation createBoardCard(
             y
           }
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
@@ -3892,17 +3792,7 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -4182,17 +4072,7 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
             y
           }
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
@@ -4695,17 +4575,7 @@ mutation updateBoardCard(
       icon
       color
       category
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+
       createdAt
       updatedAt
     }
@@ -4985,17 +4855,7 @@ mutation updateBoardCard(
             y
           }
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }

@@ -86,93 +86,6 @@ class GetCatalogueCategories$Query$CatalogueCategoryType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategories$Query$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType();
-
-  factory GetCatalogueCategories$Query$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetCatalogueCategories$Query$CatalogueCategoryType
     extends JsonSerializable with EquatableMixin {
   GetCatalogueCategories$Query$CatalogueCategoryType();
@@ -216,8 +129,6 @@ class GetCatalogueCategories$Query$CatalogueCategoryType
   List<GetCatalogueCategories$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late GetCatalogueCategories$Query$CatalogueCategoryType$TargetType target;
-
   @override
   List<Object?> get props => [
         id,
@@ -235,8 +146,7 @@ class GetCatalogueCategories$Query$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -364,90 +274,6 @@ class CatalogueCategory$Query$CatalogueCategoryType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CatalogueCategory$Query$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CatalogueCategory$Query$CatalogueCategoryType$TargetType();
-
-  factory CatalogueCategory$Query$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CatalogueCategory$Query$CatalogueCategoryType$TargetTypeFromJson(json);
-
-  CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleType? pos;
-
-  CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CatalogueCategory$Query$CatalogueCategoryType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CatalogueCategory$Query$CatalogueCategoryType extends JsonSerializable
     with EquatableMixin {
   CatalogueCategory$Query$CatalogueCategoryType();
@@ -489,8 +315,6 @@ class CatalogueCategory$Query$CatalogueCategoryType extends JsonSerializable
 
   List<CatalogueCategory$Query$CatalogueCategoryType$PictureType>? pictures;
 
-  late CatalogueCategory$Query$CatalogueCategoryType$TargetType target;
-
   @override
   List<Object?> get props => [
         id,
@@ -508,8 +332,7 @@ class CatalogueCategory$Query$CatalogueCategoryType extends JsonSerializable
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -611,93 +434,6 @@ class GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType();
-
-  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetCatalogueCategoryPath$Query$CatalogueCategoryType
     extends JsonSerializable with EquatableMixin {
   GetCatalogueCategoryPath$Query$CatalogueCategoryType();
@@ -741,8 +477,6 @@ class GetCatalogueCategoryPath$Query$CatalogueCategoryType
   List<GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType target;
-
   @override
   List<Object?> get props => [
         id,
@@ -760,8 +494,7 @@ class GetCatalogueCategoryPath$Query$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -865,93 +598,6 @@ class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$Pictur
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType();
-
-  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType
     extends JsonSerializable with EquatableMixin {
   GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType();
@@ -996,9 +642,6 @@ class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType
   List<GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType
-      target;
-
   @override
   List<Object?> get props => [
         id,
@@ -1016,8 +659,7 @@ class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -1124,93 +766,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
     extends JsonSerializable with EquatableMixin {
   GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType();
@@ -1286,93 +841,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeToJson(
           this);
 }
 
@@ -1456,93 +924,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
     extends JsonSerializable with EquatableMixin {
   GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType();
@@ -1618,93 +999,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeToJson(
           this);
 }
 
@@ -1788,93 +1082,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
     extends JsonSerializable with EquatableMixin {
   GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType();
@@ -1954,93 +1161,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType();
-
-  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
     extends JsonSerializable with EquatableMixin {
   GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType();
@@ -2085,9 +1205,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
-      target;
-
   @override
   List<Object?> get props => [
         id,
@@ -2105,8 +1222,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -2159,9 +1275,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
-      target;
-
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType>?
       children;
 
@@ -2183,7 +1296,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         delivery,
         seo,
         pictures,
-        target,
         children
       ];
   @override
@@ -2237,9 +1349,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
-      target;
-
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType>?
       children;
 
@@ -2261,7 +1370,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         delivery,
         seo,
         pictures,
-        target,
         children
       ];
   @override
@@ -2315,9 +1423,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
-      target;
-
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType>?
       children;
 
@@ -2339,7 +1444,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         delivery,
         seo,
         pictures,
-        target,
         children
       ];
   @override
@@ -2393,9 +1497,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
-      target;
-
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType>?
       children;
 
@@ -2417,7 +1518,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         delivery,
         seo,
         pictures,
-        target,
         children
       ];
   @override
@@ -2471,9 +1571,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType
-      target;
-
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType>?
       children;
 
@@ -2495,7 +1592,6 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         delivery,
         seo,
         pictures,
-        target,
         children
       ];
   @override
@@ -2604,93 +1700,6 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$Pictur
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType();
-
-  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType
     extends JsonSerializable with EquatableMixin {
   GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType();
@@ -2735,9 +1744,6 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType
   List<GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType
-      target;
-
   @override
   List<Object?> get props => [
         id,
@@ -2755,8 +1761,7 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -2863,93 +1868,6 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType();
-
-  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType
     extends JsonSerializable with EquatableMixin {
   GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType();
@@ -2994,9 +1912,6 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
   List<GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType
-      target;
-
   @override
   List<Object?> get props => [
         id,
@@ -3014,8 +1929,7 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -3164,93 +2078,6 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Picture
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$PictureTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType();
-
-  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -3448,9 +2275,6 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType
   List<GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType
-      target;
-
   GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType?
       parent;
 
@@ -3472,7 +2296,6 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType
         delivery,
         seo,
         pictures,
-        target,
         parent
       ];
   @override
@@ -3580,93 +2403,6 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTyp
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType();
-
-  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType
     extends JsonSerializable with EquatableMixin {
   GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType();
@@ -3711,9 +2447,6 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTyp
   List<GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType
-      target;
-
   @override
   List<Object?> get props => [
         id,
@@ -3731,8 +2464,7 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTyp
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -3840,93 +2572,6 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCat
 }
 
 @JsonSerializable(explicitToJson: true)
-class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType();
-
-  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType
     extends JsonSerializable with EquatableMixin {
   SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType();
@@ -3971,9 +2616,6 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCat
   List<SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType
-      target;
-
   @override
   List<Object?> get props => [
         id,
@@ -3991,8 +2633,7 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCat
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -4124,93 +2765,6 @@ class CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType();
-
-  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CreateCatalogueCategory$Mutation$CatalogueCategoryType
     extends JsonSerializable with EquatableMixin {
   CreateCatalogueCategory$Mutation$CatalogueCategoryType();
@@ -4254,8 +2808,6 @@ class CreateCatalogueCategory$Mutation$CatalogueCategoryType
   List<CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType target;
-
   @override
   List<Object?> get props => [
         id,
@@ -4273,8 +2825,7 @@ class CreateCatalogueCategory$Mutation$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -4529,93 +3080,6 @@ class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType();
-
-  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class UpdateCatalogueCategory$Mutation$CatalogueCategoryType
     extends JsonSerializable with EquatableMixin {
   UpdateCatalogueCategory$Mutation$CatalogueCategoryType();
@@ -4659,8 +3123,6 @@ class UpdateCatalogueCategory$Mutation$CatalogueCategoryType
   List<UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType target;
-
   @override
   List<Object?> get props => [
         id,
@@ -4678,8 +3140,7 @@ class UpdateCatalogueCategory$Mutation$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -4893,93 +3354,6 @@ class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
-class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType();
-
-  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerType();
-
-  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerType();
-
-  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType();
-
-  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetTypeFromJson(
-          json);
-
-  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType?
-      pos;
-
-  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerType?
-      wholesaler;
-
-  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class ReorderCatalogueCategories$Mutation$CatalogueCategoryType
     extends JsonSerializable with EquatableMixin {
   ReorderCatalogueCategories$Mutation$CatalogueCategoryType();
@@ -5023,9 +3397,6 @@ class ReorderCatalogueCategories$Mutation$CatalogueCategoryType
   List<ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureType>?
       pictures;
 
-  late ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType
-      target;
-
   @override
   List<Object?> get props => [
         id,
@@ -5043,8 +3414,7 @@ class ReorderCatalogueCategories$Mutation$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures,
-        target
+        pictures
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -5330,59 +3700,6 @@ final GET_CATALOGUE_CATEGORIES_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
         ]),
       )
     ]),
@@ -5651,59 +3968,6 @@ final CATALOGUE_CATEGORY_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),
@@ -5981,59 +4245,6 @@ final GET_CATALOGUE_CATEGORY_PATH_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
         ]),
       )
     ]),
@@ -6307,59 +4518,6 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_FOR_PORTAL_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),
@@ -6643,59 +4801,6 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'children'),
             alias: null,
             arguments: [],
@@ -6897,59 +5002,6 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                     arguments: [],
                     directives: [],
                     selectionSet: null,
-                  ),
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
                   ),
                 ]),
               ),
@@ -7159,59 +5211,6 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                     ]),
                   ),
                   FieldNode(
-                    name: NameNode(value: 'target'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'pos'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'wholesaler'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'manufacturer'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'children'),
                     alias: null,
                     arguments: [],
@@ -7413,59 +5412,6 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                             arguments: [],
                             directives: [],
                             selectionSet: null,
-                          ),
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'target'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'pos'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: SelectionSetNode(selections: [
-                              FieldNode(
-                                name: NameNode(value: 'id'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              )
-                            ]),
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'wholesaler'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: SelectionSetNode(selections: [
-                              FieldNode(
-                                name: NameNode(value: 'id'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              )
-                            ]),
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'manufacturer'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: SelectionSetNode(selections: [
-                              FieldNode(
-                                name: NameNode(value: 'id'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              )
-                            ]),
                           ),
                         ]),
                       ),
@@ -7675,59 +5621,6 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                             ]),
                           ),
                           FieldNode(
-                            name: NameNode(value: 'target'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: SelectionSetNode(selections: [
-                              FieldNode(
-                                name: NameNode(value: 'pos'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: SelectionSetNode(selections: [
-                                  FieldNode(
-                                    name: NameNode(value: 'id'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: null,
-                                  )
-                                ]),
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'wholesaler'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: SelectionSetNode(selections: [
-                                  FieldNode(
-                                    name: NameNode(value: 'id'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: null,
-                                  )
-                                ]),
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'manufacturer'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: SelectionSetNode(selections: [
-                                  FieldNode(
-                                    name: NameNode(value: 'id'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: null,
-                                  )
-                                ]),
-                              ),
-                            ]),
-                          ),
-                          FieldNode(
                             name: NameNode(value: 'children'),
                             alias: null,
                             arguments: [],
@@ -7929,59 +5822,6 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
-                                  ),
-                                ]),
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'target'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: SelectionSetNode(selections: [
-                                  FieldNode(
-                                    name: NameNode(value: 'pos'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: SelectionSetNode(selections: [
-                                      FieldNode(
-                                        name: NameNode(value: 'id'),
-                                        alias: null,
-                                        arguments: [],
-                                        directives: [],
-                                        selectionSet: null,
-                                      )
-                                    ]),
-                                  ),
-                                  FieldNode(
-                                    name: NameNode(value: 'wholesaler'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: SelectionSetNode(selections: [
-                                      FieldNode(
-                                        name: NameNode(value: 'id'),
-                                        alias: null,
-                                        arguments: [],
-                                        directives: [],
-                                        selectionSet: null,
-                                      )
-                                    ]),
-                                  ),
-                                  FieldNode(
-                                    name: NameNode(value: 'manufacturer'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: SelectionSetNode(selections: [
-                                      FieldNode(
-                                        name: NameNode(value: 'id'),
-                                        alias: null,
-                                        arguments: [],
-                                        directives: [],
-                                        selectionSet: null,
-                                      )
-                                    ]),
                                   ),
                                 ]),
                               ),
@@ -8289,59 +6129,6 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_AND_URL_KEY_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),
@@ -8659,59 +6446,6 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                     arguments: [],
                     directives: [],
                     selectionSet: null,
-                  ),
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
                   ),
                 ]),
               ),
@@ -9044,59 +6778,6 @@ final GET_CATALOGUE_CATEGORIES_BY_LAYER_AND_PARENT_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),
@@ -9621,59 +7302,6 @@ final GET_CATALOGUE_CATEGORIES_BY_LAYER_AND_PARENT_FOR_PORTAL_QUERY_DOCUMENT =
               ),
             ]),
           ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
         ]),
       )
     ]),
@@ -9991,59 +7619,6 @@ final SEARCH_CATALOGUE_CATEGORIES_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                 ]),
               ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
             ]),
           ),
         ]),
@@ -10321,59 +7896,6 @@ final CREATE_CATALOGUE_CATEGORY_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
         ]),
       )
     ]),
@@ -10646,59 +8168,6 @@ final UPDATE_CATALOGUE_CATEGORY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),
@@ -11099,59 +8568,6 @@ final REORDER_CATALOGUE_CATEGORIES_MUTATION_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
               ),
             ]),
           ),
