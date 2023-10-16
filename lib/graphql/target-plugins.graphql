@@ -1,0 +1,259 @@
+query getTargetPlugins {
+  getTargetPlugins {
+    id
+    plugin {
+      id
+      name
+      description
+      code
+      cost
+      url
+      info
+      category
+      icon
+      recommended
+      pictures {
+        square {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        wide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    
+    createdAt
+    updatedAt
+  }
+}
+query targetPlugin($id: ID!) {
+  targetPlugin(id: $id) {
+    id
+    plugin {
+      id
+      name
+      description
+      code
+      cost
+      url
+      info
+      category
+      icon
+      recommended
+      pictures {
+        square {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        wide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  
+    createdAt
+    updatedAt
+  }
+}
+query findPluginByTargetAndPlugin($id: ID!, $target: TargetACIInput!) {
+  findPluginByTargetAndPlugin(id: $id, target: $target) {
+    id
+    plugin {
+      id
+      name
+      description
+      code
+      cost
+      url
+      info
+      category
+      icon
+      recommended
+      pictures {
+        square {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        wide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    
+    createdAt
+    updatedAt
+  }
+}
+query getTargetPluginsByTarget($target: TargetACIInput!) {
+  getTargetPluginsByTarget(target: $target) {
+    id
+    plugin {
+      id
+      name
+      description
+      code
+      cost
+      url
+      info
+      category
+      icon
+      recommended
+      pictures {
+        square {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        wide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+    }
+     
+    createdAt
+    updatedAt
+  }
+}
+
+mutation createTargetPlugin($input: TargetPluginInput!) {
+  createTargetPlugin(input: $input) {
+    id
+    plugin {
+      id
+      name
+      description
+      code
+      cost
+      url
+      info
+      category
+      icon
+      recommended
+      pictures {
+        square {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        wide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    
+    createdAt
+    updatedAt
+  }
+}
+mutation updateTargetPlugin($input: TargetPluginUpdateInput!) {
+  updateTargetPlugin(input: $input) {
+    id
+    plugin {
+      id
+      name
+      description
+      code
+      cost
+      url
+      info
+      category
+      icon
+      recommended
+      pictures {
+        square {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        wide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteTargetPlugin($id: ID!) {
+  deleteTargetPlugin(id: $id) {
+    success
+    message
+  }
+}
