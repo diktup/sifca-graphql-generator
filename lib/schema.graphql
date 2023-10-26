@@ -2763,6 +2763,7 @@ type BrandType {
   picture: PictureType
   externalId: String
   website: String
+  target: TargetType
   manufacturer: ManufacturerType
   createdAt: DateTime!
   updatedAt: DateTime!
