@@ -171,15 +171,14 @@ Map<String, dynamic> _$SendAdhocCorporateNotificationTest$QueryToJson(
 CorporateNotificationInput _$CorporateNotificationInputFromJson(
         Map<String, dynamic> json) =>
     CorporateNotificationInput(
-      title: json['title'] as String?,
-      userId: json['userId'] as String?,
-      description: json['description'] as String?,
+      title: json['title'] as String,
+      userIds:
+          (json['userIds'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      description: json['description'] as String,
       picture: json['picture'] == null
           ? null
           : PictureInput.fromJson(json['picture'] as Map<String, dynamic>),
-      target: json['target'] == null
-          ? null
-          : TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
+      target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
       executedAt: json['executedAt'] == null
           ? null
           : DateTime.parse(json['executedAt'] as String),
@@ -187,7 +186,9 @@ CorporateNotificationInput _$CorporateNotificationInputFromJson(
 
 Map<String, dynamic> _$CorporateNotificationInputToJson(
     CorporateNotificationInput instance) {
-  final val = <String, dynamic>{};
+  final val = <String, dynamic>{
+    'title': instance.title,
+  };
 
   void writeNotNull(String key, dynamic value) {
     if (value != null) {
@@ -195,11 +196,10 @@ Map<String, dynamic> _$CorporateNotificationInputToJson(
     }
   }
 
-  writeNotNull('title', instance.title);
-  writeNotNull('userId', instance.userId);
-  writeNotNull('description', instance.description);
+  writeNotNull('userIds', instance.userIds);
+  val['description'] = instance.description;
   writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('target', instance.target?.toJson());
+  val['target'] = instance.target.toJson();
   writeNotNull('executedAt', instance.executedAt?.toIso8601String());
   return val;
 }
@@ -577,16 +577,20 @@ CreateAdhocCorporateNotification$Mutation
     _$CreateAdhocCorporateNotification$MutationFromJson(
             Map<String, dynamic> json) =>
         CreateAdhocCorporateNotification$Mutation()
-          ..createAdhocCorporateNotification =
-              CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType
-                  .fromJson(json['createAdhocCorporateNotification']
-                      as Map<String, dynamic>);
+          ..createAdhocCorporateNotification = (json[
+                  'createAdhocCorporateNotification'] as List<dynamic>)
+              .map((e) =>
+                  CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
 
 Map<String, dynamic> _$CreateAdhocCorporateNotification$MutationToJson(
         CreateAdhocCorporateNotification$Mutation instance) =>
     <String, dynamic>{
-      'createAdhocCorporateNotification':
-          instance.createAdhocCorporateNotification.toJson(),
+      'createAdhocCorporateNotification': instance
+          .createAdhocCorporateNotification
+          .map((e) => e.toJson())
+          .toList(),
     };
 
 MarkAllCorporateNotificationsAsSeenForUser$Mutation$CorporateNotificationResponse

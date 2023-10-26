@@ -1801,22 +1801,28 @@ enum JockerKindEnum {
   SHOW_USERS_PERCENTAGE
 }
 
+type JockerPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [JockerType!]!
+}
+
 type PredefinedActionType {
   enable: Boolean
   action: PredefinedActionsEnum
 }
 
 enum PredefinedActionsEnum {
-  COMPLETE_PROFILE
-  ADD_WISHLIST
-  REGISTER
   LOGIN
+  REGISTER
   NEWSLETTER
-  SIGNUP
+  ADD_WISHLIST
   PRODUCT_RATING
   PRODUCT_REVIEW
-  SHARE_PRODUCT_FACEBOOK
+  COMPLETE_PROFILE
   SHARE_BLOG_FACEBOOK
+  SHARE_FACEBOOK_PAGE
+  SHARE_PRODUCT_FACEBOOK
 }
 
 type ActivityTypeType {
@@ -1832,10 +1838,29 @@ type ActivityTypeType {
   updatedAt: DateTime!
 }
 
+type ActivityTypeWithActiveStatusType {
+  id: ID!
+  title: String
+  description: String
+  icon: String
+  theme: String
+  media: MediaType
+  predefined: PredefinedActionType
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  isActive: Boolean
+}
+
 type ActivityTypePaginateType {
   count: Int
   isLast: Boolean
   objects: [ActivityTypeType!]!
+}
+
+type ActivityTypeWithActiveStatusPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [ActivityTypeWithActiveStatusType!]!
 }
 
 type ChallengeTypeTypeJocker {
@@ -1863,6 +1888,12 @@ type ChallengeTypeType {
   target: TargetType
   createdAt: DateTime!
   updatedAt: DateTime!
+}
+
+type ChallengeTypePaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [ChallengeTypeType!]!
 }
 
 type PerksType {
@@ -2292,6 +2323,12 @@ enum ChallengeStatusEnum {
   FINISHED
 }
 
+type ChallengePaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [ChallengeType!]!
+}
+
 type ChallengeStepType {
   id: ID!
   title: String
@@ -2304,6 +2341,12 @@ type ChallengeStepType {
   challenge: ChallengeType
   createdAt: DateTime!
   updatedAt: DateTime!
+}
+
+type ChallengeStepPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [ChallengeStepType!]!
 }
 
 type QuestionChoiceDtoType {
@@ -2338,6 +2381,12 @@ enum QuestionTypeEnum {
   TIME
 }
 
+type QuestionPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [QuestionDtoType!]!
+}
+
 type FormResponseType {
   id: ID!
   title: String!
@@ -2362,9 +2411,34 @@ enum FormStatus {
   FINISHED
 }
 
+type FormPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [FormResponseType!]!
+}
+
+type FormDtoType {
+  id: ID!
+  title: String!
+  description: String!
+  owner: FormOwnerDtoType!
+  questions: [QuestionDtoType!]!
+  type: FormType!
+  status: FormStatus!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
 type AnswerDtoType {
   count: Int!
   answers: [String!]!
+}
+
+type GetQuestionResponsesPaginateType {
+  count: Int
+  isLast: Boolean
+  results: [AnswerDtoType!]!
+  question: QuestionDtoType
 }
 
 type TargetDtoType {
@@ -2382,9 +2456,21 @@ type ResponseDtoType {
   updatedAt: DateTime!
 }
 
+type ResponsePaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [ResponseDtoType!]!
+}
+
 type SingleAnswerDtoType {
   count: Int!
   answer: String!
+}
+
+type SummaryResponseDtoType {
+  count: Int!
+  question: QuestionDtoType!
+  answers: [SingleAnswerDtoType!]!
 }
 
 type AccessLoggerClientDataType {
@@ -2677,7 +2763,6 @@ type BrandType {
   picture: PictureType
   externalId: String
   website: String
-  target: TargetType
   manufacturer: ManufacturerType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -3554,6 +3639,28 @@ enum QuestStatusEnum {
   FINISHED
 }
 
+type QuestWithRepeatDateType {
+  id: ID!
+  title: String
+  description: String
+  media: MediaType
+  category: QuestCategoryEnum
+  status: QuestStatusEnum
+  recurrence: QuestActionsRecurrenceType
+  remuneration: [RemunerationDtoType!]
+  activityType: ActivityTypeType
+  creator: UserType
+  sponsored: Boolean
+  leaderboard: Boolean
+  rewards: String
+  maxAnswers: Int
+  audience: AudienceType
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  repeatDate: DateTime!
+}
+
 type QuestPaginateType {
   count: Int
   isLast: Boolean
@@ -3565,8 +3672,13 @@ type QuestRecurrencyStatusType {
   repeatDate: DateTime
 }
 
+type QuestActionActionContentBaseType {
+  content: String
+}
+
 type QuestActionActionContentType {
   content: String
+  value: Int
 }
 
 type QuestActionActionPerformedType {
@@ -3614,23 +3726,23 @@ type QuestActionActionVerificationType {
 }
 
 type QuestActionActionChoicesType {
-  responses: [String!]
+  responses: [ResponseDtoType!]
 }
 
 type QuestActionActionType {
-  textBox: QuestActionActionContentType
+  textBox: QuestActionActionContentBaseType
   rating: QuestActionActionContentType
-  calculated: QuestActionActionContentType
+  calculated: QuestActionActionContentBaseType
   date: QuestActionActionDateType
   contact: QuestActionActionContactType
   number: QuestActionActionNumberType
   api: QuestActionActionApiType
   matrix: QuestActionActionContentType
-  toggle: QuestActionActionContentType
+  toggle: QuestActionActionContentBaseType
   choices: QuestActionActionChoicesType
-  smiley: QuestActionActionContentType
-  score: QuestActionActionContentType
-  lead: QuestActionActionContentType
+  smiley: QuestActionActionContentBaseType
+  score: QuestActionActionContentBaseType
+  lead: QuestActionActionContentBaseType
   verification: QuestActionActionVerificationType
   video: QuestActionActionPerformedType
   socialMedia: QuestActionActionPerformedType
@@ -3639,18 +3751,11 @@ type QuestActionActionType {
 
 type QuestActionType {
   id: ID!
-  status: QuestActionStatus!
   user: UserType!
   activity: QuestActivityType!
   action: QuestActionActionType!
   createdAt: DateTime!
   updatedAt: DateTime!
-}
-
-enum QuestActionStatus {
-  EXPIRED
-  PERFORMED
-  IN_PROGRESS
 }
 
 type QuestActionPaginateType {
@@ -5497,7 +5602,7 @@ type CorporateNotificationType {
   seen: Boolean
   executed: Boolean
   executedAt: DateTime
-  user: UserType!
+  user: UserType
   target: TargetType!
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -5522,7 +5627,7 @@ type CorporateNotificationFullType {
   seen: Boolean
   executed: Boolean
   executedAt: DateTime
-  user: UserType!
+  user: UserType
   target: TargetType!
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -8805,6 +8910,19 @@ type WalletLeaderboardType {
   reputationLevel: ReputationType
 }
 
+type WalletLeaderboardPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [WalletLeaderboardType!]!
+}
+
+type LeaderboardCurrentUserPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [WalletLeaderboardType!]!
+  currentUser: WalletLeaderboardType!
+}
+
 type IsFollowedType {
   isFollowed: Boolean!
 }
@@ -9058,6 +9176,12 @@ type ChallengeActionType {
   jockers: [JockerType!]!
   createdAt: DateTime!
   updatedAt: DateTime!
+}
+
+type ChallengeActionPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [ChallengeActionType!]!
 }
 
 type LabelType {
@@ -10888,7 +11012,9 @@ type Query {
   isWalletAndCardInitialized(
     userId: String
   ): IsWalletAndCardInititalizedDtoType!
-  getCurrentUserQuantitativeWallet: WalletOnePocketDtoType!
+  getCurrentUserQuantitativeWallet(
+    target: TargetACIInput
+  ): WalletOnePocketDtoType!
   getCurrentUserQualitativeWallet(
     target: TargetACIInput!
   ): WalletOnePocketDtoType!
@@ -10961,6 +11087,11 @@ type Query {
     filter: QuestsFilterInput
     searchString: String
   ): [QuestType!]!
+  findPredefinedQuestsByTargetWithRepeatDate(
+    target: TargetACIInput!
+    filter: QuestsFilterInput
+    searchString: String
+  ): [QuestWithRepeatDateType!]!
   getQuestsByTargetAndUserAudiencePaginated(
     pagination: PaginationInput = { page: 0, limit: 20 }
     target: TargetACIInput!
@@ -11013,6 +11144,10 @@ type Query {
   ): ActivityTypePaginateType!
   getPredefinedActivityTypesPaginated(
     pagination: PaginationInput = { page: 0, limit: 20 }
+  ): ActivityTypePaginateType!
+  getPredefinedActivityTypesByTargetPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    target: TargetACIInput!
   ): ActivityTypePaginateType!
   getActivityLogs: [ActivityLogType!]!
   ActivityLog(id: String!): ActivityLogType!
@@ -11108,6 +11243,110 @@ type Query {
     pagination: PaginationInput = { page: 0, limit: 20 }
   ): AudienceCriteriaPaginateType!
   audienceCriteria(id: String!): AudienceCriteriaType!
+  getChallenges: [ChallengeType!]!
+  getChallengesPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): ChallengePaginateType!
+  getChallengesByTargetPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    target: TargetACIInput!
+  ): ChallengePaginateType!
+  getChallengesByTargetAndCreatorPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    target: TargetACIInput!
+  ): ChallengePaginateType!
+  getChallengesByTargetAndUserAudiencePaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    target: TargetACIInput!
+  ): ChallengePaginateType!
+  challenge(id: String!): ChallengeType!
+  getLeaderboardByChallenge(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    challenge: ID!
+  ): LeaderboardCurrentUserPaginateType!
+  getAllLeaderboardByChallenge(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    challenge: ID!
+  ): WalletLeaderboardPaginateType!
+  getChallengeTypes: [ChallengeTypeType!]!
+  getChallengeTypesPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): ChallengeTypePaginateType!
+  getChallengeTypesByTargetPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    target: TargetACIInput!
+  ): ChallengeTypePaginateType!
+  searchChallengeTypesByTargetWithFilterPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    searchString: String
+    filter: ChallengeTypesFilterInput!
+    target: TargetACIInput!
+  ): ChallengeTypePaginateType!
+  challengeType(id: String!): ChallengeTypeType!
+  getChallengeActions: [ChallengeActionType!]!
+  getChallengeActionsPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): ChallengeActionPaginateType!
+  challengeAction(id: String!): ChallengeActionType!
+  getJockers: [JockerType!]!
+  getJockersPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): JockerPaginateType!
+  jocker(id: String!): JockerType!
+  getChallengeSteps: [ChallengeStepType!]!
+  getChallengeStepsPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): ChallengeStepPaginateType!
+  getChallengeStepsByChallengePaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    challenge: ID!
+  ): ChallengeStepPaginateType!
+  challengeStep(id: String!): ChallengeStepType!
+  getFormsPagination(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): FormPaginateType!
+  getForms: [FormResponseType!]!
+  form(id: String!): FormResponseType!
+  searchForms(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    searchString: String
+  ): FormPaginateType!
+  getFormsWithFilters(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    input: FormFiltersInput!
+  ): FormPaginateType!
+  getQuestionsPagination(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): QuestionPaginateType!
+  getQuestions: [QuestionDtoType!]!
+  question(id: ID!): QuestionDtoType!
+  getQuestionsByChallengeStep(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    id: ID!
+  ): QuestionPaginateType!
+  getResponsesPagination(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): ResponsePaginateType!
+  getResponses: [ResponseDtoType!]!
+  response(id: String!): ResponseDtoType!
+  searchResponse(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    searchString: String
+  ): ResponsePaginateType!
+  getResponsesWithFilter(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    input: ResponseFilterInput!
+  ): ResponsePaginateType!
+  getSummary(formId: String!): [SummaryResponseDtoType!]!
+  getQuestionResponses(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    questionId: String!
+  ): GetQuestionResponsesPaginateType!
+  exportResponsesByMail(
+    input: ResponseFilterInput!
+    subject: String!
+    email: String!
+  ): MailResponseDto!
   runSEOAudit(target: TargetACIInput!, startUrl: String!): SEOAuditType!
   runGoogleSearchAudit(target: TargetACIInput!): [GoogleSearchAuditType!]!
   getGoogleSearchAuditConfig: [GoogleSearchAuditConfigType!]!
@@ -11398,6 +11637,10 @@ type Query {
   getWidgetIntegration: [WidgetIntegrationType!]!
   widgetIntegration(id: ID!): WidgetIntegrationType!
   getWidgetIntegrationByTarget(target: TargetACIInput!): WidgetIntegrationType!
+  getPredefinedActivityTypesByTargetWithActiveStatusPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+    target: TargetACIInput!
+  ): ActivityTypeWithActiveStatusPaginateType!
   findCounteryById(id: ID!): CountryType!
   getCountries: [CountryType!]!
   findCountriesPagination(
@@ -12298,11 +12541,11 @@ input CouponFilterInput {
 }
 
 input CorporateNotificationInput {
-  title: String
-  userId: ID
-  description: String
+  title: String!
+  userIds: [ID!]
+  description: String!
   picture: PictureInput
-  target: TargetACIInput
+  target: TargetACIInput!
   executedAt: DateTime
 }
 
@@ -12415,6 +12658,39 @@ input DeliveryZonePathInput {
   lng: Float!
   lat: Float!
   order: Float!
+}
+
+input ChallengeTypesFilterInput {
+  enable: Boolean
+  jockers: [ID!]
+  activityTypes: [ID!]
+  minCheckPoints: NumberRangeInput
+  minStep: NumberRangeInput
+  claimReward: NumberRangeInput
+  minGiftValue: PriceRangeInput
+  fees: PriceRangeInput
+}
+
+input FormFiltersInput {
+  owner: FormOwnerFilterInput
+  questions: [String!]
+  types: [FormType!]
+  statuses: [FormStatus!]
+}
+
+input FormOwnerFilterInput {
+  pos: [String!]
+  wholesaler: [String!]
+  manufacturers: [String!]
+}
+
+input ResponseFilterInput {
+  to: DateTime
+  from: DateTime
+  pos: [String!]
+  users: [String!]
+  forms: [String!]
+  executors: [String!]
 }
 
 input LonLatInput {
@@ -13034,7 +13310,7 @@ type Mutation {
   markAllMessagesAsSeenForTarget(
     # message group Id.
     messageGroup: ID!
-    target: TargetACIInput
+    target: TargetACIInput!
   ): DeleteResponseDtoType!
   createMessageGroup(input: MessageGroupInput): MessageGroupType!
   archiveMessageGroup(id: ID!): MessageGroupType!
@@ -13496,7 +13772,7 @@ type Mutation {
   ): CorporateNotificationResponse!
   createAdhocCorporateNotification(
     input: CorporateNotificationInput!
-  ): CorporateNotificationFullType!
+  ): [CorporateNotificationFullType!]!
   markInternalProductAsFavorite(productId: String!): InternalProductType!
   removeInternalProductFromFavorites(productId: String!): InternalProductType!
   markSimpleProductAsFavorite(productId: String!): InternalProductType!
@@ -13531,6 +13807,7 @@ type Mutation {
   initQualitativeWallet(target: TargetACIInput!, user: String!): WalletDtoType!
   initTargetWallet(target: TargetACIInput!): WalletDtoType!
   initUserWallet: WalletDtoType!
+  initQuantitativeWalletWithTarget(target: TargetACIInput!): WalletDtoType!
   addUserWallet: WalletDtoType!
   increaseAmount(
     id: ID!
@@ -13572,7 +13849,10 @@ type Mutation {
   removeAudienceFromQuest(id: ID!): QuestType!
   deleteQuest(id: ID!): DeleteResponseDtoType!
   finishQuest(id: String!): QuestType!
-  performQuestActivityByUser(id: String!): QuestActionType!
+  performQuestActivityByUser(
+    action: QuestActionActionInput!
+    id: String!
+  ): QuestActionType!
   createQuestActivity(input: QuestActivityInput!): QuestActivityType!
   updateQuestActivity(input: QuestActivityInput!, id: ID!): QuestActivityType!
   reorderQuestActivity(order: Int!, id: ID!): QuestActivityType!
@@ -13619,6 +13899,46 @@ type Mutation {
     id: ID!
   ): AudienceCriteriaType!
   deleteAudienceCriteria(id: ID!): DeleteResponseDtoType!
+  createChallenge(input: ChallengeInput!): ChallengeType!
+  updateChallenge(input: ChallengeInput!, id: ID!): ChallengeType!
+  removeAudienceFromChallenge(id: ID!): ChallengeType!
+  deleteChallenge(id: ID!): DeleteResponseDtoType!
+  performChallengeByUser(
+    response: ResponseInput!
+    jockers: [String!]!
+    challengeId: ID!
+  ): ResponseDtoType!
+  createChallengeType(input: ChallengeTypeInput!): ChallengeTypeType!
+  updateChallengeType(input: ChallengeTypeInput!, id: ID!): ChallengeTypeType!
+  deleteChallengeType(id: ID!): DeleteResponseDtoType!
+  createChallengeAction(input: ID!): ChallengeActionType!
+  updateChallengeAction(input: ID!, id: ID!): ChallengeActionType!
+  deleteChallengeAction(id: ID!): DeleteResponseDtoType!
+  createJocker(input: JockerInput!): JockerType!
+  updateJocker(input: JockerInput!, id: ID!): JockerType!
+  deleteJocker(id: ID!): DeleteResponseDtoType!
+  createChallengeStep(input: ChallengeStepInput!): ChallengeStepType!
+  updateChallengeStep(input: ChallengeStepInput!, id: ID!): ChallengeStepType!
+  reorderChallengeStep(rank: Int!, id: ID!): ChallengeStepType!
+  deleteChallengeStep(id: ID!): DeleteResponseDtoType!
+  createForm(input: CreateFormInput!): FormResponseType!
+  updateForm(input: UpdateFormInput!): FormResponseType!
+  addQuestionsToForm(
+    questions: [QuestionInput!]!
+    formId: String!
+  ): FormResponseType!
+  deleteQuestionsFromForm(
+    questions: [String!]!
+    formId: String!
+  ): FormResponseType!
+  updateFormStatus(status: FormStatus!, id: String!): FormResponseType!
+  deleteForm(id: ID!): DeleteResponseDtoType!
+  createQuestion(input: QuestionInput!): QuestionDtoType!
+  updateQuestion(input: QuestionInput!, id: ID!): QuestionDtoType!
+  reorderQuestion(order: Int!, id: ID!): QuestionDtoType!
+  deleteQuestion(id: ID!): DeleteResponseDtoType!
+  createResponse(input: ResponseInput!): ResponseDtoType!
+  deleteResponse(id: ID!): DeleteResponseDtoType!
   createGoogleSearchAuditConfig(
     input: GoogleSearchAuditConfigInput!
   ): GoogleSearchAuditConfigType!
@@ -13948,7 +14268,7 @@ type Mutation {
     id: ID!
   ): WidgetIntegrationType!
   disableWidgetIntegrationAction(
-    input: WidgetIntegrationActionsInput!
+    input: WidgetIntegrationActionsBaseInput!
     id: ID!
   ): WidgetIntegrationType!
   deleteWidgetIntegration(id: ID!): DeleteResponseDtoType!
@@ -15947,12 +16267,69 @@ input RemunerationInput {
   amount: String!
 }
 
+input QuestActionActionInput {
+  textBox: QuestActionActionContentBaseInput
+  rating: QuestActionActionContentInput
+  calculated: QuestActionActionContentBaseInput
+  date: QuestActionActionContentBaseInput
+  contact: QuestActionActionContentBaseInput
+  number: QuestActionActionNumberInput
+  api: QuestActionActionApiInput
+  matrix: QuestActionActionContentInput
+  toggle: QuestActionActionContentInput
+  choices: QuestActionActionChoicesInput
+  smiley: QuestActionActionContentBaseInput
+  score: QuestActionActionContentBaseInput
+  lead: QuestActionActionContentInput
+  verification: QuestActionActionVerificationInput
+  video: QuestActionActionPerformedInput
+  socialMedia: QuestActionActionPerformedInput
+  appDownload: QuestActionActionPerformedInput
+}
+
+input QuestActionActionContentBaseInput {
+  content: String
+}
+
+input QuestActionActionContentInput {
+  content: String
+  value: Int
+}
+
+input QuestActionActionNumberInput {
+  from: Float
+  to: Float
+}
+
+input QuestActionActionApiInput {
+  code: Float
+  content: Float
+}
+
+input QuestActionActionChoicesInput {
+  responses: [ID!]
+}
+
+input QuestActionActionVerificationInput {
+  number: QuestActionActionVerificationContentInput
+  email: QuestActionActionVerificationContentInput
+}
+
+input QuestActionActionVerificationContentInput {
+  verification: QuestActionActionPerformedInput
+  verified: QuestActionActionPerformedInput
+}
+
+input QuestActionActionPerformedInput {
+  performed: Boolean
+}
+
 input QuestActivityInput {
-  title: String
-  description: String
+  title: String!
+  description: String!
   tags: [String!]
   media: MediaInput
-  quest: ID
+  quest: ID!
   rank: Int
   activity: IQuestActivityActivitiesInput
 }
@@ -15982,78 +16359,6 @@ input IQuestActivityActivitiesConditionConditionInput {
 input IQuestActivityActivitiesConditionConditionActionInput {
   definition: ID
   action: QuestActionActionInput
-}
-
-input QuestActionActionInput {
-  textBox: QuestActionActionContentInput
-  rating: QuestActionActionContentInput
-  calculated: QuestActionActionContentInput
-  date: QuestActionActionDateInput
-  contact: QuestActionActionContactInput
-  number: QuestActionActionNumberInput
-  api: QuestActionActionApiInput
-  matrix: QuestActionActionContentInput
-  toggle: QuestActionActionContentInput
-  choices: QuestActionActionChoicesInput
-  smiley: QuestActionActionContentInput
-  score: QuestActionActionContentInput
-  lead: QuestActionActionContentInput
-  verification: QuestActionActionVerificationInput
-  video: QuestActionActionPerformedInput
-  socialMedia: QuestActionActionPerformedInput
-  appDownload: QuestActionActionPerformedInput
-}
-
-input QuestActionActionContentInput {
-  content: String
-}
-
-input QuestActionActionDateInput {
-  startDate: DateTime
-  endDate: DateTime
-}
-
-input QuestActionActionContactInput {
-  firstname: String
-  lastname: String
-  email: String
-  phone: String
-  description: String
-  address: FullAddressInput
-  birthday: DateTime
-  gender: Gender
-  civility: MaritalStatus
-  profession: String
-  academicLevel: AcademicLevel
-  language: [ID!]
-}
-
-input QuestActionActionNumberInput {
-  from: Float
-  to: Float
-}
-
-input QuestActionActionApiInput {
-  code: Float
-  content: Float
-}
-
-input QuestActionActionChoicesInput {
-  responses: [String!]
-}
-
-input QuestActionActionVerificationInput {
-  number: QuestActionActionVerificationContentInput
-  email: QuestActionActionVerificationContentInput
-}
-
-input QuestActionActionVerificationContentInput {
-  verification: QuestActionActionPerformedInput
-  verified: QuestActionActionPerformedInput
-}
-
-input QuestActionActionPerformedInput {
-  performed: Boolean
 }
 
 input IQuestActivityActivitiesConditionConditionScoreInput {
@@ -16331,6 +16636,142 @@ input AudienceCriteriaInput {
 input AudienceCriteriaFieldInput {
   field: AudienceCriteriaFieldEnum
   operators: [OperatorEnum!]
+}
+
+input ChallengeInput {
+  title: String
+  description: String
+  media: MediaInput
+  challengeType: ID
+  startDate: DateTime
+  endDate: DateTime
+  status: ChallengeStatusEnum
+  winners: [ChallengeInputWinner!]
+  checkpoints: [ChallengeInputCheckpoint!]
+  maxAnswers: Int
+  audience: ID
+  target: TargetACIInput
+}
+
+input ChallengeInputWinner {
+  rank: Int!
+  reward: Float
+}
+
+input ChallengeInputCheckpoint {
+  checkpoint: Int
+  amount: Float
+}
+
+input ResponseInput {
+  question: String!
+  target: TargetInput
+  answers: [String!]!
+}
+
+input TargetInput {
+  pos: String
+  user: String
+}
+
+input ChallengeTypeInput {
+  title: String
+  description: String
+  rules: String
+  icon: String
+  media: MediaInput
+  minStep: Int
+  minCheckPoints: Int
+  minGiftValue: String
+  claimReward: Int
+  activityTypes: [ID!]
+  jockers: [ChallengeTypeInputJocker!]
+  fees: String
+  enable: Boolean
+  target: TargetACIInput
+}
+
+input ChallengeTypeInputJocker {
+  jocker: ID
+  cost: String
+}
+
+input JockerInput {
+  title: String
+  description: String
+  icon: String
+  cost: Int
+  kind: JockerKindEnum
+  media: MediaInput
+  target: TargetACIInput
+}
+
+input ChallengeStepInput {
+  title: String
+  description: String
+  media: MediaInput
+  startDate: DateTime
+  endDate: DateTime
+  randomize: Boolean
+  rank: Int
+  challenge: ID
+}
+
+input CreateFormInput {
+  title: String!
+  description: String!
+  owner: FormOwnerInput!
+  questions: [QuestionInput!]!
+  type: FormType!
+  status: FormStatus!
+}
+
+input FormOwnerInput {
+  pos: String
+  wholesaler: String
+  manufacturer: String
+}
+
+input QuestionInput {
+  mandatory: Boolean
+  title: String
+  description: String
+  choices: [QuestionChoiceInput!]
+  order: Int
+  type: QuestionTypeEnum
+  challengeStep: ID
+  score: Boolean
+  points: Int
+  duration: Int
+}
+
+input QuestionChoiceInput {
+  item: String!
+  enable: Boolean
+}
+
+input UpdateFormInput {
+  id: String!
+  title: String
+  description: String
+  owner: FormOwnerInput
+  questions: [UpdateQuestionInput!]
+  type: FormType
+  status: FormStatus
+}
+
+input UpdateQuestionInput {
+  mandatory: Boolean
+  title: String
+  description: String
+  choices: [QuestionChoiceInput!]
+  order: Int
+  type: QuestionTypeEnum
+  challengeStep: ID
+  score: Boolean
+  points: Int
+  duration: Int
+  id: ID!
 }
 
 input GoogleSearchAuditConfigInput {
@@ -16799,9 +17240,15 @@ input WidgetIntegrationContentInput {
 }
 
 input WidgetIntegrationActionsInput {
-  definition: ID
+  target: TargetACIInput!
+  activity: PredefinedActionsEnum!
   recurrence: QuestActionsRecurrenceInput
   remuneration: [RemunerationInput!]
+}
+
+input WidgetIntegrationActionsBaseInput {
+  target: TargetACIInput!
+  activity: PredefinedActionsEnum!
 }
 
 input CountryInput {
@@ -17662,6 +18109,14 @@ type Subscription {
   listenForAudienceCriteriaStarted(
     targets: TargetsInput!
   ): AudienceCriteriaType!
+  listenForChallengeStarted(targets: TargetsInput!): ChallengeType!
+  listenForChallengeTypeStarted(targets: TargetsInput!): ChallengeTypeType!
+  listenForChallengeActionStarted(targets: TargetsInput!): ChallengeActionType!
+  listenForJockerStarted(targets: TargetsInput!): JockerType!
+  listenForChallengeStepStarted(targets: TargetsInput!): ChallengeStepType!
+  listenForFormCreated: FormDtoType!
+  listenForQuestionCreated: QuestionDtoType!
+  listenForResponseCreated: ResponseDtoType!
   listenForMarketPlaceOrderCreated(posId: ID!): MarketPlaceOrderDtoType!
   listenForDeliveryMarketPlaceOrderCreated(posId: ID!): MarketPlaceOrderDtoType!
   listenForUpdateProductMarketPlaceOrderStatus(

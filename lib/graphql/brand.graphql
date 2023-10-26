@@ -13,6 +13,7 @@ query getBrands {
       height
       x
       y
+      alt
     }
     manufacturer {
       id
@@ -20,6 +21,37 @@ query getBrands {
       name
       description
       website
+      contactEmails
+      currencies {
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        default
+      }
       createdAt
       updatedAt
       picture {
@@ -29,6 +61,7 @@ query getBrands {
         height
         x
         y
+        alt
       }
       address {
         city
@@ -54,6 +87,7 @@ query getBrands {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -62,6 +96,7 @@ query getBrands {
             height
             x
             y
+            alt
           }
         }
         state {
@@ -86,6 +121,7 @@ query getBrands {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -94,6 +130,7 @@ query getBrands {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -105,6 +142,7 @@ query getBrands {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -113,6 +151,7 @@ query getBrands {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -136,6 +175,7 @@ query getBrands {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -144,6 +184,7 @@ query getBrands {
             height
             x
             y
+            alt
           }
         }
         address {
@@ -170,6 +211,7 @@ query getBrands {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -178,6 +220,7 @@ query getBrands {
               height
               x
               y
+              alt
             }
           }
           state {
@@ -202,6 +245,7 @@ query getBrands {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -210,6 +254,7 @@ query getBrands {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -221,6 +266,7 @@ query getBrands {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -229,6 +275,7 @@ query getBrands {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -273,6 +320,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -281,6 +329,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
               }
               state {
@@ -305,6 +354,7 @@ query getBrands {
                     height
                     x
                     y
+                    alt
                   }
                   flagWide {
                     baseUrl
@@ -313,6 +363,7 @@ query getBrands {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 createdAt
@@ -324,6 +375,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -332,6 +384,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
               }
               owner {
@@ -358,6 +411,7 @@ query getBrands {
                 height
                 x
                 y
+                alt
               }
               png {
                 default {
@@ -367,6 +421,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
                 size16 {
                   baseUrl
@@ -375,6 +430,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
                 size24 {
                   baseUrl
@@ -383,6 +439,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
                 size32 {
                   baseUrl
@@ -391,6 +448,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
                 size48 {
                   baseUrl
@@ -399,6 +457,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
                 size64 {
                   baseUrl
@@ -407,6 +466,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
                 size128 {
                   baseUrl
@@ -415,6 +475,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
                 size256 {
                   baseUrl
@@ -423,6 +484,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
                 size512 {
                   baseUrl
@@ -431,6 +493,7 @@ query getBrands {
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -438,6 +501,7 @@ query getBrands {
             createdAt
             updatedAt
           }
+          externalId
           createdAt
           updatedAt
         }
@@ -453,11 +517,12 @@ query getBrands {
         }
         logistic
         tags
+        externalId
         createdAt
         updatedAt
       }
     }
-    
+   
   }
 }
 query getBrandsByTarget($target: TargetACIInput!) {
@@ -475,6 +540,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
       height
       x
       y
+      alt
     }
     manufacturer {
       id
@@ -482,6 +548,37 @@ query getBrandsByTarget($target: TargetACIInput!) {
       name
       description
       website
+      contactEmails
+      currencies {
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        default
+      }
       createdAt
       updatedAt
       picture {
@@ -491,6 +588,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       address {
         city
@@ -516,6 +614,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -524,6 +623,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
@@ -548,6 +648,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -556,6 +657,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -567,6 +669,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -575,6 +678,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -598,6 +702,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -606,6 +711,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         address {
@@ -632,6 +738,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -640,6 +747,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           state {
@@ -664,6 +772,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -672,6 +781,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -683,6 +793,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -691,6 +802,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -735,6 +847,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -743,6 +856,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               state {
@@ -767,6 +881,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                     height
                     x
                     y
+                    alt
                   }
                   flagWide {
                     baseUrl
@@ -775,6 +890,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 createdAt
@@ -786,6 +902,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -794,6 +911,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               owner {
@@ -820,6 +938,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               png {
                 default {
@@ -829,6 +948,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size16 {
                   baseUrl
@@ -837,6 +957,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size24 {
                   baseUrl
@@ -845,6 +966,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size32 {
                   baseUrl
@@ -853,6 +975,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size48 {
                   baseUrl
@@ -861,6 +984,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size64 {
                   baseUrl
@@ -869,6 +993,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size128 {
                   baseUrl
@@ -877,6 +1002,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size256 {
                   baseUrl
@@ -885,6 +1011,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size512 {
                   baseUrl
@@ -893,6 +1020,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -900,6 +1028,7 @@ query getBrandsByTarget($target: TargetACIInput!) {
             createdAt
             updatedAt
           }
+          externalId
           createdAt
           updatedAt
         }
@@ -915,11 +1044,12 @@ query getBrandsByTarget($target: TargetACIInput!) {
         }
         logistic
         tags
+        externalId
         createdAt
         updatedAt
       }
     }
-    
+  
   }
 }
 query brand($id: String!) {
@@ -937,6 +1067,7 @@ query brand($id: String!) {
       height
       x
       y
+      alt
     }
     manufacturer {
       id
@@ -944,6 +1075,37 @@ query brand($id: String!) {
       name
       description
       website
+      contactEmails
+      currencies {
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        default
+      }
       createdAt
       updatedAt
       picture {
@@ -953,6 +1115,7 @@ query brand($id: String!) {
         height
         x
         y
+        alt
       }
       address {
         city
@@ -978,6 +1141,7 @@ query brand($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -986,6 +1150,7 @@ query brand($id: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
@@ -1010,6 +1175,7 @@ query brand($id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1018,6 +1184,7 @@ query brand($id: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1029,6 +1196,7 @@ query brand($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1037,6 +1205,7 @@ query brand($id: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1060,6 +1229,7 @@ query brand($id: String!) {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -1068,6 +1238,7 @@ query brand($id: String!) {
             height
             x
             y
+            alt
           }
         }
         address {
@@ -1094,6 +1265,7 @@ query brand($id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1102,6 +1274,7 @@ query brand($id: String!) {
               height
               x
               y
+              alt
             }
           }
           state {
@@ -1126,6 +1299,7 @@ query brand($id: String!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -1134,6 +1308,7 @@ query brand($id: String!) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -1145,6 +1320,7 @@ query brand($id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1153,6 +1329,7 @@ query brand($id: String!) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -1197,6 +1374,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -1205,6 +1383,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               state {
@@ -1229,6 +1408,7 @@ query brand($id: String!) {
                     height
                     x
                     y
+                    alt
                   }
                   flagWide {
                     baseUrl
@@ -1237,6 +1417,7 @@ query brand($id: String!) {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 createdAt
@@ -1248,6 +1429,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -1256,6 +1438,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               owner {
@@ -1282,6 +1465,7 @@ query brand($id: String!) {
                 height
                 x
                 y
+                alt
               }
               png {
                 default {
@@ -1291,6 +1475,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size16 {
                   baseUrl
@@ -1299,6 +1484,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size24 {
                   baseUrl
@@ -1307,6 +1493,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size32 {
                   baseUrl
@@ -1315,6 +1502,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size48 {
                   baseUrl
@@ -1323,6 +1511,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size64 {
                   baseUrl
@@ -1331,6 +1520,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size128 {
                   baseUrl
@@ -1339,6 +1529,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size256 {
                   baseUrl
@@ -1347,6 +1538,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size512 {
                   baseUrl
@@ -1355,6 +1547,7 @@ query brand($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -1362,6 +1555,7 @@ query brand($id: String!) {
             createdAt
             updatedAt
           }
+          externalId
           createdAt
           updatedAt
         }
@@ -1377,11 +1571,12 @@ query brand($id: String!) {
         }
         logistic
         tags
+        externalId
         createdAt
         updatedAt
       }
     }
-    
+ 
   }
 }
 query getBrandsPagination($pagination: PaginationInput) {
@@ -1402,8 +1597,516 @@ query getBrandsPagination($pagination: PaginationInput) {
         height
         x
         y
+        alt
       }
-      
+      manufacturer {
+        id
+        email
+        name
+        description
+        website
+        contactEmails
+        currencies {
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          default
+        }
+        createdAt
+        updatedAt
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        address {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+            code
+            created
+            surface
+            dialCode
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        company {
+          id
+          name
+          description
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          address {
+            city
+            address
+            postCode
+            addressLine
+            location {
+              type
+              coordinates
+            }
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            state {
+              id
+              name
+              code
+              created
+              surface
+              dialCode
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            owner {
+              name
+              phone {
+                number
+                countryCode
+              }
+            }
+          }
+          legal {
+            vat
+            register
+            licence
+          }
+          banks {
+            id
+            holder {
+              name
+              type
+              address {
+                city
+                address
+                postCode
+                addressLine
+                location {
+                  type
+                  coordinates
+                }
+                country {
+                  id
+                  name
+                  code
+                  dialCode
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                state {
+                  id
+                  name
+                  code
+                  created
+                  surface
+                  dialCode
+                  country {
+                    id
+                    name
+                    code
+                    dialCode
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                owner {
+                  name
+                  phone {
+                    number
+                    countryCode
+                  }
+                }
+              }
+            }
+            account
+            iban
+            bank {
+              id
+              name
+              code
+              bic
+              logo {
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                png {
+                  default {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size16 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size24 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size32 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size64 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size128 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size256 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size512 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                icon
+              }
+              createdAt
+              updatedAt
+            }
+            externalId
+            createdAt
+            updatedAt
+          }
+          contact {
+            website
+            email
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+          }
+          logistic
+          tags
+          externalId
+          createdAt
+          updatedAt
+        }
+      }
+    
     }
   }
 }
@@ -1425,8 +2128,516 @@ query getBrandsByTargetPaginated($target: TargetACIInput!, $pagination: Paginati
         height
         x
         y
+        alt
       }
-    
+      manufacturer {
+        id
+        email
+        name
+        description
+        website
+        contactEmails
+        currencies {
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          default
+        }
+        createdAt
+        updatedAt
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        address {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+            code
+            created
+            surface
+            dialCode
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        company {
+          id
+          name
+          description
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          address {
+            city
+            address
+            postCode
+            addressLine
+            location {
+              type
+              coordinates
+            }
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            state {
+              id
+              name
+              code
+              created
+              surface
+              dialCode
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            owner {
+              name
+              phone {
+                number
+                countryCode
+              }
+            }
+          }
+          legal {
+            vat
+            register
+            licence
+          }
+          banks {
+            id
+            holder {
+              name
+              type
+              address {
+                city
+                address
+                postCode
+                addressLine
+                location {
+                  type
+                  coordinates
+                }
+                country {
+                  id
+                  name
+                  code
+                  dialCode
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                state {
+                  id
+                  name
+                  code
+                  created
+                  surface
+                  dialCode
+                  country {
+                    id
+                    name
+                    code
+                    dialCode
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                owner {
+                  name
+                  phone {
+                    number
+                    countryCode
+                  }
+                }
+              }
+            }
+            account
+            iban
+            bank {
+              id
+              name
+              code
+              bic
+              logo {
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                png {
+                  default {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size16 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size24 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size32 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size64 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size128 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size256 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size512 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                icon
+              }
+              createdAt
+              updatedAt
+            }
+            externalId
+            createdAt
+            updatedAt
+          }
+          contact {
+            website
+            email
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+          }
+          logistic
+          tags
+          externalId
+          createdAt
+          updatedAt
+        }
+      }
+     
     }
   }
 }
@@ -1448,9 +2659,516 @@ query searchBrand($pagination: PaginationInput, $searchString: String!, $target:
         height
         x
         y
+        alt
       }
-      
-      
+      manufacturer {
+        id
+        email
+        name
+        description
+        website
+        contactEmails
+        currencies {
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          default
+        }
+        createdAt
+        updatedAt
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        address {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+            code
+            created
+            surface
+            dialCode
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        company {
+          id
+          name
+          description
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          address {
+            city
+            address
+            postCode
+            addressLine
+            location {
+              type
+              coordinates
+            }
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            state {
+              id
+              name
+              code
+              created
+              surface
+              dialCode
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            owner {
+              name
+              phone {
+                number
+                countryCode
+              }
+            }
+          }
+          legal {
+            vat
+            register
+            licence
+          }
+          banks {
+            id
+            holder {
+              name
+              type
+              address {
+                city
+                address
+                postCode
+                addressLine
+                location {
+                  type
+                  coordinates
+                }
+                country {
+                  id
+                  name
+                  code
+                  dialCode
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                state {
+                  id
+                  name
+                  code
+                  created
+                  surface
+                  dialCode
+                  country {
+                    id
+                    name
+                    code
+                    dialCode
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                owner {
+                  name
+                  phone {
+                    number
+                    countryCode
+                  }
+                }
+              }
+            }
+            account
+            iban
+            bank {
+              id
+              name
+              code
+              bic
+              logo {
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                png {
+                  default {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size16 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size24 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size32 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size64 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size128 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size256 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size512 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                icon
+              }
+              createdAt
+              updatedAt
+            }
+            externalId
+            createdAt
+            updatedAt
+          }
+          contact {
+            website
+            email
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+          }
+          logistic
+          tags
+          externalId
+          createdAt
+          updatedAt
+        }
+      }
+    
     }
   }
 }
@@ -1470,6 +3188,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
       height
       x
       y
+      alt
     }
     manufacturer {
       id
@@ -1477,6 +3196,37 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
       name
       description
       website
+      contactEmails
+      currencies {
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        default
+      }
       createdAt
       updatedAt
       picture {
@@ -1486,6 +3236,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
         height
         x
         y
+        alt
       }
       address {
         city
@@ -1511,6 +3262,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1519,6 +3271,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
             height
             x
             y
+            alt
           }
         }
         state {
@@ -1543,6 +3296,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1551,6 +3305,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1562,6 +3317,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1570,6 +3326,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1593,6 +3350,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -1601,6 +3359,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
             height
             x
             y
+            alt
           }
         }
         address {
@@ -1627,6 +3386,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1635,6 +3395,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
               height
               x
               y
+              alt
             }
           }
           state {
@@ -1659,6 +3420,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -1667,6 +3429,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -1678,6 +3441,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1686,6 +3450,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -1730,6 +3495,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -1738,6 +3504,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
               }
               state {
@@ -1762,6 +3529,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                     height
                     x
                     y
+                    alt
                   }
                   flagWide {
                     baseUrl
@@ -1770,6 +3538,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                     height
                     x
                     y
+                    alt
                   }
                 }
                 createdAt
@@ -1781,6 +3550,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -1789,6 +3559,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
               }
               owner {
@@ -1815,6 +3586,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                 height
                 x
                 y
+                alt
               }
               png {
                 default {
@@ -1824,6 +3596,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
                 size16 {
                   baseUrl
@@ -1832,6 +3605,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
                 size24 {
                   baseUrl
@@ -1840,6 +3614,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
                 size32 {
                   baseUrl
@@ -1848,6 +3623,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
                 size48 {
                   baseUrl
@@ -1856,6 +3632,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
                 size64 {
                   baseUrl
@@ -1864,6 +3641,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
                 size128 {
                   baseUrl
@@ -1872,6 +3650,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
                 size256 {
                   baseUrl
@@ -1880,6 +3659,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
                 size512 {
                   baseUrl
@@ -1888,6 +3668,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -1895,6 +3676,7 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
             createdAt
             updatedAt
           }
+          externalId
           createdAt
           updatedAt
         }
@@ -1910,11 +3692,12 @@ query findBrandByExternalIdAndTarget($externalId: String!, $target: TargetACIInp
         }
         logistic
         tags
+        externalId
         createdAt
         updatedAt
       }
     }
-    
+     
   }
 }
 
@@ -1933,6 +3716,7 @@ mutation syncOneBrand($input: BrandInput!) {
       height
       x
       y
+      alt
     }
     manufacturer {
       id
@@ -1940,6 +3724,37 @@ mutation syncOneBrand($input: BrandInput!) {
       name
       description
       website
+      contactEmails
+      currencies {
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        default
+      }
       createdAt
       updatedAt
       picture {
@@ -1949,6 +3764,7 @@ mutation syncOneBrand($input: BrandInput!) {
         height
         x
         y
+        alt
       }
       address {
         city
@@ -1974,6 +3790,7 @@ mutation syncOneBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1982,6 +3799,7 @@ mutation syncOneBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
@@ -2006,6 +3824,7 @@ mutation syncOneBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2014,6 +3833,7 @@ mutation syncOneBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2025,6 +3845,7 @@ mutation syncOneBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2033,6 +3854,7 @@ mutation syncOneBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2056,6 +3878,7 @@ mutation syncOneBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -2064,6 +3887,7 @@ mutation syncOneBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
         }
         address {
@@ -2090,6 +3914,7 @@ mutation syncOneBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2098,6 +3923,7 @@ mutation syncOneBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
           }
           state {
@@ -2122,6 +3948,7 @@ mutation syncOneBrand($input: BrandInput!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -2130,6 +3957,7 @@ mutation syncOneBrand($input: BrandInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -2141,6 +3969,7 @@ mutation syncOneBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2149,6 +3978,7 @@ mutation syncOneBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -2193,6 +4023,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -2201,6 +4032,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               state {
@@ -2225,6 +4057,7 @@ mutation syncOneBrand($input: BrandInput!) {
                     height
                     x
                     y
+                    alt
                   }
                   flagWide {
                     baseUrl
@@ -2233,6 +4066,7 @@ mutation syncOneBrand($input: BrandInput!) {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 createdAt
@@ -2244,6 +4078,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -2252,6 +4087,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               owner {
@@ -2278,6 +4114,7 @@ mutation syncOneBrand($input: BrandInput!) {
                 height
                 x
                 y
+                alt
               }
               png {
                 default {
@@ -2287,6 +4124,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size16 {
                   baseUrl
@@ -2295,6 +4133,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size24 {
                   baseUrl
@@ -2303,6 +4142,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size32 {
                   baseUrl
@@ -2311,6 +4151,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size48 {
                   baseUrl
@@ -2319,6 +4160,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size64 {
                   baseUrl
@@ -2327,6 +4169,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size128 {
                   baseUrl
@@ -2335,6 +4178,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size256 {
                   baseUrl
@@ -2343,6 +4187,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size512 {
                   baseUrl
@@ -2351,6 +4196,7 @@ mutation syncOneBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -2358,6 +4204,7 @@ mutation syncOneBrand($input: BrandInput!) {
             createdAt
             updatedAt
           }
+          externalId
           createdAt
           updatedAt
         }
@@ -2373,6 +4220,7 @@ mutation syncOneBrand($input: BrandInput!) {
         }
         logistic
         tags
+        externalId
         createdAt
         updatedAt
       }
@@ -2396,6 +4244,7 @@ mutation createBrand($input: BrandInput!) {
       height
       x
       y
+      alt
     }
     manufacturer {
       id
@@ -2403,6 +4252,37 @@ mutation createBrand($input: BrandInput!) {
       name
       description
       website
+      contactEmails
+      currencies {
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        default
+      }
       createdAt
       updatedAt
       picture {
@@ -2412,6 +4292,7 @@ mutation createBrand($input: BrandInput!) {
         height
         x
         y
+        alt
       }
       address {
         city
@@ -2437,6 +4318,7 @@ mutation createBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2445,6 +4327,7 @@ mutation createBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
@@ -2469,6 +4352,7 @@ mutation createBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2477,6 +4361,7 @@ mutation createBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2488,6 +4373,7 @@ mutation createBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2496,6 +4382,7 @@ mutation createBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2519,6 +4406,7 @@ mutation createBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -2527,6 +4415,7 @@ mutation createBrand($input: BrandInput!) {
             height
             x
             y
+            alt
           }
         }
         address {
@@ -2553,6 +4442,7 @@ mutation createBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2561,6 +4451,7 @@ mutation createBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
           }
           state {
@@ -2585,6 +4476,7 @@ mutation createBrand($input: BrandInput!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -2593,6 +4485,7 @@ mutation createBrand($input: BrandInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -2604,6 +4497,7 @@ mutation createBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2612,6 +4506,7 @@ mutation createBrand($input: BrandInput!) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -2656,6 +4551,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -2664,6 +4560,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               state {
@@ -2688,6 +4585,7 @@ mutation createBrand($input: BrandInput!) {
                     height
                     x
                     y
+                    alt
                   }
                   flagWide {
                     baseUrl
@@ -2696,6 +4594,7 @@ mutation createBrand($input: BrandInput!) {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 createdAt
@@ -2707,6 +4606,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -2715,6 +4615,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               owner {
@@ -2741,6 +4642,7 @@ mutation createBrand($input: BrandInput!) {
                 height
                 x
                 y
+                alt
               }
               png {
                 default {
@@ -2750,6 +4652,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size16 {
                   baseUrl
@@ -2758,6 +4661,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size24 {
                   baseUrl
@@ -2766,6 +4670,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size32 {
                   baseUrl
@@ -2774,6 +4679,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size48 {
                   baseUrl
@@ -2782,6 +4688,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size64 {
                   baseUrl
@@ -2790,6 +4697,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size128 {
                   baseUrl
@@ -2798,6 +4706,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size256 {
                   baseUrl
@@ -2806,6 +4715,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size512 {
                   baseUrl
@@ -2814,6 +4724,7 @@ mutation createBrand($input: BrandInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -2821,6 +4732,7 @@ mutation createBrand($input: BrandInput!) {
             createdAt
             updatedAt
           }
+          externalId
           createdAt
           updatedAt
         }
@@ -2836,11 +4748,12 @@ mutation createBrand($input: BrandInput!) {
         }
         logistic
         tags
+        externalId
         createdAt
         updatedAt
       }
     }
-    
+   
   }
 }
 mutation updateBrand($input: BrandInput!, $id: String!) {
@@ -2858,6 +4771,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
       height
       x
       y
+      alt
     }
     manufacturer {
       id
@@ -2865,6 +4779,37 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
       name
       description
       website
+      contactEmails
+      currencies {
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        default
+      }
       createdAt
       updatedAt
       picture {
@@ -2874,6 +4819,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
         height
         x
         y
+        alt
       }
       address {
         city
@@ -2899,6 +4845,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2907,6 +4854,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
@@ -2931,6 +4879,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2939,6 +4888,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2950,6 +4900,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2958,6 +4909,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2981,6 +4933,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -2989,6 +4942,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
             height
             x
             y
+            alt
           }
         }
         address {
@@ -3015,6 +4969,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3023,6 +4978,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
               height
               x
               y
+              alt
             }
           }
           state {
@@ -3047,6 +5003,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -3055,6 +5012,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -3066,6 +5024,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3074,6 +5033,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -3118,6 +5078,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -3126,6 +5087,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               state {
@@ -3150,6 +5112,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                     height
                     x
                     y
+                    alt
                   }
                   flagWide {
                     baseUrl
@@ -3158,6 +5121,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 createdAt
@@ -3169,6 +5133,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -3177,6 +5142,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               owner {
@@ -3203,6 +5169,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                 height
                 x
                 y
+                alt
               }
               png {
                 default {
@@ -3212,6 +5179,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size16 {
                   baseUrl
@@ -3220,6 +5188,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size24 {
                   baseUrl
@@ -3228,6 +5197,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size32 {
                   baseUrl
@@ -3236,6 +5206,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size48 {
                   baseUrl
@@ -3244,6 +5215,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size64 {
                   baseUrl
@@ -3252,6 +5224,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size128 {
                   baseUrl
@@ -3260,6 +5233,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size256 {
                   baseUrl
@@ -3268,6 +5242,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size512 {
                   baseUrl
@@ -3276,6 +5251,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -3283,6 +5259,7 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
             createdAt
             updatedAt
           }
+          externalId
           createdAt
           updatedAt
         }
@@ -3298,11 +5275,12 @@ mutation updateBrand($input: BrandInput!, $id: String!) {
         }
         logistic
         tags
+        externalId
         createdAt
         updatedAt
       }
     }
-    
+   
   }
 }
 mutation deleteBrand($id: String!) {
@@ -3327,6 +5305,7 @@ subscription listenForBrandCreated {
       height
       x
       y
+      alt
     }
     manufacturer {
       id
@@ -3334,6 +5313,37 @@ subscription listenForBrandCreated {
       name
       description
       website
+      contactEmails
+      currencies {
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        default
+      }
       createdAt
       updatedAt
       picture {
@@ -3343,6 +5353,7 @@ subscription listenForBrandCreated {
         height
         x
         y
+        alt
       }
       address {
         city
@@ -3368,6 +5379,7 @@ subscription listenForBrandCreated {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3376,6 +5388,7 @@ subscription listenForBrandCreated {
             height
             x
             y
+            alt
           }
         }
         state {
@@ -3400,6 +5413,7 @@ subscription listenForBrandCreated {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3408,6 +5422,7 @@ subscription listenForBrandCreated {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -3419,6 +5434,7 @@ subscription listenForBrandCreated {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3427,6 +5443,7 @@ subscription listenForBrandCreated {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -3450,6 +5467,7 @@ subscription listenForBrandCreated {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -3458,6 +5476,7 @@ subscription listenForBrandCreated {
             height
             x
             y
+            alt
           }
         }
         address {
@@ -3484,6 +5503,7 @@ subscription listenForBrandCreated {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3492,6 +5512,7 @@ subscription listenForBrandCreated {
               height
               x
               y
+              alt
             }
           }
           state {
@@ -3516,6 +5537,7 @@ subscription listenForBrandCreated {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -3524,6 +5546,7 @@ subscription listenForBrandCreated {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -3535,6 +5558,7 @@ subscription listenForBrandCreated {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3543,6 +5567,7 @@ subscription listenForBrandCreated {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -3587,6 +5612,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -3595,6 +5621,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
               }
               state {
@@ -3619,6 +5646,7 @@ subscription listenForBrandCreated {
                     height
                     x
                     y
+                    alt
                   }
                   flagWide {
                     baseUrl
@@ -3627,6 +5655,7 @@ subscription listenForBrandCreated {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 createdAt
@@ -3638,6 +5667,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -3646,6 +5676,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
               }
               owner {
@@ -3672,6 +5703,7 @@ subscription listenForBrandCreated {
                 height
                 x
                 y
+                alt
               }
               png {
                 default {
@@ -3681,6 +5713,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
                 size16 {
                   baseUrl
@@ -3689,6 +5722,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
                 size24 {
                   baseUrl
@@ -3697,6 +5731,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
                 size32 {
                   baseUrl
@@ -3705,6 +5740,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
                 size48 {
                   baseUrl
@@ -3713,6 +5749,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
                 size64 {
                   baseUrl
@@ -3721,6 +5758,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
                 size128 {
                   baseUrl
@@ -3729,6 +5767,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
                 size256 {
                   baseUrl
@@ -3737,6 +5776,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
                 size512 {
                   baseUrl
@@ -3745,6 +5785,7 @@ subscription listenForBrandCreated {
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -3752,6 +5793,7 @@ subscription listenForBrandCreated {
             createdAt
             updatedAt
           }
+          externalId
           createdAt
           updatedAt
         }
@@ -3767,6 +5809,7 @@ subscription listenForBrandCreated {
         }
         logistic
         tags
+        externalId
         createdAt
         updatedAt
       }

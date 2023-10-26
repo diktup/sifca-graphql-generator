@@ -132,32 +132,32 @@ class SendAdhocCorporateNotificationTest$Query extends JsonSerializable
 @JsonSerializable(explicitToJson: true)
 class CorporateNotificationInput extends JsonSerializable with EquatableMixin {
   CorporateNotificationInput({
-    this.title,
-    this.userId,
-    this.description,
+    required this.title,
+    this.userIds,
+    required this.description,
     this.picture,
-    this.target,
+    required this.target,
     this.executedAt,
   });
 
   factory CorporateNotificationInput.fromJson(Map<String, dynamic> json) =>
       _$CorporateNotificationInputFromJson(json);
 
-  String? title;
+  late String title;
 
-  String? userId;
+  List<String>? userIds;
 
-  String? description;
+  late String description;
 
   PictureInput? picture;
 
-  TargetACIInput? target;
+  late TargetACIInput target;
 
   DateTime? executedAt;
 
   @override
   List<Object?> get props =>
-      [title, userId, description, picture, target, executedAt];
+      [title, userIds, description, picture, target, executedAt];
   @override
   Map<String, dynamic> toJson() => _$CorporateNotificationInputToJson(this);
 }
@@ -513,7 +513,8 @@ class CreateAdhocCorporateNotification$Mutation extends JsonSerializable
           Map<String, dynamic> json) =>
       _$CreateAdhocCorporateNotification$MutationFromJson(json);
 
-  late CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType
+  late List<
+          CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType>
       createAdhocCorporateNotification;
 
   @override

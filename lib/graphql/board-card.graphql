@@ -1,42 +1,24 @@
-query getBoardCards {
-  getBoardCards {
+ 
+query getCRMBoard($target: TargetACIInput!) {
+  getCRMBoard(target: $target) {
     id
+    icon
     title
     description
-    dueDate
-    archived
-    priority
-    tags
-    rank
-    pictures {
-      baseUrl
-      path
-      width
-      height
-      x
-      y
-    }
-    tasks {
-      task
-      done
-    }
-    labels {
-      id
-      name
-      icon
-      color
-      category
-
-      createdAt
-      updatedAt
-    }
-    assignedTo {
+    category
+    members {
       id
       email
       gender
       lastName
       username
       firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
       picture {
         baseUrl
         path
@@ -44,9 +26,10 @@ query getBoardCards {
         height
         x
         y
+        alt
       }
     }
-    project {
+    projects {
       id
       name
       description
@@ -59,6 +42,7 @@ query getBoardCards {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -67,6 +51,7 @@ query getBoardCards {
           height
           x
           y
+          alt
         }
       }
       privacy
@@ -75,6 +60,7 @@ query getBoardCards {
       priority
       status
       color
+      externalId
       picture {
         baseUrl
         path
@@ -82,6 +68,7 @@ query getBoardCards {
         height
         x
         y
+        alt
       }
       members {
         member {
@@ -91,6 +78,12 @@ query getBoardCards {
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -98,6 +91,7 @@ query getBoardCards {
             height
             x
             y
+            alt
           }
         }
         role
@@ -119,6 +113,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -127,6 +122,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -137,6 +133,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -145,6 +142,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -155,6 +153,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -163,6 +162,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -177,6 +177,12 @@ query getBoardCards {
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -184,6 +190,7 @@ query getBoardCards {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -206,6 +213,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -214,6 +222,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -224,6 +233,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -232,6 +242,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -242,6 +253,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -250,6 +262,7 @@ query getBoardCards {
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -264,578 +277,12 @@ query getBoardCards {
           lastName
           username
           firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    boardList {
-      id
-      name
-      rank
-      theme
-      board {
-        id
-        icon
-        title
-        description
-        category
-        members {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    budget
-    customer {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      address {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
           phone {
             number
+            isValid
             countryCode
+            validationNumber
           }
-        }
-      }
-      legal {
-        vat
-        register
-        licence
-      }
-      banks {
-        id
-        holder {
-          name
-          type
-          address {
-            city
-            address
-            postCode
-            addressLine
-            location {
-              type
-              coordinates
-            }
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            state {
-              id
-              name
-              code
-              created
-              surface
-              dialCode
-              country {
-                id
-                name
-                code
-                dialCode
-                iconFlag
-                createdAt
-                updatedAt
-                flagSquare {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                flagWide {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            owner {
-              name
-              phone {
-                number
-                countryCode
-              }
-            }
-          }
-        }
-        account
-        iban
-        bank {
-          id
-          name
-          code
-          bic
-          logo {
-            svg {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            png {
-              default {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size16 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size24 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size32 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size48 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size64 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-          createdAt
-          updatedAt
-        }
-        createdAt
-        updatedAt
-      }
-      contact {
-        website
-        email
-        phone {
-          number
-          isValid
-          countryCode
-          validationNumber
-        }
-      }
-      logistic
-      tags
-      createdAt
-      updatedAt
-    }
-    attachments {
-      id
-      name
-      content {
-        type {
-          id
-          name
-          type
-          image {
-            background {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            black {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            white {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-        }
-      }
-      size
-      owner {
-        id
-        email
-        gender
-        lastName
-        username
-        firstName
-        picture {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      createdAt
-      updatedAt
-    }
-    procedure {
-      title
-      task
-      time
-    }
-    createdAt
-    updatedAt
-  }
-}
-query getBoardCardsByBoardList($boardList: ID!) {
-  getBoardCardsByBoardList(boardList: $boardList) {
-    id
-    title
-    description
-    dueDate
-    archived
-    priority
-    tags
-    rank
-    pictures {
-      baseUrl
-      path
-      width
-      height
-      x
-      y
-    }
-    tasks {
-      task
-      done
-    }
-    labels {
-      id
-      name
-      icon
-      color
-      category
-
-      createdAt
-      updatedAt
-    }
-    assignedTo {
-      id
-      email
-      gender
-      lastName
-      username
-      firstName
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-    }
-    project {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      privacy
-      tags
-      deadline
-      priority
-      status
-      color
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      members {
-        member {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
           picture {
             baseUrl
             path
@@ -843,1492 +290,353 @@ query getBoardCardsByBoardList($boardList: ID!) {
             height
             x
             y
-          }
-        }
-        role
-      }
-      resources {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
+            alt
           }
         }
         createdAt
         updatedAt
       }
-      attachments {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
+      boardCardsStats {
+        total
+        archived
       }
       createdAt
       updatedAt
     }
-    boardList {
-      id
-      name
-      rank
-      theme
-      board {
-        id
-        icon
-        title
-        description
-        category
-        members {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    budget
-    customer {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      address {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      legal {
-        vat
-        register
-        licence
-      }
-      banks {
-        id
-        holder {
-          name
-          type
-          address {
-            city
-            address
-            postCode
-            addressLine
-            location {
-              type
-              coordinates
-            }
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            state {
-              id
-              name
-              code
-              created
-              surface
-              dialCode
-              country {
-                id
-                name
-                code
-                dialCode
-                iconFlag
-                createdAt
-                updatedAt
-                flagSquare {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                flagWide {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            owner {
-              name
-              phone {
-                number
-                countryCode
-              }
-            }
-          }
-        }
-        account
-        iban
-        bank {
-          id
-          name
-          code
-          bic
-          logo {
-            svg {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            png {
-              default {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size16 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size24 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size32 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size48 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size64 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-          createdAt
-          updatedAt
-        }
-        createdAt
-        updatedAt
-      }
-      contact {
-        website
-        email
-        phone {
-          number
-          isValid
-          countryCode
-          validationNumber
-        }
-      }
-      logistic
-      tags
-      createdAt
-      updatedAt
-    }
-    attachments {
-      id
-      name
-      content {
-        type {
-          id
-          name
-          type
-          image {
-            background {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            black {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            white {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-        }
-      }
-      size
-      owner {
-        id
-        email
-        gender
-        lastName
-        username
-        firstName
-        picture {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      createdAt
-      updatedAt
-    }
-    procedure {
-      title
-      task
-      time
-    }
-    createdAt
-    updatedAt
-  }
-}
-query getBoardCard($id: ID!) {
-  getBoardCard(id: $id) {
-    id
-    title
-    description
-    dueDate
-    archived
-    priority
-    tags
-    rank
-    pictures {
-      baseUrl
-      path
-      width
-      height
-      x
-      y
-    }
-    tasks {
-      task
-      done
-    }
-    labels {
-      id
-      name
-      icon
-      color
-      category
-
-      createdAt
-      updatedAt
-    }
-    assignedTo {
-      id
-      email
-      gender
-      lastName
-      username
-      firstName
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-    }
-    project {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      privacy
-      tags
-      deadline
-      priority
-      status
-      color
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      members {
-        member {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        role
-      }
-      resources {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
-      }
-      attachments {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    boardList {
-      id
-      name
-      rank
-      theme
-      board {
-        id
-        icon
-        title
-        description
-        category
-        members {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    budget
-    customer {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      address {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      legal {
-        vat
-        register
-        licence
-      }
-      banks {
-        id
-        holder {
-          name
-          type
-          address {
-            city
-            address
-            postCode
-            addressLine
-            location {
-              type
-              coordinates
-            }
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            state {
-              id
-              name
-              code
-              created
-              surface
-              dialCode
-              country {
-                id
-                name
-                code
-                dialCode
-                iconFlag
-                createdAt
-                updatedAt
-                flagSquare {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                flagWide {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            owner {
-              name
-              phone {
-                number
-                countryCode
-              }
-            }
-          }
-        }
-        account
-        iban
-        bank {
-          id
-          name
-          code
-          bic
-          logo {
-            svg {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            png {
-              default {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size16 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size24 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size32 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size48 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size64 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-          createdAt
-          updatedAt
-        }
-        createdAt
-        updatedAt
-      }
-      contact {
-        website
-        email
-        phone {
-          number
-          isValid
-          countryCode
-          validationNumber
-        }
-      }
-      logistic
-      tags
-      createdAt
-      updatedAt
-    }
-    attachments {
-      id
-      name
-      content {
-        type {
-          id
-          name
-          type
-          image {
-            background {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            black {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            white {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-        }
-      }
-      size
-      owner {
-        id
-        email
-        gender
-        lastName
-        username
-        firstName
-        picture {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      createdAt
-      updatedAt
-    }
-    procedure {
-      title
-      task
-      time
-    }
-    createdAt
-    updatedAt
-  }
-}
-query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFilterInput!, $pagination: PaginationInput) {
-  getBoardCardsByBoardWithFilterPaginated(board: $board, filter: $filter, pagination: $pagination) {
-    count
-    isLast
-    objects {
-      id
-      title
-      description
-      dueDate
+    
+    boardCardsStats {
+      total
       archived
-      priority
-      tags
+    }
+    createdAt
+    updatedAt
+
+    boardLists {
+      id
+      name
       rank
-      pictures {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      tasks {
-        task
-        done
-      }
-      labels {
+      theme
+      identifier
+      createdAt
+      updatedAt
+
+      boardCards {
         id
-        name
-        icon
-        color
-        category
-        
-        createdAt
-        updatedAt
-      }
-      assignedTo {
-        id
-        email
-        gender
-        lastName
-        username
-        firstName
-        picture {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      project {
-        id
-        name
+        title
         description
-        media {
-          videos
-          deg360 {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          pictures {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        privacy
-        tags
-        deadline
+        dueDate
+        archived
         priority
-        status
-        color
-        picture {
+        tags
+        pictures {
           baseUrl
           path
           width
           height
           x
           y
+          alt
         }
-        members {
-          member {
+        tasks {
+          task
+          done
+        }
+        labels {
+          id
+          name
+          icon
+          color
+          category
+          
+          createdAt
+          updatedAt
+        }
+        rank
+        assignedTo {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        barcode {
+          id
+          name
+          price
+          barcode
+          condition
+          status
+          createdAt
+          updatedAt
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          discount {
+            amount
+            discountType
+          }
+          priceList {
+            price {
+              id
+              label
+            }
+            value
+          }
+          taxes {
+            tax {
+              id
+              label
+              externalId
+              value {
+                sign
+                value
+                type
+              }
+              use
+              product
+              company {
+                id
+                name
+              }
+              createdAt
+              updatedAt
+            }
+            rank
+          }
+          priceCredit {
+            periodCycle
+            periodValue
+            amount
+          }
+          catalogueCategory {
             id
-            email
-            gender
-            lastName
-            username
-            firstName
+            name
+            rank
+            layer
+          }
+          pixel {
+            include
+          }
+          supplier {
+            id
+            name
+            description
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
+          maintenance {
+            active
+            owner {
+              id
+              email
+              gender
+              lastName
+              username
+              firstName
+              phone {
+                number
+                isValid
+                countryCode
+                validationNumber
+              }
+              picture {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            technician {
+              id
+              email
+              gender
+              lastName
+              username
+              firstName
+              phone {
+                number
+                isValid
+                countryCode
+                validationNumber
+              }
+              picture {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            prevMaintenanceDuration
+            maintenanceDuration
+            expectedMeantime
+          }
+          productAttributesValues {
+            attributesValues {
+              id
+              label
+              externalId
+              createdAt
+              updatedAt
+              attribute {
+                id
+                label
+                externalId
+                variety
+                createdAt
+                updatedAt
+                isRequired
+                isMultipleChoice
+                pixel {
+                  pixelAttribute
+                }
+              }
+              
+            }
+          }
+          internalProduct {
+            id
+            sku
+            name
+            tags
+            price
+            status
+            condition
+            createdAt
+            updatedAt
+            externalId
+            description
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            descriptionList
+            discount {
+              amount
+              discountType
+            }
+            priceBeforeReduction
+            catalogueCategory {
+              id
+              name
+            }
+          }
+          product {
+            id
+            ean
+            tax
+            name
+            tags
+            class
+            price
+            weight
+            createdAt
+            updatedAt
+            externalId
+            description
+            factoryPrice
+            specs {
+              key
+              value
+            }
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            descriptionList
+            wholesalerPrice
             picture {
               baseUrl
               path
@@ -2336,94 +644,716 @@ query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFil
               height
               x
               y
+              alt
             }
-          }
-          role
-        }
-        resources {
-          id
-          name
-          content {
-            type {
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            category {
               id
               name
+              rank
+              layer
+              createdAt
+              updatedAt
+              hasChildren
+              picture {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            taxes {
+              tax {
+                id
+                label
+                externalId
+                value {
+                  sign
+                  value
+                  type
+                }
+                use
+                product
+                company {
+                  id
+                  name
+                }
+                createdAt
+                updatedAt
+              }
+              rank
+            }
+
+            
+            productAttributes {
+              id
+              createdAt
+              updatedAt
+              reference
+              isRequired
+              possibleValues
+              isMultipleChoice
+
+              attribute {
+                id
+                label
+                externalId
+                variety
+                createdAt
+                updatedAt
+                isRequired
+                isMultipleChoice
+                pixel {
+                  pixelAttribute
+                }
+                
+              }
+              
+            }
+          }
+        }
+        project {
+          id
+          name
+          description
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          privacy
+          tags
+          deadline
+          priority
+          status
+          color
+          externalId
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          members {
+            member {
+              id
+              email
+              gender
+              lastName
+              username
+              firstName
+              phone {
+                number
+                isValid
+                countryCode
+                validationNumber
+              }
+              picture {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            role
+          }
+          resources {
+            id
+            name
+            content {
+              type {
+                id
+                name
+                type
+                image {
+                  background {
+                    png {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    svg {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  black {
+                    png {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    svg {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  white {
+                    png {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    svg {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  icon
+                }
+              }
+            }
+            size
+            owner {
+              id
+              email
+              gender
+              lastName
+              username
+              firstName
+              phone {
+                number
+                isValid
+                countryCode
+                validationNumber
+              }
+              picture {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          attachments {
+            id
+            name
+            content {
+              type {
+                id
+                name
+                type
+                image {
+                  background {
+                    png {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    svg {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  black {
+                    png {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    svg {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  white {
+                    png {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    svg {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  icon
+                }
+              }
+            }
+            size
+            owner {
+              id
+              email
+              gender
+              lastName
+              username
+              firstName
+              phone {
+                number
+                isValid
+                countryCode
+                validationNumber
+              }
+              picture {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          boardCardsStats {
+            total
+            archived
+          }
+          createdAt
+          updatedAt
+        }
+        budget
+        customer {
+          id
+          name
+          description
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          address {
+            city
+            address
+            postCode
+            addressLine
+            location {
               type
-              image {
-                background {
-                  png {
+              coordinates
+            }
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            state {
+              id
+              name
+              code
+              created
+              surface
+              dialCode
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            owner {
+              name
+              phone {
+                number
+                countryCode
+              }
+            }
+          }
+          legal {
+            vat
+            register
+            licence
+          }
+          banks {
+            id
+            holder {
+              name
+              type
+              address {
+                city
+                address
+                postCode
+                addressLine
+                location {
+                  type
+                  coordinates
+                }
+                country {
+                  id
+                  name
+                  code
+                  dialCode
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
                     baseUrl
                     path
                     width
                     height
                     x
                     y
+                    alt
                   }
-                  svg {
+                  flagWide {
                     baseUrl
                     path
                     width
                     height
                     x
                     y
+                    alt
                   }
                 }
-                black {
-                  png {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
+                state {
+                  id
+                  name
+                  code
+                  created
+                  surface
+                  dialCode
+                  country {
+                    id
+                    name
+                    code
+                    dialCode
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
                   }
-                  svg {
+                  createdAt
+                  updatedAt
+                  flagSquare {
                     baseUrl
                     path
                     width
                     height
                     x
                     y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
                   }
                 }
-                white {
-                  png {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
+                owner {
+                  name
+                  phone {
+                    number
+                    countryCode
                   }
-                  svg {
+                }
+              }
+            }
+            account
+            iban
+            bank {
+              id
+              name
+              code
+              bic
+              logo {
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                png {
+                  default {
                     baseUrl
                     path
                     width
                     height
                     x
                     y
+                    alt
+                  }
+                  size16 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size24 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size32 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size64 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size128 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size256 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size512 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
                   }
                 }
                 icon
               }
+              createdAt
+              updatedAt
             }
+            externalId
+            createdAt
+            updatedAt
           }
-          size
-          owner {
-            id
+          contact {
+            website
             email
-            gender
-            lastName
-            username
-            firstName
-            picture {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
             }
           }
+          logistic
+          tags
+          externalId
           createdAt
           updatedAt
         }
@@ -2444,6 +1374,7 @@ query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFil
                     height
                     x
                     y
+                    alt
                   }
                   svg {
                     baseUrl
@@ -2452,6 +1383,7 @@ query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFil
                     height
                     x
                     y
+                    alt
                   }
                 }
                 black {
@@ -2462,6 +1394,7 @@ query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFil
                     height
                     x
                     y
+                    alt
                   }
                   svg {
                     baseUrl
@@ -2470,6 +1403,7 @@ query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFil
                     height
                     x
                     y
+                    alt
                   }
                 }
                 white {
@@ -2480,6 +1414,7 @@ query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFil
                     height
                     x
                     y
+                    alt
                   }
                   svg {
                     baseUrl
@@ -2488,6 +1423,7 @@ query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFil
                     height
                     x
                     y
+                    alt
                   }
                 }
                 icon
@@ -2502,2799 +1438,38 @@ query getBoardCardsByBoardWithFilterPaginated($board: ID!, $filter: BoardCardFil
             lastName
             username
             firstName
-            picture {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-        }
-        createdAt
-        updatedAt
-      }
-      boardList {
-        id
-        name
-        rank
-        theme
-        board {
-          id
-          icon
-          title
-          description
-          category
-          members {
-            id
-            email
-            gender
-            lastName
-            username
-            firstName
-            picture {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-
-          createdAt
-          updatedAt
-        }
-        createdAt
-        updatedAt
-      }
-      budget
-      customer {
-        id
-        name
-        description
-        media {
-          videos
-          deg360 {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          pictures {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        address {
-          city
-          address
-          postCode
-          addressLine
-          location {
-            type
-            coordinates
-          }
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          state {
-            id
-            name
-            code
-            created
-            surface
-            dialCode
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          owner {
-            name
             phone {
               number
+              isValid
               countryCode
+              validationNumber
             }
-          }
-        }
-        legal {
-          vat
-          register
-          licence
-        }
-        banks {
-          id
-          holder {
-            name
-            type
-            address {
-              city
-              address
-              postCode
-              addressLine
-              location {
-                type
-                coordinates
-              }
-              country {
-                id
-                name
-                code
-                dialCode
-                iconFlag
-                createdAt
-                updatedAt
-                flagSquare {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                flagWide {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              state {
-                id
-                name
-                code
-                created
-                surface
-                dialCode
-                country {
-                  id
-                  name
-                  code
-                  dialCode
-                  iconFlag
-                  createdAt
-                  updatedAt
-                  flagSquare {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  flagWide {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-                createdAt
-                updatedAt
-                flagSquare {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                flagWide {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              owner {
-                name
-                phone {
-                  number
-                  countryCode
-                }
-              }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
             }
-          }
-          account
-          iban
-          bank {
-            id
-            name
-            code
-            bic
-            logo {
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              png {
-                default {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size16 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size24 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size32 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size64 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size128 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size256 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size512 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-            createdAt
-            updatedAt
           }
           createdAt
           updatedAt
         }
-        contact {
-          website
-          email
-          phone {
-            number
-            isValid
-            countryCode
-            validationNumber
-          }
+        procedure {
+          title
+          task
+          time
         }
-        logistic
-        tags
-        createdAt
-        updatedAt
-      }
-      attachments {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
+        tasksStats {
+          total
+          done
         }
         createdAt
         updatedAt
       }
-      procedure {
-        title
-        task
-        time
-      }
-      createdAt
-      updatedAt
     }
   }
 }
-
-mutation createBoardCard(
-  $title: String!
-  $description: String
-  $dueDate: DateTime
-  $archived: Boolean
-  $tags: [String!]
-  $priority: BoardCardPriorityEnum
-  $pictures: [PictureInput!]
-  $project: ID
-  $boardList: ID!
-  $tasks: [BoardCardTasksInput!]
-  $labels: [ID!]
-  $rank: Int
-  $assignedTo: [ID!]
-  $budget: String
-  $customer: ID
-  $procedure: [BoardCardProcedureInput!]
-  $attachments: [ID!]
-) {
-  createBoardCard(
-    title: $title
-    description: $description
-    dueDate: $dueDate
-    archived: $archived
-    tags: $tags
-    priority: $priority
-    pictures: $pictures
-    project: $project
-    boardList: $boardList
-    tasks: $tasks
-    labels: $labels
-    rank: $rank
-    assignedTo: $assignedTo
-    budget: $budget
-    customer: $customer
-    procedure: $procedure
-    attachments: $attachments
-  ) {
-    id
-    title
-    description
-    dueDate
-    archived
-    priority
-    tags
-    rank
-    pictures {
-      baseUrl
-      path
-      width
-      height
-      x
-      y
-    }
-    tasks {
-      task
-      done
-    }
-    labels {
-      id
-      name
-      icon
-      color
-      category
-
-      createdAt
-      updatedAt
-    }
-    assignedTo {
-      id
-      email
-      gender
-      lastName
-      username
-      firstName
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-    }
-    project {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      privacy
-      tags
-      deadline
-      priority
-      status
-      color
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      members {
-        member {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        role
-      }
-      resources {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
-      }
-      attachments {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    boardList {
-      id
-      name
-      rank
-      theme
-      board {
-        id
-        icon
-        title
-        description
-        category
-        members {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    budget
-    customer {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      address {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      legal {
-        vat
-        register
-        licence
-      }
-      banks {
-        id
-        holder {
-          name
-          type
-          address {
-            city
-            address
-            postCode
-            addressLine
-            location {
-              type
-              coordinates
-            }
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            state {
-              id
-              name
-              code
-              created
-              surface
-              dialCode
-              country {
-                id
-                name
-                code
-                dialCode
-                iconFlag
-                createdAt
-                updatedAt
-                flagSquare {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                flagWide {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            owner {
-              name
-              phone {
-                number
-                countryCode
-              }
-            }
-          }
-        }
-        account
-        iban
-        bank {
-          id
-          name
-          code
-          bic
-          logo {
-            svg {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            png {
-              default {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size16 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size24 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size32 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size48 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size64 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-          createdAt
-          updatedAt
-        }
-        createdAt
-        updatedAt
-      }
-      contact {
-        website
-        email
-        phone {
-          number
-          isValid
-          countryCode
-          validationNumber
-        }
-      }
-      logistic
-      tags
-      createdAt
-      updatedAt
-    }
-    attachments {
-      id
-      name
-      content {
-        type {
-          id
-          name
-          type
-          image {
-            background {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            black {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            white {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-        }
-      }
-      size
-      owner {
-        id
-        email
-        gender
-        lastName
-        username
-        firstName
-        picture {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      createdAt
-      updatedAt
-    }
-    procedure {
-      title
-      task
-      time
-    }
-    createdAt
-    updatedAt
-  }
-}
-mutation reorderBoardCards($id: ID!, $rank: Int!) {
-  reorderBoardCards(id: $id, rank: $rank) {
-    id
-    title
-    description
-    dueDate
-    archived
-    priority
-    tags
-    rank
-    pictures {
-      baseUrl
-      path
-      width
-      height
-      x
-      y
-    }
-    tasks {
-      task
-      done
-    }
-    labels {
-      id
-      name
-      icon
-      color
-      category
-
-      createdAt
-      updatedAt
-    }
-    assignedTo {
-      id
-      email
-      gender
-      lastName
-      username
-      firstName
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-    }
-    project {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      privacy
-      tags
-      deadline
-      priority
-      status
-      color
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      members {
-        member {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        role
-      }
-      resources {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
-      }
-      attachments {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    boardList {
-      id
-      name
-      rank
-      theme
-      board {
-        id
-        icon
-        title
-        description
-        category
-        members {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    budget
-    customer {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      address {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      legal {
-        vat
-        register
-        licence
-      }
-      banks {
-        id
-        holder {
-          name
-          type
-          address {
-            city
-            address
-            postCode
-            addressLine
-            location {
-              type
-              coordinates
-            }
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            state {
-              id
-              name
-              code
-              created
-              surface
-              dialCode
-              country {
-                id
-                name
-                code
-                dialCode
-                iconFlag
-                createdAt
-                updatedAt
-                flagSquare {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                flagWide {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            owner {
-              name
-              phone {
-                number
-                countryCode
-              }
-            }
-          }
-        }
-        account
-        iban
-        bank {
-          id
-          name
-          code
-          bic
-          logo {
-            svg {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            png {
-              default {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size16 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size24 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size32 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size48 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size64 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-          createdAt
-          updatedAt
-        }
-        createdAt
-        updatedAt
-      }
-      contact {
-        website
-        email
-        phone {
-          number
-          isValid
-          countryCode
-          validationNumber
-        }
-      }
-      logistic
-      tags
-      createdAt
-      updatedAt
-    }
-    attachments {
-      id
-      name
-      content {
-        type {
-          id
-          name
-          type
-          image {
-            background {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            black {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            white {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-        }
-      }
-      size
-      owner {
-        id
-        email
-        gender
-        lastName
-        username
-        firstName
-        picture {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      createdAt
-      updatedAt
-    }
-    procedure {
-      title
-      task
-      time
-    }
-    createdAt
-    updatedAt
-  }
-}
-mutation updateBoardCard(
-  $id: ID!
-  $title: String
-  $description: String
-  $dueDate: DateTime
-  $archived: Boolean
-  $tags: [String!]
-  $priority: BoardCardPriorityEnum
-  $pictures: [PictureInput!]
-  $project: ID
-  $boardList: ID
-  $tasks: [BoardCardTasksInput!]
-  $labels: [ID!]
-  $rank: Int
-  $assignedTo: [ID!]
-  $budget: String
-  $customer: ID
-  $procedure: [BoardCardProcedureInput!]
-  $attachments: [ID!]
-) {
-  updateBoardCard(
-    id: $id
-    title: $title
-    description: $description
-    dueDate: $dueDate
-    archived: $archived
-    tags: $tags
-    priority: $priority
-    pictures: $pictures
-    project: $project
-    boardList: $boardList
-    tasks: $tasks
-    labels: $labels
-    rank: $rank
-    assignedTo: $assignedTo
-    budget: $budget
-    customer: $customer
-    procedure: $procedure
-    attachments: $attachments
-  ) {
-    id
-    title
-    description
-    dueDate
-    archived
-    priority
-    tags
-    rank
-    pictures {
-      baseUrl
-      path
-      width
-      height
-      x
-      y
-    }
-    tasks {
-      task
-      done
-    }
-    labels {
-      id
-      name
-      icon
-      color
-      category
-
-      createdAt
-      updatedAt
-    }
-    assignedTo {
-      id
-      email
-      gender
-      lastName
-      username
-      firstName
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-    }
-    project {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      privacy
-      tags
-      deadline
-      priority
-      status
-      color
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      members {
-        member {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        role
-      }
-      resources {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
-      }
-      attachments {
-        id
-        name
-        content {
-          type {
-            id
-            name
-            type
-            image {
-              background {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              black {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              white {
-                png {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                svg {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              icon
-            }
-          }
-        }
-        size
-        owner {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    boardList {
-      id
-      name
-      rank
-      theme
-      board {
-        id
-        icon
-        title
-        description
-        category
-        members {
-          id
-          email
-          gender
-          lastName
-          username
-          firstName
-          picture {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-    budget
-    customer {
-      id
-      name
-      description
-      media {
-        videos
-        deg360 {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      address {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      legal {
-        vat
-        register
-        licence
-      }
-      banks {
-        id
-        holder {
-          name
-          type
-          address {
-            city
-            address
-            postCode
-            addressLine
-            location {
-              type
-              coordinates
-            }
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            state {
-              id
-              name
-              code
-              created
-              surface
-              dialCode
-              country {
-                id
-                name
-                code
-                dialCode
-                iconFlag
-                createdAt
-                updatedAt
-                flagSquare {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                flagWide {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            owner {
-              name
-              phone {
-                number
-                countryCode
-              }
-            }
-          }
-        }
-        account
-        iban
-        bank {
-          id
-          name
-          code
-          bic
-          logo {
-            svg {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            png {
-              default {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size16 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size24 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size32 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size48 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size64 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size128 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size256 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              size512 {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-          createdAt
-          updatedAt
-        }
-        createdAt
-        updatedAt
-      }
-      contact {
-        website
-        email
-        phone {
-          number
-          isValid
-          countryCode
-          validationNumber
-        }
-      }
-      logistic
-      tags
-      createdAt
-      updatedAt
-    }
-    attachments {
-      id
-      name
-      content {
-        type {
-          id
-          name
-          type
-          image {
-            background {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            black {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            white {
-              png {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              svg {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            icon
-          }
-        }
-      }
-      size
-      owner {
-        id
-        email
-        gender
-        lastName
-        username
-        firstName
-        picture {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      createdAt
-      updatedAt
-    }
-    procedure {
-      title
-      task
-      time
-    }
-    createdAt
-    updatedAt
-  }
-}
-mutation deleteBoardCard($id: ID!) {
-  deleteBoardCard(id: $id) {
-    success
-    message
-  }
-}
+ 
