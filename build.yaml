@@ -188,4 +188,7 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/target-plugins.graphql
               output: lib/dart/target-plugins.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/order.graphql
+              output: lib/dart/order.graphql.dart
               
