@@ -83,7 +83,6 @@ query getPurchaseOrders {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -1061,8 +1060,8 @@ query getPurchaseOrders {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1576,7 +1575,6 @@ adminName
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -1977,7 +1975,6 @@ query purchaseOrder($id: ID!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -2955,8 +2952,8 @@ query purchaseOrder($id: ID!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -3057,7 +3054,7 @@ adminName
         }
       }
     }
-     
+  
     installments {
       _id
       amount
@@ -3470,7 +3467,6 @@ adminName
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -3871,7 +3867,6 @@ query getPurchaseOrderesByTarget($target: TargetACIInput!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -4849,8 +4844,8 @@ query getPurchaseOrderesByTarget($target: TargetACIInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -4951,7 +4946,7 @@ adminName
         }
       }
     }
-   
+ 
     installments {
       _id
       amount
@@ -5364,7 +5359,6 @@ adminName
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -5772,8 +5766,8 @@ query getPurchaseOrdersByTargetPaginated(
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -6078,7 +6072,6 @@ adminName
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -6180,7 +6173,6 @@ adminName
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -6414,7 +6406,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -6854,7 +6846,7 @@ adminName
           }
         }
       }
- 
+     
       installments {
         _id
         amount
@@ -7266,8 +7258,8 @@ adminName
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -7377,7 +7369,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -7753,7 +7745,6 @@ mutation createPurchaseOrder($input: PurchaseOrderInput!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -8731,8 +8722,8 @@ mutation createPurchaseOrder($input: PurchaseOrderInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -8833,7 +8824,7 @@ adminName
         }
       }
     }
-   
+  
     installments {
       _id
       amount
@@ -9246,7 +9237,6 @@ adminName
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -9647,7 +9637,6 @@ mutation updatePurchaseOrder($id: ID!, $input: PurchaseOrderInput!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -10625,8 +10614,8 @@ mutation updatePurchaseOrder($id: ID!, $input: PurchaseOrderInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -11140,7 +11129,6 @@ adminName
           state {
             id
             name
-           
             adminName
             capital
             population

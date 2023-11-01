@@ -19972,6 +19972,7 @@ GetPurchaseOrdersByTargetPaginated$Query$PurchaseOrderPaginateType$PurchaseOrder
             Map<String, dynamic> json) =>
         GetPurchaseOrdersByTargetPaginated$Query$PurchaseOrderPaginateType$PurchaseOrderType$LogisticType$WarehouseType$LocationType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
+          ..name = json['name'] as String
           ..adminName = json['adminName'] as String?
           ..capital = $enumDecodeNullable(
               _$StateCapitalEnumEnumMap, json['capital'],
@@ -20001,6 +20002,7 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
+    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -22643,6 +22645,7 @@ GetPurchaseOrdersByTargetPaginated$Query$PurchaseOrderPaginateType$PurchaseOrder
             Map<String, dynamic> json) =>
         GetPurchaseOrdersByTargetPaginated$Query$PurchaseOrderPaginateType$PurchaseOrderType$PurchaseSupplierType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
+          ..name = json['name'] as String
           ..adminName = json['adminName'] as String?
           ..capital = $enumDecodeNullable(
               _$StateCapitalEnumEnumMap, json['capital'],
@@ -22672,6 +22675,7 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
+    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
