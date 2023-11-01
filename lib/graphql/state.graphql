@@ -2,10 +2,12 @@ query findStateById($id: ID!) {
   findStateById(id: $id) {
     id
     name
-    code
-    created
-    surface
-    dialCode
+    adminName
+    capital
+    population
+    ascii
+    lat
+    lng
     country {
       id
       name
@@ -21,6 +23,7 @@ query findStateById($id: ID!) {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -29,6 +32,7 @@ query findStateById($id: ID!) {
         height
         x
         y
+        alt
       }
     }
     createdAt
@@ -40,6 +44,7 @@ query findStateById($id: ID!) {
       height
       x
       y
+      alt
     }
     flagWide {
       baseUrl
@@ -48,6 +53,7 @@ query findStateById($id: ID!) {
       height
       x
       y
+      alt
     }
   }
 }
@@ -55,10 +61,12 @@ query getStates {
   getStates {
     id
     name
-    code
-    created
-    surface
-    dialCode
+    adminName
+    capital
+    population
+    ascii
+    lat
+    lng
     country {
       id
       name
@@ -74,6 +82,7 @@ query getStates {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -82,6 +91,7 @@ query getStates {
         height
         x
         y
+        alt
       }
     }
     createdAt
@@ -93,6 +103,7 @@ query getStates {
       height
       x
       y
+      alt
     }
     flagWide {
       baseUrl
@@ -101,6 +112,7 @@ query getStates {
       height
       x
       y
+      alt
     }
   }
 }
@@ -111,10 +123,12 @@ query findStatesPagination($pagination: PaginationInput) {
     objects {
       id
       name
-      code
-      created
-      surface
-      dialCode
+      adminName
+      capital
+      population
+      ascii
+      lat
+      lng
       country {
         id
         name
@@ -130,6 +144,7 @@ query findStatesPagination($pagination: PaginationInput) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -138,6 +153,7 @@ query findStatesPagination($pagination: PaginationInput) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -149,6 +165,7 @@ query findStatesPagination($pagination: PaginationInput) {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -157,6 +174,7 @@ query findStatesPagination($pagination: PaginationInput) {
         height
         x
         y
+        alt
       }
     }
   }
@@ -168,10 +186,12 @@ query findStatesByCountryPagination($country: ID!, $pagination: PaginationInput)
     objects {
       id
       name
-      code
-      created
-      surface
-      dialCode
+      adminName
+      capital
+      population
+      ascii
+      lat
+      lng
       country {
         id
         name
@@ -187,6 +207,7 @@ query findStatesByCountryPagination($country: ID!, $pagination: PaginationInput)
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -195,6 +216,7 @@ query findStatesByCountryPagination($country: ID!, $pagination: PaginationInput)
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -206,6 +228,7 @@ query findStatesByCountryPagination($country: ID!, $pagination: PaginationInput)
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -214,6 +237,7 @@ query findStatesByCountryPagination($country: ID!, $pagination: PaginationInput)
         height
         x
         y
+        alt
       }
     }
   }
@@ -223,10 +247,12 @@ mutation createState($input: StateInput!) {
   createState(input: $input) {
     id
     name
-    code
-    created
-    surface
-    dialCode
+    adminName
+    capital
+    population
+    ascii
+    lat
+    lng
     country {
       id
       name
@@ -242,6 +268,7 @@ mutation createState($input: StateInput!) {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -250,6 +277,7 @@ mutation createState($input: StateInput!) {
         height
         x
         y
+        alt
       }
     }
     createdAt
@@ -261,6 +289,7 @@ mutation createState($input: StateInput!) {
       height
       x
       y
+      alt
     }
     flagWide {
       baseUrl
@@ -269,6 +298,7 @@ mutation createState($input: StateInput!) {
       height
       x
       y
+      alt
     }
   }
 }
@@ -276,10 +306,12 @@ mutation updateState($id: ID!, $input: StateInput!) {
   updateState(id: $id, input: $input) {
     id
     name
-    code
-    created
-    surface
-    dialCode
+    adminName
+    capital
+    population
+    ascii
+    lat
+    lng
     country {
       id
       name
@@ -295,6 +327,7 @@ mutation updateState($id: ID!, $input: StateInput!) {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -303,6 +336,7 @@ mutation updateState($id: ID!, $input: StateInput!) {
         height
         x
         y
+        alt
       }
     }
     createdAt
@@ -314,6 +348,7 @@ mutation updateState($id: ID!, $input: StateInput!) {
       height
       x
       y
+      alt
     }
     flagWide {
       baseUrl
@@ -322,6 +357,7 @@ mutation updateState($id: ID!, $input: StateInput!) {
       height
       x
       y
+      alt
     }
   }
 }

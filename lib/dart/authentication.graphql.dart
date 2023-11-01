@@ -329,8 +329,10 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -407,8 +409,10 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -429,13 +433,18 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateT
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -454,10 +463,12 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateT
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -1771,6 +1782,17 @@ enum MaritalStatus {
   artemisUnknown,
 }
 
+enum StateCapitalEnum {
+  @JsonValue('PRIMARY')
+  primary,
+  @JsonValue('ADMIN')
+  admin,
+  @JsonValue('MINOR')
+  minor,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
 enum SocialImageStyleEnum {
   @JsonValue('BUBBLE')
   bubble,
@@ -2743,28 +2765,42 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -2873,6 +2909,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -2918,6 +2961,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -2989,6 +3039,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -3034,6 +3091,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -3316,28 +3380,42 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -3446,6 +3524,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -3491,6 +3576,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -3562,6 +3654,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -3607,6 +3706,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -3889,28 +3995,42 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -4019,6 +4139,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -4064,6 +4191,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -4135,6 +4269,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -4180,6 +4321,13 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],

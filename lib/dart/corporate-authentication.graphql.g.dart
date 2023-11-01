@@ -42,7 +42,8 @@ GetCorporateUsersByTarget$Query$CorporateUserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetCorporateUsersByTarget$Query$CorporateUserType$PictureTypeToJson(
@@ -62,6 +63,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -74,7 +76,8 @@ GetCorporateUsersByTarget$Query$CorporateUserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetCorporateUsersByTarget$Query$CorporateUserType$LanguageType$PictureTypeToJson(
@@ -94,6 +97,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -149,7 +153,8 @@ GetCorporateUsersByTarget$Query$CorporateUserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetCorporateUsersByTarget$Query$CorporateUserType$CountryType$PictureTypeToJson(
@@ -169,6 +174,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -252,7 +258,8 @@ GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$CountryType$Pi
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -272,6 +279,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -329,7 +337,8 @@ GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$StateType$Coun
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -349,6 +358,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -406,7 +416,8 @@ GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$StateType$Pict
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$StateType$PictureTypeToJson(
@@ -426,6 +437,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -435,10 +447,14 @@ GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$StateType
         GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$StateType$CountryType
@@ -469,10 +485,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -480,6 +498,13 @@ Map<String, dynamic>
   writeNotNull('flagWide', instance.flagWide?.toJson());
   return val;
 }
+
+const _$StateCapitalEnumEnumMap = {
+  StateCapitalEnum.primary: 'PRIMARY',
+  StateCapitalEnum.admin: 'ADMIN',
+  StateCapitalEnum.minor: 'MINOR',
+  StateCapitalEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
 
 GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -589,7 +614,8 @@ GetCorporateUsersByTarget$Query$CorporateUserType$SocialValueType$SocialType$Soc
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetCorporateUsersByTarget$Query$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -609,6 +635,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -959,6 +986,436 @@ Map<String, dynamic>
   return val;
 }
 
+GetCorporateUsersByTarget$Query$CorporateUserType$UserEducationType
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserEducationTypeToJson(
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+const _$AcademicLevelEnumMap = {
+  AcademicLevel.primary: 'PRIMARY',
+  AcademicLevel.highSchool: 'HIGH_SCHOOL',
+  AcademicLevel.university: 'UNIVERSITY',
+  AcademicLevel.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryTypeToJson(
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$PictureType
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$PictureTypeToJson(
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateTypeToJson(
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkTypeToJson(
+        GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType$PictureType
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType$PictureTypeToJson(
+        GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryTypeToJson(
+        GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetCorporateUsersByTarget$Query$CorporateUserType$StateType$PictureType
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetCorporateUsersByTarget$Query$CorporateUserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$StateType$PictureTypeToJson(
+        GetCorporateUsersByTarget$Query$CorporateUserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetCorporateUsersByTarget$Query$CorporateUserType$StateType
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetCorporateUsersByTarget$Query$CorporateUserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetCorporateUsersByTarget$Query$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetCorporateUsersByTarget$Query$CorporateUserType$StateTypeToJson(
+        GetCorporateUsersByTarget$Query$CorporateUserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 GetCorporateUsersByTarget$Query$CorporateUserType
     _$GetCorporateUsersByTarget$Query$CorporateUserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -1052,7 +1509,28 @@ GetCorporateUsersByTarget$Query$CorporateUserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : GetCorporateUsersByTarget$Query$CorporateUserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetCorporateUsersByTarget$Query$CorporateUserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetCorporateUsersByTarget$Query$CorporateUserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$GetCorporateUsersByTarget$Query$CorporateUserTypeToJson(
     GetCorporateUsersByTarget$Query$CorporateUserType instance) {
@@ -1107,6 +1585,12 @@ Map<String, dynamic> _$GetCorporateUsersByTarget$Query$CorporateUserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -1245,17 +1729,1576 @@ Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
   return val;
 }
 
+LoginForTarget$Query$LoginType$UserType$PhoneType
+    _$LoginForTarget$Query$LoginType$UserType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic> _$LoginForTarget$Query$LoginType$UserType$PhoneTypeToJson(
+    LoginForTarget$Query$LoginType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$LanguageType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$LanguageType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$LanguageType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$LanguageType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$LanguageType
+    _$LoginForTarget$Query$LoginType$UserType$LanguageTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$LanguageType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$LanguageType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$LanguageType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$LanguageTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$CountryType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$CountryType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$CountryType
+    _$LoginForTarget$Query$LoginType$UserType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$CountryTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$FullAddressType$LonLatType
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$LonLatType()
+          ..type = json['type'] as String?
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$LonLatTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$StateTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerType
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$FullAddressType
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..addressLine = json['addressLine'] as String?
+          ..location = json['location'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$FullAddressTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType()
+          ..size48 = json['size48'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size96 = json['size96'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size96'] as Map<String, dynamic>)
+          ..size144 = json['size144'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size144'] as Map<String, dynamic>)
+          ..size240 = json['size240'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size240'] as Map<String, dynamic>)
+          ..size480 = json['size480'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size480'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType()
+          ..svg = json['svg'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                  .fromJson(json['png'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType()
+          ..style = $enumDecode(_$SocialImageStyleEnumEnumMap, json['style'],
+              unknownValue: SocialImageStyleEnum.artemisUnknown)
+          ..images = (json['images'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..fontIcon = json['fontIcon'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..images = (json['images'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType$SocialImagesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialValueType
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialValueType()
+          ..name = json['name'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialValueType$SocialType
+                  .fromJson(json['name'] as Map<String, dynamic>)
+          ..value = json['value'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialValueTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialValueType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$OoredooDataType
+    _$LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$OoredooDataType()
+          ..id = json['id'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$FacebookDataType
+    _$LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$FacebookDataType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..token = json['token'] as String
+          ..email = json['email'] as String
+          ..lastName = json['last_name'] as String?
+          ..firstName = json['first_name'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$GoogleDataType
+    _$LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$GoogleDataType()
+          ..sub = json['sub'] as String
+          ..name = json['name'] as String?
+          ..email = json['email'] as String
+          ..token = json['token'] as String
+          ..locale = json['locale'] as String?
+          ..picture = json['picture'] as String?
+          ..givenName = json['given_name'] as String?
+          ..familyName = json['family_name'] as String?
+          ..emailVerified = json['email_verified'] as bool?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$AppleDataType
+    _$LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$AppleDataType()
+          ..email = json['email'] as String?
+          ..status = json['status'] as String?
+          ..givenName = json['givenName'] as String?
+          ..familyName = json['familyName'] as String?
+          ..identityToken = json['identityToken'] as String
+          ..userIdentifier = json['userIdentifier'] as String?
+          ..authorizationCode = json['authorizationCode'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$AppleDataTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$SocialLoginDataType
+    _$LoginForTarget$Query$LoginType$UserType$SocialLoginDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$SocialLoginDataType()
+          ..ooredoo = json['ooredoo'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$OoredooDataType
+                  .fromJson(json['ooredoo'] as Map<String, dynamic>)
+          ..facebook = json['facebook'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$FacebookDataType
+                  .fromJson(json['facebook'] as Map<String, dynamic>)
+          ..google = json['google'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$GoogleDataType
+                  .fromJson(json['google'] as Map<String, dynamic>)
+          ..apple = json['apple'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialLoginDataType$AppleDataType
+                  .fromJson(json['apple'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$SocialLoginDataTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$SocialLoginDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$UserEducationType
+    _$LoginForTarget$Query$LoginType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$UserEducationTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType
+    _$LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType
+    _$LoginForTarget$Query$LoginType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$UserWorkType$StateTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$UserWorkType
+    _$LoginForTarget$Query$LoginType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$UserWorkTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$StateType$CountryType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$StateType$CountryType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$StateType$CountryType
+    _$LoginForTarget$Query$LoginType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$StateType$CountryTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$StateType$PictureType
+    _$LoginForTarget$Query$LoginType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$LoginForTarget$Query$LoginType$UserType$StateType$PictureTypeToJson(
+        LoginForTarget$Query$LoginType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType$StateType
+    _$LoginForTarget$Query$LoginType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$LoginForTarget$Query$LoginType$UserType$StateTypeToJson(
+    LoginForTarget$Query$LoginType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+LoginForTarget$Query$LoginType$UserType
+    _$LoginForTarget$Query$LoginType$UserTypeFromJson(
+            Map<String, dynamic> json) =>
+        LoginForTarget$Query$LoginType$UserType()
+          ..id = json['id'] as String
+          ..apps = (json['apps'] as List<dynamic>?)
+              ?.map((e) => $enumDecode(_$AppEnumMap, e,
+                  unknownValue: App.artemisUnknown))
+              .toList()
+          ..email = json['email'] as String?
+          ..roles = (json['roles'] as List<dynamic>?)
+              ?.map((e) => $enumDecode(_$UserRoleEnumMap, e,
+                  unknownValue: UserRole.artemisUnknown))
+              .toList()
+          ..title = json['title'] as String?
+          ..about = json['about'] as String?
+          ..gender = $enumDecodeNullable(_$GenderEnumMap, json['gender'],
+              unknownValue: Gender.artemisUnknown)
+          ..locale = json['locale'] as String?
+          ..source = $enumDecodeNullable(_$SourcesEnumEnumMap, json['source'],
+              unknownValue: SourcesEnum.artemisUnknown)
+          ..status = $enumDecodeNullable(_$UserStatusEnumMap, json['status'],
+              unknownValue: UserStatus.artemisUnknown)
+          ..lastName = json['lastName'] as String?
+          ..username = json['username'] as String?
+          ..firstName = json['firstName'] as String?
+          ..plugged = json['plugged'] as bool?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..isMailValid = json['isMailValid'] as bool?
+          ..dateOfBirth = json['dateOfBirth'] == null
+              ? null
+              : DateTime.parse(json['dateOfBirth'] as String)
+          ..phoneNumber = json['phoneNumber'] as String?
+          ..mobileTheme = $enumDecodeNullable(
+              _$MobileThemesEnumEnumMap, json['mobileTheme'],
+              unknownValue: MobileThemesEnum.artemisUnknown)
+          ..placeOfBirth = json['placeOfBirth'] as String?
+          ..maritalStatus = $enumDecodeNullable(
+              _$MaritalStatusEnumMap, json['maritalStatus'],
+              unknownValue: MaritalStatus.artemisUnknown)
+          ..newsletterSubs = json['newsletterSubs'] as bool?
+          ..hasAutoGeneratedEmail = json['hasAutoGeneratedEmail'] as bool?
+          ..phone = json['phone'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$PhoneType.fromJson(
+                  json['phone'] as Map<String, dynamic>)
+          ..picture = json['picture'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$PictureType.fromJson(
+                  json['picture'] as Map<String, dynamic>)
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$PictureType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..languages = (json['languages'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$LanguageType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..nationality = json['nationality'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$CountryType.fromJson(
+                  json['nationality'] as Map<String, dynamic>)
+          ..billingAddress = (json['billingAddress'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..shippingAddress = (json['shippingAddress'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..residentialAddress = (json['residentialAddress'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..chatContact = (json['chatContact'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$SocialValueType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..socialMedia = (json['socialMedia'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$SocialValueType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..socialLoginData = json['socialLoginData'] == null
+              ? null
+              : LoginForTarget$Query$LoginType$UserType$SocialLoginDataType
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$UserWorkType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  LoginForTarget$Query$LoginType$UserType$StateType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
+
+Map<String, dynamic> _$LoginForTarget$Query$LoginType$UserTypeToJson(
+    LoginForTarget$Query$LoginType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
+
 LoginForTarget$Query$LoginType _$LoginForTarget$Query$LoginTypeFromJson(
         Map<String, dynamic> json) =>
     LoginForTarget$Query$LoginType()
+      ..expiresIn = (json['expiresIn'] as num).toDouble()
       ..accessToken = json['accessToken'] as String
-      ..expiresIn = (json['expiresIn'] as num).toDouble();
+      ..user = LoginForTarget$Query$LoginType$UserType.fromJson(
+          json['user'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$LoginForTarget$Query$LoginTypeToJson(
         LoginForTarget$Query$LoginType instance) =>
     <String, dynamic>{
-      'accessToken': instance.accessToken,
       'expiresIn': instance.expiresIn,
+      'accessToken': instance.accessToken,
+      'user': instance.user.toJson(),
     };
 
 LoginForTarget$Query _$LoginForTarget$QueryFromJson(
@@ -1326,7 +3369,8 @@ IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$PictureTypeToJson(
@@ -1346,6 +3390,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1358,7 +3403,8 @@ IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$LanguageTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$LanguageType$PictureTypeToJson(
@@ -1378,6 +3424,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1433,7 +3480,8 @@ IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$CountryType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$CountryType$PictureTypeToJson(
@@ -1453,6 +3501,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1536,7 +3585,8 @@ IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullAddress
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1556,6 +3606,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1613,7 +3664,8 @@ IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullAddress
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1633,6 +3685,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1690,7 +3743,8 @@ IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullAddress
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullAddressType$StateType$PictureTypeToJson(
@@ -1710,6 +3764,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1719,10 +3774,14 @@ IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullAddress
         IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullAddressType$StateType$CountryType
@@ -1753,10 +3812,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -1873,7 +3934,8 @@ IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$SocialValue
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -1893,6 +3955,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2235,6 +4298,430 @@ Map<String, dynamic>
   return val;
 }
 
+IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserEducationType
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserEducationTypeToJson(
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryTypeToJson(
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$PictureType
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$PictureTypeToJson(
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateTypeToJson(
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkTypeToJson(
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType$PictureType
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType$PictureTypeToJson(
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryTypeToJson(
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$PictureType
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$PictureTypeToJson(
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateTypeToJson(
+        IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType
     _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -2328,7 +4815,28 @@ IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserTypeToJson(
@@ -2385,6 +4893,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -2490,7 +5004,8 @@ SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$P
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$PictureTypeToJson(
@@ -2510,6 +5025,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2522,7 +5038,8 @@ SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$L
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$LanguageType$PictureTypeToJson(
@@ -2542,6 +5059,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2597,7 +5115,8 @@ SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$C
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$CountryType$PictureTypeToJson(
@@ -2617,6 +5136,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2700,7 +5220,8 @@ SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$F
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2720,6 +5241,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2777,7 +5299,8 @@ SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$F
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2797,6 +5320,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2854,7 +5378,8 @@ SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$F
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$FullAddressType$StateType$PictureTypeToJson(
@@ -2874,6 +5399,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2883,10 +5409,14 @@ SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$F
         SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$FullAddressType$StateType$CountryType
@@ -2917,10 +5447,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -3037,7 +5569,8 @@ SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$S
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -3057,6 +5590,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -3399,6 +5933,430 @@ Map<String, dynamic>
   return val;
 }
 
+SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserEducationType
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserEducationTypeToJson(
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryTypeToJson(
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$PictureType
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$PictureTypeToJson(
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateTypeToJson(
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkTypeToJson(
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType$PictureType
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType$PictureTypeToJson(
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryTypeToJson(
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$PictureType
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$PictureTypeToJson(
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateTypeToJson(
+        SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType
     _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -3492,7 +6450,28 @@ SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserTypeToJson(
@@ -3549,6 +6528,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -3733,6 +6718,1585 @@ Map<String, dynamic> _$SendValidationEmailForTarget$MutationToJson(
           instance.sendValidationEmailForTarget.toJson(),
     };
 
+ValidateEmailForTarget$Mutation$CorporateUserType$PhoneType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$PhoneTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$LanguageTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$LanguageTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$CountryType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$CountryType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$CountryType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$CountryTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$LonLatType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$LonLatType()
+          ..type = json['type'] as String?
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$LonLatTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..addressLine = json['addressLine'] as String?
+          ..location = json['location'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType()
+          ..size48 = json['size48'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size96 = json['size96'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size96'] as Map<String, dynamic>)
+          ..size144 = json['size144'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size144'] as Map<String, dynamic>)
+          ..size240 = json['size240'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size240'] as Map<String, dynamic>)
+          ..size480 = json['size480'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size480'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType()
+          ..svg = json['svg'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                  .fromJson(json['png'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType()
+          ..style = $enumDecode(_$SocialImageStyleEnumEnumMap, json['style'],
+              unknownValue: SocialImageStyleEnum.artemisUnknown)
+          ..images = (json['images'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..fontIcon = json['fontIcon'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..images = (json['images'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType()
+          ..name = json['name'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType
+                  .fromJson(json['name'] as Map<String, dynamic>)
+          ..value = json['value'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$OoredooDataType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$OoredooDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$OoredooDataType()
+          ..id = json['id'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$OoredooDataTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$FacebookDataType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$FacebookDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$FacebookDataType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..token = json['token'] as String
+          ..email = json['email'] as String
+          ..lastName = json['last_name'] as String?
+          ..firstName = json['first_name'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$FacebookDataTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$GoogleDataType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$GoogleDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$GoogleDataType()
+          ..sub = json['sub'] as String
+          ..name = json['name'] as String?
+          ..email = json['email'] as String
+          ..token = json['token'] as String
+          ..locale = json['locale'] as String?
+          ..picture = json['picture'] as String?
+          ..givenName = json['given_name'] as String?
+          ..familyName = json['family_name'] as String?
+          ..emailVerified = json['email_verified'] as bool?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$GoogleDataTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$AppleDataType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$AppleDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$AppleDataType()
+          ..email = json['email'] as String?
+          ..status = json['status'] as String?
+          ..givenName = json['givenName'] as String?
+          ..familyName = json['familyName'] as String?
+          ..identityToken = json['identityToken'] as String
+          ..userIdentifier = json['userIdentifier'] as String?
+          ..authorizationCode = json['authorizationCode'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$AppleDataTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType()
+          ..ooredoo = json['ooredoo'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$OoredooDataType
+                  .fromJson(json['ooredoo'] as Map<String, dynamic>)
+          ..facebook = json['facebook'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$FacebookDataType
+                  .fromJson(json['facebook'] as Map<String, dynamic>)
+          ..google = json['google'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$GoogleDataType
+                  .fromJson(json['google'] as Map<String, dynamic>)
+          ..apple = json['apple'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType$AppleDataType
+                  .fromJson(json['apple'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$UserEducationType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserEducationTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$StateType$PictureType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$StateType$PictureTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType$StateType
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ValidateEmailForTarget$Mutation$CorporateUserType$StateTypeToJson(
+        ValidateEmailForTarget$Mutation$CorporateUserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ValidateEmailForTarget$Mutation$CorporateUserType
+    _$ValidateEmailForTarget$Mutation$CorporateUserTypeFromJson(
+            Map<String, dynamic> json) =>
+        ValidateEmailForTarget$Mutation$CorporateUserType()
+          ..id = json['id'] as String
+          ..apps = (json['apps'] as List<dynamic>?)
+              ?.map((e) => $enumDecode(_$AppEnumMap, e,
+                  unknownValue: App.artemisUnknown))
+              .toList()
+          ..email = json['email'] as String?
+          ..roles = (json['roles'] as List<dynamic>?)
+              ?.map((e) => $enumDecode(_$UserRoleEnumMap, e,
+                  unknownValue: UserRole.artemisUnknown))
+              .toList()
+          ..title = json['title'] as String?
+          ..about = json['about'] as String?
+          ..gender = $enumDecodeNullable(_$GenderEnumMap, json['gender'],
+              unknownValue: Gender.artemisUnknown)
+          ..locale = json['locale'] as String?
+          ..source = $enumDecodeNullable(_$SourcesEnumEnumMap, json['source'],
+              unknownValue: SourcesEnum.artemisUnknown)
+          ..status = $enumDecodeNullable(_$UserStatusEnumMap, json['status'],
+              unknownValue: UserStatus.artemisUnknown)
+          ..lastName = json['lastName'] as String?
+          ..username = json['username'] as String?
+          ..firstName = json['firstName'] as String?
+          ..plugged = json['plugged'] as bool?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..isMailValid = json['isMailValid'] as bool?
+          ..dateOfBirth = json['dateOfBirth'] == null
+              ? null
+              : DateTime.parse(json['dateOfBirth'] as String)
+          ..phoneNumber = json['phoneNumber'] as String?
+          ..mobileTheme = $enumDecodeNullable(
+              _$MobileThemesEnumEnumMap, json['mobileTheme'],
+              unknownValue: MobileThemesEnum.artemisUnknown)
+          ..placeOfBirth = json['placeOfBirth'] as String?
+          ..maritalStatus = $enumDecodeNullable(
+              _$MaritalStatusEnumMap, json['maritalStatus'],
+              unknownValue: MaritalStatus.artemisUnknown)
+          ..newsletterSubs = json['newsletterSubs'] as bool?
+          ..hasAutoGeneratedEmail = json['hasAutoGeneratedEmail'] as bool?
+          ..phone = json['phone'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$PhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>)
+          ..picture = json['picture'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>)
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..languages = (json['languages'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$LanguageType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..nationality = json['nationality'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$CountryType
+                  .fromJson(json['nationality'] as Map<String, dynamic>)
+          ..billingAddress = (json['billingAddress'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..shippingAddress = (json['shippingAddress'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..residentialAddress = (json['residentialAddress'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..chatContact = (json['chatContact'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..socialMedia = (json['socialMedia'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$SocialValueType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..socialLoginData = json['socialLoginData'] == null
+              ? null
+              : ValidateEmailForTarget$Mutation$CorporateUserType$SocialLoginDataType
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  ValidateEmailForTarget$Mutation$CorporateUserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
+
+Map<String, dynamic> _$ValidateEmailForTarget$Mutation$CorporateUserTypeToJson(
+    ValidateEmailForTarget$Mutation$CorporateUserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
+
+ValidateEmailForTarget$Mutation _$ValidateEmailForTarget$MutationFromJson(
+        Map<String, dynamic> json) =>
+    ValidateEmailForTarget$Mutation()
+      ..validateEmailForTarget =
+          ValidateEmailForTarget$Mutation$CorporateUserType.fromJson(
+              json['validateEmailForTarget'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$ValidateEmailForTarget$MutationToJson(
+        ValidateEmailForTarget$Mutation instance) =>
+    <String, dynamic>{
+      'validateEmailForTarget': instance.validateEmailForTarget.toJson(),
+    };
+
 ProcessWelcomeMailForTarget$Mutation$CorporateUserType$PhoneType
     _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$PhoneTypeFromJson(
             Map<String, dynamic> json) =>
@@ -3770,7 +8334,8 @@ ProcessWelcomeMailForTarget$Mutation$CorporateUserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$PictureTypeToJson(
@@ -3790,6 +8355,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -3802,7 +8368,8 @@ ProcessWelcomeMailForTarget$Mutation$CorporateUserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$LanguageType$PictureTypeToJson(
@@ -3822,6 +8389,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -3877,7 +8445,8 @@ ProcessWelcomeMailForTarget$Mutation$CorporateUserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$CountryType$PictureTypeToJson(
@@ -3897,6 +8466,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -3980,7 +8550,8 @@ ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$CountryTy
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4000,6 +8571,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4057,7 +8629,8 @@ ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$StateType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4077,6 +8650,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4134,7 +8708,8 @@ ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$StateType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureTypeToJson(
@@ -4154,6 +8729,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4163,10 +8739,14 @@ ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$StateType
         ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType
@@ -4197,10 +8777,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -4317,7 +8899,8 @@ ProcessWelcomeMailForTarget$Mutation$CorporateUserType$SocialValueType$SocialTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -4337,6 +8920,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4679,6 +9263,430 @@ Map<String, dynamic>
   return val;
 }
 
+ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserEducationType
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserEducationTypeToJson(
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryTypeToJson(
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureTypeToJson(
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateTypeToJson(
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkTypeToJson(
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureTypeToJson(
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryTypeToJson(
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$PictureType
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$PictureTypeToJson(
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateTypeToJson(
+        ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 ProcessWelcomeMailForTarget$Mutation$CorporateUserType
     _$ProcessWelcomeMailForTarget$Mutation$CorporateUserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -4772,7 +9780,28 @@ ProcessWelcomeMailForTarget$Mutation$CorporateUserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : ProcessWelcomeMailForTarget$Mutation$CorporateUserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$ProcessWelcomeMailForTarget$Mutation$CorporateUserTypeToJson(
@@ -4828,6 +9857,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -4881,7 +9916,8 @@ SaveCurrentCorporateUserStatus$Mutation$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SaveCurrentCorporateUserStatus$Mutation$UserType$PictureTypeToJson(
@@ -4900,6 +9936,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4912,7 +9949,8 @@ SaveCurrentCorporateUserStatus$Mutation$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SaveCurrentCorporateUserStatus$Mutation$UserType$LanguageType$PictureTypeToJson(
@@ -4932,6 +9970,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4987,7 +10026,8 @@ SaveCurrentCorporateUserStatus$Mutation$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SaveCurrentCorporateUserStatus$Mutation$UserType$CountryType$PictureTypeToJson(
@@ -5007,6 +10047,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5089,7 +10130,8 @@ SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$CountryType$Pic
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5109,6 +10151,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5166,7 +10209,8 @@ SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$StateType$Count
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5186,6 +10230,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5243,7 +10288,8 @@ SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$StateType$Pictu
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -5263,6 +10309,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5272,10 +10319,14 @@ SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$StateType
         SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$StateType$CountryType
@@ -5306,10 +10357,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -5426,7 +10479,8 @@ SaveCurrentCorporateUserStatus$Mutation$UserType$SocialValueType$SocialType$Soci
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SaveCurrentCorporateUserStatus$Mutation$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -5446,6 +10500,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5788,6 +10843,429 @@ Map<String, dynamic>
   return val;
 }
 
+SaveCurrentCorporateUserStatus$Mutation$UserType$UserEducationType
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserEducationTypeToJson(
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryTypeToJson(
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$PictureType
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$PictureTypeToJson(
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateTypeToJson(
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkTypeToJson(
+        SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType$PictureType
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType$PictureTypeToJson(
+        SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryTypeToJson(
+        SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$PictureType
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$PictureTypeToJson(
+        SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SaveCurrentCorporateUserStatus$Mutation$UserType$StateType
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        SaveCurrentCorporateUserStatus$Mutation$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SaveCurrentCorporateUserStatus$Mutation$UserType$StateTypeToJson(
+        SaveCurrentCorporateUserStatus$Mutation$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 SaveCurrentCorporateUserStatus$Mutation$UserType
     _$SaveCurrentCorporateUserStatus$Mutation$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -5881,7 +11359,28 @@ SaveCurrentCorporateUserStatus$Mutation$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : SaveCurrentCorporateUserStatus$Mutation$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  SaveCurrentCorporateUserStatus$Mutation$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  SaveCurrentCorporateUserStatus$Mutation$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$SaveCurrentCorporateUserStatus$Mutation$UserTypeToJson(
     SaveCurrentCorporateUserStatus$Mutation$UserType instance) {
@@ -5936,6 +11435,12 @@ Map<String, dynamic> _$SaveCurrentCorporateUserStatus$Mutation$UserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -5991,7 +11496,8 @@ ResetPasswordForTarget$Mutation$CorporateUserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ResetPasswordForTarget$Mutation$CorporateUserType$PictureTypeToJson(
@@ -6011,6 +11517,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6023,7 +11530,8 @@ ResetPasswordForTarget$Mutation$CorporateUserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ResetPasswordForTarget$Mutation$CorporateUserType$LanguageType$PictureTypeToJson(
@@ -6043,6 +11551,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6098,7 +11607,8 @@ ResetPasswordForTarget$Mutation$CorporateUserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ResetPasswordForTarget$Mutation$CorporateUserType$CountryType$PictureTypeToJson(
@@ -6118,6 +11628,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6201,7 +11712,8 @@ ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$Pi
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6221,6 +11733,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6278,7 +11791,8 @@ ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$StateType$Coun
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6298,6 +11812,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6355,7 +11870,8 @@ ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$StateType$Pict
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureTypeToJson(
@@ -6375,6 +11891,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6384,10 +11901,14 @@ ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$StateType
         ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType
@@ -6418,10 +11939,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -6538,7 +12061,8 @@ ResetPasswordForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$Soc
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ResetPasswordForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -6558,6 +12082,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6900,6 +12425,429 @@ Map<String, dynamic>
   return val;
 }
 
+ResetPasswordForTarget$Mutation$CorporateUserType$UserEducationType
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserEducationTypeToJson(
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryTypeToJson(
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureTypeToJson(
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateTypeToJson(
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkTypeToJson(
+        ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureTypeToJson(
+        ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryTypeToJson(
+        ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ResetPasswordForTarget$Mutation$CorporateUserType$StateType$PictureType
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ResetPasswordForTarget$Mutation$CorporateUserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$StateType$PictureTypeToJson(
+        ResetPasswordForTarget$Mutation$CorporateUserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ResetPasswordForTarget$Mutation$CorporateUserType$StateType
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        ResetPasswordForTarget$Mutation$CorporateUserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ResetPasswordForTarget$Mutation$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ResetPasswordForTarget$Mutation$CorporateUserType$StateTypeToJson(
+        ResetPasswordForTarget$Mutation$CorporateUserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 ResetPasswordForTarget$Mutation$CorporateUserType
     _$ResetPasswordForTarget$Mutation$CorporateUserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -6993,7 +12941,28 @@ ResetPasswordForTarget$Mutation$CorporateUserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : ResetPasswordForTarget$Mutation$CorporateUserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  ResetPasswordForTarget$Mutation$CorporateUserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  ResetPasswordForTarget$Mutation$CorporateUserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$ResetPasswordForTarget$Mutation$CorporateUserTypeToJson(
     ResetPasswordForTarget$Mutation$CorporateUserType instance) {
@@ -7048,6 +13017,12 @@ Map<String, dynamic> _$ResetPasswordForTarget$Mutation$CorporateUserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -7109,17 +13084,1582 @@ Map<String, dynamic> _$SendForgotPasswordMailToTarget$MutationToJson(
           instance.sendForgotPasswordMailToTarget.toJson(),
     };
 
+RegisterForTarget$Mutation$LoginType$UserType$PhoneType
+    _$RegisterForTarget$Mutation$LoginType$UserType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$PhoneTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$LanguageType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$LanguageType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$LanguageType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$LanguageType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$LanguageType
+    _$RegisterForTarget$Mutation$LoginType$UserType$LanguageTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$LanguageType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$LanguageType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$LanguageType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$LanguageTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$CountryType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$CountryType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$CountryType
+    _$RegisterForTarget$Mutation$LoginType$UserType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$CountryTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$LonLatType
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$LonLatType()
+          ..type = json['type'] as String?
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$LonLatTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$FullAddressType
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..addressLine = json['addressLine'] as String?
+          ..location = json['location'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$FullAddressTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType()
+          ..size48 = json['size48'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size96 = json['size96'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size96'] as Map<String, dynamic>)
+          ..size144 = json['size144'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size144'] as Map<String, dynamic>)
+          ..size240 = json['size240'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size240'] as Map<String, dynamic>)
+          ..size480 = json['size480'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size480'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType()
+          ..svg = json['svg'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                  .fromJson(json['png'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType()
+          ..style = $enumDecode(_$SocialImageStyleEnumEnumMap, json['style'],
+              unknownValue: SocialImageStyleEnum.artemisUnknown)
+          ..images = (json['images'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..fontIcon = json['fontIcon'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..images = (json['images'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialValueType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType()
+          ..name = json['name'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialValueType$SocialType
+                  .fromJson(json['name'] as Map<String, dynamic>)
+          ..value = json['value'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialValueTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataType()
+          ..id = json['id'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..token = json['token'] as String
+          ..email = json['email'] as String
+          ..lastName = json['last_name'] as String?
+          ..firstName = json['first_name'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataType()
+          ..sub = json['sub'] as String
+          ..name = json['name'] as String?
+          ..email = json['email'] as String
+          ..token = json['token'] as String
+          ..locale = json['locale'] as String?
+          ..picture = json['picture'] as String?
+          ..givenName = json['given_name'] as String?
+          ..familyName = json['family_name'] as String?
+          ..emailVerified = json['email_verified'] as bool?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataType()
+          ..email = json['email'] as String?
+          ..status = json['status'] as String?
+          ..givenName = json['givenName'] as String?
+          ..familyName = json['familyName'] as String?
+          ..identityToken = json['identityToken'] as String
+          ..userIdentifier = json['userIdentifier'] as String?
+          ..authorizationCode = json['authorizationCode'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType()
+          ..ooredoo = json['ooredoo'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataType
+                  .fromJson(json['ooredoo'] as Map<String, dynamic>)
+          ..facebook = json['facebook'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataType
+                  .fromJson(json['facebook'] as Map<String, dynamic>)
+          ..google = json['google'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataType
+                  .fromJson(json['google'] as Map<String, dynamic>)
+          ..apple = json['apple'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataType
+                  .fromJson(json['apple'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$UserEducationType
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserEducationTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$UserWorkType
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$UserWorkTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType
+    _$RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$StateType$PictureType
+    _$RegisterForTarget$Mutation$LoginType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$StateType$PictureTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType$StateType
+    _$RegisterForTarget$Mutation$LoginType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$RegisterForTarget$Mutation$LoginType$UserType$StateTypeToJson(
+        RegisterForTarget$Mutation$LoginType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+RegisterForTarget$Mutation$LoginType$UserType
+    _$RegisterForTarget$Mutation$LoginType$UserTypeFromJson(
+            Map<String, dynamic> json) =>
+        RegisterForTarget$Mutation$LoginType$UserType()
+          ..id = json['id'] as String
+          ..apps = (json['apps'] as List<dynamic>?)
+              ?.map((e) => $enumDecode(_$AppEnumMap, e,
+                  unknownValue: App.artemisUnknown))
+              .toList()
+          ..email = json['email'] as String?
+          ..roles = (json['roles'] as List<dynamic>?)
+              ?.map((e) => $enumDecode(_$UserRoleEnumMap, e,
+                  unknownValue: UserRole.artemisUnknown))
+              .toList()
+          ..title = json['title'] as String?
+          ..about = json['about'] as String?
+          ..gender = $enumDecodeNullable(_$GenderEnumMap, json['gender'],
+              unknownValue: Gender.artemisUnknown)
+          ..locale = json['locale'] as String?
+          ..source = $enumDecodeNullable(_$SourcesEnumEnumMap, json['source'],
+              unknownValue: SourcesEnum.artemisUnknown)
+          ..status = $enumDecodeNullable(_$UserStatusEnumMap, json['status'],
+              unknownValue: UserStatus.artemisUnknown)
+          ..lastName = json['lastName'] as String?
+          ..username = json['username'] as String?
+          ..firstName = json['firstName'] as String?
+          ..plugged = json['plugged'] as bool?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..isMailValid = json['isMailValid'] as bool?
+          ..dateOfBirth = json['dateOfBirth'] == null
+              ? null
+              : DateTime.parse(json['dateOfBirth'] as String)
+          ..phoneNumber = json['phoneNumber'] as String?
+          ..mobileTheme = $enumDecodeNullable(
+              _$MobileThemesEnumEnumMap, json['mobileTheme'],
+              unknownValue: MobileThemesEnum.artemisUnknown)
+          ..placeOfBirth = json['placeOfBirth'] as String?
+          ..maritalStatus = $enumDecodeNullable(
+              _$MaritalStatusEnumMap, json['maritalStatus'],
+              unknownValue: MaritalStatus.artemisUnknown)
+          ..newsletterSubs = json['newsletterSubs'] as bool?
+          ..hasAutoGeneratedEmail = json['hasAutoGeneratedEmail'] as bool?
+          ..phone = json['phone'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$PhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>)
+          ..picture = json['picture'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>)
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..languages = (json['languages'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$LanguageType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..nationality = json['nationality'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$CountryType
+                  .fromJson(json['nationality'] as Map<String, dynamic>)
+          ..billingAddress = (json['billingAddress'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..shippingAddress = (json['shippingAddress'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..residentialAddress = (json['residentialAddress'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..chatContact = (json['chatContact'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$SocialValueType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..socialMedia = (json['socialMedia'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$SocialValueType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..socialLoginData = json['socialLoginData'] == null
+              ? null
+              : RegisterForTarget$Mutation$LoginType$UserType$SocialLoginDataType
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  RegisterForTarget$Mutation$LoginType$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
+
+Map<String, dynamic> _$RegisterForTarget$Mutation$LoginType$UserTypeToJson(
+    RegisterForTarget$Mutation$LoginType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
+
 RegisterForTarget$Mutation$LoginType
     _$RegisterForTarget$Mutation$LoginTypeFromJson(Map<String, dynamic> json) =>
         RegisterForTarget$Mutation$LoginType()
+          ..expiresIn = (json['expiresIn'] as num).toDouble()
           ..accessToken = json['accessToken'] as String
-          ..expiresIn = (json['expiresIn'] as num).toDouble();
+          ..user = RegisterForTarget$Mutation$LoginType$UserType.fromJson(
+              json['user'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$RegisterForTarget$Mutation$LoginTypeToJson(
         RegisterForTarget$Mutation$LoginType instance) =>
     <String, dynamic>{
-      'accessToken': instance.accessToken,
       'expiresIn': instance.expiresIn,
+      'accessToken': instance.accessToken,
+      'user': instance.user.toJson(),
     };
 
 RegisterForTarget$Mutation _$RegisterForTarget$MutationFromJson(
@@ -7338,13 +14878,6 @@ Map<String, dynamic> _$UserEducationInputToJson(UserEducationInput instance) {
   return val;
 }
 
-const _$AcademicLevelEnumMap = {
-  AcademicLevel.primary: 'PRIMARY',
-  AcademicLevel.highSchool: 'HIGH_SCHOOL',
-  AcademicLevel.university: 'UNIVERSITY',
-  AcademicLevel.artemisUnknown: 'ARTEMIS_UNKNOWN',
-};
-
 UserWorkInput _$UserWorkInputFromJson(Map<String, dynamic> json) =>
     UserWorkInput(
       company: json['company'] as String?,
@@ -7523,7 +15056,8 @@ AddUserForTarget$Mutation$CorporateUserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserForTarget$Mutation$CorporateUserType$PictureTypeToJson(
@@ -7542,6 +15076,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -7554,7 +15089,8 @@ AddUserForTarget$Mutation$CorporateUserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserForTarget$Mutation$CorporateUserType$LanguageType$PictureTypeToJson(
@@ -7574,6 +15110,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -7628,7 +15165,8 @@ AddUserForTarget$Mutation$CorporateUserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserForTarget$Mutation$CorporateUserType$CountryType$PictureTypeToJson(
@@ -7648,6 +15186,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -7730,7 +15269,8 @@ AddUserForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureT
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserForTarget$Mutation$CorporateUserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -7750,6 +15290,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -7807,7 +15348,8 @@ AddUserForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -7827,6 +15369,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -7884,7 +15427,8 @@ AddUserForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserForTarget$Mutation$CorporateUserType$FullAddressType$StateType$PictureTypeToJson(
@@ -7904,6 +15448,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -7913,10 +15458,14 @@ AddUserForTarget$Mutation$CorporateUserType$FullAddressType$StateType
         AddUserForTarget$Mutation$CorporateUserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : AddUserForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType
@@ -7947,10 +15496,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -8066,7 +15617,8 @@ AddUserForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialIma
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserForTarget$Mutation$CorporateUserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -8086,6 +15638,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8427,6 +15980,428 @@ Map<String, dynamic>
   return val;
 }
 
+AddUserForTarget$Mutation$CorporateUserType$UserEducationType
+    _$AddUserForTarget$Mutation$CorporateUserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserForTarget$Mutation$CorporateUserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$AddUserForTarget$Mutation$CorporateUserType$UserEducationTypeToJson(
+        AddUserForTarget$Mutation$CorporateUserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+    _$AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+    _$AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryTypeToJson(
+        AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+    _$AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureTypeToJson(
+        AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+    _$AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateTypeToJson(
+        AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+AddUserForTarget$Mutation$CorporateUserType$UserWorkType
+    _$AddUserForTarget$Mutation$CorporateUserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserForTarget$Mutation$CorporateUserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$AddUserForTarget$Mutation$CorporateUserType$UserWorkTypeToJson(
+        AddUserForTarget$Mutation$CorporateUserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+    _$AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureTypeToJson(
+        AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType
+    _$AddUserForTarget$Mutation$CorporateUserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$AddUserForTarget$Mutation$CorporateUserType$StateType$CountryTypeToJson(
+        AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+AddUserForTarget$Mutation$CorporateUserType$StateType$PictureType
+    _$AddUserForTarget$Mutation$CorporateUserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserForTarget$Mutation$CorporateUserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$AddUserForTarget$Mutation$CorporateUserType$StateType$PictureTypeToJson(
+        AddUserForTarget$Mutation$CorporateUserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+AddUserForTarget$Mutation$CorporateUserType$StateType
+    _$AddUserForTarget$Mutation$CorporateUserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserForTarget$Mutation$CorporateUserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : AddUserForTarget$Mutation$CorporateUserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$AddUserForTarget$Mutation$CorporateUserType$StateTypeToJson(
+        AddUserForTarget$Mutation$CorporateUserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 AddUserForTarget$Mutation$CorporateUserType
     _$AddUserForTarget$Mutation$CorporateUserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -8520,7 +16495,27 @@ AddUserForTarget$Mutation$CorporateUserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : AddUserForTarget$Mutation$CorporateUserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  AddUserForTarget$Mutation$CorporateUserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  AddUserForTarget$Mutation$CorporateUserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) => AddUserForTarget$Mutation$CorporateUserType$StateType
+                  .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$AddUserForTarget$Mutation$CorporateUserTypeToJson(
     AddUserForTarget$Mutation$CorporateUserType instance) {
@@ -8575,6 +16570,12 @@ Map<String, dynamic> _$AddUserForTarget$Mutation$CorporateUserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -8627,7 +16628,8 @@ ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$PictureT
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$PictureTypeToJson(
@@ -8647,6 +16649,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8659,7 +16662,8 @@ ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$Language
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$LanguageType$PictureTypeToJson(
@@ -8679,6 +16683,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8734,7 +16739,8 @@ ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$CountryT
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$CountryType$PictureTypeToJson(
@@ -8754,6 +16760,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8837,7 +16844,8 @@ ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$FullAddr
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -8857,6 +16865,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8914,7 +16923,8 @@ ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$FullAddr
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8934,6 +16944,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8991,7 +17002,8 @@ ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$FullAddr
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -9011,6 +17023,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -9020,10 +17033,14 @@ ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$FullAddr
         ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$FullAddressType$StateType$CountryType
@@ -9054,10 +17071,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -9174,7 +17193,8 @@ ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$SocialVa
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -9194,6 +17214,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -9536,6 +17557,430 @@ Map<String, dynamic>
   return val;
 }
 
+ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserEducationType
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserEducationTypeToJson(
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$PictureType
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateTypeToJson(
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkTypeToJson(
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType$PictureType
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType$PictureTypeToJson(
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryTypeToJson(
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$PictureType
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$PictureTypeToJson(
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateTypeToJson(
+        ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType
     _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -9629,7 +18074,28 @@ ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserTypeToJson(
@@ -9686,6 +18152,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -9858,7 +18330,8 @@ SendCorporateUsersBymailArguments _$SendCorporateUsersBymailArgumentsFromJson(
           .toList(),
       searchString: json['searchString'] as String?,
       sortingField: json['sortingField'] as String?,
-      email: json['email'] as String,
+      emails:
+          (json['emails'] as List<dynamic>?)?.map((e) => e as String).toList(),
       subject: json['subject'] as String,
     );
 
@@ -9878,7 +18351,7 @@ Map<String, dynamic> _$SendCorporateUsersBymailArgumentsToJson(
       'status', instance.status?.map((e) => _$UserStatusEnumMap[e]!).toList());
   writeNotNull('searchString', instance.searchString);
   writeNotNull('sortingField', instance.sortingField);
-  val['email'] = instance.email;
+  writeNotNull('emails', instance.emails);
   val['subject'] = instance.subject;
   return val;
 }
@@ -9889,12 +18362,28 @@ SendValidationEmailForTargetArguments
         SendValidationEmailForTargetArguments(
           target:
               TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
+          email: json['email'] as String,
+          subject: json['subject'] as String,
         );
 
 Map<String, dynamic> _$SendValidationEmailForTargetArgumentsToJson(
         SendValidationEmailForTargetArguments instance) =>
     <String, dynamic>{
       'target': instance.target.toJson(),
+      'email': instance.email,
+      'subject': instance.subject,
+    };
+
+ValidateEmailForTargetArguments _$ValidateEmailForTargetArgumentsFromJson(
+        Map<String, dynamic> json) =>
+    ValidateEmailForTargetArguments(
+      token: json['token'] as String,
+    );
+
+Map<String, dynamic> _$ValidateEmailForTargetArgumentsToJson(
+        ValidateEmailForTargetArguments instance) =>
+    <String, dynamic>{
+      'token': instance.token,
     };
 
 ProcessWelcomeMailForTargetArguments

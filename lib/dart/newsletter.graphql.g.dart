@@ -43,7 +43,8 @@ GetSubscribersToNewsletter$Query$NewsletterType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$PictureTypeToJson(
@@ -63,6 +64,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -75,7 +77,8 @@ GetSubscribersToNewsletter$Query$NewsletterType$UserType$LanguageType$PictureTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$LanguageType$PictureTypeToJson(
@@ -95,6 +98,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -150,7 +154,8 @@ GetSubscribersToNewsletter$Query$NewsletterType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$CountryType$PictureTypeToJson(
@@ -170,6 +175,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -253,7 +259,8 @@ GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$Country
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -273,6 +280,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -330,7 +338,8 @@ GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateTy
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -350,6 +359,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -407,7 +417,8 @@ GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateTy
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -427,6 +438,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -436,10 +448,14 @@ GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateTy
         GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType$CountryType
@@ -470,10 +486,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -481,6 +499,13 @@ Map<String, dynamic>
   writeNotNull('flagWide', instance.flagWide?.toJson());
   return val;
 }
+
+const _$StateCapitalEnumEnumMap = {
+  StateCapitalEnum.primary: 'PRIMARY',
+  StateCapitalEnum.admin: 'ADMIN',
+  StateCapitalEnum.minor: 'MINOR',
+  StateCapitalEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
 
 GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -590,7 +615,8 @@ GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$SocialT
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -610,6 +636,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -960,6 +987,437 @@ Map<String, dynamic>
   return val;
 }
 
+GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationType
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationTypeToJson(
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+const _$AcademicLevelEnumMap = {
+  AcademicLevel.primary: 'PRIMARY',
+  AcademicLevel.highSchool: 'HIGH_SCHOOL',
+  AcademicLevel.university: 'UNIVERSITY',
+  AcademicLevel.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureType
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateTypeToJson(
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkTypeToJson(
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureType
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureTypeToJson(
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryTypeToJson(
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureType
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureTypeToJson(
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateTypeToJson(
+        GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 GetSubscribersToNewsletter$Query$NewsletterType$UserType
     _$GetSubscribersToNewsletter$Query$NewsletterType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -1053,7 +1511,28 @@ GetSubscribersToNewsletter$Query$NewsletterType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletter$Query$NewsletterType$UserTypeToJson(
@@ -1109,6 +1588,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -1315,7 +1800,8 @@ GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$PictureTypeToJson(
@@ -1335,6 +1821,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1347,7 +1834,8 @@ GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$LanguageType$PictureTypeToJson(
@@ -1367,6 +1855,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1422,7 +1911,8 @@ GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$CountryType$PictureTypeToJson(
@@ -1442,6 +1932,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1525,7 +2016,8 @@ GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1545,6 +2037,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1602,7 +2095,8 @@ GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1622,6 +2116,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1679,7 +2174,8 @@ GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -1699,6 +2195,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1708,10 +2205,14 @@ GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterTyp
         GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType$CountryType
@@ -1742,10 +2243,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -1862,7 +2365,8 @@ GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -1882,6 +2386,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2224,6 +2729,430 @@ Map<String, dynamic>
   return val;
 }
 
+GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationType
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationTypeToJson(
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureType
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateTypeToJson(
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkTypeToJson(
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureType
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureTypeToJson(
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryTypeToJson(
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureType
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureTypeToJson(
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateTypeToJson(
+        GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType
     _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -2317,7 +3246,28 @@ GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterTyp
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserTypeToJson(
@@ -2374,6 +3324,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -2510,10 +3466,10 @@ Map<String, dynamic> _$GetNewslettersByExcel$QueryToJson(
       'getNewslettersByExcel': instance.getNewslettersByExcel.toJson(),
     };
 
-SendTicksendNewslettersBymailetsBymail$Query$MailResponseDto
-    _$SendTicksendNewslettersBymailetsBymail$Query$MailResponseDtoFromJson(
+SendNewslettersBymail$Query$MailResponseDto
+    _$SendNewslettersBymail$Query$MailResponseDtoFromJson(
             Map<String, dynamic> json) =>
-        SendTicksendNewslettersBymailetsBymail$Query$MailResponseDto()
+        SendNewslettersBymail$Query$MailResponseDto()
           ..accepted = (json['accepted'] as List<dynamic>)
               .map((e) => e as String)
               .toList()
@@ -2526,31 +3482,27 @@ SendTicksendNewslettersBymailetsBymail$Query$MailResponseDto
           ..messageSize = (json['messageSize'] as num).toDouble()
           ..envelopeTime = (json['envelopeTime'] as num).toDouble();
 
-Map<String, dynamic>
-    _$SendTicksendNewslettersBymailetsBymail$Query$MailResponseDtoToJson(
-            SendTicksendNewslettersBymailetsBymail$Query$MailResponseDto
-                instance) =>
-        <String, dynamic>{
-          'accepted': instance.accepted,
-          'rejected': instance.rejected,
-          'response': instance.response,
-          'messageId': instance.messageId,
-          'messageTime': instance.messageTime,
-          'messageSize': instance.messageSize,
-          'envelopeTime': instance.envelopeTime,
-        };
+Map<String, dynamic> _$SendNewslettersBymail$Query$MailResponseDtoToJson(
+        SendNewslettersBymail$Query$MailResponseDto instance) =>
+    <String, dynamic>{
+      'accepted': instance.accepted,
+      'rejected': instance.rejected,
+      'response': instance.response,
+      'messageId': instance.messageId,
+      'messageTime': instance.messageTime,
+      'messageSize': instance.messageSize,
+      'envelopeTime': instance.envelopeTime,
+    };
 
-SendTicksendNewslettersBymailetsBymail$Query
-    _$SendTicksendNewslettersBymailetsBymail$QueryFromJson(
-            Map<String, dynamic> json) =>
-        SendTicksendNewslettersBymailetsBymail$Query()
-          ..sendNewslettersBymail =
-              SendTicksendNewslettersBymailetsBymail$Query$MailResponseDto
-                  .fromJson(
-                      json['sendNewslettersBymail'] as Map<String, dynamic>);
+SendNewslettersBymail$Query _$SendNewslettersBymail$QueryFromJson(
+        Map<String, dynamic> json) =>
+    SendNewslettersBymail$Query()
+      ..sendNewslettersBymail =
+          SendNewslettersBymail$Query$MailResponseDto.fromJson(
+              json['sendNewslettersBymail'] as Map<String, dynamic>);
 
-Map<String, dynamic> _$SendTicksendNewslettersBymailetsBymail$QueryToJson(
-        SendTicksendNewslettersBymailetsBymail$Query instance) =>
+Map<String, dynamic> _$SendNewslettersBymail$QueryToJson(
+        SendNewslettersBymail$Query instance) =>
     <String, dynamic>{
       'sendNewslettersBymail': instance.sendNewslettersBymail.toJson(),
     };
@@ -2592,7 +3544,8 @@ AddUserToNewsLetter$Mutation$NewsletterType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$PictureTypeToJson(
@@ -2612,6 +3565,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2624,7 +3578,8 @@ AddUserToNewsLetter$Mutation$NewsletterType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$LanguageType$PictureTypeToJson(
@@ -2644,6 +3599,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2699,7 +3655,8 @@ AddUserToNewsLetter$Mutation$NewsletterType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$CountryType$PictureTypeToJson(
@@ -2719,6 +3676,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2802,7 +3760,8 @@ AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$CountryType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2822,6 +3781,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2879,7 +3839,8 @@ AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$C
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2899,6 +3860,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2956,7 +3918,8 @@ AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$P
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -2976,6 +3939,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2985,10 +3949,14 @@ AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType
         AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$CountryType
@@ -3019,10 +3987,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -3139,7 +4109,8 @@ AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$SocialType$
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -3159,6 +4130,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -3501,6 +4473,430 @@ Map<String, dynamic>
   return val;
 }
 
+AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationType
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationTypeToJson(
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureType
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateTypeToJson(
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkTypeToJson(
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureType
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureTypeToJson(
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryTypeToJson(
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureTypeToJson(
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateTypeToJson(
+        AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 AddUserToNewsLetter$Mutation$NewsletterType$UserType
     _$AddUserToNewsLetter$Mutation$NewsletterType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -3594,7 +4990,28 @@ AddUserToNewsLetter$Mutation$NewsletterType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$AddUserToNewsLetter$Mutation$NewsletterType$UserTypeToJson(
@@ -3650,6 +5067,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -3793,19 +5216,18 @@ Map<String, dynamic> _$GetNewslettersByExcelArgumentsToJson(
   return val;
 }
 
-SendTicksendNewslettersBymailetsBymailArguments
-    _$SendTicksendNewslettersBymailetsBymailArgumentsFromJson(
-            Map<String, dynamic> json) =>
-        SendTicksendNewslettersBymailetsBymailArguments(
-          target:
-              TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
-          searchString: json['searchString'] as String?,
-          email: json['email'] as String,
-          subject: json['subject'] as String,
-        );
+SendNewslettersBymailArguments _$SendNewslettersBymailArgumentsFromJson(
+        Map<String, dynamic> json) =>
+    SendNewslettersBymailArguments(
+      target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
+      searchString: json['searchString'] as String?,
+      emails:
+          (json['emails'] as List<dynamic>?)?.map((e) => e as String).toList(),
+      subject: json['subject'] as String,
+    );
 
-Map<String, dynamic> _$SendTicksendNewslettersBymailetsBymailArgumentsToJson(
-    SendTicksendNewslettersBymailetsBymailArguments instance) {
+Map<String, dynamic> _$SendNewslettersBymailArgumentsToJson(
+    SendNewslettersBymailArguments instance) {
   final val = <String, dynamic>{
     'target': instance.target.toJson(),
   };
@@ -3817,7 +5239,7 @@ Map<String, dynamic> _$SendTicksendNewslettersBymailetsBymailArgumentsToJson(
   }
 
   writeNotNull('searchString', instance.searchString);
-  val['email'] = instance.email;
+  writeNotNull('emails', instance.emails);
   val['subject'] = instance.subject;
   return val;
 }

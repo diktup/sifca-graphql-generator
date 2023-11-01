@@ -54,8 +54,10 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$PictureTypeToJson(
@@ -84,8 +86,10 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$LanguageType$Pict
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$LanguageType$PictureTypeToJson(
@@ -151,8 +155,10 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$CountryType$Pictu
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$CountryType$PictureTypeToJson(
@@ -251,8 +257,10 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$C
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -329,8 +337,10 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$S
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -407,8 +417,10 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$S
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -429,13 +441,18 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$S
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -454,10 +471,12 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$S
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -576,8 +595,10 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$S
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -894,6 +915,424 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataTy
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationType();
+
+  factory GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: AcademicLevel.artemisUnknown)
+  AcademicLevel? level;
+
+  String? name;
+
+  String? description;
+
+  List<String>? tags;
+
+  DateTime? from;
+
+  DateTime? to;
+
+  bool? graduated;
+
+  @override
+  List<Object?> get props =>
+      [level, name, description, tags, from, to, graduated];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType();
+
+  factory GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType();
+
+  factory GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureType();
+
+  factory GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType();
+
+  factory GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureType?
+      flagSquare;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType();
+
+  factory GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkTypeFromJson(
+          json);
+
+  String? company;
+
+  String? position;
+
+  String? description;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType?
+      city;
+
+  List<String>? tags;
+
+  DateTime? from;
+
+  DateTime? to;
+
+  bool? current;
+
+  @override
+  List<Object?> get props =>
+      [company, position, description, city, tags, from, to, current];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureType();
+
+  factory GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType();
+
+  factory GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureType();
+
+  factory GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType();
+
+  factory GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureType?
+      flagSquare;
+
+  GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetSubscribersToNewsletter$Query$NewsletterType$UserType
     extends JsonSerializable with EquatableMixin {
   GetSubscribersToNewsletter$Query$NewsletterType$UserType();
@@ -988,6 +1427,19 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType
   GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataType?
       socialLoginData;
 
+  List<GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationType>?
+      education;
+
+  List<GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType>?
+      work;
+
+  List<GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType>?
+      lived;
+
+  List<String>? hobbies;
+
+  List<String>? interests;
+
   @override
   List<Object?> get props => [
         id,
@@ -1024,7 +1476,12 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType
         residentialAddress,
         chatContact,
         socialMedia,
-        socialLoginData
+        socialLoginData,
+        education,
+        work,
+        lived,
+        hobbies,
+        interests
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -1150,8 +1607,10 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$PictureTypeToJson(
@@ -1180,8 +1639,10 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$LanguageType$PictureTypeToJson(
@@ -1247,8 +1708,10 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$CountryType$PictureTypeToJson(
@@ -1347,8 +1810,10 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1425,8 +1890,10 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1503,8 +1970,10 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -1525,13 +1994,18 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -1550,10 +2024,12 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -1672,8 +2148,10 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -1990,6 +2468,424 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationType();
+
+  factory GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: AcademicLevel.artemisUnknown)
+  AcademicLevel? level;
+
+  String? name;
+
+  String? description;
+
+  List<String>? tags;
+
+  DateTime? from;
+
+  DateTime? to;
+
+  bool? graduated;
+
+  @override
+  List<Object?> get props =>
+      [level, name, description, tags, from, to, graduated];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType();
+
+  factory GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType();
+
+  factory GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureType();
+
+  factory GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType();
+
+  factory GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureType?
+      flagSquare;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType();
+
+  factory GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkTypeFromJson(
+          json);
+
+  String? company;
+
+  String? position;
+
+  String? description;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType?
+      city;
+
+  List<String>? tags;
+
+  DateTime? from;
+
+  DateTime? to;
+
+  bool? current;
+
+  @override
+  List<Object?> get props =>
+      [company, position, description, city, tags, from, to, current];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureType();
+
+  factory GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType();
+
+  factory GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureType();
+
+  factory GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType();
+
+  factory GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureType?
+      flagSquare;
+
+  GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType
     extends JsonSerializable with EquatableMixin {
   GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType();
@@ -2087,6 +2983,19 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
   GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialLoginDataType?
       socialLoginData;
 
+  List<GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationType>?
+      education;
+
+  List<GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType>?
+      work;
+
+  List<GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType>?
+      lived;
+
+  List<String>? hobbies;
+
+  List<String>? interests;
+
   @override
   List<Object?> get props => [
         id,
@@ -2123,7 +3032,12 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         residentialAddress,
         chatContact,
         socialMedia,
-        socialLoginData
+        socialLoginData,
+        education,
+        work,
+        lived,
+        hobbies,
+        interests
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -2259,14 +3173,13 @@ class GetNewslettersByExcel$Query extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
-class SendTicksendNewslettersBymailetsBymail$Query$MailResponseDto
-    extends JsonSerializable with EquatableMixin {
-  SendTicksendNewslettersBymailetsBymail$Query$MailResponseDto();
+class SendNewslettersBymail$Query$MailResponseDto extends JsonSerializable
+    with EquatableMixin {
+  SendNewslettersBymail$Query$MailResponseDto();
 
-  factory SendTicksendNewslettersBymailetsBymail$Query$MailResponseDto.fromJson(
+  factory SendNewslettersBymail$Query$MailResponseDto.fromJson(
           Map<String, dynamic> json) =>
-      _$SendTicksendNewslettersBymailetsBymail$Query$MailResponseDtoFromJson(
-          json);
+      _$SendNewslettersBymail$Query$MailResponseDtoFromJson(json);
 
   late List<String> accepted;
 
@@ -2294,27 +3207,22 @@ class SendTicksendNewslettersBymailetsBymail$Query$MailResponseDto
       ];
   @override
   Map<String, dynamic> toJson() =>
-      _$SendTicksendNewslettersBymailetsBymail$Query$MailResponseDtoToJson(
-          this);
+      _$SendNewslettersBymail$Query$MailResponseDtoToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
-class SendTicksendNewslettersBymailetsBymail$Query extends JsonSerializable
-    with EquatableMixin {
-  SendTicksendNewslettersBymailetsBymail$Query();
+class SendNewslettersBymail$Query extends JsonSerializable with EquatableMixin {
+  SendNewslettersBymail$Query();
 
-  factory SendTicksendNewslettersBymailetsBymail$Query.fromJson(
-          Map<String, dynamic> json) =>
-      _$SendTicksendNewslettersBymailetsBymail$QueryFromJson(json);
+  factory SendNewslettersBymail$Query.fromJson(Map<String, dynamic> json) =>
+      _$SendNewslettersBymail$QueryFromJson(json);
 
-  late SendTicksendNewslettersBymailetsBymail$Query$MailResponseDto
-      sendNewslettersBymail;
+  late SendNewslettersBymail$Query$MailResponseDto sendNewslettersBymail;
 
   @override
   List<Object?> get props => [sendNewslettersBymail];
   @override
-  Map<String, dynamic> toJson() =>
-      _$SendTicksendNewslettersBymailetsBymail$QueryToJson(this);
+  Map<String, dynamic> toJson() => _$SendNewslettersBymail$QueryToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -2365,8 +3273,10 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$PictureTypeToJson(
@@ -2395,8 +3305,10 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$LanguageType$PictureT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$LanguageType$PictureTypeToJson(
@@ -2462,8 +3374,10 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$CountryType$PictureTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$CountryType$PictureTypeToJson(
@@ -2562,8 +3476,10 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$Count
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2640,8 +3556,10 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$State
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2718,8 +3636,10 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$State
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -2740,13 +3660,18 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$State
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -2765,10 +3690,12 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$State
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -2887,8 +3814,10 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$Socia
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -3205,6 +4134,424 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType
 }
 
 @JsonSerializable(explicitToJson: true)
+class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationType
+    extends JsonSerializable with EquatableMixin {
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationType();
+
+  factory AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: AcademicLevel.artemisUnknown)
+  AcademicLevel? level;
+
+  String? name;
+
+  String? description;
+
+  List<String>? tags;
+
+  DateTime? from;
+
+  DateTime? to;
+
+  bool? graduated;
+
+  @override
+  List<Object?> get props =>
+      [level, name, description, tags, from, to, graduated];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType();
+
+  factory AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType();
+
+  factory AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureType();
+
+  factory AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType
+    extends JsonSerializable with EquatableMixin {
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType();
+
+  factory AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureType?
+      flagSquare;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType
+    extends JsonSerializable with EquatableMixin {
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType();
+
+  factory AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType.fromJson(
+          Map<String, dynamic> json) =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkTypeFromJson(
+          json);
+
+  String? company;
+
+  String? position;
+
+  String? description;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType?
+      city;
+
+  List<String>? tags;
+
+  DateTime? from;
+
+  DateTime? to;
+
+  bool? current;
+
+  @override
+  List<Object?> get props =>
+      [company, position, description, city, tags, from, to, current];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureType();
+
+  factory AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType();
+
+  factory AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType();
+
+  factory AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType
+    extends JsonSerializable with EquatableMixin {
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType();
+
+  factory AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType?
+      flagSquare;
+
+  AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class AddUserToNewsLetter$Mutation$NewsletterType$UserType
     extends JsonSerializable with EquatableMixin {
   AddUserToNewsLetter$Mutation$NewsletterType$UserType();
@@ -3298,6 +4645,17 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType
   AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType?
       socialLoginData;
 
+  List<AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationType>?
+      education;
+
+  List<AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType>? work;
+
+  List<AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType>? lived;
+
+  List<String>? hobbies;
+
+  List<String>? interests;
+
   @override
   List<Object?> get props => [
         id,
@@ -3334,7 +4692,12 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType
         residentialAddress,
         chatContact,
         socialMedia,
-        socialLoginData
+        socialLoginData,
+        education,
+        work,
+        lived,
+        hobbies,
+        interests
       ];
   @override
   Map<String, dynamic> toJson() =>
@@ -3589,6 +4952,17 @@ enum MaritalStatus {
   artemisUnknown,
 }
 
+enum StateCapitalEnum {
+  @JsonValue('PRIMARY')
+  primary,
+  @JsonValue('ADMIN')
+  admin,
+  @JsonValue('MINOR')
+  minor,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
 enum SocialImageStyleEnum {
   @JsonValue('BUBBLE')
   bubble,
@@ -3598,6 +4972,17 @@ enum SocialImageStyleEnum {
   sticker,
   @JsonValue('COLOR_HAND_DROWN')
   colorHandDrown,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
+enum AcademicLevel {
+  @JsonValue('PRIMARY')
+  primary,
+  @JsonValue('HIGH_SCHOOL')
+  highSchool,
+  @JsonValue('UNIVERSITY')
+  university,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -3916,6 +5301,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -3961,6 +5353,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -4064,6 +5463,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -4109,6 +5515,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -4221,6 +5634,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -4266,6 +5686,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -4434,6 +5861,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -4484,6 +5918,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -4509,28 +5950,42 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -4639,6 +6094,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -4684,6 +6146,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -4755,6 +6224,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -4800,6 +6276,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -5007,6 +6490,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -5057,6 +6547,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -5082,28 +6579,42 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -5212,6 +6723,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -5257,6 +6775,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -5328,6 +6853,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -5373,6 +6905,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -5580,6 +7119,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -5630,6 +7176,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -5655,28 +7208,42 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -5785,6 +7352,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -5830,6 +7404,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -5901,6 +7482,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -5946,6 +7534,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -6121,6 +7716,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -6166,6 +7768,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -6221,6 +7830,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -6271,6 +7887,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -6316,6 +7939,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -6379,6 +8009,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -6424,6 +8061,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -6479,6 +8123,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -6529,6 +8180,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -6574,6 +8232,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -6725,6 +8390,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -6770,6 +8442,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -6825,6 +8504,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -6875,6 +8561,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -6920,6 +8613,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -6983,6 +8683,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -7028,6 +8735,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -7083,6 +8797,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -7133,6 +8854,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -7178,6 +8906,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -7402,6 +9137,860 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_QUERY_DOCUMENT = DocumentNode(definitions: [
                     ]),
                   ),
                 ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'education'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'level'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'tags'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'from'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'to'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'graduated'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'work'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'company'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'position'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'city'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'adminName'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'capital'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'population'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'country'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'dialCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'tags'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'from'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'to'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'current'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'lived'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'adminName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'capital'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'population'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'country'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'dialCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'hobbies'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'interests'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
               ),
             ]),
           ),
@@ -7822,6 +10411,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -7867,6 +10463,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -7970,6 +10573,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -8015,6 +10625,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -8127,6 +10744,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -8172,6 +10796,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -8340,6 +10971,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -8390,6 +11028,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -8415,28 +11060,42 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -8545,6 +11204,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -8590,6 +11256,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -8661,6 +11334,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -8706,6 +11386,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -8913,6 +11600,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -8963,6 +11657,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -8988,28 +11689,42 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -9118,6 +11833,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -9163,6 +11885,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -9234,6 +11963,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -9279,6 +12015,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -9486,6 +12229,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -9536,6 +12286,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -9561,28 +12318,42 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -9691,6 +12462,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -9736,6 +12514,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -9807,6 +12592,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -9852,6 +12644,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -10028,6 +12827,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -10074,6 +12880,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                           ),
                                           FieldNode(
                                             name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
                                             alias: null,
                                             arguments: [],
                                             directives: [],
@@ -10130,6 +12943,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -10181,6 +13001,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -10227,6 +13054,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                           ),
                                           FieldNode(
                                             name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
                                             alias: null,
                                             arguments: [],
                                             directives: [],
@@ -10291,6 +13125,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -10337,6 +13178,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                           ),
                                           FieldNode(
                                             name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
                                             alias: null,
                                             arguments: [],
                                             directives: [],
@@ -10393,6 +13241,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -10444,6 +13299,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -10490,6 +13352,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                           ),
                                           FieldNode(
                                             name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
                                             alias: null,
                                             arguments: [],
                                             directives: [],
@@ -10642,6 +13511,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -10688,6 +13564,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                           ),
                                           FieldNode(
                                             name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
                                             alias: null,
                                             arguments: [],
                                             directives: [],
@@ -10744,6 +13627,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -10795,6 +13685,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -10841,6 +13738,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                           ),
                                           FieldNode(
                                             name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
                                             alias: null,
                                             arguments: [],
                                             directives: [],
@@ -10905,6 +13809,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -10951,6 +13862,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                           ),
                                           FieldNode(
                                             name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
                                             alias: null,
                                             arguments: [],
                                             directives: [],
@@ -11007,6 +13925,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -11058,6 +13983,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -11104,6 +14036,13 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                                           ),
                                           FieldNode(
                                             name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
                                             alias: null,
                                             arguments: [],
                                             directives: [],
@@ -11329,6 +14268,860 @@ final GET_SUBSCRIBERS_TO_NEWSLETTER_PAGINATED_QUERY_DOCUMENT =
                       ),
                     ]),
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'education'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'level'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'tags'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'from'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'to'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'graduated'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'work'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'company'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'position'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'city'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'adminName'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'capital'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'population'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'country'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dialCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'tags'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'from'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'to'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'current'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lived'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'adminName'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'capital'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'population'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'country'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'dialCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'hobbies'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'interests'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -11499,42 +15292,39 @@ class GetNewslettersByExcelQuery extends GraphQLQuery<
 }
 
 @JsonSerializable(explicitToJson: true)
-class SendTicksendNewslettersBymailetsBymailArguments extends JsonSerializable
+class SendNewslettersBymailArguments extends JsonSerializable
     with EquatableMixin {
-  SendTicksendNewslettersBymailetsBymailArguments({
+  SendNewslettersBymailArguments({
     required this.target,
     this.searchString,
-    required this.email,
+    this.emails,
     required this.subject,
   });
 
   @override
-  factory SendTicksendNewslettersBymailetsBymailArguments.fromJson(
-          Map<String, dynamic> json) =>
-      _$SendTicksendNewslettersBymailetsBymailArgumentsFromJson(json);
+  factory SendNewslettersBymailArguments.fromJson(Map<String, dynamic> json) =>
+      _$SendNewslettersBymailArgumentsFromJson(json);
 
   late TargetACIInput target;
 
   final String? searchString;
 
-  late String email;
+  final List<String>? emails;
 
   late String subject;
 
   @override
-  List<Object?> get props => [target, searchString, email, subject];
+  List<Object?> get props => [target, searchString, emails, subject];
   @override
-  Map<String, dynamic> toJson() =>
-      _$SendTicksendNewslettersBymailetsBymailArgumentsToJson(this);
+  Map<String, dynamic> toJson() => _$SendNewslettersBymailArgumentsToJson(this);
 }
 
-final SEND_TICKSEND_NEWSLETTERS_BYMAILETS_BYMAIL_QUERY_DOCUMENT_OPERATION_NAME =
-    'sendTicksendNewslettersBymailetsBymail';
-final SEND_TICKSEND_NEWSLETTERS_BYMAILETS_BYMAIL_QUERY_DOCUMENT =
-    DocumentNode(definitions: [
+final SEND_NEWSLETTERS_BYMAIL_QUERY_DOCUMENT_OPERATION_NAME =
+    'sendNewslettersBymail';
+final SEND_NEWSLETTERS_BYMAIL_QUERY_DOCUMENT = DocumentNode(definitions: [
   OperationDefinitionNode(
     type: OperationType.query,
-    name: NameNode(value: 'sendTicksendNewslettersBymailetsBymail'),
+    name: NameNode(value: 'sendNewslettersBymail'),
     variableDefinitions: [
       VariableDefinitionNode(
         variable: VariableNode(name: NameNode(value: 'target')),
@@ -11555,10 +15345,13 @@ final SEND_TICKSEND_NEWSLETTERS_BYMAILETS_BYMAIL_QUERY_DOCUMENT =
         directives: [],
       ),
       VariableDefinitionNode(
-        variable: VariableNode(name: NameNode(value: 'email')),
-        type: NamedTypeNode(
-          name: NameNode(value: 'String'),
-          isNonNull: true,
+        variable: VariableNode(name: NameNode(value: 'emails')),
+        type: ListTypeNode(
+          type: NamedTypeNode(
+            name: NameNode(value: 'String'),
+            isNonNull: true,
+          ),
+          isNonNull: false,
         ),
         defaultValue: DefaultValueNode(value: null),
         directives: [],
@@ -11588,8 +15381,8 @@ final SEND_TICKSEND_NEWSLETTERS_BYMAILETS_BYMAIL_QUERY_DOCUMENT =
             value: VariableNode(name: NameNode(value: 'searchString')),
           ),
           ArgumentNode(
-            name: NameNode(value: 'email'),
-            value: VariableNode(name: NameNode(value: 'email')),
+            name: NameNode(value: 'emails'),
+            value: VariableNode(name: NameNode(value: 'emails')),
           ),
           ArgumentNode(
             name: NameNode(value: 'subject'),
@@ -11653,28 +15446,25 @@ final SEND_TICKSEND_NEWSLETTERS_BYMAILETS_BYMAIL_QUERY_DOCUMENT =
   )
 ]);
 
-class SendTicksendNewslettersBymailetsBymailQuery extends GraphQLQuery<
-    SendTicksendNewslettersBymailetsBymail$Query,
-    SendTicksendNewslettersBymailetsBymailArguments> {
-  SendTicksendNewslettersBymailetsBymailQuery({required this.variables});
+class SendNewslettersBymailQuery extends GraphQLQuery<
+    SendNewslettersBymail$Query, SendNewslettersBymailArguments> {
+  SendNewslettersBymailQuery({required this.variables});
 
   @override
-  final DocumentNode document =
-      SEND_TICKSEND_NEWSLETTERS_BYMAILETS_BYMAIL_QUERY_DOCUMENT;
+  final DocumentNode document = SEND_NEWSLETTERS_BYMAIL_QUERY_DOCUMENT;
 
   @override
   final String operationName =
-      SEND_TICKSEND_NEWSLETTERS_BYMAILETS_BYMAIL_QUERY_DOCUMENT_OPERATION_NAME;
+      SEND_NEWSLETTERS_BYMAIL_QUERY_DOCUMENT_OPERATION_NAME;
 
   @override
-  final SendTicksendNewslettersBymailetsBymailArguments variables;
+  final SendNewslettersBymailArguments variables;
 
   @override
   List<Object?> get props => [document, operationName, variables];
   @override
-  SendTicksendNewslettersBymailetsBymail$Query parse(
-          Map<String, dynamic> json) =>
-      SendTicksendNewslettersBymailetsBymail$Query.fromJson(json);
+  SendNewslettersBymail$Query parse(Map<String, dynamic> json) =>
+      SendNewslettersBymail$Query.fromJson(json);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -12007,6 +15797,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -12052,6 +15849,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -12155,6 +15959,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -12200,6 +16011,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -12312,6 +16130,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -12357,6 +16182,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -12525,6 +16357,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -12575,6 +16414,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -12600,28 +16446,42 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -12730,6 +16590,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -12775,6 +16642,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -12846,6 +16720,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -12891,6 +16772,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -13098,6 +16986,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -13148,6 +17043,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -13173,28 +17075,42 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -13303,6 +17219,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -13348,6 +17271,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -13419,6 +17349,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -13464,6 +17401,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -13671,6 +17615,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -13721,6 +17672,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -13746,28 +17704,42 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -13876,6 +17848,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -13921,6 +17900,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -13992,6 +17978,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -14037,6 +18030,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -14212,6 +18212,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -14257,6 +18264,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -14312,6 +18326,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -14362,6 +18383,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -14407,6 +18435,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -14470,6 +18505,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -14515,6 +18557,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -14570,6 +18619,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -14620,6 +18676,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -14665,6 +18728,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -14816,6 +18886,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -14861,6 +18938,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -14916,6 +19000,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -14966,6 +19057,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -15011,6 +19109,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -15074,6 +19179,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -15119,6 +19231,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -15174,6 +19293,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -15224,6 +19350,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -15269,6 +19402,13 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -15493,6 +19633,860 @@ final ADD_USER_TO_NEWS_LETTER_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     ]),
                   ),
                 ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'education'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'level'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'tags'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'from'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'to'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'graduated'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'work'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'company'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'position'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'city'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'adminName'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'capital'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'population'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'country'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'dialCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'tags'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'from'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'to'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'current'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'lived'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'adminName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'capital'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'population'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'country'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'dialCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'hobbies'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'interests'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
               ),
             ]),
           ),

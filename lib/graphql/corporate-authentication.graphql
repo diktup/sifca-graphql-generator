@@ -37,6 +37,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
       height
       x
       y
+      alt
     }
     pictures {
       baseUrl
@@ -45,6 +46,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
       height
       x
       y
+      alt
     }
     languages {
       id
@@ -60,6 +62,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -68,6 +71,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
     }
     nationality {
@@ -85,6 +89,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -93,6 +98,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
     }
     billingAddress {
@@ -119,6 +125,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -127,15 +134,18 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -151,6 +161,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -159,6 +170,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -170,6 +182,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -178,6 +191,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -212,6 +226,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -220,15 +235,18 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -244,6 +262,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -252,6 +271,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -263,6 +283,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -271,6 +292,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -305,6 +327,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -313,15 +336,18 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -337,6 +363,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -345,6 +372,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -356,6 +384,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -364,6 +393,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -393,6 +423,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -401,6 +432,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -409,6 +441,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -417,6 +450,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -425,6 +459,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -435,6 +470,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -443,6 +479,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -451,6 +488,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -459,6 +497,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -467,6 +506,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -493,6 +533,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -501,6 +542,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -509,6 +551,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -517,6 +560,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -525,6 +569,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -535,6 +580,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -543,6 +589,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -551,6 +598,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -559,6 +607,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -567,6 +616,7 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -607,12 +657,939 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
         authorizationCode
       }
     }
+    education {
+      level
+      name
+      description
+      tags
+      from
+      to
+      graduated
+    }
+    work {
+      company
+      position
+      description
+      city {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      tags
+      from
+      to
+      current
+    }
+    lived {
+      id
+      name
+      adminName
+      capital
+      population
+      ascii
+      lat
+      lng
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    hobbies
+    interests
   }
 }
 query loginForTarget($login: String, $phone: IPhoneInput, $password: String!, $target: TargetACIInput!) {
   loginForTarget(login: $login, phone: $phone, password: $password, target: $target) {
-    accessToken
     expiresIn
+    accessToken
+    user {
+      id
+      apps
+      email
+      roles
+      title
+      about
+      gender
+      locale
+      source
+      status
+      lastName
+      username
+      firstName
+      plugged
+      createdAt
+      updatedAt
+      isMailValid
+      dateOfBirth
+      phoneNumber
+      mobileTheme
+      placeOfBirth
+      maritalStatus
+      newsletterSubs
+      hasAutoGeneratedEmail
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      languages {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      nationality {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      billingAddress {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      shippingAddress {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      residentialAddress {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      chatContact {
+        name {
+          id
+          name
+          code
+          fontIcon
+          createdAt
+          updatedAt
+          images {
+            style
+            images {
+              svg {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              png {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
+          }
+        }
+        value
+      }
+      socialMedia {
+        name {
+          id
+          name
+          code
+          fontIcon
+          createdAt
+          updatedAt
+          images {
+            style
+            images {
+              svg {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              png {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
+          }
+        }
+        value
+      }
+      socialLoginData {
+        ooredoo {
+          id
+        }
+        facebook {
+          id
+          name
+          token
+          email
+          last_name
+          first_name
+        }
+        google {
+          sub
+          name
+          email
+          token
+          locale
+          picture
+          given_name
+          family_name
+          email_verified
+        }
+        apple {
+          email
+          status
+          givenName
+          familyName
+          identityToken
+          userIdentifier
+          authorizationCode
+        }
+      }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
+    }
   }
 }
 query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
@@ -656,6 +1633,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -664,6 +1642,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -679,6 +1658,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -687,6 +1667,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -704,6 +1685,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -712,6 +1694,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -738,6 +1721,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -746,15 +1730,18 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -770,6 +1757,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -778,6 +1766,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -789,6 +1778,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -797,6 +1787,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -831,6 +1822,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -839,15 +1831,18 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -863,6 +1858,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -871,6 +1867,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -882,6 +1879,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -890,6 +1888,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -924,6 +1923,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -932,15 +1932,18 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -956,6 +1959,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -964,6 +1968,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -975,6 +1980,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -983,6 +1989,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1012,6 +2019,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1020,6 +2028,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1028,6 +2037,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1036,6 +2046,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1044,6 +2055,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -1054,6 +2066,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1062,6 +2075,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1070,6 +2084,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1078,6 +2093,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1086,6 +2102,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -1112,6 +2129,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1120,6 +2138,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1128,6 +2147,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1136,6 +2156,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1144,6 +2165,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -1154,6 +2176,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1162,6 +2185,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1170,6 +2194,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1178,6 +2203,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1186,6 +2212,7 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -1226,6 +2253,140 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
   }
 }
@@ -1283,6 +2444,7 @@ query searchCorporateUsersByTarget(
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -1291,6 +2453,7 @@ query searchCorporateUsersByTarget(
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -1306,6 +2469,7 @@ query searchCorporateUsersByTarget(
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -1314,6 +2478,7 @@ query searchCorporateUsersByTarget(
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -1331,6 +2496,7 @@ query searchCorporateUsersByTarget(
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -1339,6 +2505,7 @@ query searchCorporateUsersByTarget(
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -1365,6 +2532,7 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1373,15 +2541,18 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1397,6 +2568,7 @@ query searchCorporateUsersByTarget(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1405,6 +2577,7 @@ query searchCorporateUsersByTarget(
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1416,6 +2589,7 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1424,6 +2598,7 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1458,6 +2633,7 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1466,15 +2642,18 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1490,6 +2669,7 @@ query searchCorporateUsersByTarget(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1498,6 +2678,7 @@ query searchCorporateUsersByTarget(
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1509,6 +2690,7 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1517,6 +2699,7 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1551,6 +2734,7 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1559,15 +2743,18 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1583,6 +2770,7 @@ query searchCorporateUsersByTarget(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1591,6 +2779,7 @@ query searchCorporateUsersByTarget(
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1602,6 +2791,7 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1610,6 +2800,7 @@ query searchCorporateUsersByTarget(
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1639,6 +2830,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1647,6 +2839,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1655,6 +2848,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1663,6 +2857,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1671,6 +2866,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -1681,6 +2877,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1689,6 +2886,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1697,6 +2895,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1705,6 +2904,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1713,6 +2913,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -1739,6 +2940,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1747,6 +2949,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1755,6 +2958,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1763,6 +2967,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1771,6 +2976,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -1781,6 +2987,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1789,6 +2996,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1797,6 +3005,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1805,6 +3014,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1813,6 +3023,7 @@ query searchCorporateUsersByTarget(
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -1853,6 +3064,140 @@ query searchCorporateUsersByTarget(
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
   }
 }
@@ -1872,7 +3217,7 @@ query sendCorporateUsersBymail(
   $status: [UserStatus!]
   $searchString: String
   $sortingField: String
-  $email: String!
+  $emails: [String!]
   $subject: String!
 ) {
   sendCorporateUsersBymail(
@@ -1880,7 +3225,7 @@ query sendCorporateUsersBymail(
     status: $status
     searchString: $searchString
     sortingField: $sortingField
-    email: $email
+    emails: $emails
     subject: $subject
   ) {
     accepted
@@ -1893,8 +3238,8 @@ query sendCorporateUsersBymail(
   }
 }
 
-mutation sendValidationEmailForTarget($target: TargetACIInput!) {
-  sendValidationEmailForTarget(target: $target) {
+mutation sendValidationEmailForTarget($target: TargetACIInput!, $email: String!, $subject: String!) {
+  sendValidationEmailForTarget(target: $target, email: $email, subject: $subject) {
     accepted
     rejected
     response
@@ -1902,6 +3247,801 @@ mutation sendValidationEmailForTarget($target: TargetACIInput!) {
     messageTime
     messageSize
     envelopeTime
+  }
+}
+mutation validateEmailForTarget($token: String!) {
+  validateEmailForTarget(token: $token) {
+    id
+    apps
+    email
+    roles
+    title
+    about
+    gender
+    locale
+    source
+    status
+    lastName
+    username
+    firstName
+    plugged
+    createdAt
+    updatedAt
+    isMailValid
+    dateOfBirth
+    phoneNumber
+    mobileTheme
+    placeOfBirth
+    maritalStatus
+    newsletterSubs
+    hasAutoGeneratedEmail
+    phone {
+      number
+      isValid
+      countryCode
+      validationNumber
+    }
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    pictures {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    languages {
+      id
+      name
+      code
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    nationality {
+      id
+      name
+      code
+      dialCode
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    billingAddress {
+      city
+      address
+      postCode
+      addressLine
+      location {
+        type
+        coordinates
+      }
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      state {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      owner {
+        name
+        phone {
+          number
+          countryCode
+        }
+      }
+    }
+    shippingAddress {
+      city
+      address
+      postCode
+      addressLine
+      location {
+        type
+        coordinates
+      }
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      state {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      owner {
+        name
+        phone {
+          number
+          countryCode
+        }
+      }
+    }
+    residentialAddress {
+      city
+      address
+      postCode
+      addressLine
+      location {
+        type
+        coordinates
+      }
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      state {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      owner {
+        name
+        phone {
+          number
+          countryCode
+        }
+      }
+    }
+    chatContact {
+      name {
+        id
+        name
+        code
+        fontIcon
+        createdAt
+        updatedAt
+        images {
+          style
+          images {
+            svg {
+              size48 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size96 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size144 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size240 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size480 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            png {
+              size48 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size96 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size144 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size240 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size480 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
+        }
+      }
+      value
+    }
+    socialMedia {
+      name {
+        id
+        name
+        code
+        fontIcon
+        createdAt
+        updatedAt
+        images {
+          style
+          images {
+            svg {
+              size48 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size96 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size144 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size240 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size480 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            png {
+              size48 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size96 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size144 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size240 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size480 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
+        }
+      }
+      value
+    }
+    socialLoginData {
+      ooredoo {
+        id
+      }
+      facebook {
+        id
+        name
+        token
+        email
+        last_name
+        first_name
+      }
+      google {
+        sub
+        name
+        email
+        token
+        locale
+        picture
+        given_name
+        family_name
+        email_verified
+      }
+      apple {
+        email
+        status
+        givenName
+        familyName
+        identityToken
+        userIdentifier
+        authorizationCode
+      }
+    }
+    education {
+      level
+      name
+      description
+      tags
+      from
+      to
+      graduated
+    }
+    work {
+      company
+      position
+      description
+      city {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      tags
+      from
+      to
+      current
+    }
+    lived {
+      id
+      name
+      adminName
+      capital
+      population
+      ascii
+      lat
+      lng
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    hobbies
+    interests
   }
 }
 mutation processWelcomeMailForTarget($token: String!, $password: String) {
@@ -1943,6 +4083,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
       height
       x
       y
+      alt
     }
     pictures {
       baseUrl
@@ -1951,6 +4092,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
       height
       x
       y
+      alt
     }
     languages {
       id
@@ -1966,6 +4108,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -1974,6 +4117,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
         height
         x
         y
+        alt
       }
     }
     nationality {
@@ -1991,6 +4135,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -1999,6 +4144,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
         height
         x
         y
+        alt
       }
     }
     billingAddress {
@@ -2025,6 +4171,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2033,15 +4180,18 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -2057,6 +4207,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2065,6 +4216,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -2076,6 +4228,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2084,6 +4237,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -2118,6 +4272,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2126,15 +4281,18 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -2150,6 +4308,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2158,6 +4317,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -2169,6 +4329,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2177,6 +4338,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -2211,6 +4373,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2219,15 +4382,18 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -2243,6 +4409,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2251,6 +4418,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -2262,6 +4430,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2270,6 +4439,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -2299,6 +4469,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -2307,6 +4478,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -2315,6 +4487,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -2323,6 +4496,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -2331,6 +4505,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -2341,6 +4516,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -2349,6 +4525,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -2357,6 +4534,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -2365,6 +4543,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -2373,6 +4552,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -2399,6 +4579,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -2407,6 +4588,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -2415,6 +4597,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -2423,6 +4606,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -2431,6 +4615,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -2441,6 +4626,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -2449,6 +4635,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -2457,6 +4644,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -2465,6 +4653,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -2473,6 +4662,7 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -2513,6 +4703,140 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
         authorizationCode
       }
     }
+    education {
+      level
+      name
+      description
+      tags
+      from
+      to
+      graduated
+    }
+    work {
+      company
+      position
+      description
+      city {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      tags
+      from
+      to
+      current
+    }
+    lived {
+      id
+      name
+      adminName
+      capital
+      population
+      ascii
+      lat
+      lng
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    hobbies
+    interests
   }
 }
 mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACIInput!) {
@@ -2554,6 +4878,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
       height
       x
       y
+      alt
     }
     pictures {
       baseUrl
@@ -2562,6 +4887,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
       height
       x
       y
+      alt
     }
     languages {
       id
@@ -2577,6 +4903,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -2585,6 +4912,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
         height
         x
         y
+        alt
       }
     }
     nationality {
@@ -2602,6 +4930,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -2610,6 +4939,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
         height
         x
         y
+        alt
       }
     }
     billingAddress {
@@ -2636,6 +4966,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2644,15 +4975,18 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -2668,6 +5002,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2676,6 +5011,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -2687,6 +5023,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2695,6 +5032,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -2729,6 +5067,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2737,15 +5076,18 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -2761,6 +5103,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2769,6 +5112,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -2780,6 +5124,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2788,6 +5133,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -2822,6 +5168,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2830,15 +5177,18 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -2854,6 +5204,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2862,6 +5213,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -2873,6 +5225,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2881,6 +5234,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -2910,6 +5264,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -2918,6 +5273,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -2926,6 +5282,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -2934,6 +5291,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -2942,6 +5300,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -2952,6 +5311,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -2960,6 +5320,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -2968,6 +5329,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -2976,6 +5338,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -2984,6 +5347,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -3010,6 +5374,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -3018,6 +5383,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -3026,6 +5392,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -3034,6 +5401,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -3042,6 +5410,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -3052,6 +5421,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -3060,6 +5430,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -3068,6 +5439,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -3076,6 +5448,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -3084,6 +5457,7 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -3124,6 +5498,140 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
         authorizationCode
       }
     }
+    education {
+      level
+      name
+      description
+      tags
+      from
+      to
+      graduated
+    }
+    work {
+      company
+      position
+      description
+      city {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      tags
+      from
+      to
+      current
+    }
+    lived {
+      id
+      name
+      adminName
+      capital
+      population
+      ascii
+      lat
+      lng
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    hobbies
+    interests
   }
 }
 mutation resetPasswordForTarget($password: String!, $token: String!, $target: TargetACIInput!) {
@@ -3165,6 +5673,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
       height
       x
       y
+      alt
     }
     pictures {
       baseUrl
@@ -3173,6 +5682,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
       height
       x
       y
+      alt
     }
     languages {
       id
@@ -3188,6 +5698,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -3196,6 +5707,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
         height
         x
         y
+        alt
       }
     }
     nationality {
@@ -3213,6 +5725,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -3221,6 +5734,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
         height
         x
         y
+        alt
       }
     }
     billingAddress {
@@ -3247,6 +5761,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3255,15 +5770,18 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -3279,6 +5797,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3287,6 +5806,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -3298,6 +5818,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3306,6 +5827,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -3340,6 +5862,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3348,15 +5871,18 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -3372,6 +5898,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3380,6 +5907,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -3391,6 +5919,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3399,6 +5928,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -3433,6 +5963,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3441,15 +5972,18 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -3465,6 +5999,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3473,6 +6008,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -3484,6 +6020,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3492,6 +6029,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -3521,6 +6059,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -3529,6 +6068,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -3537,6 +6077,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -3545,6 +6086,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -3553,6 +6095,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -3563,6 +6106,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -3571,6 +6115,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -3579,6 +6124,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -3587,6 +6133,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -3595,6 +6142,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -3621,6 +6169,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -3629,6 +6178,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -3637,6 +6187,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -3645,6 +6196,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -3653,6 +6205,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -3663,6 +6216,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -3671,6 +6225,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -3679,6 +6234,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -3687,6 +6243,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -3695,6 +6252,7 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -3735,6 +6293,140 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
         authorizationCode
       }
     }
+    education {
+      level
+      name
+      description
+      tags
+      from
+      to
+      graduated
+    }
+    work {
+      company
+      position
+      description
+      city {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      tags
+      from
+      to
+      current
+    }
+    lived {
+      id
+      name
+      adminName
+      capital
+      population
+      ascii
+      lat
+      lng
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    hobbies
+    interests
   }
 }
 mutation sendForgotPasswordMailToTarget($email: String!, $target: TargetACIInput!, $subject: String) {
@@ -3750,8 +6442,801 @@ mutation sendForgotPasswordMailToTarget($email: String!, $target: TargetACIInput
 }
 mutation registerForTarget($input: UserWithTargetInput!) {
   registerForTarget(input: $input) {
-    accessToken
     expiresIn
+    accessToken
+    user {
+      id
+      apps
+      email
+      roles
+      title
+      about
+      gender
+      locale
+      source
+      status
+      lastName
+      username
+      firstName
+      plugged
+      createdAt
+      updatedAt
+      isMailValid
+      dateOfBirth
+      phoneNumber
+      mobileTheme
+      placeOfBirth
+      maritalStatus
+      newsletterSubs
+      hasAutoGeneratedEmail
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      languages {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      nationality {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      billingAddress {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      shippingAddress {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      residentialAddress {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      chatContact {
+        name {
+          id
+          name
+          code
+          fontIcon
+          createdAt
+          updatedAt
+          images {
+            style
+            images {
+              svg {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              png {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
+          }
+        }
+        value
+      }
+      socialMedia {
+        name {
+          id
+          name
+          code
+          fontIcon
+          createdAt
+          updatedAt
+          images {
+            style
+            images {
+              svg {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              png {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
+          }
+        }
+        value
+      }
+      socialLoginData {
+        ooredoo {
+          id
+        }
+        facebook {
+          id
+          name
+          token
+          email
+          last_name
+          first_name
+        }
+        google {
+          sub
+          name
+          email
+          token
+          locale
+          picture
+          given_name
+          family_name
+          email_verified
+        }
+        apple {
+          email
+          status
+          givenName
+          familyName
+          identityToken
+          userIdentifier
+          authorizationCode
+        }
+      }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
+    }
   }
 }
 mutation addUserForTarget($input: UserWithTargetInput!) {
@@ -3793,6 +7278,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
       height
       x
       y
+      alt
     }
     pictures {
       baseUrl
@@ -3801,6 +7287,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
       height
       x
       y
+      alt
     }
     languages {
       id
@@ -3816,6 +7303,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -3824,6 +7312,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
         height
         x
         y
+        alt
       }
     }
     nationality {
@@ -3841,6 +7330,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
         height
         x
         y
+        alt
       }
       flagWide {
         baseUrl
@@ -3849,6 +7339,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
         height
         x
         y
+        alt
       }
     }
     billingAddress {
@@ -3875,6 +7366,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3883,15 +7375,18 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -3907,6 +7402,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3915,6 +7411,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -3926,6 +7423,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3934,6 +7432,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -3968,6 +7467,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3976,15 +7476,18 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -4000,6 +7503,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4008,6 +7512,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -4019,6 +7524,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -4027,6 +7533,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -4061,6 +7568,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -4069,15 +7577,18 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -4093,6 +7604,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4101,6 +7613,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -4112,6 +7625,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -4120,6 +7634,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -4149,6 +7664,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -4157,6 +7673,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -4165,6 +7682,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -4173,6 +7691,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -4181,6 +7700,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -4191,6 +7711,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -4199,6 +7720,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -4207,6 +7729,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -4215,6 +7738,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -4223,6 +7747,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -4249,6 +7774,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -4257,6 +7783,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -4265,6 +7792,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -4273,6 +7801,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -4281,6 +7810,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -4291,6 +7821,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -4299,6 +7830,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -4307,6 +7839,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -4315,6 +7848,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -4323,6 +7857,7 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -4363,6 +7898,140 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
         authorizationCode
       }
     }
+    education {
+      level
+      name
+      description
+      tags
+      from
+      to
+      graduated
+    }
+    work {
+      company
+      position
+      description
+      city {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      tags
+      from
+      to
+      current
+    }
+    lived {
+      id
+      name
+      adminName
+      capital
+      population
+      ascii
+      lat
+      lng
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    hobbies
+    interests
   }
 }
 
@@ -4408,6 +8077,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -4416,6 +8086,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -4431,6 +8102,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -4439,6 +8111,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -4456,6 +8129,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -4464,6 +8138,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -4490,6 +8165,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4498,15 +8174,18 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -4522,6 +8201,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4530,6 +8210,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -4541,6 +8222,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4549,6 +8231,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -4583,6 +8266,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4591,15 +8275,18 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -4615,6 +8302,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4623,6 +8311,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -4634,6 +8323,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4642,6 +8332,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -4676,6 +8367,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4684,15 +8376,18 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -4708,6 +8403,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4716,6 +8412,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -4727,6 +8424,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4735,6 +8433,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -4764,6 +8463,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -4772,6 +8472,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -4780,6 +8481,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -4788,6 +8490,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -4796,6 +8499,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -4806,6 +8510,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -4814,6 +8519,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -4822,6 +8528,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -4830,6 +8537,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -4838,6 +8546,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -4864,6 +8573,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -4872,6 +8582,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -4880,6 +8591,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -4888,6 +8600,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -4896,6 +8609,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -4906,6 +8620,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -4914,6 +8629,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -4922,6 +8638,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -4930,6 +8647,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -4938,6 +8656,7 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -4978,6 +8697,140 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
   }
 }

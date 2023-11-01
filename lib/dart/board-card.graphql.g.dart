@@ -1901,10 +1901,14 @@ GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$Manufacturer
         GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
@@ -1935,10 +1939,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -1946,6 +1952,13 @@ Map<String, dynamic>
   writeNotNull('flagWide', instance.flagWide?.toJson());
   return val;
 }
+
+const _$StateCapitalEnumEnumMap = {
+  StateCapitalEnum.primary: 'PRIMARY',
+  StateCapitalEnum.admin: 'ADMIN',
+  StateCapitalEnum.minor: 'MINOR',
+  StateCapitalEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
 
 GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -2339,11 +2352,14 @@ GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$Manufacturer
             Map<String, dynamic> json) =>
         GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
@@ -2365,7 +2381,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -2374,10 +2389,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -2735,10 +2752,14 @@ GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$Manufacturer
         GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCards$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -2769,10 +2790,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -4867,10 +4890,14 @@ GetBoardCards$Query$BoardCardType$CompanyType$FullAddressType$StateType
         GetBoardCards$Query$BoardCardType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCards$Query$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
@@ -4901,10 +4928,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -5262,10 +5291,14 @@ GetBoardCards$Query$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderT
         GetBoardCards$Query$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCards$Query$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -5296,10 +5329,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -8121,10 +8156,14 @@ GetBoardCardsByBoardList$Query$BoardCardType$BarcodeType$ProductType$BrandType$M
         GetBoardCardsByBoardList$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCardsByBoardList$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
@@ -8155,10 +8194,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -8559,11 +8600,14 @@ GetBoardCardsByBoardList$Query$BoardCardType$BarcodeType$ProductType$BrandType$M
             Map<String, dynamic> json) =>
         GetBoardCardsByBoardList$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCardsByBoardList$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
@@ -8585,7 +8629,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -8594,10 +8637,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -8955,10 +9000,14 @@ GetBoardCardsByBoardList$Query$BoardCardType$BarcodeType$ProductType$BrandType$M
         GetBoardCardsByBoardList$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCardsByBoardList$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -8989,10 +9038,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -11040,10 +11091,14 @@ GetBoardCardsByBoardList$Query$BoardCardType$CompanyType$FullAddressType$StateTy
         GetBoardCardsByBoardList$Query$BoardCardType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCardsByBoardList$Query$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
@@ -11074,10 +11129,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -11435,10 +11492,14 @@ GetBoardCardsByBoardList$Query$BoardCardType$CompanyType$BankDetailsType$BankDet
         GetBoardCardsByBoardList$Query$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCardsByBoardList$Query$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -11469,10 +11530,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -14282,10 +14345,14 @@ GetBoardCard$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerT
         GetBoardCard$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCard$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
@@ -14316,10 +14383,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -14720,11 +14789,14 @@ GetBoardCard$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerT
             Map<String, dynamic> json) =>
         GetBoardCard$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCard$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
@@ -14746,7 +14818,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -14755,10 +14826,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -15116,10 +15189,14 @@ GetBoardCard$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerT
         GetBoardCard$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCard$Query$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -15150,10 +15227,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -17192,10 +17271,14 @@ GetBoardCard$Query$BoardCardType$CompanyType$FullAddressType$StateType
         GetBoardCard$Query$BoardCardType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCard$Query$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
@@ -17226,10 +17309,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -17586,10 +17671,14 @@ GetBoardCard$Query$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderTy
         GetBoardCard$Query$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCard$Query$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -17620,10 +17709,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -20426,11 +20517,14 @@ GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardTyp
             Map<String, dynamic> json) =>
         GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
@@ -20452,7 +20546,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -20461,10 +20554,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -20866,10 +20961,14 @@ GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardTyp
         GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
@@ -20900,10 +20999,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -21261,10 +21362,14 @@ GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardTyp
         GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -21295,10 +21400,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -23349,10 +23456,14 @@ GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardTyp
         GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
@@ -23383,10 +23494,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -23744,10 +23857,14 @@ GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardTyp
         GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBoardCardsByBoardWithFilterPaginated$Query$BoardCardPaginateType$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -23778,10 +23895,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -26945,10 +27064,14 @@ CreateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Manufac
         CreateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : CreateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
@@ -26979,10 +27102,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -27383,11 +27508,14 @@ CreateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Manufac
             Map<String, dynamic> json) =>
         CreateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : CreateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
@@ -27409,7 +27537,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -27418,10 +27545,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -27779,10 +27908,14 @@ CreateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Manufac
         CreateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : CreateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -27813,10 +27946,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -29860,10 +29995,14 @@ CreateBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType
         CreateBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : CreateBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
@@ -29894,10 +30033,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -30255,10 +30396,14 @@ CreateBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHo
         CreateBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : CreateBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -30289,10 +30434,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -33176,10 +33323,14 @@ ReorderBoardCards$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Manuf
         ReorderBoardCards$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : ReorderBoardCards$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
@@ -33210,10 +33361,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -33614,11 +33767,14 @@ ReorderBoardCards$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Manuf
             Map<String, dynamic> json) =>
         ReorderBoardCards$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : ReorderBoardCards$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
@@ -33640,7 +33796,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -33649,10 +33804,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -34010,10 +34167,14 @@ ReorderBoardCards$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Manuf
         ReorderBoardCards$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : ReorderBoardCards$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -34044,10 +34205,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -36095,10 +36258,14 @@ ReorderBoardCards$Mutation$BoardCardType$CompanyType$FullAddressType$StateType
         ReorderBoardCards$Mutation$BoardCardType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : ReorderBoardCards$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
@@ -36129,10 +36296,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -36490,10 +36659,14 @@ ReorderBoardCards$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetails
         ReorderBoardCards$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : ReorderBoardCards$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -36524,10 +36697,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -39337,10 +39512,14 @@ UpdateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Manufac
         UpdateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
@@ -39371,10 +39550,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -39775,11 +39956,14 @@ UpdateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Manufac
             Map<String, dynamic> json) =>
         UpdateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
@@ -39801,7 +39985,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -39810,10 +39993,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -40171,10 +40356,14 @@ UpdateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Manufac
         UpdateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -40205,10 +40394,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -42252,10 +42443,14 @@ UpdateBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType
         UpdateBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
@@ -42286,10 +42481,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -42647,10 +42844,14 @@ UpdateBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHo
         UpdateBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -42681,10 +42882,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -45497,10 +45700,14 @@ UpdateBoardCardList$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Man
         UpdateBoardCardList$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBoardCardList$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
@@ -45531,10 +45738,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -45935,11 +46144,14 @@ UpdateBoardCardList$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Man
             Map<String, dynamic> json) =>
         UpdateBoardCardList$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBoardCardList$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
@@ -45961,7 +46173,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -45970,10 +46181,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -46331,10 +46544,14 @@ UpdateBoardCardList$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$Man
         UpdateBoardCardList$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBoardCardList$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -46365,10 +46582,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -48416,10 +48635,14 @@ UpdateBoardCardList$Mutation$BoardCardType$CompanyType$FullAddressType$StateType
         UpdateBoardCardList$Mutation$BoardCardType$CompanyType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBoardCardList$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
@@ -48450,10 +48673,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -48811,10 +49036,14 @@ UpdateBoardCardList$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetai
         UpdateBoardCardList$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBoardCardList$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -48845,10 +49074,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();

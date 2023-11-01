@@ -28,6 +28,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -36,6 +37,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -44,6 +46,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -52,6 +55,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -60,6 +64,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -70,6 +75,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -78,6 +84,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -86,6 +93,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -94,6 +102,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -102,6 +111,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -128,6 +138,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -136,6 +147,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -144,6 +156,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -152,6 +165,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -160,6 +174,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -170,6 +185,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -178,6 +194,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -186,6 +203,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -194,6 +212,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -202,6 +221,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -218,6 +238,7 @@ query getCompanyContacts {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -226,6 +247,7 @@ query getCompanyContacts {
         height
         x
         y
+        alt
       }
     }
     tags
@@ -254,6 +276,7 @@ query getCompanyContacts {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -262,15 +285,18 @@ query getCompanyContacts {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -286,6 +312,7 @@ query getCompanyContacts {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -294,6 +321,7 @@ query getCompanyContacts {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -305,6 +333,7 @@ query getCompanyContacts {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -313,6 +342,7 @@ query getCompanyContacts {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -324,6 +354,7 @@ query getCompanyContacts {
       }
     }
     leadScore
+    externalId
     company {
       id
       name
@@ -337,6 +368,7 @@ query getCompanyContacts {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -345,6 +377,7 @@ query getCompanyContacts {
           height
           x
           y
+          alt
         }
       }
       address {
@@ -371,6 +404,7 @@ query getCompanyContacts {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -379,15 +413,18 @@ query getCompanyContacts {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -403,6 +440,7 @@ query getCompanyContacts {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -411,6 +449,7 @@ query getCompanyContacts {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -422,6 +461,7 @@ query getCompanyContacts {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -430,6 +470,7 @@ query getCompanyContacts {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -474,6 +515,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -482,15 +524,18 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -506,6 +551,7 @@ query getCompanyContacts {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -514,6 +560,7 @@ query getCompanyContacts {
                   height
                   x
                   y
+                  alt
                 }
               }
               createdAt
@@ -525,6 +572,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -533,6 +581,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
             }
             owner {
@@ -559,6 +608,7 @@ query getCompanyContacts {
               height
               x
               y
+              alt
             }
             png {
               default {
@@ -568,6 +618,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size16 {
                 baseUrl
@@ -576,6 +627,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size24 {
                 baseUrl
@@ -584,6 +636,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size32 {
                 baseUrl
@@ -592,6 +645,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size48 {
                 baseUrl
@@ -600,6 +654,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size64 {
                 baseUrl
@@ -608,6 +663,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size128 {
                 baseUrl
@@ -616,6 +672,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size256 {
                 baseUrl
@@ -624,6 +681,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
               size512 {
                 baseUrl
@@ -632,6 +690,7 @@ query getCompanyContacts {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -639,6 +698,7 @@ query getCompanyContacts {
           createdAt
           updatedAt
         }
+        externalId
         createdAt
         updatedAt
       }
@@ -654,6 +714,7 @@ query getCompanyContacts {
       }
       logistic
       tags
+      externalId
       createdAt
       updatedAt
     }
@@ -691,6 +752,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -699,6 +761,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -707,6 +770,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -715,6 +779,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -723,6 +788,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -733,6 +799,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -741,6 +808,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -749,6 +817,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -757,6 +826,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -765,6 +835,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -791,6 +862,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -799,6 +871,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -807,6 +880,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -815,6 +889,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -823,6 +898,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -833,6 +909,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -841,6 +918,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -849,6 +927,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -857,6 +936,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -865,6 +945,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -881,6 +962,7 @@ query companyContact($id: ID!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -889,6 +971,7 @@ query companyContact($id: ID!) {
         height
         x
         y
+        alt
       }
     }
     tags
@@ -917,6 +1000,7 @@ query companyContact($id: ID!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -925,15 +1009,18 @@ query companyContact($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -949,6 +1036,7 @@ query companyContact($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -957,6 +1045,7 @@ query companyContact($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -968,6 +1057,7 @@ query companyContact($id: ID!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -976,6 +1066,7 @@ query companyContact($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -987,6 +1078,7 @@ query companyContact($id: ID!) {
       }
     }
     leadScore
+    externalId
     company {
       id
       name
@@ -1000,6 +1092,7 @@ query companyContact($id: ID!) {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -1008,6 +1101,7 @@ query companyContact($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       address {
@@ -1034,6 +1128,7 @@ query companyContact($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1042,15 +1137,18 @@ query companyContact($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1066,6 +1164,7 @@ query companyContact($id: ID!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1074,6 +1173,7 @@ query companyContact($id: ID!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1085,6 +1185,7 @@ query companyContact($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1093,6 +1194,7 @@ query companyContact($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1137,6 +1239,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -1145,15 +1248,18 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -1169,6 +1275,7 @@ query companyContact($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -1177,6 +1284,7 @@ query companyContact($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               createdAt
@@ -1188,6 +1296,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -1196,6 +1305,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             owner {
@@ -1222,6 +1332,7 @@ query companyContact($id: ID!) {
               height
               x
               y
+              alt
             }
             png {
               default {
@@ -1231,6 +1342,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size16 {
                 baseUrl
@@ -1239,6 +1351,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size24 {
                 baseUrl
@@ -1247,6 +1360,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size32 {
                 baseUrl
@@ -1255,6 +1369,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size48 {
                 baseUrl
@@ -1263,6 +1378,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size64 {
                 baseUrl
@@ -1271,6 +1387,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size128 {
                 baseUrl
@@ -1279,6 +1396,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size256 {
                 baseUrl
@@ -1287,6 +1405,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               size512 {
                 baseUrl
@@ -1295,6 +1414,7 @@ query companyContact($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -1302,6 +1422,7 @@ query companyContact($id: ID!) {
           createdAt
           updatedAt
         }
+        externalId
         createdAt
         updatedAt
       }
@@ -1317,6 +1438,7 @@ query companyContact($id: ID!) {
       }
       logistic
       tags
+      externalId
       createdAt
       updatedAt
     }
@@ -1354,6 +1476,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -1362,6 +1485,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -1370,6 +1494,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -1378,6 +1503,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -1386,6 +1512,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -1396,6 +1523,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -1404,6 +1532,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -1412,6 +1541,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -1420,6 +1550,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -1428,6 +1559,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -1454,6 +1586,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -1462,6 +1595,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -1470,6 +1604,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -1478,6 +1613,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -1486,6 +1622,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -1496,6 +1633,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -1504,6 +1642,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -1512,6 +1651,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -1520,6 +1660,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -1528,6 +1669,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -1544,6 +1686,7 @@ query getCompanyContactsByCompany($company: ID!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -1552,6 +1695,7 @@ query getCompanyContactsByCompany($company: ID!) {
         height
         x
         y
+        alt
       }
     }
     tags
@@ -1580,6 +1724,7 @@ query getCompanyContactsByCompany($company: ID!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -1588,15 +1733,18 @@ query getCompanyContactsByCompany($company: ID!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -1612,6 +1760,7 @@ query getCompanyContactsByCompany($company: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1620,6 +1769,7 @@ query getCompanyContactsByCompany($company: ID!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -1631,6 +1781,7 @@ query getCompanyContactsByCompany($company: ID!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -1639,6 +1790,7 @@ query getCompanyContactsByCompany($company: ID!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -1650,6 +1802,7 @@ query getCompanyContactsByCompany($company: ID!) {
       }
     }
     leadScore
+    externalId
     company {
       id
       name
@@ -1663,6 +1816,7 @@ query getCompanyContactsByCompany($company: ID!) {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -1671,6 +1825,7 @@ query getCompanyContactsByCompany($company: ID!) {
           height
           x
           y
+          alt
         }
       }
       address {
@@ -1697,6 +1852,7 @@ query getCompanyContactsByCompany($company: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1705,15 +1861,18 @@ query getCompanyContactsByCompany($company: ID!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1729,6 +1888,7 @@ query getCompanyContactsByCompany($company: ID!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1737,6 +1897,7 @@ query getCompanyContactsByCompany($company: ID!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1748,6 +1909,7 @@ query getCompanyContactsByCompany($company: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1756,6 +1918,7 @@ query getCompanyContactsByCompany($company: ID!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1800,6 +1963,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -1808,15 +1972,18 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -1832,6 +1999,7 @@ query getCompanyContactsByCompany($company: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -1840,6 +2008,7 @@ query getCompanyContactsByCompany($company: ID!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               createdAt
@@ -1851,6 +2020,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -1859,6 +2029,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             owner {
@@ -1885,6 +2056,7 @@ query getCompanyContactsByCompany($company: ID!) {
               height
               x
               y
+              alt
             }
             png {
               default {
@@ -1894,6 +2066,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size16 {
                 baseUrl
@@ -1902,6 +2075,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size24 {
                 baseUrl
@@ -1910,6 +2084,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size32 {
                 baseUrl
@@ -1918,6 +2093,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size48 {
                 baseUrl
@@ -1926,6 +2102,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size64 {
                 baseUrl
@@ -1934,6 +2111,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size128 {
                 baseUrl
@@ -1942,6 +2120,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size256 {
                 baseUrl
@@ -1950,6 +2129,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
               size512 {
                 baseUrl
@@ -1958,6 +2138,7 @@ query getCompanyContactsByCompany($company: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -1965,6 +2146,7 @@ query getCompanyContactsByCompany($company: ID!) {
           createdAt
           updatedAt
         }
+        externalId
         createdAt
         updatedAt
       }
@@ -1980,6 +2162,7 @@ query getCompanyContactsByCompany($company: ID!) {
       }
       logistic
       tags
+      externalId
       createdAt
       updatedAt
     }
@@ -1987,8 +2170,8 @@ query getCompanyContactsByCompany($company: ID!) {
     updatedAt
   }
 }
-query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: PaginationInput) {
-  getCompanyContactsByCompanyPaginated(company: $company, pagination: $pagination) {
+query getCompanyContactsByCompanyPaginated($company: ID!, $searchString: String, $pagination: PaginationInput) {
+  getCompanyContactsByCompanyPaginated(company: $company, searchString: $searchString, pagination: $pagination) {
     count
     isLast
     objects {
@@ -2020,6 +2203,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2028,6 +2212,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2036,6 +2221,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2044,6 +2230,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2052,6 +2239,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -2062,6 +2250,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2070,6 +2259,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2078,6 +2268,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2086,6 +2277,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2094,6 +2286,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -2120,6 +2313,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2128,6 +2322,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2136,6 +2331,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2144,6 +2340,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2152,6 +2349,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -2162,6 +2360,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2170,6 +2369,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2178,6 +2378,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2186,6 +2387,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2194,6 +2396,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -2210,6 +2413,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -2218,6 +2422,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
           height
           x
           y
+          alt
         }
       }
       tags
@@ -2246,6 +2451,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2254,15 +2460,18 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2278,6 +2487,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2286,6 +2496,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2297,6 +2508,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2305,6 +2517,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2316,6 +2529,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
         }
       }
       leadScore
+      externalId
       company {
         id
         name
@@ -2329,6 +2543,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -2337,6 +2552,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
             height
             x
             y
+            alt
           }
         }
         address {
@@ -2363,6 +2579,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2371,15 +2588,19 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -2395,6 +2616,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -2403,6 +2625,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -2414,6 +2637,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2422,6 +2646,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -2466,6 +2691,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -2474,15 +2700,18 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
               }
               state {
                 id
                 name
-                code
-                created
-                surface
-                dialCode
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
                 country {
                   id
                   name
@@ -2498,6 +2727,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                     height
                     x
                     y
+                    alt
                   }
                   flagWide {
                     baseUrl
@@ -2506,6 +2736,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                     height
                     x
                     y
+                    alt
                   }
                 }
                 createdAt
@@ -2517,6 +2748,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -2525,6 +2757,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
               }
               owner {
@@ -2551,6 +2784,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                 height
                 x
                 y
+                alt
               }
               png {
                 default {
@@ -2560,6 +2794,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size16 {
                   baseUrl
@@ -2568,6 +2803,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size24 {
                   baseUrl
@@ -2576,6 +2812,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size32 {
                   baseUrl
@@ -2584,6 +2821,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size48 {
                   baseUrl
@@ -2592,6 +2830,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size64 {
                   baseUrl
@@ -2600,6 +2839,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size128 {
                   baseUrl
@@ -2608,6 +2848,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size256 {
                   baseUrl
@@ -2616,6 +2857,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
                 size512 {
                   baseUrl
@@ -2624,6 +2866,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -2631,6 +2874,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
             createdAt
             updatedAt
           }
+          externalId
           createdAt
           updatedAt
         }
@@ -2646,6 +2890,7 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $pagination: Paginatio
         }
         logistic
         tags
+        externalId
         createdAt
         updatedAt
       }
@@ -2687,6 +2932,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2695,6 +2941,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2703,6 +2950,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2711,6 +2959,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2719,6 +2968,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -2729,6 +2979,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2737,6 +2988,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2745,6 +2997,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2753,6 +3006,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2761,6 +3015,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -2787,6 +3042,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2795,6 +3051,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2803,6 +3060,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2811,6 +3069,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2819,6 +3078,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -2829,6 +3089,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2837,6 +3098,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2845,6 +3107,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2853,6 +3116,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2861,6 +3125,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -2877,6 +3142,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -2885,6 +3151,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
           height
           x
           y
+          alt
         }
       }
       tags
@@ -2913,6 +3180,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2921,15 +3189,18 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2945,6 +3216,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2953,6 +3225,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2964,6 +3237,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2972,6 +3246,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2983,6 +3258,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
         }
       }
       leadScore
+      externalId
       company {
         id
         name
@@ -2996,6 +3272,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -3004,6 +3281,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
             height
             x
             y
+            alt
           }
         }
         address {
@@ -3030,6 +3308,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3038,15 +3317,19 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -3062,6 +3345,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -3070,6 +3354,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -3081,6 +3366,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3089,6 +3375,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -3133,6 +3420,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -3141,15 +3429,18 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
               }
               state {
                 id
                 name
-                code
-                created
-                surface
-                dialCode
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
                 country {
                   id
                   name
@@ -3165,6 +3456,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                     height
                     x
                     y
+                    alt
                   }
                   flagWide {
                     baseUrl
@@ -3173,6 +3465,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                     height
                     x
                     y
+                    alt
                   }
                 }
                 createdAt
@@ -3184,6 +3477,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -3192,6 +3486,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
               }
               owner {
@@ -3218,6 +3513,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                 height
                 x
                 y
+                alt
               }
               png {
                 default {
@@ -3227,6 +3523,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size16 {
                   baseUrl
@@ -3235,6 +3532,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size24 {
                   baseUrl
@@ -3243,6 +3541,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size32 {
                   baseUrl
@@ -3251,6 +3550,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size48 {
                   baseUrl
@@ -3259,6 +3559,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size64 {
                   baseUrl
@@ -3267,6 +3568,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size128 {
                   baseUrl
@@ -3275,6 +3577,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size256 {
                   baseUrl
@@ -3283,6 +3586,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
                 size512 {
                   baseUrl
@@ -3291,6 +3595,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -3298,6 +3603,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
             createdAt
             updatedAt
           }
+          externalId
           createdAt
           updatedAt
         }
@@ -3313,6 +3619,7 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
         }
         logistic
         tags
+        externalId
         createdAt
         updatedAt
       }
@@ -3352,6 +3659,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -3360,6 +3668,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -3368,6 +3677,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -3376,6 +3686,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -3384,6 +3695,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -3394,6 +3706,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -3402,6 +3715,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -3410,6 +3724,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -3418,6 +3733,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -3426,6 +3742,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -3452,6 +3769,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -3460,6 +3778,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -3468,6 +3787,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -3476,6 +3796,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -3484,6 +3805,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -3494,6 +3816,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -3502,6 +3825,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -3510,6 +3834,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -3518,6 +3843,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -3526,6 +3852,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -3542,6 +3869,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -3550,6 +3878,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
         height
         x
         y
+        alt
       }
     }
     tags
@@ -3578,6 +3907,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3586,15 +3916,18 @@ mutation createCompanyContact($input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -3610,6 +3943,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3618,6 +3952,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -3629,6 +3964,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3637,6 +3973,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -3648,6 +3985,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
       }
     }
     leadScore
+    externalId
     company {
       id
       name
@@ -3661,6 +3999,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -3669,6 +4008,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
       }
       address {
@@ -3695,6 +4035,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3703,15 +4044,18 @@ mutation createCompanyContact($input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -3727,6 +4071,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3735,6 +4080,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -3746,6 +4092,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3754,6 +4101,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -3798,6 +4146,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -3806,15 +4155,18 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -3830,6 +4182,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -3838,6 +4191,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               createdAt
@@ -3849,6 +4203,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -3857,6 +4212,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             owner {
@@ -3883,6 +4239,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
               height
               x
               y
+              alt
             }
             png {
               default {
@@ -3892,6 +4249,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size16 {
                 baseUrl
@@ -3900,6 +4258,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size24 {
                 baseUrl
@@ -3908,6 +4267,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size32 {
                 baseUrl
@@ -3916,6 +4276,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size48 {
                 baseUrl
@@ -3924,6 +4285,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size64 {
                 baseUrl
@@ -3932,6 +4294,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size128 {
                 baseUrl
@@ -3940,6 +4303,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size256 {
                 baseUrl
@@ -3948,6 +4312,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size512 {
                 baseUrl
@@ -3956,6 +4321,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -3963,6 +4329,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
           createdAt
           updatedAt
         }
+        externalId
         createdAt
         updatedAt
       }
@@ -3978,6 +4345,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
       }
       logistic
       tags
+      externalId
       createdAt
       updatedAt
     }
@@ -3985,7 +4353,7 @@ mutation createCompanyContact($input: CompanyContactInput!) {
     updatedAt
   }
 }
-mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
+mutation updateCompanyContact($id: ID!, $input: CompanyContactUpdateInput!) {
   updateCompanyContact(id: $id, input: $input) {
     id
     firstName
@@ -4015,6 +4383,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -4023,6 +4392,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -4031,6 +4401,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -4039,6 +4410,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -4047,6 +4419,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -4057,6 +4430,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -4065,6 +4439,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -4073,6 +4448,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -4081,6 +4457,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -4089,6 +4466,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -4115,6 +4493,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -4123,6 +4502,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -4131,6 +4511,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -4139,6 +4520,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -4147,6 +4529,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             png {
@@ -4157,6 +4540,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size96 {
                 baseUrl
@@ -4165,6 +4549,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size144 {
                 baseUrl
@@ -4173,6 +4558,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size240 {
                 baseUrl
@@ -4181,6 +4567,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size480 {
                 baseUrl
@@ -4189,6 +4576,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
           }
@@ -4205,6 +4593,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -4213,6 +4602,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
         height
         x
         y
+        alt
       }
     }
     tags
@@ -4241,6 +4631,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -4249,15 +4640,18 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -4273,6 +4667,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4281,6 +4676,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -4292,6 +4688,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -4300,6 +4697,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -4311,6 +4709,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
       }
     }
     leadScore
+    externalId
     company {
       id
       name
@@ -4324,6 +4723,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -4332,6 +4732,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
           height
           x
           y
+          alt
         }
       }
       address {
@@ -4358,6 +4759,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4366,15 +4768,18 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -4390,6 +4795,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4398,6 +4804,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -4409,6 +4816,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4417,6 +4825,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -4461,6 +4870,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -4469,15 +4879,18 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -4493,6 +4906,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -4501,6 +4915,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               createdAt
@@ -4512,6 +4927,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -4520,6 +4936,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             owner {
@@ -4546,6 +4963,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
               height
               x
               y
+              alt
             }
             png {
               default {
@@ -4555,6 +4973,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size16 {
                 baseUrl
@@ -4563,6 +4982,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size24 {
                 baseUrl
@@ -4571,6 +4991,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size32 {
                 baseUrl
@@ -4579,6 +5000,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size48 {
                 baseUrl
@@ -4587,6 +5009,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size64 {
                 baseUrl
@@ -4595,6 +5018,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size128 {
                 baseUrl
@@ -4603,6 +5027,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size256 {
                 baseUrl
@@ -4611,6 +5036,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
               size512 {
                 baseUrl
@@ -4619,6 +5045,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -4626,6 +5053,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
           createdAt
           updatedAt
         }
+        externalId
         createdAt
         updatedAt
       }
@@ -4641,6 +5069,7 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactInput!) {
       }
       logistic
       tags
+      externalId
       createdAt
       updatedAt
     }

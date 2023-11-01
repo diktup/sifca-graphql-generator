@@ -27,8 +27,10 @@ class FindStateById$Query$StateType$CountryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindStateById$Query$StateType$CountryType$PictureTypeToJson(this);
@@ -99,8 +101,10 @@ class FindStateById$Query$StateType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindStateById$Query$StateType$PictureTypeToJson(this);
@@ -118,13 +122,18 @@ class FindStateById$Query$StateType extends JsonSerializable
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   FindStateById$Query$StateType$CountryType? country;
 
@@ -140,10 +149,12 @@ class FindStateById$Query$StateType extends JsonSerializable
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -190,8 +201,10 @@ class GetStates$Query$StateType$CountryType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetStates$Query$StateType$CountryType$PictureTypeToJson(this);
@@ -262,8 +275,10 @@ class GetStates$Query$StateType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetStates$Query$StateType$PictureTypeToJson(this);
@@ -280,13 +295,18 @@ class GetStates$Query$StateType extends JsonSerializable with EquatableMixin {
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetStates$Query$StateType$CountryType? country;
 
@@ -302,10 +322,12 @@ class GetStates$Query$StateType extends JsonSerializable with EquatableMixin {
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -353,8 +375,10 @@ class FindStatesPagination$Query$StatePaginatedType$StateType$CountryType$Pictur
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesPagination$Query$StatePaginatedType$StateType$CountryType$PictureTypeToJson(
@@ -431,8 +455,10 @@ class FindStatesPagination$Query$StatePaginatedType$StateType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesPagination$Query$StatePaginatedType$StateType$PictureTypeToJson(
@@ -452,13 +478,18 @@ class FindStatesPagination$Query$StatePaginatedType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   FindStatesPagination$Query$StatePaginatedType$StateType$CountryType? country;
 
@@ -475,10 +506,12 @@ class FindStatesPagination$Query$StatePaginatedType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -569,8 +602,10 @@ class FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType$PictureTypeToJson(
@@ -647,8 +682,10 @@ class FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureTypeToJson(
@@ -669,13 +706,18 @@ class FindStatesByCountryPagination$Query$StatePaginatedType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType?
       country;
@@ -694,10 +736,12 @@ class FindStatesByCountryPagination$Query$StatePaginatedType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -773,8 +817,10 @@ class CreateState$Mutation$StateType$CountryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateState$Mutation$StateType$CountryType$PictureTypeToJson(this);
@@ -845,8 +891,10 @@ class CreateState$Mutation$StateType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateState$Mutation$StateType$PictureTypeToJson(this);
@@ -864,13 +912,18 @@ class CreateState$Mutation$StateType extends JsonSerializable
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CreateState$Mutation$StateType$CountryType? country;
 
@@ -886,10 +939,12 @@ class CreateState$Mutation$StateType extends JsonSerializable
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -919,10 +974,12 @@ class CreateState$Mutation extends JsonSerializable with EquatableMixin {
 class StateInput extends JsonSerializable with EquatableMixin {
   StateInput({
     required this.name,
-    this.code,
-    required this.created,
-    required this.surface,
-    this.dialCode,
+    required this.adminName,
+    required this.capital,
+    required this.population,
+    required this.ascii,
+    required this.lat,
+    required this.lng,
     this.flagSquare,
     this.flagWide,
     this.country,
@@ -933,13 +990,18 @@ class StateInput extends JsonSerializable with EquatableMixin {
 
   late String name;
 
-  String? code;
+  late String adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  late StateCapitalEnum capital;
 
-  late String surface;
+  late double population;
 
-  String? dialCode;
+  late String ascii;
+
+  late double lat;
+
+  late double lng;
 
   PictureInput? flagSquare;
 
@@ -948,8 +1010,18 @@ class StateInput extends JsonSerializable with EquatableMixin {
   String? country;
 
   @override
-  List<Object?> get props =>
-      [name, code, created, surface, dialCode, flagSquare, flagWide, country];
+  List<Object?> get props => [
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        flagSquare,
+        flagWide,
+        country
+      ];
   @override
   Map<String, dynamic> toJson() => _$StateInputToJson(this);
 }
@@ -1010,8 +1082,10 @@ class UpdateState$Mutation$StateType$CountryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateState$Mutation$StateType$CountryType$PictureTypeToJson(this);
@@ -1082,8 +1156,10 @@ class UpdateState$Mutation$StateType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateState$Mutation$StateType$PictureTypeToJson(this);
@@ -1101,13 +1177,18 @@ class UpdateState$Mutation$StateType extends JsonSerializable
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   UpdateState$Mutation$StateType$CountryType? country;
 
@@ -1123,10 +1204,12 @@ class UpdateState$Mutation$StateType extends JsonSerializable
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -1185,6 +1268,17 @@ class DeleteState$Mutation extends JsonSerializable with EquatableMixin {
   List<Object?> get props => [deleteState];
   @override
   Map<String, dynamic> toJson() => _$DeleteState$MutationToJson(this);
+}
+
+enum StateCapitalEnum {
+  @JsonValue('PRIMARY')
+  primary,
+  @JsonValue('ADMIN')
+  admin,
+  @JsonValue('MINOR')
+  minor,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -1247,28 +1341,42 @@ final FIND_STATE_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'code'),
+            name: NameNode(value: 'adminName'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'created'),
+            name: NameNode(value: 'capital'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'surface'),
+            name: NameNode(value: 'population'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'dialCode'),
+            name: NameNode(value: 'ascii'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'lat'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'lng'),
             alias: null,
             arguments: [],
             directives: [],
@@ -1377,6 +1485,13 @@ final FIND_STATE_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -1422,6 +1537,13 @@ final FIND_STATE_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -1493,6 +1615,13 @@ final FIND_STATE_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
@@ -1538,6 +1667,13 @@ final FIND_STATE_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'y'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -1600,28 +1736,42 @@ final GET_STATES_QUERY_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'code'),
+            name: NameNode(value: 'adminName'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'created'),
+            name: NameNode(value: 'capital'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'surface'),
+            name: NameNode(value: 'population'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'dialCode'),
+            name: NameNode(value: 'ascii'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'lat'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'lng'),
             alias: null,
             arguments: [],
             directives: [],
@@ -1730,6 +1880,13 @@ final GET_STATES_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -1775,6 +1932,13 @@ final GET_STATES_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -1846,6 +2010,13 @@ final GET_STATES_QUERY_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
@@ -1891,6 +2062,13 @@ final GET_STATES_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'y'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -2002,28 +2180,42 @@ final FIND_STATES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'code'),
+                name: NameNode(value: 'adminName'),
                 alias: null,
                 arguments: [],
                 directives: [],
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'created'),
+                name: NameNode(value: 'capital'),
                 alias: null,
                 arguments: [],
                 directives: [],
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'surface'),
+                name: NameNode(value: 'population'),
                 alias: null,
                 arguments: [],
                 directives: [],
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'dialCode'),
+                name: NameNode(value: 'ascii'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'lat'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'lng'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -2132,6 +2324,13 @@ final FIND_STATES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -2177,6 +2376,13 @@ final FIND_STATES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -2248,6 +2454,13 @@ final FIND_STATES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -2293,6 +2506,13 @@ final FIND_STATES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -2432,28 +2652,42 @@ final FIND_STATES_BY_COUNTRY_PAGINATION_QUERY_DOCUMENT =
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'code'),
+                name: NameNode(value: 'adminName'),
                 alias: null,
                 arguments: [],
                 directives: [],
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'created'),
+                name: NameNode(value: 'capital'),
                 alias: null,
                 arguments: [],
                 directives: [],
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'surface'),
+                name: NameNode(value: 'population'),
                 alias: null,
                 arguments: [],
                 directives: [],
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'dialCode'),
+                name: NameNode(value: 'ascii'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'lat'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'lng'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -2562,6 +2796,13 @@ final FIND_STATES_BY_COUNTRY_PAGINATION_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -2607,6 +2848,13 @@ final FIND_STATES_BY_COUNTRY_PAGINATION_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -2678,6 +2926,13 @@ final FIND_STATES_BY_COUNTRY_PAGINATION_QUERY_DOCUMENT =
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -2723,6 +2978,13 @@ final FIND_STATES_BY_COUNTRY_PAGINATION_QUERY_DOCUMENT =
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -2821,28 +3083,42 @@ final CREATE_STATE_MUTATION_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'code'),
+            name: NameNode(value: 'adminName'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'created'),
+            name: NameNode(value: 'capital'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'surface'),
+            name: NameNode(value: 'population'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'dialCode'),
+            name: NameNode(value: 'ascii'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'lat'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'lng'),
             alias: null,
             arguments: [],
             directives: [],
@@ -2951,6 +3227,13 @@ final CREATE_STATE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -2996,6 +3279,13 @@ final CREATE_STATE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -3067,6 +3357,13 @@ final CREATE_STATE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
@@ -3112,6 +3409,13 @@ final CREATE_STATE_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'y'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -3223,28 +3527,42 @@ final UPDATE_STATE_MUTATION_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'code'),
+            name: NameNode(value: 'adminName'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'created'),
+            name: NameNode(value: 'capital'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'surface'),
+            name: NameNode(value: 'population'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'dialCode'),
+            name: NameNode(value: 'ascii'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'lat'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'lng'),
             alias: null,
             arguments: [],
             directives: [],
@@ -3353,6 +3671,13 @@ final UPDATE_STATE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -3398,6 +3723,13 @@ final UPDATE_STATE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -3469,6 +3801,13 @@ final UPDATE_STATE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
@@ -3514,6 +3853,13 @@ final UPDATE_STATE_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'y'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
                 alias: null,
                 arguments: [],
                 directives: [],

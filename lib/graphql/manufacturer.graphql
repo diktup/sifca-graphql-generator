@@ -5,6 +5,37 @@ query manufacturer($id: String!) {
     name
     description
     website
+    contactEmails
+    currencies {
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      default
+    }
     createdAt
     updatedAt
     picture {
@@ -14,6 +45,7 @@ query manufacturer($id: String!) {
       height
       x
       y
+      alt
     }
     address {
       city
@@ -39,6 +71,7 @@ query manufacturer($id: String!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -47,15 +80,18 @@ query manufacturer($id: String!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -71,6 +107,7 @@ query manufacturer($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -79,6 +116,7 @@ query manufacturer($id: String!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -90,6 +128,7 @@ query manufacturer($id: String!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -98,6 +137,7 @@ query manufacturer($id: String!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -121,6 +161,7 @@ query manufacturer($id: String!) {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -129,6 +170,7 @@ query manufacturer($id: String!) {
           height
           x
           y
+          alt
         }
       }
       address {
@@ -155,6 +197,7 @@ query manufacturer($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -163,15 +206,18 @@ query manufacturer($id: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -187,6 +233,7 @@ query manufacturer($id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -195,6 +242,7 @@ query manufacturer($id: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -206,6 +254,7 @@ query manufacturer($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -214,6 +263,7 @@ query manufacturer($id: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -258,6 +308,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -266,15 +317,18 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -290,6 +344,7 @@ query manufacturer($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -298,6 +353,7 @@ query manufacturer($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               createdAt
@@ -309,6 +365,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -317,6 +374,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
             }
             owner {
@@ -343,6 +401,7 @@ query manufacturer($id: String!) {
               height
               x
               y
+              alt
             }
             png {
               default {
@@ -352,6 +411,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
               size16 {
                 baseUrl
@@ -360,6 +420,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
               size24 {
                 baseUrl
@@ -368,6 +429,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
               size32 {
                 baseUrl
@@ -376,6 +438,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
               size48 {
                 baseUrl
@@ -384,6 +447,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
               size64 {
                 baseUrl
@@ -392,6 +456,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
               size128 {
                 baseUrl
@@ -400,6 +465,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
               size256 {
                 baseUrl
@@ -408,6 +474,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
               size512 {
                 baseUrl
@@ -416,6 +483,7 @@ query manufacturer($id: String!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -445,7 +513,1562 @@ query manufacturer($id: String!) {
     }
   }
 }
- 
+query getManufacturersPagination($pagination: PaginationInput) {
+  getManufacturersPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      email
+      name
+      description
+      website
+      contactEmails
+      currencies {
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        default
+      }
+      createdAt
+      updatedAt
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      address {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      company {
+        id
+        name
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        address {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        legal {
+          vat
+          register
+          licence
+        }
+        banks {
+          id
+          holder {
+            name
+            type
+            address {
+              city
+              address
+              postCode
+              addressLine
+              location {
+                type
+                coordinates
+              }
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              state {
+                id
+                name
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
+                country {
+                  id
+                  name
+                  code
+                  dialCode
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              owner {
+                name
+                phone {
+                  number
+                  countryCode
+                }
+              }
+            }
+          }
+          account
+          iban
+          bank {
+            id
+            name
+            code
+            bic
+            logo {
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              png {
+                default {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size16 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size24 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size32 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size64 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size128 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size256 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size512 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              icon
+            }
+            createdAt
+            updatedAt
+          }
+          externalId
+          createdAt
+          updatedAt
+        }
+        contact {
+          website
+          email
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
+        }
+        logistic
+        tags
+        externalId
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}
+query searchManufacturer($pagination: PaginationInput, $searchString: String!) {
+  searchManufacturer(pagination: $pagination, searchString: $searchString) {
+    count
+    isLast
+    objects {
+      id
+      email
+      name
+      description
+      website
+      contactEmails
+      currencies {
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        default
+      }
+      createdAt
+      updatedAt
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      address {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      company {
+        id
+        name
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        address {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        legal {
+          vat
+          register
+          licence
+        }
+        banks {
+          id
+          holder {
+            name
+            type
+            address {
+              city
+              address
+              postCode
+              addressLine
+              location {
+                type
+                coordinates
+              }
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              state {
+                id
+                name
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
+                country {
+                  id
+                  name
+                  code
+                  dialCode
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              owner {
+                name
+                phone {
+                  number
+                  countryCode
+                }
+              }
+            }
+          }
+          account
+          iban
+          bank {
+            id
+            name
+            code
+            bic
+            logo {
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              png {
+                default {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size16 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size24 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size32 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size64 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size128 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size256 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size512 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              icon
+            }
+            createdAt
+            updatedAt
+          }
+          externalId
+          createdAt
+          updatedAt
+        }
+        contact {
+          website
+          email
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
+        }
+        logistic
+        tags
+        externalId
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}
+
+mutation createManufacturer($input: ManufacturerCreateInput!) {
+  createManufacturer(input: $input) {
+    id
+    email
+    name
+    description
+    website
+    contactEmails
+    currencies {
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      default
+    }
+    createdAt
+    updatedAt
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    address {
+      city
+      address
+      postCode
+      addressLine
+      location {
+        type
+        coordinates
+      }
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      state {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      owner {
+        name
+        phone {
+          number
+          countryCode
+        }
+      }
+    }
+    company {
+      id
+      name
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      address {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      legal {
+        vat
+        register
+        licence
+      }
+      banks {
+        id
+        holder {
+          name
+          type
+          address {
+            city
+            address
+            postCode
+            addressLine
+            location {
+              type
+              coordinates
+            }
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            state {
+              id
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            owner {
+              name
+              phone {
+                number
+                countryCode
+              }
+            }
+          }
+        }
+        account
+        iban
+        bank {
+          id
+          name
+          code
+          bic
+          logo {
+            svg {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            png {
+              default {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size16 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size24 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size32 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size48 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size64 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size128 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size256 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size512 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            icon
+          }
+          createdAt
+          updatedAt
+        }
+        externalId
+        createdAt
+        updatedAt
+      }
+      contact {
+        website
+        email
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+      }
+      logistic
+      tags
+      externalId
+      createdAt
+      updatedAt
+    }
+  }
+}
 mutation updateManufacturer($input: ManufacturerUpdateInput!) {
   updateManufacturer(input: $input) {
     id
@@ -453,6 +2076,37 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
     name
     description
     website
+    contactEmails
+    currencies {
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      default
+    }
     createdAt
     updatedAt
     picture {
@@ -462,6 +2116,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
       height
       x
       y
+      alt
     }
     address {
       city
@@ -487,6 +2142,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -495,15 +2151,18 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
           height
           x
           y
+          alt
         }
       }
       state {
         id
         name
-        code
-        created
-        surface
-        dialCode
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
         country {
           id
           name
@@ -519,6 +2178,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -527,6 +2187,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -538,6 +2199,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -546,6 +2208,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
           height
           x
           y
+          alt
         }
       }
       owner {
@@ -569,6 +2232,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -577,6 +2241,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
           height
           x
           y
+          alt
         }
       }
       address {
@@ -603,6 +2268,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -611,15 +2277,18 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -635,6 +2304,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -643,6 +2313,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -654,6 +2325,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -662,6 +2334,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -706,6 +2379,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -714,15 +2388,18 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -738,6 +2415,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 flagWide {
                   baseUrl
@@ -746,6 +2424,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               createdAt
@@ -757,6 +2436,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -765,6 +2445,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             owner {
@@ -791,6 +2472,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
               height
               x
               y
+              alt
             }
             png {
               default {
@@ -800,6 +2482,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               size16 {
                 baseUrl
@@ -808,6 +2491,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               size24 {
                 baseUrl
@@ -816,6 +2500,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               size32 {
                 baseUrl
@@ -824,6 +2509,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               size48 {
                 baseUrl
@@ -832,6 +2518,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               size64 {
                 baseUrl
@@ -840,6 +2527,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               size128 {
                 baseUrl
@@ -848,6 +2536,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               size256 {
                 baseUrl
@@ -856,6 +2545,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               size512 {
                 baseUrl
@@ -864,6 +2554,7 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -893,4 +2584,1034 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
     }
   }
 }
- 
+mutation deleteManufacturer($id: String!) {
+  deleteManufacturer(id: $id) {
+    id
+    email
+    name
+    description
+    website
+    contactEmails
+    currencies {
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      default
+    }
+    createdAt
+    updatedAt
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    address {
+      city
+      address
+      postCode
+      addressLine
+      location {
+        type
+        coordinates
+      }
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      state {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      owner {
+        name
+        phone {
+          number
+          countryCode
+        }
+      }
+    }
+    company {
+      id
+      name
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      address {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      legal {
+        vat
+        register
+        licence
+      }
+      banks {
+        id
+        holder {
+          name
+          type
+          address {
+            city
+            address
+            postCode
+            addressLine
+            location {
+              type
+              coordinates
+            }
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            state {
+              id
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            owner {
+              name
+              phone {
+                number
+                countryCode
+              }
+            }
+          }
+        }
+        account
+        iban
+        bank {
+          id
+          name
+          code
+          bic
+          logo {
+            svg {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            png {
+              default {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size16 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size24 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size32 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size48 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size64 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size128 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size256 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size512 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            icon
+          }
+          createdAt
+          updatedAt
+        }
+        externalId
+        createdAt
+        updatedAt
+      }
+      contact {
+        website
+        email
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+      }
+      logistic
+      tags
+      externalId
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+subscription listenForManufacturerCreated {
+  listenForManufacturerCreated {
+    id
+    email
+    name
+    description
+    website
+    contactEmails
+    currencies {
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      default
+    }
+    createdAt
+    updatedAt
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    address {
+      city
+      address
+      postCode
+      addressLine
+      location {
+        type
+        coordinates
+      }
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      state {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      owner {
+        name
+        phone {
+          number
+          countryCode
+        }
+      }
+    }
+    company {
+      id
+      name
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      address {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      legal {
+        vat
+        register
+        licence
+      }
+      banks {
+        id
+        holder {
+          name
+          type
+          address {
+            city
+            address
+            postCode
+            addressLine
+            location {
+              type
+              coordinates
+            }
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            state {
+              id
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            owner {
+              name
+              phone {
+                number
+                countryCode
+              }
+            }
+          }
+        }
+        account
+        iban
+        bank {
+          id
+          name
+          code
+          bic
+          logo {
+            svg {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            png {
+              default {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size16 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size24 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size32 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size48 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size64 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size128 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size256 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              size512 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            icon
+          }
+          createdAt
+          updatedAt
+        }
+        externalId
+        createdAt
+        updatedAt
+      }
+      contact {
+        website
+        email
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+      }
+      logistic
+      tags
+      externalId
+      createdAt
+      updatedAt
+    }
+  }
+}

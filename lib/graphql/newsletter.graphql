@@ -39,6 +39,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -47,6 +48,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -62,6 +64,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -70,6 +73,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -87,6 +91,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -95,6 +100,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -121,6 +127,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -129,15 +136,18 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -153,6 +163,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -161,6 +172,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -172,6 +184,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -180,6 +193,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -214,6 +228,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -222,15 +237,18 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -246,6 +264,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -254,6 +273,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -265,6 +285,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -273,6 +294,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -307,6 +329,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -315,15 +338,18 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -339,6 +365,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -347,6 +374,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -358,6 +386,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -366,6 +395,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -395,6 +425,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -403,6 +434,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -411,6 +443,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -419,6 +452,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -427,6 +461,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -437,6 +472,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -445,6 +481,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -453,6 +490,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -461,6 +499,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -469,6 +508,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -495,6 +535,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -503,6 +544,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -511,6 +553,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -519,6 +562,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -527,6 +571,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -537,6 +582,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -545,6 +591,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -553,6 +600,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -561,6 +609,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -569,6 +618,7 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -609,9 +659,143 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     email
-   
+ 
     createdAt
     updatedAt
   }
@@ -660,6 +844,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -668,6 +853,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
           height
           x
           y
+          alt
         }
         languages {
           id
@@ -683,6 +869,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -691,6 +878,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
             height
             x
             y
+            alt
           }
         }
         nationality {
@@ -708,6 +896,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -716,6 +905,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
             height
             x
             y
+            alt
           }
         }
         billingAddress {
@@ -742,6 +932,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -750,15 +941,19 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -774,6 +969,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -782,6 +978,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -793,6 +990,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -801,6 +999,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -835,6 +1034,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -843,15 +1043,19 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -867,6 +1071,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -875,6 +1080,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -886,6 +1092,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -894,6 +1101,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -928,6 +1136,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -936,15 +1145,19 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -960,6 +1173,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -968,6 +1182,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -979,6 +1194,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -987,6 +1203,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -1016,6 +1233,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -1024,6 +1242,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -1032,6 +1251,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -1040,6 +1260,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -1048,6 +1269,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                 }
                 png {
@@ -1058,6 +1280,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -1066,6 +1289,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -1074,6 +1298,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -1082,6 +1307,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -1090,6 +1316,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                 }
               }
@@ -1116,6 +1343,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -1124,6 +1352,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -1132,6 +1361,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -1140,6 +1370,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -1148,6 +1379,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                 }
                 png {
@@ -1158,6 +1390,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -1166,6 +1399,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -1174,6 +1408,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -1182,6 +1417,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -1190,6 +1426,7 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
                     height
                     x
                     y
+                    alt
                   }
                 }
               }
@@ -1230,9 +1467,143 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
             authorizationCode
           }
         }
+        education {
+          level
+          name
+          description
+          tags
+          from
+          to
+          graduated
+        }
+        work {
+          company
+          position
+          description
+          city {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          tags
+          from
+          to
+          current
+        }
+        lived {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        hobbies
+        interests
       }
       email
-      
+   
       createdAt
       updatedAt
     }
@@ -1243,8 +1614,8 @@ query getNewslettersByExcel($target: TargetACIInput!, $searchString: String, $pa
     content
   }
 }
-query sendTicksendNewslettersBymailetsBymail($target: TargetACIInput!, $searchString: String, $email: String!, $subject: String!) {
-  sendNewslettersBymail(target: $target, searchString: $searchString, email: $email, subject: $subject) {
+query sendNewslettersBymail($target: TargetACIInput!, $searchString: String, $emails: [String!], $subject: String!) {
+  sendNewslettersBymail(target: $target, searchString: $searchString, emails: $emails, subject: $subject) {
     accepted
     rejected
     response
@@ -1296,6 +1667,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -1304,6 +1676,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -1319,6 +1692,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -1327,6 +1701,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -1344,6 +1719,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -1352,6 +1728,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -1378,6 +1755,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1386,15 +1764,18 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1410,6 +1791,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1418,6 +1800,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1429,6 +1812,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1437,6 +1821,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1471,6 +1856,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1479,15 +1865,18 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1503,6 +1892,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1511,6 +1901,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1522,6 +1913,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1530,6 +1922,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1564,6 +1957,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1572,15 +1966,18 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1596,6 +1993,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1604,6 +2002,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1615,6 +2014,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1623,6 +2023,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1652,6 +2053,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1660,6 +2062,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1668,6 +2071,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1676,6 +2080,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1684,6 +2089,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -1694,6 +2100,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1702,6 +2109,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1710,6 +2118,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1718,6 +2127,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1726,6 +2136,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -1752,6 +2163,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1760,6 +2172,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1768,6 +2181,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1776,6 +2190,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1784,6 +2199,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -1794,6 +2210,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1802,6 +2219,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1810,6 +2228,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1818,6 +2237,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1826,6 +2246,7 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -1866,9 +2287,143 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     email
-   
+    
     createdAt
     updatedAt
   }

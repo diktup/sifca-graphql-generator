@@ -7,6 +7,1187 @@ import 'package:gql/ast.dart';
 part 'company.graphql.g.dart';
 
 @JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$MediaType$PictureType();
+
+  factory GetCompanies$Query$CompanyType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$MediaType$PictureTypeFromJson(json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$MediaType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$MediaType extends JsonSerializable
+    with EquatableMixin {
+  GetCompanies$Query$CompanyType$MediaType();
+
+  factory GetCompanies$Query$CompanyType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$MediaTypeFromJson(json);
+
+  List<String>? videos;
+
+  List<GetCompanies$Query$CompanyType$MediaType$PictureType>? deg360;
+
+  List<GetCompanies$Query$CompanyType$MediaType$PictureType>? pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$MediaTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$FullAddressType$LonLatType();
+
+  factory GetCompanies$Query$CompanyType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$LonLatTypeFromJson(json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$LonLatTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureType();
+
+  factory GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$FullAddressType$CountryType();
+
+  factory GetCompanies$Query$CompanyType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$CountryTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType();
+
+  factory GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureType();
+
+  factory GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$FullAddressType$StateType();
+
+  factory GetCompanies$Query$CompanyType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$StateTypeFromJson(json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType? country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$StateTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType();
+
+  factory GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$FullAddressType extends JsonSerializable
+    with EquatableMixin {
+  GetCompanies$Query$CompanyType$FullAddressType();
+
+  factory GetCompanies$Query$CompanyType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$FullAddressTypeFromJson(json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  GetCompanies$Query$CompanyType$FullAddressType$LonLatType? location;
+
+  GetCompanies$Query$CompanyType$FullAddressType$CountryType? country;
+
+  GetCompanies$Query$CompanyType$FullAddressType$StateType? state;
+
+  GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType? owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$FullAddressTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$CompanyLegalType extends JsonSerializable
+    with EquatableMixin {
+  GetCompanies$Query$CompanyType$CompanyLegalType();
+
+  factory GetCompanies$Query$CompanyType$CompanyLegalType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$CompanyLegalTypeFromJson(json);
+
+  String? vat;
+
+  String? register;
+
+  String? licence;
+
+  @override
+  List<Object?> get props => [vat, register, licence];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$CompanyLegalTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
+      location;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType?
+      country;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType?
+      state;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+          json);
+
+  late String name;
+
+  @JsonKey(unknownEnumValue: BankDetailsHolderTypeEnum.artemisUnknown)
+  BankDetailsHolderTypeEnum? type;
+
+  late GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+      address;
+
+  @override
+  List<Object?> get props => [name, type, address];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+          json);
+
+  @JsonKey(name: 'default')
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      kw$default;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size16;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size24;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size32;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size48;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size64;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size128;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size256;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size512;
+
+  @override
+  List<Object?> get props => [
+        kw$default,
+        size16,
+        size24,
+        size32,
+        size48,
+        size64,
+        size128,
+        size256,
+        size512
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+          json);
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType?
+      svg;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType?
+      png;
+
+  String? icon;
+
+  @override
+  List<Object?> get props => [svg, png, icon];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType$BankType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType$BankType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankTypeFromJson(json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? bic;
+
+  GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType? logo;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsType$BankTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$BankDetailsType extends JsonSerializable
+    with EquatableMixin {
+  GetCompanies$Query$CompanyType$BankDetailsType();
+
+  factory GetCompanies$Query$CompanyType$BankDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$BankDetailsTypeFromJson(json);
+
+  late String id;
+
+  late GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType
+      holder;
+
+  late String account;
+
+  String? iban;
+
+  late GetCompanies$Query$CompanyType$BankDetailsType$BankType bank;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$BankDetailsTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneType();
+
+  factory GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$CompanyContactDetailsType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$CompanyContactDetailsType();
+
+  factory GetCompanies$Query$CompanyType$CompanyContactDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$CompanyContactDetailsTypeFromJson(json);
+
+  String? website;
+
+  String? email;
+
+  GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneType? phone;
+
+  @override
+  List<Object?> get props => [website, email, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$CompanyContactDetailsTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$CompanyCustomerType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$CompanyCustomerType();
+
+  factory GetCompanies$Query$CompanyType$CompanyCustomerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$CompanyCustomerTypeFromJson(json);
+
+  @JsonKey(unknownEnumValue: CustomerPhaseEnum.artemisUnknown)
+  CustomerPhaseEnum? phase;
+
+  String? score;
+
+  @override
+  List<Object?> get props => [phase, score];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$CompanyCustomerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query$CompanyType$CompanySupplierType();
+
+  factory GetCompanies$Query$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyType$CompanySupplierTypeFromJson(json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompanies$Query$CompanyType$CompanySupplierTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query$CompanyType extends JsonSerializable
+    with EquatableMixin {
+  GetCompanies$Query$CompanyType();
+
+  factory GetCompanies$Query$CompanyType.fromJson(Map<String, dynamic> json) =>
+      _$GetCompanies$Query$CompanyTypeFromJson(json);
+
+  late String id;
+
+  String? name;
+
+  String? description;
+
+  GetCompanies$Query$CompanyType$MediaType? media;
+
+  GetCompanies$Query$CompanyType$FullAddressType? address;
+
+  GetCompanies$Query$CompanyType$CompanyLegalType? legal;
+
+  List<GetCompanies$Query$CompanyType$BankDetailsType>? banks;
+
+  GetCompanies$Query$CompanyType$CompanyContactDetailsType? contact;
+
+  GetCompanies$Query$CompanyType$CompanyCustomerType? customer;
+
+  GetCompanies$Query$CompanyType$CompanySupplierType? supplier;
+
+  bool? logistic;
+
+  List<String>? tags;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        description,
+        media,
+        address,
+        legal,
+        banks,
+        contact,
+        customer,
+        supplier,
+        logistic,
+        tags,
+        externalId,
+        createdAt,
+        updatedAt
+      ];
+  @override
+  Map<String, dynamic> toJson() => _$GetCompanies$Query$CompanyTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompanies$Query extends JsonSerializable with EquatableMixin {
+  GetCompanies$Query();
+
+  factory GetCompanies$Query.fromJson(Map<String, dynamic> json) =>
+      _$GetCompanies$QueryFromJson(json);
+
+  late List<GetCompanies$Query$CompanyType> getCompanies;
+
+  @override
+  List<Object?> get props => [getCompanies];
+  @override
+  Map<String, dynamic> toJson() => _$GetCompanies$QueryToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class Company$Query$CompanyType$MediaType$PictureType extends JsonSerializable
     with EquatableMixin {
   Company$Query$CompanyType$MediaType$PictureType();
@@ -27,8 +1208,10 @@ class Company$Query$CompanyType$MediaType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$Company$Query$CompanyType$MediaType$PictureTypeToJson(this);
@@ -98,8 +1281,10 @@ class Company$Query$CompanyType$FullAddressType$CountryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$Company$Query$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -172,8 +1357,10 @@ class Company$Query$CompanyType$FullAddressType$StateType$CountryType$PictureTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$Company$Query$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -250,8 +1437,10 @@ class Company$Query$CompanyType$FullAddressType$StateType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$Company$Query$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -271,13 +1460,18 @@ class Company$Query$CompanyType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   Company$Query$CompanyType$FullAddressType$StateType$CountryType? country;
 
@@ -293,10 +1487,12 @@ class Company$Query$CompanyType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -452,8 +1648,10 @@ class Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddres
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -530,8 +1728,10 @@ class Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddres
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -608,8 +1808,10 @@ class Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddres
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -630,13 +1832,18 @@ class Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddres
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -655,10 +1862,12 @@ class Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddres
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -803,8 +2012,10 @@ class Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$Picture
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -833,8 +2044,10 @@ class Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$Browser
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -972,13 +2185,15 @@ class Company$Query$CompanyType$BankDetailsType extends JsonSerializable
 
   late Company$Query$CompanyType$BankDetailsType$BankType bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$Company$Query$CompanyType$BankDetailsTypeToJson(this);
@@ -1054,6 +2269,25 @@ class Company$Query$CompanyType$CompanyCustomerType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class Company$Query$CompanyType$CompanySupplierType extends JsonSerializable
+    with EquatableMixin {
+  Company$Query$CompanyType$CompanySupplierType();
+
+  factory Company$Query$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Company$Query$CompanyType$CompanySupplierTypeFromJson(json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Company$Query$CompanyType$CompanySupplierTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class Company$Query$CompanyType extends JsonSerializable with EquatableMixin {
   Company$Query$CompanyType();
 
@@ -1078,9 +2312,13 @@ class Company$Query$CompanyType extends JsonSerializable with EquatableMixin {
 
   Company$Query$CompanyType$CompanyCustomerType? customer;
 
+  Company$Query$CompanyType$CompanySupplierType? supplier;
+
   bool? logistic;
 
   List<String>? tags;
+
+  String? externalId;
 
   late DateTime createdAt;
 
@@ -1097,8 +2335,10 @@ class Company$Query$CompanyType extends JsonSerializable with EquatableMixin {
         banks,
         contact,
         customer,
+        supplier,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -1143,8 +2383,10 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaType$Pic
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
@@ -1221,8 +2463,10 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1299,8 +2543,10 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1377,8 +2623,10 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -1399,13 +2647,18 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -1424,10 +2677,12 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -1592,8 +2847,10 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1670,8 +2927,10 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1748,8 +3007,10 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -1770,13 +3031,18 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -1795,10 +3061,12 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -1943,8 +3211,10 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1973,8 +3243,10 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -2118,13 +3390,15 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTy
   late GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
@@ -2206,6 +3480,27 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyCustom
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierType();
+
+  factory GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType
     extends JsonSerializable with EquatableMixin {
   GetCompaniesPagination$Query$CompanyPaginateType$CompanyType();
@@ -2238,9 +3533,14 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType
   GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyCustomerType?
       customer;
 
+  GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierType?
+      supplier;
+
   bool? logistic;
 
   List<String>? tags;
+
+  String? externalId;
 
   late DateTime createdAt;
 
@@ -2257,8 +3557,10 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType
         banks,
         contact,
         customer,
+        supplier,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -2349,8 +3651,10 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
@@ -2427,8 +3731,10 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$Country
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2505,8 +3811,10 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2583,8 +3891,10 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -2605,13 +3915,18 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -2630,10 +3945,12 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -2798,8 +4115,10 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDet
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2876,8 +4195,10 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDet
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2954,8 +4275,10 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDet
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -2976,13 +4299,18 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDet
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -3001,10 +4329,12 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDet
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -3149,8 +4479,10 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -3179,8 +4511,10 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -3324,13 +4658,15 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType
   late GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
@@ -3412,6 +4748,27 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierType();
+
+  factory GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCustomers$Query$CompanyPaginateType$CompanyType
     extends JsonSerializable with EquatableMixin {
   GetCustomers$Query$CompanyPaginateType$CompanyType();
@@ -3441,9 +4798,14 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType
   GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyCustomerType?
       customer;
 
+  GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierType?
+      supplier;
+
   bool? logistic;
 
   List<String>? tags;
+
+  String? externalId;
 
   late DateTime createdAt;
 
@@ -3460,8 +4822,10 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType
         banks,
         contact,
         customer,
+        supplier,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -3534,6 +4898,1251 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType>?
+      deg360;
+
+  List<GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType?
+      location;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType?
+      country;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType?
+      state;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeFromJson(
+          json);
+
+  String? vat;
+
+  String? register;
+
+  String? licence;
+
+  @override
+  List<Object?> get props => [vat, register, licence];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
+      location;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType?
+      country;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType?
+      state;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+          json);
+
+  late String name;
+
+  @JsonKey(unknownEnumValue: BankDetailsHolderTypeEnum.artemisUnknown)
+  BankDetailsHolderTypeEnum? type;
+
+  late GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+      address;
+
+  @override
+  List<Object?> get props => [name, type, address];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+          json);
+
+  @JsonKey(name: 'default')
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      kw$default;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size16;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size24;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size32;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size48;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size64;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size128;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size256;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size512;
+
+  @override
+  List<Object?> get props => [
+        kw$default,
+        size16,
+        size24,
+        size32,
+        size48,
+        size64,
+        size128,
+        size256,
+        size512
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+          json);
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType?
+      svg;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType?
+      png;
+
+  String? icon;
+
+  @override
+  List<Object?> get props => [svg, png, icon];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? bic;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType?
+      logo;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeFromJson(
+          json);
+
+  late String id;
+
+  late GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+      holder;
+
+  late String account;
+
+  String? iban;
+
+  late GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+      bank;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeFromJson(
+          json);
+
+  String? website;
+
+  String? email;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [website, email, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: CustomerPhaseEnum.artemisUnknown)
+  CustomerPhaseEnum? phase;
+
+  String? score;
+
+  @override
+  List<Object?> get props => [phase, score];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType
+    extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? description;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType? media;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType?
+      address;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType?
+      legal;
+
+  List<GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType>?
+      banks;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType?
+      contact;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType?
+      customer;
+
+  GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType?
+      supplier;
+
+  bool? logistic;
+
+  List<String>? tags;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        description,
+        media,
+        address,
+        legal,
+        banks,
+        contact,
+        customer,
+        supplier,
+        logistic,
+        tags,
+        externalId,
+        createdAt,
+        updatedAt
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query$CompanyPaginateType extends JsonSerializable
+    with EquatableMixin {
+  GetCompaniesByTarget$Query$CompanyPaginateType();
+
+  factory GetCompaniesByTarget$Query$CompanyPaginateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateTypeFromJson(json);
+
+  int? count;
+
+  bool? isLast;
+
+  late List<GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType> objects;
+
+  @override
+  List<Object?> get props => [count, isLast, objects];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCompaniesByTarget$Query$CompanyPaginateTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTarget$Query extends JsonSerializable with EquatableMixin {
+  GetCompaniesByTarget$Query();
+
+  factory GetCompaniesByTarget$Query.fromJson(Map<String, dynamic> json) =>
+      _$GetCompaniesByTarget$QueryFromJson(json);
+
+  late GetCompaniesByTarget$Query$CompanyPaginateType getCompaniesByTarget;
+
+  @override
+  List<Object?> get props => [getCompaniesByTarget];
+  @override
+  Map<String, dynamic> toJson() => _$GetCompaniesByTarget$QueryToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
     extends JsonSerializable with EquatableMixin {
   SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType$PictureType();
@@ -3555,8 +6164,10 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
@@ -3633,8 +6244,10 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$Countr
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3711,8 +6324,10 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3789,8 +6404,10 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -3811,13 +6428,18 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateT
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -3836,10 +6458,12 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateT
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -4004,8 +6628,10 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDe
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4082,8 +6708,10 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDe
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4160,8 +6788,10 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDe
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -4182,13 +6812,18 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDe
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -4207,10 +6842,12 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDe
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -4355,8 +6992,10 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -4385,8 +7024,10 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -4530,13 +7171,15 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType
   late SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
@@ -4618,6 +7261,27 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
 }
 
 @JsonSerializable(explicitToJson: true)
+class SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierType();
+
+  factory SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class SearchCompany$Query$CompanyPaginateType$CompanyType
     extends JsonSerializable with EquatableMixin {
   SearchCompany$Query$CompanyPaginateType$CompanyType();
@@ -4647,9 +7311,14 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType
   SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyCustomerType?
       customer;
 
+  SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierType?
+      supplier;
+
   bool? logistic;
 
   List<String>? tags;
+
+  String? externalId;
 
   late DateTime createdAt;
 
@@ -4666,8 +7335,10 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType
         banks,
         contact,
         customer,
+        supplier,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -4735,8 +7406,10 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Medi
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
@@ -4813,8 +7486,10 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Full
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4891,8 +7566,10 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Full
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4969,8 +7646,10 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Full
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -4991,13 +7670,18 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Full
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -5016,10 +7700,12 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Full
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -5184,8 +7870,10 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Bank
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5262,8 +7950,10 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Bank
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5340,8 +8030,10 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Bank
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -5362,13 +8054,18 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Bank
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -5387,10 +8084,12 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Bank
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -5535,8 +8234,10 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Bank
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -5565,8 +8266,10 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Bank
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -5710,13 +8413,15 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Bank
   late SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
@@ -5798,6 +8503,27 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Comp
 }
 
 @JsonSerializable(explicitToJson: true)
+class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierType();
+
+  factory SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType
     extends JsonSerializable with EquatableMixin {
   SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType();
@@ -5831,9 +8557,14 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType
   SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyCustomerType?
       customer;
 
+  SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierType?
+      supplier;
+
   bool? logistic;
 
   List<String>? tags;
+
+  String? externalId;
 
   late DateTime createdAt;
 
@@ -5850,8 +8581,10 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType
         banks,
         contact,
         customer,
+        supplier,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -5905,6 +8638,1256 @@ class SearchCustomersByTargetAndPhase$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType>?
+      deg360;
+
+  List<SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType?
+      location;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType?
+      country;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType?
+      state;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeFromJson(
+          json);
+
+  String? vat;
+
+  String? register;
+
+  String? licence;
+
+  @override
+  List<Object?> get props => [vat, register, licence];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
+      location;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType?
+      country;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType?
+      state;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+          json);
+
+  late String name;
+
+  @JsonKey(unknownEnumValue: BankDetailsHolderTypeEnum.artemisUnknown)
+  BankDetailsHolderTypeEnum? type;
+
+  late SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+      address;
+
+  @override
+  List<Object?> get props => [name, type, address];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+          json);
+
+  @JsonKey(name: 'default')
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      kw$default;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size16;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size24;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size32;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size48;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size64;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size128;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size256;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size512;
+
+  @override
+  List<Object?> get props => [
+        kw$default,
+        size16,
+        size24,
+        size32,
+        size48,
+        size64,
+        size128,
+        size256,
+        size512
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+          json);
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType?
+      svg;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType?
+      png;
+
+  String? icon;
+
+  @override
+  List<Object?> get props => [svg, png, icon];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? bic;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType?
+      logo;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeFromJson(
+          json);
+
+  late String id;
+
+  late SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+      holder;
+
+  late String account;
+
+  String? iban;
+
+  late SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+      bank;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeFromJson(
+          json);
+
+  String? website;
+
+  String? email;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [website, email, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: CustomerPhaseEnum.artemisUnknown)
+  CustomerPhaseEnum? phase;
+
+  String? score;
+
+  @override
+  List<Object?> get props => [phase, score];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType
+    extends JsonSerializable with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? description;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType?
+      media;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType?
+      address;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType?
+      legal;
+
+  List<SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType>?
+      banks;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType?
+      contact;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType?
+      customer;
+
+  SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType?
+      supplier;
+
+  bool? logistic;
+
+  List<String>? tags;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        description,
+        media,
+        address,
+        legal,
+        banks,
+        contact,
+        customer,
+        supplier,
+        logistic,
+        tags,
+        externalId,
+        createdAt,
+        updatedAt
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query$CompanyPaginateType extends JsonSerializable
+    with EquatableMixin {
+  SearchSuppliersByTarget$Query$CompanyPaginateType();
+
+  factory SearchSuppliersByTarget$Query$CompanyPaginateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateTypeFromJson(json);
+
+  int? count;
+
+  bool? isLast;
+
+  late List<SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType>
+      objects;
+
+  @override
+  List<Object?> get props => [count, isLast, objects];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTarget$Query$CompanyPaginateTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTarget$Query extends JsonSerializable
+    with EquatableMixin {
+  SearchSuppliersByTarget$Query();
+
+  factory SearchSuppliersByTarget$Query.fromJson(Map<String, dynamic> json) =>
+      _$SearchSuppliersByTarget$QueryFromJson(json);
+
+  late SearchSuppliersByTarget$Query$CompanyPaginateType
+      searchSuppliersByTarget;
+
+  @override
+  List<Object?> get props => [searchSuppliersByTarget];
+  @override
+  Map<String, dynamic> toJson() => _$SearchSuppliersByTarget$QueryToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
     extends JsonSerializable with EquatableMixin {
   SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType();
@@ -5926,8 +9909,10 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Medi
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
@@ -6004,8 +9989,10 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Full
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6082,8 +10069,10 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Full
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6160,8 +10149,10 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Full
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -6182,13 +10173,18 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Full
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -6207,10 +10203,12 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Full
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -6375,8 +10373,10 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Bank
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6453,8 +10453,10 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Bank
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6531,8 +10533,10 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Bank
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -6553,13 +10557,18 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Bank
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -6578,10 +10587,12 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Bank
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -6726,8 +10737,10 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Bank
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -6756,8 +10769,10 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Bank
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -6901,13 +10916,15 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Bank
   late SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
@@ -6989,6 +11006,27 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Comp
 }
 
 @JsonSerializable(explicitToJson: true)
+class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType();
+
+  factory SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType
     extends JsonSerializable with EquatableMixin {
   SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType();
@@ -7022,9 +11060,14 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType
   SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType?
       customer;
 
+  SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType?
+      supplier;
+
   bool? logistic;
 
   List<String>? tags;
+
+  String? externalId;
 
   late DateTime createdAt;
 
@@ -7041,8 +11084,10 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType
         banks,
         contact,
         customer,
+        supplier,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -7116,8 +11161,10 @@ class CreateCompany$Mutation$CompanyType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompany$Mutation$CompanyType$MediaType$PictureTypeToJson(this);
@@ -7189,8 +11236,10 @@ class CreateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -7267,8 +11316,10 @@ class CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$P
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -7345,8 +11396,10 @@ class CreateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -7367,13 +11420,18 @@ class CreateCompany$Mutation$CompanyType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -7392,10 +11450,12 @@ class CreateCompany$Mutation$CompanyType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -7553,8 +11613,10 @@ class CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -7631,8 +11693,10 @@ class CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -7709,8 +11773,10 @@ class CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -7731,13 +11797,18 @@ class CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -7756,10 +11827,12 @@ class CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -7904,8 +11977,10 @@ class CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -7934,8 +12009,10 @@ class CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -8076,13 +12153,15 @@ class CreateCompany$Mutation$CompanyType$BankDetailsType
 
   late CreateCompany$Mutation$CompanyType$BankDetailsType$BankType bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompany$Mutation$CompanyType$BankDetailsTypeToJson(this);
@@ -8160,6 +12239,25 @@ class CreateCompany$Mutation$CompanyType$CompanyCustomerType
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateCompany$Mutation$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  CreateCompany$Mutation$CompanyType$CompanySupplierType();
+
+  factory CreateCompany$Mutation$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCompany$Mutation$CompanyType$CompanySupplierTypeFromJson(json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCompany$Mutation$CompanyType$CompanySupplierTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateCompany$Mutation$CompanyType extends JsonSerializable
     with EquatableMixin {
   CreateCompany$Mutation$CompanyType();
@@ -8186,9 +12284,13 @@ class CreateCompany$Mutation$CompanyType extends JsonSerializable
 
   CreateCompany$Mutation$CompanyType$CompanyCustomerType? customer;
 
+  CreateCompany$Mutation$CompanyType$CompanySupplierType? supplier;
+
   bool? logistic;
 
   List<String>? tags;
+
+  String? externalId;
 
   late DateTime createdAt;
 
@@ -8205,8 +12307,10 @@ class CreateCompany$Mutation$CompanyType extends JsonSerializable
         banks,
         contact,
         customer,
+        supplier,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -8581,8 +12685,10 @@ class UpdateCompany$Mutation$CompanyType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompany$Mutation$CompanyType$MediaType$PictureTypeToJson(this);
@@ -8654,8 +12760,10 @@ class UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -8732,8 +12840,10 @@ class UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$P
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8810,8 +12920,10 @@ class UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -8832,13 +12944,18 @@ class UpdateCompany$Mutation$CompanyType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -8857,10 +12974,12 @@ class UpdateCompany$Mutation$CompanyType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -9018,8 +13137,10 @@ class UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9096,8 +13217,10 @@ class UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9174,8 +13297,10 @@ class UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -9196,13 +13321,18 @@ class UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -9221,10 +13351,12 @@ class UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -9369,8 +13501,10 @@ class UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -9399,8 +13533,10 @@ class UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -9541,13 +13677,15 @@ class UpdateCompany$Mutation$CompanyType$BankDetailsType
 
   late UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompany$Mutation$CompanyType$BankDetailsTypeToJson(this);
@@ -9625,6 +13763,25 @@ class UpdateCompany$Mutation$CompanyType$CompanyCustomerType
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateCompany$Mutation$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCompany$Mutation$CompanyType$CompanySupplierType();
+
+  factory UpdateCompany$Mutation$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCompany$Mutation$CompanyType$CompanySupplierTypeFromJson(json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCompany$Mutation$CompanyType$CompanySupplierTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateCompany$Mutation$CompanyType extends JsonSerializable
     with EquatableMixin {
   UpdateCompany$Mutation$CompanyType();
@@ -9651,9 +13808,13 @@ class UpdateCompany$Mutation$CompanyType extends JsonSerializable
 
   UpdateCompany$Mutation$CompanyType$CompanyCustomerType? customer;
 
+  UpdateCompany$Mutation$CompanyType$CompanySupplierType? supplier;
+
   bool? logistic;
 
   List<String>? tags;
+
+  String? externalId;
 
   late DateTime createdAt;
 
@@ -9670,8 +13831,10 @@ class UpdateCompany$Mutation$CompanyType extends JsonSerializable
         banks,
         contact,
         customer,
+        supplier,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -9758,6 +13921,2530 @@ class CompanyUpdateInput extends JsonSerializable with EquatableMixin {
   Map<String, dynamic> toJson() => _$CompanyUpdateInputToJson(this);
 }
 
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$MediaTypeFromJson(json);
+
+  List<String>? videos;
+
+  List<BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureType>?
+      deg360;
+
+  List<BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$MediaTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatType?
+      location;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType?
+      country;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType? state;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalTypeFromJson(
+          json);
+
+  String? vat;
+
+  String? register;
+
+  String? licence;
+
+  @override
+  List<Object?> get props => [vat, register, licence];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
+      location;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType?
+      country;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType?
+      state;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+          json);
+
+  late String name;
+
+  @JsonKey(unknownEnumValue: BankDetailsHolderTypeEnum.artemisUnknown)
+  BankDetailsHolderTypeEnum? type;
+
+  late BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+      address;
+
+  @override
+  List<Object?> get props => [name, type, address];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+          json);
+
+  @JsonKey(name: 'default')
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      kw$default;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size16;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size24;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size32;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size48;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size64;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size128;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size256;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size512;
+
+  @override
+  List<Object?> get props => [
+        kw$default,
+        size16,
+        size24,
+        size32,
+        size48,
+        size64,
+        size128,
+        size256,
+        size512
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+          json);
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType?
+      svg;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType?
+      png;
+
+  String? icon;
+
+  @override
+  List<Object?> get props => [svg, png, icon];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? bic;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType?
+      logo;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsTypeFromJson(
+          json);
+
+  late String id;
+
+  late BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
+      holder;
+
+  late String account;
+
+  String? iban;
+
+  late BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType
+      bank;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsTypeFromJson(
+          json);
+
+  String? website;
+
+  String? email;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [website, email, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: CustomerPhaseEnum.artemisUnknown)
+  CustomerPhaseEnum? phase;
+
+  String? score;
+
+  @override
+  List<Object?> get props => [phase, score];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation$CompanyType extends JsonSerializable
+    with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation$CompanyType();
+
+  factory BulkUpdateCompanyMedia$Mutation$CompanyType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyTypeFromJson(json);
+
+  late String id;
+
+  String? name;
+
+  String? description;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType? media;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType? address;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalType? legal;
+
+  List<BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType>? banks;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType?
+      contact;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerType? customer;
+
+  BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierType? supplier;
+
+  bool? logistic;
+
+  List<String>? tags;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        description,
+        media,
+        address,
+        legal,
+        banks,
+        contact,
+        customer,
+        supplier,
+        logistic,
+        tags,
+        externalId,
+        createdAt,
+        updatedAt
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$Mutation$CompanyTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMedia$Mutation extends JsonSerializable
+    with EquatableMixin {
+  BulkUpdateCompanyMedia$Mutation();
+
+  factory BulkUpdateCompanyMedia$Mutation.fromJson(Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMedia$MutationFromJson(json);
+
+  late List<BulkUpdateCompanyMedia$Mutation$CompanyType> bulkUpdateCompanyMedia;
+
+  @override
+  List<Object?> get props => [bulkUpdateCompanyMedia];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMedia$MutationToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateMediaInput extends JsonSerializable with EquatableMixin {
+  UpdateMediaInput({
+    required this.id,
+    required this.media,
+  });
+
+  factory UpdateMediaInput.fromJson(Map<String, dynamic> json) =>
+      _$UpdateMediaInputFromJson(json);
+
+  late String id;
+
+  late SingleMediaInput media;
+
+  @override
+  List<Object?> get props => [id, media];
+  @override
+  Map<String, dynamic> toJson() => _$UpdateMediaInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SingleMediaInput extends JsonSerializable with EquatableMixin {
+  SingleMediaInput({
+    this.videos,
+    this.pictures,
+    this.deg360,
+  });
+
+  factory SingleMediaInput.fromJson(Map<String, dynamic> json) =>
+      _$SingleMediaInputFromJson(json);
+
+  String? videos;
+
+  PictureInput? pictures;
+
+  PictureInput? deg360;
+
+  @override
+  List<Object?> get props => [videos, pictures, deg360];
+  @override
+  Map<String, dynamic> toJson() => _$SingleMediaInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class DeleteCompany$Mutation$DeleteResponseDtoType extends JsonSerializable
+    with EquatableMixin {
+  DeleteCompany$Mutation$DeleteResponseDtoType();
+
+  factory DeleteCompany$Mutation$DeleteResponseDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$DeleteCompany$Mutation$DeleteResponseDtoTypeFromJson(json);
+
+  late bool success;
+
+  late String message;
+
+  @override
+  List<Object?> get props => [success, message];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$DeleteCompany$Mutation$DeleteResponseDtoTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class DeleteCompany$Mutation extends JsonSerializable with EquatableMixin {
+  DeleteCompany$Mutation();
+
+  factory DeleteCompany$Mutation.fromJson(Map<String, dynamic> json) =>
+      _$DeleteCompany$MutationFromJson(json);
+
+  late DeleteCompany$Mutation$DeleteResponseDtoType deleteCompany;
+
+  @override
+  List<Object?> get props => [deleteCompany];
+  @override
+  Map<String, dynamic> toJson() => _$DeleteCompany$MutationToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$MediaType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureType>?
+      deg360;
+
+  List<ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$MediaTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatType?
+      location;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType?
+      country;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType?
+      state;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalTypeFromJson(
+          json);
+
+  String? vat;
+
+  String? register;
+
+  String? licence;
+
+  @override
+  List<Object?> get props => [vat, register, licence];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+          json);
+
+  String? type;
+
+  List<double>? coordinates;
+
+  @override
+  List<Object?> get props => [type, coordinates];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagSquare;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  double? population;
+
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagSquare;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  String? countryCode;
+
+  @override
+  List<Object?> get props => [number, countryCode];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+          json);
+
+  String? name;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [name, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+          json);
+
+  String? city;
+
+  String? address;
+
+  String? postCode;
+
+  String? addressLine;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
+      location;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType?
+      country;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType?
+      state;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType?
+      owner;
+
+  @override
+  List<Object?> get props =>
+      [city, address, postCode, addressLine, location, country, state, owner];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+          json);
+
+  late String name;
+
+  @JsonKey(unknownEnumValue: BankDetailsHolderTypeEnum.artemisUnknown)
+  BankDetailsHolderTypeEnum? type;
+
+  late ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+      address;
+
+  @override
+  List<Object?> get props => [name, type, address];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+          json);
+
+  @JsonKey(name: 'default')
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      kw$default;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size16;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size24;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size32;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size48;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size64;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size128;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size256;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType?
+      size512;
+
+  @override
+  List<Object?> get props => [
+        kw$default,
+        size16,
+        size24,
+        size32,
+        size48,
+        size64,
+        size128,
+        size256,
+        size512
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+          json);
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType?
+      svg;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType?
+      png;
+
+  String? icon;
+
+  @override
+  List<Object?> get props => [svg, png, icon];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? bic;
+
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType?
+      logo;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsTypeFromJson(
+          json);
+
+  late String id;
+
+  late ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType
+      holder;
+
+  late String account;
+
+  String? iban;
+
+  late ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType
+      bank;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsTypeFromJson(
+          json);
+
+  String? website;
+
+  String? email;
+
+  ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneType?
+      phone;
+
+  @override
+  List<Object?> get props => [website, email, phone];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: CustomerPhaseEnum.artemisUnknown)
+  CustomerPhaseEnum? phase;
+
+  String? score;
+
+  @override
+  List<Object?> get props => [phase, score];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierType
+    extends JsonSerializable with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  SupplierTypeEnum? kind;
+
+  @override
+  List<Object?> get props => [kind];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription$CompanyType extends JsonSerializable
+    with EquatableMixin {
+  ListenForCompanyCreated$Subscription$CompanyType();
+
+  factory ListenForCompanyCreated$Subscription$CompanyType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$Subscription$CompanyTypeFromJson(json);
+
+  late String id;
+
+  String? name;
+
+  String? description;
+
+  ListenForCompanyCreated$Subscription$CompanyType$MediaType? media;
+
+  ListenForCompanyCreated$Subscription$CompanyType$FullAddressType? address;
+
+  ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalType? legal;
+
+  List<ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType>? banks;
+
+  ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType?
+      contact;
+
+  ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerType?
+      customer;
+
+  ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierType?
+      supplier;
+
+  bool? logistic;
+
+  List<String>? tags;
+
+  String? externalId;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        description,
+        media,
+        address,
+        legal,
+        banks,
+        contact,
+        customer,
+        supplier,
+        logistic,
+        tags,
+        externalId,
+        createdAt,
+        updatedAt
+      ];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$Subscription$CompanyTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForCompanyCreated$Subscription extends JsonSerializable
+    with EquatableMixin {
+  ListenForCompanyCreated$Subscription();
+
+  factory ListenForCompanyCreated$Subscription.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForCompanyCreated$SubscriptionFromJson(json);
+
+  late ListenForCompanyCreated$Subscription$CompanyType listenForCompanyCreated;
+
+  @override
+  List<Object?> get props => [listenForCompanyCreated];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForCompanyCreated$SubscriptionToJson(this);
+}
+
+enum StateCapitalEnum {
+  @JsonValue('PRIMARY')
+  primary,
+  @JsonValue('ADMIN')
+  admin,
+  @JsonValue('MINOR')
+  minor,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
 enum BankDetailsHolderTypeEnum {
   @JsonValue('PRIVATE')
   private,
@@ -9789,49 +16476,18 @@ enum SupplierTypeEnum {
   artemisUnknown,
 }
 
-@JsonSerializable(explicitToJson: true)
-class CompanyArguments extends JsonSerializable with EquatableMixin {
-  CompanyArguments({required this.id});
-
-  @override
-  factory CompanyArguments.fromJson(Map<String, dynamic> json) =>
-      _$CompanyArgumentsFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-  @override
-  Map<String, dynamic> toJson() => _$CompanyArgumentsToJson(this);
-}
-
-final COMPANY_QUERY_DOCUMENT_OPERATION_NAME = 'company';
-final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
+final GET_COMPANIES_QUERY_DOCUMENT_OPERATION_NAME = 'getCompanies';
+final GET_COMPANIES_QUERY_DOCUMENT = DocumentNode(definitions: [
   OperationDefinitionNode(
     type: OperationType.query,
-    name: NameNode(value: 'company'),
-    variableDefinitions: [
-      VariableDefinitionNode(
-        variable: VariableNode(name: NameNode(value: 'id')),
-        type: NamedTypeNode(
-          name: NameNode(value: 'ID'),
-          isNonNull: true,
-        ),
-        defaultValue: DefaultValueNode(value: null),
-        directives: [],
-      )
-    ],
+    name: NameNode(value: 'getCompanies'),
+    variableDefinitions: [],
     directives: [],
     selectionSet: SelectionSetNode(selections: [
       FieldNode(
-        name: NameNode(value: 'company'),
+        name: NameNode(value: 'getCompanies'),
         alias: null,
-        arguments: [
-          ArgumentNode(
-            name: NameNode(value: 'id'),
-            value: VariableNode(name: NameNode(value: 'id')),
-          )
-        ],
+        arguments: [],
         directives: [],
         selectionSet: SelectionSetNode(selections: [
           FieldNode(
@@ -9916,6 +16572,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -9961,6 +16624,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -10129,6 +16799,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -10179,6 +16856,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -10204,28 +16888,42 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'code'),
+                    name: NameNode(value: 'adminName'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'created'),
+                    name: NameNode(value: 'capital'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'surface'),
+                    name: NameNode(value: 'population'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'dialCode'),
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -10334,6 +17032,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -10379,6 +17084,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -10450,6 +17162,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -10495,6 +17214,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -10764,6 +17490,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -10814,6 +17547,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -10839,28 +17579,42 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -10969,6 +17723,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -11014,6 +17775,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -11085,6 +17853,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -11130,6 +17905,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -11282,6 +18064,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -11338,6 +18127,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -11383,6 +18179,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -11438,6 +18241,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -11483,6 +18293,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -11538,6 +18355,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -11583,6 +18407,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -11638,6 +18469,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -11683,6 +18521,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -11738,6 +18583,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -11766,6 +18618,13 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                 ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
               ),
               FieldNode(
                 name: NameNode(value: 'createdAt'),
@@ -11864,6 +18723,21 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
+            name: NameNode(value: 'supplier'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'kind'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              )
+            ]),
+          ),
+          FieldNode(
             name: NameNode(value: 'logistic'),
             alias: null,
             arguments: [],
@@ -11872,6 +18746,2363 @@ final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
           ),
           FieldNode(
             name: NameNode(value: 'tags'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'createdAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'updatedAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class GetCompaniesQuery
+    extends GraphQLQuery<GetCompanies$Query, JsonSerializable> {
+  GetCompaniesQuery();
+
+  @override
+  final DocumentNode document = GET_COMPANIES_QUERY_DOCUMENT;
+
+  @override
+  final String operationName = GET_COMPANIES_QUERY_DOCUMENT_OPERATION_NAME;
+
+  @override
+  List<Object?> get props => [document, operationName];
+  @override
+  GetCompanies$Query parse(Map<String, dynamic> json) =>
+      GetCompanies$Query.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CompanyArguments extends JsonSerializable with EquatableMixin {
+  CompanyArguments({required this.id});
+
+  @override
+  factory CompanyArguments.fromJson(Map<String, dynamic> json) =>
+      _$CompanyArgumentsFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+  @override
+  Map<String, dynamic> toJson() => _$CompanyArgumentsToJson(this);
+}
+
+final COMPANY_QUERY_DOCUMENT_OPERATION_NAME = 'company';
+final COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.query,
+    name: NameNode(value: 'company'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'id')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'ID'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      )
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'company'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'id'),
+            value: VariableNode(name: NameNode(value: 'id')),
+          )
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'id'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'name'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'description'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'media'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'videos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'deg360'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'pictures'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'address'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'city'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'address'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'postCode'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'addressLine'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'location'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'type'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'coordinates'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'country'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'dialCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'state'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'adminName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'capital'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'population'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'country'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'dialCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'owner'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'legal'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'vat'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'register'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'licence'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'banks'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'holder'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'type'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'address'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'city'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'address'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'postCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'addressLine'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'location'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'type'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'coordinates'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'country'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'dialCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'state'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'adminName'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'capital'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'population'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'country'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dialCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'owner'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'phone'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'number'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'countryCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'account'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'iban'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'bank'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'bic'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'logo'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'svg'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'png'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'default'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size16'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size24'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size32'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size48'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size64'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size128'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size256'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size512'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'icon'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'contact'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'website'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'email'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'phone'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'number'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'isValid'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'countryCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'validationNumber'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'customer'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'phase'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'score'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'supplier'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'kind'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              )
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'logistic'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'tags'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
             alias: null,
             arguments: [],
             directives: [],
@@ -12066,6 +21297,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -12111,6 +21349,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -12279,6 +21524,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -12329,6 +21581,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -12354,28 +21613,42 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -12484,6 +21757,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -12529,6 +21809,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -12600,6 +21887,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -12645,6 +21939,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -12914,6 +22215,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -12964,6 +22272,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -12989,28 +22304,42 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -13119,6 +22448,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -13164,6 +22500,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -13235,6 +22578,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13280,6 +22630,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -13432,6 +22789,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -13488,6 +22852,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13533,6 +22904,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -13588,6 +22966,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13633,6 +23018,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -13688,6 +23080,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13733,6 +23132,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -13788,6 +23194,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13833,6 +23246,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -13888,6 +23308,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -13916,6 +23343,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                     ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
                   ),
                   FieldNode(
                     name: NameNode(value: 'createdAt'),
@@ -14014,6 +23448,21 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'supplier'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'kind'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'logistic'),
                 alias: null,
                 arguments: [],
@@ -14022,6 +23471,13 @@ final GET_COMPANIES_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'tags'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -14252,6 +23708,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -14297,6 +23760,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -14465,6 +23935,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -14515,6 +23992,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -14540,28 +24024,42 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -14670,6 +24168,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -14715,6 +24220,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -14786,6 +24298,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -14831,6 +24350,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -15100,6 +24626,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15150,6 +24683,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -15175,28 +24715,42 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -15305,6 +24859,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -15350,6 +24911,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -15421,6 +24989,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15466,6 +25041,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -15618,6 +25200,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -15674,6 +25263,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15719,6 +25315,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -15774,6 +25377,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15819,6 +25429,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -15874,6 +25491,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15919,6 +25543,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -15974,6 +25605,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -16019,6 +25657,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16074,6 +25719,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -16102,6 +25754,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                     ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
                   ),
                   FieldNode(
                     name: NameNode(value: 'createdAt'),
@@ -16200,6 +25859,21 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'supplier'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'kind'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'logistic'),
                 alias: null,
                 arguments: [],
@@ -16208,6 +25882,13 @@ final GET_CUSTOMERS_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'tags'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -16253,6 +25934,2418 @@ class GetCustomersQuery
   @override
   GetCustomers$Query parse(Map<String, dynamic> json) =>
       GetCustomers$Query.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCompaniesByTargetArguments extends JsonSerializable
+    with EquatableMixin {
+  GetCompaniesByTargetArguments({
+    required this.target,
+    this.searchString,
+    this.pagination,
+  });
+
+  @override
+  factory GetCompaniesByTargetArguments.fromJson(Map<String, dynamic> json) =>
+      _$GetCompaniesByTargetArgumentsFromJson(json);
+
+  late TargetACIInput target;
+
+  final String? searchString;
+
+  final PaginationInput? pagination;
+
+  @override
+  List<Object?> get props => [target, searchString, pagination];
+  @override
+  Map<String, dynamic> toJson() => _$GetCompaniesByTargetArgumentsToJson(this);
+}
+
+final GET_COMPANIES_BY_TARGET_QUERY_DOCUMENT_OPERATION_NAME =
+    'getCompaniesByTarget';
+final GET_COMPANIES_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.query,
+    name: NameNode(value: 'getCompaniesByTarget'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'target')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'TargetACIInput'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'searchString')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'pagination')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'PaginationInput'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'getCompaniesByTarget'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'target'),
+            value: VariableNode(name: NameNode(value: 'target')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'searchString'),
+            value: VariableNode(name: NameNode(value: 'searchString')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'pagination'),
+            value: VariableNode(name: NameNode(value: 'pagination')),
+          ),
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'count'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'isLast'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'objects'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'description'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'media'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'videos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'deg360'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'pictures'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'address'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'city'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'address'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'postCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'addressLine'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'location'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'type'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'coordinates'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'country'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'dialCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'state'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'adminName'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'capital'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'population'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'country'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'dialCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'owner'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'legal'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'vat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'register'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'licence'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'banks'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'holder'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'type'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'address'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'city'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'address'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'postCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'addressLine'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'location'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'type'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'coordinates'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'country'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dialCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'state'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'adminName'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'capital'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'population'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'country'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'code'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'dialCode'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'iconFlag'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagSquare'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagWide'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'owner'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'phone'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'number'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'countryCode'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'account'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iban'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'bank'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'bic'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'logo'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'svg'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'png'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'default'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size16'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size24'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size32'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size48'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size64'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size128'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size256'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size512'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'icon'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'contact'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'website'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'email'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'customer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'phase'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'score'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'supplier'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'kind'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'logistic'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'tags'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class GetCompaniesByTargetQuery extends GraphQLQuery<GetCompaniesByTarget$Query,
+    GetCompaniesByTargetArguments> {
+  GetCompaniesByTargetQuery({required this.variables});
+
+  @override
+  final DocumentNode document = GET_COMPANIES_BY_TARGET_QUERY_DOCUMENT;
+
+  @override
+  final String operationName =
+      GET_COMPANIES_BY_TARGET_QUERY_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final GetCompaniesByTargetArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+  @override
+  GetCompaniesByTarget$Query parse(Map<String, dynamic> json) =>
+      GetCompaniesByTarget$Query.fromJson(json);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -16420,6 +28513,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -16465,6 +28565,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -16633,6 +28740,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -16683,6 +28797,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -16708,28 +28829,42 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -16838,6 +28973,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -16883,6 +29025,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -16954,6 +29103,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -16999,6 +29155,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -17268,6 +29431,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17318,6 +29488,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -17343,28 +29520,42 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -17473,6 +29664,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -17518,6 +29716,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -17589,6 +29794,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17634,6 +29846,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -17786,6 +30005,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -17842,6 +30068,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17887,6 +30120,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -17942,6 +30182,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17987,6 +30234,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -18042,6 +30296,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -18087,6 +30348,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -18142,6 +30410,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -18187,6 +30462,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -18242,6 +30524,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -18270,6 +30559,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                     ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
                   ),
                   FieldNode(
                     name: NameNode(value: 'createdAt'),
@@ -18368,6 +30664,21 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'supplier'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'kind'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'logistic'),
                 alias: null,
                 arguments: [],
@@ -18376,6 +30687,13 @@ final SEARCH_COMPANY_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'tags'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -18626,6 +30944,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -18671,6 +30996,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -18839,6 +31171,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -18889,6 +31228,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -18914,28 +31260,42 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -19044,6 +31404,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -19089,6 +31456,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -19160,6 +31534,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -19205,6 +31586,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -19474,6 +31862,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -19524,6 +31919,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -19549,28 +31951,42 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -19679,6 +32095,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -19724,6 +32147,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -19795,6 +32225,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -19840,6 +32277,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -19992,6 +32436,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -20048,6 +32499,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -20093,6 +32551,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -20148,6 +32613,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -20193,6 +32665,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -20248,6 +32727,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -20293,6 +32779,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -20348,6 +32841,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -20393,6 +32893,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -20448,6 +32955,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -20476,6 +32990,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                     ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
                   ),
                   FieldNode(
                     name: NameNode(value: 'createdAt'),
@@ -20574,6 +33095,21 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'supplier'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'kind'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'logistic'),
                 alias: null,
                 arguments: [],
@@ -20582,6 +33118,13 @@ final SEARCH_CUSTOMERS_BY_TARGET_AND_PHASE_QUERY_DOCUMENT =
               ),
               FieldNode(
                 name: NameNode(value: 'tags'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -20630,6 +33173,2440 @@ class SearchCustomersByTargetAndPhaseQuery extends GraphQLQuery<
   @override
   SearchCustomersByTargetAndPhase$Query parse(Map<String, dynamic> json) =>
       SearchCustomersByTargetAndPhase$Query.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchSuppliersByTargetArguments extends JsonSerializable
+    with EquatableMixin {
+  SearchSuppliersByTargetArguments({
+    required this.target,
+    this.kinds,
+    this.pagination,
+    this.searchString,
+  });
+
+  @override
+  factory SearchSuppliersByTargetArguments.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchSuppliersByTargetArgumentsFromJson(json);
+
+  late TargetACIInput target;
+
+  @JsonKey(unknownEnumValue: SupplierTypeEnum.artemisUnknown)
+  final List<SupplierTypeEnum>? kinds;
+
+  final PaginationInput? pagination;
+
+  final String? searchString;
+
+  @override
+  List<Object?> get props => [target, kinds, pagination, searchString];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchSuppliersByTargetArgumentsToJson(this);
+}
+
+final SEARCH_SUPPLIERS_BY_TARGET_QUERY_DOCUMENT_OPERATION_NAME =
+    'searchSuppliersByTarget';
+final SEARCH_SUPPLIERS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.query,
+    name: NameNode(value: 'searchSuppliersByTarget'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'target')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'TargetACIInput'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'kinds')),
+        type: ListTypeNode(
+          type: NamedTypeNode(
+            name: NameNode(value: 'SupplierTypeEnum'),
+            isNonNull: true,
+          ),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'pagination')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'PaginationInput'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'searchString')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'searchSuppliersByTarget'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'target'),
+            value: VariableNode(name: NameNode(value: 'target')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'kinds'),
+            value: VariableNode(name: NameNode(value: 'kinds')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'pagination'),
+            value: VariableNode(name: NameNode(value: 'pagination')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'searchString'),
+            value: VariableNode(name: NameNode(value: 'searchString')),
+          ),
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'count'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'isLast'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'objects'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'description'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'media'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'videos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'deg360'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'pictures'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'address'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'city'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'address'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'postCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'addressLine'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'location'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'type'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'coordinates'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'country'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'dialCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'state'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'adminName'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'capital'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'population'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'country'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'dialCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'owner'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'legal'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'vat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'register'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'licence'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'banks'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'holder'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'type'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'address'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'city'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'address'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'postCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'addressLine'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'location'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'type'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'coordinates'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'country'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dialCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'state'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'adminName'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'capital'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'population'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'country'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'code'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'dialCode'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'iconFlag'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagSquare'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagWide'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'owner'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'phone'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'number'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'countryCode'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'account'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iban'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'bank'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'bic'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'logo'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'svg'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'png'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'default'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size16'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size24'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size32'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size48'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size64'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size128'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size256'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'size512'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'icon'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'contact'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'website'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'email'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'customer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'phase'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'score'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'supplier'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'kind'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'logistic'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'tags'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class SearchSuppliersByTargetQuery extends GraphQLQuery<
+    SearchSuppliersByTarget$Query, SearchSuppliersByTargetArguments> {
+  SearchSuppliersByTargetQuery({required this.variables});
+
+  @override
+  final DocumentNode document = SEARCH_SUPPLIERS_BY_TARGET_QUERY_DOCUMENT;
+
+  @override
+  final String operationName =
+      SEARCH_SUPPLIERS_BY_TARGET_QUERY_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final SearchSuppliersByTargetArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+  @override
+  SearchSuppliersByTarget$Query parse(Map<String, dynamic> json) =>
+      SearchSuppliersByTarget$Query.fromJson(json);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -20818,6 +35795,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -20863,6 +35847,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -21031,6 +36022,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -21081,6 +36079,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -21106,28 +36111,42 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -21236,6 +36255,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -21281,6 +36307,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -21352,6 +36385,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -21397,6 +36437,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -21666,6 +36713,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -21716,6 +36770,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -21741,28 +36802,42 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -21871,6 +36946,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -21916,6 +36998,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -21987,6 +37076,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22032,6 +37128,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -22184,6 +37287,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -22240,6 +37350,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22285,6 +37402,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -22340,6 +37464,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22385,6 +37516,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -22440,6 +37578,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22485,6 +37630,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -22540,6 +37692,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22585,6 +37744,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -22640,6 +37806,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -22668,6 +37841,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                     ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
                   ),
                   FieldNode(
                     name: NameNode(value: 'createdAt'),
@@ -22766,6 +37946,21 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'supplier'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'kind'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'logistic'),
                 alias: null,
                 arguments: [],
@@ -22774,6 +37969,13 @@ final SEARCH_LOGISTIC_COMPANIES_BY_TARGET_QUERY_DOCUMENT =
               ),
               FieldNode(
                 name: NameNode(value: 'tags'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -22951,6 +38153,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -22996,6 +38205,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -23164,6 +38380,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -23214,6 +38437,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -23239,28 +38469,42 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'code'),
+                    name: NameNode(value: 'adminName'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'created'),
+                    name: NameNode(value: 'capital'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'surface'),
+                    name: NameNode(value: 'population'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'dialCode'),
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -23369,6 +38613,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -23414,6 +38665,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -23485,6 +38743,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -23530,6 +38795,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -23799,6 +39071,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -23849,6 +39128,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -23874,28 +39160,42 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -24004,6 +39304,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -24049,6 +39356,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -24120,6 +39434,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -24165,6 +39486,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -24317,6 +39645,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -24373,6 +39708,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -24418,6 +39760,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -24473,6 +39822,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -24518,6 +39874,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -24573,6 +39936,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -24618,6 +39988,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -24673,6 +40050,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -24718,6 +40102,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -24773,6 +40164,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -24801,6 +40199,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                 ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
               ),
               FieldNode(
                 name: NameNode(value: 'createdAt'),
@@ -24899,6 +40304,21 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
+            name: NameNode(value: 'supplier'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'kind'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              )
+            ]),
+          ),
+          FieldNode(
             name: NameNode(value: 'logistic'),
             alias: null,
             arguments: [],
@@ -24907,6 +40327,13 @@ final CREATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
           ),
           FieldNode(
             name: NameNode(value: 'tags'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
             alias: null,
             arguments: [],
             directives: [],
@@ -25097,6 +40524,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -25142,6 +40576,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -25310,6 +40751,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -25360,6 +40808,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -25385,28 +40840,42 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'code'),
+                    name: NameNode(value: 'adminName'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'created'),
+                    name: NameNode(value: 'capital'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'surface'),
+                    name: NameNode(value: 'population'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'dialCode'),
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -25515,6 +40984,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -25560,6 +41036,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -25631,6 +41114,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -25676,6 +41166,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -25945,6 +41442,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -25995,6 +41499,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -26020,28 +41531,42 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -26150,6 +41675,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -26195,6 +41727,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -26266,6 +41805,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -26311,6 +41857,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -26463,6 +42016,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -26519,6 +42079,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -26564,6 +42131,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -26619,6 +42193,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -26664,6 +42245,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -26719,6 +42307,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -26764,6 +42359,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -26819,6 +42421,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -26864,6 +42473,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -26919,6 +42535,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -26947,6 +42570,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                 ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
               ),
               FieldNode(
                 name: NameNode(value: 'createdAt'),
@@ -27045,6 +42675,21 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
+            name: NameNode(value: 'supplier'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'kind'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              )
+            ]),
+          ),
+          FieldNode(
             name: NameNode(value: 'logistic'),
             alias: null,
             arguments: [],
@@ -27053,6 +42698,13 @@ final UPDATE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
           ),
           FieldNode(
             name: NameNode(value: 'tags'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
             alias: null,
             arguments: [],
             directives: [],
@@ -27096,4 +42748,4772 @@ class UpdateCompanyMutation
   @override
   UpdateCompany$Mutation parse(Map<String, dynamic> json) =>
       UpdateCompany$Mutation.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateCompanyMediaArguments extends JsonSerializable
+    with EquatableMixin {
+  BulkUpdateCompanyMediaArguments({required this.input});
+
+  @override
+  factory BulkUpdateCompanyMediaArguments.fromJson(Map<String, dynamic> json) =>
+      _$BulkUpdateCompanyMediaArgumentsFromJson(json);
+
+  late List<UpdateMediaInput> input;
+
+  @override
+  List<Object?> get props => [input];
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateCompanyMediaArgumentsToJson(this);
+}
+
+final BULK_UPDATE_COMPANY_MEDIA_MUTATION_DOCUMENT_OPERATION_NAME =
+    'bulkUpdateCompanyMedia';
+final BULK_UPDATE_COMPANY_MEDIA_MUTATION_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.mutation,
+    name: NameNode(value: 'bulkUpdateCompanyMedia'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'input')),
+        type: ListTypeNode(
+          type: NamedTypeNode(
+            name: NameNode(value: 'UpdateMediaInput'),
+            isNonNull: true,
+          ),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      )
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'bulkUpdateCompanyMedia'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'input'),
+            value: VariableNode(name: NameNode(value: 'input')),
+          )
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'id'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'name'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'description'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'media'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'videos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'deg360'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'pictures'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'address'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'city'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'address'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'postCode'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'addressLine'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'location'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'type'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'coordinates'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'country'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'dialCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'state'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'adminName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'capital'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'population'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'country'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'dialCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'owner'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'legal'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'vat'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'register'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'licence'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'banks'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'holder'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'type'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'address'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'city'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'address'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'postCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'addressLine'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'location'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'type'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'coordinates'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'country'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'dialCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'state'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'adminName'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'capital'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'population'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'country'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dialCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'owner'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'phone'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'number'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'countryCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'account'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'iban'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'bank'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'bic'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'logo'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'svg'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'png'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'default'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size16'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size24'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size32'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size48'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size64'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size128'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size256'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size512'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'icon'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'contact'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'website'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'email'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'phone'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'number'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'isValid'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'countryCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'validationNumber'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'customer'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'phase'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'score'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'supplier'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'kind'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              )
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'logistic'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'tags'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'createdAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'updatedAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class BulkUpdateCompanyMediaMutation extends GraphQLQuery<
+    BulkUpdateCompanyMedia$Mutation, BulkUpdateCompanyMediaArguments> {
+  BulkUpdateCompanyMediaMutation({required this.variables});
+
+  @override
+  final DocumentNode document = BULK_UPDATE_COMPANY_MEDIA_MUTATION_DOCUMENT;
+
+  @override
+  final String operationName =
+      BULK_UPDATE_COMPANY_MEDIA_MUTATION_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final BulkUpdateCompanyMediaArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+  @override
+  BulkUpdateCompanyMedia$Mutation parse(Map<String, dynamic> json) =>
+      BulkUpdateCompanyMedia$Mutation.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class DeleteCompanyArguments extends JsonSerializable with EquatableMixin {
+  DeleteCompanyArguments({required this.id});
+
+  @override
+  factory DeleteCompanyArguments.fromJson(Map<String, dynamic> json) =>
+      _$DeleteCompanyArgumentsFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+  @override
+  Map<String, dynamic> toJson() => _$DeleteCompanyArgumentsToJson(this);
+}
+
+final DELETE_COMPANY_MUTATION_DOCUMENT_OPERATION_NAME = 'deleteCompany';
+final DELETE_COMPANY_MUTATION_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.mutation,
+    name: NameNode(value: 'deleteCompany'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'id')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'ID'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      )
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'deleteCompany'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'id'),
+            value: VariableNode(name: NameNode(value: 'id')),
+          )
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'success'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'message'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class DeleteCompanyMutation
+    extends GraphQLQuery<DeleteCompany$Mutation, DeleteCompanyArguments> {
+  DeleteCompanyMutation({required this.variables});
+
+  @override
+  final DocumentNode document = DELETE_COMPANY_MUTATION_DOCUMENT;
+
+  @override
+  final String operationName = DELETE_COMPANY_MUTATION_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final DeleteCompanyArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+  @override
+  DeleteCompany$Mutation parse(Map<String, dynamic> json) =>
+      DeleteCompany$Mutation.fromJson(json);
+}
+
+final LISTEN_FOR_COMPANY_CREATED_SUBSCRIPTION_DOCUMENT_OPERATION_NAME =
+    'listenForCompanyCreated';
+final LISTEN_FOR_COMPANY_CREATED_SUBSCRIPTION_DOCUMENT =
+    DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.subscription,
+    name: NameNode(value: 'listenForCompanyCreated'),
+    variableDefinitions: [],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'listenForCompanyCreated'),
+        alias: null,
+        arguments: [],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'id'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'name'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'description'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'media'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'videos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'deg360'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'pictures'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'address'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'city'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'address'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'postCode'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'addressLine'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'location'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'type'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'coordinates'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'country'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'dialCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'state'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'adminName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'capital'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'population'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'country'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'dialCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'owner'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'legal'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'vat'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'register'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'licence'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'banks'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'holder'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'type'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'address'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'city'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'address'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'postCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'addressLine'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'location'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'type'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'coordinates'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'country'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'dialCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'state'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'adminName'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'capital'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'population'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'country'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'dialCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'owner'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'phone'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'number'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'countryCode'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'account'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'iban'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'bank'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'bic'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'logo'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'svg'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'png'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'default'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size16'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size24'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size32'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size48'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size64'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size128'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size256'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'size512'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'icon'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'contact'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'website'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'email'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'phone'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'number'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'isValid'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'countryCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'validationNumber'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'customer'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'phase'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'score'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'supplier'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'kind'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              )
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'logistic'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'tags'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'createdAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'updatedAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class ListenForCompanyCreatedSubscription extends GraphQLQuery<
+    ListenForCompanyCreated$Subscription, JsonSerializable> {
+  ListenForCompanyCreatedSubscription();
+
+  @override
+  final DocumentNode document =
+      LISTEN_FOR_COMPANY_CREATED_SUBSCRIPTION_DOCUMENT;
+
+  @override
+  final String operationName =
+      LISTEN_FOR_COMPANY_CREATED_SUBSCRIPTION_DOCUMENT_OPERATION_NAME;
+
+  @override
+  List<Object?> get props => [document, operationName];
+  @override
+  ListenForCompanyCreated$Subscription parse(Map<String, dynamic> json) =>
+      ListenForCompanyCreated$Subscription.fromJson(json);
 }

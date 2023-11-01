@@ -15,7 +15,8 @@ FindStateById$Query$StateType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindStateById$Query$StateType$CountryType$PictureTypeToJson(
@@ -34,6 +35,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -89,7 +91,8 @@ FindStateById$Query$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$FindStateById$Query$StateType$PictureTypeToJson(
     FindStateById$Query$StateType$PictureType instance) {
@@ -107,6 +110,7 @@ Map<String, dynamic> _$FindStateById$Query$StateType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -115,10 +119,14 @@ FindStateById$Query$StateType _$FindStateById$Query$StateTypeFromJson(
     FindStateById$Query$StateType()
       ..id = json['id'] as String
       ..name = json['name'] as String
-      ..code = json['code'] as String?
-      ..created = DateTime.parse(json['created'] as String)
-      ..surface = json['surface'] as String
-      ..dialCode = json['dialCode'] as String?
+      ..adminName = json['adminName'] as String?
+      ..capital = $enumDecodeNullable(
+          _$StateCapitalEnumEnumMap, json['capital'],
+          unknownValue: StateCapitalEnum.artemisUnknown)
+      ..population = (json['population'] as num?)?.toDouble()
+      ..ascii = json['ascii'] as String?
+      ..lat = (json['lat'] as num?)?.toDouble()
+      ..lng = (json['lng'] as num?)?.toDouble()
       ..country = json['country'] == null
           ? null
           : FindStateById$Query$StateType$CountryType.fromJson(
@@ -147,10 +155,12 @@ Map<String, dynamic> _$FindStateById$Query$StateTypeToJson(
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -158,6 +168,13 @@ Map<String, dynamic> _$FindStateById$Query$StateTypeToJson(
   writeNotNull('flagWide', instance.flagWide?.toJson());
   return val;
 }
+
+const _$StateCapitalEnumEnumMap = {
+  StateCapitalEnum.primary: 'PRIMARY',
+  StateCapitalEnum.admin: 'ADMIN',
+  StateCapitalEnum.minor: 'MINOR',
+  StateCapitalEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
 
 FindStateById$Query _$FindStateById$QueryFromJson(Map<String, dynamic> json) =>
     FindStateById$Query()
@@ -179,7 +196,8 @@ GetStates$Query$StateType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetStates$Query$StateType$CountryType$PictureTypeToJson(
     GetStates$Query$StateType$CountryType$PictureType instance) {
@@ -197,6 +215,7 @@ Map<String, dynamic> _$GetStates$Query$StateType$CountryType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -252,7 +271,8 @@ GetStates$Query$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetStates$Query$StateType$PictureTypeToJson(
     GetStates$Query$StateType$PictureType instance) {
@@ -270,6 +290,7 @@ Map<String, dynamic> _$GetStates$Query$StateType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -278,10 +299,14 @@ GetStates$Query$StateType _$GetStates$Query$StateTypeFromJson(
     GetStates$Query$StateType()
       ..id = json['id'] as String
       ..name = json['name'] as String
-      ..code = json['code'] as String?
-      ..created = DateTime.parse(json['created'] as String)
-      ..surface = json['surface'] as String
-      ..dialCode = json['dialCode'] as String?
+      ..adminName = json['adminName'] as String?
+      ..capital = $enumDecodeNullable(
+          _$StateCapitalEnumEnumMap, json['capital'],
+          unknownValue: StateCapitalEnum.artemisUnknown)
+      ..population = (json['population'] as num?)?.toDouble()
+      ..ascii = json['ascii'] as String?
+      ..lat = (json['lat'] as num?)?.toDouble()
+      ..lng = (json['lng'] as num?)?.toDouble()
       ..country = json['country'] == null
           ? null
           : GetStates$Query$StateType$CountryType.fromJson(
@@ -310,10 +335,12 @@ Map<String, dynamic> _$GetStates$Query$StateTypeToJson(
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -343,7 +370,8 @@ FindStatesPagination$Query$StatePaginatedType$StateType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindStatesPagination$Query$StatePaginatedType$StateType$CountryType$PictureTypeToJson(
@@ -363,6 +391,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -420,7 +449,8 @@ FindStatesPagination$Query$StatePaginatedType$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindStatesPagination$Query$StatePaginatedType$StateType$PictureTypeToJson(
@@ -440,6 +470,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -449,10 +480,14 @@ FindStatesPagination$Query$StatePaginatedType$StateType
         FindStatesPagination$Query$StatePaginatedType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : FindStatesPagination$Query$StatePaginatedType$StateType$CountryType
@@ -482,10 +517,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -564,7 +601,8 @@ FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType$Pic
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType$PictureTypeToJson(
@@ -584,6 +622,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -641,7 +680,8 @@ FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureTypeToJson(
@@ -661,6 +701,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -670,10 +711,14 @@ FindStatesByCountryPagination$Query$StatePaginatedType$StateType
         FindStatesByCountryPagination$Query$StatePaginatedType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType
@@ -704,10 +749,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -769,7 +816,8 @@ CreateState$Mutation$StateType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateState$Mutation$StateType$CountryType$PictureTypeToJson(
@@ -788,6 +836,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -843,7 +892,8 @@ CreateState$Mutation$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$CreateState$Mutation$StateType$PictureTypeToJson(
     CreateState$Mutation$StateType$PictureType instance) {
@@ -861,6 +911,7 @@ Map<String, dynamic> _$CreateState$Mutation$StateType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -869,10 +920,14 @@ CreateState$Mutation$StateType _$CreateState$Mutation$StateTypeFromJson(
     CreateState$Mutation$StateType()
       ..id = json['id'] as String
       ..name = json['name'] as String
-      ..code = json['code'] as String?
-      ..created = DateTime.parse(json['created'] as String)
-      ..surface = json['surface'] as String
-      ..dialCode = json['dialCode'] as String?
+      ..adminName = json['adminName'] as String?
+      ..capital = $enumDecodeNullable(
+          _$StateCapitalEnumEnumMap, json['capital'],
+          unknownValue: StateCapitalEnum.artemisUnknown)
+      ..population = (json['population'] as num?)?.toDouble()
+      ..ascii = json['ascii'] as String?
+      ..lat = (json['lat'] as num?)?.toDouble()
+      ..lng = (json['lng'] as num?)?.toDouble()
       ..country = json['country'] == null
           ? null
           : CreateState$Mutation$StateType$CountryType.fromJson(
@@ -901,10 +956,12 @@ Map<String, dynamic> _$CreateState$Mutation$StateTypeToJson(
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -927,10 +984,13 @@ Map<String, dynamic> _$CreateState$MutationToJson(
 
 StateInput _$StateInputFromJson(Map<String, dynamic> json) => StateInput(
       name: json['name'] as String,
-      code: json['code'] as String?,
-      created: DateTime.parse(json['created'] as String),
-      surface: json['surface'] as String,
-      dialCode: json['dialCode'] as String?,
+      adminName: json['adminName'] as String,
+      capital: $enumDecode(_$StateCapitalEnumEnumMap, json['capital'],
+          unknownValue: StateCapitalEnum.artemisUnknown),
+      population: (json['population'] as num).toDouble(),
+      ascii: json['ascii'] as String,
+      lat: (json['lat'] as num).toDouble(),
+      lng: (json['lng'] as num).toDouble(),
       flagSquare: json['flagSquare'] == null
           ? null
           : PictureInput.fromJson(json['flagSquare'] as Map<String, dynamic>),
@@ -943,6 +1003,12 @@ StateInput _$StateInputFromJson(Map<String, dynamic> json) => StateInput(
 Map<String, dynamic> _$StateInputToJson(StateInput instance) {
   final val = <String, dynamic>{
     'name': instance.name,
+    'adminName': instance.adminName,
+    'capital': _$StateCapitalEnumEnumMap[instance.capital]!,
+    'population': instance.population,
+    'ascii': instance.ascii,
+    'lat': instance.lat,
+    'lng': instance.lng,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -951,10 +1017,6 @@ Map<String, dynamic> _$StateInputToJson(StateInput instance) {
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
   writeNotNull('flagSquare', instance.flagSquare?.toJson());
   writeNotNull('flagWide', instance.flagWide?.toJson());
   writeNotNull('country', instance.country);
@@ -999,7 +1061,8 @@ UpdateState$Mutation$StateType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateState$Mutation$StateType$CountryType$PictureTypeToJson(
@@ -1018,6 +1081,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1073,7 +1137,8 @@ UpdateState$Mutation$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$UpdateState$Mutation$StateType$PictureTypeToJson(
     UpdateState$Mutation$StateType$PictureType instance) {
@@ -1091,6 +1156,7 @@ Map<String, dynamic> _$UpdateState$Mutation$StateType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1099,10 +1165,14 @@ UpdateState$Mutation$StateType _$UpdateState$Mutation$StateTypeFromJson(
     UpdateState$Mutation$StateType()
       ..id = json['id'] as String
       ..name = json['name'] as String
-      ..code = json['code'] as String?
-      ..created = DateTime.parse(json['created'] as String)
-      ..surface = json['surface'] as String
-      ..dialCode = json['dialCode'] as String?
+      ..adminName = json['adminName'] as String?
+      ..capital = $enumDecodeNullable(
+          _$StateCapitalEnumEnumMap, json['capital'],
+          unknownValue: StateCapitalEnum.artemisUnknown)
+      ..population = (json['population'] as num?)?.toDouble()
+      ..ascii = json['ascii'] as String?
+      ..lat = (json['lat'] as num?)?.toDouble()
+      ..lng = (json['lng'] as num?)?.toDouble()
       ..country = json['country'] == null
           ? null
           : UpdateState$Mutation$StateType$CountryType.fromJson(
@@ -1131,10 +1201,12 @@ Map<String, dynamic> _$UpdateState$Mutation$StateTypeToJson(
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();

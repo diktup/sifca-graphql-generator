@@ -45,6 +45,7 @@ query getCoupons {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -53,6 +54,7 @@ query getCoupons {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -68,6 +70,7 @@ query getCoupons {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -76,6 +79,7 @@ query getCoupons {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -93,6 +97,7 @@ query getCoupons {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -101,6 +106,7 @@ query getCoupons {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -127,6 +133,7 @@ query getCoupons {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -135,15 +142,18 @@ query getCoupons {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -159,6 +169,7 @@ query getCoupons {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -167,6 +178,7 @@ query getCoupons {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -178,6 +190,7 @@ query getCoupons {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -186,6 +199,7 @@ query getCoupons {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -220,6 +234,7 @@ query getCoupons {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -228,15 +243,18 @@ query getCoupons {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -252,6 +270,7 @@ query getCoupons {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -260,6 +279,7 @@ query getCoupons {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -271,6 +291,7 @@ query getCoupons {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -279,6 +300,7 @@ query getCoupons {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -313,6 +335,7 @@ query getCoupons {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -321,15 +344,18 @@ query getCoupons {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -345,6 +371,7 @@ query getCoupons {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -353,6 +380,7 @@ query getCoupons {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -364,6 +392,7 @@ query getCoupons {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -372,6 +401,7 @@ query getCoupons {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -401,6 +431,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -409,6 +440,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -417,6 +449,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -425,6 +458,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -433,6 +467,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -443,6 +478,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -451,6 +487,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -459,6 +496,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -467,6 +505,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -475,6 +514,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -501,6 +541,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -509,6 +550,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -517,6 +559,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -525,6 +568,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -533,6 +577,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -543,6 +588,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -551,6 +597,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -559,6 +606,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -567,6 +615,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -575,6 +624,7 @@ query getCoupons {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -615,6 +665,140 @@ query getCoupons {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     discount {
       amount
@@ -628,7 +812,9 @@ query coupon($id: ID!) {
     id
     to
     from
-    redeemed 
+    redeemed
+    createdAt
+    updatedAt
     couponCode
     user {
       id
@@ -668,6 +854,7 @@ query coupon($id: ID!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -676,6 +863,7 @@ query coupon($id: ID!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -691,6 +879,7 @@ query coupon($id: ID!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -699,6 +888,7 @@ query coupon($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -716,6 +906,7 @@ query coupon($id: ID!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -724,6 +915,7 @@ query coupon($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -750,6 +942,7 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -758,15 +951,18 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -782,6 +978,7 @@ query coupon($id: ID!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -790,6 +987,7 @@ query coupon($id: ID!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -801,6 +999,7 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -809,6 +1008,7 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -843,6 +1043,7 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -851,15 +1052,18 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -875,6 +1079,7 @@ query coupon($id: ID!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -883,6 +1088,7 @@ query coupon($id: ID!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -894,6 +1100,7 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -902,6 +1109,7 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -936,6 +1144,7 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -944,15 +1153,18 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -968,6 +1180,7 @@ query coupon($id: ID!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -976,6 +1189,7 @@ query coupon($id: ID!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -987,6 +1201,7 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -995,6 +1210,7 @@ query coupon($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1024,6 +1240,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1032,6 +1249,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1040,6 +1258,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1048,6 +1267,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1056,6 +1276,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -1066,6 +1287,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1074,6 +1296,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1082,6 +1305,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1090,6 +1314,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1098,6 +1323,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -1124,6 +1350,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1132,6 +1359,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1140,6 +1368,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1148,6 +1377,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1156,6 +1386,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -1166,6 +1397,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1174,6 +1406,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1182,6 +1415,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1190,6 +1424,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1198,6 +1433,7 @@ query coupon($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -1238,56 +1474,166 @@ query coupon($id: ID!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     discount {
       amount
       discountType
     }
-  
-    createdAt
-    updatedAt
+
   }
 }
 query isCouponValid($couponCode: String!, $target: TargetACIInput!) {
   isCouponValid(couponCode: $couponCode, target: $target) {
     isValid
-  }
-}
-query getPaginatedCoupons($pagination: PaginationInput) {
-  getPaginatedCoupons(pagination: $pagination) {
-    count
-    isLast
-    objects {
+    coupon {
       id
       to
       from
-      redeemed 
+      redeemed
+      createdAt
+      updatedAt
       couponCode
       user {
         id
-        apps
         email
-        roles
-        title
-        about
         gender
-        locale
-        source
-        status
         lastName
         username
         firstName
-        plugged
-        createdAt
-        updatedAt
-        isMailValid
-        dateOfBirth
-        phoneNumber
-        mobileTheme
-        placeOfBirth
-        maritalStatus
-        newsletterSubs
-        hasAutoGeneratedEmail
         phone {
           number
           isValid
@@ -1301,575 +1647,7 @@ query getPaginatedCoupons($pagination: PaginationInput) {
           height
           x
           y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        languages {
-          id
-          name
-          code
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        nationality {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        billingAddress {
-          city
-          address
-          postCode
-          addressLine
-          location {
-            type
-            coordinates
-          }
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          state {
-            id
-            name
-            code
-            created
-            surface
-            dialCode
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          owner {
-            name
-            phone {
-              number
-              countryCode
-            }
-          }
-        }
-        shippingAddress {
-          city
-          address
-          postCode
-          addressLine
-          location {
-            type
-            coordinates
-          }
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          state {
-            id
-            name
-            code
-            created
-            surface
-            dialCode
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          owner {
-            name
-            phone {
-              number
-              countryCode
-            }
-          }
-        }
-        residentialAddress {
-          city
-          address
-          postCode
-          addressLine
-          location {
-            type
-            coordinates
-          }
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          state {
-            id
-            name
-            code
-            created
-            surface
-            dialCode
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          owner {
-            name
-            phone {
-              number
-              countryCode
-            }
-          }
-        }
-        chatContact {
-          name {
-            id
-            name
-            code
-            fontIcon
-            createdAt
-            updatedAt
-            images {
-              style
-              images {
-                svg {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-                png {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-              }
-            }
-          }
-          value
-        }
-        socialMedia {
-          name {
-            id
-            name
-            code
-            fontIcon
-            createdAt
-            updatedAt
-            images {
-              style
-              images {
-                svg {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-                png {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-              }
-            }
-          }
-          value
-        }
-        socialLoginData {
-          ooredoo {
-            id
-          }
-          facebook {
-            id
-            name
-            token
-            email
-            last_name
-            first_name
-          }
-          google {
-            sub
-            name
-            email
-            token
-            locale
-            picture
-            given_name
-            family_name
-            email_verified
-          }
-          apple {
-            email
-            status
-            givenName
-            familyName
-            identityToken
-            userIdentifier
-            authorizationCode
-          }
+          alt
         }
       }
       discount {
@@ -1877,8 +1655,49 @@ query getPaginatedCoupons($pagination: PaginationInput) {
         discountType
       }
       
+    }
+  }
+}
+query getPaginatedCoupons($pagination: PaginationInput) {
+  getPaginatedCoupons(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      to
+      from
+      redeemed
       createdAt
       updatedAt
+      couponCode
+      user {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      discount {
+        amount
+        discountType
+      }
+      
     }
   }
 }
@@ -1887,7 +1706,9 @@ query findCouponsByTarget($target: TargetACIInput!) {
     id
     to
     from
-    redeemed 
+    redeemed
+    createdAt
+    updatedAt
     couponCode
     user {
       id
@@ -1927,6 +1748,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -1935,6 +1757,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -1950,6 +1773,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -1958,6 +1782,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -1975,6 +1800,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -1983,6 +1809,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -2009,6 +1836,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2017,15 +1845,18 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2041,6 +1872,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2049,6 +1881,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2060,6 +1893,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2068,6 +1902,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2102,6 +1937,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2110,15 +1946,18 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2134,6 +1973,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2142,6 +1982,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2153,6 +1994,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2161,6 +2003,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2195,6 +2038,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2203,15 +2047,18 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2227,6 +2074,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2235,6 +2083,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2246,6 +2095,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2254,6 +2104,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2283,6 +2134,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2291,6 +2143,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2299,6 +2152,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2307,6 +2161,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2315,6 +2170,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -2325,6 +2181,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2333,6 +2190,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2341,6 +2199,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2349,6 +2208,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2357,6 +2217,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -2383,6 +2244,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2391,6 +2253,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2399,6 +2262,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2407,6 +2271,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2415,6 +2280,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -2425,6 +2291,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2433,6 +2300,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2441,6 +2309,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2449,6 +2318,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2457,6 +2327,7 @@ query findCouponsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -2497,14 +2368,146 @@ query findCouponsByTarget($target: TargetACIInput!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     discount {
       amount
       discountType
     }
-  
-    createdAt
-    updatedAt
+   
   }
 }
 query findCouponsByTargetWithFilterPaginated(
@@ -2520,33 +2523,17 @@ query findCouponsByTargetWithFilterPaginated(
       id
       to
       from
-      redeemed 
+      redeemed
+      createdAt
+      updatedAt
       couponCode
       user {
         id
-        apps
         email
-        roles
-        title
-        about
         gender
-        locale
-        source
-        status
         lastName
         username
         firstName
-        plugged
-        createdAt
-        updatedAt
-        isMailValid
-        dateOfBirth
-        phoneNumber
-        mobileTheme
-        placeOfBirth
-        maritalStatus
-        newsletterSubs
-        hasAutoGeneratedEmail
         phone {
           number
           isValid
@@ -2560,575 +2547,7 @@ query findCouponsByTargetWithFilterPaginated(
           height
           x
           y
-        }
-        pictures {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        languages {
-          id
-          name
-          code
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        nationality {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        billingAddress {
-          city
-          address
-          postCode
-          addressLine
-          location {
-            type
-            coordinates
-          }
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          state {
-            id
-            name
-            code
-            created
-            surface
-            dialCode
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          owner {
-            name
-            phone {
-              number
-              countryCode
-            }
-          }
-        }
-        shippingAddress {
-          city
-          address
-          postCode
-          addressLine
-          location {
-            type
-            coordinates
-          }
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          state {
-            id
-            name
-            code
-            created
-            surface
-            dialCode
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          owner {
-            name
-            phone {
-              number
-              countryCode
-            }
-          }
-        }
-        residentialAddress {
-          city
-          address
-          postCode
-          addressLine
-          location {
-            type
-            coordinates
-          }
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          state {
-            id
-            name
-            code
-            created
-            surface
-            dialCode
-            country {
-              id
-              name
-              code
-              dialCode
-              iconFlag
-              createdAt
-              updatedAt
-              flagSquare {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-              flagWide {
-                baseUrl
-                path
-                width
-                height
-                x
-                y
-              }
-            }
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          owner {
-            name
-            phone {
-              number
-              countryCode
-            }
-          }
-        }
-        chatContact {
-          name {
-            id
-            name
-            code
-            fontIcon
-            createdAt
-            updatedAt
-            images {
-              style
-              images {
-                svg {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-                png {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-              }
-            }
-          }
-          value
-        }
-        socialMedia {
-          name {
-            id
-            name
-            code
-            fontIcon
-            createdAt
-            updatedAt
-            images {
-              style
-              images {
-                svg {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-                png {
-                  size48 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size96 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size144 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size240 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                  size480 {
-                    baseUrl
-                    path
-                    width
-                    height
-                    x
-                    y
-                  }
-                }
-              }
-            }
-          }
-          value
-        }
-        socialLoginData {
-          ooredoo {
-            id
-          }
-          facebook {
-            id
-            name
-            token
-            email
-            last_name
-            first_name
-          }
-          google {
-            sub
-            name
-            email
-            token
-            locale
-            picture
-            given_name
-            family_name
-            email_verified
-          }
-          apple {
-            email
-            status
-            givenName
-            familyName
-            identityToken
-            userIdentifier
-            authorizationCode
-          }
+          alt
         }
       }
       discount {
@@ -3136,8 +2555,6 @@ query findCouponsByTargetWithFilterPaginated(
         discountType
       }
       
-      createdAt
-      updatedAt
     }
   }
 }
@@ -3146,7 +2563,9 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
     id
     to
     from
-    redeemed 
+    redeemed
+    createdAt
+    updatedAt
     couponCode
     user {
       id
@@ -3186,6 +2605,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -3194,6 +2614,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -3209,6 +2630,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3217,6 +2639,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -3234,6 +2657,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3242,6 +2666,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -3268,6 +2693,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3276,15 +2702,18 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -3300,6 +2729,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3308,6 +2738,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -3319,6 +2750,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3327,6 +2759,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -3361,6 +2794,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3369,15 +2803,18 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -3393,6 +2830,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3401,6 +2839,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -3412,6 +2851,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3420,6 +2860,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -3454,6 +2895,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3462,15 +2904,18 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -3486,6 +2931,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3494,6 +2940,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -3505,6 +2952,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3513,6 +2961,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -3542,6 +2991,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -3550,6 +3000,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -3558,6 +3009,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -3566,6 +3018,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -3574,6 +3027,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -3584,6 +3038,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -3592,6 +3047,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -3600,6 +3056,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -3608,6 +3065,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -3616,6 +3074,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -3642,6 +3101,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -3650,6 +3110,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -3658,6 +3119,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -3666,6 +3128,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -3674,6 +3137,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -3684,6 +3148,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -3692,6 +3157,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -3700,6 +3166,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -3708,6 +3175,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -3716,6 +3184,7 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -3756,14 +3225,145 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     discount {
       amount
       discountType
-    }
- 
-    createdAt
-    updatedAt
+    } 
   }
 }
 query getCouponsByExcel($target: TargetACIInput!, $filter: CouponFilterInput, $searchString: String, $path: String) {
@@ -3771,8 +3371,14 @@ query getCouponsByExcel($target: TargetACIInput!, $filter: CouponFilterInput, $s
     content
   }
 }
-query sendCouponsBymail($target: TargetACIInput!, $filter: CouponFilterInput, $searchString: String, $email: String!, $subject: String!) {
-  sendCouponsBymail(target: $target, filter: $filter, searchString: $searchString, email: $email, subject: $subject) {
+query sendCouponsBymail(
+  $target: TargetACIInput!
+  $filter: CouponFilterInput
+  $searchString: String
+  $emails: [String!]
+  $subject: String!
+) {
+  sendCouponsBymail(target: $target, filter: $filter, searchString: $searchString, emails: $emails, subject: $subject) {
     accepted
     rejected
     response
@@ -3788,33 +3394,17 @@ mutation createCoupon($input: CouponInput!) {
     id
     to
     from
-    redeemed 
+    redeemed
+    createdAt
+    updatedAt
     couponCode
     user {
       id
-      apps
       email
-      roles
-      title
-      about
       gender
-      locale
-      source
-      status
       lastName
       username
       firstName
-      plugged
-      createdAt
-      updatedAt
-      isMailValid
-      dateOfBirth
-      phoneNumber
-      mobileTheme
-      placeOfBirth
-      maritalStatus
-      newsletterSubs
-      hasAutoGeneratedEmail
       phone {
         number
         isValid
@@ -3828,584 +3418,14 @@ mutation createCoupon($input: CouponInput!) {
         height
         x
         y
-      }
-      pictures {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      languages {
-        id
-        name
-        code
-        iconFlag
-        createdAt
-        updatedAt
-        flagSquare {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        flagWide {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      nationality {
-        id
-        name
-        code
-        dialCode
-        iconFlag
-        createdAt
-        updatedAt
-        flagSquare {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        flagWide {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      billingAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      shippingAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      residentialAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      chatContact {
-        name {
-          id
-          name
-          code
-          fontIcon
-          createdAt
-          updatedAt
-          images {
-            style
-            images {
-              svg {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              png {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-            }
-          }
-        }
-        value
-      }
-      socialMedia {
-        name {
-          id
-          name
-          code
-          fontIcon
-          createdAt
-          updatedAt
-          images {
-            style
-            images {
-              svg {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              png {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-            }
-          }
-        }
-        value
-      }
-      socialLoginData {
-        ooredoo {
-          id
-        }
-        facebook {
-          id
-          name
-          token
-          email
-          last_name
-          first_name
-        }
-        google {
-          sub
-          name
-          email
-          token
-          locale
-          picture
-          given_name
-          family_name
-          email_verified
-        }
-        apple {
-          email
-          status
-          givenName
-          familyName
-          identityToken
-          userIdentifier
-          authorizationCode
-        }
+        alt
       }
     }
     discount {
       amount
       discountType
     }
-   
-    createdAt
-    updatedAt
+     
   }
 }
 mutation updateCoupon($input: UpdateCouponInput!, $id: ID!) {
@@ -4413,33 +3433,17 @@ mutation updateCoupon($input: UpdateCouponInput!, $id: ID!) {
     id
     to
     from
-    redeemed 
+    redeemed
+    createdAt
+    updatedAt
     couponCode
     user {
       id
-      apps
       email
-      roles
-      title
-      about
       gender
-      locale
-      source
-      status
       lastName
       username
       firstName
-      plugged
-      createdAt
-      updatedAt
-      isMailValid
-      dateOfBirth
-      phoneNumber
-      mobileTheme
-      placeOfBirth
-      maritalStatus
-      newsletterSubs
-      hasAutoGeneratedEmail
       phone {
         number
         isValid
@@ -4453,584 +3457,14 @@ mutation updateCoupon($input: UpdateCouponInput!, $id: ID!) {
         height
         x
         y
-      }
-      pictures {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      languages {
-        id
-        name
-        code
-        iconFlag
-        createdAt
-        updatedAt
-        flagSquare {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        flagWide {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      nationality {
-        id
-        name
-        code
-        dialCode
-        iconFlag
-        createdAt
-        updatedAt
-        flagSquare {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        flagWide {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      billingAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      shippingAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      residentialAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      chatContact {
-        name {
-          id
-          name
-          code
-          fontIcon
-          createdAt
-          updatedAt
-          images {
-            style
-            images {
-              svg {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              png {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-            }
-          }
-        }
-        value
-      }
-      socialMedia {
-        name {
-          id
-          name
-          code
-          fontIcon
-          createdAt
-          updatedAt
-          images {
-            style
-            images {
-              svg {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              png {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-            }
-          }
-        }
-        value
-      }
-      socialLoginData {
-        ooredoo {
-          id
-        }
-        facebook {
-          id
-          name
-          token
-          email
-          last_name
-          first_name
-        }
-        google {
-          sub
-          name
-          email
-          token
-          locale
-          picture
-          given_name
-          family_name
-          email_verified
-        }
-        apple {
-          email
-          status
-          givenName
-          familyName
-          identityToken
-          userIdentifier
-          authorizationCode
-        }
+        alt
       }
     }
     discount {
       amount
       discountType
     }
- 
-    createdAt
-    updatedAt
+     
   }
 }
 mutation generateCoupons($input: CouponsInput!) {
@@ -5038,33 +3472,17 @@ mutation generateCoupons($input: CouponsInput!) {
     id
     to
     from
-    redeemed 
+    redeemed
+    createdAt
+    updatedAt
     couponCode
     user {
       id
-      apps
       email
-      roles
-      title
-      about
       gender
-      locale
-      source
-      status
       lastName
       username
       firstName
-      plugged
-      createdAt
-      updatedAt
-      isMailValid
-      dateOfBirth
-      phoneNumber
-      mobileTheme
-      placeOfBirth
-      maritalStatus
-      newsletterSubs
-      hasAutoGeneratedEmail
       phone {
         number
         isValid
@@ -5078,584 +3496,14 @@ mutation generateCoupons($input: CouponsInput!) {
         height
         x
         y
-      }
-      pictures {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      languages {
-        id
-        name
-        code
-        iconFlag
-        createdAt
-        updatedAt
-        flagSquare {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        flagWide {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      nationality {
-        id
-        name
-        code
-        dialCode
-        iconFlag
-        createdAt
-        updatedAt
-        flagSquare {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        flagWide {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      billingAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      shippingAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      residentialAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      chatContact {
-        name {
-          id
-          name
-          code
-          fontIcon
-          createdAt
-          updatedAt
-          images {
-            style
-            images {
-              svg {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              png {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-            }
-          }
-        }
-        value
-      }
-      socialMedia {
-        name {
-          id
-          name
-          code
-          fontIcon
-          createdAt
-          updatedAt
-          images {
-            style
-            images {
-              svg {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              png {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-            }
-          }
-        }
-        value
-      }
-      socialLoginData {
-        ooredoo {
-          id
-        }
-        facebook {
-          id
-          name
-          token
-          email
-          last_name
-          first_name
-        }
-        google {
-          sub
-          name
-          email
-          token
-          locale
-          picture
-          given_name
-          family_name
-          email_verified
-        }
-        apple {
-          email
-          status
-          givenName
-          familyName
-          identityToken
-          userIdentifier
-          authorizationCode
-        }
+        alt
       }
     }
     discount {
       amount
       discountType
     }
- 
-    createdAt
-    updatedAt
+     
   }
 }
 mutation redeemCoupon($couponCode: String!, $target: TargetACIInput!) {
@@ -5664,32 +3512,16 @@ mutation redeemCoupon($couponCode: String!, $target: TargetACIInput!) {
     to
     from
     redeemed
+    createdAt
+    updatedAt
     couponCode
     user {
       id
-      apps
       email
-      roles
-      title
-      about
       gender
-      locale
-      source
-      status
       lastName
       username
       firstName
-      plugged
-      createdAt
-      updatedAt
-      isMailValid
-      dateOfBirth
-      phoneNumber
-      mobileTheme
-      placeOfBirth
-      maritalStatus
-      newsletterSubs
-      hasAutoGeneratedEmail
       phone {
         number
         isValid
@@ -5703,584 +3535,14 @@ mutation redeemCoupon($couponCode: String!, $target: TargetACIInput!) {
         height
         x
         y
-      }
-      pictures {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      languages {
-        id
-        name
-        code
-        iconFlag
-        createdAt
-        updatedAt
-        flagSquare {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        flagWide {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      nationality {
-        id
-        name
-        code
-        dialCode
-        iconFlag
-        createdAt
-        updatedAt
-        flagSquare {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        flagWide {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      billingAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      shippingAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      residentialAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      chatContact {
-        name {
-          id
-          name
-          code
-          fontIcon
-          createdAt
-          updatedAt
-          images {
-            style
-            images {
-              svg {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              png {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-            }
-          }
-        }
-        value
-      }
-      socialMedia {
-        name {
-          id
-          name
-          code
-          fontIcon
-          createdAt
-          updatedAt
-          images {
-            style
-            images {
-              svg {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              png {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-            }
-          }
-        }
-        value
-      }
-      socialLoginData {
-        ooredoo {
-          id
-        }
-        facebook {
-          id
-          name
-          token
-          email
-          last_name
-          first_name
-        }
-        google {
-          sub
-          name
-          email
-          token
-          locale
-          picture
-          given_name
-          family_name
-          email_verified
-        }
-        apple {
-          email
-          status
-          givenName
-          familyName
-          identityToken
-          userIdentifier
-          authorizationCode
-        }
+        alt
       }
     }
     discount {
       amount
       discountType
     }
-    
-    createdAt
-    updatedAt
+     
   }
 }
 mutation disableCoupon($id: String!) {
@@ -6288,33 +3550,17 @@ mutation disableCoupon($id: String!) {
     id
     to
     from
-    redeemed 
+    redeemed
+    createdAt
+    updatedAt
     couponCode
     user {
       id
-      apps
       email
-      roles
-      title
-      about
       gender
-      locale
-      source
-      status
       lastName
       username
       firstName
-      plugged
-      createdAt
-      updatedAt
-      isMailValid
-      dateOfBirth
-      phoneNumber
-      mobileTheme
-      placeOfBirth
-      maritalStatus
-      newsletterSubs
-      hasAutoGeneratedEmail
       phone {
         number
         isValid
@@ -6328,583 +3574,13 @@ mutation disableCoupon($id: String!) {
         height
         x
         y
-      }
-      pictures {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-      }
-      languages {
-        id
-        name
-        code
-        iconFlag
-        createdAt
-        updatedAt
-        flagSquare {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        flagWide {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      nationality {
-        id
-        name
-        code
-        dialCode
-        iconFlag
-        createdAt
-        updatedAt
-        flagSquare {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-        flagWide {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-        }
-      }
-      billingAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      shippingAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      residentialAddress {
-        city
-        address
-        postCode
-        addressLine
-        location {
-          type
-          coordinates
-        }
-        country {
-          id
-          name
-          code
-          dialCode
-          iconFlag
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        state {
-          id
-          name
-          code
-          created
-          surface
-          dialCode
-          country {
-            id
-            name
-            code
-            dialCode
-            iconFlag
-            createdAt
-            updatedAt
-            flagSquare {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-            flagWide {
-              baseUrl
-              path
-              width
-              height
-              x
-              y
-            }
-          }
-          createdAt
-          updatedAt
-          flagSquare {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-          flagWide {
-            baseUrl
-            path
-            width
-            height
-            x
-            y
-          }
-        }
-        owner {
-          name
-          phone {
-            number
-            countryCode
-          }
-        }
-      }
-      chatContact {
-        name {
-          id
-          name
-          code
-          fontIcon
-          createdAt
-          updatedAt
-          images {
-            style
-            images {
-              svg {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              png {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-            }
-          }
-        }
-        value
-      }
-      socialMedia {
-        name {
-          id
-          name
-          code
-          fontIcon
-          createdAt
-          updatedAt
-          images {
-            style
-            images {
-              svg {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-              png {
-                size48 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size96 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size144 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size240 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-                size480 {
-                  baseUrl
-                  path
-                  width
-                  height
-                  x
-                  y
-                }
-              }
-            }
-          }
-        }
-        value
-      }
-      socialLoginData {
-        ooredoo {
-          id
-        }
-        facebook {
-          id
-          name
-          token
-          email
-          last_name
-          first_name
-        }
-        google {
-          sub
-          name
-          email
-          token
-          locale
-          picture
-          given_name
-          family_name
-          email_verified
-        }
-        apple {
-          email
-          status
-          givenName
-          familyName
-          identityToken
-          userIdentifier
-          authorizationCode
-        }
+        alt
       }
     }
     discount {
       amount
       discountType
     }
-   
-    createdAt
-    updatedAt
+     
   }
 }

@@ -50,8 +50,10 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -128,8 +130,10 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -206,8 +210,10 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -226,15 +232,18 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   late String id;
 
-  late String name;
+  String? adminName;
 
-  String? code;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late DateTime created;
+  double? population;
 
-  late String surface;
+  String? ascii;
 
-  String? dialCode;
+  double? lat;
+
+  double? lng;
 
   FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -252,11 +261,12 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
   @override
   List<Object?> get props => [
         id,
-        name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -401,8 +411,10 @@ class FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$Picture
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -431,8 +443,10 @@ class FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$Browser
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -643,8 +657,10 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -721,8 +737,10 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -799,8 +817,10 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -821,13 +841,18 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -846,10 +871,12 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -994,8 +1021,10 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1024,8 +1053,10 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -1291,8 +1322,10 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1369,8 +1402,10 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1447,8 +1482,10 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -1467,15 +1504,18 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   late String id;
 
-  late String name;
+  String? adminName;
 
-  String? code;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late DateTime created;
+  double? population;
 
-  late String surface;
+  String? ascii;
 
-  String? dialCode;
+  double? lat;
+
+  double? lng;
 
   CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -1493,11 +1533,12 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
   @override
   List<Object?> get props => [
         id,
-        name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -1642,8 +1683,10 @@ class CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$Pictur
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1672,8 +1715,10 @@ class CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$Browse
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -2036,8 +2081,10 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2114,8 +2161,10 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2192,8 +2241,10 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -2212,15 +2263,18 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   late String id;
 
-  late String name;
+  String? adminName;
 
-  String? code;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late DateTime created;
+  double? population;
 
-  late String surface;
+  String? ascii;
 
-  String? dialCode;
+  double? lat;
+
+  double? lng;
 
   UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -2238,11 +2292,12 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
   @override
   List<Object?> get props => [
         id,
-        name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -2387,8 +2442,10 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$Pictur
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -2417,8 +2474,10 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$Browse
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -2625,6 +2684,17 @@ enum BankDetailsHolderTypeEnum {
   private,
   @JsonValue('COMPANY')
   company,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
+enum StateCapitalEnum {
+  @JsonValue('PRIMARY')
+  primary,
+  @JsonValue('ADMIN')
+  admin,
+  @JsonValue('MINOR')
+  minor,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -2862,6 +2932,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -2912,6 +2989,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -2930,35 +3014,42 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'name'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'ascii'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -3067,6 +3158,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -3112,6 +3210,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -3183,6 +3288,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -3228,6 +3340,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -3380,6 +3499,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -3436,6 +3562,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -3481,6 +3614,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -3536,6 +3676,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -3581,6 +3728,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -3636,6 +3790,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -3681,6 +3842,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -3736,6 +3904,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -3786,6 +3961,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -3831,6 +4013,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -4168,6 +4357,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -4218,6 +4414,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -4243,28 +4446,42 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -4373,6 +4590,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -4418,6 +4642,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -4489,6 +4720,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -4534,6 +4772,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -4686,6 +4931,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -4742,6 +4994,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -4787,6 +5046,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -4842,6 +5108,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -4887,6 +5160,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -4942,6 +5222,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -4987,6 +5274,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -5042,6 +5336,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -5092,6 +5393,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -5137,6 +5445,13 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -5453,6 +5768,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -5503,6 +5825,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -5521,35 +5850,42 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'name'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'ascii'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -5658,6 +5994,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -5703,6 +6046,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -5774,6 +6124,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -5819,6 +6176,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -5971,6 +6335,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -6027,6 +6398,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -6072,6 +6450,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -6127,6 +6512,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -6172,6 +6564,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -6227,6 +6626,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -6272,6 +6678,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -6327,6 +6740,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -6377,6 +6797,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -6422,6 +6849,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -6754,6 +7188,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -6804,6 +7245,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -6822,35 +7270,42 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'name'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'ascii'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -6959,6 +7414,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -7004,6 +7466,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -7075,6 +7544,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -7120,6 +7596,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -7272,6 +7755,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -7328,6 +7818,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -7373,6 +7870,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -7428,6 +7932,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -7473,6 +7984,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -7528,6 +8046,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -7573,6 +8098,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -7628,6 +8160,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -7678,6 +8217,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -7723,6 +8269,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],

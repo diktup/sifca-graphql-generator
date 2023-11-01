@@ -41,7 +41,8 @@ FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -61,6 +62,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -118,7 +120,8 @@ FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -138,6 +141,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -195,7 +199,8 @@ FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -215,6 +220,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -223,11 +229,14 @@ FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$
             Map<String, dynamic> json) =>
         FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -249,7 +258,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -258,10 +266,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -269,6 +279,13 @@ Map<String, dynamic>
   writeNotNull('flagWide', instance.flagWide?.toJson());
   return val;
 }
+
+const _$StateCapitalEnumEnumMap = {
+  StateCapitalEnum.primary: 'PRIMARY',
+  StateCapitalEnum.admin: 'ADMIN',
+  StateCapitalEnum.minor: 'MINOR',
+  StateCapitalEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
 
 FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -415,7 +432,8 @@ FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -435,6 +453,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -447,7 +466,8 @@ FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPn
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -467,6 +487,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -689,7 +710,8 @@ FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDe
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -709,6 +731,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -766,7 +789,8 @@ FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDe
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -786,6 +810,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -843,7 +868,8 @@ FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDe
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -863,6 +889,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -872,10 +899,14 @@ FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDe
         FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -906,10 +937,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -1057,7 +1090,8 @@ FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankTy
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1077,6 +1111,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1089,7 +1124,8 @@ FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankTy
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -1109,6 +1145,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1386,7 +1423,8 @@ CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1406,6 +1444,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1463,7 +1502,8 @@ CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1483,6 +1523,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1540,7 +1581,8 @@ CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -1560,6 +1602,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1568,11 +1611,14 @@ CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType
             Map<String, dynamic> json) =>
         CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -1594,7 +1640,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -1603,10 +1648,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -1754,7 +1801,8 @@ CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1774,6 +1822,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1786,7 +1835,8 @@ CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$BrowserLogoP
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -1806,6 +1856,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2181,7 +2232,8 @@ UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2201,6 +2253,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2258,7 +2311,8 @@ UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2278,6 +2332,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2335,7 +2390,8 @@ UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -2355,6 +2411,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2363,11 +2420,14 @@ UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType
             Map<String, dynamic> json) =>
         UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
           ..id = json['id'] as String
-          ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
@@ -2389,7 +2449,6 @@ Map<String, dynamic>
             instance) {
   final val = <String, dynamic>{
     'id': instance.id,
-    'name': instance.name,
   };
 
   void writeNotNull(String key, dynamic value) {
@@ -2398,10 +2457,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -2549,7 +2610,8 @@ UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -2569,6 +2631,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2581,7 +2644,8 @@ UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$BrowserLogoP
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -2601,6 +2665,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 

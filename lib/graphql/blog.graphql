@@ -40,6 +40,7 @@ query getBlogs {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -48,6 +49,7 @@ query getBlogs {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -63,6 +65,7 @@ query getBlogs {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -71,6 +74,7 @@ query getBlogs {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -88,6 +92,7 @@ query getBlogs {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -96,6 +101,7 @@ query getBlogs {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -122,6 +128,7 @@ query getBlogs {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -130,15 +137,18 @@ query getBlogs {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -154,6 +164,7 @@ query getBlogs {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -162,6 +173,7 @@ query getBlogs {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -173,6 +185,7 @@ query getBlogs {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -181,6 +194,7 @@ query getBlogs {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -215,6 +229,7 @@ query getBlogs {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -223,15 +238,18 @@ query getBlogs {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -247,6 +265,7 @@ query getBlogs {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -255,6 +274,7 @@ query getBlogs {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -266,6 +286,7 @@ query getBlogs {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -274,6 +295,7 @@ query getBlogs {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -308,6 +330,7 @@ query getBlogs {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -316,15 +339,18 @@ query getBlogs {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -340,6 +366,7 @@ query getBlogs {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -348,6 +375,7 @@ query getBlogs {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -359,6 +387,7 @@ query getBlogs {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -367,6 +396,7 @@ query getBlogs {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -396,6 +426,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -404,6 +435,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -412,6 +444,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -420,6 +453,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -428,6 +462,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -438,6 +473,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -446,6 +482,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -454,6 +491,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -462,6 +500,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -470,6 +509,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -496,6 +536,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -504,6 +545,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -512,6 +554,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -520,6 +563,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -528,6 +572,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -538,6 +583,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -546,6 +592,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -554,6 +601,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -562,6 +610,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -570,6 +619,7 @@ query getBlogs {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -610,6 +660,140 @@ query getBlogs {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     title
     tags
@@ -628,8 +812,9 @@ query getBlogs {
       height
       x
       y
+      alt
     }
-
+    
     sectionData {
       sectionTitle
       sectionContent
@@ -641,6 +826,7 @@ query getBlogs {
         height
         x
         y
+        alt
       }
     }
     status
@@ -693,6 +879,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -701,6 +888,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
           height
           x
           y
+          alt
         }
         languages {
           id
@@ -716,6 +904,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -724,6 +913,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
         }
         nationality {
@@ -741,6 +931,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -749,6 +940,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
         }
         billingAddress {
@@ -775,6 +967,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -783,15 +976,19 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -807,6 +1004,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -815,6 +1013,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -826,6 +1025,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -834,6 +1034,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -868,6 +1069,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -876,15 +1078,19 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -900,6 +1106,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -908,6 +1115,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -919,6 +1127,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -927,6 +1136,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -961,6 +1171,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -969,15 +1180,19 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -993,6 +1208,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -1001,6 +1217,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -1012,6 +1229,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1020,6 +1238,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -1049,6 +1268,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -1057,6 +1277,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -1065,6 +1286,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -1073,6 +1295,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -1081,6 +1304,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 png {
@@ -1091,6 +1315,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -1099,6 +1324,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -1107,6 +1333,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -1115,6 +1342,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -1123,6 +1351,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                 }
               }
@@ -1149,6 +1378,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -1157,6 +1387,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -1165,6 +1396,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -1173,6 +1405,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -1181,6 +1414,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 png {
@@ -1191,6 +1425,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -1199,6 +1434,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -1207,6 +1443,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -1215,6 +1452,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -1223,6 +1461,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                 }
               }
@@ -1263,6 +1502,140 @@ query getPaginatedBlogs($pagination: PaginationInput) {
             authorizationCode
           }
         }
+        education {
+          level
+          name
+          description
+          tags
+          from
+          to
+          graduated
+        }
+        work {
+          company
+          position
+          description
+          city {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          tags
+          from
+          to
+          current
+        }
+        lived {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        hobbies
+        interests
       }
       title
       tags
@@ -1281,8 +1654,9 @@ query getPaginatedBlogs($pagination: PaginationInput) {
         height
         x
         y
+        alt
       }
-
+      
       sectionData {
         sectionTitle
         sectionContent
@@ -1294,6 +1668,7 @@ query getPaginatedBlogs($pagination: PaginationInput) {
           height
           x
           y
+          alt
         }
       }
       status
@@ -1344,6 +1719,7 @@ query blog($id: String!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -1352,6 +1728,7 @@ query blog($id: String!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -1367,6 +1744,7 @@ query blog($id: String!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -1375,6 +1753,7 @@ query blog($id: String!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -1392,6 +1771,7 @@ query blog($id: String!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -1400,6 +1780,7 @@ query blog($id: String!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -1426,6 +1807,7 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1434,15 +1816,18 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1458,6 +1843,7 @@ query blog($id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1466,6 +1852,7 @@ query blog($id: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1477,6 +1864,7 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1485,6 +1873,7 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1519,6 +1908,7 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1527,15 +1917,18 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1551,6 +1944,7 @@ query blog($id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1559,6 +1953,7 @@ query blog($id: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1570,6 +1965,7 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1578,6 +1974,7 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1612,6 +2009,7 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1620,15 +2018,18 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1644,6 +2045,7 @@ query blog($id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -1652,6 +2054,7 @@ query blog($id: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -1663,6 +2066,7 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -1671,6 +2075,7 @@ query blog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -1700,6 +2105,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1708,6 +2114,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1716,6 +2123,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1724,6 +2132,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1732,6 +2141,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -1742,6 +2152,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1750,6 +2161,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1758,6 +2170,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1766,6 +2179,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1774,6 +2188,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -1800,6 +2215,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1808,6 +2224,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1816,6 +2233,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1824,6 +2242,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1832,6 +2251,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -1842,6 +2262,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -1850,6 +2271,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -1858,6 +2280,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -1866,6 +2289,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -1874,6 +2298,7 @@ query blog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -1914,6 +2339,140 @@ query blog($id: String!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     title
     tags
@@ -1932,8 +2491,9 @@ query blog($id: String!) {
       height
       x
       y
+      alt
     }
-
+    
     sectionData {
       sectionTitle
       sectionContent
@@ -1945,6 +2505,7 @@ query blog($id: String!) {
         height
         x
         y
+        alt
       }
     }
     status
@@ -1994,6 +2555,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -2002,6 +2564,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -2017,6 +2580,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2025,6 +2589,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -2042,6 +2607,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2050,6 +2616,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -2076,6 +2643,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2084,15 +2652,18 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2108,6 +2679,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2116,6 +2688,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2127,6 +2700,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2135,6 +2709,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2169,6 +2744,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2177,15 +2753,18 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2201,6 +2780,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2209,6 +2789,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2220,6 +2801,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2228,6 +2810,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2262,6 +2845,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2270,15 +2854,18 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2294,6 +2881,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2302,6 +2890,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2313,6 +2902,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2321,6 +2911,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2350,6 +2941,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2358,6 +2950,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2366,6 +2959,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2374,6 +2968,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2382,6 +2977,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -2392,6 +2988,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2400,6 +2997,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2408,6 +3006,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2416,6 +3015,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2424,6 +3024,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -2450,6 +3051,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2458,6 +3060,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2466,6 +3069,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2474,6 +3078,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2482,6 +3087,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -2492,6 +3098,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -2500,6 +3107,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -2508,6 +3116,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -2516,6 +3125,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -2524,6 +3134,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -2564,6 +3175,140 @@ query findBlogsByTarget($target: TargetACIInput!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     title
     tags
@@ -2582,8 +3327,9 @@ query findBlogsByTarget($target: TargetACIInput!) {
       height
       x
       y
+      alt
     }
-
+    
     sectionData {
       sectionTitle
       sectionContent
@@ -2595,6 +3341,7 @@ query findBlogsByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
     }
     status
@@ -2644,6 +3391,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -2652,6 +3400,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -2667,6 +3416,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2675,6 +3425,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -2692,6 +3443,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -2700,6 +3452,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -2726,6 +3479,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2734,15 +3488,18 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2758,6 +3515,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2766,6 +3524,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2777,6 +3536,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2785,6 +3545,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2819,6 +3580,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2827,15 +3589,18 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2851,6 +3616,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2859,6 +3625,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2870,6 +3637,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2878,6 +3646,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -2912,6 +3681,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2920,15 +3690,18 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -2944,6 +3717,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -2952,6 +3726,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -2963,6 +3738,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -2971,6 +3747,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -3000,6 +3777,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -3008,6 +3786,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -3016,6 +3795,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -3024,6 +3804,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -3032,6 +3813,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -3042,6 +3824,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -3050,6 +3833,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -3058,6 +3842,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -3066,6 +3851,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -3074,6 +3860,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -3100,6 +3887,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -3108,6 +3896,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -3116,6 +3905,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -3124,6 +3914,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -3132,6 +3923,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -3142,6 +3934,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -3150,6 +3943,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -3158,6 +3952,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -3166,6 +3961,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -3174,6 +3970,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -3214,6 +4011,140 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     title
     tags
@@ -3232,8 +4163,9 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
       height
       x
       y
+      alt
     }
-
+    
     sectionData {
       sectionTitle
       sectionContent
@@ -3245,6 +4177,7 @@ query findBlogsByTargetAndUrl($target: TargetACIInput!, $url: String!) {
         height
         x
         y
+        alt
       }
     }
     status
@@ -3302,6 +4235,7 @@ query findBlogsByTargetPaginated(
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -3310,6 +4244,7 @@ query findBlogsByTargetPaginated(
           height
           x
           y
+          alt
         }
         languages {
           id
@@ -3325,6 +4260,7 @@ query findBlogsByTargetPaginated(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3333,6 +4269,7 @@ query findBlogsByTargetPaginated(
             height
             x
             y
+            alt
           }
         }
         nationality {
@@ -3350,6 +4287,7 @@ query findBlogsByTargetPaginated(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -3358,6 +4296,7 @@ query findBlogsByTargetPaginated(
             height
             x
             y
+            alt
           }
         }
         billingAddress {
@@ -3384,6 +4323,7 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3392,15 +4332,19 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -3416,6 +4360,7 @@ query findBlogsByTargetPaginated(
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -3424,6 +4369,7 @@ query findBlogsByTargetPaginated(
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -3435,6 +4381,7 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3443,6 +4390,7 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -3477,6 +4425,7 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3485,15 +4434,19 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -3509,6 +4462,7 @@ query findBlogsByTargetPaginated(
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -3517,6 +4471,7 @@ query findBlogsByTargetPaginated(
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -3528,6 +4483,7 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3536,6 +4492,7 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -3570,6 +4527,7 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3578,15 +4536,19 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -3602,6 +4564,7 @@ query findBlogsByTargetPaginated(
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -3610,6 +4573,7 @@ query findBlogsByTargetPaginated(
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -3621,6 +4585,7 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -3629,6 +4594,7 @@ query findBlogsByTargetPaginated(
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -3658,6 +4624,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -3666,6 +4633,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -3674,6 +4642,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -3682,6 +4651,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -3690,6 +4660,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                 }
                 png {
@@ -3700,6 +4671,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -3708,6 +4680,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -3716,6 +4689,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -3724,6 +4698,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -3732,6 +4707,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                 }
               }
@@ -3758,6 +4734,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -3766,6 +4743,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -3774,6 +4752,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -3782,6 +4761,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -3790,6 +4770,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                 }
                 png {
@@ -3800,6 +4781,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -3808,6 +4790,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -3816,6 +4799,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -3824,6 +4808,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -3832,6 +4817,7 @@ query findBlogsByTargetPaginated(
                     height
                     x
                     y
+                    alt
                   }
                 }
               }
@@ -3872,6 +4858,140 @@ query findBlogsByTargetPaginated(
             authorizationCode
           }
         }
+        education {
+          level
+          name
+          description
+          tags
+          from
+          to
+          graduated
+        }
+        work {
+          company
+          position
+          description
+          city {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          tags
+          from
+          to
+          current
+        }
+        lived {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        hobbies
+        interests
       }
       title
       tags
@@ -3890,8 +5010,9 @@ query findBlogsByTargetPaginated(
         height
         x
         y
+        alt
       }
-
+      
       sectionData {
         sectionTitle
         sectionContent
@@ -3903,6 +5024,7 @@ query findBlogsByTargetPaginated(
           height
           x
           y
+          alt
         }
       }
       status
@@ -3953,6 +5075,7 @@ query findBlogsByAuthor($author: String!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -3961,6 +5084,7 @@ query findBlogsByAuthor($author: String!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -3976,6 +5100,7 @@ query findBlogsByAuthor($author: String!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -3984,6 +5109,7 @@ query findBlogsByAuthor($author: String!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -4001,6 +5127,7 @@ query findBlogsByAuthor($author: String!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -4009,6 +5136,7 @@ query findBlogsByAuthor($author: String!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -4035,6 +5163,7 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4043,15 +5172,18 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -4067,6 +5199,7 @@ query findBlogsByAuthor($author: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4075,6 +5208,7 @@ query findBlogsByAuthor($author: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -4086,6 +5220,7 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4094,6 +5229,7 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -4128,6 +5264,7 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4136,15 +5273,18 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -4160,6 +5300,7 @@ query findBlogsByAuthor($author: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4168,6 +5309,7 @@ query findBlogsByAuthor($author: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -4179,6 +5321,7 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4187,6 +5330,7 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -4221,6 +5365,7 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4229,15 +5374,18 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -4253,6 +5401,7 @@ query findBlogsByAuthor($author: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4261,6 +5410,7 @@ query findBlogsByAuthor($author: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -4272,6 +5422,7 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4280,6 +5431,7 @@ query findBlogsByAuthor($author: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -4309,6 +5461,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -4317,6 +5470,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -4325,6 +5479,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -4333,6 +5488,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -4341,6 +5497,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -4351,6 +5508,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -4359,6 +5517,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -4367,6 +5526,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -4375,6 +5535,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -4383,6 +5544,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -4409,6 +5571,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -4417,6 +5580,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -4425,6 +5589,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -4433,6 +5598,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -4441,6 +5607,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -4451,6 +5618,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -4459,6 +5627,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -4467,6 +5636,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -4475,6 +5645,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -4483,6 +5654,7 @@ query findBlogsByAuthor($author: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -4523,6 +5695,140 @@ query findBlogsByAuthor($author: String!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     title
     tags
@@ -4541,8 +5847,9 @@ query findBlogsByAuthor($author: String!) {
       height
       x
       y
+      alt
     }
-
+    
     sectionData {
       sectionTitle
       sectionContent
@@ -4554,6 +5861,7 @@ query findBlogsByAuthor($author: String!) {
         height
         x
         y
+        alt
       }
     }
     status
@@ -4606,6 +5914,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -4614,6 +5923,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
           height
           x
           y
+          alt
         }
         languages {
           id
@@ -4629,6 +5939,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4637,6 +5948,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
             height
             x
             y
+            alt
           }
         }
         nationality {
@@ -4654,6 +5966,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -4662,6 +5975,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
             height
             x
             y
+            alt
           }
         }
         billingAddress {
@@ -4688,6 +6002,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4696,15 +6011,19 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -4720,6 +6039,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -4728,6 +6048,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -4739,6 +6060,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4747,6 +6069,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -4781,6 +6104,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4789,15 +6113,19 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -4813,6 +6141,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -4821,6 +6150,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -4832,6 +6162,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4840,6 +6171,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -4874,6 +6206,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4882,15 +6215,19 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -4906,6 +6243,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -4914,6 +6252,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -4925,6 +6264,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -4933,6 +6273,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -4962,6 +6303,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -4970,6 +6312,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -4978,6 +6321,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -4986,6 +6330,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -4994,6 +6339,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                 }
                 png {
@@ -5004,6 +6350,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -5012,6 +6359,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -5020,6 +6368,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -5028,6 +6377,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -5036,6 +6386,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                 }
               }
@@ -5062,6 +6413,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -5070,6 +6422,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -5078,6 +6431,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -5086,6 +6440,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -5094,6 +6449,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                 }
                 png {
@@ -5104,6 +6460,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -5112,6 +6469,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -5120,6 +6478,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -5128,6 +6487,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -5136,6 +6496,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
                     height
                     x
                     y
+                    alt
                   }
                 }
               }
@@ -5176,6 +6537,140 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
             authorizationCode
           }
         }
+        education {
+          level
+          name
+          description
+          tags
+          from
+          to
+          graduated
+        }
+        work {
+          company
+          position
+          description
+          city {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          tags
+          from
+          to
+          current
+        }
+        lived {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        hobbies
+        interests
       }
       title
       tags
@@ -5194,8 +6689,9 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
         height
         x
         y
+        alt
       }
-
+      
       sectionData {
         sectionTitle
         sectionContent
@@ -5207,6 +6703,7 @@ query findBlogsByAuthorPaginated($author: String!, $pagination: PaginationInput)
           height
           x
           y
+          alt
         }
       }
       status
@@ -5260,6 +6757,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -5268,6 +6766,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
           height
           x
           y
+          alt
         }
         languages {
           id
@@ -5283,6 +6782,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -5291,6 +6791,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
         }
         nationality {
@@ -5308,6 +6809,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -5316,6 +6818,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
         }
         billingAddress {
@@ -5342,6 +6845,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -5350,15 +6854,19 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -5374,6 +6882,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -5382,6 +6891,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -5393,6 +6903,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -5401,6 +6912,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -5435,6 +6947,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -5443,15 +6956,19 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -5467,6 +6984,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -5475,6 +6993,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -5486,6 +7005,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -5494,6 +7014,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -5528,6 +7049,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -5536,15 +7058,19 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -5560,6 +7086,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -5568,6 +7095,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -5579,6 +7107,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -5587,6 +7116,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -5616,6 +7146,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -5624,6 +7155,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -5632,6 +7164,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -5640,6 +7173,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -5648,6 +7182,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 png {
@@ -5658,6 +7193,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -5666,6 +7202,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -5674,6 +7211,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -5682,6 +7220,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -5690,6 +7229,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                 }
               }
@@ -5716,6 +7256,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -5724,6 +7265,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -5732,6 +7274,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -5740,6 +7283,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -5748,6 +7292,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                 }
                 png {
@@ -5758,6 +7303,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size96 {
                     baseUrl
@@ -5766,6 +7312,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size144 {
                     baseUrl
@@ -5774,6 +7321,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size240 {
                     baseUrl
@@ -5782,6 +7330,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                   size480 {
                     baseUrl
@@ -5790,6 +7339,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
                     height
                     x
                     y
+                    alt
                   }
                 }
               }
@@ -5830,6 +7380,140 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
             authorizationCode
           }
         }
+        education {
+          level
+          name
+          description
+          tags
+          from
+          to
+          graduated
+        }
+        work {
+          company
+          position
+          description
+          city {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          tags
+          from
+          to
+          current
+        }
+        lived {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        hobbies
+        interests
       }
       title
       tags
@@ -5848,8 +7532,9 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
         height
         x
         y
+        alt
       }
-
+      
       sectionData {
         sectionTitle
         sectionContent
@@ -5861,6 +7546,7 @@ query searchBlogs($searchString: String, $pagination: PaginationInput) {
           height
           x
           y
+          alt
         }
       }
       status
@@ -5912,6 +7598,7 @@ mutation createBlog($input: BlogInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -5920,6 +7607,7 @@ mutation createBlog($input: BlogInput!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -5935,6 +7623,7 @@ mutation createBlog($input: BlogInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -5943,6 +7632,7 @@ mutation createBlog($input: BlogInput!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -5960,6 +7650,7 @@ mutation createBlog($input: BlogInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -5968,6 +7659,7 @@ mutation createBlog($input: BlogInput!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -5994,6 +7686,7 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6002,15 +7695,18 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -6026,6 +7722,7 @@ mutation createBlog($input: BlogInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -6034,6 +7731,7 @@ mutation createBlog($input: BlogInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -6045,6 +7743,7 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6053,6 +7752,7 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -6087,6 +7787,7 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6095,15 +7796,18 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -6119,6 +7823,7 @@ mutation createBlog($input: BlogInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -6127,6 +7832,7 @@ mutation createBlog($input: BlogInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -6138,6 +7844,7 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6146,6 +7853,7 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -6180,6 +7888,7 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6188,15 +7897,18 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -6212,6 +7924,7 @@ mutation createBlog($input: BlogInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -6220,6 +7933,7 @@ mutation createBlog($input: BlogInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -6231,6 +7945,7 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6239,6 +7954,7 @@ mutation createBlog($input: BlogInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -6268,6 +7984,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -6276,6 +7993,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -6284,6 +8002,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -6292,6 +8011,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -6300,6 +8020,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -6310,6 +8031,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -6318,6 +8040,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -6326,6 +8049,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -6334,6 +8058,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -6342,6 +8067,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -6368,6 +8094,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -6376,6 +8103,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -6384,6 +8112,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -6392,6 +8121,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -6400,6 +8130,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -6410,6 +8141,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -6418,6 +8150,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -6426,6 +8159,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -6434,6 +8168,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -6442,6 +8177,7 @@ mutation createBlog($input: BlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -6482,6 +8218,140 @@ mutation createBlog($input: BlogInput!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     title
     tags
@@ -6500,8 +8370,9 @@ mutation createBlog($input: BlogInput!) {
       height
       x
       y
+      alt
     }
-
+    
     sectionData {
       sectionTitle
       sectionContent
@@ -6513,6 +8384,7 @@ mutation createBlog($input: BlogInput!) {
         height
         x
         y
+        alt
       }
     }
     status
@@ -6562,6 +8434,7 @@ mutation publishBlog($id: String!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -6570,6 +8443,7 @@ mutation publishBlog($id: String!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -6585,6 +8459,7 @@ mutation publishBlog($id: String!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -6593,6 +8468,7 @@ mutation publishBlog($id: String!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -6610,6 +8486,7 @@ mutation publishBlog($id: String!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -6618,6 +8495,7 @@ mutation publishBlog($id: String!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -6644,6 +8522,7 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6652,15 +8531,18 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -6676,6 +8558,7 @@ mutation publishBlog($id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -6684,6 +8567,7 @@ mutation publishBlog($id: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -6695,6 +8579,7 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6703,6 +8588,7 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -6737,6 +8623,7 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6745,15 +8632,18 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -6769,6 +8659,7 @@ mutation publishBlog($id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -6777,6 +8668,7 @@ mutation publishBlog($id: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -6788,6 +8680,7 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6796,6 +8689,7 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -6830,6 +8724,7 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6838,15 +8733,18 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -6862,6 +8760,7 @@ mutation publishBlog($id: String!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -6870,6 +8769,7 @@ mutation publishBlog($id: String!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -6881,6 +8781,7 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -6889,6 +8790,7 @@ mutation publishBlog($id: String!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -6918,6 +8820,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -6926,6 +8829,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -6934,6 +8838,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -6942,6 +8847,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -6950,6 +8856,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -6960,6 +8867,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -6968,6 +8876,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -6976,6 +8885,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -6984,6 +8894,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -6992,6 +8903,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -7018,6 +8930,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -7026,6 +8939,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -7034,6 +8948,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -7042,6 +8957,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -7050,6 +8966,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -7060,6 +8977,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -7068,6 +8986,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -7076,6 +8995,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -7084,6 +9004,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -7092,6 +9013,7 @@ mutation publishBlog($id: String!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -7132,6 +9054,140 @@ mutation publishBlog($id: String!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     title
     tags
@@ -7150,8 +9206,9 @@ mutation publishBlog($id: String!) {
       height
       x
       y
+      alt
     }
-
+    
     sectionData {
       sectionTitle
       sectionContent
@@ -7163,6 +9220,7 @@ mutation publishBlog($id: String!) {
         height
         x
         y
+        alt
       }
     }
     status
@@ -7212,6 +9270,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -7220,6 +9279,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -7235,6 +9295,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -7243,6 +9304,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -7260,6 +9322,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -7268,6 +9331,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -7294,6 +9358,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -7302,15 +9367,18 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -7326,6 +9394,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -7334,6 +9403,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -7345,6 +9415,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -7353,6 +9424,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -7387,6 +9459,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -7395,15 +9468,18 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -7419,6 +9495,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -7427,6 +9504,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -7438,6 +9516,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -7446,6 +9525,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -7480,6 +9560,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -7488,15 +9569,18 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -7512,6 +9596,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -7520,6 +9605,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -7531,6 +9617,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -7539,6 +9626,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -7568,6 +9656,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -7576,6 +9665,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -7584,6 +9674,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -7592,6 +9683,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -7600,6 +9692,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -7610,6 +9703,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -7618,6 +9712,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -7626,6 +9721,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -7634,6 +9730,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -7642,6 +9739,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -7668,6 +9766,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -7676,6 +9775,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -7684,6 +9784,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -7692,6 +9793,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -7700,6 +9802,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -7710,6 +9813,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -7718,6 +9822,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -7726,6 +9831,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -7734,6 +9840,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -7742,6 +9849,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -7782,6 +9890,140 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     title
     tags
@@ -7800,8 +10042,9 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
       height
       x
       y
+      alt
     }
-
+    
     sectionData {
       sectionTitle
       sectionContent
@@ -7813,6 +10056,7 @@ mutation updateBlog($id: String!, $input: UpdateBlogInput!) {
         height
         x
         y
+        alt
       }
     }
     status
@@ -7862,6 +10106,7 @@ mutation deleteBlog($id: ID!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -7870,6 +10115,7 @@ mutation deleteBlog($id: ID!) {
         height
         x
         y
+        alt
       }
       languages {
         id
@@ -7885,6 +10131,7 @@ mutation deleteBlog($id: ID!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -7893,6 +10140,7 @@ mutation deleteBlog($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -7910,6 +10158,7 @@ mutation deleteBlog($id: ID!) {
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -7918,6 +10167,7 @@ mutation deleteBlog($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       billingAddress {
@@ -7944,6 +10194,7 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -7952,15 +10203,18 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -7976,6 +10230,7 @@ mutation deleteBlog($id: ID!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -7984,6 +10239,7 @@ mutation deleteBlog($id: ID!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -7995,6 +10251,7 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -8003,6 +10260,7 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -8037,6 +10295,7 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -8045,15 +10304,18 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -8069,6 +10331,7 @@ mutation deleteBlog($id: ID!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -8077,6 +10340,7 @@ mutation deleteBlog($id: ID!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -8088,6 +10352,7 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -8096,6 +10361,7 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -8130,6 +10396,7 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -8138,15 +10405,18 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -8162,6 +10432,7 @@ mutation deleteBlog($id: ID!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -8170,6 +10441,7 @@ mutation deleteBlog($id: ID!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -8181,6 +10453,7 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -8189,6 +10462,7 @@ mutation deleteBlog($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -8218,6 +10492,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -8226,6 +10501,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -8234,6 +10510,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -8242,6 +10519,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -8250,6 +10528,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -8260,6 +10539,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -8268,6 +10548,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -8276,6 +10557,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -8284,6 +10566,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -8292,6 +10575,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -8318,6 +10602,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -8326,6 +10611,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -8334,6 +10620,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -8342,6 +10629,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -8350,6 +10638,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -8360,6 +10649,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -8368,6 +10658,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -8376,6 +10667,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -8384,6 +10676,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -8392,6 +10685,7 @@ mutation deleteBlog($id: ID!) {
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -8432,6 +10726,140 @@ mutation deleteBlog($id: ID!) {
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
     title
     tags
@@ -8450,8 +10878,9 @@ mutation deleteBlog($id: ID!) {
       height
       x
       y
+      alt
     }
-
+    
     sectionData {
       sectionTitle
       sectionContent
@@ -8463,9 +10892,20 @@ mutation deleteBlog($id: ID!) {
         height
         x
         y
+        alt
       }
     }
     status
+    createdAt
+    updatedAt
+  }
+}
+mutation generateEcomSitemapXml($target: TargetACIInput!) {
+  generateEcomSitemapXml(target: $target) {
+    id
+    name
+    content
+    
     createdAt
     updatedAt
   }

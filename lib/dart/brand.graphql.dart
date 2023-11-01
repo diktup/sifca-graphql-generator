@@ -398,13 +398,18 @@ class GetBrands$Query$BrandType$ManufacturerType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetBrands$Query$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -423,10 +428,12 @@ class GetBrands$Query$BrandType$ManufacturerType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -807,13 +814,18 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$Sta
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetBrands$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -832,10 +844,12 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$Sta
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -1184,13 +1198,18 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$Ban
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetBrands$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -1209,10 +1228,12 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$Ban
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -2163,13 +2184,18 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$FullAddressType$StateTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetBrandsByTarget$Query$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -2188,10 +2214,12 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$FullAddressType$StateTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -2574,13 +2602,18 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddress
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -2599,10 +2632,12 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddress
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -2951,13 +2986,18 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetails
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -2976,10 +3016,12 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetails
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -3958,13 +4000,18 @@ class Brand$Query$BrandType$ManufacturerType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   Brand$Query$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -3983,10 +4030,12 @@ class Brand$Query$BrandType$ManufacturerType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -4364,13 +4413,18 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   Brand$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -4389,10 +4443,12 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -4741,13 +4797,18 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDet
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   Brand$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -4766,10 +4827,12 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDet
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -5719,13 +5782,18 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Ful
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -5744,10 +5812,12 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Ful
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -6130,13 +6200,18 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -6155,10 +6230,12 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -6505,15 +6582,18 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
 
   late String id;
 
-  late String name;
+  String? adminName;
 
-  String? code;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late DateTime created;
+  double? population;
 
-  late String surface;
+  String? ascii;
 
-  String? dialCode;
+  double? lat;
+
+  double? lng;
 
   GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -6531,11 +6611,12 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
   @override
   List<Object?> get props => [
         id,
-        name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -7542,13 +7623,18 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -7567,10 +7653,12 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -7953,13 +8041,18 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -7978,10 +8071,12 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -8328,15 +8423,18 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 
   late String id;
 
-  late String name;
+  String? adminName;
 
-  String? code;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late DateTime created;
+  double? population;
 
-  late String surface;
+  String? ascii;
 
-  String? dialCode;
+  double? lat;
+
+  double? lng;
 
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -8354,11 +8452,12 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
   @override
   List<Object?> get props => [
         id,
-        name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -9351,13 +9450,18 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddress
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -9376,10 +9480,12 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddress
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -9762,13 +9868,18 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -9787,10 +9898,12 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -10137,15 +10250,18 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
 
   late String id;
 
-  late String name;
+  String? adminName;
 
-  String? code;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late DateTime created;
+  double? population;
 
-  late String surface;
+  String? ascii;
 
-  String? dialCode;
+  double? lat;
+
+  double? lng;
 
   SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -10163,11 +10279,12 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
   @override
   List<Object?> get props => [
         id,
-        name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -11152,13 +11269,18 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$FullAddres
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -11177,10 +11299,12 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$FullAddres
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -11563,13 +11687,18 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -11588,10 +11717,12 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -11940,13 +12071,18 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -11965,10 +12101,12 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -12934,13 +13072,18 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SyncOneBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -12959,10 +13102,12 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -13345,13 +13490,18 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -13370,10 +13520,12 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -13722,13 +13874,18 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -13747,10 +13904,12 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -14772,13 +14931,18 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CreateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -14797,10 +14961,12 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -15183,13 +15349,18 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -15208,10 +15379,12 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -15560,13 +15733,18 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -15585,10 +15763,12 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -16540,13 +16720,18 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   UpdateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -16565,10 +16750,12 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -16951,13 +17138,18 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -16976,10 +17168,12 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -17328,13 +17522,18 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -17353,10 +17552,12 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -18344,13 +18545,18 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$FullAddressT
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   ListenForBrandCreated$Subscription$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -18369,10 +18575,12 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$FullAddressT
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -18755,13 +18963,18 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -18780,10 +18993,12 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -19132,13 +19347,18 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -19157,10 +19377,12 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -19729,6 +19951,17 @@ class ListenForBrandCreated$Subscription extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForBrandCreated$SubscriptionToJson(this);
+}
+
+enum StateCapitalEnum {
+  @JsonValue('PRIMARY')
+  primary,
+  @JsonValue('ADMIN')
+  admin,
+  @JsonValue('MINOR')
+  minor,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
 }
 
 enum BankDetailsHolderTypeEnum {
@@ -20406,28 +20639,42 @@ final GET_BRANDS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -21177,28 +21424,42 @@ final GET_BRANDS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -21854,28 +22115,42 @@ final GET_BRANDS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'code'),
+                                    name: NameNode(value: 'adminName'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'created'),
+                                    name: NameNode(value: 'capital'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'surface'),
+                                    name: NameNode(value: 'population'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'dialCode'),
+                                    name: NameNode(value: 'ascii'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lng'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -23721,28 +23996,42 @@ final GET_BRANDS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -24492,28 +24781,42 @@ final GET_BRANDS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -25169,28 +25472,42 @@ final GET_BRANDS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'code'),
+                                    name: NameNode(value: 'adminName'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'created'),
+                                    name: NameNode(value: 'capital'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'surface'),
+                                    name: NameNode(value: 'population'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'dialCode'),
+                                    name: NameNode(value: 'ascii'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lng'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -27041,28 +27358,42 @@ final BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -27812,28 +28143,42 @@ final BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -28489,28 +28834,42 @@ final BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'code'),
+                                    name: NameNode(value: 'adminName'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'created'),
+                                    name: NameNode(value: 'capital'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'surface'),
+                                    name: NameNode(value: 'population'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'dialCode'),
+                                    name: NameNode(value: 'ascii'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lng'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -30380,28 +30739,42 @@ final GET_BRANDS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -31151,28 +31524,42 @@ final GET_BRANDS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -31823,35 +32210,42 @@ final GET_BRANDS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'name'),
+                                        name: NameNode(value: 'adminName'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'code'),
+                                        name: NameNode(value: 'capital'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'created'),
+                                        name: NameNode(value: 'population'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'surface'),
+                                        name: NameNode(value: 'ascii'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'dialCode'),
+                                        name: NameNode(value: 'lat'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'lng'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -33763,28 +34157,42 @@ final GET_BRANDS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -34534,28 +34942,42 @@ final GET_BRANDS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -35206,35 +35628,42 @@ final GET_BRANDS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'name'),
+                                        name: NameNode(value: 'adminName'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'code'),
+                                        name: NameNode(value: 'capital'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'created'),
+                                        name: NameNode(value: 'population'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'surface'),
+                                        name: NameNode(value: 'ascii'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'dialCode'),
+                                        name: NameNode(value: 'lat'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'lng'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -37157,28 +37586,42 @@ final SEARCH_BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -37928,28 +38371,42 @@ final SEARCH_BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -38600,35 +39057,42 @@ final SEARCH_BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'name'),
+                                        name: NameNode(value: 'adminName'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'code'),
+                                        name: NameNode(value: 'capital'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'created'),
+                                        name: NameNode(value: 'population'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'surface'),
+                                        name: NameNode(value: 'ascii'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'dialCode'),
+                                        name: NameNode(value: 'lat'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'lng'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -40519,28 +40983,42 @@ final FIND_BRAND_BY_EXTERNAL_ID_AND_TARGET_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -41290,28 +41768,42 @@ final FIND_BRAND_BY_EXTERNAL_ID_AND_TARGET_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -41967,28 +42459,42 @@ final FIND_BRAND_BY_EXTERNAL_ID_AND_TARGET_QUERY_DOCUMENT =
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'code'),
+                                    name: NameNode(value: 'adminName'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'created'),
+                                    name: NameNode(value: 'capital'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'surface'),
+                                    name: NameNode(value: 'population'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'dialCode'),
+                                    name: NameNode(value: 'ascii'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lng'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -43841,28 +44347,42 @@ final SYNC_ONE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -44612,28 +45132,42 @@ final SYNC_ONE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -45289,28 +45823,42 @@ final SYNC_ONE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'code'),
+                                    name: NameNode(value: 'adminName'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'created'),
+                                    name: NameNode(value: 'capital'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'surface'),
+                                    name: NameNode(value: 'population'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'dialCode'),
+                                    name: NameNode(value: 'ascii'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lng'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -47160,28 +47708,42 @@ final CREATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -47931,28 +48493,42 @@ final CREATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -48608,28 +49184,42 @@ final CREATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'code'),
+                                    name: NameNode(value: 'adminName'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'created'),
+                                    name: NameNode(value: 'capital'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'surface'),
+                                    name: NameNode(value: 'population'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'dialCode'),
+                                    name: NameNode(value: 'ascii'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lng'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -50497,28 +51087,42 @@ final UPDATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -51268,28 +51872,42 @@ final UPDATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -51945,28 +52563,42 @@ final UPDATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'code'),
+                                    name: NameNode(value: 'adminName'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'created'),
+                                    name: NameNode(value: 'capital'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'surface'),
+                                    name: NameNode(value: 'population'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'dialCode'),
+                                    name: NameNode(value: 'ascii'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lng'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -53872,28 +54504,42 @@ final LISTEN_FOR_BRAND_CREATED_SUBSCRIPTION_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -54643,28 +55289,42 @@ final LISTEN_FOR_BRAND_CREATED_SUBSCRIPTION_DOCUMENT =
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -55320,28 +55980,42 @@ final LISTEN_FOR_BRAND_CREATED_SUBSCRIPTION_DOCUMENT =
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'code'),
+                                    name: NameNode(value: 'adminName'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'created'),
+                                    name: NameNode(value: 'capital'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'surface'),
+                                    name: NameNode(value: 'population'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'dialCode'),
+                                    name: NameNode(value: 'ascii'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lng'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],

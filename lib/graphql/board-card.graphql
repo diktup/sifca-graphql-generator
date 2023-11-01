@@ -228,6 +228,7 @@ query getBoardCards {
               pixelAttribute
             }
           }
+          
         }
       }
       internalProduct {
@@ -476,10 +477,12 @@ query getBoardCards {
               state {
                 id
                 name
-                code
-                created
-                surface
-                dialCode
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
                 country {
                   id
                   name
@@ -599,11 +602,13 @@ query getBoardCards {
                 }
                 state {
                   id
-                  name
-                  code
-                  created
-                  surface
-                  dialCode
+                  
+                  adminName
+                  capital
+                  population
+                  ascii
+                  lat
+                  lng
                   country {
                     id
                     name
@@ -709,10 +714,12 @@ query getBoardCards {
                     state {
                       id
                       name
-                      code
-                      created
-                      surface
-                      dialCode
+                      adminName
+                      capital
+                      population
+                      ascii
+                      lat
+                      lng
                       country {
                         id
                         name
@@ -896,6 +903,7 @@ query getBoardCards {
               updatedAt
             }
           }
+         
         }
         productAttributes {
           id
@@ -918,7 +926,9 @@ query getBoardCards {
             pixel {
               pixelAttribute
             }
+            
           }
+          
         }
       }
     }
@@ -1231,7 +1241,7 @@ query getBoardCards {
             alt
           }
         }
-
+        
         createdAt
         updatedAt
       }
@@ -1303,10 +1313,12 @@ query getBoardCards {
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -1411,11 +1423,13 @@ query getBoardCards {
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -1941,6 +1955,7 @@ query getBoardCardsByBoardList($boardList: ID!) {
               pixelAttribute
             }
           }
+          
         }
       }
       internalProduct {
@@ -2189,10 +2204,12 @@ query getBoardCardsByBoardList($boardList: ID!) {
               state {
                 id
                 name
-                code
-                created
-                surface
-                dialCode
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
                 country {
                   id
                   name
@@ -2312,11 +2329,13 @@ query getBoardCardsByBoardList($boardList: ID!) {
                 }
                 state {
                   id
-                  name
-                  code
-                  created
-                  surface
-                  dialCode
+                  
+                  adminName
+                  capital
+                  population
+                  ascii
+                  lat
+                  lng
                   country {
                     id
                     name
@@ -2422,10 +2441,12 @@ query getBoardCardsByBoardList($boardList: ID!) {
                     state {
                       id
                       name
-                      code
-                      created
-                      surface
-                      dialCode
+                      adminName
+                      capital
+                      population
+                      ascii
+                      lat
+                      lng
                       country {
                         id
                         name
@@ -2609,6 +2630,7 @@ query getBoardCardsByBoardList($boardList: ID!) {
               updatedAt
             }
           }
+          
         }
         productAttributes {
           id
@@ -2631,7 +2653,9 @@ query getBoardCardsByBoardList($boardList: ID!) {
             pixel {
               pixelAttribute
             }
+            
           }
+          
         }
       }
     }
@@ -2944,7 +2968,7 @@ query getBoardCardsByBoardList($boardList: ID!) {
             alt
           }
         }
-
+        
         createdAt
         updatedAt
       }
@@ -3016,10 +3040,12 @@ query getBoardCardsByBoardList($boardList: ID!) {
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -3124,11 +3150,13 @@ query getBoardCardsByBoardList($boardList: ID!) {
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -3654,6 +3682,7 @@ query getBoardCard($id: ID!) {
               pixelAttribute
             }
           }
+          
         }
       }
       internalProduct {
@@ -3902,10 +3931,12 @@ query getBoardCard($id: ID!) {
               state {
                 id
                 name
-                code
-                created
-                surface
-                dialCode
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
                 country {
                   id
                   name
@@ -4025,11 +4056,13 @@ query getBoardCard($id: ID!) {
                 }
                 state {
                   id
-                  name
-                  code
-                  created
-                  surface
-                  dialCode
+                  
+                  adminName
+                  capital
+                  population
+                  ascii
+                  lat
+                  lng
                   country {
                     id
                     name
@@ -4135,10 +4168,12 @@ query getBoardCard($id: ID!) {
                     state {
                       id
                       name
-                      code
-                      created
-                      surface
-                      dialCode
+                      adminName
+                      capital
+                      population
+                      ascii
+                      lat
+                      lng
                       country {
                         id
                         name
@@ -4322,6 +4357,7 @@ query getBoardCard($id: ID!) {
               updatedAt
             }
           }
+         
         }
         productAttributes {
           id
@@ -4344,7 +4380,9 @@ query getBoardCard($id: ID!) {
             pixel {
               pixelAttribute
             }
+            
           }
+          
         }
       }
     }
@@ -4657,7 +4695,7 @@ query getBoardCard($id: ID!) {
             alt
           }
         }
-
+        
         createdAt
         updatedAt
       }
@@ -4729,10 +4767,12 @@ query getBoardCard($id: ID!) {
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -4837,11 +4877,13 @@ query getBoardCard($id: ID!) {
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -5143,12 +5185,7 @@ query getBoardCardsByBoardWithFilterPaginated(
   $searchString: String
   $pagination: PaginationInput
 ) {
-  getBoardCardsByBoardWithFilterPaginated(
-    board: $board
-    filter: $filter
-    searchString: $searchString
-    pagination: $pagination
-  ) {
+  getBoardCardsByBoardWithFilterPaginated(board: $board, filter: $filter, searchString: $searchString, pagination: $pagination) {
     count
     isLast
     objects {
@@ -5179,7 +5216,7 @@ query getBoardCardsByBoardWithFilterPaginated(
         icon
         color
         category
-
+        
         createdAt
         updatedAt
       }
@@ -5380,6 +5417,7 @@ query getBoardCardsByBoardWithFilterPaginated(
                 pixelAttribute
               }
             }
+            
           }
         }
         internalProduct {
@@ -5627,11 +5665,13 @@ query getBoardCardsByBoardWithFilterPaginated(
                 }
                 state {
                   id
-                  name
-                  code
-                  created
-                  surface
-                  dialCode
+                  
+                  adminName
+                  capital
+                  population
+                  ascii
+                  lat
+                  lng
                   country {
                     id
                     name
@@ -5752,10 +5792,12 @@ query getBoardCardsByBoardWithFilterPaginated(
                   state {
                     id
                     name
-                    code
-                    created
-                    surface
-                    dialCode
+                    adminName
+                    capital
+                    population
+                    ascii
+                    lat
+                    lng
                     country {
                       id
                       name
@@ -5861,10 +5903,12 @@ query getBoardCardsByBoardWithFilterPaginated(
                       state {
                         id
                         name
-                        code
-                        created
-                        surface
-                        dialCode
+                        adminName
+                        capital
+                        population
+                        ascii
+                        lat
+                        lng
                         country {
                           id
                           name
@@ -6048,6 +6092,7 @@ query getBoardCardsByBoardWithFilterPaginated(
                 updatedAt
               }
             }
+             
           }
           productAttributes {
             id
@@ -6070,7 +6115,9 @@ query getBoardCardsByBoardWithFilterPaginated(
               pixel {
                 pixelAttribute
               }
+            
             }
+            
           }
         }
       }
@@ -6383,7 +6430,7 @@ query getBoardCardsByBoardWithFilterPaginated(
               alt
             }
           }
-
+          
           createdAt
           updatedAt
         }
@@ -6455,10 +6502,13 @@ query getBoardCardsByBoardWithFilterPaginated(
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -6564,10 +6614,12 @@ query getBoardCardsByBoardWithFilterPaginated(
               state {
                 id
                 name
-                code
-                created
-                surface
-                dialCode
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
                 country {
                   id
                   name
@@ -6864,10 +6916,7 @@ query getBoardCardsByBoardWithFilterPaginated(
     }
   }
 }
-query getBoardCardsStatsWithFilter(
-  $target: TargetACIInput!
-  $filter: BoardCardStatsFilterInput!
-) {
+query getBoardCardsStatsWithFilter($target: TargetACIInput!, $filter: BoardCardStatsFilterInput!) {
   getBoardCardsStatsWithFilter(target: $target, filter: $filter) {
     LOW {
       current {
@@ -7218,6 +7267,7 @@ mutation createBoardCard(
               pixelAttribute
             }
           }
+          
         }
       }
       internalProduct {
@@ -7466,10 +7516,12 @@ mutation createBoardCard(
               state {
                 id
                 name
-                code
-                created
-                surface
-                dialCode
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
                 country {
                   id
                   name
@@ -7589,11 +7641,13 @@ mutation createBoardCard(
                 }
                 state {
                   id
-                  name
-                  code
-                  created
-                  surface
-                  dialCode
+                  
+                  adminName
+                  capital
+                  population
+                  ascii
+                  lat
+                  lng
                   country {
                     id
                     name
@@ -7699,10 +7753,12 @@ mutation createBoardCard(
                     state {
                       id
                       name
-                      code
-                      created
-                      surface
-                      dialCode
+                      adminName
+                      capital
+                      population
+                      ascii
+                      lat
+                      lng
                       country {
                         id
                         name
@@ -7886,6 +7942,7 @@ mutation createBoardCard(
               updatedAt
             }
           }
+        
         }
         productAttributes {
           id
@@ -7908,7 +7965,9 @@ mutation createBoardCard(
             pixel {
               pixelAttribute
             }
+            
           }
+          
         }
       }
     }
@@ -8221,7 +8280,7 @@ mutation createBoardCard(
             alt
           }
         }
-
+        
         createdAt
         updatedAt
       }
@@ -8293,10 +8352,12 @@ mutation createBoardCard(
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -8401,11 +8462,13 @@ mutation createBoardCard(
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -8931,6 +8994,7 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
               pixelAttribute
             }
           }
+          
         }
       }
       internalProduct {
@@ -9179,10 +9243,12 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
               state {
                 id
                 name
-                code
-                created
-                surface
-                dialCode
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
                 country {
                   id
                   name
@@ -9302,11 +9368,13 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
                 }
                 state {
                   id
-                  name
-                  code
-                  created
-                  surface
-                  dialCode
+                  
+                  adminName
+                  capital
+                  population
+                  ascii
+                  lat
+                  lng
                   country {
                     id
                     name
@@ -9412,10 +9480,12 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
                     state {
                       id
                       name
-                      code
-                      created
-                      surface
-                      dialCode
+                      adminName
+                      capital
+                      population
+                      ascii
+                      lat
+                      lng
                       country {
                         id
                         name
@@ -9599,6 +9669,7 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
               updatedAt
             }
           }
+         
         }
         productAttributes {
           id
@@ -9621,7 +9692,9 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
             pixel {
               pixelAttribute
             }
+            
           }
+          
         }
       }
     }
@@ -9934,7 +10007,7 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
             alt
           }
         }
-
+        
         createdAt
         updatedAt
       }
@@ -10006,10 +10079,12 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -10114,11 +10189,13 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -10682,6 +10759,7 @@ mutation updateBoardCard(
               pixelAttribute
             }
           }
+          
         }
       }
       internalProduct {
@@ -10930,10 +11008,12 @@ mutation updateBoardCard(
               state {
                 id
                 name
-                code
-                created
-                surface
-                dialCode
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
                 country {
                   id
                   name
@@ -11053,11 +11133,13 @@ mutation updateBoardCard(
                 }
                 state {
                   id
-                  name
-                  code
-                  created
-                  surface
-                  dialCode
+                  
+                  adminName
+                  capital
+                  population
+                  ascii
+                  lat
+                  lng
                   country {
                     id
                     name
@@ -11163,10 +11245,12 @@ mutation updateBoardCard(
                     state {
                       id
                       name
-                      code
-                      created
-                      surface
-                      dialCode
+                      adminName
+                      capital
+                      population
+                      ascii
+                      lat
+                      lng
                       country {
                         id
                         name
@@ -11350,6 +11434,7 @@ mutation updateBoardCard(
               updatedAt
             }
           }
+         
         }
         productAttributes {
           id
@@ -11372,7 +11457,9 @@ mutation updateBoardCard(
             pixel {
               pixelAttribute
             }
+            
           }
+          
         }
       }
     }
@@ -11685,7 +11772,7 @@ mutation updateBoardCard(
             alt
           }
         }
-
+        
         createdAt
         updatedAt
       }
@@ -11757,10 +11844,12 @@ mutation updateBoardCard(
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -11865,11 +11954,13 @@ mutation updateBoardCard(
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name
@@ -12395,6 +12486,7 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
               pixelAttribute
             }
           }
+          
         }
       }
       internalProduct {
@@ -12643,10 +12735,12 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
               state {
                 id
                 name
-                code
-                created
-                surface
-                dialCode
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
                 country {
                   id
                   name
@@ -12766,11 +12860,13 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
                 }
                 state {
                   id
-                  name
-                  code
-                  created
-                  surface
-                  dialCode
+                  
+                  adminName
+                  capital
+                  population
+                  ascii
+                  lat
+                  lng
                   country {
                     id
                     name
@@ -12876,10 +12972,12 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
                     state {
                       id
                       name
-                      code
-                      created
-                      surface
-                      dialCode
+                      adminName
+                      capital
+                      population
+                      ascii
+                      lat
+                      lng
                       country {
                         id
                         name
@@ -13063,6 +13161,7 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
               updatedAt
             }
           }
+        
         }
         productAttributes {
           id
@@ -13085,7 +13184,9 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
             pixel {
               pixelAttribute
             }
+            
           }
+          
         }
       }
     }
@@ -13398,7 +13499,7 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
             alt
           }
         }
-
+        
         createdAt
         updatedAt
       }
@@ -13470,10 +13571,12 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -13578,11 +13681,13 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
             }
             state {
               id
-              name
-              code
-              created
-              surface
-              dialCode
+name
+adminName
+              capital
+              population
+              ascii
+              lat
+              lng
               country {
                 id
                 name

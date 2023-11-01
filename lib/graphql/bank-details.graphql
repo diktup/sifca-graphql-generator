@@ -28,6 +28,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -36,15 +37,18 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
-          name
-          code
-          created
-          surface
-          dialCode
+          
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -60,6 +64,7 @@ query findBankDetailsById($id: ID!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -68,6 +73,7 @@ query findBankDetailsById($id: ID!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -79,6 +85,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -87,6 +94,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -113,6 +121,7 @@ query findBankDetailsById($id: ID!) {
           height
           x
           y
+          alt
         }
         png {
           default {
@@ -122,6 +131,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
           size16 {
             baseUrl
@@ -130,6 +140,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
           size24 {
             baseUrl
@@ -138,6 +149,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
           size32 {
             baseUrl
@@ -146,6 +158,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
           size48 {
             baseUrl
@@ -154,6 +167,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
           size64 {
             baseUrl
@@ -162,6 +176,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
           size128 {
             baseUrl
@@ -170,6 +185,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
           size256 {
             baseUrl
@@ -178,6 +194,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
           size512 {
             baseUrl
@@ -186,6 +203,7 @@ query findBankDetailsById($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         icon
@@ -231,6 +249,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -239,15 +258,19 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           state {
             id
             name
-            code
-            created
-            surface
-            dialCode
+           
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
             country {
               id
               name
@@ -263,6 +286,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
               flagWide {
                 baseUrl
@@ -271,6 +295,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
                 height
                 x
                 y
+                alt
               }
             }
             createdAt
@@ -282,6 +307,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -290,6 +316,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           owner {
@@ -316,6 +343,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           png {
             default {
@@ -325,6 +353,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             size16 {
               baseUrl
@@ -333,6 +362,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             size24 {
               baseUrl
@@ -341,6 +371,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             size32 {
               baseUrl
@@ -349,6 +380,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             size48 {
               baseUrl
@@ -357,6 +389,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             size64 {
               baseUrl
@@ -365,6 +398,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             size128 {
               baseUrl
@@ -373,6 +407,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             size256 {
               baseUrl
@@ -381,6 +416,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
             size512 {
               baseUrl
@@ -389,6 +425,7 @@ query findBanksDetailsPagination($pagination: PaginationInput) {
               height
               x
               y
+              alt
             }
           }
           icon
@@ -433,6 +470,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -441,15 +479,18 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
-          name
-          code
-          created
-          surface
-          dialCode
+          
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -465,6 +506,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -473,6 +515,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -484,6 +527,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -492,6 +536,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -518,6 +563,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
           height
           x
           y
+          alt
         }
         png {
           default {
@@ -527,6 +573,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size16 {
             baseUrl
@@ -535,6 +582,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size24 {
             baseUrl
@@ -543,6 +591,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size32 {
             baseUrl
@@ -551,6 +600,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size48 {
             baseUrl
@@ -559,6 +609,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size64 {
             baseUrl
@@ -567,6 +618,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size128 {
             baseUrl
@@ -575,6 +627,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size256 {
             baseUrl
@@ -583,6 +636,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size512 {
             baseUrl
@@ -591,6 +645,7 @@ mutation createBankDetails($input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
         }
         icon
@@ -633,6 +688,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -641,15 +697,18 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
         }
         state {
           id
-          name
-          code
-          created
-          surface
-          dialCode
+          
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -665,6 +724,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -673,6 +733,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -684,6 +745,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -692,6 +754,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -718,6 +781,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
           height
           x
           y
+          alt
         }
         png {
           default {
@@ -727,6 +791,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size16 {
             baseUrl
@@ -735,6 +800,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size24 {
             baseUrl
@@ -743,6 +809,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size32 {
             baseUrl
@@ -751,6 +818,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size48 {
             baseUrl
@@ -759,6 +827,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size64 {
             baseUrl
@@ -767,6 +836,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size128 {
             baseUrl
@@ -775,6 +845,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size256 {
             baseUrl
@@ -783,6 +854,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
           size512 {
             baseUrl
@@ -791,6 +863,7 @@ mutation updateBankDetails($id: ID!, $input: BankDetailsInput!) {
             height
             x
             y
+            alt
           }
         }
         icon

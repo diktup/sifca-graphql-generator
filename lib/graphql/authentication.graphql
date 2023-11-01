@@ -139,10 +139,13 @@ mutation updateCurrentUserLogins(
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -158,6 +161,7 @@ mutation updateCurrentUserLogins(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -166,6 +170,7 @@ mutation updateCurrentUserLogins(
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -177,6 +182,7 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -185,6 +191,7 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -232,10 +239,13 @@ mutation updateCurrentUserLogins(
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -251,6 +261,7 @@ mutation updateCurrentUserLogins(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -259,6 +270,7 @@ mutation updateCurrentUserLogins(
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -270,6 +282,7 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -278,6 +291,7 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -325,10 +339,13 @@ mutation updateCurrentUserLogins(
         state {
           id
           name
-          code
-          created
-          surface
-          dialCode
+
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
           country {
             id
             name
@@ -344,6 +361,7 @@ mutation updateCurrentUserLogins(
               height
               x
               y
+              alt
             }
             flagWide {
               baseUrl
@@ -352,6 +370,7 @@ mutation updateCurrentUserLogins(
               height
               x
               y
+              alt
             }
           }
           createdAt
@@ -363,6 +382,7 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -371,6 +391,7 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
         }
         owner {
@@ -623,9 +644,7 @@ query loginForApp($input: LoginInput!) {
     expiresIn
   }
 }
- 
 
- 
 mutation registerForApp(
   $subject: String!
   $input: UserInput!
@@ -636,4 +655,3 @@ mutation registerForApp(
     expiresIn
   }
 }
- 

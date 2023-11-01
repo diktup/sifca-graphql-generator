@@ -41,7 +41,8 @@ GetBlogs$Query$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$PictureTypeToJson(
     GetBlogs$Query$BlogType$UserType$PictureType instance) {
@@ -59,6 +60,7 @@ Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -71,7 +73,8 @@ GetBlogs$Query$BlogType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -90,6 +93,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -143,7 +147,8 @@ GetBlogs$Query$BlogType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -162,6 +167,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -242,7 +248,8 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -262,6 +269,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -318,7 +326,8 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTy
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -338,6 +347,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -395,7 +405,8 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -415,6 +426,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -424,10 +436,14 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$StateType
         GetBlogs$Query$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -457,10 +473,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -468,6 +486,13 @@ Map<String, dynamic>
   writeNotNull('flagWide', instance.flagWide?.toJson());
   return val;
 }
+
+const _$StateCapitalEnumEnumMap = {
+  StateCapitalEnum.primary: 'PRIMARY',
+  StateCapitalEnum.admin: 'ADMIN',
+  StateCapitalEnum.minor: 'MINOR',
+  StateCapitalEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
 
 GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -575,7 +600,8 @@ GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$Soc
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -595,6 +621,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -941,6 +968,428 @@ Map<String, dynamic>
   return val;
 }
 
+GetBlogs$Query$BlogType$UserType$UserEducationType
+    _$GetBlogs$Query$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetBlogs$Query$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$UserEducationTypeToJson(
+    GetBlogs$Query$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+const _$AcademicLevelEnumMap = {
+  AcademicLevel.primary: 'PRIMARY',
+  AcademicLevel.highSchool: 'HIGH_SCHOOL',
+  AcademicLevel.university: 'UNIVERSITY',
+  AcademicLevel.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetBlogs$Query$BlogType$UserType$UserWorkType$StateType
+    _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetBlogs$Query$BlogType$UserType$UserWorkType
+    _$GetBlogs$Query$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetBlogs$Query$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$UserWorkTypeToJson(
+    GetBlogs$Query$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureType
+    _$GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetBlogs$Query$BlogType$UserType$StateType$CountryType
+    _$GetBlogs$Query$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetBlogs$Query$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetBlogs$Query$BlogType$UserType$StateType$CountryTypeToJson(
+        GetBlogs$Query$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetBlogs$Query$BlogType$UserType$StateType$PictureType
+    _$GetBlogs$Query$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetBlogs$Query$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetBlogs$Query$BlogType$UserType$StateType$PictureTypeToJson(
+        GetBlogs$Query$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetBlogs$Query$BlogType$UserType$StateType
+    _$GetBlogs$Query$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetBlogs$Query$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$StateType$CountryType.fromJson(
+                  json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$StateType$PictureType.fromJson(
+                  json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetBlogs$Query$BlogType$UserType$StateType$PictureType.fromJson(
+                  json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$StateTypeToJson(
+    GetBlogs$Query$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 GetBlogs$Query$BlogType$UserType _$GetBlogs$Query$BlogType$UserTypeFromJson(
         Map<String, dynamic> json) =>
     GetBlogs$Query$BlogType$UserType()
@@ -1031,7 +1480,25 @@ GetBlogs$Query$BlogType$UserType _$GetBlogs$Query$BlogType$UserTypeFromJson(
       ..socialLoginData = json['socialLoginData'] == null
           ? null
           : GetBlogs$Query$BlogType$UserType$SocialLoginDataType.fromJson(
-              json['socialLoginData'] as Map<String, dynamic>);
+              json['socialLoginData'] as Map<String, dynamic>)
+      ..education = (json['education'] as List<dynamic>?)
+          ?.map((e) =>
+              GetBlogs$Query$BlogType$UserType$UserEducationType.fromJson(
+                  e as Map<String, dynamic>))
+          .toList()
+      ..work = (json['work'] as List<dynamic>?)
+          ?.map((e) => GetBlogs$Query$BlogType$UserType$UserWorkType.fromJson(
+              e as Map<String, dynamic>))
+          .toList()
+      ..lived = (json['lived'] as List<dynamic>?)
+          ?.map((e) => GetBlogs$Query$BlogType$UserType$StateType.fromJson(
+              e as Map<String, dynamic>))
+          .toList()
+      ..hobbies =
+          (json['hobbies'] as List<dynamic>?)?.map((e) => e as String).toList()
+      ..interests = (json['interests'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList();
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserTypeToJson(
     GetBlogs$Query$BlogType$UserType instance) {
@@ -1086,6 +1553,12 @@ Map<String, dynamic> _$GetBlogs$Query$BlogType$UserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -1242,7 +1715,8 @@ GetBlogs$Query$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$PictureTypeToJson(
     GetBlogs$Query$BlogType$PictureType instance) {
@@ -1260,6 +1734,7 @@ Map<String, dynamic> _$GetBlogs$Query$BlogType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1272,7 +1747,8 @@ GetBlogs$Query$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$BlogDataType$PictureTypeToJson(
     GetBlogs$Query$BlogType$BlogDataType$PictureType instance) {
@@ -1290,6 +1766,7 @@ Map<String, dynamic> _$GetBlogs$Query$BlogType$BlogDataType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1424,7 +1901,8 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
@@ -1444,6 +1922,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1456,7 +1935,8 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$Pictur
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -1476,6 +1956,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1531,7 +2012,8 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$Picture
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -1551,6 +2033,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1634,7 +2117,8 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Cou
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1654,6 +2138,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1711,7 +2196,8 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1731,6 +2217,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1788,7 +2275,8 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -1808,6 +2296,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -1817,10 +2306,14 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
         GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -1851,10 +2344,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -1971,7 +2466,8 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -1991,6 +2487,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2333,6 +2830,430 @@ Map<String, dynamic>
   return val;
 }
 
+GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -2426,7 +3347,28 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
@@ -2482,6 +3424,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -2549,7 +3497,8 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
@@ -2569,6 +3518,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2581,7 +3531,8 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
@@ -2601,6 +3552,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2789,7 +3741,8 @@ Blog$Query$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$PictureTypeToJson(
     Blog$Query$BlogType$UserType$PictureType instance) {
@@ -2807,6 +3760,7 @@ Map<String, dynamic> _$Blog$Query$BlogType$UserType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2819,7 +3773,8 @@ Blog$Query$BlogType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -2838,6 +3793,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2891,7 +3847,8 @@ Blog$Query$BlogType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -2910,6 +3867,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -2990,7 +3948,8 @@ Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3010,6 +3969,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -3066,7 +4026,8 @@ Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3086,6 +4047,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -3143,7 +4105,8 @@ Blog$Query$BlogType$UserType$FullAddressType$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -3163,6 +4126,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -3172,10 +4136,14 @@ Blog$Query$BlogType$UserType$FullAddressType$StateType
         Blog$Query$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -3205,10 +4173,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -3323,7 +4293,8 @@ Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialI
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -3343,6 +4314,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -3680,6 +4652,419 @@ Map<String, dynamic> _$Blog$Query$BlogType$UserType$SocialLoginDataTypeToJson(
   return val;
 }
 
+Blog$Query$BlogType$UserType$UserEducationType
+    _$Blog$Query$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        Blog$Query$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic> _$Blog$Query$BlogType$UserType$UserEducationTypeToJson(
+    Blog$Query$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+Blog$Query$BlogType$UserType$UserWorkType$StateType
+    _$Blog$Query$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        Blog$Query$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$Blog$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
+        Blog$Query$BlogType$UserType$UserWorkType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+Blog$Query$BlogType$UserType$UserWorkType
+    _$Blog$Query$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        Blog$Query$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$UserWorkType$StateType.fromJson(
+                  json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic> _$Blog$Query$BlogType$UserType$UserWorkTypeToJson(
+    Blog$Query$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+Blog$Query$BlogType$UserType$StateType$CountryType$PictureType
+    _$Blog$Query$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        Blog$Query$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$Blog$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        Blog$Query$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+Blog$Query$BlogType$UserType$StateType$CountryType
+    _$Blog$Query$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        Blog$Query$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$Blog$Query$BlogType$UserType$StateType$CountryTypeToJson(
+    Blog$Query$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+Blog$Query$BlogType$UserType$StateType$PictureType
+    _$Blog$Query$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        Blog$Query$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic> _$Blog$Query$BlogType$UserType$StateType$PictureTypeToJson(
+    Blog$Query$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+Blog$Query$BlogType$UserType$StateType
+    _$Blog$Query$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        Blog$Query$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$StateType$CountryType.fromJson(
+                  json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$StateType$PictureType.fromJson(
+                  json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : Blog$Query$BlogType$UserType$StateType$PictureType.fromJson(
+                  json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$Blog$Query$BlogType$UserType$StateTypeToJson(
+    Blog$Query$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 Blog$Query$BlogType$UserType _$Blog$Query$BlogType$UserTypeFromJson(
         Map<String, dynamic> json) =>
     Blog$Query$BlogType$UserType()
@@ -3765,7 +5150,24 @@ Blog$Query$BlogType$UserType _$Blog$Query$BlogType$UserTypeFromJson(
       ..socialLoginData = json['socialLoginData'] == null
           ? null
           : Blog$Query$BlogType$UserType$SocialLoginDataType.fromJson(
-              json['socialLoginData'] as Map<String, dynamic>);
+              json['socialLoginData'] as Map<String, dynamic>)
+      ..education = (json['education'] as List<dynamic>?)
+          ?.map((e) => Blog$Query$BlogType$UserType$UserEducationType.fromJson(
+              e as Map<String, dynamic>))
+          .toList()
+      ..work = (json['work'] as List<dynamic>?)
+          ?.map((e) => Blog$Query$BlogType$UserType$UserWorkType.fromJson(
+              e as Map<String, dynamic>))
+          .toList()
+      ..lived = (json['lived'] as List<dynamic>?)
+          ?.map((e) => Blog$Query$BlogType$UserType$StateType.fromJson(
+              e as Map<String, dynamic>))
+          .toList()
+      ..hobbies =
+          (json['hobbies'] as List<dynamic>?)?.map((e) => e as String).toList()
+      ..interests = (json['interests'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList();
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserTypeToJson(
     Blog$Query$BlogType$UserType instance) {
@@ -3820,6 +5222,12 @@ Map<String, dynamic> _$Blog$Query$BlogType$UserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -3881,7 +5289,8 @@ Blog$Query$BlogType$PictureType _$Blog$Query$BlogType$PictureTypeFromJson(
       ..width = json['width'] as int?
       ..height = json['height'] as int?
       ..x = json['x'] as int?
-      ..y = json['y'] as int?;
+      ..y = json['y'] as int?
+      ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$PictureTypeToJson(
     Blog$Query$BlogType$PictureType instance) {
@@ -3899,6 +5308,7 @@ Map<String, dynamic> _$Blog$Query$BlogType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -3911,7 +5321,8 @@ Blog$Query$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$BlogDataType$PictureTypeToJson(
     Blog$Query$BlogType$BlogDataType$PictureType instance) {
@@ -3929,6 +5340,7 @@ Map<String, dynamic> _$Blog$Query$BlogType$BlogDataType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4055,7 +5467,8 @@ FindBlogsByTarget$Query$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$PictureTypeToJson(
@@ -4074,6 +5487,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4086,7 +5500,8 @@ FindBlogsByTarget$Query$BlogType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -4106,6 +5521,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4160,7 +5576,8 @@ FindBlogsByTarget$Query$BlogType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -4180,6 +5597,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4262,7 +5680,8 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType$PictureTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4282,6 +5701,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4339,7 +5759,8 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType$
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4359,6 +5780,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4416,7 +5838,8 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -4436,6 +5859,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4445,10 +5869,14 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType
         FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -4479,10 +5907,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -4598,7 +6028,8 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImage
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -4618,6 +6049,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -4959,6 +6391,427 @@ Map<String, dynamic>
   return val;
 }
 
+FindBlogsByTarget$Query$BlogType$UserType$UserEducationType
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTarget$Query$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserEducationTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByTarget$Query$BlogType$UserType$UserWorkType
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureType
+    _$FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType
+    _$FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureType
+    _$FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTarget$Query$BlogType$UserType$StateType
+    _$FindBlogsByTarget$Query$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTarget$Query$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$StateTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 FindBlogsByTarget$Query$BlogType$UserType
     _$FindBlogsByTarget$Query$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -5051,7 +6904,28 @@ FindBlogsByTarget$Query$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByTarget$Query$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByTarget$Query$BlogType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByTarget$Query$BlogType$UserType$StateType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$FindBlogsByTarget$Query$BlogType$UserTypeToJson(
     FindBlogsByTarget$Query$BlogType$UserType instance) {
@@ -5106,6 +6980,12 @@ Map<String, dynamic> _$FindBlogsByTarget$Query$BlogType$UserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -5170,7 +7050,8 @@ FindBlogsByTarget$Query$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$FindBlogsByTarget$Query$BlogType$PictureTypeToJson(
     FindBlogsByTarget$Query$BlogType$PictureType instance) {
@@ -5188,6 +7069,7 @@ Map<String, dynamic> _$FindBlogsByTarget$Query$BlogType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5200,7 +7082,8 @@ FindBlogsByTarget$Query$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$BlogDataType$PictureTypeToJson(
@@ -5219,6 +7102,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5380,7 +7264,8 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$PictureTypeToJson(
@@ -5399,6 +7284,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5411,7 +7297,8 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -5431,6 +7318,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5485,7 +7373,8 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -5505,6 +7394,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5587,7 +7477,8 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType$Pict
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5607,6 +7498,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5664,7 +7556,8 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$Countr
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5684,6 +7577,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5741,7 +7635,8 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$Pictur
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -5761,6 +7656,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -5770,10 +7666,14 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType
         FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -5804,10 +7704,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -5924,7 +7826,8 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$Socia
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -5944,6 +7847,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6286,6 +8190,428 @@ Map<String, dynamic>
   return val;
 }
 
+FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationType
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureType
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 FindBlogsByTargetAndUrl$Query$BlogType$UserType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -6379,7 +8705,28 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$FindBlogsByTargetAndUrl$Query$BlogType$UserTypeToJson(
     FindBlogsByTargetAndUrl$Query$BlogType$UserType instance) {
@@ -6434,6 +8781,12 @@ Map<String, dynamic> _$FindBlogsByTargetAndUrl$Query$BlogType$UserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -6500,7 +8853,8 @@ FindBlogsByTargetAndUrl$Query$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$FindBlogsByTargetAndUrl$Query$BlogType$PictureTypeToJson(
     FindBlogsByTargetAndUrl$Query$BlogType$PictureType instance) {
@@ -6518,6 +8872,7 @@ Map<String, dynamic> _$FindBlogsByTargetAndUrl$Query$BlogType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6530,7 +8885,8 @@ FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureTypeToJson(
@@ -6550,6 +8906,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6690,7 +9047,8 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
@@ -6710,6 +9068,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6722,7 +9081,8 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTy
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -6742,6 +9102,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6797,7 +9158,8 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -6817,6 +9179,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6900,7 +9263,8 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6920,6 +9284,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -6977,7 +9342,8 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6997,6 +9363,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -7054,7 +9421,8 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -7074,6 +9442,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -7083,10 +9452,14 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
         FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -7117,10 +9490,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -7237,7 +9612,8 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -7257,6 +9633,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -7599,6 +9976,430 @@ Map<String, dynamic>
   return val;
 }
 
+FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -7692,7 +10493,28 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
@@ -7749,6 +10571,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -7816,7 +10644,8 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
@@ -7836,6 +10665,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -7848,7 +10678,8 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$Pictur
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
@@ -7868,6 +10699,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8040,7 +10872,8 @@ FindBlogsByAuthor$Query$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$PictureTypeToJson(
@@ -8059,6 +10892,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8071,7 +10905,8 @@ FindBlogsByAuthor$Query$BlogType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -8091,6 +10926,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8145,7 +10981,8 @@ FindBlogsByAuthor$Query$BlogType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -8165,6 +11002,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8247,7 +11085,8 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType$PictureTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -8267,6 +11106,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8324,7 +11164,8 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType$
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8344,6 +11185,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8401,7 +11243,8 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -8421,6 +11264,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8430,10 +11274,14 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType
         FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -8464,10 +11312,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -8583,7 +11433,8 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImage
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -8603,6 +11454,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -8944,6 +11796,427 @@ Map<String, dynamic>
   return val;
 }
 
+FindBlogsByAuthor$Query$BlogType$UserType$UserEducationType
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthor$Query$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserEducationTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureType
+    _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType
+    _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureType
+    _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByAuthor$Query$BlogType$UserType$StateType
+    _$FindBlogsByAuthor$Query$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$StateTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 FindBlogsByAuthor$Query$BlogType$UserType
     _$FindBlogsByAuthor$Query$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -9036,7 +12309,28 @@ FindBlogsByAuthor$Query$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByAuthor$Query$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByAuthor$Query$BlogType$UserType$StateType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogType$UserTypeToJson(
     FindBlogsByAuthor$Query$BlogType$UserType instance) {
@@ -9091,6 +12385,12 @@ Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogType$UserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -9155,7 +12455,8 @@ FindBlogsByAuthor$Query$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogType$PictureTypeToJson(
     FindBlogsByAuthor$Query$BlogType$PictureType instance) {
@@ -9173,6 +12474,7 @@ Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -9185,7 +12487,8 @@ FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureTypeToJson(
@@ -9204,6 +12507,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -9342,7 +12646,8 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
@@ -9362,6 +12667,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -9374,7 +12680,8 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTy
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -9394,6 +12701,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -9449,7 +12757,8 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -9469,6 +12778,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -9552,7 +12862,8 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9572,6 +12883,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -9629,7 +12941,8 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9649,6 +12962,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -9706,7 +13020,8 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -9726,6 +13041,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -9735,10 +13051,14 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
         FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -9769,10 +13089,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -9889,7 +13211,8 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -9909,6 +13232,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -10251,6 +13575,430 @@ Map<String, dynamic>
   return val;
 }
 
+FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -10344,7 +14092,28 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
@@ -10401,6 +14170,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -10468,7 +14243,8 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
@@ -10488,6 +14264,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -10500,7 +14277,8 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$Pictur
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
@@ -10520,6 +14298,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -10693,7 +14472,8 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
@@ -10713,6 +14493,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -10725,7 +14506,8 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -10745,6 +14527,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -10800,7 +14583,8 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -10820,6 +14604,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -10903,7 +14688,8 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTy
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -10923,6 +14709,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -10980,7 +14767,8 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -11000,6 +14788,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -11057,7 +14846,8 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -11077,6 +14867,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -11086,10 +14877,14 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
         SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -11120,10 +14915,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -11240,7 +15037,8 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -11260,6 +15058,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -11602,6 +15401,430 @@ Map<String, dynamic>
   return val;
 }
 
+SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -11695,7 +15918,28 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
@@ -11751,6 +15995,12 @@ Map<String, dynamic>
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -11818,7 +16068,8 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
@@ -11837,6 +16088,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -11849,7 +16101,8 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
@@ -11869,6 +16122,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -12032,7 +16286,8 @@ CreateBlog$Mutation$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserType$PictureTypeToJson(
     CreateBlog$Mutation$BlogType$UserType$PictureType instance) {
@@ -12050,6 +16305,7 @@ Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -12062,7 +16318,8 @@ CreateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -12082,6 +16339,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -12135,7 +16393,8 @@ CreateBlog$Mutation$BlogType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -12155,6 +16414,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -12236,7 +16496,8 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -12256,6 +16517,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -12313,7 +16575,8 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$Pict
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -12333,6 +16596,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -12390,7 +16654,8 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -12410,6 +16675,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -12419,10 +16685,14 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
         CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -12453,10 +16723,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -12572,7 +16844,8 @@ CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -12592,6 +16865,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -12932,6 +17206,422 @@ Map<String, dynamic>
   return val;
 }
 
+CreateBlog$Mutation$BlogType$UserType$UserEducationType
+    _$CreateBlog$Mutation$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        CreateBlog$Mutation$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$CreateBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(
+        CreateBlog$Mutation$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
+    _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+CreateBlog$Mutation$BlogType$UserType$UserWorkType
+    _$CreateBlog$Mutation$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(
+    CreateBlog$Mutation$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+    _$CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+CreateBlog$Mutation$BlogType$UserType$StateType$CountryType
+    _$CreateBlog$Mutation$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        CreateBlog$Mutation$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$CreateBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(
+        CreateBlog$Mutation$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+CreateBlog$Mutation$BlogType$UserType$StateType$PictureType
+    _$CreateBlog$Mutation$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        CreateBlog$Mutation$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$CreateBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(
+        CreateBlog$Mutation$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+CreateBlog$Mutation$BlogType$UserType$StateType
+    _$CreateBlog$Mutation$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        CreateBlog$Mutation$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : CreateBlog$Mutation$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserType$StateTypeToJson(
+    CreateBlog$Mutation$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 CreateBlog$Mutation$BlogType$UserType
     _$CreateBlog$Mutation$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -13020,7 +17710,28 @@ CreateBlog$Mutation$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  CreateBlog$Mutation$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  CreateBlog$Mutation$BlogType$UserType$UserWorkType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  CreateBlog$Mutation$BlogType$UserType$StateType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserTypeToJson(
     CreateBlog$Mutation$BlogType$UserType instance) {
@@ -13075,6 +17786,12 @@ Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -13138,7 +17855,8 @@ CreateBlog$Mutation$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$PictureTypeToJson(
     CreateBlog$Mutation$BlogType$PictureType instance) {
@@ -13156,6 +17874,7 @@ Map<String, dynamic> _$CreateBlog$Mutation$BlogType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -13168,7 +17887,8 @@ CreateBlog$Mutation$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(
@@ -13187,6 +17907,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -13455,7 +18176,8 @@ PublishBlog$Mutation$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$UserType$PictureTypeToJson(
     PublishBlog$Mutation$BlogType$UserType$PictureType instance) {
@@ -13473,6 +18195,7 @@ Map<String, dynamic> _$PublishBlog$Mutation$BlogType$UserType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -13485,7 +18208,8 @@ PublishBlog$Mutation$BlogType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -13505,6 +18229,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -13559,7 +18284,8 @@ PublishBlog$Mutation$BlogType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -13579,6 +18305,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -13660,7 +18387,8 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -13680,6 +18408,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -13737,7 +18466,8 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$Pic
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -13757,6 +18487,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -13814,7 +18545,8 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -13834,6 +18566,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -13843,10 +18576,14 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType
         PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -13877,10 +18614,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -13996,7 +18735,8 @@ PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTy
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -14016,6 +18756,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -14356,6 +19097,424 @@ Map<String, dynamic>
   return val;
 }
 
+PublishBlog$Mutation$BlogType$UserType$UserEducationType
+    _$PublishBlog$Mutation$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        PublishBlog$Mutation$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType
+    _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PublishBlog$Mutation$BlogType$UserType$UserWorkType
+    _$PublishBlog$Mutation$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+    _$PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PublishBlog$Mutation$BlogType$UserType$StateType$CountryType
+    _$PublishBlog$Mutation$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PublishBlog$Mutation$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PublishBlog$Mutation$BlogType$UserType$StateType$PictureType
+    _$PublishBlog$Mutation$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PublishBlog$Mutation$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PublishBlog$Mutation$BlogType$UserType$StateType
+    _$PublishBlog$Mutation$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PublishBlog$Mutation$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PublishBlog$Mutation$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$PublishBlog$Mutation$BlogType$UserType$StateTypeToJson(
+    PublishBlog$Mutation$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 PublishBlog$Mutation$BlogType$UserType
     _$PublishBlog$Mutation$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -14449,7 +19608,28 @@ PublishBlog$Mutation$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  PublishBlog$Mutation$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  PublishBlog$Mutation$BlogType$UserType$UserWorkType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  PublishBlog$Mutation$BlogType$UserType$StateType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$UserTypeToJson(
     PublishBlog$Mutation$BlogType$UserType instance) {
@@ -14504,6 +19684,12 @@ Map<String, dynamic> _$PublishBlog$Mutation$BlogType$UserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -14568,7 +19754,8 @@ PublishBlog$Mutation$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$PictureTypeToJson(
     PublishBlog$Mutation$BlogType$PictureType instance) {
@@ -14586,6 +19773,7 @@ Map<String, dynamic> _$PublishBlog$Mutation$BlogType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -14598,7 +19786,8 @@ PublishBlog$Mutation$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(
@@ -14617,6 +19806,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -14750,7 +19940,8 @@ UpdateBlog$Mutation$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserType$PictureTypeToJson(
     UpdateBlog$Mutation$BlogType$UserType$PictureType instance) {
@@ -14768,6 +19959,7 @@ Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -14780,7 +19972,8 @@ UpdateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -14800,6 +19993,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -14853,7 +20047,8 @@ UpdateBlog$Mutation$BlogType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -14873,6 +20068,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -14954,7 +20150,8 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -14974,6 +20171,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -15031,7 +20229,8 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$Pict
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -15051,6 +20250,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -15108,7 +20308,8 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -15128,6 +20329,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -15137,10 +20339,14 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
         UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -15171,10 +20377,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -15290,7 +20498,8 @@ UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -15310,6 +20519,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -15650,6 +20860,422 @@ Map<String, dynamic>
   return val;
 }
 
+UpdateBlog$Mutation$BlogType$UserType$UserEducationType
+    _$UpdateBlog$Mutation$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        UpdateBlog$Mutation$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$UpdateBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(
+        UpdateBlog$Mutation$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
+    _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+UpdateBlog$Mutation$BlogType$UserType$UserWorkType
+    _$UpdateBlog$Mutation$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(
+    UpdateBlog$Mutation$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+    _$UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType
+    _$UpdateBlog$Mutation$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$UpdateBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(
+        UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+UpdateBlog$Mutation$BlogType$UserType$StateType$PictureType
+    _$UpdateBlog$Mutation$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        UpdateBlog$Mutation$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$UpdateBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(
+        UpdateBlog$Mutation$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+UpdateBlog$Mutation$BlogType$UserType$StateType
+    _$UpdateBlog$Mutation$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        UpdateBlog$Mutation$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : UpdateBlog$Mutation$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserType$StateTypeToJson(
+    UpdateBlog$Mutation$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 UpdateBlog$Mutation$BlogType$UserType
     _$UpdateBlog$Mutation$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -15738,7 +21364,28 @@ UpdateBlog$Mutation$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  UpdateBlog$Mutation$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  UpdateBlog$Mutation$BlogType$UserType$UserWorkType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  UpdateBlog$Mutation$BlogType$UserType$StateType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserTypeToJson(
     UpdateBlog$Mutation$BlogType$UserType instance) {
@@ -15793,6 +21440,12 @@ Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -15856,7 +21509,8 @@ UpdateBlog$Mutation$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$PictureTypeToJson(
     UpdateBlog$Mutation$BlogType$PictureType instance) {
@@ -15874,6 +21528,7 @@ Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -15886,7 +21541,8 @@ UpdateBlog$Mutation$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(
@@ -15905,6 +21561,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -16071,7 +21728,8 @@ DeleteBlog$Mutation$BlogType$UserType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserType$PictureTypeToJson(
     DeleteBlog$Mutation$BlogType$UserType$PictureType instance) {
@@ -16089,6 +21747,7 @@ Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -16101,7 +21760,8 @@ DeleteBlog$Mutation$BlogType$UserType$LanguageType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -16121,6 +21781,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -16174,7 +21835,8 @@ DeleteBlog$Mutation$BlogType$UserType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -16194,6 +21856,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -16275,7 +21938,8 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -16295,6 +21959,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -16352,7 +22017,8 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$Pict
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -16372,6 +22038,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -16429,7 +22096,8 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -16449,6 +22117,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -16458,10 +22127,14 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType
         DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType()
           ..id = json['id'] as String
           ..name = json['name'] as String
-          ..code = json['code'] as String?
-          ..created = DateTime.parse(json['created'] as String)
-          ..surface = json['surface'] as String
-          ..dialCode = json['dialCode'] as String?
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
           ..country = json['country'] == null
               ? null
               : DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
@@ -16492,10 +22165,12 @@ Map<String, dynamic>
     }
   }
 
-  writeNotNull('code', instance.code);
-  val['created'] = instance.created.toIso8601String();
-  val['surface'] = instance.surface;
-  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
   writeNotNull('country', instance.country?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
@@ -16611,7 +22286,8 @@ DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -16631,6 +22307,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -16971,6 +22648,422 @@ Map<String, dynamic>
   return val;
 }
 
+DeleteBlog$Mutation$BlogType$UserType$UserEducationType
+    _$DeleteBlog$Mutation$BlogType$UserType$UserEducationTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteBlog$Mutation$BlogType$UserType$UserEducationType()
+          ..level = $enumDecodeNullable(_$AcademicLevelEnumMap, json['level'],
+              unknownValue: AcademicLevel.artemisUnknown)
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..graduated = json['graduated'] as bool?;
+
+Map<String, dynamic>
+    _$DeleteBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(
+        DeleteBlog$Mutation$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
+
+DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+    _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+    _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+    _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType
+    _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+DeleteBlog$Mutation$BlogType$UserType$UserWorkType
+    _$DeleteBlog$Mutation$BlogType$UserType$UserWorkTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType()
+          ..company = json['company'] as String?
+          ..position = json['position'] as String?
+          ..description = json['description'] as String?
+          ..city = json['city'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType
+                  .fromJson(json['city'] as Map<String, dynamic>)
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..from = json['from'] == null
+              ? null
+              : DateTime.parse(json['from'] as String)
+          ..to =
+              json['to'] == null ? null : DateTime.parse(json['to'] as String)
+          ..current = json['current'] as bool?;
+
+Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(
+    DeleteBlog$Mutation$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
+
+DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+    _$DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
+        DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType
+    _$DeleteBlog$Mutation$BlogType$UserType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$DeleteBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(
+        DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+DeleteBlog$Mutation$BlogType$UserType$StateType$PictureType
+    _$DeleteBlog$Mutation$BlogType$UserType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteBlog$Mutation$BlogType$UserType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$DeleteBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(
+        DeleteBlog$Mutation$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+DeleteBlog$Mutation$BlogType$UserType$StateType
+    _$DeleteBlog$Mutation$BlogType$UserType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        DeleteBlog$Mutation$BlogType$UserType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = (json['population'] as num?)?.toDouble()
+          ..ascii = json['ascii'] as String?
+          ..lat = (json['lat'] as num?)?.toDouble()
+          ..lng = (json['lng'] as num?)?.toDouble()
+          ..country = json['country'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : DeleteBlog$Mutation$BlogType$UserType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserType$StateTypeToJson(
+    DeleteBlog$Mutation$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
 DeleteBlog$Mutation$BlogType$UserType
     _$DeleteBlog$Mutation$BlogType$UserTypeFromJson(
             Map<String, dynamic> json) =>
@@ -17059,7 +23152,28 @@ DeleteBlog$Mutation$BlogType$UserType
           ..socialLoginData = json['socialLoginData'] == null
               ? null
               : DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType
-                  .fromJson(json['socialLoginData'] as Map<String, dynamic>);
+                  .fromJson(json['socialLoginData'] as Map<String, dynamic>)
+          ..education = (json['education'] as List<dynamic>?)
+              ?.map((e) =>
+                  DeleteBlog$Mutation$BlogType$UserType$UserEducationType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..work = (json['work'] as List<dynamic>?)
+              ?.map((e) =>
+                  DeleteBlog$Mutation$BlogType$UserType$UserWorkType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..lived = (json['lived'] as List<dynamic>?)
+              ?.map((e) =>
+                  DeleteBlog$Mutation$BlogType$UserType$StateType.fromJson(
+                      e as Map<String, dynamic>))
+              .toList()
+          ..hobbies = (json['hobbies'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..interests = (json['interests'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList();
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserTypeToJson(
     DeleteBlog$Mutation$BlogType$UserType instance) {
@@ -17114,6 +23228,12 @@ Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserTypeToJson(
   writeNotNull(
       'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
   writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
   return val;
 }
 
@@ -17177,7 +23297,8 @@ DeleteBlog$Mutation$BlogType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$PictureTypeToJson(
     DeleteBlog$Mutation$BlogType$PictureType instance) {
@@ -17195,6 +23316,7 @@ Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$PictureTypeToJson(
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -17207,7 +23329,8 @@ DeleteBlog$Mutation$BlogType$BlogDataType$PictureType
           ..width = json['width'] as int?
           ..height = json['height'] as int?
           ..x = json['x'] as int?
-          ..y = json['y'] as int?;
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(
@@ -17226,6 +23349,7 @@ Map<String, dynamic>
   writeNotNull('height', instance.height);
   writeNotNull('x', instance.x);
   writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
   return val;
 }
 
@@ -17320,6 +23444,50 @@ Map<String, dynamic> _$DeleteBlog$MutationToJson(
         DeleteBlog$Mutation instance) =>
     <String, dynamic>{
       'deleteBlog': instance.deleteBlog.toJson(),
+    };
+
+GenerateEcomSitemapXml$Mutation$CorporateTemplateType
+    _$GenerateEcomSitemapXml$Mutation$CorporateTemplateTypeFromJson(
+            Map<String, dynamic> json) =>
+        GenerateEcomSitemapXml$Mutation$CorporateTemplateType()
+          ..id = json['id'] as String
+          ..name = $enumDecode(_$CorporateTemplateTypeEnumEnumMap, json['name'],
+              unknownValue: CorporateTemplateTypeEnum.artemisUnknown)
+          ..content = json['content'] as String
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$GenerateEcomSitemapXml$Mutation$CorporateTemplateTypeToJson(
+            GenerateEcomSitemapXml$Mutation$CorporateTemplateType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': _$CorporateTemplateTypeEnumEnumMap[instance.name]!,
+          'content': instance.content,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
+
+const _$CorporateTemplateTypeEnumEnumMap = {
+  CorporateTemplateTypeEnum.robots: 'ROBOTS',
+  CorporateTemplateTypeEnum.browserConfig: 'BROWSER_CONFIG',
+  CorporateTemplateTypeEnum.webManifest: 'WEB_MANIFEST',
+  CorporateTemplateTypeEnum.siteMap: 'SITE_MAP',
+  CorporateTemplateTypeEnum.ads: 'ADS',
+  CorporateTemplateTypeEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+GenerateEcomSitemapXml$Mutation _$GenerateEcomSitemapXml$MutationFromJson(
+        Map<String, dynamic> json) =>
+    GenerateEcomSitemapXml$Mutation()
+      ..generateEcomSitemapXml =
+          GenerateEcomSitemapXml$Mutation$CorporateTemplateType.fromJson(
+              json['generateEcomSitemapXml'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$GenerateEcomSitemapXml$MutationToJson(
+        GenerateEcomSitemapXml$Mutation instance) =>
+    <String, dynamic>{
+      'generateEcomSitemapXml': instance.generateEcomSitemapXml.toJson(),
     };
 
 GetPaginatedBlogsArguments _$GetPaginatedBlogsArgumentsFromJson(
@@ -17530,4 +23698,16 @@ Map<String, dynamic> _$DeleteBlogArgumentsToJson(
         DeleteBlogArguments instance) =>
     <String, dynamic>{
       'id': instance.id,
+    };
+
+GenerateEcomSitemapXmlArguments _$GenerateEcomSitemapXmlArgumentsFromJson(
+        Map<String, dynamic> json) =>
+    GenerateEcomSitemapXmlArguments(
+      target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$GenerateEcomSitemapXmlArgumentsToJson(
+        GenerateEcomSitemapXmlArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
     };

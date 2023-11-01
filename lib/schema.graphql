@@ -52,10 +52,12 @@ type DeleteResponseDtoType {
 type StateType {
   id: ID!
   name: String!
-  created: DateTime!
-  surface: String!
-  code: String
-  dialCode: String
+  adminName: String
+  capital: StateCapitalEnum
+  population: Float
+  ascii: String
+  lat: Float
+  lng: Float
   flagSquare: PictureType
   flagWide: PictureType
   country: CountryType
@@ -63,10 +65,25 @@ type StateType {
   updatedAt: DateTime!
 }
 
+enum StateCapitalEnum {
+  PRIMARY
+  ADMIN
+  MINOR
+}
+
 type StatePaginatedType {
   count: Int
   isLast: Boolean
   objects: [StateType!]!
+}
+
+type IplocType {
+  id: ID!
+  from: String!
+  to: String
+  country: CountryType
+  createdAt: DateTime!
+  updatedAt: DateTime!
 }
 
 type LanguageType {
@@ -1960,6 +1977,7 @@ enum AudienceCriteriaFieldEnum {
   INTERESTS
   JOIN_DATE
   OCCUPATION
+  QUEST_ACTION
   MARITAL_STATUS
   REPUTATION_LEVEL
   QUANTITATIVE_CURRENT
@@ -2209,6 +2227,281 @@ type QuestActionDefinitionPaginateType {
   objects: [QuestActionDefinitionType!]!
 }
 
+type RemunerationDtoType {
+  pocketType: PocketTypeEnum
+  amount: String
+}
+
+enum PocketTypeEnum {
+  QUANTITATIVE
+  QUALITATIVE
+}
+
+type RemunerationWithReputationDtoType {
+  qualitativeAmount: String!
+  quantitativeAmount: String!
+  reputationLevel: ReputationType
+}
+
+type QuestActionsRecurrenceType {
+  enable: Boolean
+  cycle: Int
+}
+
+type QuestType {
+  id: ID!
+  title: String
+  description: String
+  media: MediaType
+  category: QuestCategoryEnum
+  status: QuestStatusEnum
+  recurrence: QuestActionsRecurrenceType
+  remuneration: [RemunerationDtoType!]
+  activityType: ActivityTypeType
+  creator: UserType
+  sponsored: Boolean
+  leaderboard: Boolean
+  rewards: String
+  maxAnswers: Int
+  audience: AudienceType
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+enum QuestCategoryEnum {
+  INDUSTRY
+  FAMILY
+  FITNESS
+  GASTRONOMY
+}
+
+enum QuestStatusEnum {
+  DRAFT
+  ONGOING
+  ON_HOLD
+  FINISHED
+}
+
+type QuestWithRepeatDateType {
+  id: ID!
+  title: String
+  description: String
+  media: MediaType
+  category: QuestCategoryEnum
+  status: QuestStatusEnum
+  recurrence: QuestActionsRecurrenceType
+  remuneration: [RemunerationDtoType!]
+  activityType: ActivityTypeType
+  creator: UserType
+  sponsored: Boolean
+  leaderboard: Boolean
+  rewards: String
+  maxAnswers: Int
+  audience: AudienceType
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  repeatDate: DateTime!
+}
+
+type QuestPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [QuestType!]!
+}
+
+type QuestRecurrencyStatusType {
+  isReccurent: Boolean!
+  repeatDate: DateTime
+}
+
+type QuestActivityIntType {
+  id: ID!
+  title: String
+  description: String
+  tags: [String!]
+  media: MediaType
+}
+
+type IQuestActivityActivitiesConditionConditionActionType {
+  definition: QuestActivityIntType
+  action: QuestActionActionType
+}
+
+type IQuestActivityActivitiesConditionConditionScoreType {
+  operator: OperatorEnum
+  value: OperatorEnum
+}
+
+type IQuestActivityActivitiesConditionConditionType {
+  action: IQuestActivityActivitiesConditionConditionActionType
+  score: IQuestActivityActivitiesConditionConditionScoreType
+}
+
+type IQuestActivityActivitiesConditionTransitionGotoType {
+  action: QuestActivityIntType
+}
+
+type IQuestActivityActivitiesConditionTransitionType {
+  transition: QuestActivityTransitionType
+  goto: IQuestActivityActivitiesConditionTransitionGotoType
+  endMessage: String
+}
+
+enum QuestActivityTransitionType {
+  CONNECTION
+  END
+}
+
+type IQuestActivityActivitiesConditionType {
+  conditionType: QuestActivityConditionType
+  condition: IQuestActivityActivitiesConditionConditionType
+  transition: IQuestActivityActivitiesConditionTransitionType
+}
+
+enum QuestActivityConditionType {
+  ACTION
+  SCORE
+}
+
+type IQuestActivityActivitiesTransitionType {
+  title: String
+  description: String
+}
+
+type IQuestActivityActivitiesType {
+  action: QuestActionDefinitionType
+  transition: IQuestActivityActivitiesTransitionType
+  condition: IQuestActivityActivitiesConditionType
+}
+
+type QuestActivityType {
+  id: ID!
+  title: String
+  description: String
+  tags: [String!]
+  media: MediaType
+  quest: QuestType
+  rank: Int
+  activity: IQuestActivityActivitiesType
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type QuestActivityPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [QuestActivityType!]!
+}
+
+type TargetDtoType {
+  pos: PointOfSaleType
+  user: UserType
+}
+
+type ResponseDtoType {
+  id: ID!
+  target: TargetDtoType!
+  executor: UserType!
+  question: QuestionDtoType!
+  answers: [String!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type QuestActionActionContentBaseType {
+  content: String
+}
+
+type QuestActionActionContentType {
+  content: String
+  value: Int
+}
+
+type QuestActionActionPerformedType {
+  performed: Boolean
+}
+
+type QuestActionActionContactType {
+  firstname: String
+  lastname: String
+  email: String
+  phone: String
+  description: String
+  address: FullAddressType
+  birthday: DateTime
+  gender: Gender
+  civility: MaritalStatus
+  profession: String
+  academicLevel: AcademicLevel
+  language: [LanguageType!]
+}
+
+type QuestActionActionDateType {
+  startDate: DateTime
+  endDate: DateTime
+}
+
+type QuestActionActionNumberType {
+  from: Float
+  to: Float
+}
+
+type QuestActionActionApiType {
+  code: Float
+  content: Float
+}
+
+type QuestActionActionVerificationContentType {
+  verification: QuestActionActionPerformedType
+  verified: QuestActionActionPerformedType
+}
+
+type QuestActionActionVerificationType {
+  number: QuestActionActionVerificationContentType
+  email: QuestActionActionVerificationContentType
+}
+
+type QuestActionActionChoicesType {
+  responses: [ResponseDtoType!]
+}
+
+type QuestActionActionType {
+  textBox: QuestActionActionContentBaseType
+  rating: QuestActionActionContentType
+  calculated: QuestActionActionContentBaseType
+  date: QuestActionActionDateType
+  contact: QuestActionActionContactType
+  number: QuestActionActionNumberType
+  api: QuestActionActionApiType
+  matrix: QuestActionActionContentType
+  toggle: QuestActionActionContentBaseType
+  choices: QuestActionActionChoicesType
+  smiley: QuestActionActionContentBaseType
+  score: QuestActionActionContentBaseType
+  lead: QuestActionActionContentBaseType
+  verification: QuestActionActionVerificationType
+  video: QuestActionActionPerformedType
+  socialMedia: QuestActionActionPerformedType
+  appDownload: QuestActionActionPerformedType
+}
+
+type QuestActionType {
+  id: ID!
+  user: UserType!
+  activity: QuestActivityType!
+  action: QuestActionActionType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type QuestActionPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [QuestActionType!]!
+}
+
 type AudienceReachType {
   reach: Int
   total: Int
@@ -2439,21 +2732,6 @@ type GetQuestionResponsesPaginateType {
   isLast: Boolean
   results: [AnswerDtoType!]!
   question: QuestionDtoType
-}
-
-type TargetDtoType {
-  pos: PointOfSaleType
-  user: UserType
-}
-
-type ResponseDtoType {
-  id: ID!
-  target: TargetDtoType!
-  executor: UserType!
-  question: QuestionDtoType!
-  answers: [String!]!
-  createdAt: DateTime!
-  updatedAt: DateTime!
 }
 
 type ResponsePaginateType {
@@ -3582,266 +3860,6 @@ type MarketPlaceOrderWithLoginType {
   accessToken: String!
   expiresIn: Float!
   order: MarketPlaceOrderDtoType!
-}
-
-type RemunerationDtoType {
-  pocketType: PocketTypeEnum
-  amount: String
-}
-
-enum PocketTypeEnum {
-  QUANTITATIVE
-  QUALITATIVE
-}
-
-type RemunerationWithReputationDtoType {
-  qualitativeAmount: String!
-  quantitativeAmount: String!
-  reputationLevel: ReputationType
-}
-
-type QuestActionsRecurrenceType {
-  enable: Boolean
-  cycle: Int
-}
-
-type QuestType {
-  id: ID!
-  title: String
-  description: String
-  media: MediaType
-  category: QuestCategoryEnum
-  status: QuestStatusEnum
-  recurrence: QuestActionsRecurrenceType
-  remuneration: [RemunerationDtoType!]
-  activityType: ActivityTypeType
-  creator: UserType
-  sponsored: Boolean
-  leaderboard: Boolean
-  rewards: String
-  maxAnswers: Int
-  audience: AudienceType
-  target: TargetType!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-enum QuestCategoryEnum {
-  INDUSTRY
-  FAMILY
-  FITNESS
-  GASTRONOMY
-}
-
-enum QuestStatusEnum {
-  DRAFT
-  ONGOING
-  ON_HOLD
-  FINISHED
-}
-
-type QuestWithRepeatDateType {
-  id: ID!
-  title: String
-  description: String
-  media: MediaType
-  category: QuestCategoryEnum
-  status: QuestStatusEnum
-  recurrence: QuestActionsRecurrenceType
-  remuneration: [RemunerationDtoType!]
-  activityType: ActivityTypeType
-  creator: UserType
-  sponsored: Boolean
-  leaderboard: Boolean
-  rewards: String
-  maxAnswers: Int
-  audience: AudienceType
-  target: TargetType!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  repeatDate: DateTime!
-}
-
-type QuestPaginateType {
-  count: Int
-  isLast: Boolean
-  objects: [QuestType!]!
-}
-
-type QuestRecurrencyStatusType {
-  isReccurent: Boolean!
-  repeatDate: DateTime
-}
-
-type QuestActionActionContentBaseType {
-  content: String
-}
-
-type QuestActionActionContentType {
-  content: String
-  value: Int
-}
-
-type QuestActionActionPerformedType {
-  performed: Boolean
-}
-
-type QuestActionActionContactType {
-  firstname: String
-  lastname: String
-  email: String
-  phone: String
-  description: String
-  address: FullAddressType
-  birthday: DateTime
-  gender: Gender
-  civility: MaritalStatus
-  profession: String
-  academicLevel: AcademicLevel
-  language: [LanguageType!]
-}
-
-type QuestActionActionDateType {
-  startDate: DateTime
-  endDate: DateTime
-}
-
-type QuestActionActionNumberType {
-  from: Float
-  to: Float
-}
-
-type QuestActionActionApiType {
-  code: Float
-  content: Float
-}
-
-type QuestActionActionVerificationContentType {
-  verification: QuestActionActionPerformedType
-  verified: QuestActionActionPerformedType
-}
-
-type QuestActionActionVerificationType {
-  number: QuestActionActionVerificationContentType
-  email: QuestActionActionVerificationContentType
-}
-
-type QuestActionActionChoicesType {
-  responses: [ResponseDtoType!]
-}
-
-type QuestActionActionType {
-  textBox: QuestActionActionContentBaseType
-  rating: QuestActionActionContentType
-  calculated: QuestActionActionContentBaseType
-  date: QuestActionActionDateType
-  contact: QuestActionActionContactType
-  number: QuestActionActionNumberType
-  api: QuestActionActionApiType
-  matrix: QuestActionActionContentType
-  toggle: QuestActionActionContentBaseType
-  choices: QuestActionActionChoicesType
-  smiley: QuestActionActionContentBaseType
-  score: QuestActionActionContentBaseType
-  lead: QuestActionActionContentBaseType
-  verification: QuestActionActionVerificationType
-  video: QuestActionActionPerformedType
-  socialMedia: QuestActionActionPerformedType
-  appDownload: QuestActionActionPerformedType
-}
-
-type QuestActionType {
-  id: ID!
-  user: UserType!
-  activity: QuestActivityType!
-  action: QuestActionActionType!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-type QuestActionPaginateType {
-  count: Int
-  isLast: Boolean
-  objects: [QuestActionType!]!
-}
-
-type QuestActivityIntType {
-  id: ID!
-  title: String
-  description: String
-  tags: [String!]
-  media: MediaType
-}
-
-type IQuestActivityActivitiesConditionConditionActionType {
-  definition: QuestActivityIntType
-  action: QuestActionActionType
-}
-
-type IQuestActivityActivitiesConditionConditionScoreType {
-  operator: OperatorEnum
-  value: OperatorEnum
-}
-
-type IQuestActivityActivitiesConditionConditionType {
-  action: IQuestActivityActivitiesConditionConditionActionType
-  score: IQuestActivityActivitiesConditionConditionScoreType
-}
-
-type IQuestActivityActivitiesConditionTransitionGotoType {
-  action: QuestActivityIntType
-}
-
-type IQuestActivityActivitiesConditionTransitionType {
-  transition: QuestActivityTransitionType
-  goto: IQuestActivityActivitiesConditionTransitionGotoType
-  endMessage: String
-}
-
-enum QuestActivityTransitionType {
-  CONNECTION
-  END
-}
-
-type IQuestActivityActivitiesConditionType {
-  conditionType: QuestActivityConditionType
-  condition: IQuestActivityActivitiesConditionConditionType
-  transition: IQuestActivityActivitiesConditionTransitionType
-}
-
-enum QuestActivityConditionType {
-  ACTION
-  SCORE
-}
-
-type IQuestActivityActivitiesTransitionType {
-  title: String
-  description: String
-}
-
-type IQuestActivityActivitiesType {
-  action: QuestActionDefinitionType
-  transition: IQuestActivityActivitiesTransitionType
-  condition: IQuestActivityActivitiesConditionType
-}
-
-type QuestActivityType {
-  id: ID!
-  title: String
-  description: String
-  tags: [String!]
-  media: MediaType
-  quest: QuestType
-  rank: Int
-  activity: IQuestActivityActivitiesType
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-type QuestActivityPaginateType {
-  count: Int
-  isLast: Boolean
-  objects: [QuestActivityType!]!
 }
 
 type ActivityLogActionType {
@@ -11704,6 +11722,9 @@ type Query {
     target: TargetACIInput!
     name: CorporateTemplateTypeEnum!
   ): CorporateTemplateType!
+  findCorporateTemplateByTarget(
+    target: TargetACIInput!
+  ): [CorporateTemplateType!]!
   getPricesCalculations(
     input: CalculationsInput!
   ): InvoicingPricesCalculationType!
@@ -12647,6 +12668,7 @@ input AudienceSegmentFilterValuesInput {
   reputations: [ID!]
   countries: [ID!]
   states: [ID!]
+  quest: QuestAudienceSegmentFilterValuesInput
 }
 
 input AudienceSegmentFilterZoneInput {
@@ -12659,6 +12681,68 @@ input DeliveryZonePathInput {
   lng: Float!
   lat: Float!
   order: Float!
+}
+
+input QuestAudienceSegmentFilterValuesInput {
+  activity: ID
+  action: QuestActionActionInput
+}
+
+input QuestActionActionInput {
+  textBox: QuestActionActionContentBaseInput
+  rating: QuestActionActionContentInput
+  calculated: QuestActionActionContentBaseInput
+  date: QuestActionActionContentBaseInput
+  contact: QuestActionActionContentBaseInput
+  number: QuestActionActionNumberInput
+  api: QuestActionActionApiInput
+  matrix: QuestActionActionContentInput
+  toggle: QuestActionActionContentInput
+  choices: QuestActionActionChoicesInput
+  smiley: QuestActionActionContentBaseInput
+  score: QuestActionActionContentBaseInput
+  lead: QuestActionActionContentInput
+  verification: QuestActionActionVerificationInput
+  video: QuestActionActionPerformedInput
+  socialMedia: QuestActionActionPerformedInput
+  appDownload: QuestActionActionPerformedInput
+}
+
+input QuestActionActionContentBaseInput {
+  content: String
+}
+
+input QuestActionActionContentInput {
+  content: String
+  value: Int
+}
+
+input QuestActionActionNumberInput {
+  from: Float
+  to: Float
+}
+
+input QuestActionActionApiInput {
+  code: Float
+  content: Float
+}
+
+input QuestActionActionChoicesInput {
+  responses: [ID!]
+}
+
+input QuestActionActionVerificationInput {
+  number: QuestActionActionVerificationContentInput
+  email: QuestActionActionVerificationContentInput
+}
+
+input QuestActionActionVerificationContentInput {
+  verification: QuestActionActionPerformedInput
+  verified: QuestActionActionPerformedInput
+}
+
+input QuestActionActionPerformedInput {
+  performed: Boolean
 }
 
 input ChallengeTypesFilterInput {
@@ -16268,63 +16352,6 @@ input RemunerationInput {
   amount: String!
 }
 
-input QuestActionActionInput {
-  textBox: QuestActionActionContentBaseInput
-  rating: QuestActionActionContentInput
-  calculated: QuestActionActionContentBaseInput
-  date: QuestActionActionContentBaseInput
-  contact: QuestActionActionContentBaseInput
-  number: QuestActionActionNumberInput
-  api: QuestActionActionApiInput
-  matrix: QuestActionActionContentInput
-  toggle: QuestActionActionContentInput
-  choices: QuestActionActionChoicesInput
-  smiley: QuestActionActionContentBaseInput
-  score: QuestActionActionContentBaseInput
-  lead: QuestActionActionContentInput
-  verification: QuestActionActionVerificationInput
-  video: QuestActionActionPerformedInput
-  socialMedia: QuestActionActionPerformedInput
-  appDownload: QuestActionActionPerformedInput
-}
-
-input QuestActionActionContentBaseInput {
-  content: String
-}
-
-input QuestActionActionContentInput {
-  content: String
-  value: Int
-}
-
-input QuestActionActionNumberInput {
-  from: Float
-  to: Float
-}
-
-input QuestActionActionApiInput {
-  code: Float
-  content: Float
-}
-
-input QuestActionActionChoicesInput {
-  responses: [ID!]
-}
-
-input QuestActionActionVerificationInput {
-  number: QuestActionActionVerificationContentInput
-  email: QuestActionActionVerificationContentInput
-}
-
-input QuestActionActionVerificationContentInput {
-  verification: QuestActionActionPerformedInput
-  verified: QuestActionActionPerformedInput
-}
-
-input QuestActionActionPerformedInput {
-  performed: Boolean
-}
-
 input QuestActivityInput {
   title: String!
   description: String!
@@ -17272,10 +17299,12 @@ input CurrencyInput {
 
 input StateInput {
   name: String!
-  code: String
-  created: DateTime!
-  surface: String!
-  dialCode: String
+  adminName: String!
+  capital: StateCapitalEnum!
+  population: Float!
+  ascii: String!
+  lat: Float!
+  lng: Float!
   flagSquare: PictureInput
   flagWide: PictureInput
   country: ID

@@ -48,8 +48,10 @@ class GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType$Soc
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -214,8 +216,10 @@ class GetCompanyContacts$Query$CompanyContactType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$MediaType$PictureTypeToJson(
@@ -290,8 +294,10 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$CountryType$Pi
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -368,8 +374,10 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$Coun
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -446,8 +454,10 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$Pict
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -468,13 +478,18 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$CountryType?
       country;
@@ -493,10 +508,12 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -613,8 +630,10 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$MediaType$PictureT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -691,8 +710,10 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$Co
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -769,8 +790,10 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$St
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -847,8 +870,10 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$St
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -869,13 +894,18 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$St
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -894,10 +924,12 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$St
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -1062,8 +1094,10 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1140,8 +1174,10 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1218,8 +1254,10 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -1240,13 +1278,18 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -1265,10 +1308,12 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -1413,8 +1458,10 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1443,8 +1490,10 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -1588,13 +1637,15 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType
   late GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -1685,6 +1736,8 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType
 
   List<String>? tags;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -1701,6 +1754,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType
         contact,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -1746,6 +1800,8 @@ class GetCompanyContacts$Query$CompanyContactType extends JsonSerializable
 
   String? leadScore;
 
+  String? externalId;
+
   GetCompanyContacts$Query$CompanyContactType$CompanyType? company;
 
   late DateTime createdAt;
@@ -1767,6 +1823,7 @@ class GetCompanyContacts$Query$CompanyContactType extends JsonSerializable
         lastContacted,
         address,
         leadScore,
+        externalId,
         company,
         createdAt,
         updatedAt
@@ -1833,8 +1890,10 @@ class CompanyContact$Query$CompanyContactType$SocialValueType$SocialType$SocialI
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -1998,8 +2057,10 @@ class CompanyContact$Query$CompanyContactType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$MediaType$PictureTypeToJson(
@@ -2072,8 +2133,10 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$CountryType$Pictur
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2150,8 +2213,10 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$StateType$CountryT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2228,8 +2293,10 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$StateType$PictureT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -2250,13 +2317,18 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CompanyContact$Query$CompanyContactType$FullAddressType$StateType$CountryType?
       country;
@@ -2275,10 +2347,12 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -2392,8 +2466,10 @@ class CompanyContact$Query$CompanyContactType$CompanyType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -2470,8 +2546,10 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$Countr
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2548,8 +2626,10 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2626,8 +2706,10 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -2648,13 +2730,18 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateT
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -2673,10 +2760,12 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateT
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -2841,8 +2930,10 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2919,8 +3010,10 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2997,8 +3090,10 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -3019,13 +3114,18 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -3044,10 +3144,12 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -3192,8 +3294,10 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -3222,8 +3326,10 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -3367,13 +3473,15 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType
   late CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -3462,6 +3570,8 @@ class CompanyContact$Query$CompanyContactType$CompanyType
 
   List<String>? tags;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -3478,6 +3588,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType
         contact,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -3521,6 +3632,8 @@ class CompanyContact$Query$CompanyContactType extends JsonSerializable
 
   String? leadScore;
 
+  String? externalId;
+
   CompanyContact$Query$CompanyContactType$CompanyType? company;
 
   late DateTime createdAt;
@@ -3542,6 +3655,7 @@ class CompanyContact$Query$CompanyContactType extends JsonSerializable
         lastContacted,
         address,
         leadScore,
+        externalId,
         company,
         createdAt,
         updatedAt
@@ -3610,8 +3724,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$Socia
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -3778,8 +3894,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$MediaType$PictureTypeToJson(
@@ -3856,8 +3974,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$Count
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3934,8 +4054,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$State
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4012,8 +4134,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$State
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -4034,13 +4158,18 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$State
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$StateType$CountryType?
       country;
@@ -4059,10 +4188,12 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$State
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -4181,8 +4312,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$MediaType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -4259,8 +4392,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4337,8 +4472,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4415,8 +4552,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -4437,13 +4576,18 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -4462,10 +4606,12 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -4630,8 +4776,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4708,8 +4856,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4786,8 +4936,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -4808,13 +4960,18 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -4833,10 +4990,12 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -4981,8 +5140,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -5011,8 +5172,10 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -5156,13 +5319,15 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
   late GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -5255,6 +5420,8 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType
 
   List<String>? tags;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -5271,6 +5438,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType
         contact,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -5317,6 +5485,8 @@ class GetCompanyContactsByCompany$Query$CompanyContactType
 
   String? leadScore;
 
+  String? externalId;
+
   GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType? company;
 
   late DateTime createdAt;
@@ -5338,6 +5508,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType
         lastContacted,
         address,
         leadScore,
+        externalId,
         company,
         createdAt,
         updatedAt
@@ -5410,8 +5581,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -5578,8 +5751,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$MediaType$PictureTypeToJson(
@@ -5656,8 +5831,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5734,8 +5911,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5812,8 +5991,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -5834,13 +6015,18 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$CountryType?
       country;
@@ -5859,10 +6045,12 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -5981,8 +6169,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -6059,8 +6249,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6137,8 +6329,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6215,8 +6409,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -6237,13 +6433,18 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -6262,10 +6463,12 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -6430,8 +6633,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6508,8 +6713,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6586,8 +6793,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -6608,13 +6817,18 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -6633,10 +6847,12 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -6781,8 +6997,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -6811,8 +7029,10 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -6956,13 +7176,15 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
   late GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -7055,6 +7277,8 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   List<String>? tags;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -7071,6 +7295,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         contact,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -7121,6 +7346,8 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   String? leadScore;
 
+  String? externalId;
+
   GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType?
       company;
 
@@ -7143,6 +7370,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         lastContacted,
         address,
         leadScore,
+        externalId,
         company,
         createdAt,
         updatedAt
@@ -7262,8 +7490,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -7430,8 +7660,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$MediaType$PictureTypeToJson(
@@ -7508,8 +7740,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -7586,8 +7820,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -7664,8 +7900,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -7686,13 +7924,18 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$CountryType?
       country;
@@ -7711,10 +7954,12 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -7833,8 +8078,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -7911,8 +8158,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -7989,8 +8238,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8067,8 +8318,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -8089,13 +8342,18 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -8114,10 +8372,12 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -8282,8 +8542,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -8360,8 +8622,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8438,8 +8702,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -8460,13 +8726,18 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -8485,10 +8756,12 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -8633,8 +8906,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -8663,8 +8938,10 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -8808,13 +9085,15 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
   late GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -8907,6 +9186,8 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   List<String>? tags;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -8923,6 +9204,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         contact,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -8973,6 +9255,8 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   String? leadScore;
 
+  String? externalId;
+
   GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType?
       company;
 
@@ -8995,6 +9279,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         lastContacted,
         address,
         leadScore,
+        externalId,
         company,
         createdAt,
         updatedAt
@@ -9119,8 +9404,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -9287,8 +9574,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$MediaType$PictureTypeToJson(
@@ -9364,8 +9653,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9442,8 +9733,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9520,8 +9813,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -9542,13 +9837,18 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$CountryType?
       country;
@@ -9567,10 +9867,12 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -9689,8 +9991,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaType$Pic
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -9767,8 +10071,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9845,8 +10151,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9923,8 +10231,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -9945,13 +10255,18 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -9970,10 +10285,12 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -10138,8 +10455,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -10216,8 +10535,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -10294,8 +10615,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -10316,13 +10639,18 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -10341,10 +10669,12 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -10489,8 +10819,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -10519,8 +10851,10 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -10664,13 +10998,15 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
   late CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -10762,6 +11098,8 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType
 
   List<String>? tags;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -10778,6 +11116,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType
         contact,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -10824,6 +11163,8 @@ class CreateCompanyContact$Mutation$CompanyContactType extends JsonSerializable
 
   String? leadScore;
 
+  String? externalId;
+
   CreateCompanyContact$Mutation$CompanyContactType$CompanyType? company;
 
   late DateTime createdAt;
@@ -10845,6 +11186,7 @@ class CreateCompanyContact$Mutation$CompanyContactType extends JsonSerializable
         lastContacted,
         address,
         leadScore,
+        externalId,
         company,
         createdAt,
         updatedAt
@@ -11181,8 +11523,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -11349,8 +11693,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$MediaType$PictureTypeToJson(
@@ -11426,8 +11772,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -11504,8 +11852,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -11582,8 +11932,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -11604,13 +11956,18 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$CountryType?
       country;
@@ -11629,10 +11986,12 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -11751,8 +12110,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaType$Pic
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -11829,8 +12190,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -11907,8 +12270,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -11985,8 +12350,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -12007,13 +12374,18 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -12032,10 +12404,12 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -12200,8 +12574,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -12278,8 +12654,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -12356,8 +12734,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -12378,13 +12758,18 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   late String name;
 
-  String? code;
+  String? adminName;
 
-  late DateTime created;
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
 
-  late String surface;
+  double? population;
 
-  String? dialCode;
+  String? ascii;
+
+  double? lat;
+
+  double? lng;
 
   UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -12403,10 +12788,12 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
   List<Object?> get props => [
         id,
         name,
-        code,
-        created,
-        surface,
-        dialCode,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
         country,
         createdAt,
         updatedAt,
@@ -12551,8 +12938,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -12581,8 +12970,10 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -12726,13 +13117,15 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
   late UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType
       bank;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, holder, account, iban, bank, createdAt, updatedAt];
+      [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -12824,6 +13217,8 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType
 
   List<String>? tags;
 
+  String? externalId;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -12840,6 +13235,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType
         contact,
         logistic,
         tags,
+        externalId,
         createdAt,
         updatedAt
       ];
@@ -12886,6 +13282,8 @@ class UpdateCompanyContact$Mutation$CompanyContactType extends JsonSerializable
 
   String? leadScore;
 
+  String? externalId;
+
   UpdateCompanyContact$Mutation$CompanyContactType$CompanyType? company;
 
   late DateTime createdAt;
@@ -12907,6 +13305,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType extends JsonSerializable
         lastContacted,
         address,
         leadScore,
+        externalId,
         company,
         createdAt,
         updatedAt
@@ -12930,6 +13329,73 @@ class UpdateCompanyContact$Mutation extends JsonSerializable
   List<Object?> get props => [updateCompanyContact];
   @override
   Map<String, dynamic> toJson() => _$UpdateCompanyContact$MutationToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CompanyContactUpdateInput extends JsonSerializable with EquatableMixin {
+  CompanyContactUpdateInput({
+    this.firstName,
+    this.lastName,
+    this.email,
+    this.phone,
+    this.dateOfBirth,
+    this.chatContact,
+    this.socialMedia,
+    this.lastContacted,
+    this.leadScore,
+    this.media,
+    this.tags,
+    this.externalId,
+    this.address,
+  });
+
+  factory CompanyContactUpdateInput.fromJson(Map<String, dynamic> json) =>
+      _$CompanyContactUpdateInputFromJson(json);
+
+  String? firstName;
+
+  String? lastName;
+
+  String? email;
+
+  IPhoneInput? phone;
+
+  DateTime? dateOfBirth;
+
+  List<SocialValueInput>? chatContact;
+
+  List<SocialValueInput>? socialMedia;
+
+  DateTime? lastContacted;
+
+  String? leadScore;
+
+  MediaInput? media;
+
+  List<String>? tags;
+
+  String? externalId;
+
+  FullAddressInput? address;
+
+  @override
+  List<Object?> get props => [
+        firstName,
+        lastName,
+        email,
+        phone,
+        dateOfBirth,
+        chatContact,
+        socialMedia,
+        lastContacted,
+        leadScore,
+        media,
+        tags,
+        externalId,
+        address
+      ];
+  @override
+  Map<String, dynamic> toJson() => _$CompanyContactUpdateInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -12977,6 +13443,17 @@ enum SocialImageStyleEnum {
   sticker,
   @JsonValue('COLOR_HAND_DROWN')
   colorHandDrown,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
+enum StateCapitalEnum {
+  @JsonValue('PRIMARY')
+  primary,
+  @JsonValue('ADMIN')
+  admin,
+  @JsonValue('MINOR')
+  minor,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -13199,6 +13676,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13244,6 +13728,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -13299,6 +13790,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13349,6 +13847,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13394,6 +13899,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -13457,6 +13969,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13502,6 +14021,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -13557,6 +14083,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13607,6 +14140,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13652,6 +14192,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -13803,6 +14350,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13848,6 +14402,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -13903,6 +14464,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13953,6 +14521,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -13998,6 +14573,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -14061,6 +14643,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -14106,6 +14695,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -14161,6 +14757,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -14211,6 +14814,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -14256,6 +14866,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -14341,6 +14958,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -14386,6 +15010,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -14568,6 +15199,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -14618,6 +15256,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -14643,28 +15288,42 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'code'),
+                    name: NameNode(value: 'adminName'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'created'),
+                    name: NameNode(value: 'capital'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'surface'),
+                    name: NameNode(value: 'population'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'dialCode'),
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -14773,6 +15432,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -14818,6 +15484,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -14889,6 +15562,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -14939,6 +15619,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -14984,6 +15671,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
           ),
           FieldNode(
             name: NameNode(value: 'leadScore'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
             alias: null,
             arguments: [],
             directives: [],
@@ -15077,6 +15771,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -15122,6 +15823,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -15290,6 +15998,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -15340,6 +16055,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -15365,28 +16087,42 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -15495,6 +16231,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -15540,6 +16283,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -15611,6 +16361,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -15656,6 +16413,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -15925,6 +16689,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15975,6 +16746,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -16000,28 +16778,42 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -16130,6 +16922,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -16175,6 +16974,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -16246,6 +17052,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -16291,6 +17104,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16443,6 +17263,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -16499,6 +17326,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -16544,6 +17378,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16599,6 +17440,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -16644,6 +17492,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16699,6 +17554,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -16744,6 +17606,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16799,6 +17668,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -16844,6 +17720,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16899,6 +17782,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -16927,6 +17817,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                     ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
                   ),
                   FieldNode(
                     name: NameNode(value: 'createdAt'),
@@ -17011,6 +17908,13 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'tags'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -17299,6 +18203,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17344,6 +18255,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -17399,6 +18317,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17449,6 +18374,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17494,6 +18426,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -17557,6 +18496,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17602,6 +18548,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -17657,6 +18610,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17707,6 +18667,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17752,6 +18719,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -17903,6 +18877,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -17948,6 +18929,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -18003,6 +18991,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -18053,6 +19048,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -18098,6 +19100,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -18161,6 +19170,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -18206,6 +19222,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -18261,6 +19284,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -18311,6 +19341,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -18356,6 +19393,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -18441,6 +19485,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -18486,6 +19537,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -18668,6 +19726,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -18718,6 +19783,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -18743,28 +19815,42 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'code'),
+                    name: NameNode(value: 'adminName'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'created'),
+                    name: NameNode(value: 'capital'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'surface'),
+                    name: NameNode(value: 'population'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'dialCode'),
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -18873,6 +19959,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -18918,6 +20011,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -18989,6 +20089,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -19039,6 +20146,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -19084,6 +20198,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
           ),
           FieldNode(
             name: NameNode(value: 'leadScore'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
             alias: null,
             arguments: [],
             directives: [],
@@ -19177,6 +20298,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -19222,6 +20350,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -19390,6 +20525,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -19440,6 +20582,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -19465,28 +20614,42 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -19595,6 +20758,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -19640,6 +20810,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -19711,6 +20888,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -19756,6 +20940,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -20025,6 +21216,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -20075,6 +21273,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -20100,28 +21305,42 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -20230,6 +21449,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -20275,6 +21501,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -20346,6 +21579,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -20391,6 +21631,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -20543,6 +21790,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -20599,6 +21853,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -20644,6 +21905,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -20699,6 +21967,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -20744,6 +22019,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -20799,6 +22081,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -20844,6 +22133,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -20899,6 +22195,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -20944,6 +22247,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -20999,6 +22309,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -21027,6 +22344,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                     ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
                   ),
                   FieldNode(
                     name: NameNode(value: 'createdAt'),
@@ -21111,6 +22435,13 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'tags'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -21406,6 +22737,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -21451,6 +22789,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -21506,6 +22851,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -21556,6 +22908,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -21601,6 +22960,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -21664,6 +23030,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -21709,6 +23082,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -21764,6 +23144,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -21814,6 +23201,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -21859,6 +23253,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -22010,6 +23411,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22055,6 +23463,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -22110,6 +23525,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22160,6 +23582,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22205,6 +23634,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -22268,6 +23704,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22313,6 +23756,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -22368,6 +23818,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22418,6 +23875,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -22463,6 +23927,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -22548,6 +24019,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -22593,6 +24071,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -22775,6 +24260,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -22825,6 +24317,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -22850,28 +24349,42 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'code'),
+                    name: NameNode(value: 'adminName'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'created'),
+                    name: NameNode(value: 'capital'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'surface'),
+                    name: NameNode(value: 'population'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'dialCode'),
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -22980,6 +24493,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -23025,6 +24545,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -23096,6 +24623,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -23146,6 +24680,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -23191,6 +24732,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
           ),
           FieldNode(
             name: NameNode(value: 'leadScore'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
             alias: null,
             arguments: [],
             directives: [],
@@ -23284,6 +24832,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -23329,6 +24884,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -23497,6 +25059,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -23547,6 +25116,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -23572,28 +25148,42 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -23702,6 +25292,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -23747,6 +25344,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -23818,6 +25422,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -23863,6 +25474,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -24132,6 +25750,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -24182,6 +25807,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -24207,28 +25839,42 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -24337,6 +25983,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -24382,6 +26035,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -24453,6 +26113,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -24498,6 +26165,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -24650,6 +26324,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -24706,6 +26387,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -24751,6 +26439,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -24806,6 +26501,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -24851,6 +26553,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -24906,6 +26615,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -24951,6 +26667,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -25006,6 +26729,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -25051,6 +26781,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -25106,6 +26843,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -25134,6 +26878,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                     ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
                   ),
                   FieldNode(
                     name: NameNode(value: 'createdAt'),
@@ -25224,6 +26975,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -25285,6 +27043,7 @@ class GetCompanyContactsByCompanyPaginatedArguments extends JsonSerializable
     with EquatableMixin {
   GetCompanyContactsByCompanyPaginatedArguments({
     required this.company,
+    this.searchString,
     this.pagination,
   });
 
@@ -25295,10 +27054,12 @@ class GetCompanyContactsByCompanyPaginatedArguments extends JsonSerializable
 
   late String company;
 
+  final String? searchString;
+
   final PaginationInput? pagination;
 
   @override
-  List<Object?> get props => [company, pagination];
+  List<Object?> get props => [company, searchString, pagination];
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginatedArgumentsToJson(this);
@@ -25322,6 +27083,15 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
         directives: [],
       ),
       VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'searchString')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
         variable: VariableNode(name: NameNode(value: 'pagination')),
         type: NamedTypeNode(
           name: NameNode(value: 'PaginationInput'),
@@ -25340,6 +27110,10 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
           ArgumentNode(
             name: NameNode(value: 'company'),
             value: VariableNode(name: NameNode(value: 'company')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'searchString'),
+            value: VariableNode(name: NameNode(value: 'searchString')),
           ),
           ArgumentNode(
             name: NameNode(value: 'pagination'),
@@ -25552,6 +27326,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -25597,6 +27378,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -25652,6 +27440,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -25702,6 +27497,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -25747,6 +27549,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -25810,6 +27619,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -25855,6 +27671,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -25910,6 +27733,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -25960,6 +27790,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -26005,6 +27842,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -26156,6 +28000,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -26201,6 +28052,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -26256,6 +28114,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -26306,6 +28171,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -26351,6 +28223,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -26414,6 +28293,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -26459,6 +28345,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -26514,6 +28407,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -26564,6 +28464,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -26609,6 +28516,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -26694,6 +28608,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -26739,6 +28660,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -26921,6 +28849,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -26971,6 +28906,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -26996,28 +28938,42 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -27126,6 +29082,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -27171,6 +29134,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -27242,6 +29212,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -27292,6 +29269,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -27337,6 +29321,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
               ),
               FieldNode(
                 name: NameNode(value: 'leadScore'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -27430,6 +29421,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -27475,6 +29473,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -27643,6 +29648,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -27693,6 +29705,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -27718,28 +29737,42 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -27848,6 +29881,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -27893,6 +29933,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -27964,6 +30011,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -28009,6 +30063,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -28278,6 +30339,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -28328,6 +30396,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                 ]),
@@ -28353,28 +30428,42 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'code'),
+                                    name: NameNode(value: 'adminName'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'created'),
+                                    name: NameNode(value: 'capital'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'surface'),
+                                    name: NameNode(value: 'population'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'dialCode'),
+                                    name: NameNode(value: 'ascii'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lng'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -28484,6 +30573,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -28530,6 +30626,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                           ),
                                           FieldNode(
                                             name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
                                             alias: null,
                                             arguments: [],
                                             directives: [],
@@ -28601,6 +30704,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -28646,6 +30756,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -28798,6 +30915,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -28854,6 +30978,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -28899,6 +31030,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -28954,6 +31092,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -28999,6 +31144,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -29054,6 +31206,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -29099,6 +31258,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -29154,6 +31320,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -29199,6 +31372,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -29254,6 +31434,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                 ]),
@@ -29282,6 +31469,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                         ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'externalId'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
                       ),
                       FieldNode(
                         name: NameNode(value: 'createdAt'),
@@ -29366,6 +31560,13 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                   ),
                   FieldNode(
                     name: NameNode(value: 'tags'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -29721,6 +31922,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -29766,6 +31974,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -29821,6 +32036,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -29871,6 +32093,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -29916,6 +32145,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -29979,6 +32215,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -30024,6 +32267,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -30079,6 +32329,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -30129,6 +32386,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -30174,6 +32438,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -30325,6 +32596,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -30370,6 +32648,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -30425,6 +32710,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -30475,6 +32767,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -30520,6 +32819,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -30583,6 +32889,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -30628,6 +32941,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -30683,6 +33003,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -30733,6 +33060,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -30778,6 +33112,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -30863,6 +33204,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -30908,6 +33256,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -31090,6 +33445,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -31140,6 +33502,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -31165,28 +33534,42 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -31295,6 +33678,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -31340,6 +33730,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -31411,6 +33808,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -31461,6 +33865,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -31506,6 +33917,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
               ),
               FieldNode(
                 name: NameNode(value: 'leadScore'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -31599,6 +34017,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -31644,6 +34069,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -31812,6 +34244,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -31862,6 +34301,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                         ]),
@@ -31887,28 +34333,42 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'code'),
+                            name: NameNode(value: 'adminName'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'created'),
+                            name: NameNode(value: 'capital'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'surface'),
+                            name: NameNode(value: 'population'),
                             alias: null,
                             arguments: [],
                             directives: [],
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'dialCode'),
+                            name: NameNode(value: 'ascii'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lat'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'lng'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -32017,6 +34477,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -32062,6 +34529,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -32133,6 +34607,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -32178,6 +34659,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -32447,6 +34935,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -32497,6 +34992,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                 ]),
@@ -32522,28 +35024,42 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'code'),
+                                    name: NameNode(value: 'adminName'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'created'),
+                                    name: NameNode(value: 'capital'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'surface'),
+                                    name: NameNode(value: 'population'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
                                   ),
                                   FieldNode(
-                                    name: NameNode(value: 'dialCode'),
+                                    name: NameNode(value: 'ascii'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lat'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'lng'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -32653,6 +35169,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                             directives: [],
                                             selectionSet: null,
                                           ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
                                         ]),
                                       ),
                                       FieldNode(
@@ -32699,6 +35222,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                           ),
                                           FieldNode(
                                             name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
                                             alias: null,
                                             arguments: [],
                                             directives: [],
@@ -32770,6 +35300,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -32815,6 +35352,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -32967,6 +35511,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -33023,6 +35574,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -33068,6 +35626,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -33123,6 +35688,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -33168,6 +35740,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -33223,6 +35802,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -33268,6 +35854,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -33323,6 +35916,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -33368,6 +35968,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -33423,6 +36030,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                 ]),
@@ -33451,6 +36065,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                         ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'externalId'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
                       ),
                       FieldNode(
                         name: NameNode(value: 'createdAt'),
@@ -33535,6 +36156,13 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                   ),
                   FieldNode(
                     name: NameNode(value: 'tags'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -33832,6 +36460,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -33877,6 +36512,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -33932,6 +36574,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -33982,6 +36631,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -34027,6 +36683,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -34090,6 +36753,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -34135,6 +36805,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -34190,6 +36867,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -34240,6 +36924,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -34285,6 +36976,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -34436,6 +37134,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -34481,6 +37186,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -34536,6 +37248,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -34586,6 +37305,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -34631,6 +37357,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -34694,6 +37427,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -34739,6 +37479,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -34794,6 +37541,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -34844,6 +37598,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -34889,6 +37650,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -34974,6 +37742,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -35019,6 +37794,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -35201,6 +37983,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -35251,6 +38040,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -35276,28 +38072,42 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'code'),
+                    name: NameNode(value: 'adminName'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'created'),
+                    name: NameNode(value: 'capital'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'surface'),
+                    name: NameNode(value: 'population'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'dialCode'),
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -35406,6 +38216,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -35451,6 +38268,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -35522,6 +38346,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -35572,6 +38403,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -35617,6 +38455,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
           ),
           FieldNode(
             name: NameNode(value: 'leadScore'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
             alias: null,
             arguments: [],
             directives: [],
@@ -35710,6 +38555,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -35755,6 +38607,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -35923,6 +38782,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -35973,6 +38839,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -35998,28 +38871,42 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -36128,6 +39015,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -36173,6 +39067,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -36244,6 +39145,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -36289,6 +39197,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -36558,6 +39473,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -36608,6 +39530,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -36633,28 +39562,42 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -36763,6 +39706,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -36808,6 +39758,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -36879,6 +39836,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -36924,6 +39888,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -37076,6 +40047,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -37132,6 +40110,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -37177,6 +40162,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -37232,6 +40224,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -37277,6 +40276,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -37332,6 +40338,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -37377,6 +40390,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -37432,6 +40452,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -37477,6 +40504,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -37532,6 +40566,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -37560,6 +40601,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                     ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
                   ),
                   FieldNode(
                     name: NameNode(value: 'createdAt'),
@@ -37650,6 +40698,13 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -37720,7 +40775,7 @@ class UpdateCompanyContactArguments extends JsonSerializable
 
   late String id;
 
-  late CompanyContactInput input;
+  late CompanyContactUpdateInput input;
 
   @override
   List<Object?> get props => [id, input];
@@ -37747,7 +40802,7 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
       VariableDefinitionNode(
         variable: VariableNode(name: NameNode(value: 'input')),
         type: NamedTypeNode(
-          name: NameNode(value: 'CompanyContactInput'),
+          name: NameNode(value: 'CompanyContactUpdateInput'),
           isNonNull: true,
         ),
         defaultValue: DefaultValueNode(value: null),
@@ -37955,6 +41010,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38000,6 +41062,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -38055,6 +41124,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38105,6 +41181,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38150,6 +41233,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -38213,6 +41303,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38258,6 +41355,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -38313,6 +41417,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38363,6 +41474,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38408,6 +41526,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -38559,6 +41684,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38604,6 +41736,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -38659,6 +41798,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38709,6 +41855,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38754,6 +41907,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -38817,6 +41977,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38862,6 +42029,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -38917,6 +42091,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -38967,6 +42148,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -39012,6 +42200,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -39097,6 +42292,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -39142,6 +42344,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -39324,6 +42533,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -39374,6 +42590,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -39399,28 +42622,42 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'code'),
+                    name: NameNode(value: 'adminName'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'created'),
+                    name: NameNode(value: 'capital'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'surface'),
+                    name: NameNode(value: 'population'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'dialCode'),
+                    name: NameNode(value: 'ascii'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lat'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lng'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -39529,6 +42766,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -39574,6 +42818,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -39645,6 +42896,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -39695,6 +42953,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -39740,6 +43005,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
           ),
           FieldNode(
             name: NameNode(value: 'leadScore'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
             alias: null,
             arguments: [],
             directives: [],
@@ -39833,6 +43105,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -39878,6 +43157,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -40046,6 +43332,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -40096,6 +43389,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -40121,28 +43421,42 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'code'),
+                        name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'created'),
+                        name: NameNode(value: 'capital'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'surface'),
+                        name: NameNode(value: 'population'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'dialCode'),
+                        name: NameNode(value: 'ascii'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lat'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'lng'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -40251,6 +43565,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -40296,6 +43617,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -40367,6 +43695,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -40412,6 +43747,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -40681,6 +44023,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -40731,6 +44080,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -40756,28 +44112,42 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'code'),
+                                name: NameNode(value: 'adminName'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'created'),
+                                name: NameNode(value: 'capital'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'surface'),
+                                name: NameNode(value: 'population'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
                               ),
                               FieldNode(
-                                name: NameNode(value: 'dialCode'),
+                                name: NameNode(value: 'ascii'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lat'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'lng'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -40886,6 +44256,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -40931,6 +44308,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -41002,6 +44386,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -41047,6 +44438,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -41199,6 +44597,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -41255,6 +44660,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -41300,6 +44712,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -41355,6 +44774,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -41400,6 +44826,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -41455,6 +44888,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -41500,6 +44940,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -41555,6 +45002,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -41600,6 +45054,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -41655,6 +45116,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                             ]),
@@ -41683,6 +45151,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                     ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'externalId'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
                   ),
                   FieldNode(
                     name: NameNode(value: 'createdAt'),
@@ -41767,6 +45242,13 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'tags'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'externalId'),
                 alias: null,
                 arguments: [],
                 directives: [],
