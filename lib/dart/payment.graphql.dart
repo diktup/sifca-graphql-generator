@@ -30,6 +30,7 @@ class FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
@@ -190,6 +191,7 @@ class FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType
         default256,
         default512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
@@ -220,6 +222,7 @@ class FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
@@ -258,6 +261,7 @@ class FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType
 
   @override
   List<Object?> get props => [alt, cardFlat, dark, flat, light, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
@@ -279,6 +283,7 @@ class FindPaymentById$Query$PaymentType$PaymentImagesType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentById$Query$PaymentType$PaymentImagesTypeToJson(this);
@@ -313,6 +318,7 @@ class FindPaymentById$Query$PaymentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, code, paymentType, materialIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentById$Query$PaymentTypeToJson(this);
@@ -329,6 +335,7 @@ class FindPaymentById$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findPaymentById];
+
   @override
   Map<String, dynamic> toJson() => _$FindPaymentById$QueryToJson(this);
 }
@@ -357,6 +364,7 @@ class FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
@@ -517,6 +525,7 @@ class FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType
         default256,
         default512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
@@ -547,6 +556,7 @@ class FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
@@ -585,6 +595,7 @@ class FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType
 
   @override
   List<Object?> get props => [alt, cardFlat, dark, flat, light, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
@@ -606,6 +617,7 @@ class FindPayments$Query$PaymentType$PaymentImagesType extends JsonSerializable
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPayments$Query$PaymentType$PaymentImagesTypeToJson(this);
@@ -639,6 +651,7 @@ class FindPayments$Query$PaymentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, code, paymentType, materialIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() => _$FindPayments$Query$PaymentTypeToJson(this);
 }
@@ -654,6 +667,7 @@ class FindPayments$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findPayments];
+
   @override
   Map<String, dynamic> toJson() => _$FindPayments$QueryToJson(this);
 }
@@ -682,6 +696,7 @@ class FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImage
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
@@ -842,6 +857,7 @@ class FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImage
         default256,
         default512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
@@ -872,6 +888,7 @@ class FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImage
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
@@ -910,6 +927,7 @@ class FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImage
 
   @override
   List<Object?> get props => [alt, cardFlat, dark, flat, light, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
@@ -934,6 +952,7 @@ class FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImage
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesTypeToJson(
@@ -971,6 +990,7 @@ class FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType
   @override
   List<Object?> get props =>
       [id, name, code, paymentType, materialIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentTypeToJson(
@@ -995,6 +1015,7 @@ class FindPaymentsPagination$Query$PaymentPaginatedType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentsPagination$Query$PaymentPaginatedTypeToJson(this);
@@ -1012,6 +1033,7 @@ class FindPaymentsPagination$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findPaymentsPagination];
+
   @override
   Map<String, dynamic> toJson() => _$FindPaymentsPagination$QueryToJson(this);
 }
@@ -1032,6 +1054,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -1060,6 +1083,7 @@ class CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
@@ -1220,6 +1244,7 @@ class CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType
         default256,
         default512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
@@ -1250,6 +1275,7 @@ class CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
@@ -1288,6 +1314,7 @@ class CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType
 
   @override
   List<Object?> get props => [alt, cardFlat, dark, flat, light, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
@@ -1311,6 +1338,7 @@ class CreatePayment$Mutation$PaymentType$PaymentImagesType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreatePayment$Mutation$PaymentType$PaymentImagesTypeToJson(this);
@@ -1345,6 +1373,7 @@ class CreatePayment$Mutation$PaymentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, code, paymentType, materialIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreatePayment$Mutation$PaymentTypeToJson(this);
@@ -1361,6 +1390,7 @@ class CreatePayment$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createPayment];
+
   @override
   Map<String, dynamic> toJson() => _$CreatePayment$MutationToJson(this);
 }
@@ -1391,6 +1421,7 @@ class PaymentInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, code, paymentType, materialIcon, images];
+
   @override
   Map<String, dynamic> toJson() => _$PaymentInputToJson(this);
 }
@@ -1411,6 +1442,7 @@ class PaymentImagesInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() => _$PaymentImagesInputToJson(this);
 }
@@ -1445,6 +1477,7 @@ class PaymentImagesSvgInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [alt, cardFlat, dark, flat, light, kw$default];
+
   @override
   Map<String, dynamic> toJson() => _$PaymentImagesSvgInputToJson(this);
 }
@@ -1480,6 +1513,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -1636,6 +1670,7 @@ class PaymentImagesPngInput extends JsonSerializable with EquatableMixin {
         default256,
         default512
       ];
+
   @override
   Map<String, dynamic> toJson() => _$PaymentImagesPngInputToJson(this);
 }
@@ -1664,6 +1699,7 @@ class UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
@@ -1824,6 +1860,7 @@ class UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType
         default256,
         default512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
@@ -1854,6 +1891,7 @@ class UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
@@ -1892,6 +1930,7 @@ class UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType
 
   @override
   List<Object?> get props => [alt, cardFlat, dark, flat, light, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
@@ -1915,6 +1954,7 @@ class UpdatePayment$Mutation$PaymentType$PaymentImagesType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdatePayment$Mutation$PaymentType$PaymentImagesTypeToJson(this);
@@ -1949,6 +1989,7 @@ class UpdatePayment$Mutation$PaymentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, code, paymentType, materialIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdatePayment$Mutation$PaymentTypeToJson(this);
@@ -1965,6 +2006,7 @@ class UpdatePayment$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updatePayment];
+
   @override
   Map<String, dynamic> toJson() => _$UpdatePayment$MutationToJson(this);
 }
@@ -1984,6 +2026,7 @@ class DeletePayment$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeletePayment$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -2000,6 +2043,7 @@ class DeletePayment$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deletePayment];
+
   @override
   Map<String, dynamic> toJson() => _$DeletePayment$MutationToJson(this);
 }
@@ -2027,6 +2071,7 @@ class FindPaymentByIdArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$FindPaymentByIdArgumentsToJson(this);
 }
@@ -3954,6 +3999,7 @@ class FindPaymentByIdQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindPaymentById$Query parse(Map<String, dynamic> json) =>
       FindPaymentById$Query.fromJson(json);
@@ -5864,6 +5910,7 @@ class FindPaymentsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   FindPayments$Query parse(Map<String, dynamic> json) =>
       FindPayments$Query.fromJson(json);
@@ -5882,6 +5929,7 @@ class FindPaymentsPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPaymentsPaginationArgumentsToJson(this);
@@ -7834,6 +7882,7 @@ class FindPaymentsPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindPaymentsPagination$Query parse(Map<String, dynamic> json) =>
       FindPaymentsPagination$Query.fromJson(json);
@@ -7851,6 +7900,7 @@ class CreatePaymentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreatePaymentArgumentsToJson(this);
 }
@@ -9778,6 +9828,7 @@ class CreatePaymentMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreatePayment$Mutation parse(Map<String, dynamic> json) =>
       CreatePayment$Mutation.fromJson(json);
@@ -9800,6 +9851,7 @@ class UpdatePaymentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdatePaymentArgumentsToJson(this);
 }
@@ -11740,6 +11792,7 @@ class UpdatePaymentMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdatePayment$Mutation parse(Map<String, dynamic> json) =>
       UpdatePayment$Mutation.fromJson(json);
@@ -11757,6 +11810,7 @@ class DeletePaymentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeletePaymentArgumentsToJson(this);
 }
@@ -11825,6 +11879,7 @@ class DeletePaymentMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeletePayment$Mutation parse(Map<String, dynamic> json) =>
       DeletePayment$Mutation.fromJson(json);

@@ -21,6 +21,7 @@ class GetCompanyContacts$Query$CompanyContactType$IPhoneType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$IPhoneTypeToJson(this);
@@ -52,6 +53,7 @@ class GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType$Soc
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -85,6 +87,7 @@ class GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType$Soc
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -109,6 +112,7 @@ class GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType$Soc
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -133,6 +137,7 @@ class GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType$Soc
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -167,6 +172,7 @@ class GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$SocialValueType$SocialTypeToJson(
@@ -189,6 +195,7 @@ class GetCompanyContacts$Query$CompanyContactType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$SocialValueTypeToJson(this);
@@ -220,6 +227,7 @@ class GetCompanyContacts$Query$CompanyContactType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$MediaType$PictureTypeToJson(
@@ -245,6 +253,7 @@ class GetCompanyContacts$Query$CompanyContactType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$MediaTypeToJson(this);
@@ -266,6 +275,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$LonLatTypeToJson(
@@ -298,6 +308,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$CountryType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -346,6 +357,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$CountryTypeToJson(
@@ -378,6 +390,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$Coun
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -426,6 +439,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$Coun
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$CountryTypeToJson(
@@ -458,6 +472,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -520,6 +535,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$StateTypeToJson(
@@ -542,6 +558,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$FullAddressOwn
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -565,6 +582,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$FullAddressOwn
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -603,6 +621,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressTypeToJson(this);
@@ -634,6 +653,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$MediaType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -660,6 +680,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$MediaTypeToJson(
@@ -682,6 +703,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$Lo
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -714,6 +736,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$Co
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -762,6 +785,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$Co
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -794,6 +818,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$St
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -842,6 +867,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$St
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -874,6 +900,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$St
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -936,6 +963,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$St
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$StateTypeToJson(
@@ -958,6 +986,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$Fu
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -981,6 +1010,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$Fu
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -1020,6 +1050,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressTypeToJson(
@@ -1044,6 +1075,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$CompanyLegalType
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$CompanyLegalTypeToJson(
@@ -1066,6 +1098,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -1098,6 +1131,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1146,6 +1180,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -1178,6 +1213,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1226,6 +1262,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -1258,6 +1295,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -1320,6 +1358,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -1342,6 +1381,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -1365,6 +1405,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -1404,6 +1445,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -1430,6 +1472,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -1462,6 +1505,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1494,6 +1538,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -1550,6 +1595,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -1576,6 +1622,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -1609,6 +1656,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -1646,6 +1694,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -1672,6 +1721,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$CompanyContactDeta
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -1697,6 +1747,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$CompanyContactDeta
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -1758,6 +1809,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactType$CompanyTypeToJson(this);
@@ -1828,6 +1880,7 @@ class GetCompanyContacts$Query$CompanyContactType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContacts$Query$CompanyContactTypeToJson(this);
@@ -1844,6 +1897,7 @@ class GetCompanyContacts$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getCompanyContacts];
+
   @override
   Map<String, dynamic> toJson() => _$GetCompanyContacts$QueryToJson(this);
 }
@@ -1863,6 +1917,7 @@ class CompanyContact$Query$CompanyContactType$IPhoneType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$IPhoneTypeToJson(this);
@@ -1894,6 +1949,7 @@ class CompanyContact$Query$CompanyContactType$SocialValueType$SocialType$SocialI
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -1927,6 +1983,7 @@ class CompanyContact$Query$CompanyContactType$SocialValueType$SocialType$SocialI
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -1951,6 +2008,7 @@ class CompanyContact$Query$CompanyContactType$SocialValueType$SocialType$SocialI
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -1975,6 +2033,7 @@ class CompanyContact$Query$CompanyContactType$SocialValueType$SocialType$SocialI
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -2009,6 +2068,7 @@ class CompanyContact$Query$CompanyContactType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$SocialValueType$SocialTypeToJson(
@@ -2030,6 +2090,7 @@ class CompanyContact$Query$CompanyContactType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$SocialValueTypeToJson(this);
@@ -2061,6 +2122,7 @@ class CompanyContact$Query$CompanyContactType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$MediaType$PictureTypeToJson(
@@ -2084,6 +2146,7 @@ class CompanyContact$Query$CompanyContactType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$MediaTypeToJson(this);
@@ -2105,6 +2168,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$LonLatTypeToJson(
@@ -2137,6 +2201,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$CountryType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2185,6 +2250,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$CountryTypeToJson(
@@ -2217,6 +2283,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$StateType$CountryT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2265,6 +2332,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$StateType$CountryT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$StateType$CountryTypeToJson(
@@ -2297,6 +2365,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$StateType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -2359,6 +2428,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$StateTypeToJson(
@@ -2381,6 +2451,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$FullAddressOwnerTy
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -2404,6 +2475,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$FullAddressOwnerTy
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -2439,6 +2511,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$FullAddressTypeToJson(this);
@@ -2470,6 +2543,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -2496,6 +2570,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$MediaTypeToJson(
@@ -2518,6 +2593,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$LonLat
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -2550,6 +2626,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$Countr
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2598,6 +2675,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$Countr
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -2630,6 +2708,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2678,6 +2757,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -2710,6 +2790,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -2772,6 +2853,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$StateTypeToJson(
@@ -2794,6 +2876,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$FullAd
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -2817,6 +2900,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$FullAd
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -2856,6 +2940,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressTypeToJson(
@@ -2880,6 +2965,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$CompanyLegalType
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$CompanyLegalTypeToJson(
@@ -2902,6 +2988,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -2934,6 +3021,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2982,6 +3070,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -3014,6 +3103,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3062,6 +3152,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -3094,6 +3185,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -3156,6 +3248,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -3178,6 +3271,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3201,6 +3295,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3240,6 +3335,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -3266,6 +3362,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -3298,6 +3395,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -3330,6 +3428,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -3386,6 +3485,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankTy
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -3412,6 +3512,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankTy
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -3445,6 +3546,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankTy
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -3482,6 +3584,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -3508,6 +3611,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$CompanyContactDetailsT
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -3533,6 +3637,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$CompanyContactDetailsT
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -3592,6 +3697,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactType$CompanyTypeToJson(this);
@@ -3660,6 +3766,7 @@ class CompanyContact$Query$CompanyContactType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CompanyContact$Query$CompanyContactTypeToJson(this);
@@ -3676,6 +3783,7 @@ class CompanyContact$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [companyContact];
+
   @override
   Map<String, dynamic> toJson() => _$CompanyContact$QueryToJson(this);
 }
@@ -3696,6 +3804,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$IPhoneType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$IPhoneTypeToJson(
@@ -3728,6 +3837,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$Socia
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -3761,6 +3871,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$Socia
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -3785,6 +3896,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$Socia
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -3809,6 +3921,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$Socia
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -3843,6 +3956,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$Socia
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType$SocialTypeToJson(
@@ -3866,6 +3980,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$SocialValueTypeToJson(
@@ -3898,6 +4013,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$MediaType$PictureTypeToJson(
@@ -3924,6 +4040,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$MediaTypeToJson(
@@ -3946,6 +4063,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$LonLa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$LonLatTypeToJson(
@@ -3978,6 +4096,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$Count
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4026,6 +4145,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$Count
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$CountryTypeToJson(
@@ -4058,6 +4178,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$State
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4106,6 +4227,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$State
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$StateType$CountryTypeToJson(
@@ -4138,6 +4260,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$State
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -4200,6 +4323,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$State
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$StateTypeToJson(
@@ -4222,6 +4346,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$FullA
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -4245,6 +4370,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$FullA
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -4284,6 +4410,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressTypeToJson(
@@ -4316,6 +4443,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -4342,6 +4470,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$MediaTypeToJson(
@@ -4364,6 +4493,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -4396,6 +4526,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4444,6 +4575,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -4476,6 +4608,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4524,6 +4657,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -4556,6 +4690,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -4618,6 +4753,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$StateTypeToJson(
@@ -4640,6 +4776,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -4663,6 +4800,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -4702,6 +4840,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressTypeToJson(
@@ -4726,6 +4865,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$CompanyLe
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$CompanyLegalTypeToJson(
@@ -4748,6 +4888,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -4780,6 +4921,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4828,6 +4970,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -4860,6 +5003,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4908,6 +5052,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -4940,6 +5085,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -5002,6 +5148,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -5024,6 +5171,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -5047,6 +5195,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -5086,6 +5235,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -5112,6 +5262,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -5144,6 +5295,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -5176,6 +5328,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -5232,6 +5385,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -5258,6 +5412,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -5291,6 +5446,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -5328,6 +5484,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -5354,6 +5511,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$CompanyCo
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -5379,6 +5537,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$CompanyCo
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -5442,6 +5601,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyTypeToJson(
@@ -5513,6 +5673,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$Query$CompanyContactTypeToJson(this);
@@ -5532,6 +5693,7 @@ class GetCompanyContactsByCompany$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCompanyContactsByCompany];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompany$QueryToJson(this);
@@ -5553,6 +5715,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$IPhoneTypeToJson(
@@ -5585,6 +5748,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -5618,6 +5782,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -5642,6 +5807,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -5666,6 +5832,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -5700,6 +5867,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialTypeToJson(
@@ -5723,6 +5891,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueTypeToJson(
@@ -5755,6 +5924,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$MediaType$PictureTypeToJson(
@@ -5781,6 +5951,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$MediaTypeToJson(
@@ -5803,6 +5974,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$LonLatTypeToJson(
@@ -5835,6 +6007,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5883,6 +6056,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$CountryTypeToJson(
@@ -5915,6 +6089,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5963,6 +6138,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$CountryTypeToJson(
@@ -5995,6 +6171,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -6057,6 +6234,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateTypeToJson(
@@ -6079,6 +6257,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -6102,6 +6281,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -6141,6 +6321,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressTypeToJson(
@@ -6173,6 +6354,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -6199,6 +6381,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$MediaTypeToJson(
@@ -6221,6 +6404,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -6253,6 +6437,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6301,6 +6486,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -6333,6 +6519,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6381,6 +6568,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -6413,6 +6601,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -6475,6 +6664,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateTypeToJson(
@@ -6497,6 +6687,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -6520,6 +6711,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -6559,6 +6751,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressTypeToJson(
@@ -6583,6 +6776,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$CompanyLegalTypeToJson(
@@ -6605,6 +6799,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -6637,6 +6832,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6685,6 +6881,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -6717,6 +6914,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6765,6 +6963,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -6797,6 +6996,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -6859,6 +7059,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -6881,6 +7082,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -6904,6 +7106,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -6943,6 +7146,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -6969,6 +7173,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -7001,6 +7206,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -7033,6 +7239,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -7089,6 +7296,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -7115,6 +7323,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -7148,6 +7357,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -7185,6 +7395,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -7211,6 +7422,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -7236,6 +7448,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -7299,6 +7512,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyTypeToJson(
@@ -7375,6 +7589,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactTypeToJson(
@@ -7401,6 +7616,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateTypeToJson(
@@ -7421,6 +7637,7 @@ class GetCompanyContactsByCompanyPaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCompanyContactsByCompanyPaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginated$QueryToJson(this);
@@ -7442,6 +7659,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -7462,6 +7680,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$IPhoneTypeToJson(
@@ -7494,6 +7713,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -7527,6 +7747,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -7551,6 +7772,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -7575,6 +7797,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -7609,6 +7832,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueType$SocialTypeToJson(
@@ -7632,6 +7856,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$SocialValueTypeToJson(
@@ -7664,6 +7889,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$MediaType$PictureTypeToJson(
@@ -7690,6 +7916,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$MediaTypeToJson(
@@ -7712,6 +7939,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$LonLatTypeToJson(
@@ -7744,6 +7972,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -7792,6 +8021,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$CountryTypeToJson(
@@ -7824,6 +8054,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -7872,6 +8103,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$CountryTypeToJson(
@@ -7904,6 +8136,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -7966,6 +8199,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$StateTypeToJson(
@@ -7988,6 +8222,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -8011,6 +8246,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -8050,6 +8286,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressTypeToJson(
@@ -8082,6 +8319,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -8108,6 +8346,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$MediaTypeToJson(
@@ -8130,6 +8369,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -8162,6 +8402,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -8210,6 +8451,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -8242,6 +8484,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8290,6 +8533,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -8322,6 +8566,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -8384,6 +8629,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$StateTypeToJson(
@@ -8406,6 +8652,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -8429,6 +8676,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -8468,6 +8716,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressTypeToJson(
@@ -8492,6 +8741,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$CompanyLegalTypeToJson(
@@ -8514,6 +8764,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -8546,6 +8797,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -8594,6 +8846,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -8626,6 +8879,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8674,6 +8928,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -8706,6 +8961,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -8768,6 +9024,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -8790,6 +9047,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -8813,6 +9071,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -8852,6 +9111,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -8878,6 +9138,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -8910,6 +9171,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -8942,6 +9204,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -8998,6 +9261,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -9024,6 +9288,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -9057,6 +9322,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -9094,6 +9360,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -9120,6 +9387,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -9145,6 +9413,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -9208,6 +9477,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyTypeToJson(
@@ -9284,6 +9554,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactTypeToJson(
@@ -9310,6 +9581,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateTypeToJson(
@@ -9330,6 +9602,7 @@ class GetCompanyContactsByTargetPaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCompanyContactsByTargetPaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginated$QueryToJson(this);
@@ -9357,6 +9630,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -9377,6 +9651,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$IPhoneType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$IPhoneTypeToJson(this);
@@ -9408,6 +9683,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -9441,6 +9717,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -9465,6 +9742,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -9489,6 +9767,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -9523,6 +9802,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTypeToJson(
@@ -9546,6 +9826,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$SocialValueTypeToJson(
@@ -9578,6 +9859,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$MediaType$PictureTypeToJson(
@@ -9604,6 +9886,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$MediaTypeToJson(this);
@@ -9625,6 +9908,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$LonLatTyp
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$LonLatTypeToJson(
@@ -9657,6 +9941,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9705,6 +9990,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryTypeToJson(
@@ -9737,6 +10023,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9785,6 +10072,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$CountryTypeToJson(
@@ -9817,6 +10105,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -9879,6 +10168,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateTypeToJson(
@@ -9901,6 +10191,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$FullAddre
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -9924,6 +10215,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$FullAddre
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -9963,6 +10255,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressTypeToJson(
@@ -9995,6 +10288,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -10021,6 +10315,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaTypeToJson(
@@ -10043,6 +10338,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -10075,6 +10371,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -10123,6 +10420,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -10155,6 +10453,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -10203,6 +10502,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -10235,6 +10535,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -10297,6 +10598,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateTypeToJson(
@@ -10319,6 +10621,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -10342,6 +10645,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -10381,6 +10685,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTypeToJson(
@@ -10405,6 +10710,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyLegalT
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyLegalTypeToJson(
@@ -10427,6 +10733,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -10459,6 +10766,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -10507,6 +10815,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -10539,6 +10848,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -10587,6 +10897,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -10619,6 +10930,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -10681,6 +10993,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -10703,6 +11016,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -10726,6 +11040,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -10765,6 +11080,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -10791,6 +11107,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -10823,6 +11140,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -10855,6 +11173,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -10911,6 +11230,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -10937,6 +11257,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -10970,6 +11291,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -11007,6 +11329,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -11033,6 +11356,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyContac
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -11058,6 +11382,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyContac
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -11120,6 +11445,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyTypeToJson(
@@ -11191,6 +11517,7 @@ class CreateCompanyContact$Mutation$CompanyContactType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCompanyContact$Mutation$CompanyContactTypeToJson(this);
@@ -11208,6 +11535,7 @@ class CreateCompanyContact$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createCompanyContact];
+
   @override
   Map<String, dynamic> toJson() => _$CreateCompanyContact$MutationToJson(this);
 }
@@ -11279,6 +11607,7 @@ class CompanyContactInput extends JsonSerializable with EquatableMixin {
         company,
         address
       ];
+
   @override
   Map<String, dynamic> toJson() => _$CompanyContactInputToJson(this);
 }
@@ -11299,6 +11628,7 @@ class IPhoneInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() => _$IPhoneInputToJson(this);
 }
@@ -11319,6 +11649,7 @@ class SocialValueInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() => _$SocialValueInputToJson(this);
 }
@@ -11342,6 +11673,7 @@ class MediaInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [videos, pictures, deg360];
+
   @override
   Map<String, dynamic> toJson() => _$MediaInputToJson(this);
 }
@@ -11377,6 +11709,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -11416,6 +11749,7 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [owner, address, postCode, city, country, state, addressLine, location];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressInputToJson(this);
 }
@@ -11436,6 +11770,7 @@ class FullAddressOwnerInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressOwnerInputToJson(this);
 }
@@ -11456,6 +11791,7 @@ class FullAddressOwnerPhoneInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressOwnerPhoneInputToJson(this);
 }
@@ -11476,6 +11812,7 @@ class LonLatInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() => _$LonLatInputToJson(this);
 }
@@ -11496,6 +11833,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$IPhoneType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$IPhoneTypeToJson(this);
@@ -11527,6 +11865,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -11560,6 +11899,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -11584,6 +11924,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -11608,6 +11949,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -11642,6 +11984,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTyp
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType$SocialTypeToJson(
@@ -11665,6 +12008,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$SocialValueTypeToJson(
@@ -11697,6 +12041,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$MediaType$PictureTypeToJson(
@@ -11723,6 +12068,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$MediaTypeToJson(this);
@@ -11744,6 +12090,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$LonLatTyp
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$LonLatTypeToJson(
@@ -11776,6 +12123,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryType$PictureTypeToJson(
@@ -11824,6 +12172,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$CountryTypeToJson(
@@ -11856,6 +12205,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -11904,6 +12254,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$CountryTypeToJson(
@@ -11936,6 +12287,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType$PictureTypeToJson(
@@ -11998,6 +12350,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$StateTypeToJson(
@@ -12020,6 +12373,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$FullAddre
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -12043,6 +12397,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$FullAddre
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -12082,6 +12437,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressTypeToJson(
@@ -12114,6 +12470,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaType$PictureTypeToJson(
@@ -12140,6 +12497,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$MediaTypeToJson(
@@ -12162,6 +12520,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -12194,6 +12553,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -12242,6 +12602,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -12274,6 +12635,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -12322,6 +12684,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -12354,6 +12717,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -12416,6 +12780,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$StateTypeToJson(
@@ -12438,6 +12803,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -12461,6 +12827,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -12500,6 +12867,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTypeToJson(
@@ -12524,6 +12892,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyLegalT
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyLegalTypeToJson(
@@ -12546,6 +12915,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -12578,6 +12948,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -12626,6 +12997,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -12658,6 +13030,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -12706,6 +13079,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -12738,6 +13112,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -12800,6 +13175,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -12822,6 +13198,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -12845,6 +13222,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -12884,6 +13262,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -12910,6 +13289,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -12942,6 +13322,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -12974,6 +13355,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -13030,6 +13412,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -13056,6 +13439,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -13089,6 +13473,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -13126,6 +13511,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTypeToJson(
@@ -13152,6 +13538,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyContac
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -13177,6 +13564,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyContac
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -13239,6 +13627,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyTypeToJson(
@@ -13310,6 +13699,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCompanyContact$Mutation$CompanyContactTypeToJson(this);
@@ -13327,6 +13717,7 @@ class UpdateCompanyContact$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateCompanyContact];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateCompanyContact$MutationToJson(this);
 }
@@ -13394,6 +13785,7 @@ class CompanyContactUpdateInput extends JsonSerializable with EquatableMixin {
         externalId,
         address
       ];
+
   @override
   Map<String, dynamic> toJson() => _$CompanyContactUpdateInputToJson(this);
 }
@@ -13413,6 +13805,7 @@ class DeleteCompanyContact$Mutation$DeleteResponseDtoType
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteCompanyContact$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -13430,6 +13823,7 @@ class DeleteCompanyContact$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [deleteCompanyContact];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteCompanyContact$MutationToJson(this);
 }
@@ -17969,6 +18363,7 @@ class GetCompanyContactsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetCompanyContacts$Query parse(Map<String, dynamic> json) =>
       GetCompanyContacts$Query.fromJson(json);
@@ -17986,6 +18381,7 @@ class CompanyContactArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$CompanyContactArgumentsToJson(this);
 }
@@ -22498,6 +22894,7 @@ class CompanyContactQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CompanyContact$Query parse(Map<String, dynamic> json) =>
       CompanyContact$Query.fromJson(json);
@@ -22517,6 +22914,7 @@ class GetCompanyContactsByCompanyArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyArgumentsToJson(this);
@@ -27033,6 +27431,7 @@ class GetCompanyContactsByCompanyQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCompanyContactsByCompany$Query parse(Map<String, dynamic> json) =>
       GetCompanyContactsByCompany$Query.fromJson(json);
@@ -27060,6 +27459,7 @@ class GetCompanyContactsByCompanyPaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [company, searchString, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByCompanyPaginatedArgumentsToJson(this);
@@ -31628,6 +32028,7 @@ class GetCompanyContactsByCompanyPaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCompanyContactsByCompanyPaginated$Query parse(Map<String, dynamic> json) =>
       GetCompanyContactsByCompanyPaginated$Query.fromJson(json);
@@ -31656,6 +32057,7 @@ class GetCompanyContactsByTargetPaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [phase, target, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCompanyContactsByTargetPaginatedArgumentsToJson(this);
@@ -36224,6 +36626,7 @@ class GetCompanyContactsByTargetPaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCompanyContactsByTargetPaginated$Query parse(Map<String, dynamic> json) =>
       GetCompanyContactsByTargetPaginated$Query.fromJson(json);
@@ -36242,6 +36645,7 @@ class CreateCompanyContactArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateCompanyContactArgumentsToJson(this);
 }
@@ -40756,6 +41160,7 @@ class CreateCompanyContactMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateCompanyContact$Mutation parse(Map<String, dynamic> json) =>
       CreateCompanyContact$Mutation.fromJson(json);
@@ -40779,6 +41184,7 @@ class UpdateCompanyContactArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateCompanyContactArgumentsToJson(this);
 }
@@ -45306,6 +45712,7 @@ class UpdateCompanyContactMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateCompanyContact$Mutation parse(Map<String, dynamic> json) =>
       UpdateCompanyContact$Mutation.fromJson(json);
@@ -45324,6 +45731,7 @@ class DeleteCompanyContactArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteCompanyContactArgumentsToJson(this);
 }
@@ -45394,6 +45802,7 @@ class DeleteCompanyContactMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteCompanyContact$Mutation parse(Map<String, dynamic> json) =>
       DeleteCompanyContact$Mutation.fromJson(json);

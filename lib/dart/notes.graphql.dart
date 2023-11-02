@@ -29,6 +29,7 @@ class GetNotes$Query$NotesType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetNotes$Query$NotesType$PictureTypeToJson(this);
@@ -61,6 +62,7 @@ class GetNotes$Query$NotesType$LabelType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, icon, color, category, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetNotes$Query$NotesType$LabelTypeToJson(this);
@@ -100,6 +102,7 @@ class GetNotes$Query$NotesType extends JsonSerializable with EquatableMixin {
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetNotes$Query$NotesTypeToJson(this);
 }
@@ -115,6 +118,7 @@ class GetNotes$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getNotes];
+
   @override
   Map<String, dynamic> toJson() => _$GetNotes$QueryToJson(this);
 }
@@ -142,6 +146,7 @@ class GetNote$Query$NotesType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetNote$Query$NotesType$PictureTypeToJson(this);
@@ -174,6 +179,7 @@ class GetNote$Query$NotesType$LabelType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, icon, color, category, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetNote$Query$NotesType$LabelTypeToJson(this);
@@ -213,6 +219,7 @@ class GetNote$Query$NotesType extends JsonSerializable with EquatableMixin {
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetNote$Query$NotesTypeToJson(this);
 }
@@ -228,6 +235,7 @@ class GetNote$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getNote];
+
   @override
   Map<String, dynamic> toJson() => _$GetNote$QueryToJson(this);
 }
@@ -255,6 +263,7 @@ class GetNotesByTarget$Query$NotesType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetNotesByTarget$Query$NotesType$PictureTypeToJson(this);
@@ -287,6 +296,7 @@ class GetNotesByTarget$Query$NotesType$LabelType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, icon, color, category, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetNotesByTarget$Query$NotesType$LabelTypeToJson(this);
@@ -328,6 +338,7 @@ class GetNotesByTarget$Query$NotesType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetNotesByTarget$Query$NotesTypeToJson(this);
@@ -344,6 +355,7 @@ class GetNotesByTarget$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getNotesByTarget];
+
   @override
   Map<String, dynamic> toJson() => _$GetNotesByTarget$QueryToJson(this);
 }
@@ -370,6 +382,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -397,6 +410,7 @@ class FindNotesByLabelAndTarget$Query$NotesType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindNotesByLabelAndTarget$Query$NotesType$PictureTypeToJson(this);
@@ -429,6 +443,7 @@ class FindNotesByLabelAndTarget$Query$NotesType$LabelType
   @override
   List<Object?> get props =>
       [id, name, icon, color, category, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindNotesByLabelAndTarget$Query$NotesType$LabelTypeToJson(this);
@@ -470,6 +485,7 @@ class FindNotesByLabelAndTarget$Query$NotesType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindNotesByLabelAndTarget$Query$NotesTypeToJson(this);
@@ -488,6 +504,7 @@ class FindNotesByLabelAndTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findNotesByLabelAndTarget];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindNotesByLabelAndTarget$QueryToJson(this);
@@ -516,6 +533,7 @@ class CreateNote$Mutation$NotesType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateNote$Mutation$NotesType$PictureTypeToJson(this);
@@ -548,6 +566,7 @@ class CreateNote$Mutation$NotesType$LabelType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, icon, color, category, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateNote$Mutation$NotesType$LabelTypeToJson(this);
@@ -588,6 +607,7 @@ class CreateNote$Mutation$NotesType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$CreateNote$Mutation$NotesTypeToJson(this);
 }
@@ -603,6 +623,7 @@ class CreateNote$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createNote];
+
   @override
   Map<String, dynamic> toJson() => _$CreateNote$MutationToJson(this);
 }
@@ -638,6 +659,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -658,6 +680,7 @@ class TaskInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [title, done];
+
   @override
   Map<String, dynamic> toJson() => _$TaskInputToJson(this);
 }
@@ -685,6 +708,7 @@ class UpdateNote$Mutation$NotesType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateNote$Mutation$NotesType$PictureTypeToJson(this);
@@ -717,6 +741,7 @@ class UpdateNote$Mutation$NotesType$LabelType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, icon, color, category, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateNote$Mutation$NotesType$LabelTypeToJson(this);
@@ -757,6 +782,7 @@ class UpdateNote$Mutation$NotesType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateNote$Mutation$NotesTypeToJson(this);
 }
@@ -772,6 +798,7 @@ class UpdateNote$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateNote];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateNote$MutationToJson(this);
 }
@@ -791,6 +818,7 @@ class DeleteNote$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteNote$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -807,6 +835,7 @@ class DeleteNote$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteNote];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteNote$MutationToJson(this);
 }
@@ -1000,6 +1029,7 @@ class GetNotesQuery extends GraphQLQuery<GetNotes$Query, JsonSerializable> {
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetNotes$Query parse(Map<String, dynamic> json) =>
       GetNotes$Query.fromJson(json);
@@ -1017,6 +1047,7 @@ class GetNoteArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$GetNoteArgumentsToJson(this);
 }
@@ -1219,6 +1250,7 @@ class GetNoteQuery extends GraphQLQuery<GetNote$Query, GetNoteArguments> {
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetNote$Query parse(Map<String, dynamic> json) =>
       GetNote$Query.fromJson(json);
@@ -1236,6 +1268,7 @@ class GetNotesByTargetArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() => _$GetNotesByTargetArgumentsToJson(this);
 }
@@ -1440,6 +1473,7 @@ class GetNotesByTargetQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetNotesByTarget$Query parse(Map<String, dynamic> json) =>
       GetNotesByTarget$Query.fromJson(json);
@@ -1464,6 +1498,7 @@ class FindNotesByLabelAndTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindNotesByLabelAndTargetArgumentsToJson(this);
@@ -1684,6 +1719,7 @@ class FindNotesByLabelAndTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindNotesByLabelAndTarget$Query parse(Map<String, dynamic> json) =>
       FindNotesByLabelAndTarget$Query.fromJson(json);
@@ -1722,6 +1758,7 @@ class CreateNoteArguments extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [title, isArchived, description, picture, tasks, labels, target];
+
   @override
   Map<String, dynamic> toJson() => _$CreateNoteArgumentsToJson(this);
 }
@@ -2009,6 +2046,7 @@ class CreateNoteMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateNote$Mutation parse(Map<String, dynamic> json) =>
       CreateNote$Mutation.fromJson(json);
@@ -2050,6 +2088,7 @@ class UpdateNoteArguments extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [id, title, isArchived, description, picture, tasks, labels, target];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateNoteArgumentsToJson(this);
 }
@@ -2350,6 +2389,7 @@ class UpdateNoteMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateNote$Mutation parse(Map<String, dynamic> json) =>
       UpdateNote$Mutation.fromJson(json);
@@ -2367,6 +2407,7 @@ class DeleteNoteArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteNoteArgumentsToJson(this);
 }
@@ -2435,6 +2476,7 @@ class DeleteNoteMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteNote$Mutation parse(Map<String, dynamic> json) =>
       DeleteNote$Mutation.fromJson(json);

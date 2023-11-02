@@ -28,6 +28,7 @@ class GetCrmAnalyticsStats$Query$CrmAnalyticsStatsInfoType
   @override
   List<Object?> get props =>
       [sent, annualProfit, leadConversion, dailyIncome, annualDeals];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCrmAnalyticsStats$Query$CrmAnalyticsStatsInfoTypeToJson(this);
@@ -45,6 +46,7 @@ class GetCrmAnalyticsStats$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getCrmAnalyticsStats];
+
   @override
   Map<String, dynamic> toJson() => _$GetCrmAnalyticsStats$QueryToJson(this);
 }
@@ -68,6 +70,7 @@ class AnalyticsDashboardInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [to, from, target];
+
   @override
   Map<String, dynamic> toJson() => _$AnalyticsDashboardInputToJson(this);
 }
@@ -94,6 +97,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -116,6 +120,7 @@ class GetCrmAnalyticsSalesForecast$Query$CrmAnalyticsSalesForecastType
 
   @override
   List<Object?> get props => [goal, pending, revenue];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCrmAnalyticsSalesForecast$Query$CrmAnalyticsSalesForecastTypeToJson(
@@ -136,6 +141,7 @@ class GetCrmAnalyticsSalesForecast$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCrmAnalyticsSalesForecast];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCrmAnalyticsSalesForecast$QueryToJson(this);
@@ -159,6 +165,7 @@ class GetCrmAnalyticsDealType$Query$CrmAnalyticsDealTypeType
 
   @override
   List<Object?> get props => [year, kw$class, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCrmAnalyticsDealType$Query$CrmAnalyticsDealTypeTypeToJson(this);
@@ -177,6 +184,7 @@ class GetCrmAnalyticsDealType$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCrmAnalyticsDealType];
+
   @override
   Map<String, dynamic> toJson() => _$GetCrmAnalyticsDealType$QueryToJson(this);
 }
@@ -198,6 +206,7 @@ class GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewType$CrmAn
 
   @override
   List<Object?> get props => [kind, data];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewType$CrmAnalyticsBalanceOverviewChartTypeToJson(
@@ -225,6 +234,7 @@ class GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewType
 
   @override
   List<Object?> get props => [revenue, expense, profit, chart];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewTypeToJson(
@@ -245,6 +255,7 @@ class GetCrmAnalyticsBalanceOverview$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCrmAnalyticsBalanceOverview];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCrmAnalyticsBalanceOverview$QueryToJson(this);
@@ -272,6 +283,7 @@ class GetCrmAnalyticsStatsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$GetCrmAnalyticsStatsArgumentsToJson(this);
 }
@@ -363,6 +375,7 @@ class GetCrmAnalyticsStatsQuery extends GraphQLQuery<GetCrmAnalyticsStats$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCrmAnalyticsStats$Query parse(Map<String, dynamic> json) =>
       GetCrmAnalyticsStats$Query.fromJson(json);
@@ -382,6 +395,7 @@ class GetCrmAnalyticsSalesForecastArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCrmAnalyticsSalesForecastArgumentsToJson(this);
@@ -461,6 +475,7 @@ class GetCrmAnalyticsSalesForecastQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCrmAnalyticsSalesForecast$Query parse(Map<String, dynamic> json) =>
       GetCrmAnalyticsSalesForecast$Query.fromJson(json);
@@ -480,6 +495,7 @@ class GetCrmAnalyticsDealTypeArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCrmAnalyticsDealTypeArgumentsToJson(this);
@@ -558,6 +574,7 @@ class GetCrmAnalyticsDealTypeQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCrmAnalyticsDealType$Query parse(Map<String, dynamic> json) =>
       GetCrmAnalyticsDealType$Query.fromJson(json);
@@ -577,6 +594,7 @@ class GetCrmAnalyticsBalanceOverviewArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCrmAnalyticsBalanceOverviewArgumentsToJson(this);
@@ -680,6 +698,7 @@ class GetCrmAnalyticsBalanceOverviewQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCrmAnalyticsBalanceOverview$Query parse(Map<String, dynamic> json) =>
       GetCrmAnalyticsBalanceOverview$Query.fromJson(json);

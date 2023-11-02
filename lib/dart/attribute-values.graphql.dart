@@ -20,6 +20,7 @@ class GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeVal
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -68,6 +69,7 @@ class GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeVal
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeToJson(
@@ -100,6 +102,7 @@ class GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeVal
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueTypeToJson(
@@ -126,6 +129,7 @@ class GetAttributeValuesPagination$Query$AttributeValuePaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesPagination$Query$AttributeValuePaginateTypeToJson(
@@ -146,6 +150,7 @@ class GetAttributeValuesPagination$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAttributeValuesPagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesPagination$QueryToJson(this);
@@ -167,6 +172,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -185,6 +191,7 @@ class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$Attri
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -233,6 +240,7 @@ class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$Attri
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeToJson(
@@ -265,6 +273,7 @@ class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$Attri
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueTypeToJson(
@@ -291,6 +300,7 @@ class GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateTypeToJson(
@@ -311,6 +321,7 @@ class GetAttributeValuesByTargetPaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAttributeValuesByTargetPaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTargetPaginated$QueryToJson(this);
@@ -338,6 +349,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -356,6 +368,7 @@ class GetAttributeValues$Query$AttributeValueType$AttributeType$AttributePixelTy
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValues$Query$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -403,6 +416,7 @@ class GetAttributeValues$Query$AttributeValueType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValues$Query$AttributeValueType$AttributeTypeToJson(this);
@@ -432,6 +446,7 @@ class GetAttributeValues$Query$AttributeValueType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValues$Query$AttributeValueTypeToJson(this);
@@ -448,6 +463,7 @@ class GetAttributeValues$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getAttributeValues];
+
   @override
   Map<String, dynamic> toJson() => _$GetAttributeValues$QueryToJson(this);
 }
@@ -466,6 +482,7 @@ class GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType$Attribut
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -514,6 +531,7 @@ class GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTarget$Query$AttributeValueType$AttributeTypeToJson(
@@ -545,6 +563,7 @@ class GetAttributeValuesByTarget$Query$AttributeValueType
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTarget$Query$AttributeValueTypeToJson(this);
@@ -564,6 +583,7 @@ class GetAttributeValuesByTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAttributeValuesByTarget];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTarget$QueryToJson(this);
@@ -583,6 +603,7 @@ class GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType$Attri
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -631,6 +652,7 @@ class GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeTypeToJson(
@@ -662,6 +684,7 @@ class GetAttributeValuesByAttribute$Query$AttributeValueType
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttribute$Query$AttributeValueTypeToJson(this);
@@ -681,6 +704,7 @@ class GetAttributeValuesByAttribute$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAttributeValuesByAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttribute$QueryToJson(this);
@@ -700,6 +724,7 @@ class AttributeValue$Query$AttributeValueType$AttributeType$AttributePixelType
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AttributeValue$Query$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -747,6 +772,7 @@ class AttributeValue$Query$AttributeValueType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AttributeValue$Query$AttributeValueType$AttributeTypeToJson(this);
@@ -776,6 +802,7 @@ class AttributeValue$Query$AttributeValueType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AttributeValue$Query$AttributeValueTypeToJson(this);
@@ -792,6 +819,7 @@ class AttributeValue$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [attributeValue];
+
   @override
   Map<String, dynamic> toJson() => _$AttributeValue$QueryToJson(this);
 }
@@ -810,6 +838,7 @@ class SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$A
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -858,6 +887,7 @@ class SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$A
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeToJson(
@@ -890,6 +920,7 @@ class SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueTypeToJson(
@@ -915,6 +946,7 @@ class SearchAttributeValue$Query$AttributeValuePaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValue$Query$AttributeValuePaginateTypeToJson(this);
@@ -932,6 +964,7 @@ class SearchAttributeValue$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [searchAttributeValue];
+
   @override
   Map<String, dynamic> toJson() => _$SearchAttributeValue$QueryToJson(this);
 }
@@ -950,6 +983,7 @@ class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$At
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -998,6 +1032,7 @@ class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$At
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeToJson(
@@ -1030,6 +1065,7 @@ class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$At
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueTypeToJson(
@@ -1056,6 +1092,7 @@ class GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateTypeToJson(
@@ -1076,6 +1113,7 @@ class GetAttributeValuesByAttributePaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAttributeValuesByAttributePaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttributePaginated$QueryToJson(this);
@@ -1095,6 +1133,7 @@ class SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeVal
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -1143,6 +1182,7 @@ class SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeVal
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeToJson(
@@ -1175,6 +1215,7 @@ class SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeVal
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueTypeToJson(
@@ -1201,6 +1242,7 @@ class SearchAttributeValueByTarget$Query$AttributeValuePaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValueByTarget$Query$AttributeValuePaginateTypeToJson(
@@ -1221,6 +1263,7 @@ class SearchAttributeValueByTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [searchAttributeValueByTarget];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValueByTarget$QueryToJson(this);
@@ -1240,6 +1283,7 @@ class FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$Attribute
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -1288,6 +1332,7 @@ class FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$Attribute
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeTypeToJson(
@@ -1320,6 +1365,7 @@ class FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueTypeToJson(
@@ -1340,6 +1386,7 @@ class FindAttributeValueByExternalIdAndTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findAttributeValueByExternalIdAndTarget];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindAttributeValueByExternalIdAndTarget$QueryToJson(this);
@@ -1359,6 +1406,7 @@ class SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType$AttributeP
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -1407,6 +1455,7 @@ class SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SyncOneAttributeValue$Mutation$AttributeValueType$AttributeTypeToJson(
@@ -1438,6 +1487,7 @@ class SyncOneAttributeValue$Mutation$AttributeValueType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SyncOneAttributeValue$Mutation$AttributeValueTypeToJson(this);
@@ -1455,6 +1505,7 @@ class SyncOneAttributeValue$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [syncOneAttributeValue];
+
   @override
   Map<String, dynamic> toJson() => _$SyncOneAttributeValue$MutationToJson(this);
 }
@@ -1481,6 +1532,7 @@ class AttributeValueInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [label, externalId, target, attribute];
+
   @override
   Map<String, dynamic> toJson() => _$AttributeValueInputToJson(this);
 }
@@ -1499,6 +1551,7 @@ class CreateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePi
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -1547,6 +1600,7 @@ class CreateAttributeValue$Mutation$AttributeValueType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateAttributeValue$Mutation$AttributeValueType$AttributeTypeToJson(
@@ -1577,6 +1631,7 @@ class CreateAttributeValue$Mutation$AttributeValueType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateAttributeValue$Mutation$AttributeValueTypeToJson(this);
@@ -1594,6 +1649,7 @@ class CreateAttributeValue$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createAttributeValue];
+
   @override
   Map<String, dynamic> toJson() => _$CreateAttributeValue$MutationToJson(this);
 }
@@ -1612,6 +1668,7 @@ class UpdateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePi
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -1660,6 +1717,7 @@ class UpdateAttributeValue$Mutation$AttributeValueType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateAttributeValue$Mutation$AttributeValueType$AttributeTypeToJson(
@@ -1690,6 +1748,7 @@ class UpdateAttributeValue$Mutation$AttributeValueType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateAttributeValue$Mutation$AttributeValueTypeToJson(this);
@@ -1707,6 +1766,7 @@ class UpdateAttributeValue$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateAttributeValue];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateAttributeValue$MutationToJson(this);
 }
@@ -1730,6 +1790,7 @@ class AttributeValueUpdateInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [label, attribute, id];
+
   @override
   Map<String, dynamic> toJson() => _$AttributeValueUpdateInputToJson(this);
 }
@@ -1749,6 +1810,7 @@ class DeleteAttributeValue$Mutation$DeleteResponseDtoType
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteAttributeValue$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -1766,6 +1828,7 @@ class DeleteAttributeValue$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [deleteAttributeValue];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteAttributeValue$MutationToJson(this);
 }
@@ -1797,6 +1860,7 @@ class GetAttributeValuesPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesPaginationArgumentsToJson(this);
@@ -1991,6 +2055,7 @@ class GetAttributeValuesPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAttributeValuesPagination$Query parse(Map<String, dynamic> json) =>
       GetAttributeValuesPagination$Query.fromJson(json);
@@ -2015,6 +2080,7 @@ class GetAttributeValuesByTargetPaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTargetPaginatedArgumentsToJson(this);
@@ -2224,6 +2290,7 @@ class GetAttributeValuesByTargetPaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAttributeValuesByTargetPaginated$Query parse(Map<String, dynamic> json) =>
       GetAttributeValuesByTargetPaginated$Query.fromJson(json);
@@ -2376,6 +2443,7 @@ class GetAttributeValuesQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetAttributeValues$Query parse(Map<String, dynamic> json) =>
       GetAttributeValues$Query.fromJson(json);
@@ -2395,6 +2463,7 @@ class GetAttributeValuesByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByTargetArgumentsToJson(this);
@@ -2567,6 +2636,7 @@ class GetAttributeValuesByTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAttributeValuesByTarget$Query parse(Map<String, dynamic> json) =>
       GetAttributeValuesByTarget$Query.fromJson(json);
@@ -2586,6 +2656,7 @@ class GetAttributeValuesByAttributeArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [attributId];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttributeArgumentsToJson(this);
@@ -2760,6 +2831,7 @@ class GetAttributeValuesByAttributeQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAttributeValuesByAttribute$Query parse(Map<String, dynamic> json) =>
       GetAttributeValuesByAttribute$Query.fromJson(json);
@@ -2777,6 +2849,7 @@ class AttributeValueArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$AttributeValueArgumentsToJson(this);
 }
@@ -2945,6 +3018,7 @@ class AttributeValueQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   AttributeValue$Query parse(Map<String, dynamic> json) =>
       AttributeValue$Query.fromJson(json);
@@ -2968,6 +3042,7 @@ class SearchAttributeValueArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination, searchString];
+
   @override
   Map<String, dynamic> toJson() => _$SearchAttributeValueArgumentsToJson(this);
 }
@@ -3173,6 +3248,7 @@ class SearchAttributeValueQuery extends GraphQLQuery<SearchAttributeValue$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SearchAttributeValue$Query parse(Map<String, dynamic> json) =>
       SearchAttributeValue$Query.fromJson(json);
@@ -3197,6 +3273,7 @@ class GetAttributeValuesByAttributePaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination, attributId];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAttributeValuesByAttributePaginatedArgumentsToJson(this);
@@ -3406,6 +3483,7 @@ class GetAttributeValuesByAttributePaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAttributeValuesByAttributePaginated$Query parse(
           Map<String, dynamic> json) =>
@@ -3434,6 +3512,7 @@ class SearchAttributeValueByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination, searchString, target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchAttributeValueByTargetArgumentsToJson(this);
@@ -3654,6 +3733,7 @@ class SearchAttributeValueByTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SearchAttributeValueByTarget$Query parse(Map<String, dynamic> json) =>
       SearchAttributeValueByTarget$Query.fromJson(json);
@@ -3678,6 +3758,7 @@ class FindAttributeValueByExternalIdAndTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [externalId, target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindAttributeValueByExternalIdAndTargetArgumentsToJson(this);
@@ -3865,6 +3946,7 @@ class FindAttributeValueByExternalIdAndTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindAttributeValueByExternalIdAndTarget$Query parse(
           Map<String, dynamic> json) =>
@@ -3884,6 +3966,7 @@ class SyncOneAttributeValueArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$SyncOneAttributeValueArgumentsToJson(this);
 }
@@ -4054,6 +4137,7 @@ class SyncOneAttributeValueMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SyncOneAttributeValue$Mutation parse(Map<String, dynamic> json) =>
       SyncOneAttributeValue$Mutation.fromJson(json);
@@ -4072,6 +4156,7 @@ class CreateAttributeValueArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateAttributeValueArgumentsToJson(this);
 }
@@ -4242,6 +4327,7 @@ class CreateAttributeValueMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateAttributeValue$Mutation parse(Map<String, dynamic> json) =>
       CreateAttributeValue$Mutation.fromJson(json);
@@ -4260,6 +4346,7 @@ class UpdateAttributeValueArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateAttributeValueArgumentsToJson(this);
 }
@@ -4430,6 +4517,7 @@ class UpdateAttributeValueMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateAttributeValue$Mutation parse(Map<String, dynamic> json) =>
       UpdateAttributeValue$Mutation.fromJson(json);
@@ -4448,6 +4536,7 @@ class DeleteAttributeValueArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteAttributeValueArgumentsToJson(this);
 }
@@ -4518,6 +4607,7 @@ class DeleteAttributeValueMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteAttributeValue$Mutation parse(Map<String, dynamic> json) =>
       DeleteAttributeValue$Mutation.fromJson(json);

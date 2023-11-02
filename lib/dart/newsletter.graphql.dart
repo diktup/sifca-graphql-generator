@@ -26,6 +26,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$PhoneTypeToJson(
@@ -58,6 +59,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$PictureTypeToJson(
@@ -90,6 +92,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$LanguageType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$LanguageType$PictureTypeToJson(
@@ -127,6 +130,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$LanguageTypeToJson(
@@ -159,6 +163,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$CountryType$Pictu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$CountryType$PictureTypeToJson(
@@ -207,6 +212,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$CountryTypeToJson(
@@ -229,6 +235,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$L
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$LonLatTypeToJson(
@@ -261,6 +268,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -309,6 +317,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$C
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$CountryTypeToJson(
@@ -341,6 +350,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$S
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -389,6 +399,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$S
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -421,6 +432,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$S
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -483,6 +495,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$S
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateTypeToJson(
@@ -505,6 +518,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$F
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -528,6 +542,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$F
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -567,6 +582,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressTypeToJson(
@@ -599,6 +615,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$S
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -632,6 +649,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$S
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -656,6 +674,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$S
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -680,6 +699,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$S
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -714,6 +734,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$S
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType$SocialTypeToJson(
@@ -737,6 +758,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialValueTypeToJson(
@@ -757,6 +779,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataTy
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -789,6 +812,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataTy
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -838,6 +862,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataTy
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -878,6 +903,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataTy
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -908,6 +934,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataTy
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$SocialLoginDataTypeToJson(
@@ -942,6 +969,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserEducationTypeToJson(
@@ -974,6 +1002,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$Stat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -1022,6 +1051,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$Stat
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -1054,6 +1084,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$Stat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -1116,6 +1147,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$Stat
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateTypeToJson(
@@ -1152,6 +1184,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkTypeToJson(
@@ -1184,6 +1217,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$Country
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -1232,6 +1266,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$Country
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryTypeToJson(
@@ -1264,6 +1299,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$PictureTypeToJson(
@@ -1326,6 +1362,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateTypeToJson(
@@ -1483,6 +1520,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterType$UserTypeToJson(this);
@@ -1509,6 +1547,7 @@ class GetSubscribersToNewsletter$Query$NewsletterType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, user, email, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$Query$NewsletterTypeToJson(this);
@@ -1528,6 +1567,7 @@ class GetSubscribersToNewsletter$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getSubscribersToNewsletter];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletter$QueryToJson(this);
@@ -1555,6 +1595,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -1579,6 +1620,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$PhoneTypeToJson(
@@ -1611,6 +1653,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$PictureTypeToJson(
@@ -1643,6 +1686,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$LanguageType$PictureTypeToJson(
@@ -1680,6 +1724,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$LanguageTypeToJson(
@@ -1712,6 +1757,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$CountryType$PictureTypeToJson(
@@ -1760,6 +1806,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$CountryTypeToJson(
@@ -1782,6 +1829,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$LonLatTypeToJson(
@@ -1814,6 +1862,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1862,6 +1911,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$CountryTypeToJson(
@@ -1894,6 +1944,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1942,6 +1993,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -1974,6 +2026,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -2036,6 +2089,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateTypeToJson(
@@ -2058,6 +2112,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -2081,6 +2136,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -2120,6 +2176,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressTypeToJson(
@@ -2152,6 +2209,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -2185,6 +2243,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -2209,6 +2268,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -2233,6 +2293,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -2267,6 +2328,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialValueType$SocialTypeToJson(
@@ -2290,6 +2352,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialValueTypeToJson(
@@ -2310,6 +2373,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -2342,6 +2406,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -2391,6 +2456,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -2431,6 +2497,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -2461,6 +2528,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$SocialLoginDataTypeToJson(
@@ -2495,6 +2563,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserEducationTypeToJson(
@@ -2527,6 +2596,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -2575,6 +2645,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -2607,6 +2678,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -2669,6 +2741,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateTypeToJson(
@@ -2705,6 +2778,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkTypeToJson(
@@ -2737,6 +2811,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -2785,6 +2860,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryTypeToJson(
@@ -2817,6 +2893,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$PictureTypeToJson(
@@ -2879,6 +2956,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateTypeToJson(
@@ -3039,6 +3117,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserTypeToJson(
@@ -3068,6 +3147,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
 
   @override
   List<Object?> get props => [id, user, email, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterTypeToJson(
@@ -3094,6 +3174,7 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersTypeToJson(
@@ -3114,6 +3195,7 @@ class GetSubscribersToNewsletterPaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getSubscribersToNewsletterPaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginated$QueryToJson(this);
@@ -3135,6 +3217,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -3152,6 +3235,7 @@ class GetNewslettersByExcel$Query$InvoicePDFType extends JsonSerializable
 
   @override
   List<Object?> get props => [content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetNewslettersByExcel$Query$InvoicePDFTypeToJson(this);
@@ -3168,6 +3252,7 @@ class GetNewslettersByExcel$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getNewslettersByExcel];
+
   @override
   Map<String, dynamic> toJson() => _$GetNewslettersByExcel$QueryToJson(this);
 }
@@ -3205,6 +3290,7 @@ class SendNewslettersBymail$Query$MailResponseDto extends JsonSerializable
         messageSize,
         envelopeTime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendNewslettersBymail$Query$MailResponseDtoToJson(this);
@@ -3221,6 +3307,7 @@ class SendNewslettersBymail$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [sendNewslettersBymail];
+
   @override
   Map<String, dynamic> toJson() => _$SendNewslettersBymail$QueryToJson(this);
 }
@@ -3245,6 +3332,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$PhoneTypeToJson(
@@ -3277,6 +3365,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$PictureTypeToJson(
@@ -3309,6 +3398,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$LanguageType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$LanguageType$PictureTypeToJson(
@@ -3346,6 +3436,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$LanguageTypeToJson(
@@ -3378,6 +3469,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$CountryType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$CountryType$PictureTypeToJson(
@@ -3426,6 +3518,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$CountryTypeToJson(
@@ -3448,6 +3541,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$LonLa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$LonLatTypeToJson(
@@ -3480,6 +3574,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$Count
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3528,6 +3623,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$Count
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$CountryTypeToJson(
@@ -3560,6 +3656,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$State
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3608,6 +3705,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$State
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -3640,6 +3738,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$State
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -3702,6 +3801,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$State
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateTypeToJson(
@@ -3724,6 +3824,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$FullA
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3747,6 +3848,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$FullA
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3786,6 +3888,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressTypeToJson(
@@ -3818,6 +3921,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$Socia
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -3851,6 +3955,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$Socia
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -3875,6 +3980,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$Socia
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -3899,6 +4005,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$Socia
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -3933,6 +4040,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$Socia
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType$SocialTypeToJson(
@@ -3956,6 +4064,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialValueTypeToJson(
@@ -3976,6 +4085,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType$O
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -4008,6 +4118,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType$F
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -4057,6 +4168,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType$G
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -4097,6 +4209,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType$A
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -4127,6 +4240,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$SocialLoginDataTypeToJson(
@@ -4161,6 +4275,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserEducationTypeToJson(
@@ -4193,6 +4308,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -4241,6 +4357,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -4273,6 +4390,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -4335,6 +4453,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateTypeToJson(
@@ -4371,6 +4490,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkTypeToJson(
@@ -4403,6 +4523,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -4451,6 +4572,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryTypeToJson(
@@ -4483,6 +4605,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$PictureTypeToJson(
@@ -4545,6 +4668,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateTypeToJson(
@@ -4699,6 +4823,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterType$UserTypeToJson(this);
@@ -4725,6 +4850,7 @@ class AddUserToNewsLetter$Mutation$NewsletterType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, user, email, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddUserToNewsLetter$Mutation$NewsletterTypeToJson(this);
@@ -4742,6 +4868,7 @@ class AddUserToNewsLetter$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [addUserToNewsLetter];
+
   @override
   Map<String, dynamic> toJson() => _$AddUserToNewsLetter$MutationToJson(this);
 }
@@ -4761,6 +4888,7 @@ class RemoveUserFromNewsLetter$Mutation$DeleteResponseDtoType
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveUserFromNewsLetter$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -4780,6 +4908,7 @@ class RemoveUserFromNewsLetter$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [removeUserFromNewsLetter];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveUserFromNewsLetter$MutationToJson(this);
@@ -5001,6 +5130,7 @@ class GetSubscribersToNewsletterArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterArgumentsToJson(this);
@@ -10037,6 +10167,7 @@ class GetSubscribersToNewsletterQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetSubscribersToNewsletter$Query parse(Map<String, dynamic> json) =>
       GetSubscribersToNewsletter$Query.fromJson(json);
@@ -10064,6 +10195,7 @@ class GetSubscribersToNewsletterPaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination, searchString, target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetSubscribersToNewsletterPaginatedArgumentsToJson(this);
@@ -15171,6 +15303,7 @@ class GetSubscribersToNewsletterPaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetSubscribersToNewsletterPaginated$Query parse(Map<String, dynamic> json) =>
       GetSubscribersToNewsletterPaginated$Query.fromJson(json);
@@ -15197,6 +15330,7 @@ class GetNewslettersByExcelArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, searchString, path];
+
   @override
   Map<String, dynamic> toJson() => _$GetNewslettersByExcelArgumentsToJson(this);
 }
@@ -15286,6 +15420,7 @@ class GetNewslettersByExcelQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetNewslettersByExcel$Query parse(Map<String, dynamic> json) =>
       GetNewslettersByExcel$Query.fromJson(json);
@@ -15315,6 +15450,7 @@ class SendNewslettersBymailArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, searchString, emails, subject];
+
   @override
   Map<String, dynamic> toJson() => _$SendNewslettersBymailArgumentsToJson(this);
 }
@@ -15462,6 +15598,7 @@ class SendNewslettersBymailQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SendNewslettersBymail$Query parse(Map<String, dynamic> json) =>
       SendNewslettersBymail$Query.fromJson(json);
@@ -15485,6 +15622,7 @@ class AddUserToNewsLetterArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [email, target];
+
   @override
   Map<String, dynamic> toJson() => _$AddUserToNewsLetterArgumentsToJson(this);
 }
@@ -20533,6 +20671,7 @@ class AddUserToNewsLetterMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   AddUserToNewsLetter$Mutation parse(Map<String, dynamic> json) =>
       AddUserToNewsLetter$Mutation.fromJson(json);
@@ -20557,6 +20696,7 @@ class RemoveUserFromNewsLetterArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [email, target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveUserFromNewsLetterArgumentsToJson(this);
@@ -20642,6 +20782,7 @@ class RemoveUserFromNewsLetterMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   RemoveUserFromNewsLetter$Mutation parse(Map<String, dynamic> json) =>
       RemoveUserFromNewsLetter$Mutation.fromJson(json);

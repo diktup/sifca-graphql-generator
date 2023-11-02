@@ -25,6 +25,7 @@ class GetBlogs$Query$BlogType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$PhoneTypeToJson(this);
@@ -55,6 +56,7 @@ class GetBlogs$Query$BlogType$UserType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$PictureTypeToJson(this);
@@ -85,6 +87,7 @@ class GetBlogs$Query$BlogType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$LanguageType$PictureTypeToJson(this);
@@ -118,6 +121,7 @@ class GetBlogs$Query$BlogType$UserType$LanguageType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$LanguageTypeToJson(this);
@@ -148,6 +152,7 @@ class GetBlogs$Query$BlogType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$CountryType$PictureTypeToJson(this);
@@ -192,6 +197,7 @@ class GetBlogs$Query$BlogType$UserType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$CountryTypeToJson(this);
@@ -213,6 +219,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatTypeToJson(this);
@@ -244,6 +251,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -292,6 +300,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -324,6 +333,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -372,6 +382,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -404,6 +415,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -466,6 +478,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateTypeToJson(this);
@@ -487,6 +500,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$Full
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -510,6 +524,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -544,6 +559,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType extends JsonSerializable
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$FullAddressTypeToJson(this);
@@ -575,6 +591,7 @@ class GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -608,6 +625,7 @@ class GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTy
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -632,6 +650,7 @@ class GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTy
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -656,6 +675,7 @@ class GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTy
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -690,6 +710,7 @@ class GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialTypeToJson(this);
@@ -710,6 +731,7 @@ class GetBlogs$Query$BlogType$UserType$SocialValueType extends JsonSerializable
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialValueTypeToJson(this);
@@ -729,6 +751,7 @@ class GetBlogs$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -761,6 +784,7 @@ class GetBlogs$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -810,6 +834,7 @@ class GetBlogs$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -850,6 +875,7 @@ class GetBlogs$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -876,6 +902,7 @@ class GetBlogs$Query$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$SocialLoginDataTypeToJson(this);
@@ -908,6 +935,7 @@ class GetBlogs$Query$BlogType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$UserEducationTypeToJson(this);
@@ -939,6 +967,7 @@ class GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -987,6 +1016,7 @@ class GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -1019,6 +1049,7 @@ class GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -1078,6 +1109,7 @@ class GetBlogs$Query$BlogType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateTypeToJson(this);
@@ -1111,6 +1143,7 @@ class GetBlogs$Query$BlogType$UserType$UserWorkType extends JsonSerializable
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$UserWorkTypeToJson(this);
@@ -1142,6 +1175,7 @@ class GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -1188,6 +1222,7 @@ class GetBlogs$Query$BlogType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$StateType$CountryTypeToJson(this);
@@ -1218,6 +1253,7 @@ class GetBlogs$Query$BlogType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$StateType$PictureTypeToJson(this);
@@ -1275,6 +1311,7 @@ class GetBlogs$Query$BlogType$UserType$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserType$StateTypeToJson(this);
@@ -1419,6 +1456,7 @@ class GetBlogs$Query$BlogType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$UserTypeToJson(this);
@@ -1439,6 +1477,7 @@ class GetBlogs$Query$BlogType$SeoComponentType$TagType extends JsonSerializable
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$SeoComponentType$TagTypeToJson(this);
@@ -1461,6 +1500,7 @@ class GetBlogs$Query$BlogType$SeoComponentType extends JsonSerializable
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$SeoComponentTypeToJson(this);
@@ -1491,6 +1531,7 @@ class GetBlogs$Query$BlogType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$PictureTypeToJson(this);
@@ -1521,6 +1562,7 @@ class GetBlogs$Query$BlogType$BlogDataType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$BlogDataType$PictureTypeToJson(this);
@@ -1546,6 +1588,7 @@ class GetBlogs$Query$BlogType$BlogDataType extends JsonSerializable
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBlogs$Query$BlogType$BlogDataTypeToJson(this);
@@ -1594,6 +1637,7 @@ class GetBlogs$Query$BlogType extends JsonSerializable with EquatableMixin {
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetBlogs$Query$BlogTypeToJson(this);
 }
@@ -1609,6 +1653,7 @@ class GetBlogs$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getBlogs];
+
   @override
   Map<String, dynamic> toJson() => _$GetBlogs$QueryToJson(this);
 }
@@ -1633,6 +1678,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneTypeToJson(
@@ -1665,6 +1711,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
@@ -1697,6 +1744,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -1734,6 +1782,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeToJson(
@@ -1766,6 +1815,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -1814,6 +1864,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeToJson(
@@ -1836,6 +1887,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -1868,6 +1920,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1916,6 +1969,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -1948,6 +2002,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1996,6 +2051,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -2028,6 +2084,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -2090,6 +2147,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -2112,6 +2170,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -2135,6 +2194,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -2174,6 +2234,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeToJson(
@@ -2206,6 +2267,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -2239,6 +2301,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTy
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -2263,6 +2326,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTy
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -2287,6 +2351,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTy
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -2321,6 +2386,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTy
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -2344,6 +2410,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTy
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeToJson(
@@ -2364,6 +2431,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDa
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -2396,6 +2464,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDa
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -2445,6 +2514,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDa
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -2485,6 +2555,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDa
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -2515,6 +2586,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDa
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeToJson(
@@ -2549,6 +2621,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducation
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
@@ -2581,6 +2654,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -2629,6 +2703,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -2661,6 +2736,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -2723,6 +2799,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -2759,6 +2836,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
@@ -2791,6 +2869,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$Cou
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -2839,6 +2918,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$Cou
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
@@ -2871,6 +2951,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
@@ -2933,6 +3014,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
@@ -3092,6 +3174,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
@@ -3114,6 +3197,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTy
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeToJson(
@@ -3139,6 +3223,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentTypeToJson(
@@ -3171,6 +3256,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
@@ -3203,6 +3289,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
@@ -3231,6 +3318,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataTypeToJson(
@@ -3284,6 +3372,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogTypeToJson(this);
@@ -3306,6 +3395,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedBlogs$Query$PaginatedBlogsTypeToJson(this);
@@ -3322,6 +3412,7 @@ class GetPaginatedBlogs$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getPaginatedBlogs];
+
   @override
   Map<String, dynamic> toJson() => _$GetPaginatedBlogs$QueryToJson(this);
 }
@@ -3342,6 +3433,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -3365,6 +3457,7 @@ class Blog$Query$BlogType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$PhoneTypeToJson(this);
@@ -3395,6 +3488,7 @@ class Blog$Query$BlogType$UserType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$PictureTypeToJson(this);
@@ -3425,6 +3519,7 @@ class Blog$Query$BlogType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$LanguageType$PictureTypeToJson(this);
@@ -3458,6 +3553,7 @@ class Blog$Query$BlogType$UserType$LanguageType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$LanguageTypeToJson(this);
@@ -3488,6 +3584,7 @@ class Blog$Query$BlogType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$CountryType$PictureTypeToJson(this);
@@ -3532,6 +3629,7 @@ class Blog$Query$BlogType$UserType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$CountryTypeToJson(this);
@@ -3552,6 +3650,7 @@ class Blog$Query$BlogType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$FullAddressType$LonLatTypeToJson(this);
@@ -3583,6 +3682,7 @@ class Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3630,6 +3730,7 @@ class Blog$Query$BlogType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(this);
@@ -3661,6 +3762,7 @@ class Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3709,6 +3811,7 @@ class Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -3741,6 +3844,7 @@ class Blog$Query$BlogType$UserType$FullAddressType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -3800,6 +3904,7 @@ class Blog$Query$BlogType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$FullAddressType$StateTypeToJson(this);
@@ -3821,6 +3926,7 @@ class Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddr
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3844,6 +3950,7 @@ class Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3878,6 +3985,7 @@ class Blog$Query$BlogType$UserType$FullAddressType extends JsonSerializable
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$FullAddressTypeToJson(this);
@@ -3909,6 +4017,7 @@ class Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$S
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -3942,6 +4051,7 @@ class Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$S
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -3966,6 +4076,7 @@ class Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$S
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -3990,6 +4101,7 @@ class Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -4023,6 +4135,7 @@ class Blog$Query$BlogType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialValueType$SocialTypeToJson(this);
@@ -4043,6 +4156,7 @@ class Blog$Query$BlogType$UserType$SocialValueType extends JsonSerializable
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialValueTypeToJson(this);
@@ -4062,6 +4176,7 @@ class Blog$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -4094,6 +4209,7 @@ class Blog$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -4143,6 +4259,7 @@ class Blog$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -4183,6 +4300,7 @@ class Blog$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -4208,6 +4326,7 @@ class Blog$Query$BlogType$UserType$SocialLoginDataType extends JsonSerializable
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$SocialLoginDataTypeToJson(this);
@@ -4240,6 +4359,7 @@ class Blog$Query$BlogType$UserType$UserEducationType extends JsonSerializable
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$UserEducationTypeToJson(this);
@@ -4271,6 +4391,7 @@ class Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -4319,6 +4440,7 @@ class Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -4351,6 +4473,7 @@ class Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -4409,6 +4532,7 @@ class Blog$Query$BlogType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$UserWorkType$StateTypeToJson(this);
@@ -4442,6 +4566,7 @@ class Blog$Query$BlogType$UserType$UserWorkType extends JsonSerializable
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$UserWorkTypeToJson(this);
@@ -4473,6 +4598,7 @@ class Blog$Query$BlogType$UserType$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -4518,6 +4644,7 @@ class Blog$Query$BlogType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$StateType$CountryTypeToJson(this);
@@ -4548,6 +4675,7 @@ class Blog$Query$BlogType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$StateType$PictureTypeToJson(this);
@@ -4605,6 +4733,7 @@ class Blog$Query$BlogType$UserType$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$UserType$StateTypeToJson(this);
@@ -4748,6 +4877,7 @@ class Blog$Query$BlogType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() => _$Blog$Query$BlogType$UserTypeToJson(this);
 }
@@ -4767,6 +4897,7 @@ class Blog$Query$BlogType$SeoComponentType$TagType extends JsonSerializable
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$SeoComponentType$TagTypeToJson(this);
@@ -4789,6 +4920,7 @@ class Blog$Query$BlogType$SeoComponentType extends JsonSerializable
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$SeoComponentTypeToJson(this);
@@ -4818,6 +4950,7 @@ class Blog$Query$BlogType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$PictureTypeToJson(this);
@@ -4848,6 +4981,7 @@ class Blog$Query$BlogType$BlogDataType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$BlogDataType$PictureTypeToJson(this);
@@ -4873,6 +5007,7 @@ class Blog$Query$BlogType$BlogDataType extends JsonSerializable
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Blog$Query$BlogType$BlogDataTypeToJson(this);
@@ -4921,6 +5056,7 @@ class Blog$Query$BlogType extends JsonSerializable with EquatableMixin {
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$Blog$Query$BlogTypeToJson(this);
 }
@@ -4936,6 +5072,7 @@ class Blog$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [blog];
+
   @override
   Map<String, dynamic> toJson() => _$Blog$QueryToJson(this);
 }
@@ -4959,6 +5096,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$PhoneTypeToJson(this);
@@ -4989,6 +5127,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$PictureTypeToJson(this);
@@ -5020,6 +5159,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -5055,6 +5195,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$LanguageTypeToJson(this);
@@ -5086,6 +5227,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -5131,6 +5273,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$CountryTypeToJson(this);
@@ -5152,6 +5295,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -5184,6 +5328,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5232,6 +5377,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -5264,6 +5410,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$Countr
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5312,6 +5459,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$Countr
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -5344,6 +5492,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -5406,6 +5555,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -5428,6 +5578,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwner
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -5451,6 +5602,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwner
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -5488,6 +5640,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressTypeToJson(this);
@@ -5519,6 +5672,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -5552,6 +5706,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -5576,6 +5731,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -5600,6 +5756,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -5634,6 +5791,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -5655,6 +5813,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueTypeToJson(this);
@@ -5674,6 +5833,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$OoredooDataT
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -5706,6 +5866,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$FacebookData
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -5755,6 +5916,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTy
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -5795,6 +5957,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$AppleDataTyp
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -5825,6 +5988,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataTypeToJson(
@@ -5859,6 +6023,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$UserEducationTypeToJson(this);
@@ -5890,6 +6055,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -5938,6 +6104,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -5970,6 +6137,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -6032,6 +6200,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -6066,6 +6235,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkTypeToJson(this);
@@ -6097,6 +6267,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -6145,6 +6316,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryTypeToJson(
@@ -6177,6 +6349,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureTypeToJson(
@@ -6235,6 +6408,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserType$StateTypeToJson(this);
@@ -6383,6 +6557,7 @@ class FindBlogsByTarget$Query$BlogType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$UserTypeToJson(this);
@@ -6403,6 +6578,7 @@ class FindBlogsByTarget$Query$BlogType$SeoComponentType$TagType
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$SeoComponentType$TagTypeToJson(this);
@@ -6425,6 +6601,7 @@ class FindBlogsByTarget$Query$BlogType$SeoComponentType extends JsonSerializable
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$SeoComponentTypeToJson(this);
@@ -6455,6 +6632,7 @@ class FindBlogsByTarget$Query$BlogType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$PictureTypeToJson(this);
@@ -6485,6 +6663,7 @@ class FindBlogsByTarget$Query$BlogType$BlogDataType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$BlogDataType$PictureTypeToJson(this);
@@ -6511,6 +6690,7 @@ class FindBlogsByTarget$Query$BlogType$BlogDataType extends JsonSerializable
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogType$BlogDataTypeToJson(this);
@@ -6561,6 +6741,7 @@ class FindBlogsByTarget$Query$BlogType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTarget$Query$BlogTypeToJson(this);
@@ -6577,6 +6758,7 @@ class FindBlogsByTarget$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findBlogsByTarget];
+
   @override
   Map<String, dynamic> toJson() => _$FindBlogsByTarget$QueryToJson(this);
 }
@@ -6603,6 +6785,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -6626,6 +6809,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$PhoneTypeToJson(this);
@@ -6657,6 +6841,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$PictureTypeToJson(this);
@@ -6688,6 +6873,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -6725,6 +6911,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageTypeToJson(
@@ -6757,6 +6944,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -6805,6 +6993,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryTypeToJson(this);
@@ -6826,6 +7015,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -6858,6 +7048,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6906,6 +7097,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -6938,6 +7130,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6986,6 +7179,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -7018,6 +7212,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -7080,6 +7275,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -7102,6 +7298,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddres
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -7125,6 +7322,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddres
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -7164,6 +7362,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressTypeToJson(
@@ -7196,6 +7395,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -7229,6 +7429,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -7253,6 +7454,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -7277,6 +7479,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -7311,6 +7514,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -7334,6 +7538,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueTypeToJson(
@@ -7354,6 +7559,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$Ooredo
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -7386,6 +7592,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$Facebo
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -7435,6 +7642,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$Google
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -7475,6 +7683,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$AppleD
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -7505,6 +7714,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataTypeToJson(
@@ -7539,6 +7749,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationTypeToJson(
@@ -7571,6 +7782,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$Cou
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -7619,6 +7831,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$Cou
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -7651,6 +7864,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -7713,6 +7927,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -7748,6 +7963,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkTypeToJson(
@@ -7780,6 +7996,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -7828,6 +8045,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryTypeToJson(
@@ -7860,6 +8078,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureTypeToJson(
@@ -7921,6 +8140,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateTypeToJson(this);
@@ -8072,6 +8292,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserTypeToJson(this);
@@ -8093,6 +8314,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType$TagType
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType$TagTypeToJson(
@@ -8117,6 +8339,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentTypeToJson(this);
@@ -8147,6 +8370,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$PictureTypeToJson(this);
@@ -8178,6 +8402,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureTypeToJson(
@@ -8205,6 +8430,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogType$BlogDataTypeToJson(this);
@@ -8255,6 +8481,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrl$Query$BlogTypeToJson(this);
@@ -8272,6 +8499,7 @@ class FindBlogsByTargetAndUrl$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findBlogsByTargetAndUrl];
+
   @override
   Map<String, dynamic> toJson() => _$FindBlogsByTargetAndUrl$QueryToJson(this);
 }
@@ -8296,6 +8524,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Phon
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PhoneTypeToJson(
@@ -8328,6 +8557,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
@@ -8360,6 +8590,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Lang
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -8397,6 +8628,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Lang
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeToJson(
@@ -8429,6 +8661,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Coun
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -8477,6 +8710,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Coun
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeToJson(
@@ -8499,6 +8733,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -8531,6 +8766,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -8579,6 +8815,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -8611,6 +8848,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8659,6 +8897,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -8691,6 +8930,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -8753,6 +8993,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -8775,6 +9016,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -8798,6 +9040,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -8837,6 +9080,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeToJson(
@@ -8869,6 +9113,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -8902,6 +9147,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -8926,6 +9172,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -8950,6 +9197,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -8984,6 +9232,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -9007,6 +9256,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeToJson(
@@ -9027,6 +9277,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -9059,6 +9310,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -9108,6 +9360,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -9148,6 +9401,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -9178,6 +9432,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeToJson(
@@ -9212,6 +9467,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
@@ -9244,6 +9500,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -9292,6 +9549,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -9324,6 +9582,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -9386,6 +9645,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -9422,6 +9682,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
@@ -9454,6 +9715,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Stat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -9502,6 +9764,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Stat
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
@@ -9534,6 +9797,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Stat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
@@ -9596,6 +9860,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Stat
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
@@ -9756,6 +10021,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
@@ -9778,6 +10044,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentT
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeToJson(
@@ -9803,6 +10070,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentT
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentTypeToJson(
@@ -9835,6 +10103,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
@@ -9867,6 +10136,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
@@ -9895,6 +10165,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataTypeToJson(
@@ -9951,6 +10222,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogTypeToJson(
@@ -9975,6 +10247,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsTypeToJson(this);
@@ -9994,6 +10267,7 @@ class FindBlogsByTargetPaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findBlogsByTargetPaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginated$QueryToJson(this);
@@ -10018,6 +10292,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$PhoneTypeToJson(this);
@@ -10048,6 +10323,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$PictureTypeToJson(this);
@@ -10079,6 +10355,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -10114,6 +10391,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$LanguageTypeToJson(this);
@@ -10145,6 +10423,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -10190,6 +10469,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$CountryTypeToJson(this);
@@ -10211,6 +10491,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -10243,6 +10524,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -10291,6 +10573,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -10323,6 +10606,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$Countr
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -10371,6 +10655,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$Countr
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -10403,6 +10688,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -10465,6 +10751,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -10487,6 +10774,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwner
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -10510,6 +10798,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwner
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -10547,6 +10836,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressTypeToJson(this);
@@ -10578,6 +10868,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -10611,6 +10902,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -10635,6 +10927,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -10659,6 +10952,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -10693,6 +10987,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -10714,6 +11009,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueTypeToJson(this);
@@ -10733,6 +11029,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$OoredooDataT
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -10765,6 +11062,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$FacebookData
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -10814,6 +11112,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTy
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -10854,6 +11153,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$AppleDataTyp
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -10884,6 +11184,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataTypeToJson(
@@ -10918,6 +11219,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$UserEducationTypeToJson(this);
@@ -10949,6 +11251,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -10997,6 +11300,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -11029,6 +11333,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -11091,6 +11396,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -11125,6 +11431,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkTypeToJson(this);
@@ -11156,6 +11463,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -11204,6 +11512,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryTypeToJson(
@@ -11236,6 +11545,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureTypeToJson(
@@ -11294,6 +11604,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserType$StateTypeToJson(this);
@@ -11442,6 +11753,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$UserTypeToJson(this);
@@ -11462,6 +11774,7 @@ class FindBlogsByAuthor$Query$BlogType$SeoComponentType$TagType
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$SeoComponentType$TagTypeToJson(this);
@@ -11484,6 +11797,7 @@ class FindBlogsByAuthor$Query$BlogType$SeoComponentType extends JsonSerializable
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$SeoComponentTypeToJson(this);
@@ -11514,6 +11828,7 @@ class FindBlogsByAuthor$Query$BlogType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$PictureTypeToJson(this);
@@ -11544,6 +11859,7 @@ class FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureTypeToJson(this);
@@ -11570,6 +11886,7 @@ class FindBlogsByAuthor$Query$BlogType$BlogDataType extends JsonSerializable
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogType$BlogDataTypeToJson(this);
@@ -11620,6 +11937,7 @@ class FindBlogsByAuthor$Query$BlogType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthor$Query$BlogTypeToJson(this);
@@ -11636,6 +11954,7 @@ class FindBlogsByAuthor$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findBlogsByAuthor];
+
   @override
   Map<String, dynamic> toJson() => _$FindBlogsByAuthor$QueryToJson(this);
 }
@@ -11660,6 +11979,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Phon
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PhoneTypeToJson(
@@ -11692,6 +12012,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
@@ -11724,6 +12045,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Lang
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -11761,6 +12083,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Lang
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeToJson(
@@ -11793,6 +12116,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Coun
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -11841,6 +12165,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Coun
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeToJson(
@@ -11863,6 +12188,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -11895,6 +12221,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -11943,6 +12270,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -11975,6 +12303,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -12023,6 +12352,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -12055,6 +12385,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -12117,6 +12448,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -12139,6 +12471,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -12162,6 +12495,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -12201,6 +12535,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeToJson(
@@ -12233,6 +12568,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -12266,6 +12602,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -12290,6 +12627,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -12314,6 +12652,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -12348,6 +12687,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -12371,6 +12711,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeToJson(
@@ -12391,6 +12732,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -12423,6 +12765,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -12472,6 +12815,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -12512,6 +12856,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -12542,6 +12887,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Soci
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeToJson(
@@ -12576,6 +12922,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
@@ -12608,6 +12955,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -12656,6 +13004,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -12688,6 +13037,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -12750,6 +13100,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -12786,6 +13137,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
@@ -12818,6 +13170,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Stat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -12866,6 +13219,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Stat
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
@@ -12898,6 +13252,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Stat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
@@ -12960,6 +13315,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Stat
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
@@ -13120,6 +13476,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
@@ -13142,6 +13499,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentT
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeToJson(
@@ -13167,6 +13525,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentT
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentTypeToJson(
@@ -13199,6 +13558,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
@@ -13231,6 +13591,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
@@ -13259,6 +13620,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataTypeToJson(
@@ -13315,6 +13677,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogTypeToJson(
@@ -13339,6 +13702,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsTypeToJson(this);
@@ -13358,6 +13722,7 @@ class FindBlogsByAuthorPaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findBlogsByAuthorPaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginated$QueryToJson(this);
@@ -13383,6 +13748,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneTypeToJson(
@@ -13415,6 +13781,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
@@ -13447,6 +13814,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -13484,6 +13852,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeToJson(
@@ -13516,6 +13885,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -13564,6 +13934,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeToJson(
@@ -13586,6 +13957,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Lon
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -13618,6 +13990,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Cou
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -13666,6 +14039,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Cou
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -13698,6 +14072,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -13746,6 +14121,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -13778,6 +14154,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -13840,6 +14217,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -13862,6 +14240,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Ful
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -13885,6 +14264,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Ful
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -13924,6 +14304,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeToJson(
@@ -13956,6 +14337,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -13989,6 +14371,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -14013,6 +14396,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -14037,6 +14421,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -14071,6 +14456,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -14094,6 +14480,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeToJson(
@@ -14114,6 +14501,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -14146,6 +14534,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -14195,6 +14584,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -14235,6 +14625,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -14265,6 +14656,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeToJson(
@@ -14299,6 +14691,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
@@ -14331,6 +14724,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -14379,6 +14773,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -14411,6 +14806,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -14473,6 +14869,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -14509,6 +14906,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
@@ -14541,6 +14939,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -14589,6 +14988,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
@@ -14621,6 +15021,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
@@ -14683,6 +15084,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
@@ -14839,6 +15241,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserTypeToJson(this);
@@ -14860,6 +15263,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeToJson(
@@ -14885,6 +15289,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentTypeToJson(
@@ -14916,6 +15321,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(this);
@@ -14947,6 +15353,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
@@ -14975,6 +15382,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataTypeToJson(this);
@@ -15025,6 +15433,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsType$BlogTypeToJson(this);
@@ -15047,6 +15456,7 @@ class SearchBlogs$Query$PaginatedBlogsType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchBlogs$Query$PaginatedBlogsTypeToJson(this);
@@ -15063,6 +15473,7 @@ class SearchBlogs$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [searchBlogs];
+
   @override
   Map<String, dynamic> toJson() => _$SearchBlogs$QueryToJson(this);
 }
@@ -15086,6 +15497,7 @@ class CreateBlog$Mutation$BlogType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$PhoneTypeToJson(this);
@@ -15116,6 +15528,7 @@ class CreateBlog$Mutation$BlogType$UserType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$PictureTypeToJson(this);
@@ -15147,6 +15560,7 @@ class CreateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -15181,6 +15595,7 @@ class CreateBlog$Mutation$BlogType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$LanguageTypeToJson(this);
@@ -15212,6 +15627,7 @@ class CreateBlog$Mutation$BlogType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -15257,6 +15673,7 @@ class CreateBlog$Mutation$BlogType$UserType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$CountryTypeToJson(this);
@@ -15278,6 +15695,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -15310,6 +15728,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -15358,6 +15777,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -15390,6 +15810,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -15438,6 +15859,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -15470,6 +15892,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -15532,6 +15955,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -15554,6 +15978,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -15577,6 +16002,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -15612,6 +16038,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressTypeToJson(this);
@@ -15643,6 +16070,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -15676,6 +16104,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -15700,6 +16129,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -15724,6 +16154,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -15758,6 +16189,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -15779,6 +16211,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialValueTypeToJson(this);
@@ -15798,6 +16231,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -15830,6 +16264,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -15879,6 +16314,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -15919,6 +16355,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -15948,6 +16385,7 @@ class CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(this);
@@ -15980,6 +16418,7 @@ class CreateBlog$Mutation$BlogType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(this);
@@ -16011,6 +16450,7 @@ class CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -16059,6 +16499,7 @@ class CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -16091,6 +16532,7 @@ class CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -16153,6 +16595,7 @@ class CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -16187,6 +16630,7 @@ class CreateBlog$Mutation$BlogType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(this);
@@ -16218,6 +16662,7 @@ class CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -16266,6 +16711,7 @@ class CreateBlog$Mutation$BlogType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(this);
@@ -16297,6 +16743,7 @@ class CreateBlog$Mutation$BlogType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(this);
@@ -16354,6 +16801,7 @@ class CreateBlog$Mutation$BlogType$UserType$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserType$StateTypeToJson(this);
@@ -16499,6 +16947,7 @@ class CreateBlog$Mutation$BlogType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$UserTypeToJson(this);
@@ -16519,6 +16968,7 @@ class CreateBlog$Mutation$BlogType$SeoComponentType$TagType
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$SeoComponentType$TagTypeToJson(this);
@@ -16541,6 +16991,7 @@ class CreateBlog$Mutation$BlogType$SeoComponentType extends JsonSerializable
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$SeoComponentTypeToJson(this);
@@ -16571,6 +17022,7 @@ class CreateBlog$Mutation$BlogType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$PictureTypeToJson(this);
@@ -16601,6 +17053,7 @@ class CreateBlog$Mutation$BlogType$BlogDataType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(this);
@@ -16626,6 +17079,7 @@ class CreateBlog$Mutation$BlogType$BlogDataType extends JsonSerializable
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBlog$Mutation$BlogType$BlogDataTypeToJson(this);
@@ -16675,6 +17129,7 @@ class CreateBlog$Mutation$BlogType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBlog$Mutation$BlogTypeToJson(this);
 }
@@ -16690,6 +17145,7 @@ class CreateBlog$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createBlog];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBlog$MutationToJson(this);
 }
@@ -16726,6 +17182,7 @@ class BlogInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [title, target, url, tags, seo, pictures, sectionData];
+
   @override
   Map<String, dynamic> toJson() => _$BlogInputToJson(this);
 }
@@ -16749,6 +17206,7 @@ class SeoComponentInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() => _$SeoComponentInputToJson(this);
 }
@@ -16769,6 +17227,7 @@ class TagInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() => _$TagInputToJson(this);
 }
@@ -16804,6 +17263,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -16831,6 +17291,7 @@ class BlogDataInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [sectionReference, sectionTitle, sectionContent, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() => _$BlogDataInputToJson(this);
 }
@@ -16854,6 +17315,7 @@ class PublishBlog$Mutation$BlogType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$PhoneTypeToJson(this);
@@ -16884,6 +17346,7 @@ class PublishBlog$Mutation$BlogType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$PictureTypeToJson(this);
@@ -16915,6 +17378,7 @@ class PublishBlog$Mutation$BlogType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -16949,6 +17413,7 @@ class PublishBlog$Mutation$BlogType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$LanguageTypeToJson(this);
@@ -16980,6 +17445,7 @@ class PublishBlog$Mutation$BlogType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -17025,6 +17491,7 @@ class PublishBlog$Mutation$BlogType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$CountryTypeToJson(this);
@@ -17046,6 +17513,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -17078,6 +17546,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -17126,6 +17595,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -17158,6 +17628,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -17206,6 +17677,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -17238,6 +17710,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -17300,6 +17773,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -17322,6 +17796,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTyp
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -17345,6 +17820,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTyp
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -17380,6 +17856,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressTypeToJson(this);
@@ -17411,6 +17888,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIm
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -17444,6 +17922,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIm
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -17468,6 +17947,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIm
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -17492,6 +17972,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIm
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -17526,6 +18007,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -17547,6 +18029,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialValueTypeToJson(this);
@@ -17566,6 +18049,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -17598,6 +18082,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTyp
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -17647,6 +18132,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -17687,6 +18173,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -17717,6 +18204,7 @@ class PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(this);
@@ -17749,6 +18237,7 @@ class PublishBlog$Mutation$BlogType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(this);
@@ -17780,6 +18269,7 @@ class PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -17828,6 +18318,7 @@ class PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -17860,6 +18351,7 @@ class PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -17922,6 +18414,7 @@ class PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -17956,6 +18449,7 @@ class PublishBlog$Mutation$BlogType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(this);
@@ -17987,6 +18481,7 @@ class PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -18035,6 +18530,7 @@ class PublishBlog$Mutation$BlogType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(
@@ -18067,6 +18563,7 @@ class PublishBlog$Mutation$BlogType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(
@@ -18125,6 +18622,7 @@ class PublishBlog$Mutation$BlogType$UserType$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserType$StateTypeToJson(this);
@@ -18270,6 +18768,7 @@ class PublishBlog$Mutation$BlogType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$UserTypeToJson(this);
@@ -18290,6 +18789,7 @@ class PublishBlog$Mutation$BlogType$SeoComponentType$TagType
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$SeoComponentType$TagTypeToJson(this);
@@ -18312,6 +18812,7 @@ class PublishBlog$Mutation$BlogType$SeoComponentType extends JsonSerializable
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$SeoComponentTypeToJson(this);
@@ -18342,6 +18843,7 @@ class PublishBlog$Mutation$BlogType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$PictureTypeToJson(this);
@@ -18372,6 +18874,7 @@ class PublishBlog$Mutation$BlogType$BlogDataType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(this);
@@ -18397,6 +18900,7 @@ class PublishBlog$Mutation$BlogType$BlogDataType extends JsonSerializable
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PublishBlog$Mutation$BlogType$BlogDataTypeToJson(this);
@@ -18446,6 +18950,7 @@ class PublishBlog$Mutation$BlogType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$PublishBlog$Mutation$BlogTypeToJson(this);
 }
@@ -18461,6 +18966,7 @@ class PublishBlog$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [publishBlog];
+
   @override
   Map<String, dynamic> toJson() => _$PublishBlog$MutationToJson(this);
 }
@@ -18484,6 +18990,7 @@ class UpdateBlog$Mutation$BlogType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$PhoneTypeToJson(this);
@@ -18514,6 +19021,7 @@ class UpdateBlog$Mutation$BlogType$UserType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$PictureTypeToJson(this);
@@ -18545,6 +19053,7 @@ class UpdateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -18579,6 +19088,7 @@ class UpdateBlog$Mutation$BlogType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$LanguageTypeToJson(this);
@@ -18610,6 +19120,7 @@ class UpdateBlog$Mutation$BlogType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -18655,6 +19166,7 @@ class UpdateBlog$Mutation$BlogType$UserType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$CountryTypeToJson(this);
@@ -18676,6 +19188,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -18708,6 +19221,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -18756,6 +19270,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -18788,6 +19303,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -18836,6 +19352,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -18868,6 +19385,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -18930,6 +19448,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -18952,6 +19471,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -18975,6 +19495,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -19010,6 +19531,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressTypeToJson(this);
@@ -19041,6 +19563,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -19074,6 +19597,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -19098,6 +19622,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -19122,6 +19647,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -19156,6 +19682,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -19177,6 +19704,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialValueTypeToJson(this);
@@ -19196,6 +19724,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -19228,6 +19757,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -19277,6 +19807,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -19317,6 +19848,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -19346,6 +19878,7 @@ class UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(this);
@@ -19378,6 +19911,7 @@ class UpdateBlog$Mutation$BlogType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(this);
@@ -19409,6 +19943,7 @@ class UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -19457,6 +19992,7 @@ class UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -19489,6 +20025,7 @@ class UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -19551,6 +20088,7 @@ class UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -19585,6 +20123,7 @@ class UpdateBlog$Mutation$BlogType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(this);
@@ -19616,6 +20155,7 @@ class UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -19664,6 +20204,7 @@ class UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(this);
@@ -19695,6 +20236,7 @@ class UpdateBlog$Mutation$BlogType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(this);
@@ -19752,6 +20294,7 @@ class UpdateBlog$Mutation$BlogType$UserType$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserType$StateTypeToJson(this);
@@ -19897,6 +20440,7 @@ class UpdateBlog$Mutation$BlogType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$UserTypeToJson(this);
@@ -19917,6 +20461,7 @@ class UpdateBlog$Mutation$BlogType$SeoComponentType$TagType
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$SeoComponentType$TagTypeToJson(this);
@@ -19939,6 +20484,7 @@ class UpdateBlog$Mutation$BlogType$SeoComponentType extends JsonSerializable
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$SeoComponentTypeToJson(this);
@@ -19969,6 +20515,7 @@ class UpdateBlog$Mutation$BlogType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$PictureTypeToJson(this);
@@ -19999,6 +20546,7 @@ class UpdateBlog$Mutation$BlogType$BlogDataType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(this);
@@ -20024,6 +20572,7 @@ class UpdateBlog$Mutation$BlogType$BlogDataType extends JsonSerializable
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBlog$Mutation$BlogType$BlogDataTypeToJson(this);
@@ -20073,6 +20622,7 @@ class UpdateBlog$Mutation$BlogType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBlog$Mutation$BlogTypeToJson(this);
 }
@@ -20088,6 +20638,7 @@ class UpdateBlog$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateBlog];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBlog$MutationToJson(this);
 }
@@ -20120,6 +20671,7 @@ class UpdateBlogInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [title, url, tags, seo, pictures, sectionData];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBlogInputToJson(this);
 }
@@ -20143,6 +20695,7 @@ class DeleteBlog$Mutation$BlogType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$PhoneTypeToJson(this);
@@ -20173,6 +20726,7 @@ class DeleteBlog$Mutation$BlogType$UserType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$PictureTypeToJson(this);
@@ -20204,6 +20758,7 @@ class DeleteBlog$Mutation$BlogType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
@@ -20238,6 +20793,7 @@ class DeleteBlog$Mutation$BlogType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$LanguageTypeToJson(this);
@@ -20269,6 +20825,7 @@ class DeleteBlog$Mutation$BlogType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
@@ -20314,6 +20871,7 @@ class DeleteBlog$Mutation$BlogType$UserType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$CountryTypeToJson(this);
@@ -20335,6 +20893,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeToJson(
@@ -20367,6 +20926,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -20415,6 +20975,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeToJson(
@@ -20447,6 +21008,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -20495,6 +21057,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -20527,6 +21090,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -20589,6 +21153,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeToJson(
@@ -20611,6 +21176,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -20634,6 +21200,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -20669,6 +21236,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressTypeToJson(this);
@@ -20700,6 +21268,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -20733,6 +21302,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -20757,6 +21327,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -20781,6 +21352,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialIma
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -20815,6 +21387,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeToJson(
@@ -20836,6 +21409,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialValueTypeToJson(this);
@@ -20855,6 +21429,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -20887,6 +21462,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -20936,6 +21512,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -20976,6 +21553,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -21005,6 +21583,7 @@ class DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(this);
@@ -21037,6 +21616,7 @@ class DeleteBlog$Mutation$BlogType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(this);
@@ -21068,6 +21648,7 @@ class DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -21116,6 +21697,7 @@ class DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -21148,6 +21730,7 @@ class DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -21210,6 +21793,7 @@ class DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
@@ -21244,6 +21828,7 @@ class DeleteBlog$Mutation$BlogType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(this);
@@ -21275,6 +21860,7 @@ class DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -21323,6 +21909,7 @@ class DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(this);
@@ -21354,6 +21941,7 @@ class DeleteBlog$Mutation$BlogType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(this);
@@ -21411,6 +21999,7 @@ class DeleteBlog$Mutation$BlogType$UserType$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserType$StateTypeToJson(this);
@@ -21556,6 +22145,7 @@ class DeleteBlog$Mutation$BlogType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$UserTypeToJson(this);
@@ -21576,6 +22166,7 @@ class DeleteBlog$Mutation$BlogType$SeoComponentType$TagType
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$SeoComponentType$TagTypeToJson(this);
@@ -21598,6 +22189,7 @@ class DeleteBlog$Mutation$BlogType$SeoComponentType extends JsonSerializable
 
   @override
   List<Object?> get props => [metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$SeoComponentTypeToJson(this);
@@ -21628,6 +22220,7 @@ class DeleteBlog$Mutation$BlogType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$PictureTypeToJson(this);
@@ -21658,6 +22251,7 @@ class DeleteBlog$Mutation$BlogType$BlogDataType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(this);
@@ -21683,6 +22277,7 @@ class DeleteBlog$Mutation$BlogType$BlogDataType extends JsonSerializable
   @override
   List<Object?> get props =>
       [sectionTitle, sectionContent, sectionReference, sectionPictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBlog$Mutation$BlogType$BlogDataTypeToJson(this);
@@ -21732,6 +22327,7 @@ class DeleteBlog$Mutation$BlogType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteBlog$Mutation$BlogTypeToJson(this);
 }
@@ -21747,6 +22343,7 @@ class DeleteBlog$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteBlog];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteBlog$MutationToJson(this);
 }
@@ -21773,6 +22370,7 @@ class GenerateEcomSitemapXml$Mutation$CorporateTemplateType
 
   @override
   List<Object?> get props => [id, name, content, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GenerateEcomSitemapXml$Mutation$CorporateTemplateTypeToJson(this);
@@ -21791,6 +22389,7 @@ class GenerateEcomSitemapXml$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [generateEcomSitemapXml];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GenerateEcomSitemapXml$MutationToJson(this);
@@ -27242,6 +27841,7 @@ class GetBlogsQuery extends GraphQLQuery<GetBlogs$Query, JsonSerializable> {
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetBlogs$Query parse(Map<String, dynamic> json) =>
       GetBlogs$Query.fromJson(json);
@@ -27259,6 +27859,7 @@ class GetPaginatedBlogsArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() => _$GetPaginatedBlogsArgumentsToJson(this);
 }
@@ -32543,6 +33144,7 @@ class GetPaginatedBlogsQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetPaginatedBlogs$Query parse(Map<String, dynamic> json) =>
       GetPaginatedBlogs$Query.fromJson(json);
@@ -32560,6 +33162,7 @@ class BlogArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$BlogArgumentsToJson(this);
 }
@@ -37800,6 +38403,7 @@ class BlogQuery extends GraphQLQuery<Blog$Query, BlogArguments> {
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   Blog$Query parse(Map<String, dynamic> json) => Blog$Query.fromJson(json);
 }
@@ -37816,6 +38420,7 @@ class FindBlogsByTargetArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() => _$FindBlogsByTargetArgumentsToJson(this);
 }
@@ -43058,6 +43663,7 @@ class FindBlogsByTargetQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindBlogsByTarget$Query parse(Map<String, dynamic> json) =>
       FindBlogsByTarget$Query.fromJson(json);
@@ -43082,6 +43688,7 @@ class FindBlogsByTargetAndUrlArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, url];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetAndUrlArgumentsToJson(this);
@@ -48339,6 +48946,7 @@ class FindBlogsByTargetAndUrlQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindBlogsByTargetAndUrl$Query parse(Map<String, dynamic> json) =>
       FindBlogsByTargetAndUrl$Query.fromJson(json);
@@ -48370,6 +48978,7 @@ class FindBlogsByTargetPaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination, searchString, target, status];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByTargetPaginatedArgumentsToJson(this);
@@ -53699,6 +54308,7 @@ class FindBlogsByTargetPaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindBlogsByTargetPaginated$Query parse(Map<String, dynamic> json) =>
       FindBlogsByTargetPaginated$Query.fromJson(json);
@@ -53716,6 +54326,7 @@ class FindBlogsByAuthorArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [author];
+
   @override
   Map<String, dynamic> toJson() => _$FindBlogsByAuthorArgumentsToJson(this);
 }
@@ -58958,6 +59569,7 @@ class FindBlogsByAuthorQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindBlogsByAuthor$Query parse(Map<String, dynamic> json) =>
       FindBlogsByAuthor$Query.fromJson(json);
@@ -58982,6 +59594,7 @@ class FindBlogsByAuthorPaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [author, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBlogsByAuthorPaginatedArgumentsToJson(this);
@@ -64282,6 +64895,7 @@ class FindBlogsByAuthorPaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindBlogsByAuthorPaginated$Query parse(Map<String, dynamic> json) =>
       FindBlogsByAuthorPaginated$Query.fromJson(json);
@@ -64304,6 +64918,7 @@ class SearchBlogsArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [searchString, pagination];
+
   @override
   Map<String, dynamic> toJson() => _$SearchBlogsArgumentsToJson(this);
 }
@@ -69600,6 +70215,7 @@ class SearchBlogsQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SearchBlogs$Query parse(Map<String, dynamic> json) =>
       SearchBlogs$Query.fromJson(json);
@@ -69617,6 +70233,7 @@ class CreateBlogArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBlogArgumentsToJson(this);
 }
@@ -74858,6 +75475,7 @@ class CreateBlogMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateBlog$Mutation parse(Map<String, dynamic> json) =>
       CreateBlog$Mutation.fromJson(json);
@@ -74875,6 +75493,7 @@ class PublishBlogArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$PublishBlogArgumentsToJson(this);
 }
@@ -80116,6 +80735,7 @@ class PublishBlogMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   PublishBlog$Mutation parse(Map<String, dynamic> json) =>
       PublishBlog$Mutation.fromJson(json);
@@ -80138,6 +80758,7 @@ class UpdateBlogArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBlogArgumentsToJson(this);
 }
@@ -85392,6 +86013,7 @@ class UpdateBlogMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateBlog$Mutation parse(Map<String, dynamic> json) =>
       UpdateBlog$Mutation.fromJson(json);
@@ -85409,6 +86031,7 @@ class DeleteBlogArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteBlogArgumentsToJson(this);
 }
@@ -90650,6 +91273,7 @@ class DeleteBlogMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteBlog$Mutation parse(Map<String, dynamic> json) =>
       DeleteBlog$Mutation.fromJson(json);
@@ -90668,6 +91292,7 @@ class GenerateEcomSitemapXmlArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GenerateEcomSitemapXmlArgumentsToJson(this);
@@ -90760,6 +91385,7 @@ class GenerateEcomSitemapXmlMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GenerateEcomSitemapXml$Mutation parse(Map<String, dynamic> json) =>
       GenerateEcomSitemapXml$Mutation.fromJson(json);

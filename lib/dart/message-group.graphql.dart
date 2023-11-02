@@ -26,6 +26,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$UserType$PhoneTypeToJson(
@@ -58,6 +59,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$UserType$PictureTypeToJson(
@@ -96,6 +98,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$UserTypeToJson(
@@ -128,6 +131,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$PictureTypeToJson(
@@ -160,6 +164,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -185,6 +190,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -211,6 +217,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -243,6 +250,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -281,6 +289,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserTypeToJson(
@@ -302,6 +311,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$MembersTypeToJson(
@@ -334,6 +344,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -358,6 +369,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -380,6 +392,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -402,6 +415,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -451,6 +465,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$LastMessageTypeToJson(
@@ -519,6 +534,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupTypeToJson(
@@ -544,6 +560,7 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateTypeToJson(this);
@@ -563,6 +580,7 @@ class GetMessageGroupsPagination$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getMessageGroupsPagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPagination$QueryToJson(this);
@@ -584,6 +602,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -607,6 +626,7 @@ class GetMessageGroup$Query$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$UserType$PhoneTypeToJson(this);
@@ -638,6 +658,7 @@ class GetMessageGroup$Query$MessageGroupType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$UserType$PictureTypeToJson(this);
@@ -672,6 +693,7 @@ class GetMessageGroup$Query$MessageGroupType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$UserTypeToJson(this);
@@ -702,6 +724,7 @@ class GetMessageGroup$Query$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$PictureTypeToJson(this);
@@ -733,6 +756,7 @@ class GetMessageGroup$Query$MessageGroupType$MessageGroupWallpaperType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -758,6 +782,7 @@ class GetMessageGroup$Query$MessageGroupType$MessageGroupWallpaperType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -784,6 +809,7 @@ class GetMessageGroup$Query$MessageGroupType$MembersType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -816,6 +842,7 @@ class GetMessageGroup$Query$MessageGroupType$MembersType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -853,6 +880,7 @@ class GetMessageGroup$Query$MessageGroupType$MembersType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$MembersType$UserTypeToJson(this);
@@ -871,6 +899,7 @@ class GetMessageGroup$Query$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$MembersTypeToJson(this);
@@ -902,6 +931,7 @@ class GetMessageGroup$Query$MessageGroupType$LastMessageType$MessageMediaType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -926,6 +956,7 @@ class GetMessageGroup$Query$MessageGroupType$LastMessageType$MessageMediaType
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -948,6 +979,7 @@ class GetMessageGroup$Query$MessageGroupType$LastMessageType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -970,6 +1002,7 @@ class GetMessageGroup$Query$MessageGroupType$LastMessageType$CustomMessageType
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -1017,6 +1050,7 @@ class GetMessageGroup$Query$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupType$LastMessageTypeToJson(this);
@@ -1078,6 +1112,7 @@ class GetMessageGroup$Query$MessageGroupType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroup$Query$MessageGroupTypeToJson(this);
@@ -1094,6 +1129,7 @@ class GetMessageGroup$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getMessageGroup];
+
   @override
   Map<String, dynamic> toJson() => _$GetMessageGroup$QueryToJson(this);
 }
@@ -1118,6 +1154,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$UserType$PhoneTypeToJson(
@@ -1150,6 +1187,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$UserType$PictureTypeToJson(
@@ -1185,6 +1223,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$UserTypeToJson(this);
@@ -1216,6 +1255,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$PictureTypeToJson(this);
@@ -1247,6 +1287,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$MessageGroupWallpaperType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -1272,6 +1313,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$MessageGroupWallpaperType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -1298,6 +1340,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$MembersType$UserType$PhoneT
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -1330,6 +1373,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$MembersType$UserType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -1368,6 +1412,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$MembersType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$MembersType$UserTypeToJson(
@@ -1389,6 +1434,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$MembersTypeToJson(this);
@@ -1420,6 +1466,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$LastMessageType$MessageMedi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -1444,6 +1491,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$LastMessageType$MessageMedi
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -1466,6 +1514,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$LastMessageType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -1488,6 +1537,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$LastMessageType$CustomMessa
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -1537,6 +1587,7 @@ class GetMessageGroupByMember$Query$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupType$LastMessageTypeToJson(
@@ -1600,6 +1651,7 @@ class GetMessageGroupByMember$Query$MessageGroupType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMember$Query$MessageGroupTypeToJson(this);
@@ -1617,6 +1669,7 @@ class GetMessageGroupByMember$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getMessageGroupByMember];
+
   @override
   Map<String, dynamic> toJson() => _$GetMessageGroupByMember$QueryToJson(this);
 }
@@ -1641,6 +1694,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserType$PhoneTypeToJson(
@@ -1673,6 +1727,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserType$PictureTypeToJson(
@@ -1711,6 +1766,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserTyp
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserTypeToJson(
@@ -1743,6 +1799,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$PictureTypeToJson(
@@ -1775,6 +1832,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$Message
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -1800,6 +1858,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$Message
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -1826,6 +1885,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$Members
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -1858,6 +1918,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$Members
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -1896,6 +1957,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$Members
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserTypeToJson(
@@ -1917,6 +1979,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$Members
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersTypeToJson(
@@ -1949,6 +2012,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMes
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -1973,6 +2037,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMes
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -1995,6 +2060,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMes
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -2017,6 +2083,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMes
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -2066,6 +2133,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMes
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageTypeToJson(
@@ -2134,6 +2202,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupTypeToJson(
@@ -2158,6 +2227,7 @@ class SearchMessageGroup$Query$MessageGroupPaginateType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchMessageGroup$Query$MessageGroupPaginateTypeToJson(this);
@@ -2174,6 +2244,7 @@ class SearchMessageGroup$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [searchMessageGroup];
+
   @override
   Map<String, dynamic> toJson() => _$SearchMessageGroup$QueryToJson(this);
 }
@@ -2198,6 +2269,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserType$PhoneTypeToJson(
@@ -2230,6 +2302,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserType$PictureTypeToJson(
@@ -2268,6 +2341,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserTypeToJson(
@@ -2300,6 +2374,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$PictureTypeToJson(
@@ -2332,6 +2407,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -2357,6 +2433,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -2383,6 +2460,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -2415,6 +2493,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -2453,6 +2532,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserTypeToJson(
@@ -2474,6 +2554,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersTypeToJson(
@@ -2506,6 +2587,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -2530,6 +2612,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -2552,6 +2635,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -2574,6 +2658,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -2623,6 +2708,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageTypeToJson(
@@ -2691,6 +2777,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupTypeToJson(
@@ -2716,6 +2803,7 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateTypeToJson(this);
@@ -2735,6 +2823,7 @@ class SearchInternalMessageGroup$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [searchInternalMessageGroup];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroup$QueryToJson(this);
@@ -2762,6 +2851,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -2786,6 +2876,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserType$PhoneTypeToJson(
@@ -2818,6 +2909,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserType$PictureTypeToJson(
@@ -2856,6 +2948,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$UserTypeToJson(
@@ -2888,6 +2981,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$PictureTypeToJson(
@@ -2920,6 +3014,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -2945,6 +3040,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -2971,6 +3067,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -3003,6 +3100,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -3041,6 +3139,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersType$UserTypeToJson(
@@ -3062,6 +3161,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$MembersTypeToJson(
@@ -3094,6 +3194,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -3118,6 +3219,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -3140,6 +3242,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -3162,6 +3265,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -3211,6 +3315,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageTypeToJson(
@@ -3279,6 +3384,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupTypeToJson(
@@ -3304,6 +3410,7 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateTypeToJson(this);
@@ -3322,6 +3429,7 @@ class SearchSupportMessageGroup$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [searchSupportMessageGroup];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroup$QueryToJson(this);
@@ -3347,6 +3455,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PhoneTypeToJson(
@@ -3379,6 +3488,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PictureTypeToJson(
@@ -3411,6 +3521,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$LanguageType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$LanguageType$PictureTypeToJson(
@@ -3448,6 +3559,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$LanguageTypeToJson(
@@ -3480,6 +3592,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$CountryType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$CountryType$PictureTypeToJson(
@@ -3528,6 +3641,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$CountryTypeToJson(
@@ -3550,6 +3664,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Lon
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$LonLatTypeToJson(
@@ -3582,6 +3697,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Cou
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3630,6 +3746,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Cou
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$CountryTypeToJson(
@@ -3662,6 +3779,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Sta
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3710,6 +3828,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Sta
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -3742,6 +3861,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Sta
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -3804,6 +3924,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Sta
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$StateTypeToJson(
@@ -3826,6 +3947,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Ful
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3849,6 +3971,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Ful
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3888,6 +4011,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressTypeToJson(
@@ -3920,6 +4044,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType$Soc
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -3953,6 +4078,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType$Soc
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -3977,6 +4103,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType$Soc
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -4001,6 +4128,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType$Soc
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -4035,6 +4163,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType$Soc
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType$SocialTypeToJson(
@@ -4058,6 +4187,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialValueTypeToJson(
@@ -4078,6 +4208,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -4110,6 +4241,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -4159,6 +4291,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialLoginDataType
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -4199,6 +4332,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialLoginDataType
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -4229,6 +4363,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$SocialLoginDataTypeToJson(
@@ -4263,6 +4398,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$UserEducationTypeToJson(
@@ -4295,6 +4431,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType$StateT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -4343,6 +4480,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType$StateT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -4375,6 +4513,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType$StateT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -4437,6 +4576,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType$StateT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType$StateTypeToJson(
@@ -4473,6 +4613,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkTypeToJson(
@@ -4505,6 +4646,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$StateType$CountryTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -4553,6 +4695,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$StateType$CountryTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$StateType$CountryTypeToJson(
@@ -4585,6 +4728,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$StateType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$StateType$PictureTypeToJson(
@@ -4647,6 +4791,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$StateTypeToJson(
@@ -4803,6 +4948,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateType$UserTypeToJson(this);
@@ -4825,6 +4971,7 @@ class GetMessageGroupMembers$Query$UserPaginateType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembers$Query$UserPaginateTypeToJson(this);
@@ -4842,6 +4989,7 @@ class GetMessageGroupMembers$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getMessageGroupMembers];
+
   @override
   Map<String, dynamic> toJson() => _$GetMessageGroupMembers$QueryToJson(this);
 }
@@ -4866,6 +5014,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$UserType$PhoneTypeToJson(
@@ -4898,6 +5047,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$UserType$PictureTypeToJson(
@@ -4933,6 +5083,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$UserTypeToJson(this);
@@ -4963,6 +5114,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$PictureTypeToJson(this);
@@ -4994,6 +5146,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$MessageGroupWallpaperType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -5019,6 +5172,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$MessageGroupWallpaperType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -5045,6 +5199,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$MembersType$UserType$PhoneTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -5077,6 +5232,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$MembersType$UserType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -5115,6 +5271,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$MembersType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$MembersType$UserTypeToJson(
@@ -5135,6 +5292,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$MembersTypeToJson(this);
@@ -5166,6 +5324,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$LastMessageType$MessageMediaT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -5190,6 +5349,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$LastMessageType$MessageMediaT
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -5212,6 +5372,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$LastMessageType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -5234,6 +5395,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$LastMessageType$CustomMessage
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -5283,6 +5445,7 @@ class GetDirectMessageGroup$Query$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupType$LastMessageTypeToJson(
@@ -5346,6 +5509,7 @@ class GetDirectMessageGroup$Query$MessageGroupType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDirectMessageGroup$Query$MessageGroupTypeToJson(this);
@@ -5362,6 +5526,7 @@ class GetDirectMessageGroup$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getDirectMessageGroup];
+
   @override
   Map<String, dynamic> toJson() => _$GetDirectMessageGroup$QueryToJson(this);
 }
@@ -5386,6 +5551,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$UserType$PhoneTypeToJson(
@@ -5418,6 +5584,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$UserType$PictureTypeToJson(
@@ -5453,6 +5620,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$UserTypeToJson(this);
@@ -5483,6 +5651,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$PictureTypeToJson(this);
@@ -5514,6 +5683,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -5539,6 +5709,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -5565,6 +5736,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -5597,6 +5769,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -5635,6 +5808,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$MembersType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$MembersType$UserTypeToJson(
@@ -5655,6 +5829,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$MembersTypeToJson(this);
@@ -5686,6 +5861,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -5710,6 +5886,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaT
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -5732,6 +5909,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -5754,6 +5932,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessage
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -5803,6 +5982,7 @@ class CreateMessageGroup$Mutation$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupType$LastMessageTypeToJson(
@@ -5866,6 +6046,7 @@ class CreateMessageGroup$Mutation$MessageGroupType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMessageGroup$Mutation$MessageGroupTypeToJson(this);
@@ -5882,6 +6063,7 @@ class CreateMessageGroup$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createMessageGroup];
+
   @override
   Map<String, dynamic> toJson() => _$CreateMessageGroup$MutationToJson(this);
 }
@@ -5940,6 +6122,7 @@ class MessageGroupInput extends JsonSerializable with EquatableMixin {
         type,
         members
       ];
+
   @override
   Map<String, dynamic> toJson() => _$MessageGroupInputToJson(this);
 }
@@ -5975,6 +6158,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -5998,6 +6182,7 @@ class MessageGroupWallpaperInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() => _$MessageGroupWallpaperInputToJson(this);
 }
@@ -6022,6 +6207,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$UserType$PhoneTypeToJson(
@@ -6054,6 +6240,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$UserType$PictureTypeToJson(
@@ -6089,6 +6276,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$UserTypeToJson(this);
@@ -6119,6 +6307,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$PictureTypeToJson(this);
@@ -6150,6 +6339,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -6175,6 +6365,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -6201,6 +6392,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTy
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -6233,6 +6425,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -6271,6 +6464,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserTypeToJson(
@@ -6291,6 +6485,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$MembersTypeToJson(this);
@@ -6322,6 +6517,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMedia
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -6346,6 +6542,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMedia
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -6368,6 +6565,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -6390,6 +6588,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessag
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -6439,6 +6638,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageTypeToJson(
@@ -6502,6 +6702,7 @@ class ArchiveMessageGroup$Mutation$MessageGroupType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ArchiveMessageGroup$Mutation$MessageGroupTypeToJson(this);
@@ -6519,6 +6720,7 @@ class ArchiveMessageGroup$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [archiveMessageGroup];
+
   @override
   Map<String, dynamic> toJson() => _$ArchiveMessageGroup$MutationToJson(this);
 }
@@ -6543,6 +6745,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PhoneTypeToJson(
@@ -6575,6 +6778,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PictureTypeToJson(
@@ -6610,6 +6814,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$UserTypeToJson(this);
@@ -6641,6 +6846,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$PictureTypeToJson(this);
@@ -6672,6 +6878,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -6697,6 +6904,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -6723,6 +6931,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$Phone
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -6755,6 +6964,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$Pictu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -6793,6 +7003,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserTypeToJson(
@@ -6814,6 +7025,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersTypeToJson(this);
@@ -6845,6 +7057,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMed
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -6869,6 +7082,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMed
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -6891,6 +7105,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -6913,6 +7128,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMess
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -6962,6 +7178,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageTypeToJson(
@@ -7025,6 +7242,7 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnarchiveMessageGroup$Mutation$MessageGroupTypeToJson(this);
@@ -7042,6 +7260,7 @@ class UnarchiveMessageGroup$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [unarchiveMessageGroup];
+
   @override
   Map<String, dynamic> toJson() => _$UnarchiveMessageGroup$MutationToJson(this);
 }
@@ -7066,6 +7285,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$UserType$PhoneTypeToJson(
@@ -7098,6 +7318,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$UserType$PictureTypeToJson(
@@ -7133,6 +7354,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$UserTypeToJson(this);
@@ -7163,6 +7385,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$PictureTypeToJson(this);
@@ -7194,6 +7417,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$Pictu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -7219,6 +7443,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -7245,6 +7470,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -7277,6 +7503,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -7315,6 +7542,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$MembersType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$MembersType$UserTypeToJson(
@@ -7334,6 +7562,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$MembersTypeToJson(this);
@@ -7365,6 +7594,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -7389,6 +7619,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTyp
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -7411,6 +7642,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -7433,6 +7665,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTy
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -7482,6 +7715,7 @@ class MuteMessageGroup$Mutation$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupType$LastMessageTypeToJson(this);
@@ -7544,6 +7778,7 @@ class MuteMessageGroup$Mutation$MessageGroupType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MuteMessageGroup$Mutation$MessageGroupTypeToJson(this);
@@ -7560,6 +7795,7 @@ class MuteMessageGroup$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [muteMessageGroup];
+
   @override
   Map<String, dynamic> toJson() => _$MuteMessageGroup$MutationToJson(this);
 }
@@ -7584,6 +7820,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$UserType$PhoneTypeToJson(
@@ -7616,6 +7853,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$UserType$PictureTypeToJson(
@@ -7651,6 +7889,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$UserTypeToJson(this);
@@ -7681,6 +7920,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$PictureTypeToJson(this);
@@ -7712,6 +7952,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -7737,6 +7978,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -7763,6 +8005,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -7795,6 +8038,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -7833,6 +8077,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$MembersType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$MembersType$UserTypeToJson(
@@ -7853,6 +8098,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$MembersTypeToJson(this);
@@ -7884,6 +8130,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -7908,6 +8155,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaT
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -7930,6 +8178,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -7952,6 +8201,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessage
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -8001,6 +8251,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageTypeToJson(
@@ -8064,6 +8315,7 @@ class UnmuteMessageGroup$Mutation$MessageGroupType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UnmuteMessageGroup$Mutation$MessageGroupTypeToJson(this);
@@ -8080,6 +8332,7 @@ class UnmuteMessageGroup$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [unmuteMessageGroup];
+
   @override
   Map<String, dynamic> toJson() => _$UnmuteMessageGroup$MutationToJson(this);
 }
@@ -8104,6 +8357,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$UserType$PhoneTypeToJson(
@@ -8136,6 +8390,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$UserType$PictureTypeToJson(
@@ -8173,6 +8428,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$UserTypeToJson(this);
@@ -8204,6 +8460,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$PictureTypeToJson(
@@ -8236,6 +8493,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -8261,6 +8519,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTy
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -8287,6 +8546,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$MembersType$UserType$Ph
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -8319,6 +8579,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$MembersType$UserType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -8357,6 +8618,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$MembersType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$MembersType$UserTypeToJson(
@@ -8378,6 +8640,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$MembersTypeToJson(
@@ -8410,6 +8673,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType$Message
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -8434,6 +8698,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType$Message
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -8456,6 +8721,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -8478,6 +8744,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomM
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -8527,6 +8794,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageTypeToJson(
@@ -8592,6 +8860,7 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$Mutation$MessageGroupTypeToJson(this);
@@ -8611,6 +8880,7 @@ class AddMemeberToMessageGroup$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [addMemeberToMessageGroup];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroup$MutationToJson(this);
@@ -8636,6 +8906,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$UserType$PhoneTypeToJson(
@@ -8668,6 +8939,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$UserType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$UserType$PictureTypeToJson(
@@ -8706,6 +8978,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$UserTypeToJson(
@@ -8738,6 +9011,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$PictureTypeToJson(
@@ -8770,6 +9044,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MessageGroupWallpap
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -8795,6 +9070,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MessageGroupWallpap
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -8821,6 +9097,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MembersType$UserTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -8853,6 +9130,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MembersType$UserTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -8891,6 +9169,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MembersType$UserTyp
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MembersType$UserTypeToJson(
@@ -8912,6 +9191,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$MembersTypeToJson(
@@ -8944,6 +9224,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType$Mes
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -8968,6 +9249,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType$Mes
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -8990,6 +9272,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType$Lon
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -9012,6 +9295,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType$Cus
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -9061,6 +9345,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageTypeToJson(
@@ -9126,6 +9411,7 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupTypeToJson(this);
@@ -9145,6 +9431,7 @@ class RemoveMemberFromMessageGroup$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [removeMemberFromMessageGroup];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroup$MutationToJson(this);
@@ -9170,6 +9457,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$UserType$PhoneTypeToJson(
@@ -9202,6 +9490,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$UserType$PictureTypeToJson(
@@ -9237,6 +9526,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$UserTypeToJson(this);
@@ -9267,6 +9557,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$PictureTypeToJson(this);
@@ -9298,6 +9589,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
@@ -9323,6 +9615,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType
 
   @override
   List<Object?> get props => [picture, gradientColors, assetImage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTypeToJson(
@@ -9349,6 +9642,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
@@ -9381,6 +9675,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTypeToJson(
@@ -9419,6 +9714,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$MembersType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$MembersType$UserTypeToJson(
@@ -9439,6 +9735,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$MembersType
 
   @override
   List<Object?> get props => [users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$MembersTypeToJson(this);
@@ -9470,6 +9767,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
@@ -9494,6 +9792,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaT
 
   @override
   List<Object?> get props => [video, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
@@ -9516,6 +9815,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeToJson(
@@ -9538,6 +9838,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessage
 
   @override
   List<Object?> get props => [id, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
@@ -9587,6 +9888,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupType$LastMessageTypeToJson(
@@ -9650,6 +9952,7 @@ class UpdateMessageGroup$Mutation$MessageGroupType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateMessageGroup$Mutation$MessageGroupTypeToJson(this);
@@ -9666,6 +9969,7 @@ class UpdateMessageGroup$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateMessageGroup];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateMessageGroup$MutationToJson(this);
 }
@@ -9704,6 +10008,7 @@ class MessageGroupUpdateInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [name, creator, profilePicture, wallpaper, sound, type, id];
+
   @override
   Map<String, dynamic> toJson() => _$MessageGroupUpdateInputToJson(this);
 }
@@ -9953,6 +10258,7 @@ class GetMessageGroupsPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupsPaginationArgumentsToJson(this);
@@ -10741,6 +11047,7 @@ class GetMessageGroupsPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetMessageGroupsPagination$Query parse(Map<String, dynamic> json) =>
       GetMessageGroupsPagination$Query.fromJson(json);
@@ -10758,6 +11065,7 @@ class GetMessageGroupArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$GetMessageGroupArgumentsToJson(this);
 }
@@ -11521,6 +11829,7 @@ class GetMessageGroupQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetMessageGroup$Query parse(Map<String, dynamic> json) =>
       GetMessageGroup$Query.fromJson(json);
@@ -11540,6 +11849,7 @@ class GetMessageGroupByMemberArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [memberId];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupByMemberArgumentsToJson(this);
@@ -12306,6 +12616,7 @@ class GetMessageGroupByMemberQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetMessageGroupByMember$Query parse(Map<String, dynamic> json) =>
       GetMessageGroupByMember$Query.fromJson(json);
@@ -12336,6 +12647,7 @@ class SearchMessageGroupArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [searchString, pagination, status, type];
+
   @override
   Map<String, dynamic> toJson() => _$SearchMessageGroupArgumentsToJson(this);
 }
@@ -13161,6 +13473,7 @@ class SearchMessageGroupQuery extends GraphQLQuery<SearchMessageGroup$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SearchMessageGroup$Query parse(Map<String, dynamic> json) =>
       SearchMessageGroup$Query.fromJson(json);
@@ -13192,6 +13505,7 @@ class SearchInternalMessageGroupArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [searchString, pagination, status, target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchInternalMessageGroupArgumentsToJson(this);
@@ -14019,6 +14333,7 @@ class SearchInternalMessageGroupQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SearchInternalMessageGroup$Query parse(Map<String, dynamic> json) =>
       SearchInternalMessageGroup$Query.fromJson(json);
@@ -14050,6 +14365,7 @@ class SearchSupportMessageGroupArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [searchString, pagination, status, target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSupportMessageGroupArgumentsToJson(this);
@@ -14877,6 +15193,7 @@ class SearchSupportMessageGroupQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SearchSupportMessageGroup$Query parse(Map<String, dynamic> json) =>
       SearchSupportMessageGroup$Query.fromJson(json);
@@ -14900,6 +15217,7 @@ class GetMessageGroupMembersArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMessageGroupMembersArgumentsToJson(this);
@@ -19935,6 +20253,7 @@ class GetMessageGroupMembersQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetMessageGroupMembers$Query parse(Map<String, dynamic> json) =>
       GetMessageGroupMembers$Query.fromJson(json);
@@ -19958,6 +20277,7 @@ class GetDirectMessageGroupArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [receiverId, target];
+
   @override
   Map<String, dynamic> toJson() => _$GetDirectMessageGroupArgumentsToJson(this);
 }
@@ -20736,6 +21056,7 @@ class GetDirectMessageGroupQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetDirectMessageGroup$Query parse(Map<String, dynamic> json) =>
       GetDirectMessageGroup$Query.fromJson(json);
@@ -20753,6 +21074,7 @@ class CreateMessageGroupArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateMessageGroupArgumentsToJson(this);
 }
@@ -21518,6 +21840,7 @@ class CreateMessageGroupMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateMessageGroup$Mutation parse(Map<String, dynamic> json) =>
       CreateMessageGroup$Mutation.fromJson(json);
@@ -21536,6 +21859,7 @@ class ArchiveMessageGroupArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$ArchiveMessageGroupArgumentsToJson(this);
 }
@@ -22301,6 +22625,7 @@ class ArchiveMessageGroupMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   ArchiveMessageGroup$Mutation parse(Map<String, dynamic> json) =>
       ArchiveMessageGroup$Mutation.fromJson(json);
@@ -22319,6 +22644,7 @@ class UnarchiveMessageGroupArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$UnarchiveMessageGroupArgumentsToJson(this);
 }
@@ -23084,6 +23410,7 @@ class UnarchiveMessageGroupMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UnarchiveMessageGroup$Mutation parse(Map<String, dynamic> json) =>
       UnarchiveMessageGroup$Mutation.fromJson(json);
@@ -23101,6 +23428,7 @@ class MuteMessageGroupArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$MuteMessageGroupArgumentsToJson(this);
 }
@@ -23865,6 +24193,7 @@ class MuteMessageGroupMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   MuteMessageGroup$Mutation parse(Map<String, dynamic> json) =>
       MuteMessageGroup$Mutation.fromJson(json);
@@ -23882,6 +24211,7 @@ class UnmuteMessageGroupArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$UnmuteMessageGroupArgumentsToJson(this);
 }
@@ -24647,6 +24977,7 @@ class UnmuteMessageGroupMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UnmuteMessageGroup$Mutation parse(Map<String, dynamic> json) =>
       UnmuteMessageGroup$Mutation.fromJson(json);
@@ -24671,6 +25002,7 @@ class AddMemeberToMessageGroupArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id, user];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddMemeberToMessageGroupArgumentsToJson(this);
@@ -25454,6 +25786,7 @@ class AddMemeberToMessageGroupMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   AddMemeberToMessageGroup$Mutation parse(Map<String, dynamic> json) =>
       AddMemeberToMessageGroup$Mutation.fromJson(json);
@@ -25478,6 +25811,7 @@ class RemoveMemberFromMessageGroupArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id, user];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveMemberFromMessageGroupArgumentsToJson(this);
@@ -26263,6 +26597,7 @@ class RemoveMemberFromMessageGroupMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   RemoveMemberFromMessageGroup$Mutation parse(Map<String, dynamic> json) =>
       RemoveMemberFromMessageGroup$Mutation.fromJson(json);
@@ -26280,6 +26615,7 @@ class UpdateMessageGroupArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateMessageGroupArgumentsToJson(this);
 }
@@ -27045,6 +27381,7 @@ class UpdateMessageGroupMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateMessageGroup$Mutation parse(Map<String, dynamic> json) =>
       UpdateMessageGroup$Mutation.fromJson(json);

@@ -22,6 +22,7 @@ class GetEcommerceAnalyticsStats$Query$SalesAnalyticsStatsType$AnalyticsStatsInf
 
   @override
   List<Object?> get props => [value, percentage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceAnalyticsStats$Query$SalesAnalyticsStatsType$AnalyticsStatsInfoTypeToJson(
@@ -51,6 +52,7 @@ class GetEcommerceAnalyticsStats$Query$SalesAnalyticsStatsType
 
   @override
   List<Object?> get props => [totalEarnings, orders, customers, balance];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceAnalyticsStats$Query$SalesAnalyticsStatsTypeToJson(this);
@@ -70,6 +72,7 @@ class GetEcommerceAnalyticsStats$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getEcommerceAnalyticsStats];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceAnalyticsStats$QueryToJson(this);
@@ -94,6 +97,7 @@ class AnalyticsDashboardInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [to, from, target];
+
   @override
   Map<String, dynamic> toJson() => _$AnalyticsDashboardInputToJson(this);
 }
@@ -120,6 +124,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -142,6 +147,7 @@ class GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType$SalesAn
 
   @override
   List<Object?> get props => [orders, earnings, refunds];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType$SalesAnalyticsRevenueStatsChartTypeToJson(
@@ -171,6 +177,7 @@ class GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType
 
   @override
   List<Object?> get props => [orders, earnings, refunds, conversions, chart];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsTypeToJson(
@@ -191,6 +198,7 @@ class GetEcommerceRevenueChartStats$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getEcommerceRevenueChartStats];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceRevenueChartStats$QueryToJson(this);
@@ -212,6 +220,7 @@ class GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$Analyti
 
   @override
   List<Object?> get props => [lat, lng];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationTypeToJson(
@@ -235,6 +244,7 @@ class GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$Analyti
 
   @override
   List<Object?> get props => [coordination, radius];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersTypeToJson(
@@ -267,6 +277,7 @@ class GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAn
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryType$PictureTypeToJson(
@@ -315,6 +326,7 @@ class GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAn
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryTypeToJson(
@@ -338,6 +350,7 @@ class GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAn
 
   @override
   List<Object?> get props => [country, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsTypeToJson(
@@ -362,6 +375,7 @@ class GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType
 
   @override
   List<Object?> get props => [layers, segments];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryTypeToJson(
@@ -382,6 +396,7 @@ class GetEcommerceSalesByLocation$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getEcommerceSalesByLocation];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceSalesByLocation$QueryToJson(this);
@@ -403,6 +418,7 @@ class GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategor
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -430,6 +446,7 @@ class GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategor
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -462,6 +479,7 @@ class GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategor
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$PictureTypeToJson(
@@ -532,6 +550,7 @@ class GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategor
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryTypeToJson(
@@ -555,6 +574,7 @@ class GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategor
 
   @override
   List<Object?> get props => [category, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesTypeToJson(
@@ -576,6 +596,7 @@ class GetEcommerceTopCatalogueCategories$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getEcommerceTopCatalogueCategories];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceTopCatalogueCategories$QueryToJson(this);
@@ -608,6 +629,7 @@ class GetEcommerceAnalyticsStatsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceAnalyticsStatsArgumentsToJson(this);
@@ -753,6 +775,7 @@ class GetEcommerceAnalyticsStatsQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetEcommerceAnalyticsStats$Query parse(Map<String, dynamic> json) =>
       GetEcommerceAnalyticsStats$Query.fromJson(json);
@@ -772,6 +795,7 @@ class GetEcommerceRevenueChartStatsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceRevenueChartStatsArgumentsToJson(this);
@@ -889,6 +913,7 @@ class GetEcommerceRevenueChartStatsQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetEcommerceRevenueChartStats$Query parse(Map<String, dynamic> json) =>
       GetEcommerceRevenueChartStats$Query.fromJson(json);
@@ -908,6 +933,7 @@ class GetEcommerceSalesByLocationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceSalesByLocationArgumentsToJson(this);
@@ -1189,6 +1215,7 @@ class GetEcommerceSalesByLocationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetEcommerceSalesByLocation$Query parse(Map<String, dynamic> json) =>
       GetEcommerceSalesByLocation$Query.fromJson(json);
@@ -1208,6 +1235,7 @@ class GetEcommerceTopCatalogueCategoriesArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetEcommerceTopCatalogueCategoriesArgumentsToJson(this);
@@ -1489,6 +1517,7 @@ class GetEcommerceTopCatalogueCategoriesQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetEcommerceTopCatalogueCategories$Query parse(Map<String, dynamic> json) =>
       GetEcommerceTopCatalogueCategories$Query.fromJson(json);

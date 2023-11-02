@@ -22,6 +22,7 @@ class GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType
 
   @override
   List<Object?> get props => [value, percentage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoTypeToJson(
@@ -48,6 +49,7 @@ class GetAnalyticsStats$Query$AnalyticsStatsType extends JsonSerializable
 
   @override
   List<Object?> get props => [users, sessions, visitDuration, bounceRate];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsStats$Query$AnalyticsStatsTypeToJson(this);
@@ -64,6 +66,7 @@ class GetAnalyticsStats$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getAnalyticsStats];
+
   @override
   Map<String, dynamic> toJson() => _$GetAnalyticsStats$QueryToJson(this);
 }
@@ -87,6 +90,7 @@ class AnalyticsDashboardInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [to, from, target];
+
   @override
   Map<String, dynamic> toJson() => _$AnalyticsDashboardInputToJson(this);
 }
@@ -113,6 +117,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -133,6 +138,7 @@ class GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsers
 
   @override
   List<Object?> get props => [lat, lng];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationTypeToJson(
@@ -156,6 +162,7 @@ class GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsers
 
   @override
   List<Object?> get props => [coordination, radius];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersTypeToJson(
@@ -180,6 +187,7 @@ class GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsers
 
   @override
   List<Object?> get props => [duration, sessions, views];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountrySegmentsTypeToJson(
@@ -204,6 +212,7 @@ class GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType
 
   @override
   List<Object?> get props => [layers, segments];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryTypeToJson(this);
@@ -222,6 +231,7 @@ class GetAnalyticsUserByCountry$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAnalyticsUserByCountry];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsUserByCountry$QueryToJson(this);
@@ -253,6 +263,7 @@ class GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$Cou
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryType$PictureTypeToJson(
@@ -301,6 +312,7 @@ class GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$Cou
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryTypeToJson(
@@ -326,6 +338,7 @@ class GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType
 
   @override
   List<Object?> get props => [country, value, color];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesTypeToJson(
@@ -347,6 +360,7 @@ class GetAnalyticsSessionsByCountries$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAnalyticsSessionsByCountries];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsSessionsByCountries$QueryToJson(this);
@@ -368,6 +382,7 @@ class GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsRa
 
   @override
   List<Object?> get props => [rate, compare];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsRateCompareTypeToJson(
@@ -390,6 +405,7 @@ class GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsAu
 
   @override
   List<Object?> get props => [last, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsAudienceMetricsChartTypeToJson(
@@ -420,6 +436,7 @@ class GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType
 
   @override
   List<Object?> get props => [avgSession, conversion, duration, chart];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsTypeToJson(
@@ -440,6 +457,7 @@ class GetAnalyticsAudienceMetrics$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAnalyticsAudienceMetrics];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsAudienceMetrics$QueryToJson(this);
@@ -461,6 +479,7 @@ class GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCou
 
   @override
   List<Object?> get props => [week, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryType$AnalyticsAudienceSessionsByCountryChartDataTypeToJson(
@@ -485,6 +504,7 @@ class GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCou
 
   @override
   List<Object?> get props => [day, data];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryTypeToJson(
@@ -506,6 +526,7 @@ class GetAnalyticsAudienceSessionsByCountry$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAnalyticsAudienceSessionsByCountry];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsAudienceSessionsByCountry$QueryToJson(this);
@@ -527,6 +548,7 @@ class GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersB
 
   @override
   List<Object?> get props => [value, compare];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceTypeToJson(
@@ -554,6 +576,7 @@ class GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType
 
   @override
   List<Object?> get props => [desktop, mobile, tablet];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceTypeToJson(this);
@@ -572,6 +595,7 @@ class GetAnalyticsUsersByDevice$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAnalyticsUsersByDevice];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsUsersByDevice$QueryToJson(this);
@@ -595,6 +619,7 @@ class GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$Analytics
 
   @override
   List<Object?> get props => [source, color, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentTypeToJson(
@@ -620,6 +645,7 @@ class GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType
 
   @override
   List<Object?> get props => [total, compare, segments];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesTypeToJson(
@@ -640,6 +666,7 @@ class GetAnalyticsTopReferralPages$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAnalyticsTopReferralPages];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsTopReferralPages$QueryToJson(this);
@@ -662,6 +689,7 @@ class GetAnalyticsTopPages$Query$AnalyticsTopPagesType extends JsonSerializable
 
   @override
   List<Object?> get props => [page, active, users];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsTopPages$Query$AnalyticsTopPagesTypeToJson(this);
@@ -679,6 +707,7 @@ class GetAnalyticsTopPages$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getAnalyticsTopPages];
+
   @override
   Map<String, dynamic> toJson() => _$GetAnalyticsTopPages$QueryToJson(this);
 }
@@ -714,6 +743,7 @@ class GetAnalyticsStatsArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$GetAnalyticsStatsArgumentsToJson(this);
 }
@@ -857,6 +887,7 @@ class GetAnalyticsStatsQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAnalyticsStats$Query parse(Map<String, dynamic> json) =>
       GetAnalyticsStats$Query.fromJson(json);
@@ -876,6 +907,7 @@ class GetAnalyticsUserByCountryArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsUserByCountryArgumentsToJson(this);
@@ -999,6 +1031,7 @@ class GetAnalyticsUserByCountryQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAnalyticsUserByCountry$Query parse(Map<String, dynamic> json) =>
       GetAnalyticsUserByCountry$Query.fromJson(json);
@@ -1018,6 +1051,7 @@ class GetAnalyticsSessionsByCountriesArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsSessionsByCountriesArgumentsToJson(this);
@@ -1263,6 +1297,7 @@ class GetAnalyticsSessionsByCountriesQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAnalyticsSessionsByCountries$Query parse(Map<String, dynamic> json) =>
       GetAnalyticsSessionsByCountries$Query.fromJson(json);
@@ -1282,6 +1317,7 @@ class GetAnalyticsAudienceMetricsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsAudienceMetricsArgumentsToJson(this);
@@ -1428,6 +1464,7 @@ class GetAnalyticsAudienceMetricsQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAnalyticsAudienceMetrics$Query parse(Map<String, dynamic> json) =>
       GetAnalyticsAudienceMetrics$Query.fromJson(json);
@@ -1447,6 +1484,7 @@ class GetAnalyticsAudienceSessionsByCountryArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsAudienceSessionsByCountryArgumentsToJson(this);
@@ -1536,6 +1574,7 @@ class GetAnalyticsAudienceSessionsByCountryQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAnalyticsAudienceSessionsByCountry$Query parse(
           Map<String, dynamic> json) =>
@@ -1556,6 +1595,7 @@ class GetAnalyticsUsersByDeviceArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsUsersByDeviceArgumentsToJson(this);
@@ -1679,6 +1719,7 @@ class GetAnalyticsUsersByDeviceQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAnalyticsUsersByDevice$Query parse(Map<String, dynamic> json) =>
       GetAnalyticsUsersByDevice$Query.fromJson(json);
@@ -1698,6 +1739,7 @@ class GetAnalyticsTopReferralPagesArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAnalyticsTopReferralPagesArgumentsToJson(this);
@@ -1799,6 +1841,7 @@ class GetAnalyticsTopReferralPagesQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAnalyticsTopReferralPages$Query parse(Map<String, dynamic> json) =>
       GetAnalyticsTopReferralPages$Query.fromJson(json);
@@ -1817,6 +1860,7 @@ class GetAnalyticsTopPagesArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$GetAnalyticsTopPagesArgumentsToJson(this);
 }
@@ -1894,6 +1938,7 @@ class GetAnalyticsTopPagesQuery extends GraphQLQuery<GetAnalyticsTopPages$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAnalyticsTopPages$Query parse(Map<String, dynamic> json) =>
       GetAnalyticsTopPages$Query.fromJson(json);

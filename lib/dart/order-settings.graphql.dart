@@ -22,6 +22,7 @@ class GetOrderSettingsByTarget$Query$OrderSettingsFullType$TimeFromToType
 
   @override
   List<Object?> get props => [from, to];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$TimeFromToTypeToJson(
@@ -44,6 +45,7 @@ class GetOrderSettingsByTarget$Query$OrderSettingsFullType$MonthDaysType
 
   @override
   List<Object?> get props => [month, days];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$MonthDaysTypeToJson(
@@ -114,6 +116,7 @@ class GetOrderSettingsByTarget$Query$OrderSettingsFullType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOrderSettingsByTarget$Query$OrderSettingsFullTypeToJson(this);
@@ -132,6 +135,7 @@ class GetOrderSettingsByTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getOrderSettingsByTarget];
+
   @override
   Map<String, dynamic> toJson() => _$GetOrderSettingsByTarget$QueryToJson(this);
 }
@@ -158,6 +162,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -178,6 +183,7 @@ class CreateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToType
 
   @override
   List<Object?> get props => [from, to];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToTypeToJson(
@@ -200,6 +206,7 @@ class CreateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
 
   @override
   List<Object?> get props => [month, days];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysTypeToJson(
@@ -269,6 +276,7 @@ class CreateOrderSettings$Mutation$OrderSettingsFullType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrderSettings$Mutation$OrderSettingsFullTypeToJson(this);
@@ -286,6 +294,7 @@ class CreateOrderSettings$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createOrderSettings];
+
   @override
   Map<String, dynamic> toJson() => _$CreateOrderSettings$MutationToJson(this);
 }
@@ -357,6 +366,7 @@ class OrderSettingsInput extends JsonSerializable with EquatableMixin {
         nonDeliveryDays,
         nonPickupDays
       ];
+
   @override
   Map<String, dynamic> toJson() => _$OrderSettingsInputToJson(this);
 }
@@ -377,6 +387,7 @@ class TimeFromToInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [from, to];
+
   @override
   Map<String, dynamic> toJson() => _$TimeFromToInputToJson(this);
 }
@@ -397,6 +408,7 @@ class MonthDaysInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [month, days];
+
   @override
   Map<String, dynamic> toJson() => _$MonthDaysInputToJson(this);
 }
@@ -417,6 +429,7 @@ class UpdateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToType
 
   @override
   List<Object?> get props => [from, to];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToTypeToJson(
@@ -439,6 +452,7 @@ class UpdateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
 
   @override
   List<Object?> get props => [month, days];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysTypeToJson(
@@ -508,6 +522,7 @@ class UpdateOrderSettings$Mutation$OrderSettingsFullType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateOrderSettings$Mutation$OrderSettingsFullTypeToJson(this);
@@ -525,6 +540,7 @@ class UpdateOrderSettings$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateOrderSettings];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateOrderSettings$MutationToJson(this);
 }
@@ -592,6 +608,7 @@ class OrderSettingsUpdateInput extends JsonSerializable with EquatableMixin {
         nonDeliveryDays,
         nonPickupDays
       ];
+
   @override
   Map<String, dynamic> toJson() => _$OrderSettingsUpdateInputToJson(this);
 }
@@ -610,6 +627,7 @@ class GetOrderSettingsByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOrderSettingsByTargetArgumentsToJson(this);
@@ -839,6 +857,7 @@ class GetOrderSettingsByTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetOrderSettingsByTarget$Query parse(Map<String, dynamic> json) =>
       GetOrderSettingsByTarget$Query.fromJson(json);
@@ -857,6 +876,7 @@ class CreateOrderSettingsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateOrderSettingsArgumentsToJson(this);
 }
@@ -1085,6 +1105,7 @@ class CreateOrderSettingsMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateOrderSettings$Mutation parse(Map<String, dynamic> json) =>
       CreateOrderSettings$Mutation.fromJson(json);
@@ -1108,6 +1129,7 @@ class UpdateOrderSettingsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateOrderSettingsArgumentsToJson(this);
 }
@@ -1349,6 +1371,7 @@ class UpdateOrderSettingsMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateOrderSettings$Mutation parse(Map<String, dynamic> json) =>
       UpdateOrderSettings$Mutation.fromJson(json);

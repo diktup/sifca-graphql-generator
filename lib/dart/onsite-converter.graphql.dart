@@ -30,6 +30,7 @@ class GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReput
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PictureTypeToJson(
@@ -52,6 +53,7 @@ class GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReput
 
   @override
   List<Object?> get props => [discount, description];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksTypeToJson(
@@ -74,6 +76,7 @@ class GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReput
 
   @override
   List<Object?> get props => [min, max];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalTypeToJson(
@@ -132,6 +135,7 @@ class GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReput
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationTypeToJson(
@@ -158,6 +162,7 @@ class GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReput
   @override
   List<Object?> get props =>
       [qualitativeAmount, quantitativeAmount, reputationLevel];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoTypeToJson(
@@ -185,6 +190,7 @@ class GetOnsiteConverterByTarget$Query$OnsiteConverterType
 
   @override
   List<Object?> get props => [id, remunerations, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOnsiteConverterByTarget$Query$OnsiteConverterTypeToJson(this);
@@ -204,6 +210,7 @@ class GetOnsiteConverterByTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getOnsiteConverterByTarget];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOnsiteConverterByTarget$QueryToJson(this);
@@ -231,6 +238,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -259,6 +267,7 @@ class CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PictureTypeToJson(
@@ -281,6 +290,7 @@ class CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWit
 
   @override
   List<Object?> get props => [discount, description];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksTypeToJson(
@@ -303,6 +313,7 @@ class CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWit
 
   @override
   List<Object?> get props => [min, max];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalTypeToJson(
@@ -361,6 +372,7 @@ class CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWit
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationTypeToJson(
@@ -387,6 +399,7 @@ class CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWit
   @override
   List<Object?> get props =>
       [qualitativeAmount, quantitativeAmount, reputationLevel];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoTypeToJson(
@@ -415,6 +428,7 @@ class CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType
 
   @override
   List<Object?> get props => [id, remunerations, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterTypeToJson(this);
@@ -434,6 +448,7 @@ class CreateOrUpdateOnsiteConverter$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createOrUpdateOnsiteConverter];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrUpdateOnsiteConverter$MutationToJson(this);
@@ -450,6 +465,7 @@ class OnsiteConverterInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [remunerations];
+
   @override
   Map<String, dynamic> toJson() => _$OnsiteConverterInputToJson(this);
 }
@@ -475,6 +491,7 @@ class RemunerationWithReputationInput extends JsonSerializable
   @override
   List<Object?> get props =>
       [qualitativeAmount, quantitativeAmount, reputationLevel];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemunerationWithReputationInputToJson(this);
@@ -494,6 +511,7 @@ class GetOnsiteConverterByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetOnsiteConverterByTargetArgumentsToJson(this);
@@ -760,6 +778,7 @@ class GetOnsiteConverterByTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetOnsiteConverterByTarget$Query parse(Map<String, dynamic> json) =>
       GetOnsiteConverterByTarget$Query.fromJson(json);
@@ -784,6 +803,7 @@ class CreateOrUpdateOnsiteConverterArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateOrUpdateOnsiteConverterArgumentsToJson(this);
@@ -1065,6 +1085,7 @@ class CreateOrUpdateOnsiteConverterMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateOrUpdateOnsiteConverter$Mutation parse(Map<String, dynamic> json) =>
       CreateOrUpdateOnsiteConverter$Mutation.fromJson(json);

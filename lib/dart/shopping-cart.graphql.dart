@@ -29,6 +29,7 @@ class ShoppingCart$Query$ShoppingCartType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$UserType$PictureTypeToJson(this);
@@ -61,6 +62,7 @@ class ShoppingCart$Query$ShoppingCartType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$UserTypeToJson(this);
@@ -82,6 +84,7 @@ class ShoppingCart$Query$ShoppingCartType$PriceFullType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
@@ -103,6 +106,7 @@ class ShoppingCart$Query$ShoppingCartType$PriceFullType extends JsonSerializable
 
   @override
   List<Object?> get props => [net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$PriceFullTypeToJson(this);
@@ -124,6 +128,7 @@ class ShoppingCart$Query$ShoppingCartType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$DiscountDtoTypeToJson(this);
@@ -144,6 +149,7 @@ class ShoppingCart$Query$ShoppingCartType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$ReduciblePriceTypeToJson(this);
@@ -169,6 +175,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$ProductPriceType
 
   @override
   List<Object?> get props => [unitNet, unitGross, net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
@@ -191,6 +198,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$TaxValueType
 
   @override
   List<Object?> get props => [unit, total];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$TaxValueTypeToJson(
@@ -216,6 +224,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$PriceCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
@@ -239,6 +248,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDt
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
@@ -269,6 +279,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
@@ -295,6 +306,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
@@ -317,6 +329,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPri
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -340,6 +353,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPri
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
@@ -366,6 +380,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueC
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -388,6 +403,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -413,6 +429,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [id, label, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -434,6 +451,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -464,6 +482,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -499,6 +518,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalPr
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -538,6 +558,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalPr
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -599,6 +620,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType
         productAttributesValues,
         maintenance
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeTypeToJson(
@@ -629,6 +651,7 @@ class ShoppingCart$Query$ShoppingCartType$CartProductType
 
   @override
   List<Object?> get props => [quantity, price, taxValue, priceCredit, barcode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartType$CartProductTypeToJson(this);
@@ -662,6 +685,7 @@ class ShoppingCart$Query$ShoppingCartType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, createdAt, updatedAt, user, price, discount, taxValue, products];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ShoppingCart$Query$ShoppingCartTypeToJson(this);
@@ -678,6 +702,7 @@ class ShoppingCart$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [shoppingCart];
+
   @override
   Map<String, dynamic> toJson() => _$ShoppingCart$QueryToJson(this);
 }
@@ -706,6 +731,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$UserType$PictureTypeToJson(
@@ -739,6 +765,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$UserTypeToJson(this);
@@ -760,6 +787,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType$ReduciblePrice
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
@@ -784,6 +812,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType
 
   @override
   List<Object?> get props => [net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$PriceFullTypeToJson(this);
@@ -806,6 +835,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$DiscountDtoTypeToJson(
@@ -828,6 +858,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$ReduciblePriceTypeToJson(
@@ -854,6 +885,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$ProductPrice
 
   @override
   List<Object?> get props => [unitNet, unitGross, net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
@@ -876,6 +908,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$TaxValueType
 
   @override
   List<Object?> get props => [unit, total];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$TaxValueTypeToJson(
@@ -901,6 +934,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$PriceCreditT
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
@@ -924,6 +958,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
@@ -954,6 +989,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
@@ -980,6 +1016,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
@@ -1002,6 +1039,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -1025,6 +1063,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
@@ -1051,6 +1090,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -1073,6 +1113,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -1098,6 +1139,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [id, label, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -1119,6 +1161,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -1149,6 +1192,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -1184,6 +1228,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -1223,6 +1268,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -1284,6 +1330,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType
         productAttributesValues,
         maintenance
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeTypeToJson(
@@ -1316,6 +1363,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType$CartProductType
 
   @override
   List<Object?> get props => [quantity, price, taxValue, priceCredit, barcode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductTypeToJson(
@@ -1350,6 +1398,7 @@ class FindShoppingCartByUser$Query$ShoppingCartType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, createdAt, updatedAt, user, price, discount, taxValue, products];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUser$Query$ShoppingCartTypeToJson(this);
@@ -1367,6 +1416,7 @@ class FindShoppingCartByUser$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findShoppingCartByUser];
+
   @override
   Map<String, dynamic> toJson() => _$FindShoppingCartByUser$QueryToJson(this);
 }
@@ -1387,6 +1437,7 @@ class CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType$Reduc
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
@@ -1411,6 +1462,7 @@ class CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType
 
   @override
   List<Object?> get props => [net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullTypeToJson(
@@ -1434,6 +1486,7 @@ class CalculateShoppingCart$Query$CalculatedShoppingCartType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CalculateShoppingCart$Query$CalculatedShoppingCartType$DiscountDtoTypeToJson(
@@ -1456,6 +1509,7 @@ class CalculateShoppingCart$Query$CalculatedShoppingCartType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CalculateShoppingCart$Query$CalculatedShoppingCartType$ReduciblePriceTypeToJson(
@@ -1481,6 +1535,7 @@ class CalculateShoppingCart$Query$CalculatedShoppingCartType
 
   @override
   List<Object?> get props => [price, discount, taxValue];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CalculateShoppingCart$Query$CalculatedShoppingCartTypeToJson(this);
@@ -1498,6 +1553,7 @@ class CalculateShoppingCart$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [calculateShoppingCart];
+
   @override
   Map<String, dynamic> toJson() => _$CalculateShoppingCart$QueryToJson(this);
 }
@@ -1524,6 +1580,7 @@ class CartProductInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [barcode, quantity, rent, priceCredit];
+
   @override
   Map<String, dynamic> toJson() => _$CartProductInputToJson(this);
 }
@@ -1557,6 +1614,7 @@ class RentalRefInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [location, description, status, start, end, note];
+
   @override
   Map<String, dynamic> toJson() => _$RentalRefInputToJson(this);
 }
@@ -1578,6 +1636,7 @@ class RentalNoteInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [kw$return, delivery];
+
   @override
   Map<String, dynamic> toJson() => _$RentalNoteInputToJson(this);
 }
@@ -1602,6 +1661,7 @@ class PriceCreditInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [amount, periodValue, periodCycle];
+
   @override
   Map<String, dynamic> toJson() => _$PriceCreditInputToJson(this);
 }
@@ -1626,6 +1686,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$ProductPr
 
   @override
   List<Object?> get props => [unitNet, unitGross, net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$ProductPriceTypeToJson(
@@ -1648,6 +1709,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$TaxValueT
 
   @override
   List<Object?> get props => [unit, total];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$TaxValueTypeToJson(
@@ -1673,6 +1735,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$PriceCred
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$PriceCreditTypeToJson(
@@ -1696,6 +1759,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$DiscountDtoTypeToJson(
@@ -1726,6 +1790,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaType$PictureTypeToJson(
@@ -1752,6 +1817,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaTypeToJson(
@@ -1774,6 +1840,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -1797,6 +1864,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListTypeToJson(
@@ -1823,6 +1891,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -1845,6 +1914,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -1870,6 +1940,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
 
   @override
   List<Object?> get props => [id, label, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -1891,6 +1962,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -1921,6 +1993,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -1956,6 +2029,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -1995,6 +2069,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -2056,6 +2131,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTy
         productAttributesValues,
         maintenance
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTypeToJson(
@@ -2124,6 +2200,7 @@ class ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType
         priceCredit,
         barcode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductTypeToJson(
@@ -2144,6 +2221,7 @@ class ValidateShoppingCartByCurrentUser$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [validateShoppingCartByCurrentUser];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUser$QueryToJson(this);
@@ -2165,6 +2243,7 @@ class LonLatInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() => _$LonLatInputToJson(this);
 }
@@ -2193,6 +2272,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserType$PictureTypeToJson(
@@ -2228,6 +2308,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserTypeToJson(
@@ -2250,6 +2331,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType$ReduciblePriceTypeToJson(
@@ -2274,6 +2356,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullTypeToJson(
@@ -2297,6 +2380,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$DiscountDtoTypeToJson(
@@ -2319,6 +2403,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$ReduciblePriceTypeToJson(
@@ -2345,6 +2430,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [unitNet, unitGross, net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$ProductPriceTypeToJson(
@@ -2367,6 +2453,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [unit, total];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$TaxValueTypeToJson(
@@ -2392,6 +2479,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$PriceCreditTypeToJson(
@@ -2422,6 +2510,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaType$PictureTypeToJson(
@@ -2448,6 +2537,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaTypeToJson(
@@ -2471,6 +2561,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$DiscountDtoTypeToJson(
@@ -2493,6 +2584,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListType$PriceTypeToJson(
@@ -2516,6 +2608,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListTypeToJson(
@@ -2542,6 +2635,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -2564,6 +2658,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -2600,6 +2695,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxTypeToJson(
@@ -2623,6 +2719,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesTypeToJson(
@@ -2648,6 +2745,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$BarcodePeriodCreditTypeToJson(
@@ -2674,6 +2772,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$CatalogueCategoryTypeToJson(
@@ -2694,6 +2793,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$PixelBarcodeTypeToJson(
@@ -2724,6 +2824,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -2759,6 +2860,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserTypeToJson(
@@ -2798,6 +2900,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceTypeToJson(
@@ -2818,6 +2921,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -2866,6 +2970,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -2898,6 +3003,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -2919,6 +3025,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesTypeToJson(
@@ -3000,6 +3107,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
         maintenance,
         productAttributesValues
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetTypeToJson(
@@ -3032,6 +3140,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
 
   @override
   List<Object?> get props => [quantity, price, taxValue, priceCredit, barcode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetTypeToJson(
@@ -3072,6 +3181,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$Shopping
   @override
   List<Object?> get props =>
       [id, createdAt, updatedAt, user, price, discount, taxValue, products];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetTypeToJson(
@@ -3098,6 +3208,7 @@ class FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedTypeToJson(
@@ -3117,6 +3228,7 @@ class FindTargetShoppingCarts$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findTargetShoppingCarts];
+
   @override
   Map<String, dynamic> toJson() => _$FindTargetShoppingCarts$QueryToJson(this);
 }
@@ -3143,6 +3255,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -3163,6 +3276,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -3190,6 +3304,7 @@ class AddToCart$Mutation$ShoppingCartType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$UserType$PictureTypeToJson(this);
@@ -3222,6 +3337,7 @@ class AddToCart$Mutation$ShoppingCartType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$UserTypeToJson(this);
@@ -3243,6 +3359,7 @@ class AddToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
@@ -3264,6 +3381,7 @@ class AddToCart$Mutation$ShoppingCartType$PriceFullType extends JsonSerializable
 
   @override
   List<Object?> get props => [net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$PriceFullTypeToJson(this);
@@ -3285,6 +3403,7 @@ class AddToCart$Mutation$ShoppingCartType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$DiscountDtoTypeToJson(this);
@@ -3305,6 +3424,7 @@ class AddToCart$Mutation$ShoppingCartType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$ReduciblePriceTypeToJson(this);
@@ -3330,6 +3450,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
 
   @override
   List<Object?> get props => [unitNet, unitGross, net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
@@ -3352,6 +3473,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
 
   @override
   List<Object?> get props => [unit, total];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeToJson(
@@ -3377,6 +3499,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
@@ -3400,6 +3523,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDt
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
@@ -3430,6 +3554,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
@@ -3456,6 +3581,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
@@ -3478,6 +3604,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPri
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -3501,6 +3628,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPri
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
@@ -3527,6 +3655,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueC
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -3549,6 +3678,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -3574,6 +3704,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [id, label, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -3595,6 +3726,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -3625,6 +3757,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -3660,6 +3793,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -3699,6 +3833,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -3760,6 +3895,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
         productAttributesValues,
         maintenance
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeToJson(
@@ -3790,6 +3926,7 @@ class AddToCart$Mutation$ShoppingCartType$CartProductType
 
   @override
   List<Object?> get props => [quantity, price, taxValue, priceCredit, barcode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartType$CartProductTypeToJson(this);
@@ -3823,6 +3960,7 @@ class AddToCart$Mutation$ShoppingCartType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, createdAt, updatedAt, user, price, discount, taxValue, products];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddToCart$Mutation$ShoppingCartTypeToJson(this);
@@ -3839,6 +3977,7 @@ class AddToCart$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [addToCart];
+
   @override
   Map<String, dynamic> toJson() => _$AddToCart$MutationToJson(this);
 }
@@ -3867,6 +4006,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$UserType$PictureTypeToJson(
@@ -3900,6 +4040,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$UserTypeToJson(this);
@@ -3921,6 +4062,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
@@ -3944,6 +4086,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$PriceFullType
 
   @override
   List<Object?> get props => [net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$PriceFullTypeToJson(this);
@@ -3965,6 +4108,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$DiscountDtoTypeToJson(this);
@@ -3986,6 +4130,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$ReduciblePriceTypeToJson(this);
@@ -4011,6 +4156,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
 
   @override
   List<Object?> get props => [unitNet, unitGross, net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
@@ -4033,6 +4179,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
 
   @override
   List<Object?> get props => [unit, total];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeToJson(
@@ -4058,6 +4205,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
@@ -4081,6 +4229,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Disco
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
@@ -4111,6 +4260,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Media
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
@@ -4137,6 +4287,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Media
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
@@ -4159,6 +4310,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Produ
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -4182,6 +4334,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Produ
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
@@ -4208,6 +4361,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Catal
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -4230,6 +4384,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Inter
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -4255,6 +4410,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Inter
 
   @override
   List<Object?> get props => [id, label, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -4276,6 +4432,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Inter
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -4306,6 +4463,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Inter
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -4341,6 +4499,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Inter
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -4380,6 +4539,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Inter
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -4441,6 +4601,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
         productAttributesValues,
         maintenance
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeToJson(
@@ -4471,6 +4632,7 @@ class RemoveFromCart$Mutation$ShoppingCartType$CartProductType
 
   @override
   List<Object?> get props => [quantity, price, taxValue, priceCredit, barcode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartType$CartProductTypeToJson(this);
@@ -4504,6 +4666,7 @@ class RemoveFromCart$Mutation$ShoppingCartType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, createdAt, updatedAt, user, price, discount, taxValue, products];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromCart$Mutation$ShoppingCartTypeToJson(this);
@@ -4520,6 +4683,7 @@ class RemoveFromCart$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [removeFromCart];
+
   @override
   Map<String, dynamic> toJson() => _$RemoveFromCart$MutationToJson(this);
 }
@@ -4548,6 +4712,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$UserType$PictureTypeToJson(
@@ -4581,6 +4746,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$UserTypeToJson(this);
@@ -4602,6 +4768,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTyp
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
@@ -4625,6 +4792,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType
 
   @override
   List<Object?> get props => [net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullTypeToJson(this);
@@ -4647,6 +4815,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$DiscountDtoTypeToJson(this);
@@ -4668,6 +4837,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$ReduciblePriceTypeToJson(
@@ -4694,6 +4864,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTyp
 
   @override
   List<Object?> get props => [unitNet, unitGross, net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
@@ -4716,6 +4887,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
 
   @override
   List<Object?> get props => [unit, total];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeToJson(
@@ -4741,6 +4913,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
@@ -4764,6 +4937,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Dis
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
@@ -4794,6 +4968,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Med
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
@@ -4820,6 +4995,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Med
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
@@ -4842,6 +5018,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Pro
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -4865,6 +5042,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Pro
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
@@ -4891,6 +5069,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Cat
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -4913,6 +5092,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Int
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -4938,6 +5118,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Int
 
   @override
   List<Object?> get props => [id, label, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -4959,6 +5140,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Int
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -4989,6 +5171,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Int
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -5024,6 +5207,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Int
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -5063,6 +5247,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Int
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -5124,6 +5309,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
         productAttributesValues,
         maintenance
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeToJson(
@@ -5156,6 +5342,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType
 
   @override
   List<Object?> get props => [quantity, price, taxValue, priceCredit, barcode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductTypeToJson(this);
@@ -5189,6 +5376,7 @@ class AddDiscoutToCart$Mutation$ShoppingCartType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, createdAt, updatedAt, user, price, discount, taxValue, products];
+
   @override
   Map<String, dynamic> toJson() =>
       _$AddDiscoutToCart$Mutation$ShoppingCartTypeToJson(this);
@@ -5205,6 +5393,7 @@ class AddDiscoutToCart$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [addDiscoutToCart];
+
   @override
   Map<String, dynamic> toJson() => _$AddDiscoutToCart$MutationToJson(this);
 }
@@ -5226,6 +5415,7 @@ class DiscountDtoInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [discountType, amount];
+
   @override
   Map<String, dynamic> toJson() => _$DiscountDtoInputToJson(this);
 }
@@ -5253,6 +5443,7 @@ class EmptyCart$Mutation$ShoppingCartType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$UserType$PictureTypeToJson(this);
@@ -5285,6 +5476,7 @@ class EmptyCart$Mutation$ShoppingCartType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$UserTypeToJson(this);
@@ -5306,6 +5498,7 @@ class EmptyCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
@@ -5327,6 +5520,7 @@ class EmptyCart$Mutation$ShoppingCartType$PriceFullType extends JsonSerializable
 
   @override
   List<Object?> get props => [net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$PriceFullTypeToJson(this);
@@ -5348,6 +5542,7 @@ class EmptyCart$Mutation$ShoppingCartType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$DiscountDtoTypeToJson(this);
@@ -5368,6 +5563,7 @@ class EmptyCart$Mutation$ShoppingCartType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$ReduciblePriceTypeToJson(this);
@@ -5393,6 +5589,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
 
   @override
   List<Object?> get props => [unitNet, unitGross, net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
@@ -5415,6 +5612,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
 
   @override
   List<Object?> get props => [unit, total];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeToJson(
@@ -5440,6 +5638,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
@@ -5463,6 +5662,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDt
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
@@ -5493,6 +5693,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
@@ -5519,6 +5720,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
@@ -5541,6 +5743,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPri
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -5564,6 +5767,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPri
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
@@ -5590,6 +5794,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueC
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -5612,6 +5817,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -5637,6 +5843,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [id, label, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -5658,6 +5865,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -5688,6 +5896,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -5723,6 +5932,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -5762,6 +5972,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPr
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -5823,6 +6034,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
         productAttributesValues,
         maintenance
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeToJson(
@@ -5853,6 +6065,7 @@ class EmptyCart$Mutation$ShoppingCartType$CartProductType
 
   @override
   List<Object?> get props => [quantity, price, taxValue, priceCredit, barcode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartType$CartProductTypeToJson(this);
@@ -5886,6 +6099,7 @@ class EmptyCart$Mutation$ShoppingCartType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, createdAt, updatedAt, user, price, discount, taxValue, products];
+
   @override
   Map<String, dynamic> toJson() =>
       _$EmptyCart$Mutation$ShoppingCartTypeToJson(this);
@@ -5902,6 +6116,7 @@ class EmptyCart$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [emptyCart];
+
   @override
   Map<String, dynamic> toJson() => _$EmptyCart$MutationToJson(this);
 }
@@ -5930,6 +6145,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$UserType$PictureTypeToJson(
@@ -5963,6 +6179,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$UserTypeToJson(this);
@@ -5984,6 +6201,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType$ReduciblePrice
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
@@ -6008,6 +6226,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType
 
   @override
   List<Object?> get props => [net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$PriceFullTypeToJson(this);
@@ -6030,6 +6249,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$DiscountDtoTypeToJson(
@@ -6052,6 +6272,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$ReduciblePriceType
 
   @override
   List<Object?> get props => [beforeReduction, afterReduction];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$ReduciblePriceTypeToJson(
@@ -6078,6 +6299,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$ProductPrice
 
   @override
   List<Object?> get props => [unitNet, unitGross, net, gross];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
@@ -6100,6 +6322,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$TaxValueType
 
   @override
   List<Object?> get props => [unit, total];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$TaxValueTypeToJson(
@@ -6125,6 +6348,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$PriceCreditT
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
@@ -6148,6 +6372,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
@@ -6178,6 +6403,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
@@ -6204,6 +6430,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
@@ -6226,6 +6453,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -6249,6 +6477,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
@@ -6275,6 +6504,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -6297,6 +6527,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -6322,6 +6553,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [id, label, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -6343,6 +6575,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -6373,6 +6606,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -6408,6 +6642,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -6447,6 +6682,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -6508,6 +6744,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType
         productAttributesValues,
         maintenance
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeTypeToJson(
@@ -6540,6 +6777,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType$CartProductType
 
   @override
   List<Object?> get props => [quantity, price, taxValue, priceCredit, barcode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductTypeToJson(
@@ -6574,6 +6812,7 @@ class UpdateProductCredit$Mutation$ShoppingCartType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, createdAt, updatedAt, user, price, discount, taxValue, products];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProductCredit$Mutation$ShoppingCartTypeToJson(this);
@@ -6591,6 +6830,7 @@ class UpdateProductCredit$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateProductCredit];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateProductCredit$MutationToJson(this);
 }
@@ -6618,6 +6858,7 @@ class CartProductUpdateCreditInput extends JsonSerializable
 
   @override
   List<Object?> get props => [barcode, quantity, rent, priceCredit];
+
   @override
   Map<String, dynamic> toJson() => _$CartProductUpdateCreditInputToJson(this);
 }
@@ -6735,6 +6976,7 @@ class ShoppingCartArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$ShoppingCartArgumentsToJson(this);
 }
@@ -7656,6 +7898,7 @@ class ShoppingCartQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   ShoppingCart$Query parse(Map<String, dynamic> json) =>
       ShoppingCart$Query.fromJson(json);
@@ -7674,6 +7917,7 @@ class FindShoppingCartByUserArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindShoppingCartByUserArgumentsToJson(this);
@@ -8598,6 +8842,7 @@ class FindShoppingCartByUserQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindShoppingCartByUser$Query parse(Map<String, dynamic> json) =>
       FindShoppingCartByUser$Query.fromJson(json);
@@ -8616,6 +8861,7 @@ class CalculateShoppingCartArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [products];
+
   @override
   Map<String, dynamic> toJson() => _$CalculateShoppingCartArgumentsToJson(this);
 }
@@ -8771,6 +9017,7 @@ class CalculateShoppingCartQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CalculateShoppingCart$Query parse(Map<String, dynamic> json) =>
       CalculateShoppingCart$Query.fromJson(json);
@@ -8790,6 +9037,7 @@ class ValidateShoppingCartByCurrentUserArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [location];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ValidateShoppingCartByCurrentUserArgumentsToJson(this);
@@ -9562,6 +9810,7 @@ class ValidateShoppingCartByCurrentUserQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   ValidateShoppingCartByCurrentUser$Query parse(Map<String, dynamic> json) =>
       ValidateShoppingCartByCurrentUser$Query.fromJson(json);
@@ -9589,6 +9838,7 @@ class FindTargetShoppingCartsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, pagination, searchString];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindTargetShoppingCartsArgumentsToJson(this);
@@ -10806,6 +11056,7 @@ class FindTargetShoppingCartsQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindTargetShoppingCarts$Query parse(Map<String, dynamic> json) =>
       FindTargetShoppingCarts$Query.fromJson(json);
@@ -10828,6 +11079,7 @@ class AddToCartArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [product, target];
+
   @override
   Map<String, dynamic> toJson() => _$AddToCartArgumentsToJson(this);
 }
@@ -11762,6 +12014,7 @@ class AddToCartMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   AddToCart$Mutation parse(Map<String, dynamic> json) =>
       AddToCart$Mutation.fromJson(json);
@@ -11779,6 +12032,7 @@ class RemoveFromCartArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [product];
+
   @override
   Map<String, dynamic> toJson() => _$RemoveFromCartArgumentsToJson(this);
 }
@@ -12701,6 +12955,7 @@ class RemoveFromCartMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   RemoveFromCart$Mutation parse(Map<String, dynamic> json) =>
       RemoveFromCart$Mutation.fromJson(json);
@@ -12723,6 +12978,7 @@ class AddDiscoutToCartArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$AddDiscoutToCartArgumentsToJson(this);
 }
@@ -13658,6 +13914,7 @@ class AddDiscoutToCartMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   AddDiscoutToCart$Mutation parse(Map<String, dynamic> json) =>
       AddDiscoutToCart$Mutation.fromJson(json);
@@ -14562,6 +14819,7 @@ class EmptyCartMutation
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   EmptyCart$Mutation parse(Map<String, dynamic> json) =>
       EmptyCart$Mutation.fromJson(json);
@@ -14585,6 +14843,7 @@ class UpdateProductCreditArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [productToAdd, productToRemove];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateProductCreditArgumentsToJson(this);
 }
@@ -15521,6 +15780,7 @@ class UpdateProductCreditMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateProductCredit$Mutation parse(Map<String, dynamic> json) =>
       UpdateProductCredit$Mutation.fromJson(json);

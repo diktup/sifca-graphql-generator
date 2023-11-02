@@ -28,6 +28,7 @@ class GetModuleDefinitions$Query$ModulesDefinitionType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetModuleDefinitions$Query$ModulesDefinitionTypeToJson(this);
@@ -45,6 +46,7 @@ class GetModuleDefinitions$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getModuleDefinitions];
+
   @override
   Map<String, dynamic> toJson() => _$GetModuleDefinitions$QueryToJson(this);
 }
@@ -71,6 +73,7 @@ class ModuleDefinition$Query$ModulesDefinitionType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ModuleDefinition$Query$ModulesDefinitionTypeToJson(this);
@@ -87,6 +90,7 @@ class ModuleDefinition$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [moduleDefinition];
+
   @override
   Map<String, dynamic> toJson() => _$ModuleDefinition$QueryToJson(this);
 }
@@ -113,6 +117,7 @@ class FindModuleDefinitionsByTarget$Query$ModulesDefinitionType
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindModuleDefinitionsByTarget$Query$ModulesDefinitionTypeToJson(this);
@@ -132,6 +137,7 @@ class FindModuleDefinitionsByTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findModuleDefinitionsByTarget];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindModuleDefinitionsByTarget$QueryToJson(this);
@@ -159,6 +165,7 @@ class CreateModuleDefinition$Mutation$ModulesDefinitionType
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateModuleDefinition$Mutation$ModulesDefinitionTypeToJson(this);
@@ -177,6 +184,7 @@ class CreateModuleDefinition$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createModuleDefinition];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateModuleDefinition$MutationToJson(this);
@@ -199,6 +207,7 @@ class ModulesDefinitionInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, target];
+
   @override
   Map<String, dynamic> toJson() => _$ModulesDefinitionInputToJson(this);
 }
@@ -225,6 +234,7 @@ class UpdateModuleDefinition$Mutation$ModulesDefinitionType
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateModuleDefinition$Mutation$ModulesDefinitionTypeToJson(this);
@@ -243,6 +253,7 @@ class UpdateModuleDefinition$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateModuleDefinition];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateModuleDefinition$MutationToJson(this);
@@ -270,6 +281,7 @@ class DeleteModuleDefinition$Mutation$ModulesDefinitionType
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteModuleDefinition$Mutation$ModulesDefinitionTypeToJson(this);
@@ -288,6 +300,7 @@ class DeleteModuleDefinition$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [deleteModuleDefinition];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteModuleDefinition$MutationToJson(this);
@@ -373,6 +386,7 @@ class GetModuleDefinitionsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetModuleDefinitions$Query parse(Map<String, dynamic> json) =>
       GetModuleDefinitions$Query.fromJson(json);
@@ -390,6 +404,7 @@ class ModuleDefinitionArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$ModuleDefinitionArgumentsToJson(this);
 }
@@ -479,6 +494,7 @@ class ModuleDefinitionQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   ModuleDefinition$Query parse(Map<String, dynamic> json) =>
       ModuleDefinition$Query.fromJson(json);
@@ -499,6 +515,7 @@ class FindModuleDefinitionsByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindModuleDefinitionsByTargetArgumentsToJson(this);
@@ -594,6 +611,7 @@ class FindModuleDefinitionsByTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindModuleDefinitionsByTarget$Query parse(Map<String, dynamic> json) =>
       FindModuleDefinitionsByTarget$Query.fromJson(json);
@@ -612,6 +630,7 @@ class CreateModuleDefinitionArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateModuleDefinitionArgumentsToJson(this);
@@ -704,6 +723,7 @@ class CreateModuleDefinitionMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateModuleDefinition$Mutation parse(Map<String, dynamic> json) =>
       CreateModuleDefinition$Mutation.fromJson(json);
@@ -727,6 +747,7 @@ class UpdateModuleDefinitionArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input, id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateModuleDefinitionArgumentsToJson(this);
@@ -832,6 +853,7 @@ class UpdateModuleDefinitionMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateModuleDefinition$Mutation parse(Map<String, dynamic> json) =>
       UpdateModuleDefinition$Mutation.fromJson(json);
@@ -850,6 +872,7 @@ class DeleteModuleDefinitionArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteModuleDefinitionArgumentsToJson(this);
@@ -942,6 +965,7 @@ class DeleteModuleDefinitionMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteModuleDefinition$Mutation parse(Map<String, dynamic> json) =>
       DeleteModuleDefinition$Mutation.fromJson(json);

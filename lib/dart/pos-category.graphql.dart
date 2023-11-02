@@ -30,6 +30,7 @@ class GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType$PictureTypeToJson(
@@ -62,6 +63,7 @@ class GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType
   @override
   List<Object?> get props =>
       [id, name, mapPicture, createdAt, updatedAt, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryTypeToJson(
@@ -87,6 +89,7 @@ class GetPOSCategoriesPagination$Query$POSCategoryPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPOSCategoriesPagination$Query$POSCategoryPaginateTypeToJson(this);
@@ -106,6 +109,7 @@ class GetPOSCategoriesPagination$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getPOSCategoriesPagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPOSCategoriesPagination$QueryToJson(this);
@@ -127,6 +131,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -154,6 +159,7 @@ class GetPOSCategories$Query$POSCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPOSCategories$Query$POSCategoryType$PictureTypeToJson(this);
@@ -183,6 +189,7 @@ class GetPOSCategories$Query$POSCategoryType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, mapPicture, createdAt, updatedAt, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPOSCategories$Query$POSCategoryTypeToJson(this);
@@ -199,6 +206,7 @@ class GetPOSCategories$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getPOSCategories];
+
   @override
   Map<String, dynamic> toJson() => _$GetPOSCategories$QueryToJson(this);
 }
@@ -226,6 +234,7 @@ class PosCategory$Query$POSCategoryType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PosCategory$Query$POSCategoryType$PictureTypeToJson(this);
@@ -255,6 +264,7 @@ class PosCategory$Query$POSCategoryType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, mapPicture, createdAt, updatedAt, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$PosCategory$Query$POSCategoryTypeToJson(this);
@@ -271,6 +281,7 @@ class PosCategory$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [posCategory];
+
   @override
   Map<String, dynamic> toJson() => _$PosCategory$QueryToJson(this);
 }
@@ -299,6 +310,7 @@ class SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType$PictureTypeToJson(
@@ -331,6 +343,7 @@ class SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType
   @override
   List<Object?> get props =>
       [id, name, mapPicture, createdAt, updatedAt, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryTypeToJson(
@@ -355,6 +368,7 @@ class SearchPosCategory$Query$POSCategoryPaginateType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchPosCategory$Query$POSCategoryPaginateTypeToJson(this);
@@ -371,6 +385,7 @@ class SearchPosCategory$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [searchPosCategory];
+
   @override
   Map<String, dynamic> toJson() => _$SearchPosCategory$QueryToJson(this);
 }
@@ -398,6 +413,7 @@ class CreatePOSCategory$Mutation$POSCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreatePOSCategory$Mutation$POSCategoryType$PictureTypeToJson(this);
@@ -427,6 +443,7 @@ class CreatePOSCategory$Mutation$POSCategoryType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, mapPicture, createdAt, updatedAt, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreatePOSCategory$Mutation$POSCategoryTypeToJson(this);
@@ -443,6 +460,7 @@ class CreatePOSCategory$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createPOSCategory];
+
   @override
   Map<String, dynamic> toJson() => _$CreatePOSCategory$MutationToJson(this);
 }
@@ -466,6 +484,7 @@ class POSCategoryInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, mapPicture, picture];
+
   @override
   Map<String, dynamic> toJson() => _$POSCategoryInputToJson(this);
 }
@@ -501,6 +520,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -528,6 +548,7 @@ class UpdatePOSCategory$Mutation$POSCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdatePOSCategory$Mutation$POSCategoryType$PictureTypeToJson(this);
@@ -557,6 +578,7 @@ class UpdatePOSCategory$Mutation$POSCategoryType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, mapPicture, createdAt, updatedAt, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdatePOSCategory$Mutation$POSCategoryTypeToJson(this);
@@ -573,6 +595,7 @@ class UpdatePOSCategory$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updatePOSCategory];
+
   @override
   Map<String, dynamic> toJson() => _$UpdatePOSCategory$MutationToJson(this);
 }
@@ -600,6 +623,7 @@ class DeletePOSCategory$Mutation$POSCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeletePOSCategory$Mutation$POSCategoryType$PictureTypeToJson(this);
@@ -629,6 +653,7 @@ class DeletePOSCategory$Mutation$POSCategoryType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, mapPicture, createdAt, updatedAt, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeletePOSCategory$Mutation$POSCategoryTypeToJson(this);
@@ -645,6 +670,7 @@ class DeletePOSCategory$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deletePOSCategory];
+
   @override
   Map<String, dynamic> toJson() => _$DeletePOSCategory$MutationToJson(this);
 }
@@ -663,6 +689,7 @@ class GetPOSCategoriesPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPOSCategoriesPaginationArgumentsToJson(this);
@@ -828,6 +855,7 @@ class GetPOSCategoriesPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetPOSCategoriesPagination$Query parse(Map<String, dynamic> json) =>
       GetPOSCategoriesPagination$Query.fromJson(json);
@@ -951,6 +979,7 @@ class GetPOSCategoriesQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetPOSCategories$Query parse(Map<String, dynamic> json) =>
       GetPOSCategories$Query.fromJson(json);
@@ -968,6 +997,7 @@ class PosCategoryArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$PosCategoryArgumentsToJson(this);
 }
@@ -1107,6 +1137,7 @@ class PosCategoryQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   PosCategory$Query parse(Map<String, dynamic> json) =>
       PosCategory$Query.fromJson(json);
@@ -1129,6 +1160,7 @@ class SearchPosCategoryArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pagination, searchString];
+
   @override
   Map<String, dynamic> toJson() => _$SearchPosCategoryArgumentsToJson(this);
 }
@@ -1304,6 +1336,7 @@ class SearchPosCategoryQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SearchPosCategory$Query parse(Map<String, dynamic> json) =>
       SearchPosCategory$Query.fromJson(json);
@@ -1321,6 +1354,7 @@ class CreatePOSCategoryArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreatePOSCategoryArgumentsToJson(this);
 }
@@ -1462,6 +1496,7 @@ class CreatePOSCategoryMutation extends GraphQLQuery<CreatePOSCategory$Mutation,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreatePOSCategory$Mutation parse(Map<String, dynamic> json) =>
       CreatePOSCategory$Mutation.fromJson(json);
@@ -1484,6 +1519,7 @@ class UpdatePOSCategoryArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input, id];
+
   @override
   Map<String, dynamic> toJson() => _$UpdatePOSCategoryArgumentsToJson(this);
 }
@@ -1638,6 +1674,7 @@ class UpdatePOSCategoryMutation extends GraphQLQuery<UpdatePOSCategory$Mutation,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdatePOSCategory$Mutation parse(Map<String, dynamic> json) =>
       UpdatePOSCategory$Mutation.fromJson(json);
@@ -1655,6 +1692,7 @@ class DeletePOSCategoryArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeletePOSCategoryArgumentsToJson(this);
 }
@@ -1796,6 +1834,7 @@ class DeletePOSCategoryMutation extends GraphQLQuery<DeletePOSCategory$Mutation,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeletePOSCategory$Mutation parse(Map<String, dynamic> json) =>
       DeletePOSCategory$Mutation.fromJson(json);

@@ -25,6 +25,7 @@ class GetCoupons$Query$CouponType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$PhoneTypeToJson(this);
@@ -55,6 +56,7 @@ class GetCoupons$Query$CouponType$UserType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$PictureTypeToJson(this);
@@ -86,6 +88,7 @@ class GetCoupons$Query$CouponType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$LanguageType$PictureTypeToJson(
@@ -120,6 +123,7 @@ class GetCoupons$Query$CouponType$UserType$LanguageType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$LanguageTypeToJson(this);
@@ -151,6 +155,7 @@ class GetCoupons$Query$CouponType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$CountryType$PictureTypeToJson(
@@ -196,6 +201,7 @@ class GetCoupons$Query$CouponType$UserType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$CountryTypeToJson(this);
@@ -217,6 +223,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatTypeToJson(
@@ -249,6 +256,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -297,6 +305,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$FullAddressType$CountryTypeToJson(
@@ -329,6 +338,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -377,6 +387,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -409,6 +420,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -471,6 +483,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateTypeToJson(
@@ -493,6 +506,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -516,6 +530,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -551,6 +566,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$FullAddressTypeToJson(this);
@@ -582,6 +598,7 @@ class GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImag
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -615,6 +632,7 @@ class GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImag
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -639,6 +657,7 @@ class GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImag
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -663,6 +682,7 @@ class GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImag
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -697,6 +717,7 @@ class GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialTypeToJson(
@@ -718,6 +739,7 @@ class GetCoupons$Query$CouponType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialValueTypeToJson(this);
@@ -737,6 +759,7 @@ class GetCoupons$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -769,6 +792,7 @@ class GetCoupons$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -818,6 +842,7 @@ class GetCoupons$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -858,6 +883,7 @@ class GetCoupons$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -886,6 +912,7 @@ class GetCoupons$Query$CouponType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$SocialLoginDataTypeToJson(this);
@@ -918,6 +945,7 @@ class GetCoupons$Query$CouponType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$UserEducationTypeToJson(this);
@@ -949,6 +977,7 @@ class GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -997,6 +1026,7 @@ class GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -1029,6 +1059,7 @@ class GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -1091,6 +1122,7 @@ class GetCoupons$Query$CouponType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateTypeToJson(this);
@@ -1124,6 +1156,7 @@ class GetCoupons$Query$CouponType$UserType$UserWorkType extends JsonSerializable
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$UserWorkTypeToJson(this);
@@ -1155,6 +1188,7 @@ class GetCoupons$Query$CouponType$UserType$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -1203,6 +1237,7 @@ class GetCoupons$Query$CouponType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$StateType$CountryTypeToJson(this);
@@ -1234,6 +1269,7 @@ class GetCoupons$Query$CouponType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$StateType$PictureTypeToJson(this);
@@ -1291,6 +1327,7 @@ class GetCoupons$Query$CouponType$UserType$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserType$StateTypeToJson(this);
@@ -1436,6 +1473,7 @@ class GetCoupons$Query$CouponType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$UserTypeToJson(this);
@@ -1457,6 +1495,7 @@ class GetCoupons$Query$CouponType$DiscountDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCoupons$Query$CouponType$DiscountDtoTypeToJson(this);
@@ -1499,6 +1538,7 @@ class GetCoupons$Query$CouponType extends JsonSerializable with EquatableMixin {
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetCoupons$Query$CouponTypeToJson(this);
 }
@@ -1514,6 +1554,7 @@ class GetCoupons$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getCoupons];
+
   @override
   Map<String, dynamic> toJson() => _$GetCoupons$QueryToJson(this);
 }
@@ -1537,6 +1578,7 @@ class Coupon$Query$CouponType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$PhoneTypeToJson(this);
@@ -1567,6 +1609,7 @@ class Coupon$Query$CouponType$UserType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$PictureTypeToJson(this);
@@ -1597,6 +1640,7 @@ class Coupon$Query$CouponType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$LanguageType$PictureTypeToJson(this);
@@ -1630,6 +1674,7 @@ class Coupon$Query$CouponType$UserType$LanguageType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$LanguageTypeToJson(this);
@@ -1660,6 +1705,7 @@ class Coupon$Query$CouponType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$CountryType$PictureTypeToJson(this);
@@ -1704,6 +1750,7 @@ class Coupon$Query$CouponType$UserType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$CountryTypeToJson(this);
@@ -1725,6 +1772,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$FullAddressType$LonLatTypeToJson(this);
@@ -1756,6 +1804,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1804,6 +1853,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$FullAddressType$CountryTypeToJson(
@@ -1836,6 +1886,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1884,6 +1935,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -1916,6 +1968,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -1978,6 +2031,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$FullAddressType$StateTypeToJson(this);
@@ -1999,6 +2053,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$Full
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -2022,6 +2077,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -2056,6 +2112,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType extends JsonSerializable
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$FullAddressTypeToJson(this);
@@ -2087,6 +2144,7 @@ class Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -2120,6 +2178,7 @@ class Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTy
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -2144,6 +2203,7 @@ class Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTy
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -2168,6 +2228,7 @@ class Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTy
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -2202,6 +2263,7 @@ class Coupon$Query$CouponType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialValueType$SocialTypeToJson(this);
@@ -2222,6 +2284,7 @@ class Coupon$Query$CouponType$UserType$SocialValueType extends JsonSerializable
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialValueTypeToJson(this);
@@ -2241,6 +2304,7 @@ class Coupon$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -2273,6 +2337,7 @@ class Coupon$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -2322,6 +2387,7 @@ class Coupon$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -2362,6 +2428,7 @@ class Coupon$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -2388,6 +2455,7 @@ class Coupon$Query$CouponType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$SocialLoginDataTypeToJson(this);
@@ -2420,6 +2488,7 @@ class Coupon$Query$CouponType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$UserEducationTypeToJson(this);
@@ -2451,6 +2520,7 @@ class Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -2499,6 +2569,7 @@ class Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -2531,6 +2602,7 @@ class Coupon$Query$CouponType$UserType$UserWorkType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -2590,6 +2662,7 @@ class Coupon$Query$CouponType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$UserWorkType$StateTypeToJson(this);
@@ -2623,6 +2696,7 @@ class Coupon$Query$CouponType$UserType$UserWorkType extends JsonSerializable
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$UserWorkTypeToJson(this);
@@ -2654,6 +2728,7 @@ class Coupon$Query$CouponType$UserType$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -2700,6 +2775,7 @@ class Coupon$Query$CouponType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$StateType$CountryTypeToJson(this);
@@ -2730,6 +2806,7 @@ class Coupon$Query$CouponType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$StateType$PictureTypeToJson(this);
@@ -2787,6 +2864,7 @@ class Coupon$Query$CouponType$UserType$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$StateTypeToJson(this);
@@ -2931,6 +3009,7 @@ class Coupon$Query$CouponType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserTypeToJson(this);
@@ -2952,6 +3031,7 @@ class Coupon$Query$CouponType$DiscountDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$DiscountDtoTypeToJson(this);
@@ -2994,6 +3074,7 @@ class Coupon$Query$CouponType extends JsonSerializable with EquatableMixin {
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() => _$Coupon$Query$CouponTypeToJson(this);
 }
@@ -3009,6 +3090,7 @@ class Coupon$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [coupon];
+
   @override
   Map<String, dynamic> toJson() => _$Coupon$QueryToJson(this);
 }
@@ -3033,6 +3115,7 @@ class IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PhoneTypeToJson(
@@ -3065,6 +3148,7 @@ class IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PictureTypeToJson(
@@ -3101,6 +3185,7 @@ class IsCouponValid$Query$IsCouponValidType$CouponType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$IsCouponValid$Query$IsCouponValidType$CouponType$UserTypeToJson(this);
@@ -3123,6 +3208,7 @@ class IsCouponValid$Query$IsCouponValidType$CouponType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$IsCouponValid$Query$IsCouponValidType$CouponType$DiscountDtoTypeToJson(
@@ -3168,6 +3254,7 @@ class IsCouponValid$Query$IsCouponValidType$CouponType extends JsonSerializable
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$IsCouponValid$Query$IsCouponValidType$CouponTypeToJson(this);
@@ -3188,6 +3275,7 @@ class IsCouponValid$Query$IsCouponValidType extends JsonSerializable
 
   @override
   List<Object?> get props => [isValid, coupon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$IsCouponValid$Query$IsCouponValidTypeToJson(this);
@@ -3204,6 +3292,7 @@ class IsCouponValid$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [isCouponValid];
+
   @override
   Map<String, dynamic> toJson() => _$IsCouponValid$QueryToJson(this);
 }
@@ -3230,6 +3319,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -3254,6 +3344,7 @@ class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PhoneTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PhoneTypeToJson(
@@ -3286,6 +3377,7 @@ class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PictureTypeToJson(
@@ -3324,6 +3416,7 @@ class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserTypeToJson(
@@ -3347,6 +3440,7 @@ class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoTypeToJson(
@@ -3393,6 +3487,7 @@ class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponTypeToJson(this);
@@ -3415,6 +3510,7 @@ class GetPaginatedCoupons$Query$PaginatedCouponType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPaginatedCoupons$Query$PaginatedCouponTypeToJson(this);
@@ -3431,6 +3527,7 @@ class GetPaginatedCoupons$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getPaginatedCoupons];
+
   @override
   Map<String, dynamic> toJson() => _$GetPaginatedCoupons$QueryToJson(this);
 }
@@ -3451,6 +3548,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -3474,6 +3572,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$PhoneTypeToJson(this);
@@ -3504,6 +3603,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$PictureTypeToJson(this);
@@ -3535,6 +3635,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$LanguageType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$LanguageType$PictureTypeToJson(
@@ -3572,6 +3673,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$LanguageTypeToJson(this);
@@ -3603,6 +3705,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$CountryType$PictureTypeToJson(
@@ -3650,6 +3753,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$CountryTypeToJson(this);
@@ -3671,6 +3775,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatTypeToJson(
@@ -3703,6 +3808,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3751,6 +3857,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryTypeToJson(
@@ -3783,6 +3890,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$Co
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3831,6 +3939,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$Co
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -3863,6 +3972,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -3925,6 +4035,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateTypeToJson(
@@ -3947,6 +4058,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressO
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3970,6 +4082,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressO
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -4009,6 +4122,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressTypeToJson(
@@ -4041,6 +4155,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$S
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -4074,6 +4189,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$S
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -4098,6 +4214,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$S
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -4122,6 +4239,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$S
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -4156,6 +4274,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialTypeToJson(
@@ -4179,6 +4298,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueTypeToJson(
@@ -4199,6 +4319,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$OoredooD
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -4231,6 +4352,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$Facebook
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -4280,6 +4402,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$GoogleDa
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -4320,6 +4443,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$AppleDat
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -4350,6 +4474,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataTypeToJson(
@@ -4384,6 +4509,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$UserEducationTypeToJson(
@@ -4416,6 +4542,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$Count
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -4464,6 +4591,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$Count
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -4496,6 +4624,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$Pictu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -4558,6 +4687,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateTypeToJson(
@@ -4593,6 +4723,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkTypeToJson(this);
@@ -4624,6 +4755,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -4672,6 +4804,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryTypeToJson(
@@ -4704,6 +4837,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$StateType$PictureTypeToJson(
@@ -4763,6 +4897,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$StateTypeToJson(this);
@@ -4914,6 +5049,7 @@ class FindCouponsByTarget$Query$CouponType$UserType extends JsonSerializable
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserTypeToJson(this);
@@ -4935,6 +5071,7 @@ class FindCouponsByTarget$Query$CouponType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$DiscountDtoTypeToJson(this);
@@ -4979,6 +5116,7 @@ class FindCouponsByTarget$Query$CouponType extends JsonSerializable
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponTypeToJson(this);
@@ -4995,6 +5133,7 @@ class FindCouponsByTarget$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findCouponsByTarget];
+
   @override
   Map<String, dynamic> toJson() => _$FindCouponsByTarget$QueryToJson(this);
 }
@@ -5019,6 +5158,7 @@ class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType$PhoneTypeToJson(
@@ -5051,6 +5191,7 @@ class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType$PictureTypeToJson(
@@ -5089,6 +5230,7 @@ class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTyp
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserTypeToJson(
@@ -5112,6 +5254,7 @@ class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTyp
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$DiscountDtoTypeToJson(
@@ -5160,6 +5303,7 @@ class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTyp
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTypeToJson(
@@ -5186,6 +5330,7 @@ class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponTypeToJson(
@@ -5206,6 +5351,7 @@ class FindCouponsByTargetWithFilterPaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findCouponsByTargetWithFilterPaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTargetWithFilterPaginated$QueryToJson(this);
@@ -5234,6 +5380,7 @@ class CouponFilterInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [discountType, expired, redeemed, couponCode];
+
   @override
   Map<String, dynamic> toJson() => _$CouponFilterInputToJson(this);
 }
@@ -5258,6 +5405,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$PhoneTypeToJson(
@@ -5290,6 +5438,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$PictureTypeToJson(
@@ -5322,6 +5471,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType$PictureTypeToJson(
@@ -5359,6 +5509,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageTypeToJson(
@@ -5391,6 +5542,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType$PictureTypeToJson(
@@ -5439,6 +5591,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$CountryTypeToJson(
@@ -5461,6 +5614,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLat
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLatTypeToJson(
@@ -5493,6 +5647,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$Countr
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5541,6 +5696,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$Countr
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryTypeToJson(
@@ -5573,6 +5729,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5621,6 +5778,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -5653,6 +5811,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -5715,6 +5874,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateTypeToJson(
@@ -5737,6 +5897,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAd
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -5760,6 +5921,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAd
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -5799,6 +5961,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressTypeToJson(
@@ -5831,6 +5994,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$Social
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -5864,6 +6028,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$Social
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -5888,6 +6053,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$Social
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -5912,6 +6078,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$Social
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -5946,6 +6113,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$Social
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialTypeToJson(
@@ -5969,6 +6137,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueTypeToJson(
@@ -5989,6 +6158,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$Oo
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -6021,6 +6191,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$Fa
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -6070,6 +6241,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$Go
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -6110,6 +6282,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$Ap
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -6140,6 +6313,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataTypeToJson(
@@ -6174,6 +6348,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserEducationTypeToJson(
@@ -6206,6 +6381,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -6254,6 +6430,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -6286,6 +6463,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -6348,6 +6526,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateTypeToJson(
@@ -6384,6 +6563,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkTypeToJson(
@@ -6416,6 +6596,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -6464,6 +6645,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryTypeToJson(
@@ -6496,6 +6678,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$PictureTypeToJson(
@@ -6558,6 +6741,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateTypeToJson(
@@ -6712,6 +6896,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserTypeToJson(this);
@@ -6734,6 +6919,7 @@ class FindCouponByTargetAndCode$Query$CouponType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$DiscountDtoTypeToJson(this);
@@ -6778,6 +6964,7 @@ class FindCouponByTargetAndCode$Query$CouponType extends JsonSerializable
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponTypeToJson(this);
@@ -6795,6 +6982,7 @@ class FindCouponByTargetAndCode$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findCouponByTargetAndCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$QueryToJson(this);
@@ -6813,6 +7001,7 @@ class GetCouponsByExcel$Query$InvoicePDFType extends JsonSerializable
 
   @override
   List<Object?> get props => [content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCouponsByExcel$Query$InvoicePDFTypeToJson(this);
@@ -6829,6 +7018,7 @@ class GetCouponsByExcel$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getCouponsByExcel];
+
   @override
   Map<String, dynamic> toJson() => _$GetCouponsByExcel$QueryToJson(this);
 }
@@ -6866,6 +7056,7 @@ class SendCouponsBymail$Query$MailResponseDto extends JsonSerializable
         messageSize,
         envelopeTime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendCouponsBymail$Query$MailResponseDtoToJson(this);
@@ -6882,6 +7073,7 @@ class SendCouponsBymail$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [sendCouponsBymail];
+
   @override
   Map<String, dynamic> toJson() => _$SendCouponsBymail$QueryToJson(this);
 }
@@ -6905,6 +7097,7 @@ class CreateCoupon$Mutation$CouponType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCoupon$Mutation$CouponType$UserType$PhoneTypeToJson(this);
@@ -6935,6 +7128,7 @@ class CreateCoupon$Mutation$CouponType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCoupon$Mutation$CouponType$UserType$PictureTypeToJson(this);
@@ -6969,6 +7163,7 @@ class CreateCoupon$Mutation$CouponType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCoupon$Mutation$CouponType$UserTypeToJson(this);
@@ -6990,6 +7185,7 @@ class CreateCoupon$Mutation$CouponType$DiscountDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCoupon$Mutation$CouponType$DiscountDtoTypeToJson(this);
@@ -7034,6 +7230,7 @@ class CreateCoupon$Mutation$CouponType extends JsonSerializable
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCoupon$Mutation$CouponTypeToJson(this);
@@ -7050,6 +7247,7 @@ class CreateCoupon$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createCoupon];
+
   @override
   Map<String, dynamic> toJson() => _$CreateCoupon$MutationToJson(this);
 }
@@ -7076,6 +7274,7 @@ class CouponInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target, discount, from, to];
+
   @override
   Map<String, dynamic> toJson() => _$CouponInputToJson(this);
 }
@@ -7097,6 +7296,7 @@ class DiscountDtoInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [discountType, amount];
+
   @override
   Map<String, dynamic> toJson() => _$DiscountDtoInputToJson(this);
 }
@@ -7120,6 +7320,7 @@ class UpdateCoupon$Mutation$CouponType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCoupon$Mutation$CouponType$UserType$PhoneTypeToJson(this);
@@ -7150,6 +7351,7 @@ class UpdateCoupon$Mutation$CouponType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCoupon$Mutation$CouponType$UserType$PictureTypeToJson(this);
@@ -7184,6 +7386,7 @@ class UpdateCoupon$Mutation$CouponType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCoupon$Mutation$CouponType$UserTypeToJson(this);
@@ -7205,6 +7408,7 @@ class UpdateCoupon$Mutation$CouponType$DiscountDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCoupon$Mutation$CouponType$DiscountDtoTypeToJson(this);
@@ -7249,6 +7453,7 @@ class UpdateCoupon$Mutation$CouponType extends JsonSerializable
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCoupon$Mutation$CouponTypeToJson(this);
@@ -7265,6 +7470,7 @@ class UpdateCoupon$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateCoupon];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateCoupon$MutationToJson(this);
 }
@@ -7288,6 +7494,7 @@ class UpdateCouponInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [discount, from, to];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateCouponInputToJson(this);
 }
@@ -7311,6 +7518,7 @@ class GenerateCoupons$Mutation$CouponType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GenerateCoupons$Mutation$CouponType$UserType$PhoneTypeToJson(this);
@@ -7341,6 +7549,7 @@ class GenerateCoupons$Mutation$CouponType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GenerateCoupons$Mutation$CouponType$UserType$PictureTypeToJson(this);
@@ -7375,6 +7584,7 @@ class GenerateCoupons$Mutation$CouponType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GenerateCoupons$Mutation$CouponType$UserTypeToJson(this);
@@ -7396,6 +7606,7 @@ class GenerateCoupons$Mutation$CouponType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GenerateCoupons$Mutation$CouponType$DiscountDtoTypeToJson(this);
@@ -7440,6 +7651,7 @@ class GenerateCoupons$Mutation$CouponType extends JsonSerializable
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GenerateCoupons$Mutation$CouponTypeToJson(this);
@@ -7456,6 +7668,7 @@ class GenerateCoupons$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [generateCoupons];
+
   @override
   Map<String, dynamic> toJson() => _$GenerateCoupons$MutationToJson(this);
 }
@@ -7485,6 +7698,7 @@ class CouponsInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target, discount, from, to, quantity];
+
   @override
   Map<String, dynamic> toJson() => _$CouponsInputToJson(this);
 }
@@ -7508,6 +7722,7 @@ class RedeemCoupon$Mutation$CouponType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RedeemCoupon$Mutation$CouponType$UserType$PhoneTypeToJson(this);
@@ -7538,6 +7753,7 @@ class RedeemCoupon$Mutation$CouponType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RedeemCoupon$Mutation$CouponType$UserType$PictureTypeToJson(this);
@@ -7572,6 +7788,7 @@ class RedeemCoupon$Mutation$CouponType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RedeemCoupon$Mutation$CouponType$UserTypeToJson(this);
@@ -7593,6 +7810,7 @@ class RedeemCoupon$Mutation$CouponType$DiscountDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RedeemCoupon$Mutation$CouponType$DiscountDtoTypeToJson(this);
@@ -7637,6 +7855,7 @@ class RedeemCoupon$Mutation$CouponType extends JsonSerializable
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RedeemCoupon$Mutation$CouponTypeToJson(this);
@@ -7653,6 +7872,7 @@ class RedeemCoupon$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [redeemCoupon];
+
   @override
   Map<String, dynamic> toJson() => _$RedeemCoupon$MutationToJson(this);
 }
@@ -7676,6 +7896,7 @@ class DisableCoupon$Mutation$CouponType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DisableCoupon$Mutation$CouponType$UserType$PhoneTypeToJson(this);
@@ -7706,6 +7927,7 @@ class DisableCoupon$Mutation$CouponType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DisableCoupon$Mutation$CouponType$UserType$PictureTypeToJson(this);
@@ -7740,6 +7962,7 @@ class DisableCoupon$Mutation$CouponType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DisableCoupon$Mutation$CouponType$UserTypeToJson(this);
@@ -7761,6 +7984,7 @@ class DisableCoupon$Mutation$CouponType$DiscountDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DisableCoupon$Mutation$CouponType$DiscountDtoTypeToJson(this);
@@ -7805,6 +8029,7 @@ class DisableCoupon$Mutation$CouponType extends JsonSerializable
         user,
         discount
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DisableCoupon$Mutation$CouponTypeToJson(this);
@@ -7821,6 +8046,7 @@ class DisableCoupon$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [disableCoupon];
+
   @override
   Map<String, dynamic> toJson() => _$DisableCoupon$MutationToJson(this);
 }
@@ -13089,6 +13315,7 @@ class GetCouponsQuery extends GraphQLQuery<GetCoupons$Query, JsonSerializable> {
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetCoupons$Query parse(Map<String, dynamic> json) =>
       GetCoupons$Query.fromJson(json);
@@ -13106,6 +13333,7 @@ class CouponArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$CouponArgumentsToJson(this);
 }
@@ -18181,6 +18409,7 @@ class CouponQuery extends GraphQLQuery<Coupon$Query, CouponArguments> {
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   Coupon$Query parse(Map<String, dynamic> json) => Coupon$Query.fromJson(json);
 }
@@ -18202,6 +18431,7 @@ class IsCouponValidArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [couponCode, target];
+
   @override
   Map<String, dynamic> toJson() => _$IsCouponValidArgumentsToJson(this);
 }
@@ -18498,6 +18728,7 @@ class IsCouponValidQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   IsCouponValid$Query parse(Map<String, dynamic> json) =>
       IsCouponValid$Query.fromJson(json);
@@ -18516,6 +18747,7 @@ class GetPaginatedCouponsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() => _$GetPaginatedCouponsArgumentsToJson(this);
 }
@@ -18808,6 +19040,7 @@ class GetPaginatedCouponsQuery extends GraphQLQuery<GetPaginatedCoupons$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetPaginatedCoupons$Query parse(Map<String, dynamic> json) =>
       GetPaginatedCoupons$Query.fromJson(json);
@@ -18826,6 +19059,7 @@ class FindCouponsByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() => _$FindCouponsByTargetArgumentsToJson(this);
 }
@@ -23904,6 +24138,7 @@ class FindCouponsByTargetQuery extends GraphQLQuery<FindCouponsByTarget$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindCouponsByTarget$Query parse(Map<String, dynamic> json) =>
       FindCouponsByTarget$Query.fromJson(json);
@@ -23934,6 +24169,7 @@ class FindCouponsByTargetWithFilterPaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination, searchString, filter, target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTargetWithFilterPaginatedArgumentsToJson(this);
@@ -24269,6 +24505,7 @@ class FindCouponsByTargetWithFilterPaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindCouponsByTargetWithFilterPaginated$Query parse(
           Map<String, dynamic> json) =>
@@ -24294,6 +24531,7 @@ class FindCouponByTargetAndCodeArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [couponCode, target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCodeArgumentsToJson(this);
@@ -29387,6 +29625,7 @@ class FindCouponByTargetAndCodeQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindCouponByTargetAndCode$Query parse(Map<String, dynamic> json) =>
       FindCouponByTargetAndCode$Query.fromJson(json);
@@ -29415,6 +29654,7 @@ class GetCouponsByExcelArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target, filter, searchString, path];
+
   @override
   Map<String, dynamic> toJson() => _$GetCouponsByExcelArgumentsToJson(this);
 }
@@ -29516,6 +29756,7 @@ class GetCouponsByExcelQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCouponsByExcel$Query parse(Map<String, dynamic> json) =>
       GetCouponsByExcel$Query.fromJson(json);
@@ -29547,6 +29788,7 @@ class SendCouponsBymailArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target, filter, searchString, emails, subject];
+
   @override
   Map<String, dynamic> toJson() => _$SendCouponsBymailArgumentsToJson(this);
 }
@@ -29706,6 +29948,7 @@ class SendCouponsBymailQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SendCouponsBymail$Query parse(Map<String, dynamic> json) =>
       SendCouponsBymail$Query.fromJson(json);
@@ -29723,6 +29966,7 @@ class CreateCouponArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateCouponArgumentsToJson(this);
 }
@@ -29991,6 +30235,7 @@ class CreateCouponMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateCoupon$Mutation parse(Map<String, dynamic> json) =>
       CreateCoupon$Mutation.fromJson(json);
@@ -30013,6 +30258,7 @@ class UpdateCouponArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input, id];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateCouponArgumentsToJson(this);
 }
@@ -30294,6 +30540,7 @@ class UpdateCouponMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateCoupon$Mutation parse(Map<String, dynamic> json) =>
       UpdateCoupon$Mutation.fromJson(json);
@@ -30311,6 +30558,7 @@ class GenerateCouponsArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$GenerateCouponsArgumentsToJson(this);
 }
@@ -30580,6 +30828,7 @@ class GenerateCouponsMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GenerateCoupons$Mutation parse(Map<String, dynamic> json) =>
       GenerateCoupons$Mutation.fromJson(json);
@@ -30602,6 +30851,7 @@ class RedeemCouponArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [couponCode, target];
+
   @override
   Map<String, dynamic> toJson() => _$RedeemCouponArgumentsToJson(this);
 }
@@ -30883,6 +31133,7 @@ class RedeemCouponMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   RedeemCoupon$Mutation parse(Map<String, dynamic> json) =>
       RedeemCoupon$Mutation.fromJson(json);
@@ -30900,6 +31151,7 @@ class DisableCouponArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DisableCouponArgumentsToJson(this);
 }
@@ -31168,6 +31420,7 @@ class DisableCouponMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DisableCoupon$Mutation parse(Map<String, dynamic> json) =>
       DisableCoupon$Mutation.fromJson(json);

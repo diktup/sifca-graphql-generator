@@ -25,6 +25,7 @@ class GetComments$Query$CommentType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$UserType$PhoneTypeToJson(this);
@@ -55,6 +56,7 @@ class GetComments$Query$CommentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$UserType$PictureTypeToJson(this);
@@ -89,6 +91,7 @@ class GetComments$Query$CommentType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$UserTypeToJson(this);
@@ -120,6 +123,7 @@ class GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -144,6 +148,7 @@ class GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -173,6 +178,7 @@ class GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentType
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -200,6 +206,7 @@ class GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentType
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -221,6 +228,7 @@ class GetComments$Query$CommentType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$DocumentType$DocumentContentTypeToJson(
@@ -247,6 +255,7 @@ class GetComments$Query$CommentType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$DocumentType$UserType$PhoneTypeToJson(
@@ -279,6 +288,7 @@ class GetComments$Query$CommentType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$DocumentType$UserType$PictureTypeToJson(
@@ -314,6 +324,7 @@ class GetComments$Query$CommentType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$DocumentType$UserTypeToJson(this);
@@ -345,6 +356,7 @@ class GetComments$Query$CommentType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$DocumentTypeToJson(this);
@@ -364,6 +376,7 @@ class GetComments$Query$CommentType$CommentHolderType$TicketType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$TicketTypeToJson(this);
@@ -383,6 +396,7 @@ class GetComments$Query$CommentType$CommentHolderType$BoardCardType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$BoardCardTypeToJson(
@@ -403,6 +417,7 @@ class GetComments$Query$CommentType$CommentHolderType$ProjectType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$ProjectTypeToJson(this);
@@ -422,6 +437,7 @@ class GetComments$Query$CommentType$CommentHolderType$QuotationType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$QuotationTypeToJson(
@@ -442,6 +458,7 @@ class GetComments$Query$CommentType$CommentHolderType$SaleOrderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$SaleOrderTypeToJson(
@@ -462,6 +479,7 @@ class GetComments$Query$CommentType$CommentHolderType$SaleInvoiceType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -482,6 +500,7 @@ class GetComments$Query$CommentType$CommentHolderType$SaleIssueNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -502,6 +521,7 @@ class GetComments$Query$CommentType$CommentHolderType$PurchaseOrderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -522,6 +542,7 @@ class GetComments$Query$CommentType$CommentHolderType$PurchaseInvoiceType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -542,6 +563,7 @@ class GetComments$Query$CommentType$CommentHolderType$SaleDeliveryNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -562,6 +584,7 @@ class GetComments$Query$CommentType$CommentHolderType$PurchaseDeliveryNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -618,6 +641,7 @@ class GetComments$Query$CommentType$CommentHolderType extends JsonSerializable
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$CommentHolderTypeToJson(this);
@@ -643,6 +667,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$Phon
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
@@ -675,6 +700,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
@@ -713,6 +739,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
@@ -745,6 +772,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -769,6 +797,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -798,6 +827,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -825,6 +855,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -846,6 +877,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
@@ -872,6 +904,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
@@ -904,6 +937,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
@@ -942,6 +976,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
@@ -977,6 +1012,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
@@ -997,6 +1033,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeToJson(
@@ -1017,6 +1054,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$BoardCardTypeToJson(
@@ -1037,6 +1075,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$ProjectTypeToJson(
@@ -1057,6 +1096,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$QuotationTypeToJson(
@@ -1077,6 +1117,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleOrderTypeToJson(
@@ -1097,6 +1138,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -1117,6 +1159,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -1137,6 +1180,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -1157,6 +1201,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -1177,6 +1222,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -1197,6 +1243,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -1260,6 +1307,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolder
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
@@ -1295,6 +1343,7 @@ class GetComments$Query$CommentType$FirstReplyType$CommentBaseType
   @override
   List<Object?> get props =>
       [id, user, comment, attachments, holder, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyType$CommentBaseTypeToJson(
@@ -1316,6 +1365,7 @@ class GetComments$Query$CommentType$FirstReplyType extends JsonSerializable
 
   @override
   List<Object?> get props => [hasMoreReplies, reply];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetComments$Query$CommentType$FirstReplyTypeToJson(this);
@@ -1356,6 +1406,7 @@ class GetComments$Query$CommentType extends JsonSerializable
         updatedAt,
         firstReply
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetComments$Query$CommentTypeToJson(this);
 }
@@ -1371,6 +1422,7 @@ class GetComments$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getComments];
+
   @override
   Map<String, dynamic> toJson() => _$GetComments$QueryToJson(this);
 }
@@ -1394,6 +1446,7 @@ class Comment$Query$CommentType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$UserType$PhoneTypeToJson(this);
@@ -1424,6 +1477,7 @@ class Comment$Query$CommentType$UserType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$UserType$PictureTypeToJson(this);
@@ -1458,6 +1512,7 @@ class Comment$Query$CommentType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$UserTypeToJson(this);
@@ -1489,6 +1544,7 @@ class Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -1513,6 +1569,7 @@ class Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -1542,6 +1599,7 @@ class Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -1569,6 +1627,7 @@ class Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -1590,6 +1649,7 @@ class Comment$Query$CommentType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$DocumentType$DocumentContentTypeToJson(this);
@@ -1614,6 +1674,7 @@ class Comment$Query$CommentType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$DocumentType$UserType$PhoneTypeToJson(this);
@@ -1645,6 +1706,7 @@ class Comment$Query$CommentType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$DocumentType$UserType$PictureTypeToJson(this);
@@ -1679,6 +1741,7 @@ class Comment$Query$CommentType$DocumentType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$DocumentType$UserTypeToJson(this);
@@ -1710,6 +1773,7 @@ class Comment$Query$CommentType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$DocumentTypeToJson(this);
@@ -1728,6 +1792,7 @@ class Comment$Query$CommentType$CommentHolderType$TicketType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$TicketTypeToJson(this);
@@ -1746,6 +1811,7 @@ class Comment$Query$CommentType$CommentHolderType$BoardCardType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$BoardCardTypeToJson(this);
@@ -1764,6 +1830,7 @@ class Comment$Query$CommentType$CommentHolderType$ProjectType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$ProjectTypeToJson(this);
@@ -1782,6 +1849,7 @@ class Comment$Query$CommentType$CommentHolderType$QuotationType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$QuotationTypeToJson(this);
@@ -1800,6 +1868,7 @@ class Comment$Query$CommentType$CommentHolderType$SaleOrderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$SaleOrderTypeToJson(this);
@@ -1819,6 +1888,7 @@ class Comment$Query$CommentType$CommentHolderType$SaleInvoiceType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$SaleInvoiceTypeToJson(this);
@@ -1838,6 +1908,7 @@ class Comment$Query$CommentType$CommentHolderType$SaleIssueNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -1858,6 +1929,7 @@ class Comment$Query$CommentType$CommentHolderType$PurchaseOrderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -1878,6 +1950,7 @@ class Comment$Query$CommentType$CommentHolderType$PurchaseInvoiceType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -1898,6 +1971,7 @@ class Comment$Query$CommentType$CommentHolderType$SaleDeliveryNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -1918,6 +1992,7 @@ class Comment$Query$CommentType$CommentHolderType$PurchaseDeliveryNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -1972,6 +2047,7 @@ class Comment$Query$CommentType$CommentHolderType extends JsonSerializable
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$CommentHolderTypeToJson(this);
@@ -1997,6 +2073,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
@@ -2029,6 +2106,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
@@ -2067,6 +2145,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
@@ -2099,6 +2178,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$Docu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -2123,6 +2203,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$Docu
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -2152,6 +2233,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$Docu
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -2179,6 +2261,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$Docu
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -2200,6 +2283,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$Docu
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
@@ -2226,6 +2310,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$User
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
@@ -2258,6 +2343,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$User
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
@@ -2296,6 +2382,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$User
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
@@ -2331,6 +2418,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
@@ -2351,6 +2439,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeToJson(
@@ -2371,6 +2460,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$BoardCardTypeToJson(
@@ -2391,6 +2481,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$ProjectTypeToJson(
@@ -2411,6 +2502,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$QuotationTypeToJson(
@@ -2431,6 +2523,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleOrderTypeToJson(
@@ -2451,6 +2544,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -2471,6 +2565,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -2491,6 +2586,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -2511,6 +2607,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -2531,6 +2628,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -2551,6 +2649,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -2614,6 +2713,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
@@ -2648,6 +2748,7 @@ class Comment$Query$CommentType$FirstReplyType$CommentBaseType
   @override
   List<Object?> get props =>
       [id, user, comment, attachments, holder, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyType$CommentBaseTypeToJson(this);
@@ -2668,6 +2769,7 @@ class Comment$Query$CommentType$FirstReplyType extends JsonSerializable
 
   @override
   List<Object?> get props => [hasMoreReplies, reply];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Comment$Query$CommentType$FirstReplyTypeToJson(this);
@@ -2707,6 +2809,7 @@ class Comment$Query$CommentType extends JsonSerializable with EquatableMixin {
         updatedAt,
         firstReply
       ];
+
   @override
   Map<String, dynamic> toJson() => _$Comment$Query$CommentTypeToJson(this);
 }
@@ -2722,6 +2825,7 @@ class Comment$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [comment];
+
   @override
   Map<String, dynamic> toJson() => _$Comment$QueryToJson(this);
 }
@@ -2745,6 +2849,7 @@ class GetCommentsByHolder$Query$CommentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$UserType$PhoneTypeToJson(this);
@@ -2776,6 +2881,7 @@ class GetCommentsByHolder$Query$CommentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$UserType$PictureTypeToJson(this);
@@ -2810,6 +2916,7 @@ class GetCommentsByHolder$Query$CommentType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$UserTypeToJson(this);
@@ -2841,6 +2948,7 @@ class GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$Con
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -2865,6 +2973,7 @@ class GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$Con
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -2894,6 +3003,7 @@ class GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$Con
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -2921,6 +3031,7 @@ class GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$Con
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -2942,6 +3053,7 @@ class GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentTypeToJson(
@@ -2968,6 +3080,7 @@ class GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PhoneTypeToJson(
@@ -3000,6 +3113,7 @@ class GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PictureTypeToJson(
@@ -3037,6 +3151,7 @@ class GetCommentsByHolder$Query$CommentType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$DocumentType$UserTypeToJson(this);
@@ -3069,6 +3184,7 @@ class GetCommentsByHolder$Query$CommentType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$DocumentTypeToJson(this);
@@ -3088,6 +3204,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$TicketType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$TicketTypeToJson(
@@ -3108,6 +3225,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$BoardCardType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$BoardCardTypeToJson(
@@ -3128,6 +3246,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$ProjectType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$ProjectTypeToJson(
@@ -3148,6 +3267,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$QuotationType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$QuotationTypeToJson(
@@ -3168,6 +3288,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$SaleOrderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$SaleOrderTypeToJson(
@@ -3188,6 +3309,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$SaleInvoiceType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -3208,6 +3330,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$SaleIssueNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -3228,6 +3351,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$PurchaseOrderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -3248,6 +3372,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$PurchaseInvoiceTyp
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -3268,6 +3393,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$SaleDeliveryNoteTy
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -3288,6 +3414,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType$PurchaseDeliveryNo
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -3347,6 +3474,7 @@ class GetCommentsByHolder$Query$CommentType$CommentHolderType
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$CommentHolderTypeToJson(this);
@@ -3372,6 +3500,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserT
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
@@ -3404,6 +3533,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
@@ -3442,6 +3572,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserT
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
@@ -3474,6 +3605,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Docum
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -3498,6 +3630,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Docum
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -3527,6 +3660,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Docum
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -3554,6 +3688,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Docum
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -3575,6 +3710,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Docum
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
@@ -3601,6 +3737,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Docum
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
@@ -3633,6 +3770,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Docum
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
@@ -3671,6 +3809,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Docum
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
@@ -3706,6 +3845,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Docum
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
@@ -3726,6 +3866,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeToJson(
@@ -3746,6 +3887,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$BoardCardTypeToJson(
@@ -3766,6 +3908,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$ProjectTypeToJson(
@@ -3786,6 +3929,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$QuotationTypeToJson(
@@ -3806,6 +3950,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleOrderTypeToJson(
@@ -3826,6 +3971,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -3846,6 +3992,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -3866,6 +4013,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -3886,6 +4034,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -3906,6 +4055,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -3926,6 +4076,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -3989,6 +4140,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$Comme
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
@@ -4025,6 +4177,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType
   @override
   List<Object?> get props =>
       [id, user, comment, attachments, holder, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseTypeToJson(
@@ -4046,6 +4199,7 @@ class GetCommentsByHolder$Query$CommentType$FirstReplyType
 
   @override
   List<Object?> get props => [hasMoreReplies, reply];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentType$FirstReplyTypeToJson(this);
@@ -4087,6 +4241,7 @@ class GetCommentsByHolder$Query$CommentType extends JsonSerializable
         updatedAt,
         firstReply
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolder$Query$CommentTypeToJson(this);
@@ -4103,6 +4258,7 @@ class GetCommentsByHolder$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getCommentsByHolder];
+
   @override
   Map<String, dynamic> toJson() => _$GetCommentsByHolder$QueryToJson(this);
 }
@@ -4162,6 +4318,7 @@ class CommentHolderInput extends JsonSerializable with EquatableMixin {
         purchaseInvoice,
         purchaseOrder
       ];
+
   @override
   Map<String, dynamic> toJson() => _$CommentHolderInputToJson(this);
 }
@@ -4186,6 +4343,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PhoneTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PhoneTypeToJson(
@@ -4218,6 +4376,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PictureTypeToJson(
@@ -4256,6 +4415,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$UserTypeToJson(
@@ -4288,6 +4448,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$Docu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -4312,6 +4473,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$Docu
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -4341,6 +4503,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$Docu
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -4368,6 +4531,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$Docu
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -4389,6 +4553,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$Docu
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentTypeToJson(
@@ -4415,6 +4580,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$User
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneTypeToJson(
@@ -4447,6 +4613,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$User
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureTypeToJson(
@@ -4485,6 +4652,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$User
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserTypeToJson(
@@ -4520,6 +4688,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentTypeToJson(
@@ -4540,6 +4709,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$TicketTypeToJson(
@@ -4560,6 +4730,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$BoardCardTypeToJson(
@@ -4580,6 +4751,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$ProjectTypeToJson(
@@ -4600,6 +4772,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$QuotationTypeToJson(
@@ -4620,6 +4793,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$SaleOrderTypeToJson(
@@ -4640,6 +4814,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -4660,6 +4835,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -4680,6 +4856,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -4700,6 +4877,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -4720,6 +4898,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -4740,6 +4919,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -4803,6 +4983,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderTypeToJson(
@@ -4829,6 +5010,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
@@ -4861,6 +5043,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
@@ -4899,6 +5082,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
@@ -4931,6 +5115,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -4955,6 +5140,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -4984,6 +5170,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -5011,6 +5198,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -5032,6 +5220,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
@@ -5058,6 +5247,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
@@ -5090,6 +5280,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
@@ -5128,6 +5319,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
@@ -5163,6 +5355,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
@@ -5183,6 +5376,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeToJson(
@@ -5203,6 +5397,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$BoardCardTypeToJson(
@@ -5223,6 +5418,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$ProjectTypeToJson(
@@ -5243,6 +5439,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$QuotationTypeToJson(
@@ -5263,6 +5460,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleOrderTypeToJson(
@@ -5283,6 +5481,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -5303,6 +5502,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -5323,6 +5523,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -5343,6 +5544,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -5363,6 +5565,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -5383,6 +5586,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -5446,6 +5650,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
@@ -5482,6 +5687,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$Co
   @override
   List<Object?> get props =>
       [id, user, comment, attachments, holder, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseTypeToJson(
@@ -5505,6 +5711,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType
 
   @override
   List<Object?> get props => [hasMoreReplies, reply];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyTypeToJson(
@@ -5550,6 +5757,7 @@ class GetCommentsReplies$Query$CommentPaginateType$CommentType
         updatedAt,
         firstReply
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateType$CommentTypeToJson(this);
@@ -5572,6 +5780,7 @@ class GetCommentsReplies$Query$CommentPaginateType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsReplies$Query$CommentPaginateTypeToJson(this);
@@ -5588,6 +5797,7 @@ class GetCommentsReplies$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getCommentsReplies];
+
   @override
   Map<String, dynamic> toJson() => _$GetCommentsReplies$QueryToJson(this);
 }
@@ -5608,6 +5818,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -5632,6 +5843,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PhoneTypeToJson(
@@ -5664,6 +5876,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PictureTypeToJson(
@@ -5702,6 +5915,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserTyp
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserTypeToJson(
@@ -5734,6 +5948,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Documen
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -5758,6 +5973,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Documen
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -5787,6 +6003,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Documen
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -5814,6 +6031,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Documen
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -5835,6 +6053,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Documen
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentTypeToJson(
@@ -5861,6 +6080,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Documen
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneTypeToJson(
@@ -5893,6 +6113,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Documen
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureTypeToJson(
@@ -5931,6 +6152,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Documen
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserTypeToJson(
@@ -5966,6 +6188,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Documen
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentTypeToJson(
@@ -5986,6 +6209,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$TicketTypeToJson(
@@ -6006,6 +6230,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$BoardCardTypeToJson(
@@ -6026,6 +6251,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$ProjectTypeToJson(
@@ -6046,6 +6272,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$QuotationTypeToJson(
@@ -6066,6 +6293,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$SaleOrderTypeToJson(
@@ -6086,6 +6314,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -6106,6 +6335,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -6126,6 +6356,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -6146,6 +6377,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -6166,6 +6398,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -6186,6 +6419,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -6249,6 +6483,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$Comment
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderTypeToJson(
@@ -6275,6 +6510,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
@@ -6307,6 +6543,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
@@ -6345,6 +6582,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
@@ -6377,6 +6615,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -6401,6 +6640,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -6430,6 +6670,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -6457,6 +6698,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -6478,6 +6720,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
@@ -6504,6 +6747,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
@@ -6536,6 +6780,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
@@ -6574,6 +6819,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
@@ -6609,6 +6855,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
@@ -6629,6 +6876,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeToJson(
@@ -6649,6 +6897,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$BoardCardTypeToJson(
@@ -6669,6 +6918,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$ProjectTypeToJson(
@@ -6689,6 +6939,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$QuotationTypeToJson(
@@ -6709,6 +6960,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleOrderTypeToJson(
@@ -6729,6 +6981,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -6749,6 +7002,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -6769,6 +7023,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -6789,6 +7044,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -6809,6 +7065,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -6829,6 +7086,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -6892,6 +7150,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
@@ -6928,6 +7187,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
   @override
   List<Object?> get props =>
       [id, user, comment, attachments, holder, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseTypeToJson(
@@ -6951,6 +7211,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstRe
 
   @override
   List<Object?> get props => [hasMoreReplies, reply];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTypeToJson(
@@ -6998,6 +7259,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType
         updatedAt,
         firstReply
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentTypeToJson(
@@ -7022,6 +7284,7 @@ class GetCommentsByHolderPaginated$Query$CommentPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$Query$CommentPaginateTypeToJson(this);
@@ -7041,6 +7304,7 @@ class GetCommentsByHolderPaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCommentsByHolderPaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginated$QueryToJson(this);
@@ -7065,6 +7329,7 @@ class CreateComment$Mutation$CommentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$UserType$PhoneTypeToJson(this);
@@ -7095,6 +7360,7 @@ class CreateComment$Mutation$CommentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$UserType$PictureTypeToJson(this);
@@ -7129,6 +7395,7 @@ class CreateComment$Mutation$CommentType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$UserTypeToJson(this);
@@ -7160,6 +7427,7 @@ class CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -7184,6 +7452,7 @@ class CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -7213,6 +7482,7 @@ class CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -7240,6 +7510,7 @@ class CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -7261,6 +7532,7 @@ class CreateComment$Mutation$CommentType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentTypeToJson(
@@ -7287,6 +7559,7 @@ class CreateComment$Mutation$CommentType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$DocumentType$UserType$PhoneTypeToJson(
@@ -7319,6 +7592,7 @@ class CreateComment$Mutation$CommentType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$DocumentType$UserType$PictureTypeToJson(
@@ -7354,6 +7628,7 @@ class CreateComment$Mutation$CommentType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$DocumentType$UserTypeToJson(this);
@@ -7385,6 +7660,7 @@ class CreateComment$Mutation$CommentType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$DocumentTypeToJson(this);
@@ -7404,6 +7680,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$TicketType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$TicketTypeToJson(
@@ -7424,6 +7701,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$BoardCardType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$BoardCardTypeToJson(
@@ -7444,6 +7722,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$ProjectType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$ProjectTypeToJson(
@@ -7464,6 +7743,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$QuotationType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$QuotationTypeToJson(
@@ -7484,6 +7764,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$SaleOrderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$SaleOrderTypeToJson(
@@ -7504,6 +7785,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$SaleInvoiceType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -7524,6 +7806,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$SaleIssueNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -7544,6 +7827,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$PurchaseOrderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -7564,6 +7848,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$PurchaseInvoiceType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -7584,6 +7869,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$SaleDeliveryNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -7604,6 +7890,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType$PurchaseDeliveryNoteT
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -7661,6 +7948,7 @@ class CreateComment$Mutation$CommentType$CommentHolderType
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$CommentHolderTypeToJson(this);
@@ -7686,6 +7974,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
@@ -7718,6 +8007,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
@@ -7756,6 +8046,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
@@ -7788,6 +8079,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -7812,6 +8104,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -7841,6 +8134,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -7868,6 +8162,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -7889,6 +8184,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
@@ -7915,6 +8211,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
@@ -7947,6 +8244,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
@@ -7985,6 +8283,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
@@ -8020,6 +8319,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
@@ -8040,6 +8340,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeToJson(
@@ -8060,6 +8361,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$BoardCardTypeToJson(
@@ -8080,6 +8382,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$ProjectTypeToJson(
@@ -8100,6 +8403,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$QuotationTypeToJson(
@@ -8120,6 +8424,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleOrderTypeToJson(
@@ -8140,6 +8445,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -8160,6 +8466,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -8180,6 +8487,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -8200,6 +8508,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -8220,6 +8529,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -8240,6 +8550,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -8303,6 +8614,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
@@ -8339,6 +8651,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType
   @override
   List<Object?> get props =>
       [id, user, comment, attachments, holder, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseTypeToJson(
@@ -8360,6 +8673,7 @@ class CreateComment$Mutation$CommentType$FirstReplyType extends JsonSerializable
 
   @override
   List<Object?> get props => [hasMoreReplies, reply];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentType$FirstReplyTypeToJson(this);
@@ -8401,6 +8715,7 @@ class CreateComment$Mutation$CommentType extends JsonSerializable
         updatedAt,
         firstReply
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateComment$Mutation$CommentTypeToJson(this);
@@ -8417,6 +8732,7 @@ class CreateComment$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createComment];
+
   @override
   Map<String, dynamic> toJson() => _$CreateComment$MutationToJson(this);
 }
@@ -8446,6 +8762,7 @@ class CommentInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [user, comment, replyTo, attachments, holder];
+
   @override
   Map<String, dynamic> toJson() => _$CommentInputToJson(this);
 }
@@ -8469,6 +8786,7 @@ class UpdateComment$Mutation$CommentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$UserType$PhoneTypeToJson(this);
@@ -8499,6 +8817,7 @@ class UpdateComment$Mutation$CommentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$UserType$PictureTypeToJson(this);
@@ -8533,6 +8852,7 @@ class UpdateComment$Mutation$CommentType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$UserTypeToJson(this);
@@ -8564,6 +8884,7 @@ class UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -8588,6 +8909,7 @@ class UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -8617,6 +8939,7 @@ class UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -8644,6 +8967,7 @@ class UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -8665,6 +8989,7 @@ class UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentTypeToJson(
@@ -8691,6 +9016,7 @@ class UpdateComment$Mutation$CommentType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$DocumentType$UserType$PhoneTypeToJson(
@@ -8723,6 +9049,7 @@ class UpdateComment$Mutation$CommentType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$DocumentType$UserType$PictureTypeToJson(
@@ -8758,6 +9085,7 @@ class UpdateComment$Mutation$CommentType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$DocumentType$UserTypeToJson(this);
@@ -8789,6 +9117,7 @@ class UpdateComment$Mutation$CommentType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$DocumentTypeToJson(this);
@@ -8808,6 +9137,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$TicketType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$TicketTypeToJson(
@@ -8828,6 +9158,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$BoardCardType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$BoardCardTypeToJson(
@@ -8848,6 +9179,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$ProjectType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$ProjectTypeToJson(
@@ -8868,6 +9200,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$QuotationType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$QuotationTypeToJson(
@@ -8888,6 +9221,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$SaleOrderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$SaleOrderTypeToJson(
@@ -8908,6 +9242,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$SaleInvoiceType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -8928,6 +9263,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$SaleIssueNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -8948,6 +9284,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$PurchaseOrderType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -8968,6 +9305,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$PurchaseInvoiceType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -8988,6 +9326,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$SaleDeliveryNoteType
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -9008,6 +9347,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType$PurchaseDeliveryNoteT
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -9065,6 +9405,7 @@ class UpdateComment$Mutation$CommentType$CommentHolderType
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$CommentHolderTypeToJson(this);
@@ -9090,6 +9431,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
@@ -9122,6 +9464,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
@@ -9160,6 +9503,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
@@ -9192,6 +9536,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -9216,6 +9561,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -9245,6 +9591,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -9272,6 +9619,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -9293,6 +9641,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
@@ -9319,6 +9668,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
@@ -9351,6 +9701,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
@@ -9389,6 +9740,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
@@ -9424,6 +9776,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$Document
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
@@ -9444,6 +9797,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeToJson(
@@ -9464,6 +9818,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$BoardCardTypeToJson(
@@ -9484,6 +9839,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$ProjectTypeToJson(
@@ -9504,6 +9860,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$QuotationTypeToJson(
@@ -9524,6 +9881,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleOrderTypeToJson(
@@ -9544,6 +9902,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleInvoiceTypeToJson(
@@ -9564,6 +9923,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleIssueNoteTypeToJson(
@@ -9584,6 +9944,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseOrderTypeToJson(
@@ -9604,6 +9965,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseInvoiceTypeToJson(
@@ -9624,6 +9986,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$SaleDeliveryNoteTypeToJson(
@@ -9644,6 +10007,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$PurchaseDeliveryNoteTypeToJson(
@@ -9707,6 +10071,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentH
         saleDeliveryNote,
         purchaseDeliveryNote
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
@@ -9743,6 +10108,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType
   @override
   List<Object?> get props =>
       [id, user, comment, attachments, holder, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseTypeToJson(
@@ -9764,6 +10130,7 @@ class UpdateComment$Mutation$CommentType$FirstReplyType extends JsonSerializable
 
   @override
   List<Object?> get props => [hasMoreReplies, reply];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentType$FirstReplyTypeToJson(this);
@@ -9805,6 +10172,7 @@ class UpdateComment$Mutation$CommentType extends JsonSerializable
         updatedAt,
         firstReply
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateComment$Mutation$CommentTypeToJson(this);
@@ -9821,6 +10189,7 @@ class UpdateComment$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateComment];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateComment$MutationToJson(this);
 }
@@ -9840,6 +10209,7 @@ class DeleteComment$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteComment$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -9856,6 +10226,7 @@ class DeleteComment$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteComment];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteComment$MutationToJson(this);
 }
@@ -11828,6 +12199,7 @@ class GetCommentsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetComments$Query parse(Map<String, dynamic> json) =>
       GetComments$Query.fromJson(json);
@@ -11845,6 +12217,7 @@ class CommentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$CommentArgumentsToJson(this);
 }
@@ -13823,6 +14196,7 @@ class CommentQuery extends GraphQLQuery<Comment$Query, CommentArguments> {
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   Comment$Query parse(Map<String, dynamic> json) =>
       Comment$Query.fromJson(json);
@@ -13841,6 +14215,7 @@ class GetCommentsByHolderArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [holder];
+
   @override
   Map<String, dynamic> toJson() => _$GetCommentsByHolderArgumentsToJson(this);
 }
@@ -15822,6 +16197,7 @@ class GetCommentsByHolderQuery extends GraphQLQuery<GetCommentsByHolder$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCommentsByHolder$Query parse(Map<String, dynamic> json) =>
       GetCommentsByHolder$Query.fromJson(json);
@@ -15844,6 +16220,7 @@ class GetCommentsRepliesArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, pagination];
+
   @override
   Map<String, dynamic> toJson() => _$GetCommentsRepliesArgumentsToJson(this);
 }
@@ -17868,6 +18245,7 @@ class GetCommentsRepliesQuery extends GraphQLQuery<GetCommentsReplies$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCommentsReplies$Query parse(Map<String, dynamic> json) =>
       GetCommentsReplies$Query.fromJson(json);
@@ -17892,6 +18270,7 @@ class GetCommentsByHolderPaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [holder, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCommentsByHolderPaginatedArgumentsToJson(this);
@@ -19919,6 +20298,7 @@ class GetCommentsByHolderPaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCommentsByHolderPaginated$Query parse(Map<String, dynamic> json) =>
       GetCommentsByHolderPaginated$Query.fromJson(json);
@@ -19936,6 +20316,7 @@ class CreateCommentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateCommentArgumentsToJson(this);
 }
@@ -21915,6 +22296,7 @@ class CreateCommentMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateComment$Mutation parse(Map<String, dynamic> json) =>
       CreateComment$Mutation.fromJson(json);
@@ -21937,6 +22319,7 @@ class UpdateCommentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateCommentArgumentsToJson(this);
 }
@@ -23929,6 +24312,7 @@ class UpdateCommentMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateComment$Mutation parse(Map<String, dynamic> json) =>
       UpdateComment$Mutation.fromJson(json);
@@ -23946,6 +24330,7 @@ class DeleteCommentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteCommentArgumentsToJson(this);
 }
@@ -24014,6 +24399,7 @@ class DeleteCommentMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteComment$Mutation parse(Map<String, dynamic> json) =>
       DeleteComment$Mutation.fromJson(json);

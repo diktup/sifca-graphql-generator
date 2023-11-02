@@ -26,6 +26,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$PhoneTypeToJson(
@@ -56,6 +57,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$PictureTypeToJson(
@@ -86,6 +88,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType$PictureTypeToJson(
@@ -123,6 +126,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageTypeToJson(
@@ -153,6 +157,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType$PictureTypeToJson(
@@ -201,6 +206,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryTypeToJson(
@@ -223,6 +229,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLat
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLatTypeToJson(
@@ -253,6 +260,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$Countr
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -301,6 +309,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$Countr
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryTypeToJson(
@@ -333,6 +342,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -381,6 +391,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -413,6 +424,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -475,6 +487,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateTypeToJson(
@@ -497,6 +510,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAd
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -520,6 +534,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAd
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -559,6 +574,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressTypeToJson(
@@ -589,6 +605,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$Social
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -622,6 +639,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$Social
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -646,6 +664,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$Social
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -670,6 +689,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$Social
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -704,6 +724,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$Social
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialTypeToJson(
@@ -727,6 +748,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueTypeToJson(
@@ -747,6 +769,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$Oo
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -779,6 +802,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$Fa
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -828,6 +852,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$Go
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -868,6 +893,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$Ap
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -898,6 +924,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataTypeToJson(
@@ -1036,6 +1063,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType
         socialMedia,
         socialLoginData
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserTypeToJson(this);
@@ -1058,6 +1086,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType extends JsonSerializable
 
   @override
   List<Object?> get props => [accessToken, expiresIn, user];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$Mutation$LoginTypeToJson(this);
@@ -1076,6 +1105,7 @@ class UpdateCurrentUserLogins$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateCurrentUserLogins];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLogins$MutationToJson(this);
@@ -1097,6 +1127,7 @@ class IPhoneInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() => _$IPhoneInputToJson(this);
 }
@@ -1114,6 +1145,7 @@ class LoginForApp$Query$LoginType extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [accessToken, expiresIn];
+
   @override
   Map<String, dynamic> toJson() => _$LoginForApp$Query$LoginTypeToJson(this);
 }
@@ -1129,6 +1161,7 @@ class LoginForApp$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [loginForApp];
+
   @override
   Map<String, dynamic> toJson() => _$LoginForApp$QueryToJson(this);
 }
@@ -1152,6 +1185,7 @@ class LoginInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [login, phone, password];
+
   @override
   Map<String, dynamic> toJson() => _$LoginInputToJson(this);
 }
@@ -1171,6 +1205,7 @@ class RegisterForApp$Mutation$LoginType extends JsonSerializable
 
   @override
   List<Object?> get props => [accessToken, expiresIn];
+
   @override
   Map<String, dynamic> toJson() =>
       _$RegisterForApp$Mutation$LoginTypeToJson(this);
@@ -1187,6 +1222,7 @@ class RegisterForApp$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [registerForApp];
+
   @override
   Map<String, dynamic> toJson() => _$RegisterForApp$MutationToJson(this);
 }
@@ -1357,6 +1393,7 @@ class UserInput extends JsonSerializable with EquatableMixin {
         apps,
         phoneNumber
       ];
+
   @override
   Map<String, dynamic> toJson() => _$UserInputToJson(this);
 }
@@ -1392,6 +1429,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -1429,6 +1467,7 @@ class UserEducationInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() => _$UserEducationInputToJson(this);
 }
@@ -1468,6 +1507,7 @@ class UserWorkInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() => _$UserWorkInputToJson(this);
 }
@@ -1488,6 +1528,7 @@ class SocialValueInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() => _$SocialValueInputToJson(this);
 }
@@ -1527,6 +1568,7 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [owner, address, postCode, city, country, state, addressLine, location];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressInputToJson(this);
 }
@@ -1547,6 +1589,7 @@ class FullAddressOwnerInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressOwnerInputToJson(this);
 }
@@ -1567,6 +1610,7 @@ class FullAddressOwnerPhoneInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressOwnerPhoneInputToJson(this);
 }
@@ -1587,6 +1631,7 @@ class LonLatInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() => _$LonLatInputToJson(this);
 }
@@ -1611,6 +1656,7 @@ class EmailTempVariablesBrandInput extends JsonSerializable
 
   @override
   List<Object?> get props => [logo, website, name];
+
   @override
   Map<String, dynamic> toJson() => _$EmailTempVariablesBrandInputToJson(this);
 }
@@ -1839,6 +1885,7 @@ class UpdateCurrentUserLoginsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [email, username, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCurrentUserLoginsArgumentsToJson(this);
@@ -5809,6 +5856,7 @@ class UpdateCurrentUserLoginsMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateCurrentUserLogins$Mutation parse(Map<String, dynamic> json) =>
       UpdateCurrentUserLogins$Mutation.fromJson(json);
@@ -5826,6 +5874,7 @@ class LoginForAppArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$LoginForAppArgumentsToJson(this);
 }
@@ -5894,6 +5943,7 @@ class LoginForAppQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   LoginForApp$Query parse(Map<String, dynamic> json) =>
       LoginForApp$Query.fromJson(json);
@@ -5919,6 +5969,7 @@ class RegisterForAppArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [subject, input, brand];
+
   @override
   Map<String, dynamic> toJson() => _$RegisterForAppArgumentsToJson(this);
 }
@@ -6014,6 +6065,7 @@ class RegisterForAppMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   RegisterForApp$Mutation parse(Map<String, dynamic> json) =>
       RegisterForApp$Mutation.fromJson(json);

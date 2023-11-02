@@ -22,6 +22,7 @@ class GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoTyp
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -49,6 +50,7 @@ class GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoTyp
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -79,6 +81,7 @@ class GetCatalogueCategories$Query$CatalogueCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategories$Query$CatalogueCategoryType$PictureTypeToJson(
@@ -148,6 +151,7 @@ class GetCatalogueCategories$Query$CatalogueCategoryType
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategories$Query$CatalogueCategoryTypeToJson(this);
@@ -166,6 +170,7 @@ class GetCatalogueCategories$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCatalogueCategories];
+
   @override
   Map<String, dynamic> toJson() => _$GetCatalogueCategories$QueryToJson(this);
 }
@@ -192,6 +197,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -212,6 +218,7 @@ class CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType$Met
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -239,6 +246,7 @@ class CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -268,6 +276,7 @@ class CatalogueCategory$Query$CatalogueCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CatalogueCategory$Query$CatalogueCategoryType$PictureTypeToJson(this);
@@ -334,6 +343,7 @@ class CatalogueCategory$Query$CatalogueCategoryType extends JsonSerializable
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CatalogueCategory$Query$CatalogueCategoryTypeToJson(this);
@@ -350,6 +360,7 @@ class CatalogueCategory$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [catalogueCategory];
+
   @override
   Map<String, dynamic> toJson() => _$CatalogueCategory$QueryToJson(this);
 }
@@ -370,6 +381,7 @@ class GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoT
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -397,6 +409,7 @@ class GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoT
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -427,6 +440,7 @@ class GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureTypeToJson(
@@ -496,6 +510,7 @@ class GetCatalogueCategoryPath$Query$CatalogueCategoryType
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoryPath$Query$CatalogueCategoryTypeToJson(this);
@@ -514,6 +529,7 @@ class GetCatalogueCategoryPath$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCatalogueCategoryPath];
+
   @override
   Map<String, dynamic> toJson() => _$GetCatalogueCategoryPath$QueryToJson(this);
 }
@@ -534,6 +550,7 @@ class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$Catalo
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -561,6 +578,7 @@ class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$Catalo
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -591,6 +609,7 @@ class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$PictureTypeToJson(
@@ -661,6 +680,7 @@ class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryTypeToJson(
@@ -681,6 +701,7 @@ class GetCatalogueCategoriesByTargetForPortal$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCatalogueCategoriesByTargetForPortal];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetForPortal$QueryToJson(this);
@@ -702,6 +723,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -729,6 +751,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
@@ -759,6 +782,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$PictureTypeToJson(
@@ -781,6 +805,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -808,6 +833,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
@@ -838,6 +864,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
@@ -860,6 +887,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -887,6 +915,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
@@ -917,6 +946,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
@@ -939,6 +969,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -966,6 +997,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
@@ -996,6 +1028,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
@@ -1018,6 +1051,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -1045,6 +1079,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
@@ -1075,6 +1110,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
@@ -1097,6 +1133,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -1124,6 +1161,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
@@ -1154,6 +1192,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
@@ -1224,6 +1263,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeToJson(
@@ -1298,6 +1338,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         pictures,
         children
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeToJson(
@@ -1372,6 +1413,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         pictures,
         children
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeToJson(
@@ -1446,6 +1488,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         pictures,
         children
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeToJson(
@@ -1520,6 +1563,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         pictures,
         children
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeToJson(
@@ -1594,6 +1638,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         pictures,
         children
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTypeToJson(
@@ -1615,6 +1660,7 @@ class GetCatalogueCategoriesByTargetWithChildren$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCatalogueCategoriesByTargetWithChildren];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$QueryToJson(this);
@@ -1636,6 +1682,7 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$Catalo
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -1663,6 +1710,7 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$Catalo
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -1693,6 +1741,7 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$PictureTypeToJson(
@@ -1763,6 +1812,7 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryTypeToJson(
@@ -1783,6 +1833,7 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCatalogueCategoriesByTargetAndUrlKey];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetAndUrlKey$QueryToJson(this);
@@ -1804,6 +1855,7 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -1831,6 +1883,7 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -1861,6 +1914,7 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureTypeToJson(
@@ -1931,6 +1985,7 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryTypeToJson(
@@ -1957,6 +2012,7 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTypeToJson(
@@ -1977,6 +2033,7 @@ class GetCatalogueCategoriesByTargetPaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCatalogueCategoriesByTargetPaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetPaginated$QueryToJson(this);
@@ -1998,6 +2055,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -2018,6 +2076,7 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Catalog
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -2045,6 +2104,7 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Catalog
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -2075,6 +2135,7 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$PictureTypeToJson(
@@ -2097,6 +2158,7 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Catalog
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -2124,6 +2186,7 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Catalog
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoTypeToJson(
@@ -2154,6 +2217,7 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Catalog
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureTypeToJson(
@@ -2224,6 +2288,7 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Catalog
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseTypeToJson(
@@ -2298,6 +2363,7 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType
         pictures,
         parent
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryTypeToJson(
@@ -2318,6 +2384,7 @@ class GetCatalogueCategoriesByLayerAndParent$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCatalogueCategoriesByLayerAndParent];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParent$QueryToJson(this);
@@ -2339,6 +2406,7 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTyp
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -2366,6 +2434,7 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTyp
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -2396,6 +2465,7 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$PictureTypeToJson(
@@ -2466,6 +2536,7 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTyp
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTypeToJson(
@@ -2487,6 +2558,7 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query
 
   @override
   List<Object?> get props => [getCatalogueCategoriesByLayerAndParentForPortal];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParentForPortal$QueryToJson(this);
@@ -2508,6 +2580,7 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCat
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -2535,6 +2608,7 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCat
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -2565,6 +2639,7 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureTypeToJson(
@@ -2635,6 +2710,7 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCat
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryTypeToJson(
@@ -2661,6 +2737,7 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateTypeToJson(
@@ -2680,6 +2757,7 @@ class SearchCatalogueCategories$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [searchCatalogueCategories];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCatalogueCategories$QueryToJson(this);
@@ -2701,6 +2779,7 @@ class CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySe
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -2728,6 +2807,7 @@ class CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySe
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -2758,6 +2838,7 @@ class CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureTypeToJson(
@@ -2827,6 +2908,7 @@ class CreateCatalogueCategory$Mutation$CatalogueCategoryType
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCatalogueCategory$Mutation$CatalogueCategoryTypeToJson(this);
@@ -2846,6 +2928,7 @@ class CreateCatalogueCategory$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createCatalogueCategory];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCatalogueCategory$MutationToJson(this);
@@ -2915,6 +2998,7 @@ class CatalogueCategoryInput extends JsonSerializable with EquatableMixin {
         target,
         layer
       ];
+
   @override
   Map<String, dynamic> toJson() => _$CatalogueCategoryInputToJson(this);
 }
@@ -2950,6 +3034,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -2976,6 +3061,7 @@ class CatalogueCategorySeoInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() => _$CatalogueCategorySeoInputToJson(this);
 }
@@ -2996,6 +3082,7 @@ class MetaKeywordsInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() => _$MetaKeywordsInputToJson(this);
 }
@@ -3016,6 +3103,7 @@ class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySe
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -3043,6 +3131,7 @@ class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySe
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -3073,6 +3162,7 @@ class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureTypeToJson(
@@ -3142,6 +3232,7 @@ class UpdateCatalogueCategory$Mutation$CatalogueCategoryType
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCatalogueCategory$Mutation$CatalogueCategoryTypeToJson(this);
@@ -3161,6 +3252,7 @@ class UpdateCatalogueCategory$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateCatalogueCategory];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCatalogueCategory$MutationToJson(this);
@@ -3231,6 +3323,7 @@ class CatalogueCategoryUpdateInput extends JsonSerializable
         name,
         layer
       ];
+
   @override
   Map<String, dynamic> toJson() => _$CatalogueCategoryUpdateInputToJson(this);
 }
@@ -3250,6 +3343,7 @@ class DeleteCatalogueCategory$Mutation$DeleteResponseDtoType
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteCatalogueCategory$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -3269,6 +3363,7 @@ class DeleteCatalogueCategory$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [deleteCatalogueCategory];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteCatalogueCategory$MutationToJson(this);
@@ -3290,6 +3385,7 @@ class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategor
 
   @override
   List<Object?> get props => [name, content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
@@ -3317,6 +3413,7 @@ class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategor
 
   @override
   List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
@@ -3347,6 +3444,7 @@ class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureTypeToJson(
@@ -3416,6 +3514,7 @@ class ReorderCatalogueCategories$Mutation$CatalogueCategoryType
         seo,
         pictures
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderCatalogueCategories$Mutation$CatalogueCategoryTypeToJson(this);
@@ -3435,6 +3534,7 @@ class ReorderCatalogueCategories$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [reorderCatalogueCategories];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderCatalogueCategories$MutationToJson(this);
@@ -3466,6 +3566,7 @@ class GetCatalogueCategoriesArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesArgumentsToJson(this);
@@ -3722,6 +3823,7 @@ class GetCatalogueCategoriesQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCatalogueCategories$Query parse(Map<String, dynamic> json) =>
       GetCatalogueCategories$Query.fromJson(json);
@@ -3739,6 +3841,7 @@ class CatalogueCategoryArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$CatalogueCategoryArgumentsToJson(this);
 }
@@ -3992,6 +4095,7 @@ class CatalogueCategoryQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CatalogueCategory$Query parse(Map<String, dynamic> json) =>
       CatalogueCategory$Query.fromJson(json);
@@ -4011,6 +4115,7 @@ class GetCatalogueCategoryPathArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoryPathArgumentsToJson(this);
@@ -4267,6 +4372,7 @@ class GetCatalogueCategoryPathQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCatalogueCategoryPath$Query parse(Map<String, dynamic> json) =>
       GetCatalogueCategoryPath$Query.fromJson(json);
@@ -4286,6 +4392,7 @@ class GetCatalogueCategoriesByTargetForPortalArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetForPortalArgumentsToJson(this);
@@ -4545,6 +4652,7 @@ class GetCatalogueCategoriesByTargetForPortalQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCatalogueCategoriesByTargetForPortal$Query parse(
           Map<String, dynamic> json) =>
@@ -4565,6 +4673,7 @@ class GetCatalogueCategoriesByTargetWithChildrenArguments
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildrenArgumentsToJson(this);
@@ -5859,6 +5968,7 @@ class GetCatalogueCategoriesByTargetWithChildrenQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCatalogueCategoriesByTargetWithChildren$Query parse(
           Map<String, dynamic> json) =>
@@ -5884,6 +5994,7 @@ class GetCatalogueCategoriesByTargetAndUrlKeyArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, urlKey];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetAndUrlKeyArgumentsToJson(this);
@@ -6156,6 +6267,7 @@ class GetCatalogueCategoriesByTargetAndUrlKeyQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCatalogueCategoriesByTargetAndUrlKey$Query parse(
           Map<String, dynamic> json) =>
@@ -6181,6 +6293,7 @@ class GetCatalogueCategoriesByTargetPaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetPaginatedArgumentsToJson(this);
@@ -6475,6 +6588,7 @@ class GetCatalogueCategoriesByTargetPaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCatalogueCategoriesByTargetPaginated$Query parse(
           Map<String, dynamic> json) =>
@@ -6507,6 +6621,7 @@ class GetCatalogueCategoriesByLayerAndParentArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, layer, variety, parent];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParentArgumentsToJson(this);
@@ -7012,6 +7127,7 @@ class GetCatalogueCategoriesByLayerAndParentQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCatalogueCategoriesByLayerAndParent$Query parse(
           Map<String, dynamic> json) =>
@@ -7040,6 +7156,7 @@ class GetCatalogueCategoriesByLayerAndParentForPortalArguments
 
   @override
   List<Object?> get props => [target, layer, parent];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParentForPortalArgumentsToJson(this);
@@ -7327,6 +7444,7 @@ class GetCatalogueCategoriesByLayerAndParentForPortalQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCatalogueCategoriesByLayerAndParentForPortal$Query parse(
           Map<String, dynamic> json) =>
@@ -7352,6 +7470,7 @@ class SearchCatalogueCategoriesArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination, searchString];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCatalogueCategoriesArgumentsToJson(this);
@@ -7643,6 +7762,7 @@ class SearchCatalogueCategoriesQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SearchCatalogueCategories$Query parse(Map<String, dynamic> json) =>
       SearchCatalogueCategories$Query.fromJson(json);
@@ -7662,6 +7782,7 @@ class CreateCatalogueCategoryArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCatalogueCategoryArgumentsToJson(this);
@@ -7918,6 +8039,7 @@ class CreateCatalogueCategoryMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateCatalogueCategory$Mutation parse(Map<String, dynamic> json) =>
       CreateCatalogueCategory$Mutation.fromJson(json);
@@ -7937,6 +8059,7 @@ class UpdateCatalogueCategoryArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCatalogueCategoryArgumentsToJson(this);
@@ -8193,6 +8316,7 @@ class UpdateCatalogueCategoryMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateCatalogueCategory$Mutation parse(Map<String, dynamic> json) =>
       UpdateCatalogueCategory$Mutation.fromJson(json);
@@ -8212,6 +8336,7 @@ class DeleteCatalogueCategoryArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteCatalogueCategoryArgumentsToJson(this);
@@ -8283,6 +8408,7 @@ class DeleteCatalogueCategoryMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteCatalogueCategory$Mutation parse(Map<String, dynamic> json) =>
       DeleteCatalogueCategory$Mutation.fromJson(json);
@@ -8310,6 +8436,7 @@ class ReorderCatalogueCategoriesArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [catalogCategoryId, target, newRank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderCatalogueCategoriesArgumentsToJson(this);
@@ -8593,6 +8720,7 @@ class ReorderCatalogueCategoriesMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   ReorderCatalogueCategories$Mutation parse(Map<String, dynamic> json) =>
       ReorderCatalogueCategories$Mutation.fromJson(json);

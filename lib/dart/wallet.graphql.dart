@@ -32,6 +32,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$MediaType$PictureTypeToJson(
@@ -58,6 +59,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$MediaTypeToJson(
@@ -90,6 +92,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$MediaType$PictureTypeToJson(
@@ -116,6 +119,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$MediaTypeToJson(
@@ -148,6 +152,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeType$MediaType$PictureTypeToJson(
@@ -174,6 +179,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeType$MediaTypeToJson(
@@ -197,6 +203,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [enable, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeType$PredefinedActionTypeToJson(
@@ -245,6 +252,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         updatedAt,
         predefined
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeTypeToJson(
@@ -277,6 +285,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJocker$JockerType$MediaType$PictureTypeToJson(
@@ -303,6 +312,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJocker$JockerType$MediaTypeToJson(
@@ -342,6 +352,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
   @override
   List<Object?> get props =>
       [id, title, description, icon, cost, kind, media, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJocker$JockerTypeToJson(
@@ -365,6 +376,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [jocker, cost];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJockerToJson(
@@ -435,6 +447,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeTypeToJson(
@@ -461,6 +474,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$UserType$PhoneTypeToJson(
@@ -493,6 +507,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$UserType$PictureTypeToJson(
@@ -531,6 +546,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$UserTypeToJson(
@@ -553,6 +569,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [rank, reward];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeWinnerToJson(
@@ -575,6 +592,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [checkpoint, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeCheckpointToJson(
@@ -607,6 +625,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$MediaType$PictureTypeToJson(
@@ -633,6 +652,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$MediaTypeToJson(
@@ -665,6 +685,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaType$MediaType$PictureTypeToJson(
@@ -691,6 +712,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaType$MediaTypeToJson(
@@ -715,6 +737,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [field, operators];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaType$AudienceCriteriaFieldTypeToJson(
@@ -766,6 +789,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         media,
         fields
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaTypeToJson(
@@ -798,6 +822,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeType$MediaType$PictureTypeToJson(
@@ -824,6 +849,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeType$MediaTypeToJson(
@@ -847,6 +873,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [enable, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeType$PredefinedActionTypeToJson(
@@ -895,6 +922,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         updatedAt,
         predefined
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeTypeToJson(
@@ -917,6 +945,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [min, max];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionTextBoxTypeToJson(
@@ -939,6 +968,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [max, text];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionRatingTypeToJson(
@@ -963,6 +993,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [minValue, maxValue, score];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionCalculatedType$QuestActionDefinitionDefinitionCalculatedValuesTypeToJson(
@@ -992,6 +1023,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [output, kw$show, formula, values];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionCalculatedTypeToJson(
@@ -1014,6 +1046,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [outdated, interval];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionDateTypeToJson(
@@ -1069,6 +1102,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         academicLevel,
         language
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionContactTypeToJson(
@@ -1093,6 +1127,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [minValue, maxValue, interval];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionNumberTypeToJson(
@@ -1115,6 +1150,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [name, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionApiType$QuestActionDefinitionDefinitionApiParamsTypeToJson(
@@ -1145,6 +1181,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [link, method, auth, secret, params];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionApiTypeToJson(
@@ -1167,6 +1204,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [lines, columns];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionMatrixTypeToJson(
@@ -1189,6 +1227,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [leftLabel, rightLabel];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionToggleTypeToJson(
@@ -1211,6 +1250,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [item, enable];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesType$QuestionDtoType$QuestionChoiceDtoTypeToJson(
@@ -1231,6 +1271,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesType$QuestionDtoType$ChallengeStepTypeToJson(
@@ -1287,6 +1328,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesType$QuestionDtoTypeToJson(
@@ -1334,6 +1376,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         interaction,
         suggestions
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesTypeToJson(
@@ -1354,6 +1397,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [levels];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSmileyTypeToJson(
@@ -1374,6 +1418,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [min];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionScoreTypeToJson(
@@ -1396,6 +1441,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [url, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionLeadTypeToJson(
@@ -1416,6 +1462,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVerificationType$QuestActionDefinitionDefinitionVerificationItemType$QuestActionDefinitionDefinitionVerificationItemContentTypeToJson(
@@ -1440,6 +1487,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [verification, verified];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVerificationType$QuestActionDefinitionDefinitionVerificationItemTypeToJson(
@@ -1464,6 +1512,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [number, email];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVerificationTypeToJson(
@@ -1484,6 +1533,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [minSeconds];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVideoTypeToJson(
@@ -1516,6 +1566,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -1549,6 +1600,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -1573,6 +1625,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -1597,6 +1650,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesTypeToJson(
@@ -1631,6 +1685,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialTypeToJson(
@@ -1660,6 +1715,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [socialMedia, action, socialContent, url];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaTypeToJson(
@@ -1684,6 +1740,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [playstore, appstore, appgallery];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionAppDownloadTypeToJson(
@@ -1771,6 +1828,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         socialMedia,
         appDownload
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionTypeToJson(
@@ -1804,6 +1862,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
   @override
   List<Object?> get props =>
       [id, activityType, required, definition, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionTypeToJson(
@@ -1828,6 +1887,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [value, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldTypeToJson(
@@ -1852,6 +1912,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [lat, lng, order];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$AudienceSegmentFilterZoneType$DeliveryZonePathTypeToJson(
@@ -1878,6 +1939,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [radius, type, paths];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$AudienceSegmentFilterZoneTypeToJson(
@@ -1910,6 +1972,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$CountryType$PictureTypeToJson(
@@ -1958,6 +2021,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$CountryTypeToJson(
@@ -1990,6 +2054,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$CountryType$PictureTypeToJson(
@@ -2038,6 +2103,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$CountryTypeToJson(
@@ -2070,6 +2136,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$PictureTypeToJson(
@@ -2129,6 +2196,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateTypeToJson(
@@ -2161,6 +2229,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$LanguageType$PictureTypeToJson(
@@ -2198,6 +2267,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$LanguageTypeToJson(
@@ -2230,6 +2300,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationType$PictureTypeToJson(
@@ -2252,6 +2323,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [discount, description];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationType$PerksTypeToJson(
@@ -2274,6 +2346,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [min, max];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationType$LevelIntervalTypeToJson(
@@ -2332,6 +2405,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationTypeToJson(
@@ -2389,6 +2463,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         languages,
         reputations
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesTypeToJson(
@@ -2416,6 +2491,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [field, kw$operator, values];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterTypeToJson(
@@ -2442,6 +2518,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
 
   @override
   List<Object?> get props => [rank, criteria, filters];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentTypeToJson(
@@ -2479,6 +2556,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
   @override
   List<Object?> get props =>
       [id, icon, title, createdAt, updatedAt, description, media, segments];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceTypeToJson(
@@ -2550,6 +2628,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeTypeToJson(
@@ -2579,6 +2658,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType
 
   @override
   List<Object?> get props => [amount, usage, pocketType, challenge];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketTypeToJson(
@@ -2606,6 +2686,7 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType
 
   @override
   List<Object?> get props => [id, pocket, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoTypeToJson(
@@ -2626,6 +2707,7 @@ class GetCurrentUserQuantitativeWallet$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCurrentUserQuantitativeWallet];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWallet$QueryToJson(this);
@@ -2653,6 +2735,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -2673,6 +2756,7 @@ class IsWalletAndCardInitialized$Query$IsWalletAndCardInititalizedDtoType
 
   @override
   List<Object?> get props => [isUserCardCreated, isQuantitativeWalletCreated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$IsWalletAndCardInitialized$Query$IsWalletAndCardInititalizedDtoTypeToJson(
@@ -2693,6 +2777,7 @@ class IsWalletAndCardInitialized$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [isWalletAndCardInitialized];
+
   @override
   Map<String, dynamic> toJson() =>
       _$IsWalletAndCardInitialized$QueryToJson(this);
@@ -2712,6 +2797,7 @@ class WalletOwnerHasEnoughBalance$Query$WalletOwnerHasEnoughBalanceType
 
   @override
   List<Object?> get props => [hasEnoughBalance];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletOwnerHasEnoughBalance$Query$WalletOwnerHasEnoughBalanceTypeToJson(
@@ -2732,6 +2818,7 @@ class WalletOwnerHasEnoughBalance$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [walletOwnerHasEnoughBalance];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletOwnerHasEnoughBalance$QueryToJson(this);
@@ -2757,6 +2844,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$PhoneTypeToJson(
@@ -2789,6 +2877,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$PictureTypeToJson(
@@ -2821,6 +2910,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$LanguageType$Pictu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$LanguageType$PictureTypeToJson(
@@ -2858,6 +2948,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$LanguageType
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$LanguageTypeToJson(
@@ -2890,6 +2981,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$CountryType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$CountryType$PictureTypeToJson(
@@ -2938,6 +3030,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$CountryTypeToJson(
@@ -2960,6 +3053,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$Lo
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$LonLatTypeToJson(
@@ -2992,6 +3086,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$Co
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3040,6 +3135,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$Co
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$CountryTypeToJson(
@@ -3072,6 +3168,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$St
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3120,6 +3217,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$St
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$StateType$CountryTypeToJson(
@@ -3152,6 +3250,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$St
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$StateType$PictureTypeToJson(
@@ -3214,6 +3313,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$St
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$StateTypeToJson(
@@ -3236,6 +3336,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$Fu
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3259,6 +3360,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$Fu
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3298,6 +3400,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressTypeToJson(
@@ -3330,6 +3433,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType$So
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -3363,6 +3467,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType$So
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -3387,6 +3492,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType$So
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -3411,6 +3517,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType$So
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -3445,6 +3552,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType$So
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType$SocialTypeToJson(
@@ -3468,6 +3576,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueType
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialValueTypeToJson(
@@ -3488,6 +3597,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialLoginDataTyp
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
@@ -3520,6 +3630,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialLoginDataTyp
 
   @override
   List<Object?> get props => [id, name, token, email, lastName, firstName];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
@@ -3569,6 +3680,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialLoginDataTyp
         familyName,
         emailVerified
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
@@ -3609,6 +3721,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialLoginDataTyp
         userIdentifier,
         authorizationCode
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialLoginDataType$AppleDataTypeToJson(
@@ -3639,6 +3752,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialLoginDataTyp
 
   @override
   List<Object?> get props => [ooredoo, facebook, google, apple];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$SocialLoginDataTypeToJson(
@@ -3673,6 +3787,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserEducationType
   @override
   List<Object?> get props =>
       [level, name, description, tags, from, to, graduated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserEducationTypeToJson(
@@ -3705,6 +3820,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType$State
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
@@ -3753,6 +3869,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType$State
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType$StateType$CountryTypeToJson(
@@ -3785,6 +3902,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType$State
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType$StateType$PictureTypeToJson(
@@ -3847,6 +3965,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType$State
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType$StateTypeToJson(
@@ -3883,6 +4002,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType
   @override
   List<Object?> get props =>
       [company, position, description, city, tags, from, to, current];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkTypeToJson(
@@ -3915,6 +4035,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$StateType$CountryT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$StateType$CountryType$PictureTypeToJson(
@@ -3963,6 +4084,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$StateType$CountryT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$StateType$CountryTypeToJson(
@@ -3995,6 +4117,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$StateType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$StateType$PictureTypeToJson(
@@ -4057,6 +4180,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$StateTypeToJson(
@@ -4214,6 +4338,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType
         hobbies,
         interests
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserTypeToJson(this);
@@ -4245,6 +4370,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$TargetCurre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -4293,6 +4419,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$TargetCurre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyTypeToJson(
@@ -4317,6 +4444,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$TargetCurre
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$TargetCurrencyTypeToJson(
@@ -4349,6 +4477,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$LanguageTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$LanguageType$PictureTypeToJson(
@@ -4386,6 +4515,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$LanguageTyp
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$LanguageTypeToJson(
@@ -4418,6 +4548,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PictureTypeToJson(
@@ -4443,6 +4574,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$OpeningHour
 
   @override
   List<Object?> get props => [day, from, to];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayTypeToJson(
@@ -4467,6 +4599,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$OpeningHour
 
   @override
   List<Object?> get props => [status, hours];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$OpeningHoursTypeToJson(
@@ -4492,6 +4625,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SpecialOffe
 
   @override
   List<Object?> get props => [day, from, to];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayTypeToJson(
@@ -4516,6 +4650,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SpecialOffe
 
   @override
   List<Object?> get props => [offerType, hours];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SpecialOfferTypeToJson(
@@ -4538,6 +4673,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressType$LonLatTypeToJson(
@@ -4570,6 +4706,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4618,6 +4755,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressType$CountryTypeToJson(
@@ -4650,6 +4788,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4698,6 +4837,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryTypeToJson(
@@ -4730,6 +4870,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressType$StateType$PictureTypeToJson(
@@ -4792,6 +4933,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressType$StateTypeToJson(
@@ -4814,6 +4956,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -4837,6 +4980,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -4876,6 +5020,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressTypeToJson(
@@ -4908,6 +5053,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValue
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -4941,6 +5087,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValue
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -4965,6 +5112,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValue
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -4989,6 +5137,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValue
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -5023,6 +5172,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValue
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValueType$SocialTypeToJson(
@@ -5046,6 +5196,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValue
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$SocialValueTypeToJson(
@@ -5078,6 +5229,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$MediaType$PictureTypeToJson(
@@ -5104,6 +5256,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$MediaTypeToJson(
@@ -5126,6 +5279,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -5158,6 +5312,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5206,6 +5361,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -5238,6 +5394,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5286,6 +5443,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -5318,6 +5476,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -5380,6 +5539,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateTypeToJson(
@@ -5402,6 +5562,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -5425,6 +5586,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -5464,6 +5626,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressTypeToJson(
@@ -5488,6 +5651,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$CompanyLegalTypeToJson(
@@ -5510,6 +5674,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -5542,6 +5707,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5590,6 +5756,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -5622,6 +5789,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5670,6 +5838,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -5702,6 +5871,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -5761,6 +5931,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -5783,6 +5954,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -5806,6 +5978,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -5845,6 +6018,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -5871,6 +6045,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -5903,6 +6078,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -5935,6 +6111,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -5991,6 +6168,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -6017,6 +6195,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -6050,6 +6229,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -6087,6 +6267,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsTypeToJson(
@@ -6113,6 +6294,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -6138,6 +6320,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -6201,6 +6384,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyTypeToJson(
@@ -6233,6 +6417,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSCategory
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSCategoryType$PictureTypeToJson(
@@ -6265,6 +6450,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSCategory
   @override
   List<Object?> get props =>
       [id, name, mapPicture, createdAt, updatedAt, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSCategoryTypeToJson(
@@ -6293,6 +6479,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSServices
 
   @override
   List<Object?> get props => [id, index, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSServicesTypeToJson(
@@ -6325,6 +6512,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
@@ -6485,6 +6673,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType
         default256,
         default512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
@@ -6517,6 +6706,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
@@ -6555,6 +6745,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType
 
   @override
   List<Object?> get props => [alt, cardFlat, dark, flat, light, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
@@ -6579,6 +6770,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesTypeToJson(
@@ -6616,6 +6808,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentType
   @override
   List<Object?> get props =>
       [id, name, code, paymentType, materialIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$PaymentTypeToJson(
@@ -6648,6 +6841,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureTypeToJson(
@@ -6680,6 +6874,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureTypeToJson(
@@ -6706,6 +6901,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaTypeToJson(
@@ -6728,6 +6924,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -6760,6 +6957,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6808,6 +7006,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -6840,6 +7039,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6888,6 +7088,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -6920,6 +7121,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -6979,6 +7181,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateTypeToJson(
@@ -7001,6 +7204,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -7024,6 +7228,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -7063,6 +7268,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressTypeToJson(
@@ -7087,6 +7293,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalTypeToJson(
@@ -7109,6 +7316,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -7141,6 +7349,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -7189,6 +7398,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -7221,6 +7431,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -7269,6 +7480,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -7301,6 +7513,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -7363,6 +7576,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -7385,6 +7599,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -7408,6 +7623,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -7447,6 +7663,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -7473,6 +7690,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -7505,6 +7723,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -7537,6 +7756,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -7593,6 +7813,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -7619,6 +7840,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -7652,6 +7874,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -7689,6 +7912,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsTypeToJson(
@@ -7715,6 +7939,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -7740,6 +7965,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -7803,6 +8029,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyTypeToJson(
@@ -7836,6 +8063,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
   @override
   List<Object?> get props =>
       [id, createdAt, updatedAt, programName, picture, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramTypeToJson(
@@ -7861,6 +8089,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
 
   @override
   List<Object?> get props => [to, from, loyaltyProgram];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyTypeToJson(
@@ -7994,6 +8223,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType
         paymentMethods,
         loyaltyPrograms
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleTypeToJson(
@@ -8026,6 +8256,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$TargetCurren
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -8074,6 +8305,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$TargetCurren
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -8098,6 +8330,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$TargetCurren
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$TargetCurrencyTypeToJson(
@@ -8120,6 +8353,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$IPhoneType
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$IPhoneTypeToJson(
@@ -8142,6 +8376,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressType$LonLatTypeToJson(
@@ -8174,6 +8409,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -8222,6 +8458,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressType$CountryTypeToJson(
@@ -8254,6 +8491,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8302,6 +8540,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressType$StateType$CountryTypeToJson(
@@ -8334,6 +8573,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressType$StateType$PictureTypeToJson(
@@ -8396,6 +8636,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressType$StateTypeToJson(
@@ -8418,6 +8659,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -8441,6 +8683,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -8480,6 +8723,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressTypeToJson(
@@ -8512,6 +8756,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$MediaType$PictureTypeToJson(
@@ -8538,6 +8783,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$MediaTypeToJson(
@@ -8560,6 +8806,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -8592,6 +8839,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -8640,6 +8888,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -8672,6 +8921,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8720,6 +8970,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -8752,6 +9003,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -8814,6 +9066,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -8836,6 +9089,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -8859,6 +9113,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -8898,6 +9153,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressTypeToJson(
@@ -8922,6 +9178,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$CompanyLegalTypeToJson(
@@ -8944,6 +9201,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -8976,6 +9234,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9024,6 +9283,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -9056,6 +9316,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9104,6 +9365,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -9136,6 +9398,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -9195,6 +9458,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -9217,6 +9481,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -9240,6 +9505,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -9279,6 +9545,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -9305,6 +9572,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -9337,6 +9605,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -9369,6 +9638,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -9425,6 +9695,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -9451,6 +9722,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -9484,6 +9756,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -9521,6 +9794,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsTypeToJson(
@@ -9547,6 +9821,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -9572,6 +9847,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -9635,6 +9911,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyTypeToJson(
@@ -9667,6 +9944,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$PictureTypeToJson(
@@ -9733,6 +10011,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType
         company,
         picture
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerTypeToJson(
@@ -9765,6 +10044,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$TargetCurr
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -9813,6 +10093,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$TargetCurr
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -9837,6 +10118,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$TargetCurr
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -9869,6 +10151,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$PictureTypeToJson(
@@ -9891,6 +10174,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -9923,6 +10207,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9971,6 +10256,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -10003,6 +10289,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -10051,6 +10338,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -10083,6 +10371,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -10145,6 +10434,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -10167,6 +10457,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -10190,6 +10481,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -10229,6 +10521,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressTypeToJson(
@@ -10261,6 +10554,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -10287,6 +10581,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -10309,6 +10604,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -10341,6 +10637,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -10389,6 +10686,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -10421,6 +10719,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -10469,6 +10768,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -10501,6 +10801,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -10563,6 +10864,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -10585,6 +10887,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -10608,6 +10911,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -10647,6 +10951,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -10671,6 +10976,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -10693,6 +10999,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -10725,6 +11032,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -10773,6 +11081,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -10805,6 +11114,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -10853,6 +11163,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -10885,6 +11196,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -10944,6 +11256,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -10966,6 +11279,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -10989,6 +11303,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -11028,6 +11343,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -11054,6 +11370,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -11086,6 +11403,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -11118,6 +11436,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -11174,6 +11493,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -11200,6 +11520,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -11233,6 +11554,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -11270,6 +11592,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -11296,6 +11619,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -11321,6 +11645,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -11384,6 +11709,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTypeToJson(
@@ -11443,6 +11769,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerTypeToJson(
@@ -11468,6 +11795,7 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [user, pos, wholesaler, manufacturer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$OwnerDtoTypeToJson(this);
@@ -11499,6 +11827,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$MediaType$Pictu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$MediaType$PictureTypeToJson(
@@ -11525,6 +11854,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$MediaTypeToJson(
@@ -11557,6 +11887,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeType$MediaType$PictureTypeToJson(
@@ -11583,6 +11914,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeType$MediaTypeToJson(
@@ -11615,6 +11947,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeType$MediaType$PictureTypeToJson(
@@ -11641,6 +11974,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeType$MediaTypeToJson(
@@ -11664,6 +11998,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
 
   @override
   List<Object?> get props => [enable, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeType$PredefinedActionTypeToJson(
@@ -11712,6 +12047,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
         updatedAt,
         predefined
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeTypeToJson(
@@ -11744,6 +12080,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJocker$JockerType$MediaType$PictureTypeToJson(
@@ -11770,6 +12107,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJocker$JockerType$MediaTypeToJson(
@@ -11809,6 +12147,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
   @override
   List<Object?> get props =>
       [id, title, description, icon, cost, kind, media, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJocker$JockerTypeToJson(
@@ -11832,6 +12171,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
 
   @override
   List<Object?> get props => [jocker, cost];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJockerToJson(
@@ -11902,6 +12242,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTy
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeTypeToJson(
@@ -11928,6 +12269,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$UserType$PhoneT
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$UserType$PhoneTypeToJson(
@@ -11960,6 +12302,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$UserType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$UserType$PictureTypeToJson(
@@ -11998,6 +12341,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$UserTypeToJson(
@@ -12020,6 +12364,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeWi
 
   @override
   List<Object?> get props => [rank, reward];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeWinnerToJson(
@@ -12042,6 +12387,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeCh
 
   @override
   List<Object?> get props => [checkpoint, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$ChallengeTypeCheckpointToJson(
@@ -12074,6 +12420,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Me
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$MediaType$PictureTypeToJson(
@@ -12100,6 +12447,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Me
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$MediaTypeToJson(
@@ -12132,6 +12480,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaType$MediaType$PictureTypeToJson(
@@ -12158,6 +12507,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaType$MediaTypeToJson(
@@ -12182,6 +12532,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [field, operators];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaType$AudienceCriteriaFieldTypeToJson(
@@ -12233,6 +12584,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         media,
         fields
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaTypeToJson(
@@ -12265,6 +12617,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeType$MediaType$PictureTypeToJson(
@@ -12291,6 +12644,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeType$MediaTypeToJson(
@@ -12314,6 +12668,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [enable, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeType$PredefinedActionTypeToJson(
@@ -12362,6 +12717,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         updatedAt,
         predefined
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeTypeToJson(
@@ -12384,6 +12740,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [min, max];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionTextBoxTypeToJson(
@@ -12406,6 +12763,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [max, text];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionRatingTypeToJson(
@@ -12430,6 +12788,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [minValue, maxValue, score];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionCalculatedType$QuestActionDefinitionDefinitionCalculatedValuesTypeToJson(
@@ -12459,6 +12818,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [output, kw$show, formula, values];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionCalculatedTypeToJson(
@@ -12481,6 +12841,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [outdated, interval];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionDateTypeToJson(
@@ -12536,6 +12897,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         academicLevel,
         language
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionContactTypeToJson(
@@ -12560,6 +12922,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [minValue, maxValue, interval];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionNumberTypeToJson(
@@ -12582,6 +12945,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [name, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionApiType$QuestActionDefinitionDefinitionApiParamsTypeToJson(
@@ -12612,6 +12976,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [link, method, auth, secret, params];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionApiTypeToJson(
@@ -12634,6 +12999,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [lines, columns];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionMatrixTypeToJson(
@@ -12656,6 +13022,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [leftLabel, rightLabel];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionToggleTypeToJson(
@@ -12678,6 +13045,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [item, enable];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesType$QuestionDtoType$QuestionChoiceDtoTypeToJson(
@@ -12698,6 +13066,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesType$QuestionDtoType$ChallengeStepTypeToJson(
@@ -12754,6 +13123,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesType$QuestionDtoTypeToJson(
@@ -12801,6 +13171,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         interaction,
         suggestions
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesTypeToJson(
@@ -12821,6 +13192,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [levels];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSmileyTypeToJson(
@@ -12841,6 +13213,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [min];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionScoreTypeToJson(
@@ -12863,6 +13236,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [url, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionLeadTypeToJson(
@@ -12883,6 +13257,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVerificationType$QuestActionDefinitionDefinitionVerificationItemType$QuestActionDefinitionDefinitionVerificationItemContentTypeToJson(
@@ -12907,6 +13282,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [verification, verified];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVerificationType$QuestActionDefinitionDefinitionVerificationItemTypeToJson(
@@ -12931,6 +13307,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [number, email];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVerificationTypeToJson(
@@ -12951,6 +13328,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [minSeconds];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVideoTypeToJson(
@@ -12983,6 +13361,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -13016,6 +13395,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -13040,6 +13420,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -13064,6 +13445,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesTypeToJson(
@@ -13098,6 +13480,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialTypeToJson(
@@ -13127,6 +13510,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [socialMedia, action, socialContent, url];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaTypeToJson(
@@ -13151,6 +13535,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [playstore, appstore, appgallery];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionAppDownloadTypeToJson(
@@ -13238,6 +13623,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         socialMedia,
         appDownload
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionTypeToJson(
@@ -13271,6 +13657,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
   @override
   List<Object?> get props =>
       [id, activityType, required, definition, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionTypeToJson(
@@ -13295,6 +13682,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [value, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldTypeToJson(
@@ -13319,6 +13707,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [lat, lng, order];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$AudienceSegmentFilterZoneType$DeliveryZonePathTypeToJson(
@@ -13345,6 +13734,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [radius, type, paths];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$AudienceSegmentFilterZoneTypeToJson(
@@ -13377,6 +13767,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$CountryType$PictureTypeToJson(
@@ -13425,6 +13816,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$CountryTypeToJson(
@@ -13457,6 +13849,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$CountryType$PictureTypeToJson(
@@ -13505,6 +13898,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$CountryTypeToJson(
@@ -13537,6 +13931,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$PictureTypeToJson(
@@ -13596,6 +13991,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateTypeToJson(
@@ -13628,6 +14024,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$LanguageType$PictureTypeToJson(
@@ -13665,6 +14062,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$LanguageTypeToJson(
@@ -13697,6 +14095,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationType$PictureTypeToJson(
@@ -13719,6 +14118,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [discount, description];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationType$PerksTypeToJson(
@@ -13741,6 +14141,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [min, max];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationType$LevelIntervalTypeToJson(
@@ -13799,6 +14200,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationTypeToJson(
@@ -13856,6 +14258,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
         languages,
         reputations
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesTypeToJson(
@@ -13883,6 +14286,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [field, kw$operator, values];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterTypeToJson(
@@ -13909,6 +14313,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
 
   @override
   List<Object?> get props => [rank, criteria, filters];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentTypeToJson(
@@ -13946,6 +14351,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType
   @override
   List<Object?> get props =>
       [id, icon, title, createdAt, updatedAt, description, media, segments];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceTypeToJson(
@@ -14015,6 +14421,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketType$ChallengeTypeToJson(this);
@@ -14041,6 +14448,7 @@ class WalletByOwner$Query$WalletDtoType$PocketType extends JsonSerializable
 
   @override
   List<Object?> get props => [amount, usage, pocketType, challenge];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoType$PocketTypeToJson(this);
@@ -14067,6 +14475,7 @@ class WalletByOwner$Query$WalletDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, owner, createdAt, updatedAt, pockets];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletByOwner$Query$WalletDtoTypeToJson(this);
@@ -14083,6 +14492,7 @@ class WalletByOwner$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [walletByOwner];
+
   @override
   Map<String, dynamic> toJson() => _$WalletByOwner$QueryToJson(this);
 }
@@ -14113,6 +14523,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -14161,6 +14572,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$TargetCurrencyType$CurrencyTypeToJson(
@@ -14185,6 +14597,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$TargetCurrencyTypeToJson(
@@ -14217,6 +14630,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$LanguageType$PictureTypeToJson(
@@ -14254,6 +14668,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$LanguageTypeToJson(
@@ -14286,6 +14701,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$PictureTypeToJson(
@@ -14311,6 +14727,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [day, from, to];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OpeningHoursType$OpeningHoursDayTypeToJson(
@@ -14335,6 +14752,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [status, hours];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OpeningHoursTypeToJson(
@@ -14360,6 +14778,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [day, from, to];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$SpecialOfferType$OpeningHoursDayTypeToJson(
@@ -14384,6 +14803,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [offerType, hours];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$SpecialOfferTypeToJson(
@@ -14406,6 +14826,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressType$LonLatTypeToJson(
@@ -14438,6 +14859,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressType$CountryType$PictureTypeToJson(
@@ -14486,6 +14908,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressType$CountryTypeToJson(
@@ -14518,6 +14941,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -14566,6 +14990,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressType$StateType$CountryTypeToJson(
@@ -14598,6 +15023,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressType$StateType$PictureTypeToJson(
@@ -14660,6 +15086,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressType$StateTypeToJson(
@@ -14682,6 +15109,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -14705,6 +15133,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -14744,6 +15173,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressTypeToJson(
@@ -14776,6 +15206,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -14809,6 +15240,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -14833,6 +15265,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -14857,6 +15290,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$SocialValueType$SocialType$SocialImagesTypeToJson(
@@ -14891,6 +15325,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$SocialValueType$SocialTypeToJson(
@@ -14914,6 +15349,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [name, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$SocialValueTypeToJson(
@@ -14946,6 +15382,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$MediaType$PictureTypeToJson(
@@ -14972,6 +15409,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$MediaTypeToJson(
@@ -14994,6 +15432,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -15026,6 +15465,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -15074,6 +15514,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -15106,6 +15547,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -15154,6 +15596,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -15186,6 +15629,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -15248,6 +15692,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressType$StateTypeToJson(
@@ -15270,6 +15715,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -15293,6 +15739,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -15332,6 +15779,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressTypeToJson(
@@ -15356,6 +15804,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$CompanyLegalTypeToJson(
@@ -15378,6 +15827,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -15410,6 +15860,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -15458,6 +15909,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -15490,6 +15942,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -15538,6 +15991,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -15570,6 +16024,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -15632,6 +16087,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -15654,6 +16110,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -15677,6 +16134,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -15716,6 +16174,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -15742,6 +16201,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -15774,6 +16234,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -15806,6 +16267,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -15862,6 +16324,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -15888,6 +16351,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -15921,6 +16385,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -15958,6 +16423,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsTypeToJson(
@@ -15984,6 +16450,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -16009,6 +16476,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -16072,6 +16540,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyTypeToJson(
@@ -16104,6 +16573,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSCategoryType$PictureTypeToJson(
@@ -16136,6 +16606,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, name, mapPicture, createdAt, updatedAt, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSCategoryTypeToJson(
@@ -16164,6 +16635,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [id, index, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSServicesTypeToJson(
@@ -16196,6 +16668,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
@@ -16356,6 +16829,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         default256,
         default512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
@@ -16388,6 +16862,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
@@ -16426,6 +16901,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [alt, cardFlat, dark, flat, light, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
@@ -16450,6 +16926,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$PaymentType$PaymentImagesTypeToJson(
@@ -16487,6 +16964,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, name, code, paymentType, materialIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$PaymentTypeToJson(
@@ -16519,6 +16997,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$PictureTypeToJson(
@@ -16551,6 +17030,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureTypeToJson(
@@ -16577,6 +17057,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaTypeToJson(
@@ -16599,6 +17080,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -16631,6 +17113,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -16679,6 +17162,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -16711,6 +17195,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -16759,6 +17244,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -16791,6 +17277,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -16853,6 +17340,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateTypeToJson(
@@ -16875,6 +17363,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -16898,6 +17387,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -16937,6 +17427,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressTypeToJson(
@@ -16961,6 +17452,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalTypeToJson(
@@ -16983,6 +17475,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -17015,6 +17508,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -17063,6 +17557,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -17095,6 +17590,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -17143,6 +17639,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -17175,6 +17672,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -17237,6 +17735,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -17259,6 +17758,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -17282,6 +17782,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -17321,6 +17822,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -17347,6 +17849,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -17379,6 +17882,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -17411,6 +17915,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -17467,6 +17972,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -17493,6 +17999,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -17526,6 +18033,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -17563,6 +18071,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsTypeToJson(
@@ -17589,6 +18098,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -17614,6 +18124,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -17677,6 +18188,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyTypeToJson(
@@ -17710,6 +18222,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, createdAt, updatedAt, programName, picture, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramTypeToJson(
@@ -17735,6 +18248,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [to, from, loyaltyProgram];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyTypeToJson(
@@ -17767,6 +18281,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$MediaType$PictureTypeToJson(
@@ -17793,6 +18308,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$MediaTypeToJson(
@@ -17825,6 +18341,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$MediaType$PictureTypeToJson(
@@ -17851,6 +18368,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$MediaTypeToJson(
@@ -17883,6 +18401,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeType$MediaType$PictureTypeToJson(
@@ -17909,6 +18428,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeType$MediaTypeToJson(
@@ -17932,6 +18452,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [enable, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeType$PredefinedActionTypeToJson(
@@ -17980,6 +18501,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         updatedAt,
         predefined
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ActivityTypeTypeToJson(
@@ -18012,6 +18534,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJocker$JockerType$MediaType$PictureTypeToJson(
@@ -18038,6 +18561,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJocker$JockerType$MediaTypeToJson(
@@ -18077,6 +18601,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, title, description, icon, cost, kind, media, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJocker$JockerTypeToJson(
@@ -18100,6 +18625,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [jocker, cost];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeType$ChallengeTypeTypeJockerToJson(
@@ -18170,6 +18696,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeTypeToJson(
@@ -18196,6 +18723,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$UserType$PhoneTypeToJson(
@@ -18228,6 +18756,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$UserType$PictureTypeToJson(
@@ -18266,6 +18795,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$UserTypeToJson(
@@ -18288,6 +18818,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [rank, reward];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeWinnerToJson(
@@ -18310,6 +18841,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [checkpoint, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$ChallengeTypeCheckpointToJson(
@@ -18342,6 +18874,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$MediaType$PictureTypeToJson(
@@ -18368,6 +18901,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$MediaTypeToJson(
@@ -18400,6 +18934,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaType$MediaType$PictureTypeToJson(
@@ -18426,6 +18961,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaType$MediaTypeToJson(
@@ -18450,6 +18986,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [field, operators];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaType$AudienceCriteriaFieldTypeToJson(
@@ -18501,6 +19038,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         media,
         fields
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceCriteriaTypeToJson(
@@ -18533,6 +19071,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeType$MediaType$PictureTypeToJson(
@@ -18559,6 +19098,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeType$MediaTypeToJson(
@@ -18582,6 +19122,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [enable, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeType$PredefinedActionTypeToJson(
@@ -18630,6 +19171,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         updatedAt,
         predefined
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$ActivityTypeTypeToJson(
@@ -18652,6 +19194,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [min, max];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionTextBoxTypeToJson(
@@ -18674,6 +19217,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [max, text];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionRatingTypeToJson(
@@ -18698,6 +19242,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [minValue, maxValue, score];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionCalculatedType$QuestActionDefinitionDefinitionCalculatedValuesTypeToJson(
@@ -18727,6 +19272,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [output, kw$show, formula, values];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionCalculatedTypeToJson(
@@ -18749,6 +19295,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [outdated, interval];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionDateTypeToJson(
@@ -18804,6 +19351,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         academicLevel,
         language
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionContactTypeToJson(
@@ -18828,6 +19376,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [minValue, maxValue, interval];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionNumberTypeToJson(
@@ -18850,6 +19399,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [name, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionApiType$QuestActionDefinitionDefinitionApiParamsTypeToJson(
@@ -18880,6 +19430,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [link, method, auth, secret, params];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionApiTypeToJson(
@@ -18902,6 +19453,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [lines, columns];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionMatrixTypeToJson(
@@ -18924,6 +19476,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [leftLabel, rightLabel];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionToggleTypeToJson(
@@ -18946,6 +19499,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [item, enable];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesType$QuestionDtoType$QuestionChoiceDtoTypeToJson(
@@ -18966,6 +19520,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesType$QuestionDtoType$ChallengeStepTypeToJson(
@@ -19022,6 +19577,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesType$QuestionDtoTypeToJson(
@@ -19069,6 +19625,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         interaction,
         suggestions
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionChoicesTypeToJson(
@@ -19089,6 +19646,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [levels];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSmileyTypeToJson(
@@ -19109,6 +19667,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [min];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionScoreTypeToJson(
@@ -19131,6 +19690,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [url, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionLeadTypeToJson(
@@ -19151,6 +19711,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVerificationType$QuestActionDefinitionDefinitionVerificationItemType$QuestActionDefinitionDefinitionVerificationItemContentTypeToJson(
@@ -19175,6 +19736,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [verification, verified];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVerificationType$QuestActionDefinitionDefinitionVerificationItemTypeToJson(
@@ -19199,6 +19761,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [number, email];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVerificationTypeToJson(
@@ -19219,6 +19782,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [minSeconds];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionVideoTypeToJson(
@@ -19251,6 +19815,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
@@ -19284,6 +19849,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [size48, size96, size144, size240, size480];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
@@ -19308,6 +19874,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [svg, png];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
@@ -19332,6 +19899,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [style, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialType$SocialImagesTypeToJson(
@@ -19366,6 +19934,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, name, code, fontIcon, createdAt, updatedAt, images];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaType$SocialTypeToJson(
@@ -19395,6 +19964,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [socialMedia, action, socialContent, url];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionSocialMediaTypeToJson(
@@ -19419,6 +19989,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [playstore, appstore, appgallery];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionType$QuestActionDefinitionDefinitionAppDownloadTypeToJson(
@@ -19506,6 +20077,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         socialMedia,
         appDownload
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionType$QuestActionDefinitionDefinitionTypeToJson(
@@ -19539,6 +20111,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, activityType, required, definition, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldType$QuestActionDefinitionTypeToJson(
@@ -19563,6 +20136,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [value, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterFieldTypeToJson(
@@ -19587,6 +20161,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [lat, lng, order];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$AudienceSegmentFilterZoneType$DeliveryZonePathTypeToJson(
@@ -19613,6 +20188,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [radius, type, paths];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$AudienceSegmentFilterZoneTypeToJson(
@@ -19645,6 +20221,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$CountryType$PictureTypeToJson(
@@ -19693,6 +20270,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$CountryTypeToJson(
@@ -19725,6 +20303,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$CountryType$PictureTypeToJson(
@@ -19773,6 +20352,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$CountryTypeToJson(
@@ -19805,6 +20385,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$PictureTypeToJson(
@@ -19867,6 +20448,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateTypeToJson(
@@ -19899,6 +20481,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$LanguageType$PictureTypeToJson(
@@ -19936,6 +20519,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$LanguageTypeToJson(
@@ -19968,6 +20552,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationType$PictureTypeToJson(
@@ -19990,6 +20575,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [discount, description];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationType$PerksTypeToJson(
@@ -20012,6 +20598,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [min, max];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationType$LevelIntervalTypeToJson(
@@ -20070,6 +20657,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$ReputationTypeToJson(
@@ -20127,6 +20715,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         languages,
         reputations
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesTypeToJson(
@@ -20154,6 +20743,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [field, kw$operator, values];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterTypeToJson(
@@ -20180,6 +20770,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [rank, criteria, filters];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentTypeToJson(
@@ -20217,6 +20808,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @override
   List<Object?> get props =>
       [id, icon, title, createdAt, updatedAt, description, media, segments];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceTypeToJson(
@@ -20288,6 +20880,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeTypeToJson(
@@ -20317,6 +20910,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [amount, usage, pocketType, challenge];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketTypeToJson(
@@ -20344,6 +20938,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
 
   @override
   List<Object?> get props => [id, pocket, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoTypeToJson(
@@ -20481,6 +21076,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
         loyaltyPrograms,
         wallet
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletTypeToJson(
@@ -20507,6 +21103,7 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateTypeToJson(
@@ -20527,6 +21124,7 @@ class GetPointOfSalesWithWalletsForModule$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getPointOfSalesWithWalletsForModule];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModule$QueryToJson(this);
@@ -20548,6 +21146,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -21036,6 +21635,7 @@ class GetCurrentUserQuantitativeWalletArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserQuantitativeWalletArgumentsToJson(this);
@@ -25396,6 +25996,7 @@ class GetCurrentUserQuantitativeWalletQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCurrentUserQuantitativeWallet$Query parse(Map<String, dynamic> json) =>
       GetCurrentUserQuantitativeWallet$Query.fromJson(json);
@@ -25415,6 +26016,7 @@ class IsWalletAndCardInitializedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [userId];
+
   @override
   Map<String, dynamic> toJson() =>
       _$IsWalletAndCardInitializedArgumentsToJson(this);
@@ -25487,6 +26089,7 @@ class IsWalletAndCardInitializedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   IsWalletAndCardInitialized$Query parse(Map<String, dynamic> json) =>
       IsWalletAndCardInitialized$Query.fromJson(json);
@@ -25525,6 +26128,7 @@ class WalletOwnerHasEnoughBalanceArguments extends JsonSerializable
   @override
   List<Object?> get props =>
       [pos, user, amount, wholesaler, manufacturer, usage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$WalletOwnerHasEnoughBalanceArgumentsToJson(this);
@@ -25655,6 +26259,7 @@ class WalletOwnerHasEnoughBalanceQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   WalletOwnerHasEnoughBalance$Query parse(Map<String, dynamic> json) =>
       WalletOwnerHasEnoughBalance$Query.fromJson(json);
@@ -25683,6 +26288,7 @@ class WalletByOwnerArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, user, wholesaler, manufacturer];
+
   @override
   Map<String, dynamic> toJson() => _$WalletByOwnerArgumentsToJson(this);
 }
@@ -51348,6 +51954,7 @@ class WalletByOwnerQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   WalletByOwner$Query parse(Map<String, dynamic> json) =>
       WalletByOwner$Query.fromJson(json);
@@ -51375,6 +51982,7 @@ class GetPointOfSalesWithWalletsForModuleArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [moduleName, pagination, searchString];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPointOfSalesWithWalletsForModuleArgumentsToJson(this);
@@ -65826,6 +66434,7 @@ class GetPointOfSalesWithWalletsForModuleQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetPointOfSalesWithWalletsForModule$Query parse(Map<String, dynamic> json) =>
       GetPointOfSalesWithWalletsForModule$Query.fromJson(json);

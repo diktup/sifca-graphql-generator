@@ -21,7 +21,7 @@
     },
     {
       "name": "artemis",
-      "rootUri": "file:///Users/diktupllc/.pub-cache/hosted/pub.dev/artemis-7.13.0-beta.2",
+      "rootUri": "file:///Users/diktupllc/.pub-cache/hosted/pub.dev/artemis-7.13.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -57,9 +57,9 @@
     },
     {
       "name": "build_resolvers",
-      "rootUri": "file:///Users/diktupllc/.pub-cache/hosted/pub.dev/build_resolvers-2.2.1",
+      "rootUri": "file:///Users/diktupllc/.pub-cache/hosted/pub.dev/build_resolvers-2.4.1",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "build_runner",
@@ -69,7 +69,7 @@
     },
     {
       "name": "build_runner_core",
-      "rootUri": "file:///Users/diktupllc/.pub-cache/hosted/pub.dev/build_runner_core-7.2.10",
+      "rootUri": "file:///Users/diktupllc/.pub-cache/hosted/pub.dev/build_runner_core-7.2.11",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -81,7 +81,7 @@
     },
     {
       "name": "built_value",
-      "rootUri": "file:///Users/diktupllc/.pub-cache/hosted/pub.dev/built_value-8.6.1",
+      "rootUri": "file:///Users/diktupllc/.pub-cache/hosted/pub.dev/built_value-8.7.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -105,7 +105,7 @@
     },
     {
       "name": "code_builder",
-      "rootUri": "file:///Users/diktupllc/.pub-cache/hosted/pub.dev/code_builder-4.5.0",
+      "rootUri": "file:///Users/diktupllc/.pub-cache/hosted/pub.dev/code_builder-4.7.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -458,7 +458,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-11-02T10:22:20.475339Z",
+  "generated": "2023-11-02T11:30:08.595351Z",
   "generator": "pub",
   "generatorVersion": "3.1.5"
 }

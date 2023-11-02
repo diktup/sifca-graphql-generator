@@ -30,6 +30,7 @@ class SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeToJson(
@@ -55,6 +56,7 @@ class SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestTyp
 
   @override
   List<Object?> get props => [title, description, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationTypeToJson(
@@ -76,6 +78,7 @@ class SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestTyp
 
   @override
   List<Object?> get props => [adhocNotification];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionTypeToJson(
@@ -104,6 +107,7 @@ class SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestTyp
 
   @override
   List<Object?> get props => [event, executed, executedAt, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestTypeToJson(
@@ -124,6 +128,7 @@ class SendAdhocCorporateNotificationTest$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [sendAdhocCorporateNotificationTest];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendAdhocCorporateNotificationTest$QueryToJson(this);
@@ -158,6 +163,7 @@ class CorporateNotificationInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [title, userIds, description, picture, target, executedAt];
+
   @override
   Map<String, dynamic> toJson() => _$CorporateNotificationInputToJson(this);
 }
@@ -193,6 +199,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -219,6 +226,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -247,6 +255,7 @@ class GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$Co
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeToJson(
@@ -272,6 +281,7 @@ class GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$Co
 
   @override
   List<Object?> get props => [title, description, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationTypeToJson(
@@ -293,6 +303,7 @@ class GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$Co
 
   @override
   List<Object?> get props => [adhocNotification];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionTypeToJson(
@@ -325,6 +336,7 @@ class GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$Co
 
   @override
   List<Object?> get props => [id, seen, event, executed, executedAt, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationTypeToJson(
@@ -351,6 +363,7 @@ class GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateTypeToJson(
@@ -371,6 +384,7 @@ class GetCorporateNotificationsByUser$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCorporateNotificationsByUser];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateNotificationsByUser$QueryToJson(this);
@@ -392,6 +406,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -420,6 +435,7 @@ class CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$Co
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeToJson(
@@ -445,6 +461,7 @@ class CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$Co
 
   @override
   List<Object?> get props => [title, description, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationTypeToJson(
@@ -466,6 +483,7 @@ class CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$Co
 
   @override
   List<Object?> get props => [adhocNotification];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionTypeToJson(
@@ -498,6 +516,7 @@ class CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType
 
   @override
   List<Object?> get props => [id, seen, event, executed, executedAt, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullTypeToJson(
@@ -519,6 +538,7 @@ class CreateAdhocCorporateNotification$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createAdhocCorporateNotification];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateAdhocCorporateNotification$MutationToJson(this);
@@ -538,6 +558,7 @@ class MarkAllCorporateNotificationsAsSeenForUser$Mutation$CorporateNotificationR
 
   @override
   List<Object?> get props => [success];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MarkAllCorporateNotificationsAsSeenForUser$Mutation$CorporateNotificationResponseToJson(
@@ -558,6 +579,7 @@ class MarkAllCorporateNotificationsAsSeenForUser$Mutation
 
   @override
   List<Object?> get props => [markAllCorporateNotificationsAsSeenForUser];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MarkAllCorporateNotificationsAsSeenForUser$MutationToJson(this);
@@ -587,6 +609,7 @@ class ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationF
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeToJson(
@@ -612,6 +635,7 @@ class ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationF
 
   @override
   List<Object?> get props => [title, description, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationTypeToJson(
@@ -633,6 +657,7 @@ class ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationF
 
   @override
   List<Object?> get props => [adhocNotification];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionTypeToJson(
@@ -665,6 +690,7 @@ class ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationF
 
   @override
   List<Object?> get props => [id, seen, event, executed, executedAt, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullTypeToJson(
@@ -685,6 +711,7 @@ class ListenForNewAdhocCorporateNotification$Subscription
 
   @override
   List<Object?> get props => [listenForNewAdhocCorporateNotification];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForNewAdhocCorporateNotification$SubscriptionToJson(this);
@@ -714,6 +741,7 @@ class ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNot
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeToJson(
@@ -739,6 +767,7 @@ class ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNot
 
   @override
   List<Object?> get props => [title, description, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationTypeToJson(
@@ -760,6 +789,7 @@ class ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNot
 
   @override
   List<Object?> get props => [adhocNotification];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionTypeToJson(
@@ -788,6 +818,7 @@ class ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNot
 
   @override
   List<Object?> get props => [event, executed, executedAt, action];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestTypeToJson(
@@ -808,6 +839,7 @@ class ListenForSendAdhocCorporateNotificationTest$Subscription
 
   @override
   List<Object?> get props => [listenForSendAdhocCorporateNotificationTest];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForSendAdhocCorporateNotificationTest$SubscriptionToJson(this);
@@ -876,6 +908,7 @@ class SendAdhocCorporateNotificationTestArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendAdhocCorporateNotificationTestArgumentsToJson(this);
@@ -1037,6 +1070,7 @@ class SendAdhocCorporateNotificationTestQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SendAdhocCorporateNotificationTest$Query parse(Map<String, dynamic> json) =>
       SendAdhocCorporateNotificationTest$Query.fromJson(json);
@@ -1061,6 +1095,7 @@ class GetCorporateNotificationsByUserArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateNotificationsByUserArgumentsToJson(this);
@@ -1271,6 +1306,7 @@ class GetCorporateNotificationsByUserQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCorporateNotificationsByUser$Query parse(Map<String, dynamic> json) =>
       GetCorporateNotificationsByUser$Query.fromJson(json);
@@ -1290,6 +1326,7 @@ class CreateAdhocCorporateNotificationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateAdhocCorporateNotificationArgumentsToJson(this);
@@ -1465,6 +1502,7 @@ class CreateAdhocCorporateNotificationMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateAdhocCorporateNotification$Mutation parse(Map<String, dynamic> json) =>
       CreateAdhocCorporateNotification$Mutation.fromJson(json);
@@ -1484,6 +1522,7 @@ class MarkAllCorporateNotificationsAsSeenForUserArguments
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$MarkAllCorporateNotificationsAsSeenForUserArgumentsToJson(this);
@@ -1551,6 +1590,7 @@ class MarkAllCorporateNotificationsAsSeenForUserMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   MarkAllCorporateNotificationsAsSeenForUser$Mutation parse(
           Map<String, dynamic> json) =>
@@ -1571,6 +1611,7 @@ class ListenForNewAdhocCorporateNotificationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [userId];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForNewAdhocCorporateNotificationArgumentsToJson(this);
@@ -1746,6 +1787,7 @@ class ListenForNewAdhocCorporateNotificationSubscription extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   ListenForNewAdhocCorporateNotification$Subscription parse(
           Map<String, dynamic> json) =>
@@ -1766,6 +1808,7 @@ class ListenForSendAdhocCorporateNotificationTestArguments
 
   @override
   List<Object?> get props => [userId];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForSendAdhocCorporateNotificationTestArgumentsToJson(this);
@@ -1929,6 +1972,7 @@ class ListenForSendAdhocCorporateNotificationTestSubscription
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   ListenForSendAdhocCorporateNotificationTest$Subscription parse(
           Map<String, dynamic> json) =>

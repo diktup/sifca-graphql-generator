@@ -32,6 +32,7 @@ class GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
@@ -56,6 +57,7 @@ class GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType
 
   @override
   List<Object?> get props => [square, wide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesTypeToJson(
@@ -114,6 +116,7 @@ class GetTargetPlugins$Query$TargetPluginType$PluginType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTargetPlugins$Query$TargetPluginType$PluginTypeToJson(this);
@@ -138,6 +141,7 @@ class GetTargetPlugins$Query$TargetPluginType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, plugin, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTargetPlugins$Query$TargetPluginTypeToJson(this);
@@ -154,6 +158,7 @@ class GetTargetPlugins$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getTargetPlugins];
+
   @override
   Map<String, dynamic> toJson() => _$GetTargetPlugins$QueryToJson(this);
 }
@@ -184,6 +189,7 @@ class TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
@@ -208,6 +214,7 @@ class TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType
 
   @override
   List<Object?> get props => [square, wide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesTypeToJson(
@@ -265,6 +272,7 @@ class TargetPlugin$Query$TargetPluginType$PluginType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$TargetPlugin$Query$TargetPluginType$PluginTypeToJson(this);
@@ -289,6 +297,7 @@ class TargetPlugin$Query$TargetPluginType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, plugin, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$TargetPlugin$Query$TargetPluginTypeToJson(this);
@@ -305,6 +314,7 @@ class TargetPlugin$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [targetPlugin];
+
   @override
   Map<String, dynamic> toJson() => _$TargetPlugin$QueryToJson(this);
 }
@@ -335,6 +345,7 @@ class FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
@@ -359,6 +370,7 @@ class FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPictur
 
   @override
   List<Object?> get props => [square, wide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesTypeToJson(
@@ -418,6 +430,7 @@ class FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginTypeToJson(
@@ -443,6 +456,7 @@ class FindPluginByTargetAndPlugin$Query$TargetPluginType
 
   @override
   List<Object?> get props => [id, plugin, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPluginByTargetAndPlugin$Query$TargetPluginTypeToJson(this);
@@ -462,6 +476,7 @@ class FindPluginByTargetAndPlugin$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findPluginByTargetAndPlugin];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPluginByTargetAndPlugin$QueryToJson(this);
@@ -489,6 +504,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -519,6 +535,7 @@ class GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
@@ -543,6 +560,7 @@ class GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesT
 
   @override
   List<Object?> get props => [square, wide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesTypeToJson(
@@ -602,6 +620,7 @@ class GetTargetPluginsByTarget$Query$TargetPluginType$PluginType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTargetPluginsByTarget$Query$TargetPluginType$PluginTypeToJson(this);
@@ -626,6 +645,7 @@ class GetTargetPluginsByTarget$Query$TargetPluginType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, plugin, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTargetPluginsByTarget$Query$TargetPluginTypeToJson(this);
@@ -644,6 +664,7 @@ class GetTargetPluginsByTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getTargetPluginsByTarget];
+
   @override
   Map<String, dynamic> toJson() => _$GetTargetPluginsByTarget$QueryToJson(this);
 }
@@ -674,6 +695,7 @@ class CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
@@ -698,6 +720,7 @@ class CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
 
   @override
   List<Object?> get props => [square, wide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesTypeToJson(
@@ -756,6 +779,7 @@ class CreateTargetPlugin$Mutation$TargetPluginType$PluginType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTargetPlugin$Mutation$TargetPluginType$PluginTypeToJson(this);
@@ -780,6 +804,7 @@ class CreateTargetPlugin$Mutation$TargetPluginType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, plugin, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTargetPlugin$Mutation$TargetPluginTypeToJson(this);
@@ -796,6 +821,7 @@ class CreateTargetPlugin$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createTargetPlugin];
+
   @override
   Map<String, dynamic> toJson() => _$CreateTargetPlugin$MutationToJson(this);
 }
@@ -816,6 +842,7 @@ class TargetPluginInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [plugin, target];
+
   @override
   Map<String, dynamic> toJson() => _$TargetPluginInputToJson(this);
 }
@@ -846,6 +873,7 @@ class UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
@@ -870,6 +898,7 @@ class UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
 
   @override
   List<Object?> get props => [square, wide];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesTypeToJson(
@@ -928,6 +957,7 @@ class UpdateTargetPlugin$Mutation$TargetPluginType$PluginType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTargetPlugin$Mutation$TargetPluginType$PluginTypeToJson(this);
@@ -952,6 +982,7 @@ class UpdateTargetPlugin$Mutation$TargetPluginType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, plugin, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTargetPlugin$Mutation$TargetPluginTypeToJson(this);
@@ -968,6 +999,7 @@ class UpdateTargetPlugin$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateTargetPlugin];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateTargetPlugin$MutationToJson(this);
 }
@@ -991,6 +1023,7 @@ class TargetPluginUpdateInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [plugin, target, id];
+
   @override
   Map<String, dynamic> toJson() => _$TargetPluginUpdateInputToJson(this);
 }
@@ -1010,6 +1043,7 @@ class DeleteTargetPlugin$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteTargetPlugin$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -1026,6 +1060,7 @@ class DeleteTargetPlugin$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteTargetPlugin];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteTargetPlugin$MutationToJson(this);
 }
@@ -1297,6 +1332,7 @@ class GetTargetPluginsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetTargetPlugins$Query parse(Map<String, dynamic> json) =>
       GetTargetPlugins$Query.fromJson(json);
@@ -1314,6 +1350,7 @@ class TargetPluginArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$TargetPluginArgumentsToJson(this);
 }
@@ -1603,6 +1640,7 @@ class TargetPluginQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   TargetPlugin$Query parse(Map<String, dynamic> json) =>
       TargetPlugin$Query.fromJson(json);
@@ -1627,6 +1665,7 @@ class FindPluginByTargetAndPluginArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id, target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindPluginByTargetAndPluginArgumentsToJson(this);
@@ -1933,6 +1972,7 @@ class FindPluginByTargetAndPluginQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindPluginByTargetAndPlugin$Query parse(Map<String, dynamic> json) =>
       FindPluginByTargetAndPlugin$Query.fromJson(json);
@@ -1952,6 +1992,7 @@ class GetTargetPluginsByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTargetPluginsByTargetArgumentsToJson(this);
@@ -2244,6 +2285,7 @@ class GetTargetPluginsByTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetTargetPluginsByTarget$Query parse(Map<String, dynamic> json) =>
       GetTargetPluginsByTarget$Query.fromJson(json);
@@ -2261,6 +2303,7 @@ class CreateTargetPluginArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateTargetPluginArgumentsToJson(this);
 }
@@ -2552,6 +2595,7 @@ class CreateTargetPluginMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateTargetPlugin$Mutation parse(Map<String, dynamic> json) =>
       CreateTargetPlugin$Mutation.fromJson(json);
@@ -2569,6 +2613,7 @@ class UpdateTargetPluginArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateTargetPluginArgumentsToJson(this);
 }
@@ -2860,6 +2905,7 @@ class UpdateTargetPluginMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateTargetPlugin$Mutation parse(Map<String, dynamic> json) =>
       UpdateTargetPlugin$Mutation.fromJson(json);
@@ -2877,6 +2923,7 @@ class DeleteTargetPluginArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteTargetPluginArgumentsToJson(this);
 }
@@ -2947,6 +2994,7 @@ class DeleteTargetPluginMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteTargetPlugin$Mutation parse(Map<String, dynamic> json) =>
       DeleteTargetPlugin$Mutation.fromJson(json);

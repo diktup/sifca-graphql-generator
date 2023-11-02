@@ -22,6 +22,7 @@ class GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$Corpo
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionTypeToJson(
@@ -52,6 +53,7 @@ class GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType
   @override
   List<Object?> get props =>
       [id, reviewDefinition, active, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentTypeToJson(
@@ -73,6 +75,7 @@ class GetAllCorporateRatingAssignments$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAllCorporateRatingAssignments];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatingAssignments$QueryToJson(this);
@@ -94,6 +97,7 @@ class CorporateRatingAssignment$Query$CorporateRatingAssignmentType$CorporateRat
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRatingAssignment$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionTypeToJson(
@@ -124,6 +128,7 @@ class CorporateRatingAssignment$Query$CorporateRatingAssignmentType
   @override
   List<Object?> get props =>
       [id, reviewDefinition, active, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRatingAssignment$Query$CorporateRatingAssignmentTypeToJson(
@@ -143,6 +148,7 @@ class CorporateRatingAssignment$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [corporateRatingAssignment];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRatingAssignment$QueryToJson(this);
@@ -164,6 +170,7 @@ class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$CorporateRatingDefinitionTypeToJson(
@@ -194,6 +201,7 @@ class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$
   @override
   List<Object?> get props =>
       [id, reviewDefinition, active, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentTypeToJson(
@@ -220,6 +228,7 @@ class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateTypeToJson(
@@ -240,6 +249,7 @@ class GetCorporateRatingAssignments$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCorporateRatingAssignments];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingAssignments$QueryToJson(this);
@@ -261,6 +271,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -281,6 +292,7 @@ class GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$C
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionTypeToJson(
@@ -311,6 +323,7 @@ class GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType
   @override
   List<Object?> get props =>
       [id, reviewDefinition, active, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentTypeToJson(
@@ -332,6 +345,7 @@ class GetCorporateRatingAssignmentByTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCorporateRatingAssignmentByTarget];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingAssignmentByTarget$QueryToJson(this);
@@ -359,6 +373,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -379,6 +394,7 @@ class CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$Cor
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$CorporateRatingDefinitionTypeToJson(
@@ -409,6 +425,7 @@ class CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType
   @override
   List<Object?> get props =>
       [id, reviewDefinition, active, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentTypeToJson(
@@ -429,6 +446,7 @@ class CreateCorporateRatingAssignment$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createCorporateRatingAssignment];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRatingAssignment$MutationToJson(this);
@@ -454,6 +472,7 @@ class CorporateRatingAssignmentInput extends JsonSerializable
 
   @override
   List<Object?> get props => [active, target, reviewDefinition];
+
   @override
   Map<String, dynamic> toJson() => _$CorporateRatingAssignmentInputToJson(this);
 }
@@ -474,6 +493,7 @@ class UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentTy
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$CorporateRatingDefinitionTypeToJson(
@@ -504,6 +524,7 @@ class UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentTy
   @override
   List<Object?> get props =>
       [id, reviewDefinition, active, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentTypeToJson(
@@ -524,6 +545,7 @@ class UpdateCorporateRatingAssignmentStatus$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateCorporateRatingAssignmentStatus];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRatingAssignmentStatus$MutationToJson(this);
@@ -545,6 +567,7 @@ class DeleteCorporateRatingAssignment$Mutation$DeleteResponseDtoType
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteCorporateRatingAssignment$Mutation$DeleteResponseDtoTypeToJson(
@@ -565,6 +588,7 @@ class DeleteCorporateRatingAssignment$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [deleteCorporateRatingAssignment];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteCorporateRatingAssignment$MutationToJson(this);
@@ -656,6 +680,7 @@ class GetAllCorporateRatingAssignmentsQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetAllCorporateRatingAssignments$Query parse(Map<String, dynamic> json) =>
       GetAllCorporateRatingAssignments$Query.fromJson(json);
@@ -675,6 +700,7 @@ class CorporateRatingAssignmentArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRatingAssignmentArgumentsToJson(this);
@@ -782,6 +808,7 @@ class CorporateRatingAssignmentQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CorporateRatingAssignment$Query parse(Map<String, dynamic> json) =>
       CorporateRatingAssignment$Query.fromJson(json);
@@ -801,6 +828,7 @@ class GetCorporateRatingAssignmentsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingAssignmentsArgumentsToJson(this);
@@ -932,6 +960,7 @@ class GetCorporateRatingAssignmentsQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCorporateRatingAssignments$Query parse(Map<String, dynamic> json) =>
       GetCorporateRatingAssignments$Query.fromJson(json);
@@ -951,6 +980,7 @@ class GetCorporateRatingAssignmentByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingAssignmentByTargetArgumentsToJson(this);
@@ -1061,6 +1091,7 @@ class GetCorporateRatingAssignmentByTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCorporateRatingAssignmentByTarget$Query parse(Map<String, dynamic> json) =>
       GetCorporateRatingAssignmentByTarget$Query.fromJson(json);
@@ -1080,6 +1111,7 @@ class CreateCorporateRatingAssignmentArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRatingAssignmentArgumentsToJson(this);
@@ -1190,6 +1222,7 @@ class CreateCorporateRatingAssignmentMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateCorporateRatingAssignment$Mutation parse(Map<String, dynamic> json) =>
       CreateCorporateRatingAssignment$Mutation.fromJson(json);
@@ -1214,6 +1247,7 @@ class UpdateCorporateRatingAssignmentStatusArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id, active];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRatingAssignmentStatusArgumentsToJson(this);
@@ -1337,6 +1371,7 @@ class UpdateCorporateRatingAssignmentStatusMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateCorporateRatingAssignmentStatus$Mutation parse(
           Map<String, dynamic> json) =>
@@ -1357,6 +1392,7 @@ class DeleteCorporateRatingAssignmentArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteCorporateRatingAssignmentArgumentsToJson(this);
@@ -1431,6 +1467,7 @@ class DeleteCorporateRatingAssignmentMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteCorporateRatingAssignment$Mutation parse(Map<String, dynamic> json) =>
       DeleteCorporateRatingAssignment$Mutation.fromJson(json);

@@ -22,6 +22,7 @@ class GetCollaborationAnalyticsStats$Query$CollaborationAnalyticsStatsType$Analy
 
   @override
   List<Object?> get props => [value, percentage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationAnalyticsStats$Query$CollaborationAnalyticsStatsType$AnalyticsStatsInfoTypeToJson(
@@ -49,6 +50,7 @@ class GetCollaborationAnalyticsStats$Query$CollaborationAnalyticsStatsType
 
   @override
   List<Object?> get props => [activeProjects, activeBoards, totalHours];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationAnalyticsStats$Query$CollaborationAnalyticsStatsTypeToJson(
@@ -69,6 +71,7 @@ class GetCollaborationAnalyticsStats$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCollaborationAnalyticsStats];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationAnalyticsStats$QueryToJson(this);
@@ -93,6 +96,7 @@ class AnalyticsDashboardInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [to, from, target];
+
   @override
   Map<String, dynamic> toJson() => _$AnalyticsDashboardInputToJson(this);
 }
@@ -119,6 +123,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -141,6 +146,7 @@ class GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverv
 
   @override
   List<Object?> get props => [totalProjects, activeProjects, revenue];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewType$CollaborationAnalyticsProjectsOverviewChartTypeToJson(
@@ -171,6 +177,7 @@ class GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverv
   @override
   List<Object?> get props =>
       [totalProjects, activeProjects, revenue, hours, chart];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewTypeToJson(
@@ -191,6 +198,7 @@ class GetCollaborationProjectsOverview$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCollaborationProjectsOverview];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationProjectsOverview$QueryToJson(this);
@@ -212,6 +220,7 @@ class GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusT
 
   @override
   List<Object?> get props => [count, hours];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$CollaborationAnalyticsProjectsStatusChartType$CollaborationAnalyticsProjectsStatusChartDetailTypeToJson(
@@ -242,6 +251,7 @@ class GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusT
 
   @override
   List<Object?> get props => [completed, inProgress, open, canceled];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$CollaborationAnalyticsProjectsStatusChartTypeToJson(
@@ -267,6 +277,7 @@ class GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusT
 
   @override
   List<Object?> get props => [totalProjects, newProjects, chart];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusTypeToJson(
@@ -287,6 +298,7 @@ class GetCollaborationProjectsStatus$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCollaborationProjectsStatus];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationProjectsStatus$QueryToJson(this);
@@ -306,6 +318,7 @@ class GetCollaborationAnalyticsStatsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationAnalyticsStatsArgumentsToJson(this);
@@ -432,6 +445,7 @@ class GetCollaborationAnalyticsStatsQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCollaborationAnalyticsStats$Query parse(Map<String, dynamic> json) =>
       GetCollaborationAnalyticsStats$Query.fromJson(json);
@@ -451,6 +465,7 @@ class GetCollaborationProjectsOverviewArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationProjectsOverviewArgumentsToJson(this);
@@ -568,6 +583,7 @@ class GetCollaborationProjectsOverviewQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCollaborationProjectsOverview$Query parse(Map<String, dynamic> json) =>
       GetCollaborationProjectsOverview$Query.fromJson(json);
@@ -587,6 +603,7 @@ class GetCollaborationProjectsStatusArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCollaborationProjectsStatusArgumentsToJson(this);
@@ -757,6 +774,7 @@ class GetCollaborationProjectsStatusQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCollaborationProjectsStatus$Query parse(Map<String, dynamic> json) =>
       GetCollaborationProjectsStatus$Query.fromJson(json);

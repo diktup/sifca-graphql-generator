@@ -26,6 +26,7 @@ class GetBoardLists$Query$BoardListType$BoardType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardLists$Query$BoardListType$BoardType$UserType$PhoneTypeToJson(
@@ -58,6 +59,7 @@ class GetBoardLists$Query$BoardListType$BoardType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardLists$Query$BoardListType$BoardType$UserType$PictureTypeToJson(
@@ -93,6 +95,7 @@ class GetBoardLists$Query$BoardListType$BoardType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardLists$Query$BoardListType$BoardType$UserTypeToJson(this);
@@ -127,6 +130,7 @@ class GetBoardLists$Query$BoardListType$BoardType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, icon, title, description, category, members, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardLists$Query$BoardListType$BoardTypeToJson(this);
@@ -161,6 +165,7 @@ class GetBoardLists$Query$BoardListType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, rank, theme, identifier, board, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardLists$Query$BoardListTypeToJson(this);
@@ -177,6 +182,7 @@ class GetBoardLists$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getBoardLists];
+
   @override
   Map<String, dynamic> toJson() => _$GetBoardLists$QueryToJson(this);
 }
@@ -201,6 +207,7 @@ class GetBoardList$Query$BoardListType$BoardType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardList$Query$BoardListType$BoardType$UserType$PhoneTypeToJson(
@@ -233,6 +240,7 @@ class GetBoardList$Query$BoardListType$BoardType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardList$Query$BoardListType$BoardType$UserType$PictureTypeToJson(
@@ -268,6 +276,7 @@ class GetBoardList$Query$BoardListType$BoardType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardList$Query$BoardListType$BoardType$UserTypeToJson(this);
@@ -302,6 +311,7 @@ class GetBoardList$Query$BoardListType$BoardType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, icon, title, description, category, members, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardList$Query$BoardListType$BoardTypeToJson(this);
@@ -336,6 +346,7 @@ class GetBoardList$Query$BoardListType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, rank, theme, identifier, board, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardList$Query$BoardListTypeToJson(this);
@@ -352,6 +363,7 @@ class GetBoardList$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getBoardList];
+
   @override
   Map<String, dynamic> toJson() => _$GetBoardList$QueryToJson(this);
 }
@@ -376,6 +388,7 @@ class GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PhoneTypeToJson(
@@ -408,6 +421,7 @@ class GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PictureTypeToJson(
@@ -445,6 +459,7 @@ class GetBoardListByBoard$Query$BoardListType$BoardType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardListByBoard$Query$BoardListType$BoardType$UserTypeToJson(this);
@@ -479,6 +494,7 @@ class GetBoardListByBoard$Query$BoardListType$BoardType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, icon, title, description, category, members, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardListByBoard$Query$BoardListType$BoardTypeToJson(this);
@@ -513,6 +529,7 @@ class GetBoardListByBoard$Query$BoardListType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, rank, theme, identifier, board, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBoardListByBoard$Query$BoardListTypeToJson(this);
@@ -529,6 +546,7 @@ class GetBoardListByBoard$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getBoardListByBoard];
+
   @override
   Map<String, dynamic> toJson() => _$GetBoardListByBoard$QueryToJson(this);
 }
@@ -553,6 +571,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PhoneTypeToJson(
@@ -585,6 +604,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PictureTypeToJson(
@@ -620,6 +640,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$UserTypeToJson(this);
@@ -651,6 +672,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureTypeToJson(
@@ -677,6 +699,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaTypeToJson(
@@ -709,6 +732,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureTypeToJson(
@@ -735,6 +759,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -767,6 +792,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -805,6 +831,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -829,6 +856,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberTypeToJson(
@@ -861,6 +889,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Docu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -885,6 +914,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Docu
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -914,6 +944,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Docu
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -941,6 +972,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Docu
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -962,6 +994,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Docu
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -988,6 +1021,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$User
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -1020,6 +1054,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$User
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -1058,6 +1093,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$User
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserTypeToJson(
@@ -1093,6 +1129,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentTypeToJson(
@@ -1115,6 +1152,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$BoardCardsStatsTy
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$BoardCardsStatsTypeToJson(
@@ -1194,6 +1232,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectTypeToJson(this);
@@ -1215,6 +1254,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsType
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsTypeToJson(
@@ -1247,6 +1287,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$PictureTypeToJson(
@@ -1269,6 +1310,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [task, done];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksTypeToJson(
@@ -1303,6 +1345,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, name, icon, color, category, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelTypeToJson(
@@ -1329,6 +1372,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PhoneTypeToJson(
@@ -1361,6 +1405,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureTypeToJson(
@@ -1399,6 +1444,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserTypeToJson(
@@ -1431,6 +1477,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureTypeToJson(
@@ -1457,6 +1504,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaTypeToJson(
@@ -1480,6 +1528,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoTypeToJson(
@@ -1502,6 +1551,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -1525,6 +1575,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListTypeToJson(
@@ -1551,6 +1602,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -1573,6 +1625,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -1622,6 +1675,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxTypeToJson(
@@ -1645,6 +1699,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesTypeToJson(
@@ -1670,6 +1725,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditTypeToJson(
@@ -1696,6 +1752,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -1716,6 +1773,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeTypeToJson(
@@ -1748,6 +1806,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureTypeToJson(
@@ -1774,6 +1833,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaTypeToJson(
@@ -1801,6 +1861,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [id, name, description, media];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyTypeToJson(
@@ -1827,6 +1888,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeToJson(
@@ -1859,6 +1921,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -1897,6 +1960,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -1936,6 +2000,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -1956,6 +2021,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -2004,6 +2070,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -2036,6 +2103,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -2057,6 +2125,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -2089,6 +2158,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -2115,6 +2185,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaTypeToJson(
@@ -2138,6 +2209,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -2160,6 +2232,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -2232,6 +2305,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductTypeToJson(
@@ -2254,6 +2328,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductSpecsTypeToJson(
@@ -2286,6 +2361,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureTypeToJson(
@@ -2312,6 +2388,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaTypeToJson(
@@ -2344,6 +2421,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureTypeToJson(
@@ -2376,6 +2454,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -2412,6 +2491,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryTypeToJson(
@@ -2438,6 +2518,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -2460,6 +2541,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -2509,6 +2591,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -2532,6 +2615,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesTypeToJson(
@@ -2564,6 +2648,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureTypeToJson(
@@ -2596,6 +2681,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -2644,6 +2730,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -2668,6 +2755,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -2700,6 +2788,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -2722,6 +2811,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -2754,6 +2844,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2802,6 +2893,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -2834,6 +2926,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2882,6 +2975,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -2914,6 +3008,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -2976,6 +3071,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -2998,6 +3094,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3021,6 +3118,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3060,6 +3158,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -3092,6 +3191,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -3118,6 +3218,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -3140,6 +3241,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -3172,6 +3274,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3220,6 +3323,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -3252,6 +3356,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3300,6 +3405,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -3332,6 +3438,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -3394,6 +3501,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -3416,6 +3524,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3439,6 +3548,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3478,6 +3588,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -3502,6 +3613,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -3524,6 +3636,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -3556,6 +3669,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3604,6 +3718,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -3636,6 +3751,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3684,6 +3800,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -3716,6 +3833,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -3778,6 +3896,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -3800,6 +3919,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3823,6 +3943,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3862,6 +3983,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -3888,6 +4010,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -3920,6 +4043,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -3952,6 +4076,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -4008,6 +4133,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -4034,6 +4160,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -4067,6 +4194,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -4104,6 +4232,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -4130,6 +4259,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -4155,6 +4285,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -4218,6 +4349,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -4277,6 +4409,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerTypeToJson(
@@ -4322,6 +4455,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandTypeToJson(
@@ -4342,6 +4476,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -4390,6 +4525,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -4434,6 +4570,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeTypeToJson(
@@ -4531,6 +4668,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTypeToJson(
@@ -4624,6 +4762,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeTypeToJson(
@@ -4656,6 +4795,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureTypeToJson(
@@ -4682,6 +4822,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaTypeToJson(
@@ -4714,6 +4855,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureTypeToJson(
@@ -4740,6 +4882,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -4772,6 +4915,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -4810,6 +4954,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -4834,6 +4979,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberTypeToJson(
@@ -4866,6 +5012,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -4890,6 +5037,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -4919,6 +5067,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -4946,6 +5095,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -4967,6 +5117,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -4993,6 +5144,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -5025,6 +5177,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -5063,6 +5216,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserTypeToJson(
@@ -5098,6 +5252,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentTypeToJson(
@@ -5120,6 +5275,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$BoardCardsStatsTypeToJson(
@@ -5202,6 +5358,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectTypeToJson(
@@ -5234,6 +5391,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureTypeToJson(
@@ -5260,6 +5418,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaTypeToJson(
@@ -5282,6 +5441,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -5314,6 +5474,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5362,6 +5523,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -5394,6 +5556,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5442,6 +5605,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -5474,6 +5638,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -5536,6 +5701,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateTypeToJson(
@@ -5558,6 +5724,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -5581,6 +5748,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -5620,6 +5788,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressTypeToJson(
@@ -5644,6 +5813,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalTypeToJson(
@@ -5666,6 +5836,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -5698,6 +5869,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5746,6 +5918,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -5778,6 +5951,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5826,6 +6000,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -5858,6 +6033,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -5917,6 +6093,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -5939,6 +6116,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -5962,6 +6140,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -6001,6 +6180,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -6027,6 +6207,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -6059,6 +6240,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -6091,6 +6273,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -6147,6 +6330,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -6173,6 +6357,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -6206,6 +6391,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -6243,6 +6429,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsTypeToJson(
@@ -6269,6 +6456,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -6294,6 +6482,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -6357,6 +6546,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyTypeToJson(
@@ -6389,6 +6579,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -6413,6 +6604,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -6442,6 +6634,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -6469,6 +6662,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -6490,6 +6684,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentTypeToJson(
@@ -6516,6 +6711,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneTypeToJson(
@@ -6548,6 +6744,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureTypeToJson(
@@ -6586,6 +6783,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserTypeToJson(
@@ -6621,6 +6819,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentTypeToJson(
@@ -6646,6 +6845,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [title, task, time];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureTypeToJson(
@@ -6668,6 +6868,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   @override
   List<Object?> get props => [total, done];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$TasksStatsTypeToJson(
@@ -6761,6 +6962,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListTypeToJson(
@@ -6798,6 +7000,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType
   @override
   List<Object?> get props =>
       [id, name, rank, theme, identifier, createdAt, updatedAt, boardCards];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsTypeToJson(
@@ -6852,6 +7055,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType extends JsonSerializable
         updatedAt,
         boardLists
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsTypeToJson(this);
@@ -6868,6 +7072,7 @@ class GetCRMBoard$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getCRMBoard];
+
   @override
   Map<String, dynamic> toJson() => _$GetCRMBoard$QueryToJson(this);
 }
@@ -6894,6 +7099,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -6918,6 +7124,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PhoneTypeToJson(
@@ -6950,6 +7157,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PictureTypeToJson(
@@ -6988,6 +7196,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserTypeToJson(
@@ -7020,6 +7229,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureTypeToJson(
@@ -7046,6 +7256,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaTypeToJson(
@@ -7078,6 +7289,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureTypeToJson(
@@ -7104,6 +7316,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMe
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -7136,6 +7349,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMe
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -7174,6 +7388,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMe
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -7198,6 +7413,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMe
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberTypeToJson(
@@ -7230,6 +7446,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -7254,6 +7471,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentT
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -7283,6 +7501,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentT
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -7310,6 +7529,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentT
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -7331,6 +7551,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentT
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -7357,6 +7578,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentT
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -7389,6 +7611,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -7427,6 +7650,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentT
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserTypeToJson(
@@ -7462,6 +7686,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentT
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentTypeToJson(
@@ -7484,6 +7709,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$BoardCard
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$BoardCardsStatsTypeToJson(
@@ -7566,6 +7792,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectTypeToJson(
@@ -7588,6 +7815,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsType
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsTypeToJson(
@@ -7620,6 +7848,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$PictureTypeToJson(
@@ -7642,6 +7871,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [task, done];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksTypeToJson(
@@ -7676,6 +7906,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, name, icon, color, category, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelTypeToJson(
@@ -7702,6 +7933,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PhoneTypeToJson(
@@ -7734,6 +7966,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureTypeToJson(
@@ -7772,6 +8005,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserTypeToJson(
@@ -7804,6 +8038,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureTypeToJson(
@@ -7830,6 +8065,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaTypeToJson(
@@ -7853,6 +8089,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoTypeToJson(
@@ -7875,6 +8112,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -7898,6 +8136,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListTypeToJson(
@@ -7924,6 +8163,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -7946,6 +8186,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -7995,6 +8236,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxTypeToJson(
@@ -8018,6 +8260,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesTypeToJson(
@@ -8043,6 +8286,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditTypeToJson(
@@ -8069,6 +8313,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -8089,6 +8334,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeTypeToJson(
@@ -8121,6 +8367,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureTypeToJson(
@@ -8147,6 +8394,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaTypeToJson(
@@ -8174,6 +8422,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [id, name, description, media];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyTypeToJson(
@@ -8200,6 +8449,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeToJson(
@@ -8232,6 +8482,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -8270,6 +8521,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -8309,6 +8561,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -8329,6 +8582,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -8377,6 +8631,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -8409,6 +8664,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -8430,6 +8686,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -8462,6 +8719,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -8488,6 +8746,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaTypeToJson(
@@ -8511,6 +8770,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -8533,6 +8793,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -8605,6 +8866,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductTypeToJson(
@@ -8627,6 +8889,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductSpecsTypeToJson(
@@ -8659,6 +8922,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureTypeToJson(
@@ -8685,6 +8949,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaTypeToJson(
@@ -8717,6 +8982,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureTypeToJson(
@@ -8749,6 +9015,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -8785,6 +9052,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryTypeToJson(
@@ -8811,6 +9079,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -8833,6 +9102,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -8882,6 +9152,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -8905,6 +9176,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesTypeToJson(
@@ -8937,6 +9209,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureTypeToJson(
@@ -8969,6 +9242,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -9017,6 +9291,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -9041,6 +9316,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -9073,6 +9349,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -9095,6 +9372,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -9127,6 +9405,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9175,6 +9454,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -9207,6 +9487,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9255,6 +9536,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -9287,6 +9569,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -9349,6 +9632,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -9371,6 +9655,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -9394,6 +9679,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -9433,6 +9719,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -9465,6 +9752,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -9491,6 +9779,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -9513,6 +9802,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -9545,6 +9835,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9593,6 +9884,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -9625,6 +9917,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9673,6 +9966,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -9705,6 +9999,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -9767,6 +10062,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -9789,6 +10085,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -9812,6 +10109,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -9851,6 +10149,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -9875,6 +10174,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -9897,6 +10197,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -9929,6 +10230,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9977,6 +10279,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -10009,6 +10312,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -10057,6 +10361,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -10089,6 +10394,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -10151,6 +10457,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -10173,6 +10480,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -10196,6 +10504,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -10235,6 +10544,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -10261,6 +10571,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -10293,6 +10604,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -10325,6 +10637,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -10381,6 +10694,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -10407,6 +10721,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -10440,6 +10755,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -10477,6 +10793,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -10503,6 +10820,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -10528,6 +10846,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -10591,6 +10910,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -10650,6 +10970,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerTypeToJson(
@@ -10695,6 +11016,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandTypeToJson(
@@ -10715,6 +11037,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -10763,6 +11086,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -10807,6 +11131,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeTypeToJson(
@@ -10904,6 +11229,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTypeToJson(
@@ -10997,6 +11323,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeTypeToJson(
@@ -11029,6 +11356,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureTypeToJson(
@@ -11055,6 +11383,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaTypeToJson(
@@ -11087,6 +11416,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureTypeToJson(
@@ -11113,6 +11443,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -11145,6 +11476,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -11183,6 +11515,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -11207,6 +11540,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberTypeToJson(
@@ -11239,6 +11573,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -11263,6 +11598,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -11292,6 +11628,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -11319,6 +11656,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -11340,6 +11678,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -11366,6 +11705,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -11398,6 +11738,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -11436,6 +11777,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserTypeToJson(
@@ -11471,6 +11813,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentTypeToJson(
@@ -11493,6 +11836,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$BoardCardsStatsTypeToJson(
@@ -11575,6 +11919,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectTypeToJson(
@@ -11607,6 +11952,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureTypeToJson(
@@ -11633,6 +11979,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaTypeToJson(
@@ -11655,6 +12002,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -11687,6 +12035,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -11735,6 +12084,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -11767,6 +12117,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -11815,6 +12166,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -11847,6 +12199,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -11909,6 +12262,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateTypeToJson(
@@ -11931,6 +12285,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -11954,6 +12309,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -11993,6 +12349,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressTypeToJson(
@@ -12017,6 +12374,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalTypeToJson(
@@ -12039,6 +12397,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -12071,6 +12430,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -12119,6 +12479,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -12151,6 +12512,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -12199,6 +12561,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -12231,6 +12594,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -12290,6 +12654,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -12312,6 +12677,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -12335,6 +12701,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -12374,6 +12741,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -12400,6 +12768,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -12432,6 +12801,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -12464,6 +12834,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -12520,6 +12891,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -12546,6 +12918,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -12579,6 +12952,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -12616,6 +12990,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsTypeToJson(
@@ -12642,6 +13017,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -12667,6 +13043,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -12730,6 +13107,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyTypeToJson(
@@ -12762,6 +13140,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -12786,6 +13165,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -12815,6 +13195,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -12842,6 +13223,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -12863,6 +13245,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentTypeToJson(
@@ -12889,6 +13272,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneTypeToJson(
@@ -12921,6 +13305,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureTypeToJson(
@@ -12959,6 +13344,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserTypeToJson(
@@ -12994,6 +13380,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentTypeToJson(
@@ -13019,6 +13406,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [title, task, time];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureTypeToJson(
@@ -13041,6 +13429,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   @override
   List<Object?> get props => [total, done];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$TasksStatsTypeToJson(
@@ -13134,6 +13523,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListTypeToJson(
@@ -13171,6 +13561,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType
   @override
   List<Object?> get props =>
       [id, name, rank, theme, identifier, createdAt, updatedAt, boardCards];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsTypeToJson(
@@ -13226,6 +13617,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType
         updatedAt,
         boardLists
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsTypeToJson(this);
@@ -13242,6 +13634,7 @@ class GetMaintenanceBoard$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getMaintenanceBoard];
+
   @override
   Map<String, dynamic> toJson() => _$GetMaintenanceBoard$QueryToJson(this);
 }
@@ -13266,6 +13659,7 @@ class CreateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneTypeToJson(
@@ -13298,6 +13692,7 @@ class CreateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBoardList$Mutation$BoardListType$BoardType$UserType$PictureTypeToJson(
@@ -13334,6 +13729,7 @@ class CreateBoardList$Mutation$BoardListType$BoardType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBoardList$Mutation$BoardListType$BoardType$UserTypeToJson(this);
@@ -13368,6 +13764,7 @@ class CreateBoardList$Mutation$BoardListType$BoardType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, icon, title, description, category, members, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBoardList$Mutation$BoardListType$BoardTypeToJson(this);
@@ -13402,6 +13799,7 @@ class CreateBoardList$Mutation$BoardListType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, rank, theme, identifier, board, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBoardList$Mutation$BoardListTypeToJson(this);
@@ -13418,6 +13816,7 @@ class CreateBoardList$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createBoardList];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBoardList$MutationToJson(this);
 }
@@ -13448,6 +13847,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$PictureTypeToJson(
@@ -13470,6 +13870,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardTasksType
 
   @override
   List<Object?> get props => [task, done];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardTasksTypeToJson(
@@ -13504,6 +13905,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType
   @override
   List<Object?> get props =>
       [id, name, icon, color, category, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelTypeToJson(this);
@@ -13529,6 +13931,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PhoneTypeToJson(
@@ -13561,6 +13964,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PictureTypeToJson(
@@ -13598,6 +14002,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserTypeToJson(this);
@@ -13629,6 +14034,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType$PictureTypeToJson(
@@ -13655,6 +14061,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaTypeToJson(
@@ -13678,6 +14085,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$DiscountDtoT
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$DiscountDtoTypeToJson(
@@ -13700,6 +14108,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPrice
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -13723,6 +14132,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPrice
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListTypeToJson(
@@ -13749,6 +14159,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxes
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -13771,6 +14182,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxes
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -13820,6 +14232,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxes
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxTypeToJson(
@@ -13843,6 +14256,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxes
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesTypeToJson(
@@ -13868,6 +14282,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePerio
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePeriodCreditTypeToJson(
@@ -13894,6 +14309,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CatalogueCat
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -13914,6 +14330,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$PixelBarcode
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$PixelBarcodeTypeToJson(
@@ -13946,6 +14363,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaType$PictureTypeToJson(
@@ -13972,6 +14390,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaTypeToJson(
@@ -13999,6 +14418,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType
 
   @override
   List<Object?> get props => [id, name, description, media];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyTypeToJson(
@@ -14025,6 +14445,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeToJson(
@@ -14057,6 +14478,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -14095,6 +14517,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -14134,6 +14557,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -14154,6 +14578,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -14202,6 +14627,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -14234,6 +14660,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -14255,6 +14682,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -14287,6 +14715,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -14313,6 +14742,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaTypeToJson(
@@ -14336,6 +14766,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -14358,6 +14789,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -14430,6 +14862,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductTypeToJson(
@@ -14452,6 +14885,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductSpecsTypeToJson(
@@ -14484,6 +14918,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaType$PictureTypeToJson(
@@ -14510,6 +14945,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaTypeToJson(
@@ -14542,6 +14978,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$PictureTypeToJson(
@@ -14574,6 +15011,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -14610,6 +15048,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryTypeToJson(
@@ -14636,6 +15075,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -14658,6 +15098,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -14707,6 +15148,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -14730,6 +15172,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesTypeToJson(
@@ -14762,6 +15205,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$PictureTypeToJson(
@@ -14794,6 +15238,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -14842,6 +15287,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -14866,6 +15312,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -14898,6 +15345,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -14920,6 +15368,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -14952,6 +15401,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -15000,6 +15450,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -15032,6 +15483,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -15080,6 +15532,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -15112,6 +15565,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -15174,6 +15628,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -15196,6 +15651,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -15219,6 +15675,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -15258,6 +15715,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -15290,6 +15748,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -15316,6 +15775,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -15338,6 +15798,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -15370,6 +15831,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -15418,6 +15880,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -15450,6 +15913,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -15498,6 +15962,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -15530,6 +15995,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -15589,6 +16055,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -15611,6 +16078,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -15634,6 +16102,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -15673,6 +16142,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -15697,6 +16167,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -15719,6 +16190,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -15751,6 +16223,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -15799,6 +16272,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -15831,6 +16305,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -15879,6 +16354,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -15911,6 +16387,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -15973,6 +16450,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -15995,6 +16473,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -16018,6 +16497,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -16057,6 +16537,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -16083,6 +16564,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -16115,6 +16597,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -16147,6 +16630,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -16203,6 +16687,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -16229,6 +16714,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -16262,6 +16748,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -16299,6 +16786,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -16325,6 +16813,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -16350,6 +16839,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -16413,6 +16903,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -16472,6 +16963,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerTypeToJson(
@@ -16517,6 +17009,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandTypeToJson(
@@ -16537,6 +17030,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -16585,6 +17079,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -16629,6 +17124,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeTypeToJson(
@@ -16726,6 +17222,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTypeToJson(
@@ -16819,6 +17316,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeTypeToJson(
@@ -16851,6 +17349,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType$PictureTypeToJson(
@@ -16877,6 +17376,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaTypeToJson(
@@ -16909,6 +17409,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$PictureTypeToJson(
@@ -16935,6 +17436,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMembe
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -16967,6 +17469,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMembe
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -17005,6 +17508,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMembe
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -17029,6 +17533,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMembe
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberTypeToJson(
@@ -17061,6 +17566,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -17085,6 +17591,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -17114,6 +17621,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -17141,6 +17649,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -17162,6 +17671,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -17188,6 +17698,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -17220,6 +17731,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -17258,6 +17770,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserTypeToJson(
@@ -17293,6 +17806,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentTypeToJson(
@@ -17315,6 +17829,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$BoardCardsSt
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$BoardCardsStatsTypeToJson(
@@ -17397,6 +17912,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectTypeToJson(
@@ -17423,6 +17939,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PhoneTypeToJson(
@@ -17455,6 +17972,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PictureTypeToJson(
@@ -17493,6 +18011,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserTypeToJson(
@@ -17530,6 +18049,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType
   @override
   List<Object?> get props =>
       [id, icon, title, description, category, members, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardTypeToJson(
@@ -17567,6 +18087,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType
   @override
   List<Object?> get props =>
       [id, name, rank, theme, identifier, board, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListTypeToJson(
@@ -17599,6 +18120,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType$PictureTypeToJson(
@@ -17625,6 +18147,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaTypeToJson(
@@ -17647,6 +18170,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -17679,6 +18203,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -17727,6 +18252,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -17759,6 +18285,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -17807,6 +18334,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -17839,6 +18367,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -17901,6 +18430,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateTypeToJson(
@@ -17923,6 +18453,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -17946,6 +18477,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -17985,6 +18517,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressTypeToJson(
@@ -18009,6 +18542,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyLegal
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyLegalTypeToJson(
@@ -18031,6 +18565,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -18063,6 +18598,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -18111,6 +18647,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -18143,6 +18680,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -18191,6 +18729,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -18223,6 +18762,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -18285,6 +18825,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -18307,6 +18848,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -18330,6 +18872,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -18369,6 +18912,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -18395,6 +18939,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -18427,6 +18972,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -18459,6 +19005,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -18515,6 +19062,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -18541,6 +19089,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -18574,6 +19123,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -18611,6 +19161,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsTypeToJson(
@@ -18637,6 +19188,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyConta
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -18662,6 +19214,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyConta
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -18725,6 +19278,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyTypeToJson(
@@ -18757,6 +19311,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentCon
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -18781,6 +19336,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentCon
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -18810,6 +19366,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentCon
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -18837,6 +19394,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentCon
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -18858,6 +19416,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentCon
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentTypeToJson(
@@ -18884,6 +19443,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$Ph
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PhoneTypeToJson(
@@ -18916,6 +19476,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PictureTypeToJson(
@@ -18954,6 +19515,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserTypeToJson(
@@ -18989,6 +19551,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentTypeToJson(
@@ -19014,6 +19577,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardProcedureType
 
   @override
   List<Object?> get props => [title, task, time];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardProcedureTypeToJson(
@@ -19036,6 +19600,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$TasksStatsType
 
   @override
   List<Object?> get props => [total, done];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$TasksStatsTypeToJson(
@@ -19125,6 +19690,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardTypeToJson(this);
@@ -19144,6 +19710,7 @@ class CreateMaintenanceBoardCard$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createMaintenanceBoardCard];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$MutationToJson(this);
@@ -19233,6 +19800,7 @@ class MaintenanceBoardCardInput extends JsonSerializable with EquatableMixin {
         attachments,
         target
       ];
+
   @override
   Map<String, dynamic> toJson() => _$MaintenanceBoardCardInputToJson(this);
 }
@@ -19268,6 +19836,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -19288,6 +19857,7 @@ class BoardCardTasksInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [task, done];
+
   @override
   Map<String, dynamic> toJson() => _$BoardCardTasksInputToJson(this);
 }
@@ -19312,6 +19882,7 @@ class BoardCardProcedureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [title, task, time];
+
   @override
   Map<String, dynamic> toJson() => _$BoardCardProcedureInputToJson(this);
 }
@@ -19336,6 +19907,7 @@ class ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PhoneTypeToJson(
@@ -19368,6 +19940,7 @@ class ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PictureTypeToJson(
@@ -19405,6 +19978,7 @@ class ReorderBoardList$Mutation$BoardListType$BoardType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderBoardList$Mutation$BoardListType$BoardType$UserTypeToJson(this);
@@ -19439,6 +20013,7 @@ class ReorderBoardList$Mutation$BoardListType$BoardType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, icon, title, description, category, members, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderBoardList$Mutation$BoardListType$BoardTypeToJson(this);
@@ -19473,6 +20048,7 @@ class ReorderBoardList$Mutation$BoardListType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, rank, theme, identifier, board, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderBoardList$Mutation$BoardListTypeToJson(this);
@@ -19489,6 +20065,7 @@ class ReorderBoardList$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [reorderBoardList];
+
   @override
   Map<String, dynamic> toJson() => _$ReorderBoardList$MutationToJson(this);
 }
@@ -19513,6 +20090,7 @@ class UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneTypeToJson(
@@ -19545,6 +20123,7 @@ class UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PictureTypeToJson(
@@ -19581,6 +20160,7 @@ class UpdateBoardList$Mutation$BoardListType$BoardType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBoardList$Mutation$BoardListType$BoardType$UserTypeToJson(this);
@@ -19615,6 +20195,7 @@ class UpdateBoardList$Mutation$BoardListType$BoardType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, icon, title, description, category, members, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBoardList$Mutation$BoardListType$BoardTypeToJson(this);
@@ -19649,6 +20230,7 @@ class UpdateBoardList$Mutation$BoardListType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, rank, theme, identifier, board, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBoardList$Mutation$BoardListTypeToJson(this);
@@ -19665,6 +20247,7 @@ class UpdateBoardList$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateBoardList];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBoardList$MutationToJson(this);
 }
@@ -19684,6 +20267,7 @@ class DeleteBoardList$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBoardList$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -19700,6 +20284,7 @@ class DeleteBoardList$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteBoardList];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteBoardList$MutationToJson(this);
 }
@@ -20209,6 +20794,7 @@ class GetBoardListsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetBoardLists$Query parse(Map<String, dynamic> json) =>
       GetBoardLists$Query.fromJson(json);
@@ -20226,6 +20812,7 @@ class GetBoardListArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$GetBoardListArgumentsToJson(this);
 }
@@ -20529,6 +21116,7 @@ class GetBoardListQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetBoardList$Query parse(Map<String, dynamic> json) =>
       GetBoardList$Query.fromJson(json);
@@ -20547,6 +21135,7 @@ class GetBoardListByBoardArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [boardId];
+
   @override
   Map<String, dynamic> toJson() => _$GetBoardListByBoardArgumentsToJson(this);
 }
@@ -20852,6 +21441,7 @@ class GetBoardListByBoardQuery extends GraphQLQuery<GetBoardListByBoard$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetBoardListByBoard$Query parse(Map<String, dynamic> json) =>
       GetBoardListByBoard$Query.fromJson(json);
@@ -20869,6 +21459,7 @@ class GetCRMBoardArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() => _$GetCRMBoardArgumentsToJson(this);
 }
@@ -33638,6 +34229,7 @@ class GetCRMBoardQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCRMBoard$Query parse(Map<String, dynamic> json) =>
       GetCRMBoard$Query.fromJson(json);
@@ -33656,6 +34248,7 @@ class GetMaintenanceBoardArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() => _$GetMaintenanceBoardArgumentsToJson(this);
 }
@@ -46427,6 +47020,7 @@ class GetMaintenanceBoardQuery extends GraphQLQuery<GetMaintenanceBoard$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetMaintenanceBoard$Query parse(Map<String, dynamic> json) =>
       GetMaintenanceBoard$Query.fromJson(json);
@@ -46452,6 +47046,7 @@ class CreateBoardListArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, rank, board];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBoardListArgumentsToJson(this);
 }
@@ -46782,6 +47377,7 @@ class CreateBoardListMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateBoardList$Mutation parse(Map<String, dynamic> json) =>
       CreateBoardList$Mutation.fromJson(json);
@@ -46801,6 +47397,7 @@ class CreateMaintenanceBoardCardArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCardArgumentsToJson(this);
@@ -57627,6 +58224,7 @@ class CreateMaintenanceBoardCardMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateMaintenanceBoardCard$Mutation parse(Map<String, dynamic> json) =>
       CreateMaintenanceBoardCard$Mutation.fromJson(json);
@@ -57649,6 +58247,7 @@ class ReorderBoardListArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, rank];
+
   @override
   Map<String, dynamic> toJson() => _$ReorderBoardListArgumentsToJson(this);
 }
@@ -57966,6 +58565,7 @@ class ReorderBoardListMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   ReorderBoardList$Mutation parse(Map<String, dynamic> json) =>
       ReorderBoardList$Mutation.fromJson(json);
@@ -57994,6 +58594,7 @@ class UpdateBoardListArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, name, rank, board];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBoardListArgumentsToJson(this);
 }
@@ -58337,6 +58938,7 @@ class UpdateBoardListMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateBoardList$Mutation parse(Map<String, dynamic> json) =>
       UpdateBoardList$Mutation.fromJson(json);
@@ -58354,6 +58956,7 @@ class DeleteBoardListArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteBoardListArgumentsToJson(this);
 }
@@ -58423,6 +59026,7 @@ class DeleteBoardListMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteBoardList$Mutation parse(Map<String, dynamic> json) =>
       DeleteBoardList$Mutation.fromJson(json);

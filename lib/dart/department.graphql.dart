@@ -25,6 +25,7 @@ class GetDepartments$Query$DepartmentType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDepartments$Query$DepartmentTypeToJson(this);
@@ -41,6 +42,7 @@ class GetDepartments$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getDepartments];
+
   @override
   Map<String, dynamic> toJson() => _$GetDepartments$QueryToJson(this);
 }
@@ -63,6 +65,7 @@ class Department$Query$DepartmentType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Department$Query$DepartmentTypeToJson(this);
@@ -79,6 +82,7 @@ class Department$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [department];
+
   @override
   Map<String, dynamic> toJson() => _$Department$QueryToJson(this);
 }
@@ -102,6 +106,7 @@ class GetDepartmentsByTarget$Query$DepartmentType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDepartmentsByTarget$Query$DepartmentTypeToJson(this);
@@ -119,6 +124,7 @@ class GetDepartmentsByTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getDepartmentsByTarget];
+
   @override
   Map<String, dynamic> toJson() => _$GetDepartmentsByTarget$QueryToJson(this);
 }
@@ -145,6 +151,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -169,6 +176,7 @@ class SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentTypeToJson(
@@ -194,6 +202,7 @@ class SearchDepartmentsByTarget$Query$DepartmentPaginatedType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchDepartmentsByTarget$Query$DepartmentPaginatedTypeToJson(this);
@@ -212,6 +221,7 @@ class SearchDepartmentsByTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [searchDepartmentsByTarget];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchDepartmentsByTarget$QueryToJson(this);
@@ -233,6 +243,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -256,6 +267,7 @@ class CreateDepartment$Mutation$DepartmentType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateDepartment$Mutation$DepartmentTypeToJson(this);
@@ -272,6 +284,7 @@ class CreateDepartment$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createDepartment];
+
   @override
   Map<String, dynamic> toJson() => _$CreateDepartment$MutationToJson(this);
 }
@@ -292,6 +305,7 @@ class DepartmentInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, target];
+
   @override
   Map<String, dynamic> toJson() => _$DepartmentInputToJson(this);
 }
@@ -315,6 +329,7 @@ class UpdateDepartment$Mutation$DepartmentType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateDepartment$Mutation$DepartmentTypeToJson(this);
@@ -331,6 +346,7 @@ class UpdateDepartment$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateDepartment];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateDepartment$MutationToJson(this);
 }
@@ -350,6 +366,7 @@ class DeleteDepartment$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteDepartment$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -366,6 +383,7 @@ class DeleteDepartment$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteDepartment];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteDepartment$MutationToJson(this);
 }
@@ -430,6 +448,7 @@ class GetDepartmentsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetDepartments$Query parse(Map<String, dynamic> json) =>
       GetDepartments$Query.fromJson(json);
@@ -447,6 +466,7 @@ class DepartmentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DepartmentArgumentsToJson(this);
 }
@@ -529,6 +549,7 @@ class DepartmentQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   Department$Query parse(Map<String, dynamic> json) =>
       Department$Query.fromJson(json);
@@ -547,6 +568,7 @@ class GetDepartmentsByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetDepartmentsByTargetArgumentsToJson(this);
@@ -632,6 +654,7 @@ class GetDepartmentsByTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetDepartmentsByTarget$Query parse(Map<String, dynamic> json) =>
       GetDepartmentsByTarget$Query.fromJson(json);
@@ -659,6 +682,7 @@ class SearchDepartmentsByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [searchString, target, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchDepartmentsByTargetArgumentsToJson(this);
@@ -792,6 +816,7 @@ class SearchDepartmentsByTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SearchDepartmentsByTarget$Query parse(Map<String, dynamic> json) =>
       SearchDepartmentsByTarget$Query.fromJson(json);
@@ -809,6 +834,7 @@ class CreateDepartmentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateDepartmentArgumentsToJson(this);
 }
@@ -892,6 +918,7 @@ class CreateDepartmentMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateDepartment$Mutation parse(Map<String, dynamic> json) =>
       CreateDepartment$Mutation.fromJson(json);
@@ -914,6 +941,7 @@ class UpdateDepartmentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateDepartmentArgumentsToJson(this);
 }
@@ -1010,6 +1038,7 @@ class UpdateDepartmentMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateDepartment$Mutation parse(Map<String, dynamic> json) =>
       UpdateDepartment$Mutation.fromJson(json);
@@ -1027,6 +1056,7 @@ class DeleteDepartmentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteDepartmentArgumentsToJson(this);
 }
@@ -1096,6 +1126,7 @@ class DeleteDepartmentMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteDepartment$Mutation parse(Map<String, dynamic> json) =>
       DeleteDepartment$Mutation.fromJson(json);

@@ -30,6 +30,7 @@ class CorporateRating$Query$CorporateRatingType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$UserType$PictureTypeToJson(
@@ -63,6 +64,7 @@ class CorporateRating$Query$CorporateRatingType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$UserTypeToJson(this);
@@ -92,6 +94,7 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
@@ -118,6 +121,7 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$InternalProductType$MediaTypeToJson(
@@ -141,6 +145,7 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType$DiscountDtoT
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
@@ -171,6 +176,7 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$InternalProductType$PictureTypeToJson(
@@ -193,6 +199,7 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCat
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -273,6 +280,7 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType
         pictures,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$InternalProductTypeToJson(
@@ -295,6 +303,7 @@ class CorporateRating$Query$CorporateRatingType$CorporateRatingDefinitionType
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
@@ -330,6 +339,7 @@ class CorporateRating$Query$CorporateRatingType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingTypeToJson(this);
@@ -346,6 +356,7 @@ class CorporateRating$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [corporateRating];
+
   @override
   Map<String, dynamic> toJson() => _$CorporateRating$QueryToJson(this);
 }
@@ -374,6 +385,7 @@ class GetAllCorporateRatings$Query$CorporateRatingType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$UserType$PictureTypeToJson(
@@ -408,6 +420,7 @@ class GetAllCorporateRatings$Query$CorporateRatingType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$UserTypeToJson(this);
@@ -437,6 +450,7 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$Media
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
@@ -463,6 +477,7 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$Media
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaTypeToJson(
@@ -486,6 +501,7 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$Disco
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
@@ -516,6 +532,7 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$Pictu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$PictureTypeToJson(
@@ -538,6 +555,7 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$Catal
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -618,6 +636,7 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType
         pictures,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductTypeToJson(
@@ -640,6 +659,7 @@ class GetAllCorporateRatings$Query$CorporateRatingType$CorporateRatingDefinition
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
@@ -675,6 +695,7 @@ class GetAllCorporateRatings$Query$CorporateRatingType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingTypeToJson(this);
@@ -693,6 +714,7 @@ class GetAllCorporateRatings$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAllCorporateRatings];
+
   @override
   Map<String, dynamic> toJson() => _$GetAllCorporateRatings$QueryToJson(this);
 }
@@ -721,6 +743,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureTypeToJson(
@@ -756,6 +779,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
@@ -786,6 +810,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
@@ -812,6 +837,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeToJson(
@@ -835,6 +861,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
@@ -865,6 +892,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureTypeToJson(
@@ -887,6 +915,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -967,6 +996,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
         pictures,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductTypeToJson(
@@ -989,6 +1019,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
@@ -1027,6 +1058,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
   @override
   List<Object?> get props =>
       [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTypeToJson(
@@ -1053,6 +1085,7 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateTypeToJson(
@@ -1073,6 +1106,7 @@ class GetCorporateRatingsBytarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCorporateRatingsBytarget];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$QueryToJson(this);
@@ -1100,6 +1134,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -1120,6 +1155,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -1148,6 +1184,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureTypeToJson(
@@ -1183,6 +1220,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
@@ -1213,6 +1251,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
@@ -1239,6 +1278,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeToJson(
@@ -1262,6 +1302,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
@@ -1292,6 +1333,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureTypeToJson(
@@ -1314,6 +1356,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -1394,6 +1437,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
         pictures,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductTypeToJson(
@@ -1416,6 +1460,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
@@ -1454,6 +1499,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType
   @override
   List<Object?> get props =>
       [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingTypeToJson(
@@ -1479,6 +1525,7 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateTypeToJson(this);
@@ -1496,6 +1543,7 @@ class GetCorporateRatings$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getCorporateRatings];
+
   @override
   Map<String, dynamic> toJson() => _$GetCorporateRatings$QueryToJson(this);
 }
@@ -1524,6 +1572,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PictureTypeToJson(
@@ -1559,6 +1608,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserTypeToJson(
@@ -1589,6 +1639,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
@@ -1615,6 +1666,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaTypeToJson(
@@ -1638,6 +1690,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
@@ -1668,6 +1721,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$PictureTypeToJson(
@@ -1690,6 +1744,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -1770,6 +1825,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
         pictures,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductTypeToJson(
@@ -1792,6 +1848,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Corporat
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
@@ -1830,6 +1887,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType
   @override
   List<Object?> get props =>
       [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingTypeToJson(
@@ -1850,6 +1908,7 @@ class GetCurrentUserCorporateRatingsByProduct$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCurrentUserCorporateRatingsByProduct];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$QueryToJson(this);
@@ -1879,6 +1938,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureTypeToJson(
@@ -1914,6 +1974,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
@@ -1944,6 +2005,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
@@ -1970,6 +2032,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeToJson(
@@ -1993,6 +2056,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
@@ -2023,6 +2087,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureTypeToJson(
@@ -2045,6 +2110,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -2125,6 +2191,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
         pictures,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductTypeToJson(
@@ -2147,6 +2214,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
@@ -2185,6 +2253,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
   @override
   List<Object?> get props =>
       [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTypeToJson(
@@ -2211,6 +2280,7 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateTypeToJson(
@@ -2231,6 +2301,7 @@ class GetCorporateRatingsByProduct$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCorporateRatingsByProduct];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$QueryToJson(this);
@@ -2260,6 +2331,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PictureTypeToJson(
@@ -2295,6 +2367,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserTypeToJson(
@@ -2325,6 +2398,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
@@ -2351,6 +2425,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaTypeToJson(
@@ -2374,6 +2449,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
@@ -2404,6 +2480,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$PictureTypeToJson(
@@ -2426,6 +2503,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -2506,6 +2584,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
         pictures,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductTypeToJson(
@@ -2528,6 +2607,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
@@ -2566,6 +2646,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
   @override
   List<Object?> get props =>
       [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingTypeToJson(
@@ -2588,6 +2669,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   @override
   List<Object?> get props => [mark, count];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$ByMarkRatingTypeToJson(
@@ -2617,6 +2699,7 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   @override
   List<Object?> get props => [count, isLast, objects, stats];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTypeToJson(
@@ -2637,6 +2720,7 @@ class GetCorporateRatingsByProductWithStats$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getCorporateRatingsByProductWithStats];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$QueryToJson(this);
@@ -2658,6 +2742,7 @@ class GetAverageCorporateProductRatingsByProduct$Query$AverageRatingType$ByMarkR
 
   @override
   List<Object?> get props => [mark, count];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAverageCorporateProductRatingsByProduct$Query$AverageRatingType$ByMarkRatingTypeToJson(
@@ -2682,6 +2767,7 @@ class GetAverageCorporateProductRatingsByProduct$Query$AverageRatingType
 
   @override
   List<Object?> get props => [overAllAverage, byMark];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAverageCorporateProductRatingsByProduct$Query$AverageRatingTypeToJson(
@@ -2702,6 +2788,7 @@ class GetAverageCorporateProductRatingsByProduct$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getAverageCorporateProductRatingsByProduct];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAverageCorporateProductRatingsByProduct$QueryToJson(this);
@@ -2731,6 +2818,7 @@ class CreateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$UserType$PictureTypeToJson(
@@ -2766,6 +2854,7 @@ class CreateCorporateRating$Mutation$CorporateRatingType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$UserTypeToJson(this);
@@ -2795,6 +2884,7 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Med
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
@@ -2821,6 +2911,7 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Med
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaTypeToJson(
@@ -2844,6 +2935,7 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Dis
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
@@ -2874,6 +2966,7 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureTypeToJson(
@@ -2896,6 +2989,7 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Cat
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -2976,6 +3070,7 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType
         pictures,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductTypeToJson(
@@ -2998,6 +3093,7 @@ class CreateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefiniti
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
@@ -3034,6 +3130,7 @@ class CreateCorporateRating$Mutation$CorporateRatingType
   @override
   List<Object?> get props =>
       [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingTypeToJson(this);
@@ -3051,6 +3148,7 @@ class CreateCorporateRating$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createCorporateRating];
+
   @override
   Map<String, dynamic> toJson() => _$CreateCorporateRating$MutationToJson(this);
 }
@@ -3080,6 +3178,7 @@ class CorporateRatingInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [mark, comment, product, reviewType, target];
+
   @override
   Map<String, dynamic> toJson() => _$CorporateRatingInputToJson(this);
 }
@@ -3108,6 +3207,7 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureTypeToJson(
@@ -3143,6 +3243,7 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$UserTypeToJson(this);
@@ -3172,6 +3273,7 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Med
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
@@ -3198,6 +3300,7 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Med
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaTypeToJson(
@@ -3221,6 +3324,7 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Dis
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
@@ -3251,6 +3355,7 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureTypeToJson(
@@ -3273,6 +3378,7 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Cat
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -3353,6 +3459,7 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType
         pictures,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductTypeToJson(
@@ -3375,6 +3482,7 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefiniti
 
   @override
   List<Object?> get props => [id, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
@@ -3411,6 +3519,7 @@ class UpdateCorporateRating$Mutation$CorporateRatingType
   @override
   List<Object?> get props =>
       [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingTypeToJson(this);
@@ -3428,6 +3537,7 @@ class UpdateCorporateRating$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateCorporateRating];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateCorporateRating$MutationToJson(this);
 }
@@ -3451,6 +3561,7 @@ class CorporateUpdateRatingInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [mark, comment, reviewType];
+
   @override
   Map<String, dynamic> toJson() => _$CorporateUpdateRatingInputToJson(this);
 }
@@ -3470,6 +3581,7 @@ class DeleteCorporateRating$Mutation$DeleteResponseDtoType
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteCorporateRating$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -3488,6 +3600,7 @@ class DeleteCorporateRating$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [deleteCorporateRating];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteCorporateRating$MutationToJson(this);
 }
@@ -3544,6 +3657,7 @@ class CorporateRatingArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$CorporateRatingArgumentsToJson(this);
 }
@@ -4113,6 +4227,7 @@ class CorporateRatingQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CorporateRating$Query parse(Map<String, dynamic> json) =>
       CorporateRating$Query.fromJson(json);
@@ -4667,6 +4782,7 @@ class GetAllCorporateRatingsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetAllCorporateRatings$Query parse(Map<String, dynamic> json) =>
       GetAllCorporateRatings$Query.fromJson(json);
@@ -4691,6 +4807,7 @@ class GetCorporateRatingsBytargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytargetArgumentsToJson(this);
@@ -5299,6 +5416,7 @@ class GetCorporateRatingsBytargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCorporateRatingsBytarget$Query parse(Map<String, dynamic> json) =>
       GetCorporateRatingsBytarget$Query.fromJson(json);
@@ -5317,6 +5435,7 @@ class GetCorporateRatingsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() => _$GetCorporateRatingsArgumentsToJson(this);
 }
@@ -5910,6 +6029,7 @@ class GetCorporateRatingsQuery extends GraphQLQuery<GetCorporateRatings$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCorporateRatings$Query parse(Map<String, dynamic> json) =>
       GetCorporateRatings$Query.fromJson(json);
@@ -5929,6 +6049,7 @@ class GetCurrentUserCorporateRatingsByProductArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [productId];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProductArgumentsToJson(this);
@@ -6504,6 +6625,7 @@ class GetCurrentUserCorporateRatingsByProductQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCurrentUserCorporateRatingsByProduct$Query parse(
           Map<String, dynamic> json) =>
@@ -6529,6 +6651,7 @@ class GetCorporateRatingsByProductArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [productId, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductArgumentsToJson(this);
@@ -7137,6 +7260,7 @@ class GetCorporateRatingsByProductQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCorporateRatingsByProduct$Query parse(Map<String, dynamic> json) =>
       GetCorporateRatingsByProduct$Query.fromJson(json);
@@ -7161,6 +7285,7 @@ class GetCorporateRatingsByProductWithStatsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [productId, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStatsArgumentsToJson(this);
@@ -7793,6 +7918,7 @@ class GetCorporateRatingsByProductWithStatsQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetCorporateRatingsByProductWithStats$Query parse(
           Map<String, dynamic> json) =>
@@ -7814,6 +7940,7 @@ class GetAverageCorporateProductRatingsByProductArguments
 
   @override
   List<Object?> get props => [productId];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetAverageCorporateProductRatingsByProductArgumentsToJson(this);
@@ -7903,6 +8030,7 @@ class GetAverageCorporateProductRatingsByProductQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetAverageCorporateProductRatingsByProduct$Query parse(
           Map<String, dynamic> json) =>
@@ -7922,6 +8050,7 @@ class CreateCorporateRatingArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateCorporateRatingArgumentsToJson(this);
 }
@@ -8493,6 +8622,7 @@ class CreateCorporateRatingMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateCorporateRating$Mutation parse(Map<String, dynamic> json) =>
       CreateCorporateRating$Mutation.fromJson(json);
@@ -8516,6 +8646,7 @@ class UpdateCorporateRatingArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input, id];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateCorporateRatingArgumentsToJson(this);
 }
@@ -9100,6 +9231,7 @@ class UpdateCorporateRatingMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateCorporateRating$Mutation parse(Map<String, dynamic> json) =>
       UpdateCorporateRating$Mutation.fromJson(json);
@@ -9118,6 +9250,7 @@ class DeleteCorporateRatingArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteCorporateRatingArgumentsToJson(this);
 }
@@ -9188,6 +9321,7 @@ class DeleteCorporateRatingMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteCorporateRating$Mutation parse(Map<String, dynamic> json) =>
       DeleteCorporateRating$Mutation.fromJson(json);

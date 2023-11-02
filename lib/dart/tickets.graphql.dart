@@ -31,6 +31,7 @@ class GetTickets$Query$TicketType$MediaType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$MediaType$PictureTypeToJson(this);
@@ -53,6 +54,7 @@ class GetTickets$Query$TicketType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$MediaTypeToJson(this);
@@ -77,6 +79,7 @@ class GetTickets$Query$TicketType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$UserType$PhoneTypeToJson(this);
@@ -107,6 +110,7 @@ class GetTickets$Query$TicketType$UserType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$UserType$PictureTypeToJson(this);
@@ -141,6 +145,7 @@ class GetTickets$Query$TicketType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$UserTypeToJson(this);
@@ -172,6 +177,7 @@ class GetTickets$Query$TicketType$CompanyType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$MediaType$PictureTypeToJson(
@@ -195,6 +201,7 @@ class GetTickets$Query$TicketType$CompanyType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$MediaTypeToJson(this);
@@ -216,6 +223,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -248,6 +256,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -296,6 +305,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -328,6 +338,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -376,6 +387,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -408,6 +420,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -470,6 +483,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateTypeToJson(
@@ -492,6 +506,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTy
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -515,6 +530,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTy
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -550,6 +566,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$FullAddressTypeToJson(this);
@@ -572,6 +589,7 @@ class GetTickets$Query$TicketType$CompanyType$CompanyLegalType
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$CompanyLegalTypeToJson(this);
@@ -593,6 +611,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -625,6 +644,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -673,6 +693,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -705,6 +726,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -753,6 +775,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -785,6 +808,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -847,6 +871,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -869,6 +894,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -892,6 +918,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -931,6 +958,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -957,6 +985,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -989,6 +1018,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1021,6 +1051,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -1077,6 +1108,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLo
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -1103,6 +1135,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLo
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -1136,6 +1169,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -1171,6 +1205,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsTypeToJson(this);
@@ -1196,6 +1231,7 @@ class GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -1221,6 +1257,7 @@ class GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -1278,6 +1315,7 @@ class GetTickets$Query$TicketType$CompanyType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$CompanyTypeToJson(this);
@@ -1309,6 +1347,7 @@ class GetTickets$Query$TicketType$ProjectType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$MediaType$PictureTypeToJson(
@@ -1332,6 +1371,7 @@ class GetTickets$Query$TicketType$ProjectType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$MediaTypeToJson(this);
@@ -1362,6 +1402,7 @@ class GetTickets$Query$TicketType$ProjectType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$PictureTypeToJson(this);
@@ -1387,6 +1428,7 @@ class GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTy
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -1419,6 +1461,7 @@ class GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -1457,6 +1500,7 @@ class GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -1479,6 +1523,7 @@ class GetTickets$Query$TicketType$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$ProjectMemberTypeToJson(this);
@@ -1510,6 +1555,7 @@ class GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -1534,6 +1580,7 @@ class GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$C
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -1563,6 +1610,7 @@ class GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$C
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -1590,6 +1638,7 @@ class GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$C
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -1611,6 +1660,7 @@ class GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -1637,6 +1687,7 @@ class GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -1669,6 +1720,7 @@ class GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -1707,6 +1759,7 @@ class GetTickets$Query$TicketType$ProjectType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$DocumentType$UserTypeToJson(
@@ -1740,6 +1793,7 @@ class GetTickets$Query$TicketType$ProjectType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$DocumentTypeToJson(this);
@@ -1761,6 +1815,7 @@ class GetTickets$Query$TicketType$ProjectType$BoardCardsStatsType
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectType$BoardCardsStatsTypeToJson(this);
@@ -1835,6 +1890,7 @@ class GetTickets$Query$TicketType$ProjectType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$ProjectTypeToJson(this);
@@ -1866,6 +1922,7 @@ class GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -1890,6 +1947,7 @@ class GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTy
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -1919,6 +1977,7 @@ class GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTy
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -1946,6 +2005,7 @@ class GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTy
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -1967,6 +2027,7 @@ class GetTickets$Query$TicketType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$DocumentType$DocumentContentTypeToJson(
@@ -1993,6 +2054,7 @@ class GetTickets$Query$TicketType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$DocumentType$UserType$PhoneTypeToJson(this);
@@ -2024,6 +2086,7 @@ class GetTickets$Query$TicketType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$DocumentType$UserType$PictureTypeToJson(
@@ -2059,6 +2122,7 @@ class GetTickets$Query$TicketType$DocumentType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$DocumentType$UserTypeToJson(this);
@@ -2090,6 +2154,7 @@ class GetTickets$Query$TicketType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTickets$Query$TicketType$DocumentTypeToJson(this);
@@ -2155,6 +2220,7 @@ class GetTickets$Query$TicketType extends JsonSerializable with EquatableMixin {
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetTickets$Query$TicketTypeToJson(this);
 }
@@ -2170,6 +2236,7 @@ class GetTickets$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getTickets];
+
   @override
   Map<String, dynamic> toJson() => _$GetTickets$QueryToJson(this);
 }
@@ -2199,6 +2266,7 @@ class Ticket$Query$TicketType$MediaType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$MediaType$PictureTypeToJson(this);
@@ -2221,6 +2289,7 @@ class Ticket$Query$TicketType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$MediaTypeToJson(this);
@@ -2245,6 +2314,7 @@ class Ticket$Query$TicketType$UserType$PhoneType extends JsonSerializable
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$UserType$PhoneTypeToJson(this);
@@ -2275,6 +2345,7 @@ class Ticket$Query$TicketType$UserType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$UserType$PictureTypeToJson(this);
@@ -2309,6 +2380,7 @@ class Ticket$Query$TicketType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$UserTypeToJson(this);
@@ -2339,6 +2411,7 @@ class Ticket$Query$TicketType$CompanyType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$MediaType$PictureTypeToJson(this);
@@ -2361,6 +2434,7 @@ class Ticket$Query$TicketType$CompanyType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$MediaTypeToJson(this);
@@ -2382,6 +2456,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -2414,6 +2489,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2462,6 +2538,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -2494,6 +2571,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2542,6 +2620,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -2574,6 +2653,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -2636,6 +2716,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateTypeToJson(
@@ -2658,6 +2739,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$F
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -2681,6 +2763,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -2716,6 +2799,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$FullAddressTypeToJson(this);
@@ -2738,6 +2822,7 @@ class Ticket$Query$TicketType$CompanyType$CompanyLegalType
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$CompanyLegalTypeToJson(this);
@@ -2759,6 +2844,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -2791,6 +2877,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2839,6 +2926,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -2871,6 +2959,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2919,6 +3008,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -2951,6 +3041,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -3013,6 +3104,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -3035,6 +3127,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3058,6 +3151,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3097,6 +3191,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -3123,6 +3218,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -3155,6 +3251,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -3187,6 +3284,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -3243,6 +3341,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTy
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -3269,6 +3368,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTy
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -3302,6 +3402,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -3337,6 +3438,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$BankDetailsTypeToJson(this);
@@ -3362,6 +3464,7 @@ class Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -3387,6 +3490,7 @@ class Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -3444,6 +3548,7 @@ class Ticket$Query$TicketType$CompanyType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$CompanyTypeToJson(this);
@@ -3474,6 +3579,7 @@ class Ticket$Query$TicketType$ProjectType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$MediaType$PictureTypeToJson(this);
@@ -3496,6 +3602,7 @@ class Ticket$Query$TicketType$ProjectType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$MediaTypeToJson(this);
@@ -3526,6 +3633,7 @@ class Ticket$Query$TicketType$ProjectType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$PictureTypeToJson(this);
@@ -3551,6 +3659,7 @@ class Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -3583,6 +3692,7 @@ class Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -3621,6 +3731,7 @@ class Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -3643,6 +3754,7 @@ class Ticket$Query$TicketType$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$ProjectMemberTypeToJson(this);
@@ -3674,6 +3786,7 @@ class Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$Conte
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -3698,6 +3811,7 @@ class Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$Conte
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -3727,6 +3841,7 @@ class Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$Conte
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -3754,6 +3869,7 @@ class Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$Conte
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -3775,6 +3891,7 @@ class Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -3801,6 +3918,7 @@ class Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -3833,6 +3951,7 @@ class Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -3869,6 +3988,7 @@ class Ticket$Query$TicketType$ProjectType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$DocumentType$UserTypeToJson(this);
@@ -3900,6 +4020,7 @@ class Ticket$Query$TicketType$ProjectType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$DocumentTypeToJson(this);
@@ -3920,6 +4041,7 @@ class Ticket$Query$TicketType$ProjectType$BoardCardsStatsType
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectType$BoardCardsStatsTypeToJson(this);
@@ -3994,6 +4116,7 @@ class Ticket$Query$TicketType$ProjectType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$ProjectTypeToJson(this);
@@ -4025,6 +4148,7 @@ class Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -4049,6 +4173,7 @@ class Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$C
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -4078,6 +4203,7 @@ class Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$C
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -4105,6 +4231,7 @@ class Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -4125,6 +4252,7 @@ class Ticket$Query$TicketType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$DocumentType$DocumentContentTypeToJson(this);
@@ -4149,6 +4277,7 @@ class Ticket$Query$TicketType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$DocumentType$UserType$PhoneTypeToJson(this);
@@ -4179,6 +4308,7 @@ class Ticket$Query$TicketType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$DocumentType$UserType$PictureTypeToJson(this);
@@ -4213,6 +4343,7 @@ class Ticket$Query$TicketType$DocumentType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$DocumentType$UserTypeToJson(this);
@@ -4244,6 +4375,7 @@ class Ticket$Query$TicketType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Ticket$Query$TicketType$DocumentTypeToJson(this);
@@ -4309,6 +4441,7 @@ class Ticket$Query$TicketType extends JsonSerializable with EquatableMixin {
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$Ticket$Query$TicketTypeToJson(this);
 }
@@ -4324,6 +4457,7 @@ class Ticket$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [ticket];
+
   @override
   Map<String, dynamic> toJson() => _$Ticket$QueryToJson(this);
 }
@@ -4353,6 +4487,7 @@ class GetTicketsByTarget$Query$TicketType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$MediaType$PictureTypeToJson(this);
@@ -4375,6 +4510,7 @@ class GetTicketsByTarget$Query$TicketType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$MediaTypeToJson(this);
@@ -4399,6 +4535,7 @@ class GetTicketsByTarget$Query$TicketType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$UserType$PhoneTypeToJson(this);
@@ -4429,6 +4566,7 @@ class GetTicketsByTarget$Query$TicketType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$UserType$PictureTypeToJson(this);
@@ -4463,6 +4601,7 @@ class GetTicketsByTarget$Query$TicketType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$UserTypeToJson(this);
@@ -4494,6 +4633,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$MediaType$PictureTypeToJson(
@@ -4519,6 +4659,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$MediaTypeToJson(this);
@@ -4540,6 +4681,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -4572,6 +4714,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -4620,6 +4763,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -4652,6 +4796,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -4700,6 +4845,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -4732,6 +4878,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -4794,6 +4941,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateTypeToJson(
@@ -4816,6 +4964,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddres
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -4839,6 +4988,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddres
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -4878,6 +5028,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressTypeToJson(
@@ -4902,6 +5053,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$CompanyLegalType
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$CompanyLegalTypeToJson(
@@ -4924,6 +5076,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -4956,6 +5109,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5004,6 +5158,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -5036,6 +5191,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5084,6 +5240,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -5116,6 +5273,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -5178,6 +5336,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -5200,6 +5359,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -5223,6 +5383,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -5262,6 +5423,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -5288,6 +5450,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -5320,6 +5483,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$B
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -5352,6 +5516,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$B
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -5408,6 +5573,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$B
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -5434,6 +5600,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$B
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -5467,6 +5634,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -5504,6 +5672,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsTypeToJson(
@@ -5530,6 +5699,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType$
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -5555,6 +5725,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -5613,6 +5784,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$CompanyTypeToJson(this);
@@ -5644,6 +5816,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$MediaType$PictureTypeToJson(
@@ -5669,6 +5842,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$MediaTypeToJson(this);
@@ -5700,6 +5874,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$PictureTypeToJson(this);
@@ -5725,6 +5900,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -5757,6 +5933,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -5795,6 +5972,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -5819,6 +5997,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberTypeToJson(
@@ -5851,6 +6030,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentConte
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -5875,6 +6055,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentConte
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -5904,6 +6085,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentConte
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -5931,6 +6113,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentConte
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -5952,6 +6135,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentConte
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -5978,6 +6162,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$Phon
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -6010,6 +6195,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -6048,6 +6234,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserTypeToJson(
@@ -6082,6 +6269,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentTypeToJson(
@@ -6104,6 +6292,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType$BoardCardsStatsType
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectType$BoardCardsStatsTypeToJson(
@@ -6182,6 +6371,7 @@ class GetTicketsByTarget$Query$TicketType$ProjectType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$ProjectTypeToJson(this);
@@ -6213,6 +6403,7 @@ class GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$Conte
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -6237,6 +6428,7 @@ class GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$Conte
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -6266,6 +6458,7 @@ class GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$Conte
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -6293,6 +6486,7 @@ class GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$Conte
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -6314,6 +6508,7 @@ class GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentTypeToJson(
@@ -6340,6 +6535,7 @@ class GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PhoneTypeToJson(
@@ -6372,6 +6568,7 @@ class GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PictureTypeToJson(
@@ -6408,6 +6605,7 @@ class GetTicketsByTarget$Query$TicketType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$DocumentType$UserTypeToJson(this);
@@ -6439,6 +6637,7 @@ class GetTicketsByTarget$Query$TicketType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketType$DocumentTypeToJson(this);
@@ -6506,6 +6705,7 @@ class GetTicketsByTarget$Query$TicketType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTarget$Query$TicketTypeToJson(this);
@@ -6522,6 +6722,7 @@ class GetTicketsByTarget$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getTicketsByTarget];
+
   @override
   Map<String, dynamic> toJson() => _$GetTicketsByTarget$QueryToJson(this);
 }
@@ -6548,6 +6749,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -6578,6 +6780,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType$PictureTypeToJson(
@@ -6604,6 +6807,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaTyp
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaTypeToJson(
@@ -6630,6 +6834,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PhoneTypeToJson(
@@ -6662,6 +6867,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PictureTypeToJson(
@@ -6700,6 +6906,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserTypeToJson(
@@ -6732,6 +6939,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaType$PictureTypeToJson(
@@ -6758,6 +6966,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaTypeToJson(
@@ -6780,6 +6989,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -6812,6 +7022,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -6860,6 +7071,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -6892,6 +7104,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -6940,6 +7153,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -6972,6 +7186,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -7034,6 +7249,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateTypeToJson(
@@ -7056,6 +7272,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -7079,6 +7296,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -7118,6 +7336,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressTypeToJson(
@@ -7142,6 +7361,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyLegalTypeToJson(
@@ -7164,6 +7384,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -7196,6 +7417,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -7244,6 +7466,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -7276,6 +7499,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -7324,6 +7548,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -7356,6 +7581,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -7418,6 +7644,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -7440,6 +7667,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -7463,6 +7691,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -7502,6 +7731,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -7528,6 +7758,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -7560,6 +7791,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -7592,6 +7824,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -7648,6 +7881,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -7674,6 +7908,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -7707,6 +7942,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -7744,6 +7980,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsTypeToJson(
@@ -7770,6 +8007,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -7795,6 +8033,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -7858,6 +8097,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyTypeToJson(
@@ -7890,6 +8130,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaType$PictureTypeToJson(
@@ -7916,6 +8157,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaTypeToJson(
@@ -7948,6 +8190,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$PictureTypeToJson(
@@ -7974,6 +8217,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -8006,6 +8250,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -8044,6 +8289,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -8068,6 +8314,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberTypeToJson(
@@ -8100,6 +8347,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -8124,6 +8372,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -8153,6 +8402,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -8180,6 +8430,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -8201,6 +8452,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -8227,6 +8479,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -8259,6 +8512,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -8297,6 +8551,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserTypeToJson(
@@ -8332,6 +8587,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentTypeToJson(
@@ -8354,6 +8610,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$BoardCardsStatsTypeToJson(
@@ -8436,6 +8693,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectT
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectTypeToJson(
@@ -8468,6 +8726,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$Document
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -8492,6 +8751,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$Document
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -8521,6 +8781,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$Document
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -8548,6 +8809,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$Document
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -8569,6 +8831,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$Document
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentTypeToJson(
@@ -8595,6 +8858,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$Document
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PhoneTypeToJson(
@@ -8627,6 +8891,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$Document
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PictureTypeToJson(
@@ -8665,6 +8930,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$Document
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserTypeToJson(
@@ -8700,6 +8966,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$Document
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentTypeToJson(
@@ -8774,6 +9041,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketTypeToJson(
@@ -8798,6 +9066,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateTypeToJson(this);
@@ -8817,6 +9086,7 @@ class GetTicketsByTargetWithFilter$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getTicketsByTargetWithFilter];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilter$QueryToJson(this);
@@ -8852,6 +9122,7 @@ class TicketsFilterInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [priority, members, attachments, from, to, status];
+
   @override
   Map<String, dynamic> toJson() => _$TicketsFilterInputToJson(this);
 }
@@ -8872,6 +9143,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -8889,6 +9161,7 @@ class GetTicketsByExcel$Query$InvoicePDFType extends JsonSerializable
 
   @override
   List<Object?> get props => [content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByExcel$Query$InvoicePDFTypeToJson(this);
@@ -8905,6 +9178,7 @@ class GetTicketsByExcel$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getTicketsByExcel];
+
   @override
   Map<String, dynamic> toJson() => _$GetTicketsByExcel$QueryToJson(this);
 }
@@ -8942,6 +9216,7 @@ class SendTicketsBymail$Query$MailResponseDto extends JsonSerializable
         messageSize,
         envelopeTime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendTicketsBymail$Query$MailResponseDtoToJson(this);
@@ -8958,6 +9233,7 @@ class SendTicketsBymail$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [sendTicketsBymail];
+
   @override
   Map<String, dynamic> toJson() => _$SendTicketsBymail$QueryToJson(this);
 }
@@ -8978,6 +9254,7 @@ class GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$PriceC
 
   @override
   List<Object?> get props => [price, count];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$PriceCountTypeToJson(
@@ -9000,6 +9277,7 @@ class GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$Differ
 
   @override
   List<Object?> get props => [amount, percentage];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceType$DifferenceInnerTypeToJson(
@@ -9024,6 +9302,7 @@ class GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$Differ
 
   @override
   List<Object?> get props => [price, count];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceTypeToJson(
@@ -9051,6 +9330,7 @@ class GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType
 
   @override
   List<Object?> get props => [current, previous, difference];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousTypeToJson(
@@ -9083,6 +9363,7 @@ class GetTicketsStatsWithFilter$Query$TicketStatsType extends JsonSerializable
 
   @override
   List<Object?> get props => [open, inProgress, blocked, resolved];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsStatsWithFilter$Query$TicketStatsTypeToJson(this);
@@ -9101,6 +9382,7 @@ class GetTicketsStatsWithFilter$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getTicketsStatsWithFilter];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsStatsWithFilter$QueryToJson(this);
@@ -9132,6 +9414,7 @@ class TicketsStatsFilterInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [priority, members, attachments, from, to];
+
   @override
   Map<String, dynamic> toJson() => _$TicketsStatsFilterInputToJson(this);
 }
@@ -9161,6 +9444,7 @@ class CreateTicket$Mutation$TicketType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$MediaType$PictureTypeToJson(this);
@@ -9183,6 +9467,7 @@ class CreateTicket$Mutation$TicketType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$MediaTypeToJson(this);
@@ -9207,6 +9492,7 @@ class CreateTicket$Mutation$TicketType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$UserType$PhoneTypeToJson(this);
@@ -9237,6 +9523,7 @@ class CreateTicket$Mutation$TicketType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$UserType$PictureTypeToJson(this);
@@ -9271,6 +9558,7 @@ class CreateTicket$Mutation$TicketType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$UserTypeToJson(this);
@@ -9302,6 +9590,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$MediaType$PictureTypeToJson(
@@ -9327,6 +9616,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$MediaTypeToJson(this);
@@ -9348,6 +9638,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -9380,6 +9671,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9428,6 +9720,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -9460,6 +9753,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$Cou
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9508,6 +9802,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$Cou
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -9540,6 +9835,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -9602,6 +9898,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateTypeToJson(
@@ -9624,6 +9921,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOw
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -9647,6 +9945,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOw
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -9685,6 +9984,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressTypeToJson(
@@ -9709,6 +10009,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$CompanyLegalType
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$CompanyLegalTypeToJson(
@@ -9731,6 +10032,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -9763,6 +10065,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9811,6 +10114,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -9843,6 +10147,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9891,6 +10196,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -9923,6 +10229,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -9985,6 +10292,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -10007,6 +10315,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -10030,6 +10339,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -10069,6 +10379,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -10095,6 +10406,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -10127,6 +10439,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$Brow
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -10159,6 +10472,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$Brow
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -10215,6 +10529,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$Brow
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -10241,6 +10556,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$Brow
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -10274,6 +10590,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -10311,6 +10628,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsTypeToJson(
@@ -10337,6 +10655,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$Pho
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -10362,6 +10681,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -10420,6 +10740,7 @@ class CreateTicket$Mutation$TicketType$CompanyType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$CompanyTypeToJson(this);
@@ -10451,6 +10772,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$MediaType$PictureTypeToJson(
@@ -10476,6 +10798,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$MediaTypeToJson(this);
@@ -10506,6 +10829,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$PictureTypeToJson(this);
@@ -10531,6 +10855,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$Ph
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -10563,6 +10888,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -10601,6 +10927,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -10625,6 +10952,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberTypeToJson(
@@ -10657,6 +10985,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -10681,6 +11010,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentT
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -10710,6 +11040,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentT
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -10737,6 +11068,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentT
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -10758,6 +11090,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentT
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -10784,6 +11117,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTy
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -10816,6 +11150,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -10854,6 +11189,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserTypeToJson(
@@ -10887,6 +11223,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$DocumentTypeToJson(this);
@@ -10908,6 +11245,7 @@ class CreateTicket$Mutation$TicketType$ProjectType$BoardCardsStatsType
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectType$BoardCardsStatsTypeToJson(
@@ -10984,6 +11322,7 @@ class CreateTicket$Mutation$TicketType$ProjectType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$ProjectTypeToJson(this);
@@ -11015,6 +11354,7 @@ class CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -11039,6 +11379,7 @@ class CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentT
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -11068,6 +11409,7 @@ class CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentT
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -11095,6 +11437,7 @@ class CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentT
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -11116,6 +11459,7 @@ class CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentTypeToJson(
@@ -11142,6 +11486,7 @@ class CreateTicket$Mutation$TicketType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$DocumentType$UserType$PhoneTypeToJson(
@@ -11174,6 +11519,7 @@ class CreateTicket$Mutation$TicketType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$DocumentType$UserType$PictureTypeToJson(
@@ -11209,6 +11555,7 @@ class CreateTicket$Mutation$TicketType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$DocumentType$UserTypeToJson(this);
@@ -11240,6 +11587,7 @@ class CreateTicket$Mutation$TicketType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketType$DocumentTypeToJson(this);
@@ -11307,6 +11655,7 @@ class CreateTicket$Mutation$TicketType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTicket$Mutation$TicketTypeToJson(this);
@@ -11323,6 +11672,7 @@ class CreateTicket$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createTicket];
+
   @override
   Map<String, dynamic> toJson() => _$CreateTicket$MutationToJson(this);
 }
@@ -11396,6 +11746,7 @@ class TicketInput extends JsonSerializable with EquatableMixin {
         target,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() => _$TicketInputToJson(this);
 }
@@ -11419,6 +11770,7 @@ class MediaInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [videos, pictures, deg360];
+
   @override
   Map<String, dynamic> toJson() => _$MediaInputToJson(this);
 }
@@ -11454,6 +11806,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -11483,6 +11836,7 @@ class UpdateTicket$Mutation$TicketType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$MediaType$PictureTypeToJson(this);
@@ -11505,6 +11859,7 @@ class UpdateTicket$Mutation$TicketType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$MediaTypeToJson(this);
@@ -11529,6 +11884,7 @@ class UpdateTicket$Mutation$TicketType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$UserType$PhoneTypeToJson(this);
@@ -11559,6 +11915,7 @@ class UpdateTicket$Mutation$TicketType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$UserType$PictureTypeToJson(this);
@@ -11593,6 +11950,7 @@ class UpdateTicket$Mutation$TicketType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$UserTypeToJson(this);
@@ -11624,6 +11982,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$MediaType$PictureTypeToJson(
@@ -11649,6 +12008,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$MediaTypeToJson(this);
@@ -11670,6 +12030,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -11702,6 +12063,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -11750,6 +12112,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -11782,6 +12145,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$Cou
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -11830,6 +12194,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$Cou
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -11862,6 +12227,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -11924,6 +12290,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateTypeToJson(
@@ -11946,6 +12313,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOw
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -11969,6 +12337,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOw
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -12007,6 +12376,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressTypeToJson(
@@ -12031,6 +12401,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$CompanyLegalType
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$CompanyLegalTypeToJson(
@@ -12053,6 +12424,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -12085,6 +12457,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -12133,6 +12506,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -12165,6 +12539,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -12213,6 +12588,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -12245,6 +12621,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -12307,6 +12684,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -12329,6 +12707,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -12352,6 +12731,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -12391,6 +12771,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -12417,6 +12798,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -12449,6 +12831,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$Brow
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -12481,6 +12864,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$Brow
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -12537,6 +12921,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$Brow
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -12563,6 +12948,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$Brow
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -12596,6 +12982,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -12633,6 +13020,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsTypeToJson(
@@ -12659,6 +13047,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$Pho
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -12684,6 +13073,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -12742,6 +13132,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$CompanyTypeToJson(this);
@@ -12773,6 +13164,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$MediaType$PictureTypeToJson(
@@ -12798,6 +13190,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$MediaTypeToJson(this);
@@ -12828,6 +13221,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$PictureTypeToJson(this);
@@ -12853,6 +13247,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$Ph
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -12885,6 +13280,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -12923,6 +13319,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -12947,6 +13344,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberTypeToJson(
@@ -12979,6 +13377,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -13003,6 +13402,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentT
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -13032,6 +13432,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentT
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -13059,6 +13460,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentT
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -13080,6 +13482,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentT
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -13106,6 +13509,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTy
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -13138,6 +13542,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -13176,6 +13581,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserTypeToJson(
@@ -13209,6 +13615,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentTypeToJson(this);
@@ -13230,6 +13637,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType$BoardCardsStatsType
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectType$BoardCardsStatsTypeToJson(
@@ -13306,6 +13714,7 @@ class UpdateTicket$Mutation$TicketType$ProjectType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$ProjectTypeToJson(this);
@@ -13337,6 +13746,7 @@ class UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -13361,6 +13771,7 @@ class UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentT
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -13390,6 +13801,7 @@ class UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentT
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -13417,6 +13829,7 @@ class UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentT
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -13438,6 +13851,7 @@ class UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentTypeToJson(
@@ -13464,6 +13878,7 @@ class UpdateTicket$Mutation$TicketType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$DocumentType$UserType$PhoneTypeToJson(
@@ -13496,6 +13911,7 @@ class UpdateTicket$Mutation$TicketType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$DocumentType$UserType$PictureTypeToJson(
@@ -13531,6 +13947,7 @@ class UpdateTicket$Mutation$TicketType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$DocumentType$UserTypeToJson(this);
@@ -13562,6 +13979,7 @@ class UpdateTicket$Mutation$TicketType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketType$DocumentTypeToJson(this);
@@ -13629,6 +14047,7 @@ class UpdateTicket$Mutation$TicketType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTicket$Mutation$TicketTypeToJson(this);
@@ -13645,6 +14064,7 @@ class UpdateTicket$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateTicket];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateTicket$MutationToJson(this);
 }
@@ -13718,6 +14138,7 @@ class TicketUpdateInput extends JsonSerializable with EquatableMixin {
         target,
         id
       ];
+
   @override
   Map<String, dynamic> toJson() => _$TicketUpdateInputToJson(this);
 }
@@ -13748,6 +14169,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$MediaType$PictureTypeToJson(
@@ -13772,6 +14194,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$MediaTypeToJson(this);
@@ -13797,6 +14220,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$UserType$PhoneTypeToJson(
@@ -13829,6 +14253,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$UserType$PictureTypeToJson(
@@ -13864,6 +14289,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$UserTypeToJson(this);
@@ -13895,6 +14321,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType$PictureTypeToJson(
@@ -13921,6 +14348,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaTypeToJson(
@@ -13943,6 +14371,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonL
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -13975,6 +14404,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$Coun
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -14023,6 +14453,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$Coun
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -14055,6 +14486,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$Stat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -14103,6 +14535,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$Stat
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -14135,6 +14568,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$Stat
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -14197,6 +14631,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$Stat
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateTypeToJson(
@@ -14219,6 +14654,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$Full
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -14242,6 +14678,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$Full
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -14281,6 +14718,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressTypeToJson(
@@ -14305,6 +14743,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyLegalType
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyLegalTypeToJson(
@@ -14327,6 +14766,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -14359,6 +14799,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -14407,6 +14848,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -14439,6 +14881,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -14487,6 +14930,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -14519,6 +14963,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -14581,6 +15026,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -14603,6 +15049,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -14626,6 +15073,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -14665,6 +15113,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -14691,6 +15140,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -14723,6 +15173,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -14755,6 +15206,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -14811,6 +15263,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -14837,6 +15290,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -14870,6 +15324,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -14907,6 +15362,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsTypeToJson(
@@ -14933,6 +15389,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetail
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -14958,6 +15415,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetail
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -15018,6 +15476,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyTypeToJson(this);
@@ -15049,6 +15508,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType$PictureTypeToJson(
@@ -15075,6 +15535,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaTypeToJson(
@@ -15107,6 +15568,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$PictureTypeToJson(
@@ -15133,6 +15595,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$Us
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
@@ -15165,6 +15628,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$Us
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -15203,6 +15667,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$Us
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -15227,6 +15692,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberTypeToJson(
@@ -15259,6 +15725,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$Documen
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -15283,6 +15750,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$Documen
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -15312,6 +15780,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$Documen
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -15339,6 +15808,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$Documen
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -15360,6 +15830,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$Documen
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -15386,6 +15857,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
@@ -15418,6 +15890,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -15456,6 +15929,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserTyp
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserTypeToJson(
@@ -15491,6 +15965,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentTypeToJson(
@@ -15513,6 +15988,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$BoardCardsStatsType
 
   @override
   List<Object?> get props => [total, archived];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$BoardCardsStatsTypeToJson(
@@ -15592,6 +16068,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$ProjectType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectTypeToJson(this);
@@ -15623,6 +16100,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -15647,6 +16125,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -15676,6 +16155,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -15703,6 +16183,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -15724,6 +16205,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentTypeToJson(
@@ -15750,6 +16232,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PhoneType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PhoneTypeToJson(
@@ -15782,6 +16265,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PictureTypeToJson(
@@ -15820,6 +16304,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserTypeToJson(
@@ -15853,6 +16338,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentTypeToJson(this);
@@ -15920,6 +16406,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateTicketMedia$Mutation$TicketTypeToJson(this);
@@ -15937,6 +16424,7 @@ class BulkUpdateTicketMedia$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [bulkUpdateTicketMedia];
+
   @override
   Map<String, dynamic> toJson() => _$BulkUpdateTicketMedia$MutationToJson(this);
 }
@@ -15957,6 +16445,7 @@ class UpdateMediaInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, media];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateMediaInputToJson(this);
 }
@@ -15980,6 +16469,7 @@ class SingleMediaInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [videos, pictures, deg360];
+
   @override
   Map<String, dynamic> toJson() => _$SingleMediaInputToJson(this);
 }
@@ -15999,6 +16489,7 @@ class DeleteTicket$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteTicket$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -16015,6 +16506,7 @@ class DeleteTicket$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteTicket];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteTicket$MutationToJson(this);
 }
@@ -21025,6 +21517,7 @@ class GetTicketsQuery extends GraphQLQuery<GetTickets$Query, JsonSerializable> {
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetTickets$Query parse(Map<String, dynamic> json) =>
       GetTickets$Query.fromJson(json);
@@ -21042,6 +21535,7 @@ class TicketArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$TicketArgumentsToJson(this);
 }
@@ -25967,6 +26461,7 @@ class TicketQuery extends GraphQLQuery<Ticket$Query, TicketArguments> {
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   Ticket$Query parse(Map<String, dynamic> json) => Ticket$Query.fromJson(json);
 }
@@ -25983,6 +26478,7 @@ class GetTicketsByTargetArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() => _$GetTicketsByTargetArgumentsToJson(this);
 }
@@ -30911,6 +31407,7 @@ class GetTicketsByTargetQuery extends GraphQLQuery<GetTicketsByTarget$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetTicketsByTarget$Query parse(Map<String, dynamic> json) =>
       GetTicketsByTarget$Query.fromJson(json);
@@ -30941,6 +31438,7 @@ class GetTicketsByTargetWithFilterArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, searchString, filter, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsByTargetWithFilterArgumentsToJson(this);
@@ -35947,6 +36445,7 @@ class GetTicketsByTargetWithFilterQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetTicketsByTargetWithFilter$Query parse(Map<String, dynamic> json) =>
       GetTicketsByTargetWithFilter$Query.fromJson(json);
@@ -35975,6 +36474,7 @@ class GetTicketsByExcelArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target, filter, searchString, path];
+
   @override
   Map<String, dynamic> toJson() => _$GetTicketsByExcelArgumentsToJson(this);
 }
@@ -36076,6 +36576,7 @@ class GetTicketsByExcelQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetTicketsByExcel$Query parse(Map<String, dynamic> json) =>
       GetTicketsByExcel$Query.fromJson(json);
@@ -36107,6 +36608,7 @@ class SendTicketsBymailArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target, filter, searchString, emails, subject];
+
   @override
   Map<String, dynamic> toJson() => _$SendTicketsBymailArgumentsToJson(this);
 }
@@ -36266,6 +36768,7 @@ class SendTicketsBymailQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SendTicketsBymail$Query parse(Map<String, dynamic> json) =>
       SendTicketsBymail$Query.fromJson(json);
@@ -36290,6 +36793,7 @@ class GetTicketsStatsWithFilterArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, filter];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTicketsStatsWithFilterArgumentsToJson(this);
@@ -36776,6 +37280,7 @@ class GetTicketsStatsWithFilterQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetTicketsStatsWithFilter$Query parse(Map<String, dynamic> json) =>
       GetTicketsStatsWithFilter$Query.fromJson(json);
@@ -36793,6 +37298,7 @@ class CreateTicketArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateTicketArgumentsToJson(this);
 }
@@ -41719,6 +42225,7 @@ class CreateTicketMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateTicket$Mutation parse(Map<String, dynamic> json) =>
       CreateTicket$Mutation.fromJson(json);
@@ -41736,6 +42243,7 @@ class UpdateTicketArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateTicketArgumentsToJson(this);
 }
@@ -46662,6 +47170,7 @@ class UpdateTicketMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateTicket$Mutation parse(Map<String, dynamic> json) =>
       UpdateTicket$Mutation.fromJson(json);
@@ -46680,6 +47189,7 @@ class BulkUpdateTicketMediaArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$BulkUpdateTicketMediaArgumentsToJson(this);
 }
@@ -51611,6 +52121,7 @@ class BulkUpdateTicketMediaMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   BulkUpdateTicketMedia$Mutation parse(Map<String, dynamic> json) =>
       BulkUpdateTicketMedia$Mutation.fromJson(json);
@@ -51628,6 +52139,7 @@ class DeleteTicketArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteTicketArgumentsToJson(this);
 }
@@ -51696,6 +52208,7 @@ class DeleteTicketMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteTicket$Mutation parse(Map<String, dynamic> json) =>
       DeleteTicket$Mutation.fromJson(json);

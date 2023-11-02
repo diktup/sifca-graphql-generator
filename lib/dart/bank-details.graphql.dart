@@ -22,6 +22,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -54,6 +55,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -102,6 +104,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -134,6 +137,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -182,6 +186,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -214,6 +219,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -273,6 +279,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -295,6 +302,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -318,6 +326,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -357,6 +366,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -383,6 +393,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -415,6 +426,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -447,6 +459,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$Browser
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -503,6 +516,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$Browser
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -529,6 +543,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoType
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -560,6 +575,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankType
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsType$BankTypeToJson(this);
@@ -593,6 +609,7 @@ class FindBankDetailsById$Query$BankDetailsType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankDetailsById$Query$BankDetailsTypeToJson(this);
@@ -609,6 +626,7 @@ class FindBankDetailsById$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findBankDetailsById];
+
   @override
   Map<String, dynamic> toJson() => _$FindBankDetailsById$QueryToJson(this);
 }
@@ -629,6 +647,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -661,6 +680,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -709,6 +729,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -741,6 +762,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -789,6 +811,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -821,6 +844,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -883,6 +907,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -905,6 +930,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -928,6 +954,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -967,6 +994,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -993,6 +1021,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -1025,6 +1054,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1057,6 +1087,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -1113,6 +1144,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -1139,6 +1171,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -1172,6 +1205,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankTypeToJson(
@@ -1209,6 +1243,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsTypeToJson(
@@ -1234,6 +1269,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedTypeToJson(this);
@@ -1253,6 +1289,7 @@ class FindBanksDetailsPagination$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findBanksDetailsPagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPagination$QueryToJson(this);
@@ -1274,6 +1311,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -1294,6 +1332,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -1326,6 +1365,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1374,6 +1414,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -1406,6 +1447,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1454,6 +1496,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -1486,6 +1529,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -1545,6 +1589,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -1567,6 +1612,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -1590,6 +1636,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -1629,6 +1676,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -1655,6 +1703,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -1687,6 +1736,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1719,6 +1769,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$Browse
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -1775,6 +1826,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$Browse
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -1801,6 +1853,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -1832,6 +1885,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankType
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsType$BankTypeToJson(this);
@@ -1865,6 +1919,7 @@ class CreateBankDetails$Mutation$BankDetailsType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBankDetails$Mutation$BankDetailsTypeToJson(this);
@@ -1881,6 +1936,7 @@ class CreateBankDetails$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createBankDetails];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBankDetails$MutationToJson(this);
 }
@@ -1910,6 +1966,7 @@ class BankDetailsInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [account, iban, bank, externalId, holder];
+
   @override
   Map<String, dynamic> toJson() => _$BankDetailsInputToJson(this);
 }
@@ -1934,6 +1991,7 @@ class BankDetailsHolderInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() => _$BankDetailsHolderInputToJson(this);
 }
@@ -1973,6 +2031,7 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [owner, address, postCode, city, country, state, addressLine, location];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressInputToJson(this);
 }
@@ -1993,6 +2052,7 @@ class FullAddressOwnerInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressOwnerInputToJson(this);
 }
@@ -2013,6 +2073,7 @@ class FullAddressOwnerPhoneInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressOwnerPhoneInputToJson(this);
 }
@@ -2033,6 +2094,7 @@ class LonLatInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() => _$LonLatInputToJson(this);
 }
@@ -2053,6 +2115,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -2085,6 +2148,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2133,6 +2197,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -2165,6 +2230,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2213,6 +2279,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -2245,6 +2312,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -2304,6 +2372,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -2326,6 +2395,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -2349,6 +2419,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -2388,6 +2459,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -2414,6 +2486,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -2446,6 +2519,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -2478,6 +2552,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$Browse
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -2534,6 +2609,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$Browse
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -2560,6 +2636,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoType
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -2591,6 +2668,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankType
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsType$BankTypeToJson(this);
@@ -2624,6 +2702,7 @@ class UpdateBankDetails$Mutation$BankDetailsType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBankDetails$Mutation$BankDetailsTypeToJson(this);
@@ -2640,6 +2719,7 @@ class UpdateBankDetails$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateBankDetails];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBankDetails$MutationToJson(this);
 }
@@ -2659,6 +2739,7 @@ class DeleteBankDetails$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBankDetails$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -2675,6 +2756,7 @@ class DeleteBankDetails$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteBankDetails];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteBankDetails$MutationToJson(this);
 }
@@ -2712,6 +2794,7 @@ class FindBankDetailsByIdArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$FindBankDetailsByIdArgumentsToJson(this);
 }
@@ -4097,6 +4180,7 @@ class FindBankDetailsByIdQuery extends GraphQLQuery<FindBankDetailsById$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindBankDetailsById$Query parse(Map<String, dynamic> json) =>
       FindBankDetailsById$Query.fromJson(json);
@@ -4116,6 +4200,7 @@ class FindBanksDetailsPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksDetailsPaginationArgumentsToJson(this);
@@ -5531,6 +5616,7 @@ class FindBanksDetailsPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindBanksDetailsPagination$Query parse(Map<String, dynamic> json) =>
       FindBanksDetailsPagination$Query.fromJson(json);
@@ -5548,6 +5634,7 @@ class CreateBankDetailsArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBankDetailsArgumentsToJson(this);
 }
@@ -6933,6 +7020,7 @@ class CreateBankDetailsMutation extends GraphQLQuery<CreateBankDetails$Mutation,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateBankDetails$Mutation parse(Map<String, dynamic> json) =>
       CreateBankDetails$Mutation.fromJson(json);
@@ -6955,6 +7043,7 @@ class UpdateBankDetailsArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBankDetailsArgumentsToJson(this);
 }
@@ -8353,6 +8442,7 @@ class UpdateBankDetailsMutation extends GraphQLQuery<UpdateBankDetails$Mutation,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateBankDetails$Mutation parse(Map<String, dynamic> json) =>
       UpdateBankDetails$Mutation.fromJson(json);
@@ -8370,6 +8460,7 @@ class DeleteBankDetailsArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteBankDetailsArgumentsToJson(this);
 }
@@ -8440,6 +8531,7 @@ class DeleteBankDetailsMutation extends GraphQLQuery<DeleteBankDetails$Mutation,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteBankDetails$Mutation parse(Map<String, dynamic> json) =>
       DeleteBankDetails$Mutation.fromJson(json);

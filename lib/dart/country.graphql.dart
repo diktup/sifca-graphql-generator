@@ -29,6 +29,7 @@ class GetCountries$Query$CountryType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetCountries$Query$CountryType$PictureTypeToJson(this);
@@ -72,6 +73,7 @@ class GetCountries$Query$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetCountries$Query$CountryTypeToJson(this);
 }
@@ -87,6 +89,7 @@ class GetCountries$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getCountries];
+
   @override
   Map<String, dynamic> toJson() => _$GetCountries$QueryToJson(this);
 }
@@ -115,6 +118,7 @@ class FindCountriesPagination$Query$CountryPaginatedType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCountriesPagination$Query$CountryPaginatedType$CountryType$PictureTypeToJson(
@@ -163,6 +167,7 @@ class FindCountriesPagination$Query$CountryPaginatedType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCountriesPagination$Query$CountryPaginatedType$CountryTypeToJson(
@@ -187,6 +192,7 @@ class FindCountriesPagination$Query$CountryPaginatedType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCountriesPagination$Query$CountryPaginatedTypeToJson(this);
@@ -205,6 +211,7 @@ class FindCountriesPagination$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findCountriesPagination];
+
   @override
   Map<String, dynamic> toJson() => _$FindCountriesPagination$QueryToJson(this);
 }
@@ -225,6 +232,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -410,6 +418,7 @@ class GetCountriesQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetCountries$Query parse(Map<String, dynamic> json) =>
       GetCountries$Query.fromJson(json);
@@ -429,6 +438,7 @@ class FindCountriesPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindCountriesPaginationArgumentsToJson(this);
@@ -657,6 +667,7 @@ class FindCountriesPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindCountriesPagination$Query parse(Map<String, dynamic> json) =>
       FindCountriesPagination$Query.fromJson(json);

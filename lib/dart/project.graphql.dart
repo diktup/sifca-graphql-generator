@@ -29,6 +29,7 @@ class GetProjects$Query$ProjectType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$MediaType$PictureTypeToJson(this);
@@ -51,6 +52,7 @@ class GetProjects$Query$ProjectType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$MediaTypeToJson(this);
@@ -79,6 +81,7 @@ class GetProjects$Query$ProjectType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$PictureTypeToJson(this);
@@ -108,6 +111,7 @@ class GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -141,6 +145,7 @@ class GetProjects$Query$ProjectType$ProjectMemberType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$ProjectMemberType$UserTypeToJson(this);
@@ -162,6 +167,7 @@ class GetProjects$Query$ProjectType$ProjectMemberType extends JsonSerializable
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$ProjectMemberTypeToJson(this);
@@ -191,6 +197,7 @@ class GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -215,6 +222,7 @@ class GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -244,6 +252,7 @@ class GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentType
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -271,6 +280,7 @@ class GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentType
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -292,6 +302,7 @@ class GetProjects$Query$ProjectType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -322,6 +333,7 @@ class GetProjects$Query$ProjectType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -355,6 +367,7 @@ class GetProjects$Query$ProjectType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$DocumentType$UserTypeToJson(this);
@@ -386,6 +399,7 @@ class GetProjects$Query$ProjectType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$DocumentTypeToJson(this);
@@ -453,6 +467,7 @@ class GetProjects$Query$ProjectType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetProjects$Query$ProjectTypeToJson(this);
 }
@@ -468,6 +483,7 @@ class GetProjects$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getProjects];
+
   @override
   Map<String, dynamic> toJson() => _$GetProjects$QueryToJson(this);
 }
@@ -495,6 +511,7 @@ class Project$Query$ProjectType$MediaType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$MediaType$PictureTypeToJson(this);
@@ -517,6 +534,7 @@ class Project$Query$ProjectType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$MediaTypeToJson(this);
@@ -545,6 +563,7 @@ class Project$Query$ProjectType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$PictureTypeToJson(this);
@@ -574,6 +593,7 @@ class Project$Query$ProjectType$ProjectMemberType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -607,6 +627,7 @@ class Project$Query$ProjectType$ProjectMemberType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$ProjectMemberType$UserTypeToJson(this);
@@ -628,6 +649,7 @@ class Project$Query$ProjectType$ProjectMemberType extends JsonSerializable
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$ProjectMemberTypeToJson(this);
@@ -657,6 +679,7 @@ class Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -681,6 +704,7 @@ class Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -710,6 +734,7 @@ class Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -737,6 +762,7 @@ class Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -758,6 +784,7 @@ class Project$Query$ProjectType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$DocumentType$DocumentContentTypeToJson(this);
@@ -787,6 +814,7 @@ class Project$Query$ProjectType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$DocumentType$UserType$PictureTypeToJson(this);
@@ -819,6 +847,7 @@ class Project$Query$ProjectType$DocumentType$UserType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$DocumentType$UserTypeToJson(this);
@@ -850,6 +879,7 @@ class Project$Query$ProjectType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$DocumentTypeToJson(this);
@@ -916,6 +946,7 @@ class Project$Query$ProjectType extends JsonSerializable with EquatableMixin {
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() => _$Project$Query$ProjectTypeToJson(this);
 }
@@ -931,6 +962,7 @@ class Project$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [project];
+
   @override
   Map<String, dynamic> toJson() => _$Project$QueryToJson(this);
 }
@@ -959,6 +991,7 @@ class GetProjectsByTarget$Query$ProjectType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$MediaType$PictureTypeToJson(this);
@@ -981,6 +1014,7 @@ class GetProjectsByTarget$Query$ProjectType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$MediaTypeToJson(this);
@@ -1009,6 +1043,7 @@ class GetProjectsByTarget$Query$ProjectType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$PictureTypeToJson(this);
@@ -1038,6 +1073,7 @@ class GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -1073,6 +1109,7 @@ class GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -1095,6 +1132,7 @@ class GetProjectsByTarget$Query$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$ProjectMemberTypeToJson(this);
@@ -1124,6 +1162,7 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$Con
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -1148,6 +1187,7 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$Con
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -1177,6 +1217,7 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$Con
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -1204,6 +1245,7 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$Con
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -1225,6 +1267,7 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -1255,6 +1298,7 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -1290,6 +1334,7 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$DocumentType$UserTypeToJson(this);
@@ -1322,6 +1367,7 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$DocumentTypeToJson(this);
@@ -1390,6 +1436,7 @@ class GetProjectsByTarget$Query$ProjectType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectTypeToJson(this);
@@ -1406,6 +1453,7 @@ class GetProjectsByTarget$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getProjectsByTarget];
+
   @override
   Map<String, dynamic> toJson() => _$GetProjectsByTarget$QueryToJson(this);
 }
@@ -1432,6 +1480,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -1460,6 +1509,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType$PictureTypeToJson(
@@ -1486,6 +1536,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaT
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaTypeToJson(
@@ -1516,6 +1567,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$PictureTypeToJson(
@@ -1546,6 +1598,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Projec
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -1581,6 +1634,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Projec
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -1605,6 +1659,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Projec
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberTypeToJson(
@@ -1635,6 +1690,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -1659,6 +1715,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -1688,6 +1745,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -1715,6 +1773,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -1736,6 +1795,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -1766,6 +1826,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -1801,6 +1862,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserTypeToJson(
@@ -1836,6 +1898,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentTypeToJson(
@@ -1911,6 +1974,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectTypeToJson(
@@ -1935,6 +1999,7 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateTypeToJson(this);
@@ -1954,6 +2019,7 @@ class GetProjectsByTargetWithFilter$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getProjectsByTargetWithFilter];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$QueryToJson(this);
@@ -1990,6 +2056,7 @@ class ProjectFilterInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [privacy, status, priority, members, from, to];
+
   @override
   Map<String, dynamic> toJson() => _$ProjectFilterInputToJson(this);
 }
@@ -2010,6 +2077,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -2037,6 +2105,7 @@ class CreateProject$Mutation$ProjectType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$MediaType$PictureTypeToJson(this);
@@ -2059,6 +2128,7 @@ class CreateProject$Mutation$ProjectType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$MediaTypeToJson(this);
@@ -2087,6 +2157,7 @@ class CreateProject$Mutation$ProjectType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$PictureTypeToJson(this);
@@ -2116,6 +2187,7 @@ class CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -2151,6 +2223,7 @@ class CreateProject$Mutation$ProjectType$ProjectMemberType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -2173,6 +2246,7 @@ class CreateProject$Mutation$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$ProjectMemberTypeToJson(this);
@@ -2202,6 +2276,7 @@ class CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -2226,6 +2301,7 @@ class CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -2255,6 +2331,7 @@ class CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -2282,6 +2359,7 @@ class CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -2303,6 +2381,7 @@ class CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -2333,6 +2412,7 @@ class CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -2366,6 +2446,7 @@ class CreateProject$Mutation$ProjectType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$DocumentType$UserTypeToJson(this);
@@ -2397,6 +2478,7 @@ class CreateProject$Mutation$ProjectType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$DocumentTypeToJson(this);
@@ -2465,6 +2547,7 @@ class CreateProject$Mutation$ProjectType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectTypeToJson(this);
@@ -2481,6 +2564,7 @@ class CreateProject$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createProject];
+
   @override
   Map<String, dynamic> toJson() => _$CreateProject$MutationToJson(this);
 }
@@ -2559,6 +2643,7 @@ class ProjectInput extends JsonSerializable with EquatableMixin {
         attachments,
         target
       ];
+
   @override
   Map<String, dynamic> toJson() => _$ProjectInputToJson(this);
 }
@@ -2582,6 +2667,7 @@ class MediaInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [videos, pictures, deg360];
+
   @override
   Map<String, dynamic> toJson() => _$MediaInputToJson(this);
 }
@@ -2617,6 +2703,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -2638,6 +2725,7 @@ class ProjectMemberInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() => _$ProjectMemberInputToJson(this);
 }
@@ -2665,6 +2753,7 @@ class UpdateProject$Mutation$ProjectType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$MediaType$PictureTypeToJson(this);
@@ -2687,6 +2776,7 @@ class UpdateProject$Mutation$ProjectType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$MediaTypeToJson(this);
@@ -2715,6 +2805,7 @@ class UpdateProject$Mutation$ProjectType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$PictureTypeToJson(this);
@@ -2744,6 +2835,7 @@ class UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
@@ -2779,6 +2871,7 @@ class UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$ProjectMemberType$UserTypeToJson(
@@ -2801,6 +2894,7 @@ class UpdateProject$Mutation$ProjectType$ProjectMemberType
 
   @override
   List<Object?> get props => [member, role];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$ProjectMemberTypeToJson(this);
@@ -2830,6 +2924,7 @@ class UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -2854,6 +2949,7 @@ class UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -2883,6 +2979,7 @@ class UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -2910,6 +3007,7 @@ class UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$Conten
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -2931,6 +3029,7 @@ class UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentTypeToJson(
@@ -2961,6 +3060,7 @@ class UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureTypeToJson(
@@ -2994,6 +3094,7 @@ class UpdateProject$Mutation$ProjectType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$DocumentType$UserTypeToJson(this);
@@ -3025,6 +3126,7 @@ class UpdateProject$Mutation$ProjectType$DocumentType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$DocumentTypeToJson(this);
@@ -3093,6 +3195,7 @@ class UpdateProject$Mutation$ProjectType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectTypeToJson(this);
@@ -3109,6 +3212,7 @@ class UpdateProject$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateProject];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateProject$MutationToJson(this);
 }
@@ -3191,6 +3295,7 @@ class ProjectUpdateInput extends JsonSerializable with EquatableMixin {
         target,
         id
       ];
+
   @override
   Map<String, dynamic> toJson() => _$ProjectUpdateInputToJson(this);
 }
@@ -3210,6 +3315,7 @@ class DeleteProject$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProject$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -3226,6 +3332,7 @@ class DeleteProject$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteProject];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteProject$MutationToJson(this);
 }
@@ -4712,6 +4819,7 @@ class GetProjectsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetProjects$Query parse(Map<String, dynamic> json) =>
       GetProjects$Query.fromJson(json);
@@ -4729,6 +4837,7 @@ class ProjectArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$ProjectArgumentsToJson(this);
 }
@@ -6177,6 +6286,7 @@ class ProjectQuery extends GraphQLQuery<Project$Query, ProjectArguments> {
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   Project$Query parse(Map<String, dynamic> json) =>
       Project$Query.fromJson(json);
@@ -6195,6 +6305,7 @@ class GetProjectsByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() => _$GetProjectsByTargetArgumentsToJson(this);
 }
@@ -7646,6 +7757,7 @@ class GetProjectsByTargetQuery extends GraphQLQuery<GetProjectsByTarget$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetProjectsByTarget$Query parse(Map<String, dynamic> json) =>
       GetProjectsByTarget$Query.fromJson(json);
@@ -7676,6 +7788,7 @@ class GetProjectsByTargetWithFilterArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [searchString, target, filter, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilterArgumentsToJson(this);
@@ -9192,6 +9305,7 @@ class GetProjectsByTargetWithFilterQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetProjectsByTargetWithFilter$Query parse(Map<String, dynamic> json) =>
       GetProjectsByTargetWithFilter$Query.fromJson(json);
@@ -9209,6 +9323,7 @@ class CreateProjectArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateProjectArgumentsToJson(this);
 }
@@ -10658,6 +10773,7 @@ class CreateProjectMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateProject$Mutation parse(Map<String, dynamic> json) =>
       CreateProject$Mutation.fromJson(json);
@@ -10675,6 +10791,7 @@ class UpdateProjectArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateProjectArgumentsToJson(this);
 }
@@ -12124,6 +12241,7 @@ class UpdateProjectMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateProject$Mutation parse(Map<String, dynamic> json) =>
       UpdateProject$Mutation.fromJson(json);
@@ -12141,6 +12259,7 @@ class DeleteProjectArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteProjectArgumentsToJson(this);
 }
@@ -12209,6 +12328,7 @@ class DeleteProjectMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteProject$Mutation parse(Map<String, dynamic> json) =>
       DeleteProject$Mutation.fromJson(json);

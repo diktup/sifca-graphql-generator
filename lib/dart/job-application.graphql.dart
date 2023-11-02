@@ -30,6 +30,7 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -54,6 +55,7 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentTy
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -83,6 +85,7 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentTy
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -110,6 +113,7 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentTy
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -131,6 +135,7 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentTy
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentTypeToJson(
@@ -161,6 +166,7 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PictureTypeToJson(
@@ -196,6 +202,7 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$DocumentType$UserTypeToJson(
@@ -229,6 +236,7 @@ class GetJobApplications$Query$JobApplicationType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$DocumentTypeToJson(this);
@@ -254,6 +262,7 @@ class GetJobApplications$Query$JobApplicationType$JobDefinitionType$DepartmentTy
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$DepartmentTypeToJson(
@@ -277,6 +286,7 @@ class GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobSpecsTypeToJson(
@@ -299,6 +309,7 @@ class GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDescripti
 
   @override
   List<Object?> get props => [description, descriptionList];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDescriptionTypeToJson(
@@ -354,6 +365,7 @@ class GetJobApplications$Query$JobApplicationType$JobDefinitionType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationType$JobDefinitionTypeToJson(
@@ -407,6 +419,7 @@ class GetJobApplications$Query$JobApplicationType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplications$Query$JobApplicationTypeToJson(this);
@@ -423,6 +436,7 @@ class GetJobApplications$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getJobApplications];
+
   @override
   Map<String, dynamic> toJson() => _$GetJobApplications$QueryToJson(this);
 }
@@ -451,6 +465,7 @@ class JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -475,6 +490,7 @@ class JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType$C
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -504,6 +520,7 @@ class JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType$C
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -531,6 +548,7 @@ class JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType$C
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -552,6 +570,7 @@ class JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$DocumentType$DocumentContentTypeToJson(
@@ -582,6 +601,7 @@ class JobApplication$Query$JobApplicationType$DocumentType$UserType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$DocumentType$UserType$PictureTypeToJson(
@@ -617,6 +637,7 @@ class JobApplication$Query$JobApplicationType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$DocumentType$UserTypeToJson(
@@ -650,6 +671,7 @@ class JobApplication$Query$JobApplicationType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$DocumentTypeToJson(this);
@@ -675,6 +697,7 @@ class JobApplication$Query$JobApplicationType$JobDefinitionType$DepartmentType
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$JobDefinitionType$DepartmentTypeToJson(
@@ -698,6 +721,7 @@ class JobApplication$Query$JobApplicationType$JobDefinitionType$JobSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobSpecsTypeToJson(
@@ -720,6 +744,7 @@ class JobApplication$Query$JobApplicationType$JobDefinitionType$JobDescriptionTy
 
   @override
   List<Object?> get props => [description, descriptionList];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDescriptionTypeToJson(
@@ -774,6 +799,7 @@ class JobApplication$Query$JobApplicationType$JobDefinitionType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationType$JobDefinitionTypeToJson(this);
@@ -825,6 +851,7 @@ class JobApplication$Query$JobApplicationType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$JobApplication$Query$JobApplicationTypeToJson(this);
@@ -841,6 +868,7 @@ class JobApplication$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [jobApplication];
+
   @override
   Map<String, dynamic> toJson() => _$JobApplication$QueryToJson(this);
 }
@@ -869,6 +897,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentC
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -893,6 +922,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentC
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -922,6 +952,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentC
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -949,6 +980,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentC
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -970,6 +1002,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentC
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentContentTypeToJson(
@@ -1000,6 +1033,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$PictureTypeToJson(
@@ -1035,6 +1069,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserTypeToJson(
@@ -1070,6 +1105,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$DocumentTypeToJson(
@@ -1096,6 +1132,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$Depa
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$DepartmentTypeToJson(
@@ -1119,6 +1156,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobS
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobSpecsTypeToJson(
@@ -1141,6 +1179,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobD
 
   @override
   List<Object?> get props => [description, descriptionList];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDescriptionTypeToJson(
@@ -1196,6 +1235,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionTypeToJson(
@@ -1249,6 +1289,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$Query$JobApplicationTypeToJson(this);
@@ -1268,6 +1309,7 @@ class GetJobApplicationsByTarget$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getJobApplicationsByTarget];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTarget$QueryToJson(this);
@@ -1295,6 +1337,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -1323,6 +1366,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -1347,6 +1391,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -1376,6 +1421,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -1403,6 +1449,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -1424,6 +1471,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$DocumentContentTypeToJson(
@@ -1454,6 +1502,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PictureTypeToJson(
@@ -1489,6 +1538,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserTypeToJson(
@@ -1524,6 +1574,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentTypeToJson(
@@ -1550,6 +1601,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$DepartmentBaseTypeToJson(
@@ -1573,6 +1625,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobSpecsTypeToJson(
@@ -1595,6 +1648,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   @override
   List<Object?> get props => [description, descriptionList];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDescriptionTypeToJson(
@@ -1650,6 +1704,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseTypeToJson(
@@ -1706,6 +1761,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseTypeToJson(
@@ -1732,6 +1788,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedTypeToJson(
@@ -1752,6 +1809,7 @@ class GetJobApplicationsByTargetPagination$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getJobApplicationsByTargetPagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPagination$QueryToJson(this);
@@ -1773,6 +1831,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -1801,6 +1860,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -1825,6 +1885,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -1854,6 +1915,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -1881,6 +1943,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -1902,6 +1965,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$DocumentContentTypeToJson(
@@ -1932,6 +1996,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PictureTypeToJson(
@@ -1967,6 +2032,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserTypeToJson(
@@ -2002,6 +2068,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentTypeToJson(
@@ -2028,6 +2095,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$DepartmentTypeToJson(
@@ -2051,6 +2119,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobSpecsTypeToJson(
@@ -2073,6 +2142,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   @override
   List<Object?> get props => [description, descriptionList];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDescriptionTypeToJson(
@@ -2128,6 +2198,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionTypeToJson(
@@ -2184,6 +2255,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationTypeToJson(
@@ -2210,6 +2282,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedTypeToJson(
@@ -2230,6 +2303,7 @@ class GetJobApplicationsByJobDefinition$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getJobApplicationsByJobDefinition];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinition$QueryToJson(this);
@@ -2259,6 +2333,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -2283,6 +2358,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -2312,6 +2388,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -2339,6 +2416,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -2360,6 +2438,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$DocumentContentTypeToJson(
@@ -2390,6 +2469,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PictureTypeToJson(
@@ -2425,6 +2505,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserTypeToJson(
@@ -2460,6 +2541,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentTypeToJson(
@@ -2486,6 +2568,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$DepartmentTypeToJson(
@@ -2509,6 +2592,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobSpecsTypeToJson(
@@ -2531,6 +2615,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   @override
   List<Object?> get props => [description, descriptionList];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDescriptionTypeToJson(
@@ -2586,6 +2671,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionTypeToJson(
@@ -2642,6 +2728,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationTypeToJson(
@@ -2668,6 +2755,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedTypeToJson(
@@ -2688,6 +2776,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query
 
   @override
   List<Object?> get props => [getJobApplicationsByTargetAndStatusPagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPagination$QueryToJson(this);
@@ -2717,6 +2806,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -2741,6 +2831,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -2770,6 +2861,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -2797,6 +2889,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -2818,6 +2911,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$DocumentContentTypeToJson(
@@ -2848,6 +2942,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PictureTypeToJson(
@@ -2883,6 +2978,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserTypeToJson(
@@ -2918,6 +3014,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentTypeToJson(
@@ -2944,6 +3041,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$DepartmentBaseTypeToJson(
@@ -2967,6 +3065,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobSpecsTypeToJson(
@@ -2989,6 +3088,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   @override
   List<Object?> get props => [description, descriptionList];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDescriptionTypeToJson(
@@ -3044,6 +3144,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseTypeToJson(
@@ -3100,6 +3201,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseTypeToJson(
@@ -3126,6 +3228,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedTypeToJson(
@@ -3146,6 +3249,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query
 
   @override
   List<Object?> get props => [getJobApplicationsByTargetWithFilterPagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPagination$QueryToJson(this);
@@ -3174,6 +3278,7 @@ class JobApplicationFilterInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [jobDefinition, status, from, to];
+
   @override
   Map<String, dynamic> toJson() => _$JobApplicationFilterInputToJson(this);
 }
@@ -3191,6 +3296,7 @@ class GetJobApplicationsByExcel$Query$InvoicePDFType extends JsonSerializable
 
   @override
   List<Object?> get props => [content];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByExcel$Query$InvoicePDFTypeToJson(this);
@@ -3208,6 +3314,7 @@ class GetJobApplicationsByExcel$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getJobApplicationsByExcel];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByExcel$QueryToJson(this);
@@ -3246,6 +3353,7 @@ class SendJobApplicationsByMail$Query$MailResponseDto extends JsonSerializable
         messageSize,
         envelopeTime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendJobApplicationsByMail$Query$MailResponseDtoToJson(this);
@@ -3264,6 +3372,7 @@ class SendJobApplicationsByMail$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [sendJobApplicationsByMail];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendJobApplicationsByMail$QueryToJson(this);
@@ -3293,6 +3402,7 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -3317,6 +3427,7 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -3346,6 +3457,7 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -3373,6 +3485,7 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -3394,6 +3507,7 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentContentTypeToJson(
@@ -3424,6 +3538,7 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PictureTypeToJson(
@@ -3459,6 +3574,7 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserTypeToJson(
@@ -3493,6 +3609,7 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$DocumentTypeToJson(
@@ -3519,6 +3636,7 @@ class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$Departm
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$DepartmentTypeToJson(
@@ -3542,6 +3660,7 @@ class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobSpec
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobSpecsTypeToJson(
@@ -3564,6 +3683,7 @@ class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDesc
 
   @override
   List<Object?> get props => [description, descriptionList];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDescriptionTypeToJson(
@@ -3619,6 +3739,7 @@ class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionTypeToJson(
@@ -3672,6 +3793,7 @@ class CreateJobApplication$Mutation$JobApplicationType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateJobApplication$Mutation$JobApplicationTypeToJson(this);
@@ -3689,6 +3811,7 @@ class CreateJobApplication$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createJobApplication];
+
   @override
   Map<String, dynamic> toJson() => _$CreateJobApplication$MutationToJson(this);
 }
@@ -3729,6 +3852,7 @@ class JobApplicationInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [firstName, lastName, email, message, cv, cover, status, jobDefinition];
+
   @override
   Map<String, dynamic> toJson() => _$JobApplicationInputToJson(this);
 }
@@ -3757,6 +3881,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
@@ -3781,6 +3906,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   @override
   List<Object?> get props => [png, svg];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
@@ -3810,6 +3936,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   @override
   List<Object?> get props => [background, black, white, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
@@ -3837,6 +3964,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   @override
   List<Object?> get props => [id, name, type, image];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
@@ -3858,6 +3986,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   @override
   List<Object?> get props => [type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentContentTypeToJson(
@@ -3888,6 +4017,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PictureTypeToJson(
@@ -3923,6 +4053,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserTypeToJson(
@@ -3957,6 +4088,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType
   @override
   List<Object?> get props =>
       [id, name, content, size, owner, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$DocumentTypeToJson(
@@ -3983,6 +4115,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$Departm
 
   @override
   List<Object?> get props => [id, name, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$DepartmentTypeToJson(
@@ -4006,6 +4139,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobSpec
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobSpecsTypeToJson(
@@ -4028,6 +4162,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDesc
 
   @override
   List<Object?> get props => [description, descriptionList];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDescriptionTypeToJson(
@@ -4083,6 +4218,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionTypeToJson(
@@ -4136,6 +4272,7 @@ class UpdateJobApplication$Mutation$JobApplicationType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateJobApplication$Mutation$JobApplicationTypeToJson(this);
@@ -4153,6 +4290,7 @@ class UpdateJobApplication$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateJobApplication];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateJobApplication$MutationToJson(this);
 }
@@ -4193,6 +4331,7 @@ class JobApplicationUpdateInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [firstName, lastName, email, message, cv, cover, status, jobDefinition];
+
   @override
   Map<String, dynamic> toJson() => _$JobApplicationUpdateInputToJson(this);
 }
@@ -4212,6 +4351,7 @@ class DeleteJobApplication$Mutation$DeleteResponseDtoType
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteJobApplication$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -4229,6 +4369,7 @@ class DeleteJobApplication$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [deleteJobApplication];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteJobApplication$MutationToJson(this);
 }
@@ -5581,6 +5722,7 @@ class GetJobApplicationsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetJobApplications$Query parse(Map<String, dynamic> json) =>
       GetJobApplications$Query.fromJson(json);
@@ -5598,6 +5740,7 @@ class JobApplicationArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$JobApplicationArgumentsToJson(this);
 }
@@ -6913,6 +7056,7 @@ class JobApplicationQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   JobApplication$Query parse(Map<String, dynamic> json) =>
       JobApplication$Query.fromJson(json);
@@ -6932,6 +7076,7 @@ class GetJobApplicationsByTargetArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetArgumentsToJson(this);
@@ -8251,6 +8396,7 @@ class GetJobApplicationsByTargetQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetJobApplicationsByTarget$Query parse(Map<String, dynamic> json) =>
       GetJobApplicationsByTarget$Query.fromJson(json);
@@ -8275,6 +8421,7 @@ class GetJobApplicationsByTargetPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetPaginationArgumentsToJson(this);
@@ -9631,6 +9778,7 @@ class GetJobApplicationsByTargetPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetJobApplicationsByTargetPagination$Query parse(Map<String, dynamic> json) =>
       GetJobApplicationsByTargetPagination$Query.fromJson(json);
@@ -9655,6 +9803,7 @@ class GetJobApplicationsByJobDefinitionArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [jobDefinition, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByJobDefinitionArgumentsToJson(this);
@@ -11011,6 +11160,7 @@ class GetJobApplicationsByJobDefinitionQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetJobApplicationsByJobDefinition$Query parse(Map<String, dynamic> json) =>
       GetJobApplicationsByJobDefinition$Query.fromJson(json);
@@ -11039,6 +11189,7 @@ class GetJobApplicationsByTargetAndStatusPaginationArguments
 
   @override
   List<Object?> get props => [target, status, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetAndStatusPaginationArgumentsToJson(this);
@@ -12408,6 +12559,7 @@ class GetJobApplicationsByTargetAndStatusPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetJobApplicationsByTargetAndStatusPagination$Query parse(
           Map<String, dynamic> json) =>
@@ -12436,6 +12588,7 @@ class GetJobApplicationsByTargetWithFilterPaginationArguments
 
   @override
   List<Object?> get props => [target, filter, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByTargetWithFilterPaginationArgumentsToJson(this);
@@ -13806,6 +13959,7 @@ class GetJobApplicationsByTargetWithFilterPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetJobApplicationsByTargetWithFilterPagination$Query parse(
           Map<String, dynamic> json) =>
@@ -13837,6 +13991,7 @@ class GetJobApplicationsByExcelArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, filter, searchString, path];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetJobApplicationsByExcelArgumentsToJson(this);
@@ -13940,6 +14095,7 @@ class GetJobApplicationsByExcelQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetJobApplicationsByExcel$Query parse(Map<String, dynamic> json) =>
       GetJobApplicationsByExcel$Query.fromJson(json);
@@ -13973,6 +14129,7 @@ class SendJobApplicationsByMailArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, filter, searchString, email, subject];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SendJobApplicationsByMailArgumentsToJson(this);
@@ -14131,6 +14288,7 @@ class SendJobApplicationsByMailQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SendJobApplicationsByMail$Query parse(Map<String, dynamic> json) =>
       SendJobApplicationsByMail$Query.fromJson(json);
@@ -14149,6 +14307,7 @@ class CreateJobApplicationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateJobApplicationArgumentsToJson(this);
 }
@@ -15466,6 +15625,7 @@ class CreateJobApplicationMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateJobApplication$Mutation parse(Map<String, dynamic> json) =>
       CreateJobApplication$Mutation.fromJson(json);
@@ -15489,6 +15649,7 @@ class UpdateJobApplicationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateJobApplicationArgumentsToJson(this);
 }
@@ -16819,6 +16980,7 @@ class UpdateJobApplicationMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateJobApplication$Mutation parse(Map<String, dynamic> json) =>
       UpdateJobApplication$Mutation.fromJson(json);
@@ -16837,6 +16999,7 @@ class DeleteJobApplicationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteJobApplicationArgumentsToJson(this);
 }
@@ -16907,6 +17070,7 @@ class DeleteJobApplicationMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteJobApplication$Mutation parse(Map<String, dynamic> json) =>
       DeleteJobApplication$Mutation.fromJson(json);

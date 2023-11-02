@@ -52,6 +52,7 @@ class GetTaskSection$Query$TaskSectionType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTaskSection$Query$TaskSectionTypeToJson(this);
@@ -68,6 +69,7 @@ class GetTaskSection$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getTaskSection];
+
   @override
   Map<String, dynamic> toJson() => _$GetTaskSection$QueryToJson(this);
 }
@@ -118,6 +120,7 @@ class GetTaskSections$Query$TaskSectionType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTaskSections$Query$TaskSectionTypeToJson(this);
@@ -134,6 +137,7 @@ class GetTaskSections$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getTaskSections];
+
   @override
   Map<String, dynamic> toJson() => _$GetTaskSections$QueryToJson(this);
 }
@@ -160,6 +164,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -211,6 +216,7 @@ class GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$GenericTaskType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$GenericTaskTypeToJson(
@@ -268,6 +274,7 @@ class GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType
         updatedAt,
         tasks
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksTypeToJson(this);
@@ -286,6 +293,7 @@ class GetTaskSectionsWithTasks$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getTaskSectionsWithTasks];
+
   @override
   Map<String, dynamic> toJson() => _$GetTaskSectionsWithTasks$QueryToJson(this);
 }
@@ -337,6 +345,7 @@ class GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectio
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionTypeToJson(
@@ -363,6 +372,7 @@ class GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedTypeToJson(
@@ -383,6 +393,7 @@ class GetTaskSectionsByTargetPaginated$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getTaskSectionsByTargetPaginated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTaskSectionsByTargetPaginated$QueryToJson(this);
@@ -404,6 +415,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -454,6 +466,7 @@ class CreateTaskSection$Mutation$TaskSectionType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateTaskSection$Mutation$TaskSectionTypeToJson(this);
@@ -470,6 +483,7 @@ class CreateTaskSection$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createTaskSection];
+
   @override
   Map<String, dynamic> toJson() => _$CreateTaskSection$MutationToJson(this);
 }
@@ -520,6 +534,7 @@ class ReorderTaskSections$Mutation$TaskSectionType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderTaskSections$Mutation$TaskSectionTypeToJson(this);
@@ -537,6 +552,7 @@ class ReorderTaskSections$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [reorderTaskSections];
+
   @override
   Map<String, dynamic> toJson() => _$ReorderTaskSections$MutationToJson(this);
 }
@@ -587,6 +603,7 @@ class UpdateTaskSection$Mutation$TaskSectionType extends JsonSerializable
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateTaskSection$Mutation$TaskSectionTypeToJson(this);
@@ -603,6 +620,7 @@ class UpdateTaskSection$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateTaskSection];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateTaskSection$MutationToJson(this);
 }
@@ -622,6 +640,7 @@ class DeleteTaskSection$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteTaskSection$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -638,6 +657,7 @@ class DeleteTaskSection$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteTaskSection];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteTaskSection$MutationToJson(this);
 }
@@ -665,6 +685,7 @@ class GetTaskSectionArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$GetTaskSectionArgumentsToJson(this);
 }
@@ -796,6 +817,7 @@ class GetTaskSectionQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetTaskSection$Query parse(Map<String, dynamic> json) =>
       GetTaskSection$Query.fromJson(json);
@@ -813,6 +835,7 @@ class GetTaskSectionsArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [target];
+
   @override
   Map<String, dynamic> toJson() => _$GetTaskSectionsArgumentsToJson(this);
 }
@@ -944,6 +967,7 @@ class GetTaskSectionsQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetTaskSections$Query parse(Map<String, dynamic> json) =>
       GetTaskSections$Query.fromJson(json);
@@ -968,6 +992,7 @@ class GetTaskSectionsWithTasksArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, searchString];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTaskSectionsWithTasksArgumentsToJson(this);
@@ -1200,6 +1225,7 @@ class GetTaskSectionsWithTasksQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetTaskSectionsWithTasks$Query parse(Map<String, dynamic> json) =>
       GetTaskSectionsWithTasks$Query.fromJson(json);
@@ -1224,6 +1250,7 @@ class GetTaskSectionsByTargetPaginatedArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [target, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetTaskSectionsByTargetPaginatedArgumentsToJson(this);
@@ -1396,6 +1423,7 @@ class GetTaskSectionsByTargetPaginatedQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetTaskSectionsByTargetPaginated$Query parse(Map<String, dynamic> json) =>
       GetTaskSectionsByTargetPaginated$Query.fromJson(json);
@@ -1450,6 +1478,7 @@ class CreateTaskSectionArguments extends JsonSerializable with EquatableMixin {
         target,
         priority
       ];
+
   @override
   Map<String, dynamic> toJson() => _$CreateTaskSectionArgumentsToJson(this);
 }
@@ -1690,6 +1719,7 @@ class CreateTaskSectionMutation extends GraphQLQuery<CreateTaskSection$Mutation,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateTaskSection$Mutation parse(Map<String, dynamic> json) =>
       CreateTaskSection$Mutation.fromJson(json);
@@ -1713,6 +1743,7 @@ class ReorderTaskSectionsArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id, rank];
+
   @override
   Map<String, dynamic> toJson() => _$ReorderTaskSectionsArgumentsToJson(this);
 }
@@ -1859,6 +1890,7 @@ class ReorderTaskSectionsMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   ReorderTaskSections$Mutation parse(Map<String, dynamic> json) =>
       ReorderTaskSections$Mutation.fromJson(json);
@@ -1913,6 +1945,7 @@ class UpdateTaskSectionArguments extends JsonSerializable with EquatableMixin {
         description,
         priority
       ];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateTaskSectionArgumentsToJson(this);
 }
@@ -2153,6 +2186,7 @@ class UpdateTaskSectionMutation extends GraphQLQuery<UpdateTaskSection$Mutation,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateTaskSection$Mutation parse(Map<String, dynamic> json) =>
       UpdateTaskSection$Mutation.fromJson(json);
@@ -2170,6 +2204,7 @@ class DeleteTaskSectionArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteTaskSectionArgumentsToJson(this);
 }
@@ -2240,6 +2275,7 @@ class DeleteTaskSectionMutation extends GraphQLQuery<DeleteTaskSection$Mutation,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteTaskSection$Mutation parse(Map<String, dynamic> json) =>
       DeleteTaskSection$Mutation.fromJson(json);

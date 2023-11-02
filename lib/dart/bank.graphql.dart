@@ -29,6 +29,7 @@ class FindBankById$Query$BankType$BrowserLogoType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankById$Query$BankType$BrowserLogoType$PictureTypeToJson(this);
@@ -58,6 +59,7 @@ class FindBankById$Query$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankById$Query$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -114,6 +116,7 @@ class FindBankById$Query$BankType$BrowserLogoType$BrowserLogoPngType
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankById$Query$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -137,6 +140,7 @@ class FindBankById$Query$BankType$BrowserLogoType extends JsonSerializable
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBankById$Query$BankType$BrowserLogoTypeToJson(this);
@@ -165,6 +169,7 @@ class FindBankById$Query$BankType extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() => _$FindBankById$Query$BankTypeToJson(this);
 }
@@ -180,6 +185,7 @@ class FindBankById$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findBankById];
+
   @override
   Map<String, dynamic> toJson() => _$FindBankById$QueryToJson(this);
 }
@@ -207,6 +213,7 @@ class GetBanks$Query$BankType$BrowserLogoType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBanks$Query$BankType$BrowserLogoType$PictureTypeToJson(this);
@@ -236,6 +243,7 @@ class GetBanks$Query$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBanks$Query$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -292,6 +300,7 @@ class GetBanks$Query$BankType$BrowserLogoType$BrowserLogoPngType
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBanks$Query$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(this);
@@ -314,6 +323,7 @@ class GetBanks$Query$BankType$BrowserLogoType extends JsonSerializable
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBanks$Query$BankType$BrowserLogoTypeToJson(this);
@@ -342,6 +352,7 @@ class GetBanks$Query$BankType extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() => _$GetBanks$Query$BankTypeToJson(this);
 }
@@ -357,6 +368,7 @@ class GetBanks$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getBanks];
+
   @override
   Map<String, dynamic> toJson() => _$GetBanks$QueryToJson(this);
 }
@@ -385,6 +397,7 @@ class FindBanksPagination$Query$BankPaginatedType$BankType$BrowserLogoType$Pictu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksPagination$Query$BankPaginatedType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -415,6 +428,7 @@ class FindBanksPagination$Query$BankPaginatedType$BankType$BrowserLogoType$Brows
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksPagination$Query$BankPaginatedType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -471,6 +485,7 @@ class FindBanksPagination$Query$BankPaginatedType$BankType$BrowserLogoType$Brows
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksPagination$Query$BankPaginatedType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -497,6 +512,7 @@ class FindBanksPagination$Query$BankPaginatedType$BankType$BrowserLogoType
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksPagination$Query$BankPaginatedType$BankType$BrowserLogoTypeToJson(
@@ -528,6 +544,7 @@ class FindBanksPagination$Query$BankPaginatedType$BankType
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksPagination$Query$BankPaginatedType$BankTypeToJson(this);
@@ -550,6 +567,7 @@ class FindBanksPagination$Query$BankPaginatedType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindBanksPagination$Query$BankPaginatedTypeToJson(this);
@@ -566,6 +584,7 @@ class FindBanksPagination$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findBanksPagination];
+
   @override
   Map<String, dynamic> toJson() => _$FindBanksPagination$QueryToJson(this);
 }
@@ -586,6 +605,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -613,6 +633,7 @@ class CreateBank$Mutation$BankType$BrowserLogoType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBank$Mutation$BankType$BrowserLogoType$PictureTypeToJson(this);
@@ -642,6 +663,7 @@ class CreateBank$Mutation$BankType$BrowserLogoType$BrowserLogoPngType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBank$Mutation$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -698,6 +720,7 @@ class CreateBank$Mutation$BankType$BrowserLogoType$BrowserLogoPngType
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBank$Mutation$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -721,6 +744,7 @@ class CreateBank$Mutation$BankType$BrowserLogoType extends JsonSerializable
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBank$Mutation$BankType$BrowserLogoTypeToJson(this);
@@ -750,6 +774,7 @@ class CreateBank$Mutation$BankType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBank$Mutation$BankTypeToJson(this);
 }
@@ -765,6 +790,7 @@ class CreateBank$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createBank];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBank$MutationToJson(this);
 }
@@ -794,6 +820,7 @@ class BankInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, code, bic, address, logo];
+
   @override
   Map<String, dynamic> toJson() => _$BankInputToJson(this);
 }
@@ -833,6 +860,7 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [owner, address, postCode, city, country, state, addressLine, location];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressInputToJson(this);
 }
@@ -853,6 +881,7 @@ class FullAddressOwnerInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressOwnerInputToJson(this);
 }
@@ -873,6 +902,7 @@ class FullAddressOwnerPhoneInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() => _$FullAddressOwnerPhoneInputToJson(this);
 }
@@ -893,6 +923,7 @@ class LonLatInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() => _$LonLatInputToJson(this);
 }
@@ -916,6 +947,7 @@ class BrowserLogoInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() => _$BrowserLogoInputToJson(this);
 }
@@ -951,6 +983,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -1003,6 +1036,7 @@ class BrowserLogoPngInput extends JsonSerializable with EquatableMixin {
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() => _$BrowserLogoPngInputToJson(this);
 }
@@ -1030,6 +1064,7 @@ class UpdateBank$Mutation$BankType$BrowserLogoType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBank$Mutation$BankType$BrowserLogoType$PictureTypeToJson(this);
@@ -1059,6 +1094,7 @@ class UpdateBank$Mutation$BankType$BrowserLogoType$BrowserLogoPngType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBank$Mutation$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -1115,6 +1151,7 @@ class UpdateBank$Mutation$BankType$BrowserLogoType$BrowserLogoPngType
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBank$Mutation$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -1138,6 +1175,7 @@ class UpdateBank$Mutation$BankType$BrowserLogoType extends JsonSerializable
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBank$Mutation$BankType$BrowserLogoTypeToJson(this);
@@ -1167,6 +1205,7 @@ class UpdateBank$Mutation$BankType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBank$Mutation$BankTypeToJson(this);
 }
@@ -1182,6 +1221,7 @@ class UpdateBank$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateBank];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBank$MutationToJson(this);
 }
@@ -1201,6 +1241,7 @@ class DeleteBank$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteBank$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -1217,6 +1258,7 @@ class DeleteBank$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteBank];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteBank$MutationToJson(this);
 }
@@ -1233,6 +1275,7 @@ class FindBankByIdArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$FindBankByIdArgumentsToJson(this);
 }
@@ -1852,6 +1895,7 @@ class FindBankByIdQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindBankById$Query parse(Map<String, dynamic> json) =>
       FindBankById$Query.fromJson(json);
@@ -2453,6 +2497,7 @@ class GetBanksQuery extends GraphQLQuery<GetBanks$Query, JsonSerializable> {
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetBanks$Query parse(Map<String, dynamic> json) =>
       GetBanks$Query.fromJson(json);
@@ -2471,6 +2516,7 @@ class FindBanksPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() => _$FindBanksPaginationArgumentsToJson(this);
 }
@@ -3114,6 +3160,7 @@ class FindBanksPaginationQuery extends GraphQLQuery<FindBanksPagination$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindBanksPagination$Query parse(Map<String, dynamic> json) =>
       FindBanksPagination$Query.fromJson(json);
@@ -3131,6 +3178,7 @@ class CreateBankArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBankArgumentsToJson(this);
 }
@@ -3750,6 +3798,7 @@ class CreateBankMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateBank$Mutation parse(Map<String, dynamic> json) =>
       CreateBank$Mutation.fromJson(json);
@@ -3772,6 +3821,7 @@ class UpdateBankArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBankArgumentsToJson(this);
 }
@@ -4404,6 +4454,7 @@ class UpdateBankMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateBank$Mutation parse(Map<String, dynamic> json) =>
       UpdateBank$Mutation.fromJson(json);
@@ -4421,6 +4472,7 @@ class DeleteBankArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteBankArgumentsToJson(this);
 }
@@ -4489,6 +4541,7 @@ class DeleteBankMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteBank$Mutation parse(Map<String, dynamic> json) =>
       DeleteBank$Mutation.fromJson(json);

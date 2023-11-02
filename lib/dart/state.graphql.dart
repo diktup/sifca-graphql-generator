@@ -31,6 +31,7 @@ class FindStateById$Query$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStateById$Query$StateType$CountryType$PictureTypeToJson(this);
@@ -75,6 +76,7 @@ class FindStateById$Query$StateType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStateById$Query$StateType$CountryTypeToJson(this);
@@ -105,6 +107,7 @@ class FindStateById$Query$StateType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStateById$Query$StateType$PictureTypeToJson(this);
@@ -161,6 +164,7 @@ class FindStateById$Query$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() => _$FindStateById$Query$StateTypeToJson(this);
 }
@@ -176,6 +180,7 @@ class FindStateById$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findStateById];
+
   @override
   Map<String, dynamic> toJson() => _$FindStateById$QueryToJson(this);
 }
@@ -205,6 +210,7 @@ class GetStates$Query$StateType$CountryType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetStates$Query$StateType$CountryType$PictureTypeToJson(this);
@@ -249,6 +255,7 @@ class GetStates$Query$StateType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetStates$Query$StateType$CountryTypeToJson(this);
@@ -279,6 +286,7 @@ class GetStates$Query$StateType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetStates$Query$StateType$PictureTypeToJson(this);
@@ -334,6 +342,7 @@ class GetStates$Query$StateType extends JsonSerializable with EquatableMixin {
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetStates$Query$StateTypeToJson(this);
 }
@@ -349,6 +358,7 @@ class GetStates$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getStates];
+
   @override
   Map<String, dynamic> toJson() => _$GetStates$QueryToJson(this);
 }
@@ -379,6 +389,7 @@ class FindStatesPagination$Query$StatePaginatedType$StateType$CountryType$Pictur
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesPagination$Query$StatePaginatedType$StateType$CountryType$PictureTypeToJson(
@@ -427,6 +438,7 @@ class FindStatesPagination$Query$StatePaginatedType$StateType$CountryType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesPagination$Query$StatePaginatedType$StateType$CountryTypeToJson(
@@ -459,6 +471,7 @@ class FindStatesPagination$Query$StatePaginatedType$StateType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesPagination$Query$StatePaginatedType$StateType$PictureTypeToJson(
@@ -518,6 +531,7 @@ class FindStatesPagination$Query$StatePaginatedType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesPagination$Query$StatePaginatedType$StateTypeToJson(this);
@@ -540,6 +554,7 @@ class FindStatesPagination$Query$StatePaginatedType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesPagination$Query$StatePaginatedTypeToJson(this);
@@ -556,6 +571,7 @@ class FindStatesPagination$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findStatesPagination];
+
   @override
   Map<String, dynamic> toJson() => _$FindStatesPagination$QueryToJson(this);
 }
@@ -576,6 +592,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -606,6 +623,7 @@ class FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType$PictureTypeToJson(
@@ -654,6 +672,7 @@ class FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryTypeToJson(
@@ -686,6 +705,7 @@ class FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureTypeToJson(
@@ -748,6 +768,7 @@ class FindStatesByCountryPagination$Query$StatePaginatedType$StateType
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesByCountryPagination$Query$StatePaginatedType$StateTypeToJson(
@@ -772,6 +793,7 @@ class FindStatesByCountryPagination$Query$StatePaginatedType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesByCountryPagination$Query$StatePaginatedTypeToJson(this);
@@ -791,6 +813,7 @@ class FindStatesByCountryPagination$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findStatesByCountryPagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesByCountryPagination$QueryToJson(this);
@@ -821,6 +844,7 @@ class CreateState$Mutation$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateState$Mutation$StateType$CountryType$PictureTypeToJson(this);
@@ -865,6 +889,7 @@ class CreateState$Mutation$StateType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateState$Mutation$StateType$CountryTypeToJson(this);
@@ -895,6 +920,7 @@ class CreateState$Mutation$StateType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateState$Mutation$StateType$PictureTypeToJson(this);
@@ -951,6 +977,7 @@ class CreateState$Mutation$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() => _$CreateState$Mutation$StateTypeToJson(this);
 }
@@ -966,6 +993,7 @@ class CreateState$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createState];
+
   @override
   Map<String, dynamic> toJson() => _$CreateState$MutationToJson(this);
 }
@@ -1022,6 +1050,7 @@ class StateInput extends JsonSerializable with EquatableMixin {
         flagWide,
         country
       ];
+
   @override
   Map<String, dynamic> toJson() => _$StateInputToJson(this);
 }
@@ -1057,6 +1086,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -1086,6 +1116,7 @@ class UpdateState$Mutation$StateType$CountryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateState$Mutation$StateType$CountryType$PictureTypeToJson(this);
@@ -1130,6 +1161,7 @@ class UpdateState$Mutation$StateType$CountryType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateState$Mutation$StateType$CountryTypeToJson(this);
@@ -1160,6 +1192,7 @@ class UpdateState$Mutation$StateType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateState$Mutation$StateType$PictureTypeToJson(this);
@@ -1216,6 +1249,7 @@ class UpdateState$Mutation$StateType extends JsonSerializable
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateState$Mutation$StateTypeToJson(this);
 }
@@ -1231,6 +1265,7 @@ class UpdateState$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateState];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateState$MutationToJson(this);
 }
@@ -1250,6 +1285,7 @@ class DeleteState$Mutation$DeleteResponseDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [success, message];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteState$Mutation$DeleteResponseDtoTypeToJson(this);
@@ -1266,6 +1302,7 @@ class DeleteState$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteState];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteState$MutationToJson(this);
 }
@@ -1293,6 +1330,7 @@ class FindStateByIdArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$FindStateByIdArgumentsToJson(this);
 }
@@ -1702,6 +1740,7 @@ class FindStateByIdQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindStateById$Query parse(Map<String, dynamic> json) =>
       FindStateById$Query.fromJson(json);
@@ -2093,6 +2132,7 @@ class GetStatesQuery extends GraphQLQuery<GetStates$Query, JsonSerializable> {
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetStates$Query parse(Map<String, dynamic> json) =>
       GetStates$Query.fromJson(json);
@@ -2111,6 +2151,7 @@ class FindStatesPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() => _$FindStatesPaginationArgumentsToJson(this);
 }
@@ -2544,6 +2585,7 @@ class FindStatesPaginationQuery extends GraphQLQuery<FindStatesPagination$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindStatesPagination$Query parse(Map<String, dynamic> json) =>
       FindStatesPagination$Query.fromJson(json);
@@ -2568,6 +2610,7 @@ class FindStatesByCountryPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [country, pagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindStatesByCountryPaginationArgumentsToJson(this);
@@ -3018,6 +3061,7 @@ class FindStatesByCountryPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindStatesByCountryPagination$Query parse(Map<String, dynamic> json) =>
       FindStatesByCountryPagination$Query.fromJson(json);
@@ -3035,6 +3079,7 @@ class CreateStateArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateStateArgumentsToJson(this);
 }
@@ -3444,6 +3489,7 @@ class CreateStateMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateState$Mutation parse(Map<String, dynamic> json) =>
       CreateState$Mutation.fromJson(json);
@@ -3466,6 +3512,7 @@ class UpdateStateArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateStateArgumentsToJson(this);
 }
@@ -3888,6 +3935,7 @@ class UpdateStateMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateState$Mutation parse(Map<String, dynamic> json) =>
       UpdateState$Mutation.fromJson(json);
@@ -3905,6 +3953,7 @@ class DeleteStateArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteStateArgumentsToJson(this);
 }
@@ -3973,6 +4022,7 @@ class DeleteStateMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteState$Mutation parse(Map<String, dynamic> json) =>
       DeleteState$Mutation.fromJson(json);

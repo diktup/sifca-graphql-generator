@@ -29,6 +29,7 @@ class GetModulesAssignment$Query$ModulesAssignmentType$ModulesDefinitionType
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetModulesAssignment$Query$ModulesAssignmentType$ModulesDefinitionTypeToJson(
@@ -55,6 +56,7 @@ class GetModulesAssignment$Query$ModulesAssignmentType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, module, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetModulesAssignment$Query$ModulesAssignmentTypeToJson(this);
@@ -72,6 +74,7 @@ class GetModulesAssignment$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getModulesAssignment];
+
   @override
   Map<String, dynamic> toJson() => _$GetModulesAssignment$QueryToJson(this);
 }
@@ -99,6 +102,7 @@ class ModuleAssignment$Query$ModulesAssignmentType$ModulesDefinitionType
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ModuleAssignment$Query$ModulesAssignmentType$ModulesDefinitionTypeToJson(
@@ -125,6 +129,7 @@ class ModuleAssignment$Query$ModulesAssignmentType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, module, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ModuleAssignment$Query$ModulesAssignmentTypeToJson(this);
@@ -141,6 +146,7 @@ class ModuleAssignment$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [moduleAssignment];
+
   @override
   Map<String, dynamic> toJson() => _$ModuleAssignment$QueryToJson(this);
 }
@@ -168,6 +174,7 @@ class GetModuleAssignmentsByAssignee$Query$ModulesAssignmentType$ModulesDefiniti
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetModuleAssignmentsByAssignee$Query$ModulesAssignmentType$ModulesDefinitionTypeToJson(
@@ -195,6 +202,7 @@ class GetModuleAssignmentsByAssignee$Query$ModulesAssignmentType
 
   @override
   List<Object?> get props => [id, module, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetModuleAssignmentsByAssignee$Query$ModulesAssignmentTypeToJson(this);
@@ -214,6 +222,7 @@ class GetModuleAssignmentsByAssignee$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getModuleAssignmentsByAssignee];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetModuleAssignmentsByAssignee$QueryToJson(this);
@@ -241,6 +250,7 @@ class AssigneeInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [user, pos, wholesaler, manufacturer];
+
   @override
   Map<String, dynamic> toJson() => _$AssigneeInputToJson(this);
 }
@@ -268,6 +278,7 @@ class FindModuleAssignmentsByOrigin$Query$ModulesAssignmentType$ModulesDefinitio
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindModuleAssignmentsByOrigin$Query$ModulesAssignmentType$ModulesDefinitionTypeToJson(
@@ -294,6 +305,7 @@ class FindModuleAssignmentsByOrigin$Query$ModulesAssignmentType
 
   @override
   List<Object?> get props => [id, module, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindModuleAssignmentsByOrigin$Query$ModulesAssignmentTypeToJson(this);
@@ -313,6 +325,7 @@ class FindModuleAssignmentsByOrigin$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findModuleAssignmentsByOrigin];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindModuleAssignmentsByOrigin$QueryToJson(this);
@@ -341,6 +354,7 @@ class FindModuleAssignmentsforFrame$Query$ModulesAssignmentType$ModulesDefinitio
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindModuleAssignmentsforFrame$Query$ModulesAssignmentType$ModulesDefinitionTypeToJson(
@@ -367,6 +381,7 @@ class FindModuleAssignmentsforFrame$Query$ModulesAssignmentType
 
   @override
   List<Object?> get props => [id, module, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindModuleAssignmentsforFrame$Query$ModulesAssignmentTypeToJson(this);
@@ -386,6 +401,7 @@ class FindModuleAssignmentsforFrame$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [findModuleAssignmentsforFrame];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindModuleAssignmentsforFrame$QueryToJson(this);
@@ -414,6 +430,7 @@ class CreateModuleAssignment$Mutation$ModulesAssignmentType$ModulesDefinitionTyp
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateModuleAssignment$Mutation$ModulesAssignmentType$ModulesDefinitionTypeToJson(
@@ -440,6 +457,7 @@ class CreateModuleAssignment$Mutation$ModulesAssignmentType
 
   @override
   List<Object?> get props => [id, module, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateModuleAssignment$Mutation$ModulesAssignmentTypeToJson(this);
@@ -458,6 +476,7 @@ class CreateModuleAssignment$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [createModuleAssignment];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateModuleAssignment$MutationToJson(this);
@@ -479,6 +498,7 @@ class ModulesAssignmentInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [module, assignee];
+
   @override
   Map<String, dynamic> toJson() => _$ModulesAssignmentInputToJson(this);
 }
@@ -506,6 +526,7 @@ class UpdateModuleAssignment$Mutation$ModulesAssignmentType$ModulesDefinitionTyp
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateModuleAssignment$Mutation$ModulesAssignmentType$ModulesDefinitionTypeToJson(
@@ -532,6 +553,7 @@ class UpdateModuleAssignment$Mutation$ModulesAssignmentType
 
   @override
   List<Object?> get props => [id, module, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateModuleAssignment$Mutation$ModulesAssignmentTypeToJson(this);
@@ -550,6 +572,7 @@ class UpdateModuleAssignment$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [updateModuleAssignment];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateModuleAssignment$MutationToJson(this);
@@ -578,6 +601,7 @@ class DeleteModuleAssignment$Mutation$ModulesAssignmentType$ModulesDefinitionTyp
 
   @override
   List<Object?> get props => [id, name, target, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteModuleAssignment$Mutation$ModulesAssignmentType$ModulesDefinitionTypeToJson(
@@ -604,6 +628,7 @@ class DeleteModuleAssignment$Mutation$ModulesAssignmentType
 
   @override
   List<Object?> get props => [id, module, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteModuleAssignment$Mutation$ModulesAssignmentTypeToJson(this);
@@ -622,6 +647,7 @@ class DeleteModuleAssignment$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [deleteModuleAssignment];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteModuleAssignment$MutationToJson(this);
@@ -736,6 +762,7 @@ class GetModulesAssignmentQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetModulesAssignment$Query parse(Map<String, dynamic> json) =>
       GetModulesAssignment$Query.fromJson(json);
@@ -753,6 +780,7 @@ class ModuleAssignmentArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$ModuleAssignmentArgumentsToJson(this);
 }
@@ -871,6 +899,7 @@ class ModuleAssignmentQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   ModuleAssignment$Query parse(Map<String, dynamic> json) =>
       ModuleAssignment$Query.fromJson(json);
@@ -890,6 +919,7 @@ class GetModuleAssignmentsByAssigneeArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [assignee];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetModuleAssignmentsByAssigneeArgumentsToJson(this);
@@ -1014,6 +1044,7 @@ class GetModuleAssignmentsByAssigneeQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetModuleAssignmentsByAssignee$Query parse(Map<String, dynamic> json) =>
       GetModuleAssignmentsByAssignee$Query.fromJson(json);
@@ -1119,6 +1150,7 @@ class FindModuleAssignmentsByOriginQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   FindModuleAssignmentsByOrigin$Query parse(Map<String, dynamic> json) =>
       FindModuleAssignmentsByOrigin$Query.fromJson(json);
@@ -1138,6 +1170,7 @@ class FindModuleAssignmentsforFrameArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [posId];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindModuleAssignmentsforFrameArgumentsToJson(this);
@@ -1261,6 +1294,7 @@ class FindModuleAssignmentsforFrameQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindModuleAssignmentsforFrame$Query parse(Map<String, dynamic> json) =>
       FindModuleAssignmentsforFrame$Query.fromJson(json);
@@ -1279,6 +1313,7 @@ class CreateModuleAssignmentArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateModuleAssignmentArgumentsToJson(this);
@@ -1400,6 +1435,7 @@ class CreateModuleAssignmentMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateModuleAssignment$Mutation parse(Map<String, dynamic> json) =>
       CreateModuleAssignment$Mutation.fromJson(json);
@@ -1423,6 +1459,7 @@ class UpdateModuleAssignmentArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input, id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateModuleAssignmentArgumentsToJson(this);
@@ -1557,6 +1594,7 @@ class UpdateModuleAssignmentMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateModuleAssignment$Mutation parse(Map<String, dynamic> json) =>
       UpdateModuleAssignment$Mutation.fromJson(json);
@@ -1575,6 +1613,7 @@ class DeleteModuleAssignmentArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteModuleAssignmentArgumentsToJson(this);
@@ -1696,6 +1735,7 @@ class DeleteModuleAssignmentMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteModuleAssignment$Mutation parse(Map<String, dynamic> json) =>
       DeleteModuleAssignment$Mutation.fromJson(json);

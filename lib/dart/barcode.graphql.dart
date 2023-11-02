@@ -29,6 +29,7 @@ class GetBarcodes$Query$BarcodeType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$MediaType$PictureTypeToJson(this);
@@ -51,6 +52,7 @@ class GetBarcodes$Query$BarcodeType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$MediaTypeToJson(this);
@@ -72,6 +74,7 @@ class GetBarcodes$Query$BarcodeType$DiscountDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$DiscountDtoTypeToJson(this);
@@ -93,6 +96,7 @@ class GetBarcodes$Query$BarcodeType$ProductPriceListType$PriceType
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -114,6 +118,7 @@ class GetBarcodes$Query$BarcodeType$ProductPriceListType
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductPriceListTypeToJson(this);
@@ -139,6 +144,7 @@ class GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -161,6 +167,7 @@ class GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -194,6 +201,7 @@ class GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxTypeToJson(this);
@@ -214,6 +222,7 @@ class GetBarcodes$Query$BarcodeType$ProductTaxesType extends JsonSerializable
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductTaxesTypeToJson(this);
@@ -237,6 +246,7 @@ class GetBarcodes$Query$BarcodeType$BarcodePeriodCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$BarcodePeriodCreditTypeToJson(this);
@@ -261,6 +271,7 @@ class GetBarcodes$Query$BarcodeType$CatalogueCategoryType
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$CatalogueCategoryTypeToJson(this);
@@ -279,6 +290,7 @@ class GetBarcodes$Query$BarcodeType$PixelBarcodeType extends JsonSerializable
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$PixelBarcodeTypeToJson(this);
@@ -308,6 +320,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -343,6 +356,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -381,6 +395,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -401,6 +416,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$Attribut
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -449,6 +465,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$Attribut
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -481,6 +498,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$Attribut
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -502,6 +520,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -532,6 +551,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -558,6 +578,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductType$MediaTypeToJson(this);
@@ -580,6 +601,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -602,6 +624,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -671,6 +694,7 @@ class GetBarcodes$Query$BarcodeType$InternalProductType extends JsonSerializable
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$InternalProductTypeToJson(this);
@@ -692,6 +716,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$ProductSpecsTypeToJson(this);
@@ -721,6 +746,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$MediaType$PictureTypeToJson(
@@ -745,6 +771,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$MediaTypeToJson(this);
@@ -773,6 +800,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$PictureTypeToJson(this);
@@ -802,6 +830,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -838,6 +867,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryTypeToJson(
@@ -864,6 +894,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTy
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -886,6 +917,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$Company
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -922,6 +954,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -944,6 +977,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesTypeToJson(this);
@@ -973,6 +1007,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$BrandType$PictureTypeToJson(
@@ -1005,6 +1040,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$BrandType
   @override
   List<Object?> get props =>
       [id, name, website, createdAt, updatedAt, externalId, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$BrandTypeToJson(this);
@@ -1024,6 +1060,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTy
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -1072,6 +1109,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTy
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -1116,6 +1154,7 @@ class GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeTypeToJson(
@@ -1206,6 +1245,7 @@ class GetBarcodes$Query$BarcodeType$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodes$Query$BarcodeType$ProductTypeToJson(this);
@@ -1282,6 +1322,7 @@ class GetBarcodes$Query$BarcodeType extends JsonSerializable
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetBarcodes$Query$BarcodeTypeToJson(this);
 }
@@ -1297,6 +1338,7 @@ class GetBarcodes$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getBarcodes];
+
   @override
   Map<String, dynamic> toJson() => _$GetBarcodes$QueryToJson(this);
 }
@@ -1324,6 +1366,7 @@ class Barcode$Query$BarcodeType$MediaType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$MediaType$PictureTypeToJson(this);
@@ -1346,6 +1389,7 @@ class Barcode$Query$BarcodeType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$MediaTypeToJson(this);
@@ -1367,6 +1411,7 @@ class Barcode$Query$BarcodeType$DiscountDtoType extends JsonSerializable
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$DiscountDtoTypeToJson(this);
@@ -1387,6 +1432,7 @@ class Barcode$Query$BarcodeType$ProductPriceListType$PriceType
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductPriceListType$PriceTypeToJson(this);
@@ -1407,6 +1453,7 @@ class Barcode$Query$BarcodeType$ProductPriceListType extends JsonSerializable
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductPriceListTypeToJson(this);
@@ -1432,6 +1479,7 @@ class Barcode$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -1454,6 +1502,7 @@ class Barcode$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -1487,6 +1536,7 @@ class Barcode$Query$BarcodeType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductTaxesType$TaxTypeToJson(this);
@@ -1507,6 +1557,7 @@ class Barcode$Query$BarcodeType$ProductTaxesType extends JsonSerializable
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductTaxesTypeToJson(this);
@@ -1530,6 +1581,7 @@ class Barcode$Query$BarcodeType$BarcodePeriodCreditType extends JsonSerializable
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$BarcodePeriodCreditTypeToJson(this);
@@ -1554,6 +1606,7 @@ class Barcode$Query$BarcodeType$CatalogueCategoryType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$CatalogueCategoryTypeToJson(this);
@@ -1572,6 +1625,7 @@ class Barcode$Query$BarcodeType$PixelBarcodeType extends JsonSerializable
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$PixelBarcodeTypeToJson(this);
@@ -1601,6 +1655,7 @@ class Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -1636,6 +1691,7 @@ class Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -1672,6 +1728,7 @@ class Barcode$Query$BarcodeType$InternalProductMaintenanceType
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductMaintenanceTypeToJson(this);
@@ -1691,6 +1748,7 @@ class Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeVal
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -1739,6 +1797,7 @@ class Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeVal
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -1771,6 +1830,7 @@ class Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeVal
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -1792,6 +1852,7 @@ class Barcode$Query$BarcodeType$InternalProductAttributesValuesType
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -1822,6 +1883,7 @@ class Barcode$Query$BarcodeType$InternalProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -1847,6 +1909,7 @@ class Barcode$Query$BarcodeType$InternalProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductType$MediaTypeToJson(this);
@@ -1869,6 +1932,7 @@ class Barcode$Query$BarcodeType$InternalProductType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -1891,6 +1955,7 @@ class Barcode$Query$BarcodeType$InternalProductType$CatalogueCategoryType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -1960,6 +2025,7 @@ class Barcode$Query$BarcodeType$InternalProductType extends JsonSerializable
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$InternalProductTypeToJson(this);
@@ -1980,6 +2046,7 @@ class Barcode$Query$BarcodeType$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$ProductSpecsTypeToJson(this);
@@ -2009,6 +2076,7 @@ class Barcode$Query$BarcodeType$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$MediaType$PictureTypeToJson(this);
@@ -2031,6 +2099,7 @@ class Barcode$Query$BarcodeType$ProductType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$MediaTypeToJson(this);
@@ -2059,6 +2128,7 @@ class Barcode$Query$BarcodeType$ProductType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$PictureTypeToJson(this);
@@ -2088,6 +2158,7 @@ class Barcode$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -2124,6 +2195,7 @@ class Barcode$Query$BarcodeType$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$InventoryCategoryTypeToJson(this);
@@ -2149,6 +2221,7 @@ class Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -2171,6 +2244,7 @@ class Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -2207,6 +2281,7 @@ class Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -2228,6 +2303,7 @@ class Barcode$Query$BarcodeType$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$ProductTaxesTypeToJson(this);
@@ -2257,6 +2333,7 @@ class Barcode$Query$BarcodeType$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$BrandType$PictureTypeToJson(this);
@@ -2288,6 +2365,7 @@ class Barcode$Query$BarcodeType$ProductType$BrandType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, website, createdAt, updatedAt, externalId, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$BrandTypeToJson(this);
@@ -2307,6 +2385,7 @@ class Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$A
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -2355,6 +2434,7 @@ class Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -2399,6 +2479,7 @@ class Barcode$Query$BarcodeType$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductType$ProductAttributeTypeToJson(this);
@@ -2487,6 +2568,7 @@ class Barcode$Query$BarcodeType$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Barcode$Query$BarcodeType$ProductTypeToJson(this);
@@ -2562,6 +2644,7 @@ class Barcode$Query$BarcodeType extends JsonSerializable with EquatableMixin {
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() => _$Barcode$Query$BarcodeTypeToJson(this);
 }
@@ -2577,6 +2660,7 @@ class Barcode$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [barcode];
+
   @override
   Map<String, dynamic> toJson() => _$Barcode$QueryToJson(this);
 }
@@ -2605,6 +2689,7 @@ class GetProductBarcodes$Query$BarcodeType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$MediaType$PictureTypeToJson(this);
@@ -2627,6 +2712,7 @@ class GetProductBarcodes$Query$BarcodeType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$MediaTypeToJson(this);
@@ -2648,6 +2734,7 @@ class GetProductBarcodes$Query$BarcodeType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$DiscountDtoTypeToJson(this);
@@ -2669,6 +2756,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductPriceListType$PriceType
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -2690,6 +2778,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductPriceListType
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductPriceListTypeToJson(this);
@@ -2715,6 +2804,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -2737,6 +2827,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -2773,6 +2864,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxTypeToJson(
@@ -2794,6 +2886,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductTaxesTypeToJson(this);
@@ -2818,6 +2911,7 @@ class GetProductBarcodes$Query$BarcodeType$BarcodePeriodCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$BarcodePeriodCreditTypeToJson(
@@ -2844,6 +2938,7 @@ class GetProductBarcodes$Query$BarcodeType$CatalogueCategoryType
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$CatalogueCategoryTypeToJson(this);
@@ -2862,6 +2957,7 @@ class GetProductBarcodes$Query$BarcodeType$PixelBarcodeType
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$PixelBarcodeTypeToJson(this);
@@ -2891,6 +2987,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -2926,6 +3023,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserTy
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -2965,6 +3063,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -2985,6 +3084,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$A
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -3033,6 +3133,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$A
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -3065,6 +3166,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$A
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -3086,6 +3188,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -3116,6 +3219,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -3142,6 +3246,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaTypeToJson(
@@ -3165,6 +3270,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -3187,6 +3293,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategory
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -3257,6 +3364,7 @@ class GetProductBarcodes$Query$BarcodeType$InternalProductType
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$InternalProductTypeToJson(this);
@@ -3278,6 +3386,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductSpecsTypeToJson(
@@ -3308,6 +3417,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$MediaType$PictureTypeToJson(
@@ -3334,6 +3444,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$MediaTypeToJson(this);
@@ -3363,6 +3474,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$PictureTypeToJson(
@@ -3393,6 +3505,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -3429,6 +3542,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryTypeToJson(
@@ -3455,6 +3569,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -3477,6 +3592,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -3513,6 +3629,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -3536,6 +3653,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesTypeToJson(
@@ -3566,6 +3684,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$BrandType$PictureTypeToJson(
@@ -3600,6 +3719,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$BrandType
   @override
   List<Object?> get props =>
       [id, name, website, createdAt, updatedAt, externalId, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$BrandTypeToJson(this);
@@ -3619,6 +3739,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$Attr
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -3667,6 +3788,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$Attr
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -3711,6 +3833,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeTypeToJson(
@@ -3803,6 +3926,7 @@ class GetProductBarcodes$Query$BarcodeType$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeType$ProductTypeToJson(this);
@@ -3883,6 +4007,7 @@ class GetProductBarcodes$Query$BarcodeType extends JsonSerializable
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductBarcodes$Query$BarcodeTypeToJson(this);
@@ -3899,6 +4024,7 @@ class GetProductBarcodes$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getProductBarcodes];
+
   @override
   Map<String, dynamic> toJson() => _$GetProductBarcodes$QueryToJson(this);
 }
@@ -3927,6 +4053,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType$PictureTypeToJson(
@@ -3953,6 +4080,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaTypeToJson(
@@ -3976,6 +4104,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$DiscountDtoTypeToJson(
@@ -3998,6 +4127,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType$Pr
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -4021,6 +4151,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListTypeToJson(
@@ -4047,6 +4178,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxTyp
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -4069,6 +4201,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxTyp
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -4105,6 +4238,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxTyp
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxTypeToJson(
@@ -4128,6 +4262,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesTypeToJson(
@@ -4153,6 +4288,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$BarcodePeriodCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$BarcodePeriodCreditTypeToJson(
@@ -4179,6 +4315,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$CatalogueCategoryType
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$CatalogueCategoryTypeToJson(
@@ -4199,6 +4336,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$PixelBarcodeType
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$PixelBarcodeTypeToJson(
@@ -4229,6 +4367,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintena
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -4264,6 +4403,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintena
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -4303,6 +4443,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintena
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -4323,6 +4464,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttribut
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -4371,6 +4513,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttribut
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -4403,6 +4546,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttribut
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -4424,6 +4568,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttribut
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -4454,6 +4599,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$Med
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -4480,6 +4626,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$Med
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaTypeToJson(
@@ -4503,6 +4650,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$Dis
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -4525,6 +4673,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$Cat
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -4597,6 +4746,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductTypeToJson(
@@ -4619,6 +4769,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductSpec
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductSpecsTypeToJson(
@@ -4649,6 +4800,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType$PictureTypeToJson(
@@ -4675,6 +4827,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaTypeToJson(
@@ -4705,6 +4858,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$PictureTypeToJson(
@@ -4735,6 +4889,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCa
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -4771,6 +4926,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCa
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryTypeToJson(
@@ -4797,6 +4953,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxe
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -4819,6 +4976,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxe
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -4855,6 +5013,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxe
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -4878,6 +5037,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxe
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesTypeToJson(
@@ -4908,6 +5068,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType$P
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType$PictureTypeToJson(
@@ -4942,6 +5103,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType
   @override
   List<Object?> get props =>
       [id, name, website, createdAt, updatedAt, externalId, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandTypeToJson(
@@ -4962,6 +5124,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttr
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -5010,6 +5173,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttr
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -5054,6 +5218,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttr
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeTypeToJson(
@@ -5151,6 +5316,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTypeToJson(
@@ -5235,6 +5401,7 @@ class GetBarcodeByProductAndAttributes$Query$BarcodeType
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$Query$BarcodeTypeToJson(this);
@@ -5254,6 +5421,7 @@ class GetBarcodeByProductAndAttributes$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getBarcodeByProductAndAttributes];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributes$QueryToJson(this);
@@ -5279,6 +5447,7 @@ class BarcodeFindInput extends JsonSerializable with EquatableMixin {
   @override
   List<Object?> get props =>
       [product, internalProduct, productAttributesValues];
+
   @override
   Map<String, dynamic> toJson() => _$BarcodeFindInputToJson(this);
 }
@@ -5307,6 +5476,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType$PictureTypeToJson(
@@ -5333,6 +5503,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaTypeToJson(
@@ -5356,6 +5527,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$DiscountDtoTyp
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$DiscountDtoTypeToJson(
@@ -5378,6 +5550,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceLi
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -5401,6 +5574,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceLi
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListTypeToJson(
@@ -5427,6 +5601,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesTy
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -5449,6 +5624,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesTy
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -5485,6 +5661,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesTy
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxTypeToJson(
@@ -5508,6 +5685,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesTy
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesTypeToJson(
@@ -5533,6 +5711,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$BarcodePeriodC
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$BarcodePeriodCreditTypeToJson(
@@ -5559,6 +5738,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$CatalogueCateg
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$CatalogueCategoryTypeToJson(
@@ -5579,6 +5759,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$PixelBarcodeTy
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$PixelBarcodeTypeToJson(
@@ -5609,6 +5790,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -5644,6 +5826,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -5683,6 +5866,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -5703,6 +5887,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -5751,6 +5936,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -5783,6 +5969,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -5804,6 +5991,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -5834,6 +6022,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -5860,6 +6049,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaTypeToJson(
@@ -5883,6 +6073,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -5905,6 +6096,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -5977,6 +6169,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProduc
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductTypeToJson(
@@ -5999,6 +6192,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Pr
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductSpecsTypeToJson(
@@ -6029,6 +6223,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Me
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaType$PictureTypeToJson(
@@ -6055,6 +6250,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Me
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaTypeToJson(
@@ -6085,6 +6281,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Pi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$PictureTypeToJson(
@@ -6115,6 +6312,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$In
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -6151,6 +6349,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$In
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryTypeToJson(
@@ -6177,6 +6376,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Pr
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -6199,6 +6399,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Pr
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -6235,6 +6436,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Pr
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -6258,6 +6460,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Pr
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesTypeToJson(
@@ -6288,6 +6491,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Br
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandType$PictureTypeToJson(
@@ -6322,6 +6526,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Br
   @override
   List<Object?> get props =>
       [id, name, website, createdAt, updatedAt, externalId, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandTypeToJson(
@@ -6342,6 +6547,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Pr
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -6390,6 +6596,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Pr
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -6434,6 +6641,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Pr
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeTypeToJson(
@@ -6531,6 +6739,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTypeToJson(
@@ -6619,6 +6828,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeTypeToJson(this);
@@ -6642,6 +6852,7 @@ class GetBarcodesPagination$Query$BarcodePaginateType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodesPagination$Query$BarcodePaginateTypeToJson(this);
@@ -6658,6 +6869,7 @@ class GetBarcodesPagination$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getBarcodesPagination];
+
   @override
   Map<String, dynamic> toJson() => _$GetBarcodesPagination$QueryToJson(this);
 }
@@ -6678,6 +6890,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -6705,6 +6918,7 @@ class UpdateBarcode$Mutation$BarcodeType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$MediaType$PictureTypeToJson(this);
@@ -6727,6 +6941,7 @@ class UpdateBarcode$Mutation$BarcodeType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$MediaTypeToJson(this);
@@ -6748,6 +6963,7 @@ class UpdateBarcode$Mutation$BarcodeType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$DiscountDtoTypeToJson(this);
@@ -6769,6 +6985,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceType
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -6790,6 +7007,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductPriceListType
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductPriceListTypeToJson(this);
@@ -6815,6 +7033,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -6837,6 +7056,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -6872,6 +7092,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxTypeToJson(this);
@@ -6892,6 +7113,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesTypeToJson(this);
@@ -6916,6 +7138,7 @@ class UpdateBarcode$Mutation$BarcodeType$BarcodePeriodCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$BarcodePeriodCreditTypeToJson(this);
@@ -6940,6 +7163,7 @@ class UpdateBarcode$Mutation$BarcodeType$CatalogueCategoryType
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$CatalogueCategoryTypeToJson(this);
@@ -6958,6 +7182,7 @@ class UpdateBarcode$Mutation$BarcodeType$PixelBarcodeType
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$PixelBarcodeTypeToJson(this);
@@ -6987,6 +7212,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -7022,6 +7248,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -7061,6 +7288,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -7081,6 +7309,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$Att
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -7129,6 +7358,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$Att
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -7161,6 +7391,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$Att
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -7182,6 +7413,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -7212,6 +7444,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -7238,6 +7471,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaTypeToJson(
@@ -7261,6 +7495,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -7283,6 +7518,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTy
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -7353,6 +7589,7 @@ class UpdateBarcode$Mutation$BarcodeType$InternalProductType
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$InternalProductTypeToJson(this);
@@ -7374,6 +7611,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsTypeToJson(
@@ -7404,6 +7642,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureTypeToJson(
@@ -7429,6 +7668,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$MediaTypeToJson(this);
@@ -7458,6 +7698,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$PictureTypeToJson(this);
@@ -7487,6 +7728,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$Pictu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -7523,6 +7765,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryTypeToJson(
@@ -7549,6 +7792,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$Ta
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -7571,6 +7815,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$Co
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -7607,6 +7852,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -7629,6 +7875,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesTypeToJson(
@@ -7659,6 +7906,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureTypeToJson(
@@ -7691,6 +7939,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType
   @override
   List<Object?> get props =>
       [id, name, website, createdAt, updatedAt, externalId, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$BrandTypeToJson(this);
@@ -7710,6 +7959,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$Attrib
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -7758,6 +8008,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$Attrib
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -7802,6 +8053,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeTypeToJson(
@@ -7892,6 +8144,7 @@ class UpdateBarcode$Mutation$BarcodeType$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeType$ProductTypeToJson(this);
@@ -7971,6 +8224,7 @@ class UpdateBarcode$Mutation$BarcodeType extends JsonSerializable
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateBarcode$Mutation$BarcodeTypeToJson(this);
@@ -7987,6 +8241,7 @@ class UpdateBarcode$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateBarcode];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBarcode$MutationToJson(this);
 }
@@ -8076,6 +8331,7 @@ class BarcodeUpdateInput extends JsonSerializable with EquatableMixin {
         supplier,
         id
       ];
+
   @override
   Map<String, dynamic> toJson() => _$BarcodeUpdateInputToJson(this);
 }
@@ -8100,6 +8356,7 @@ class BarcodePeriodCreditInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() => _$BarcodePeriodCreditInputToJson(this);
 }
@@ -8121,6 +8378,7 @@ class DiscountDtoInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [discountType, amount];
+
   @override
   Map<String, dynamic> toJson() => _$DiscountDtoInputToJson(this);
 }
@@ -8144,6 +8402,7 @@ class MediaInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [videos, pictures, deg360];
+
   @override
   Map<String, dynamic> toJson() => _$MediaInputToJson(this);
 }
@@ -8179,6 +8438,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -8219,6 +8479,7 @@ class InternalProductMaintenanceInput extends JsonSerializable
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$InternalProductMaintenanceInputToJson(this);
@@ -8235,6 +8496,7 @@ class PixelBarcodeInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() => _$PixelBarcodeInputToJson(this);
 }
@@ -8255,6 +8517,7 @@ class ProductPriceListInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() => _$ProductPriceListInputToJson(this);
 }
@@ -8275,6 +8538,7 @@ class ProductTaxesInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() => _$ProductTaxesInputToJson(this);
 }
@@ -8303,6 +8567,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType$PictureTypeToJson(
@@ -8328,6 +8593,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaTypeToJson(this);
@@ -8350,6 +8616,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$DiscountDtoTypeToJson(this);
@@ -8371,6 +8638,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType$PriceType
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -8394,6 +8662,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListTypeToJson(
@@ -8420,6 +8689,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVa
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -8442,6 +8712,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$Compa
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -8478,6 +8749,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxTypeToJson(
@@ -8500,6 +8772,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesTypeToJson(
@@ -8525,6 +8798,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$BarcodePeriodCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$BarcodePeriodCreditTypeToJson(
@@ -8551,6 +8825,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$CatalogueCategoryType
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$CatalogueCategoryTypeToJson(
@@ -8571,6 +8846,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$PixelBarcodeType
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$PixelBarcodeTypeToJson(
@@ -8601,6 +8877,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -8636,6 +8913,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -8675,6 +8953,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -8695,6 +8974,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValue
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -8743,6 +9023,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValue
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -8775,6 +9056,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValue
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -8796,6 +9078,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValue
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -8826,6 +9109,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -8852,6 +9136,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaTypeToJson(
@@ -8875,6 +9160,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$DiscountDt
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -8897,6 +9183,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$CatalogueC
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -8969,6 +9256,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductTypeToJson(
@@ -8991,6 +9279,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductSpecsTypeToJson(
@@ -9021,6 +9310,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType$PictureTypeToJson(
@@ -9047,6 +9337,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaTypeToJson(
@@ -9077,6 +9368,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$PictureTypeToJson(
@@ -9107,6 +9399,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -9143,6 +9436,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryT
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryTypeToJson(
@@ -9169,6 +9463,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$T
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -9191,6 +9486,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$T
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -9227,6 +9523,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$T
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -9250,6 +9547,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesTypeToJson(
@@ -9280,6 +9578,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType$PictureT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType$PictureTypeToJson(
@@ -9314,6 +9613,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType
   @override
   List<Object?> get props =>
       [id, name, website, createdAt, updatedAt, externalId, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandTypeToJson(
@@ -9334,6 +9634,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeTy
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -9382,6 +9683,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeTy
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -9426,6 +9728,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeTy
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeTypeToJson(
@@ -9519,6 +9822,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTypeToJson(this);
@@ -9601,6 +9905,7 @@ class BulkUpdateBarcodeMedia$Mutation$BarcodeType extends JsonSerializable
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$Mutation$BarcodeTypeToJson(this);
@@ -9618,6 +9923,7 @@ class BulkUpdateBarcodeMedia$Mutation extends JsonSerializable
 
   @override
   List<Object?> get props => [bulkUpdateBarcodeMedia];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMedia$MutationToJson(this);
@@ -9639,6 +9945,7 @@ class UpdateMediaInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id, media];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateMediaInputToJson(this);
 }
@@ -9662,6 +9969,7 @@ class SingleMediaInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [videos, pictures, deg360];
+
   @override
   Map<String, dynamic> toJson() => _$SingleMediaInputToJson(this);
 }
@@ -9689,6 +9997,7 @@ class CreateBarcode$Mutation$BarcodeType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$MediaType$PictureTypeToJson(this);
@@ -9711,6 +10020,7 @@ class CreateBarcode$Mutation$BarcodeType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$MediaTypeToJson(this);
@@ -9732,6 +10042,7 @@ class CreateBarcode$Mutation$BarcodeType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$DiscountDtoTypeToJson(this);
@@ -9753,6 +10064,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceType
 
   @override
   List<Object?> get props => [id, label];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceTypeToJson(
@@ -9774,6 +10086,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductPriceListType
 
   @override
   List<Object?> get props => [price, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductPriceListTypeToJson(this);
@@ -9799,6 +10112,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -9821,6 +10135,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -9856,6 +10171,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxTypeToJson(this);
@@ -9876,6 +10192,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductTaxesTypeToJson(this);
@@ -9900,6 +10217,7 @@ class CreateBarcode$Mutation$BarcodeType$BarcodePeriodCreditType
 
   @override
   List<Object?> get props => [periodCycle, periodValue, amount];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$BarcodePeriodCreditTypeToJson(this);
@@ -9924,6 +10242,7 @@ class CreateBarcode$Mutation$BarcodeType$CatalogueCategoryType
 
   @override
   List<Object?> get props => [id, name, rank, layer];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$CatalogueCategoryTypeToJson(this);
@@ -9942,6 +10261,7 @@ class CreateBarcode$Mutation$BarcodeType$PixelBarcodeType
 
   @override
   List<Object?> get props => [include];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$PixelBarcodeTypeToJson(this);
@@ -9971,6 +10291,7 @@ class CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType$PictureTypeToJson(
@@ -9996,6 +10317,7 @@ class CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$CompanyType$MediaTypeToJson(this);
@@ -10020,6 +10342,7 @@ class CreateBarcode$Mutation$BarcodeType$CompanyType extends JsonSerializable
 
   @override
   List<Object?> get props => [id, name, description, media];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$CompanyTypeToJson(this);
@@ -10045,6 +10368,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeToJson(
@@ -10075,6 +10399,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
@@ -10113,6 +10438,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
   @override
   List<Object?> get props =>
       [id, email, gender, lastName, username, firstName, phone, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
@@ -10152,6 +10478,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType
         maintenanceDuration,
         expectedMeantime
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceTypeToJson(
@@ -10172,6 +10499,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$Att
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
@@ -10220,6 +10548,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$Att
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
@@ -10252,6 +10581,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$Att
   @override
   List<Object?> get props =>
       [id, label, externalId, createdAt, updatedAt, attribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -10273,6 +10603,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType
 
   @override
   List<Object?> get props => [attributesValues];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesTypeToJson(
@@ -10303,6 +10634,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
@@ -10329,6 +10661,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaTypeToJson(
@@ -10352,6 +10685,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoType
 
   @override
   List<Object?> get props => [amount, discountType];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
@@ -10374,6 +10708,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTy
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
@@ -10444,6 +10779,7 @@ class CreateBarcode$Mutation$BarcodeType$InternalProductType
         priceBeforeReduction,
         catalogueCategory
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$InternalProductTypeToJson(this);
@@ -10465,6 +10801,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsTypeToJson(
@@ -10495,6 +10832,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureTypeToJson(
@@ -10520,6 +10858,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$MediaTypeToJson(this);
@@ -10549,6 +10888,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$PictureTypeToJson(this);
@@ -10578,6 +10918,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$Pictu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -10614,6 +10955,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryTypeToJson(
@@ -10640,6 +10982,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$Ta
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -10662,6 +11005,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$Co
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -10698,6 +11042,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
   @override
   List<Object?> get props =>
       [id, label, externalId, value, use, product, company];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -10720,6 +11065,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesTypeToJson(
@@ -10750,6 +11096,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureTypeToJson(
@@ -10782,6 +11129,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$BrandType
   @override
   List<Object?> get props =>
       [id, name, website, createdAt, updatedAt, externalId, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$BrandTypeToJson(this);
@@ -10801,6 +11149,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$Attrib
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -10849,6 +11198,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$Attrib
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -10893,6 +11243,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeTypeToJson(
@@ -10983,6 +11334,7 @@ class CreateBarcode$Mutation$BarcodeType$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeType$ProductTypeToJson(this);
@@ -11065,6 +11417,7 @@ class CreateBarcode$Mutation$BarcodeType extends JsonSerializable
         internalProduct,
         product
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcode$Mutation$BarcodeTypeToJson(this);
@@ -11081,6 +11434,7 @@ class CreateBarcode$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createBarcode];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBarcode$MutationToJson(this);
 }
@@ -11166,6 +11520,7 @@ class BarcodeInput extends JsonSerializable with EquatableMixin {
         taxes,
         supplier
       ];
+
   @override
   Map<String, dynamic> toJson() => _$BarcodeInputToJson(this);
 }
@@ -11192,6 +11547,7 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
   @override
   Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
 }
@@ -13172,6 +13528,7 @@ class GetBarcodesQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetBarcodes$Query parse(Map<String, dynamic> json) =>
       GetBarcodes$Query.fromJson(json);
@@ -13189,6 +13546,7 @@ class BarcodeArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$BarcodeArgumentsToJson(this);
 }
@@ -15087,6 +15445,7 @@ class BarcodeQuery extends GraphQLQuery<Barcode$Query, BarcodeArguments> {
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   Barcode$Query parse(Map<String, dynamic> json) =>
       Barcode$Query.fromJson(json);
@@ -15104,6 +15463,7 @@ class GetProductBarcodesArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [productId];
+
   @override
   Map<String, dynamic> toJson() => _$GetProductBarcodesArgumentsToJson(this);
 }
@@ -17004,6 +17364,7 @@ class GetProductBarcodesQuery extends GraphQLQuery<GetProductBarcodes$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetProductBarcodes$Query parse(Map<String, dynamic> json) =>
       GetProductBarcodes$Query.fromJson(json);
@@ -17023,6 +17384,7 @@ class GetBarcodeByProductAndAttributesArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetBarcodeByProductAndAttributesArgumentsToJson(this);
@@ -18928,6 +19290,7 @@ class GetBarcodeByProductAndAttributesQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetBarcodeByProductAndAttributes$Query parse(Map<String, dynamic> json) =>
       GetBarcodeByProductAndAttributes$Query.fromJson(json);
@@ -18946,6 +19309,7 @@ class GetBarcodesPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() => _$GetBarcodesPaginationArgumentsToJson(this);
 }
@@ -20869,6 +21233,7 @@ class GetBarcodesPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetBarcodesPagination$Query parse(Map<String, dynamic> json) =>
       GetBarcodesPagination$Query.fromJson(json);
@@ -20886,6 +21251,7 @@ class UpdateBarcodeArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateBarcodeArgumentsToJson(this);
 }
@@ -22785,6 +23151,7 @@ class UpdateBarcodeMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateBarcode$Mutation parse(Map<String, dynamic> json) =>
       UpdateBarcode$Mutation.fromJson(json);
@@ -22803,6 +23170,7 @@ class BulkUpdateBarcodeMediaArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() =>
       _$BulkUpdateBarcodeMediaArgumentsToJson(this);
@@ -24708,6 +25076,7 @@ class BulkUpdateBarcodeMediaMutation extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   BulkUpdateBarcodeMedia$Mutation parse(Map<String, dynamic> json) =>
       BulkUpdateBarcodeMedia$Mutation.fromJson(json);
@@ -24730,6 +25099,7 @@ class CreateBarcodeArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input, target];
+
   @override
   Map<String, dynamic> toJson() => _$CreateBarcodeArgumentsToJson(this);
 }
@@ -26858,6 +27228,7 @@ class CreateBarcodeMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateBarcode$Mutation parse(Map<String, dynamic> json) =>
       CreateBarcode$Mutation.fromJson(json);

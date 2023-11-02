@@ -19,6 +19,7 @@ class GetPriceTypes$Query$StringListType extends JsonSerializable
 
   @override
   List<Object?> get props => [list];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetPriceTypes$Query$StringListTypeToJson(this);
@@ -35,6 +36,7 @@ class GetPriceTypes$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getPriceTypes];
+
   @override
   Map<String, dynamic> toJson() => _$GetPriceTypes$QueryToJson(this);
 }
@@ -54,6 +56,7 @@ class GetProducts$Query$ProductType$ProductSpecsType extends JsonSerializable
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$ProductSpecsTypeToJson(this);
@@ -84,6 +87,7 @@ class GetProducts$Query$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$MediaType$PictureTypeToJson(this);
@@ -106,6 +110,7 @@ class GetProducts$Query$ProductType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$MediaTypeToJson(this);
@@ -136,6 +141,7 @@ class GetProducts$Query$ProductType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$PictureTypeToJson(this);
@@ -167,6 +173,7 @@ class GetProducts$Query$ProductType$InventoryCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -201,6 +208,7 @@ class GetProducts$Query$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$InventoryCategoryTypeToJson(this);
@@ -226,6 +234,7 @@ class GetProducts$Query$ProductType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -248,6 +257,7 @@ class GetProducts$Query$ProductType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -294,6 +304,7 @@ class GetProducts$Query$ProductType$ProductTaxesType$TaxType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$ProductTaxesType$TaxTypeToJson(this);
@@ -314,6 +325,7 @@ class GetProducts$Query$ProductType$ProductTaxesType extends JsonSerializable
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$ProductTaxesTypeToJson(this);
@@ -344,6 +356,7 @@ class GetProducts$Query$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$PictureTypeToJson(this);
@@ -375,6 +388,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -423,6 +437,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -447,6 +462,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyTyp
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -479,6 +495,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -501,6 +518,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$L
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -533,6 +551,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$C
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -581,6 +600,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$C
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -613,6 +633,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$S
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -661,6 +682,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$S
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -693,6 +715,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$S
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -755,6 +778,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$S
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -777,6 +801,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$F
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -800,6 +825,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$F
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -839,6 +865,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -871,6 +898,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$Media
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -897,6 +925,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$Media
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -919,6 +948,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullA
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -951,6 +981,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullA
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -999,6 +1030,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullA
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -1031,6 +1063,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullA
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1079,6 +1112,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullA
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -1111,6 +1145,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullA
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -1173,6 +1208,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullA
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -1195,6 +1231,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullA
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -1218,6 +1255,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullA
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -1257,6 +1295,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullA
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -1281,6 +1320,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$Compa
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -1303,6 +1343,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -1335,6 +1376,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -1383,6 +1425,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -1415,6 +1458,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -1463,6 +1507,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -1495,6 +1540,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -1554,6 +1600,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -1576,6 +1623,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -1599,6 +1647,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -1638,6 +1687,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -1664,6 +1714,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -1696,6 +1747,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -1728,6 +1780,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -1784,6 +1837,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -1810,6 +1864,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -1843,6 +1898,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -1880,6 +1936,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankD
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -1906,6 +1963,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$Compa
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -1931,6 +1989,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$Compa
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -1994,6 +2053,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -2050,6 +2110,7 @@ class GetProducts$Query$ProductType$BrandType$ManufacturerType
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandType$ManufacturerTypeToJson(this);
@@ -2091,6 +2152,7 @@ class GetProducts$Query$ProductType$BrandType extends JsonSerializable
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$BrandTypeToJson(this);
@@ -2110,6 +2172,7 @@ class GetProducts$Query$ProductType$ProductAttributeType$AttributeType$Attribute
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -2158,6 +2221,7 @@ class GetProducts$Query$ProductType$ProductAttributeType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -2201,6 +2265,7 @@ class GetProducts$Query$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProducts$Query$ProductType$ProductAttributeTypeToJson(this);
@@ -2287,6 +2352,7 @@ class GetProducts$Query$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() => _$GetProducts$Query$ProductTypeToJson(this);
 }
@@ -2302,6 +2368,7 @@ class GetProducts$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getProducts];
+
   @override
   Map<String, dynamic> toJson() => _$GetProducts$QueryToJson(this);
 }
@@ -2321,6 +2388,7 @@ class Product$Query$ProductType$ProductSpecsType extends JsonSerializable
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$ProductSpecsTypeToJson(this);
@@ -2351,6 +2419,7 @@ class Product$Query$ProductType$MediaType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$MediaType$PictureTypeToJson(this);
@@ -2373,6 +2442,7 @@ class Product$Query$ProductType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$MediaTypeToJson(this);
@@ -2403,6 +2473,7 @@ class Product$Query$ProductType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$PictureTypeToJson(this);
@@ -2434,6 +2505,7 @@ class Product$Query$ProductType$InventoryCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$InventoryCategoryType$PictureTypeToJson(this);
@@ -2467,6 +2539,7 @@ class Product$Query$ProductType$InventoryCategoryType extends JsonSerializable
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$InventoryCategoryTypeToJson(this);
@@ -2492,6 +2565,7 @@ class Product$Query$ProductType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -2514,6 +2588,7 @@ class Product$Query$ProductType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -2560,6 +2635,7 @@ class Product$Query$ProductType$ProductTaxesType$TaxType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$ProductTaxesType$TaxTypeToJson(this);
@@ -2580,6 +2656,7 @@ class Product$Query$ProductType$ProductTaxesType extends JsonSerializable
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$ProductTaxesTypeToJson(this);
@@ -2610,6 +2687,7 @@ class Product$Query$ProductType$BrandType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$PictureTypeToJson(this);
@@ -2641,6 +2719,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyType$Cu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -2689,6 +2768,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyType$Cu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -2713,6 +2793,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyType
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -2745,6 +2826,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -2767,6 +2849,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$LonLa
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -2799,6 +2882,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$Count
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -2847,6 +2931,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$Count
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -2879,6 +2964,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$State
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -2927,6 +3013,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$State
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -2959,6 +3046,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$State
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -3021,6 +3109,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$State
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -3043,6 +3132,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$FullA
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3066,6 +3156,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$FullA
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3105,6 +3196,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -3137,6 +3229,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -3163,6 +3256,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -3185,6 +3279,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -3217,6 +3312,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3265,6 +3361,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -3297,6 +3394,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3345,6 +3443,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -3377,6 +3476,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -3439,6 +3539,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddre
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -3461,6 +3562,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3484,6 +3586,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddre
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3523,6 +3626,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddre
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -3547,6 +3651,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLe
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -3569,6 +3674,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -3601,6 +3707,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -3649,6 +3756,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -3681,6 +3789,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -3729,6 +3838,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -3761,6 +3871,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -3820,6 +3931,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -3842,6 +3954,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -3865,6 +3978,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -3904,6 +4018,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -3930,6 +4045,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -3962,6 +4078,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -3994,6 +4111,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -4050,6 +4168,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -4076,6 +4195,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -4109,6 +4229,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -4146,6 +4267,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetai
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -4172,6 +4294,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyCo
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -4197,6 +4320,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyCo
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -4260,6 +4384,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -4315,6 +4440,7 @@ class Product$Query$ProductType$BrandType$ManufacturerType
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandType$ManufacturerTypeToJson(this);
@@ -4356,6 +4482,7 @@ class Product$Query$ProductType$BrandType extends JsonSerializable
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$BrandTypeToJson(this);
@@ -4375,6 +4502,7 @@ class Product$Query$ProductType$ProductAttributeType$AttributeType$AttributePixe
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -4423,6 +4551,7 @@ class Product$Query$ProductType$ProductAttributeType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -4465,6 +4594,7 @@ class Product$Query$ProductType$ProductAttributeType extends JsonSerializable
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$Product$Query$ProductType$ProductAttributeTypeToJson(this);
@@ -4550,6 +4680,7 @@ class Product$Query$ProductType extends JsonSerializable with EquatableMixin {
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() => _$Product$Query$ProductTypeToJson(this);
 }
@@ -4565,6 +4696,7 @@ class Product$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [product];
+
   @override
   Map<String, dynamic> toJson() => _$Product$QueryToJson(this);
 }
@@ -4584,6 +4716,7 @@ class FindOneByEAN$Query$ProductType$ProductSpecsType extends JsonSerializable
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$ProductSpecsTypeToJson(this);
@@ -4614,6 +4747,7 @@ class FindOneByEAN$Query$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$MediaType$PictureTypeToJson(this);
@@ -4636,6 +4770,7 @@ class FindOneByEAN$Query$ProductType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$MediaTypeToJson(this);
@@ -4666,6 +4801,7 @@ class FindOneByEAN$Query$ProductType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$PictureTypeToJson(this);
@@ -4697,6 +4833,7 @@ class FindOneByEAN$Query$ProductType$InventoryCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -4731,6 +4868,7 @@ class FindOneByEAN$Query$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$InventoryCategoryTypeToJson(this);
@@ -4756,6 +4894,7 @@ class FindOneByEAN$Query$ProductType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -4778,6 +4917,7 @@ class FindOneByEAN$Query$ProductType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -4824,6 +4964,7 @@ class FindOneByEAN$Query$ProductType$ProductTaxesType$TaxType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$ProductTaxesType$TaxTypeToJson(this);
@@ -4844,6 +4985,7 @@ class FindOneByEAN$Query$ProductType$ProductTaxesType extends JsonSerializable
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$ProductTaxesTypeToJson(this);
@@ -4874,6 +5016,7 @@ class FindOneByEAN$Query$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$PictureTypeToJson(this);
@@ -4905,6 +5048,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyTy
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -4953,6 +5097,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyTy
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -4977,6 +5122,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyTy
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -5009,6 +5155,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -5031,6 +5178,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -5063,6 +5211,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5111,6 +5260,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -5143,6 +5293,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5191,6 +5342,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -5223,6 +5375,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -5285,6 +5438,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -5307,6 +5461,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -5330,6 +5485,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -5369,6 +5525,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressType
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -5401,6 +5558,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Medi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -5427,6 +5585,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Medi
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -5449,6 +5608,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Full
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -5481,6 +5641,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Full
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5529,6 +5690,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Full
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -5561,6 +5723,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Full
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5609,6 +5772,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Full
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -5641,6 +5805,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Full
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -5703,6 +5868,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Full
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -5725,6 +5891,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Full
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -5748,6 +5915,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Full
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -5787,6 +5955,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Full
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -5811,6 +5980,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Comp
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -5833,6 +6003,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -5865,6 +6036,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -5913,6 +6085,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -5945,6 +6118,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -5993,6 +6167,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -6025,6 +6200,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -6084,6 +6260,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -6106,6 +6283,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -6129,6 +6307,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -6168,6 +6347,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -6194,6 +6374,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -6226,6 +6407,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -6258,6 +6440,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -6314,6 +6497,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -6340,6 +6524,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -6373,6 +6558,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -6410,6 +6596,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Bank
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -6436,6 +6623,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Comp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -6461,6 +6649,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$Comp
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -6524,6 +6713,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -6582,6 +6772,7 @@ class FindOneByEAN$Query$ProductType$BrandType$ManufacturerType
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandType$ManufacturerTypeToJson(this);
@@ -6623,6 +6814,7 @@ class FindOneByEAN$Query$ProductType$BrandType extends JsonSerializable
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$BrandTypeToJson(this);
@@ -6642,6 +6834,7 @@ class FindOneByEAN$Query$ProductType$ProductAttributeType$AttributeType$Attribut
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -6690,6 +6883,7 @@ class FindOneByEAN$Query$ProductType$ProductAttributeType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -6733,6 +6927,7 @@ class FindOneByEAN$Query$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$FindOneByEAN$Query$ProductType$ProductAttributeTypeToJson(this);
@@ -6819,6 +7014,7 @@ class FindOneByEAN$Query$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() => _$FindOneByEAN$Query$ProductTypeToJson(this);
 }
@@ -6834,6 +7030,7 @@ class FindOneByEAN$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [findOneByEAN];
+
   @override
   Map<String, dynamic> toJson() => _$FindOneByEAN$QueryToJson(this);
 }
@@ -6854,6 +7051,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$ProductSpecsTypeToJson(
@@ -6886,6 +7084,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$MediaType$PictureTypeToJson(
@@ -6912,6 +7111,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$MediaTypeToJson(
@@ -6944,6 +7144,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$PictureTypeToJson(
@@ -6976,6 +7177,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$InventoryCategoryType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -7012,6 +7214,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$InventoryCategoryTypeToJson(
@@ -7038,6 +7241,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxTy
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -7060,6 +7264,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxTy
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -7109,6 +7314,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxTy
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -7132,6 +7338,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$ProductTaxesTypeToJson(
@@ -7164,6 +7371,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$PictureTypeToJson(
@@ -7196,6 +7404,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -7244,6 +7453,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -7268,6 +7478,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -7300,6 +7511,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -7322,6 +7534,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -7354,6 +7567,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -7402,6 +7616,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -7434,6 +7649,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -7482,6 +7698,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -7514,6 +7731,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -7576,6 +7794,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -7598,6 +7817,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -7621,6 +7841,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -7660,6 +7881,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -7692,6 +7914,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -7718,6 +7941,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -7740,6 +7964,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -7772,6 +7997,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -7820,6 +8046,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -7852,6 +8079,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -7900,6 +8128,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -7932,6 +8161,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -7994,6 +8224,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -8016,6 +8247,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -8039,6 +8271,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -8078,6 +8311,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -8102,6 +8336,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -8124,6 +8359,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -8156,6 +8392,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -8204,6 +8441,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -8236,6 +8474,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -8284,6 +8523,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -8316,6 +8556,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -8378,6 +8619,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -8400,6 +8642,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -8423,6 +8666,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -8462,6 +8706,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -8488,6 +8733,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -8520,6 +8766,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -8552,6 +8799,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -8608,6 +8856,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -8634,6 +8883,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -8667,6 +8917,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -8704,6 +8955,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -8730,6 +8982,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -8755,6 +9008,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -8818,6 +9072,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -8877,6 +9132,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType$Manufacturer
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandType$ManufacturerTypeToJson(
@@ -8922,6 +9178,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$BrandType
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$BrandTypeToJson(
@@ -8942,6 +9199,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$ProductAttributeType$A
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -8990,6 +9248,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$ProductAttributeType$A
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -9034,6 +9293,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductType$ProductAttributeTypeToJson(
@@ -9127,6 +9387,7 @@ class SearchProduct$Query$ProductPaginateType$ProductType
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateType$ProductTypeToJson(this);
@@ -9149,6 +9410,7 @@ class SearchProduct$Query$ProductPaginateType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$SearchProduct$Query$ProductPaginateTypeToJson(this);
@@ -9165,6 +9427,7 @@ class SearchProduct$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [searchProduct];
+
   @override
   Map<String, dynamic> toJson() => _$SearchProduct$QueryToJson(this);
 }
@@ -9185,6 +9448,7 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [page, limit];
+
   @override
   Map<String, dynamic> toJson() => _$PaginationInputToJson(this);
 }
@@ -9205,6 +9469,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$ProductSpecsTypeToJson(
@@ -9237,6 +9502,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$MediaType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$MediaType$PictureTypeToJson(
@@ -9263,6 +9529,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$MediaTypeToJson(
@@ -9295,6 +9562,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$PictureTypeToJson(
@@ -9327,6 +9595,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$InventoryCategory
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -9363,6 +9632,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$InventoryCategory
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$InventoryCategoryTypeToJson(
@@ -9389,6 +9659,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$ProductTaxesType$
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -9411,6 +9682,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$ProductTaxesType$
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -9460,6 +9732,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$ProductTaxesType$
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -9483,6 +9756,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$ProductTaxesTypeToJson(
@@ -9515,6 +9789,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Picture
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$PictureTypeToJson(
@@ -9547,6 +9822,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -9595,6 +9871,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -9619,6 +9896,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -9651,6 +9929,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -9673,6 +9952,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -9705,6 +9985,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -9753,6 +10034,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -9785,6 +10067,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -9833,6 +10116,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -9865,6 +10149,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -9927,6 +10212,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -9949,6 +10235,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -9972,6 +10259,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -10011,6 +10299,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -10043,6 +10332,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -10069,6 +10359,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -10091,6 +10382,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -10123,6 +10415,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -10171,6 +10464,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -10203,6 +10497,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -10251,6 +10546,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -10283,6 +10579,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -10345,6 +10642,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -10367,6 +10665,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -10390,6 +10689,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -10429,6 +10729,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -10453,6 +10754,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -10475,6 +10777,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -10507,6 +10810,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -10555,6 +10859,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -10587,6 +10892,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -10635,6 +10941,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -10667,6 +10974,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -10729,6 +11037,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -10751,6 +11060,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -10774,6 +11084,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -10813,6 +11124,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -10839,6 +11151,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -10871,6 +11184,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -10903,6 +11217,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -10959,6 +11274,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -10985,6 +11301,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -11018,6 +11335,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -11055,6 +11373,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -11081,6 +11400,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -11106,6 +11426,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -11169,6 +11490,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -11228,6 +11550,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$Manufac
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType$ManufacturerTypeToJson(
@@ -11273,6 +11596,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$BrandType
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$BrandTypeToJson(
@@ -11293,6 +11617,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$ProductAttributeT
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -11341,6 +11666,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$ProductAttributeT
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -11385,6 +11711,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType$ProductAttributeT
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductType$ProductAttributeTypeToJson(
@@ -11478,6 +11805,7 @@ class GetProductsByClass$Query$ProductPaginateType$ProductType
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateType$ProductTypeToJson(this);
@@ -11500,6 +11828,7 @@ class GetProductsByClass$Query$ProductPaginateType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByClass$Query$ProductPaginateTypeToJson(this);
@@ -11516,6 +11845,7 @@ class GetProductsByClass$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getProductsByClass];
+
   @override
   Map<String, dynamic> toJson() => _$GetProductsByClass$QueryToJson(this);
 }
@@ -11536,6 +11866,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$ProductSpecsTy
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$ProductSpecsTypeToJson(
@@ -11568,6 +11899,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$MediaType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$MediaType$PictureTypeToJson(
@@ -11594,6 +11926,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$MediaTypeToJson(
@@ -11626,6 +11959,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$PictureTypeToJson(
@@ -11658,6 +11992,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$InventoryCateg
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -11694,6 +12029,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$InventoryCateg
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$InventoryCategoryTypeToJson(
@@ -11720,6 +12056,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$ProductTaxesTy
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -11742,6 +12079,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$ProductTaxesTy
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -11791,6 +12129,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$ProductTaxesTy
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -11814,6 +12153,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$ProductTaxesTy
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$ProductTaxesTypeToJson(
@@ -11846,6 +12186,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$PictureTypeToJson(
@@ -11878,6 +12219,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -11926,6 +12268,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -11950,6 +12293,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -11982,6 +12326,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -12004,6 +12349,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -12036,6 +12382,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -12084,6 +12431,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -12116,6 +12464,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -12164,6 +12513,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -12196,6 +12546,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -12258,6 +12609,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -12280,6 +12632,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -12303,6 +12656,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -12342,6 +12696,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -12374,6 +12729,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -12400,6 +12756,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -12422,6 +12779,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -12454,6 +12812,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -12502,6 +12861,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -12534,6 +12894,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -12582,6 +12943,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -12614,6 +12976,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -12676,6 +13039,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -12698,6 +13062,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -12721,6 +13086,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -12760,6 +13126,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -12784,6 +13151,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -12806,6 +13174,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -12838,6 +13207,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -12886,6 +13256,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -12918,6 +13289,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -12966,6 +13338,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -12998,6 +13371,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -13060,6 +13434,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -13082,6 +13457,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -13105,6 +13481,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -13144,6 +13521,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -13170,6 +13548,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -13202,6 +13581,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -13234,6 +13614,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -13290,6 +13671,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -13316,6 +13698,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -13349,6 +13732,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -13386,6 +13770,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -13412,6 +13797,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -13437,6 +13823,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -13500,6 +13887,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -13559,6 +13947,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$Manu
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerTypeToJson(
@@ -13604,6 +13993,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$BrandType
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$BrandTypeToJson(
@@ -13624,6 +14014,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$ProductAttribu
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -13672,6 +14063,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$ProductAttribu
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -13716,6 +14108,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType$ProductAttribu
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductType$ProductAttributeTypeToJson(
@@ -13811,6 +14204,7 @@ class GetProductsPagination$Query$ProductPaginateType$ProductType
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateType$ProductTypeToJson(this);
@@ -13834,6 +14228,7 @@ class GetProductsPagination$Query$ProductPaginateType extends JsonSerializable
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsPagination$Query$ProductPaginateTypeToJson(this);
@@ -13850,6 +14245,7 @@ class GetProductsPagination$Query extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [getProductsPagination];
+
   @override
   Map<String, dynamic> toJson() => _$GetProductsPagination$QueryToJson(this);
 }
@@ -13870,6 +14266,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Prod
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$ProductSpecsTypeToJson(
@@ -13902,6 +14299,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Medi
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$MediaType$PictureTypeToJson(
@@ -13928,6 +14326,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Medi
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$MediaTypeToJson(
@@ -13960,6 +14359,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Pict
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$PictureTypeToJson(
@@ -13992,6 +14392,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Inve
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -14028,6 +14429,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Inve
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$InventoryCategoryTypeToJson(
@@ -14054,6 +14456,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Prod
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -14076,6 +14479,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Prod
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -14125,6 +14529,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Prod
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -14148,6 +14553,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Prod
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$ProductTaxesTypeToJson(
@@ -14180,6 +14586,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$PictureTypeToJson(
@@ -14212,6 +14619,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -14260,6 +14668,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -14284,6 +14693,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -14316,6 +14726,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -14338,6 +14749,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -14370,6 +14782,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -14418,6 +14831,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -14450,6 +14864,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -14498,6 +14913,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -14530,6 +14946,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -14592,6 +15009,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -14614,6 +15032,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -14637,6 +15056,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -14676,6 +15096,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -14708,6 +15129,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -14734,6 +15156,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -14756,6 +15179,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -14788,6 +15212,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -14836,6 +15261,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -14868,6 +15294,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -14916,6 +15343,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -14948,6 +15376,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -15010,6 +15439,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -15032,6 +15462,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -15055,6 +15486,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -15094,6 +15526,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -15118,6 +15551,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -15140,6 +15574,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -15172,6 +15607,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -15220,6 +15656,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -15252,6 +15689,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -15300,6 +15738,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -15332,6 +15771,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -15394,6 +15834,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -15416,6 +15857,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -15439,6 +15881,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -15478,6 +15921,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -15504,6 +15948,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -15536,6 +15981,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -15568,6 +16014,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -15624,6 +16071,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -15650,6 +16098,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -15683,6 +16132,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -15720,6 +16170,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -15746,6 +16197,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -15771,6 +16223,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -15834,6 +16287,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -15893,6 +16347,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandType$ManufacturerTypeToJson(
@@ -15938,6 +16393,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Bran
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$BrandTypeToJson(
@@ -15958,6 +16414,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Prod
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -16006,6 +16463,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Prod
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -16050,6 +16508,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$Prod
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType$ProductAttributeTypeToJson(
@@ -16147,6 +16606,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType$ProductType
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateType$ProductTypeToJson(
@@ -16172,6 +16632,7 @@ class GetProductsByCategoryPagination$Query$ProductPaginateType
 
   @override
   List<Object?> get props => [count, isLast, objects];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$Query$ProductPaginateTypeToJson(this);
@@ -16191,6 +16652,7 @@ class GetProductsByCategoryPagination$Query extends JsonSerializable
 
   @override
   List<Object?> get props => [getProductsByCategoryPagination];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPagination$QueryToJson(this);
@@ -16211,6 +16673,7 @@ class CreateProduct$Mutation$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$ProductSpecsTypeToJson(this);
@@ -16241,6 +16704,7 @@ class CreateProduct$Mutation$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$MediaType$PictureTypeToJson(this);
@@ -16263,6 +16727,7 @@ class CreateProduct$Mutation$ProductType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$MediaTypeToJson(this);
@@ -16293,6 +16758,7 @@ class CreateProduct$Mutation$ProductType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$PictureTypeToJson(this);
@@ -16324,6 +16790,7 @@ class CreateProduct$Mutation$ProductType$InventoryCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -16358,6 +16825,7 @@ class CreateProduct$Mutation$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$InventoryCategoryTypeToJson(this);
@@ -16383,6 +16851,7 @@ class CreateProduct$Mutation$ProductType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -16405,6 +16874,7 @@ class CreateProduct$Mutation$ProductType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -16453,6 +16923,7 @@ class CreateProduct$Mutation$ProductType$ProductTaxesType$TaxType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$ProductTaxesType$TaxTypeToJson(this);
@@ -16473,6 +16944,7 @@ class CreateProduct$Mutation$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$ProductTaxesTypeToJson(this);
@@ -16503,6 +16975,7 @@ class CreateProduct$Mutation$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$PictureTypeToJson(this);
@@ -16534,6 +17007,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurren
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -16582,6 +17056,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurren
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -16606,6 +17081,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurren
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -16638,6 +17114,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -16660,6 +17137,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -16692,6 +17170,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -16740,6 +17219,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -16772,6 +17252,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -16820,6 +17301,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -16852,6 +17334,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -16914,6 +17397,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -16936,6 +17420,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -16959,6 +17444,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -16998,6 +17484,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -17030,6 +17517,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -17056,6 +17544,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -17078,6 +17567,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -17110,6 +17600,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -17158,6 +17649,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -17190,6 +17682,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -17238,6 +17731,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -17270,6 +17764,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -17332,6 +17827,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -17354,6 +17850,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -17377,6 +17874,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -17416,6 +17914,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -17440,6 +17939,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -17462,6 +17962,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -17494,6 +17995,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -17542,6 +18044,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -17574,6 +18077,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -17622,6 +18126,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -17654,6 +18159,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -17713,6 +18219,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -17735,6 +18242,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -17758,6 +18266,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -17797,6 +18306,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -17823,6 +18333,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -17855,6 +18366,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -17887,6 +18399,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -17943,6 +18456,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -17969,6 +18483,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -18002,6 +18517,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -18039,6 +18555,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -18065,6 +18582,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -18090,6 +18608,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -18153,6 +18672,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -18212,6 +18732,7 @@ class CreateProduct$Mutation$ProductType$BrandType$ManufacturerType
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandType$ManufacturerTypeToJson(
@@ -18254,6 +18775,7 @@ class CreateProduct$Mutation$ProductType$BrandType extends JsonSerializable
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$BrandTypeToJson(this);
@@ -18273,6 +18795,7 @@ class CreateProduct$Mutation$ProductType$ProductAttributeType$AttributeType$Attr
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -18321,6 +18844,7 @@ class CreateProduct$Mutation$ProductType$ProductAttributeType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -18364,6 +18888,7 @@ class CreateProduct$Mutation$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductType$ProductAttributeTypeToJson(this);
@@ -18452,6 +18977,7 @@ class CreateProduct$Mutation$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProduct$Mutation$ProductTypeToJson(this);
@@ -18468,6 +18994,7 @@ class CreateProduct$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [createProduct];
+
   @override
   Map<String, dynamic> toJson() => _$CreateProduct$MutationToJson(this);
 }
@@ -18572,6 +19099,7 @@ class ProductInput extends JsonSerializable with EquatableMixin {
         brand,
         category
       ];
+
   @override
   Map<String, dynamic> toJson() => _$ProductInputToJson(this);
 }
@@ -18592,6 +19120,7 @@ class ProductSpecsInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() => _$ProductSpecsInputToJson(this);
 }
@@ -18627,6 +19156,7 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [width, height, x, y, alt, baseUrl, path];
+
   @override
   Map<String, dynamic> toJson() => _$PictureInputToJson(this);
 }
@@ -18650,6 +19180,7 @@ class MediaInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [videos, pictures, deg360];
+
   @override
   Map<String, dynamic> toJson() => _$MediaInputToJson(this);
 }
@@ -18670,6 +19201,7 @@ class ProductTaxesInput extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() => _$ProductTaxesInputToJson(this);
 }
@@ -18689,6 +19221,7 @@ class UpdateProduct$Mutation$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$ProductSpecsTypeToJson(this);
@@ -18719,6 +19252,7 @@ class UpdateProduct$Mutation$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$MediaType$PictureTypeToJson(this);
@@ -18741,6 +19275,7 @@ class UpdateProduct$Mutation$ProductType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$MediaTypeToJson(this);
@@ -18771,6 +19306,7 @@ class UpdateProduct$Mutation$ProductType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$PictureTypeToJson(this);
@@ -18802,6 +19338,7 @@ class UpdateProduct$Mutation$ProductType$InventoryCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -18836,6 +19373,7 @@ class UpdateProduct$Mutation$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$InventoryCategoryTypeToJson(this);
@@ -18861,6 +19399,7 @@ class UpdateProduct$Mutation$ProductType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -18883,6 +19422,7 @@ class UpdateProduct$Mutation$ProductType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -18931,6 +19471,7 @@ class UpdateProduct$Mutation$ProductType$ProductTaxesType$TaxType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$ProductTaxesType$TaxTypeToJson(this);
@@ -18951,6 +19492,7 @@ class UpdateProduct$Mutation$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$ProductTaxesTypeToJson(this);
@@ -18981,6 +19523,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$PictureTypeToJson(this);
@@ -19012,6 +19555,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurren
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -19060,6 +19604,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurren
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -19084,6 +19629,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurren
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -19116,6 +19662,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -19138,6 +19685,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -19170,6 +19718,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -19218,6 +19767,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -19250,6 +19800,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -19298,6 +19849,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -19330,6 +19882,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -19392,6 +19945,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -19414,6 +19968,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -19437,6 +19992,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -19476,6 +20032,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -19508,6 +20065,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -19534,6 +20092,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -19556,6 +20115,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -19588,6 +20148,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -19636,6 +20197,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -19668,6 +20230,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -19716,6 +20279,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -19748,6 +20312,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -19810,6 +20375,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -19832,6 +20398,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -19855,6 +20422,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -19894,6 +20462,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -19918,6 +20487,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -19940,6 +20510,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -19972,6 +20543,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -20020,6 +20592,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -20052,6 +20625,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -20100,6 +20674,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -20132,6 +20707,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -20191,6 +20767,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -20213,6 +20790,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -20236,6 +20814,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -20275,6 +20854,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -20301,6 +20881,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -20333,6 +20914,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -20365,6 +20947,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -20421,6 +21004,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -20447,6 +21031,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -20480,6 +21065,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -20517,6 +21103,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -20543,6 +21130,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -20568,6 +21156,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -20631,6 +21220,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -20690,6 +21280,7 @@ class UpdateProduct$Mutation$ProductType$BrandType$ManufacturerType
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandType$ManufacturerTypeToJson(
@@ -20732,6 +21323,7 @@ class UpdateProduct$Mutation$ProductType$BrandType extends JsonSerializable
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$BrandTypeToJson(this);
@@ -20751,6 +21343,7 @@ class UpdateProduct$Mutation$ProductType$ProductAttributeType$AttributeType$Attr
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -20799,6 +21392,7 @@ class UpdateProduct$Mutation$ProductType$ProductAttributeType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -20842,6 +21436,7 @@ class UpdateProduct$Mutation$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductType$ProductAttributeTypeToJson(this);
@@ -20930,6 +21525,7 @@ class UpdateProduct$Mutation$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProduct$Mutation$ProductTypeToJson(this);
@@ -20946,6 +21542,7 @@ class UpdateProduct$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [updateProduct];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateProduct$MutationToJson(this);
 }
@@ -21050,6 +21647,7 @@ class ProductUpdateInput extends JsonSerializable with EquatableMixin {
         brand,
         category
       ];
+
   @override
   Map<String, dynamic> toJson() => _$ProductUpdateInputToJson(this);
 }
@@ -21069,6 +21667,7 @@ class DeleteProduct$Mutation$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$ProductSpecsTypeToJson(this);
@@ -21099,6 +21698,7 @@ class DeleteProduct$Mutation$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$MediaType$PictureTypeToJson(this);
@@ -21121,6 +21721,7 @@ class DeleteProduct$Mutation$ProductType$MediaType extends JsonSerializable
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$MediaTypeToJson(this);
@@ -21151,6 +21752,7 @@ class DeleteProduct$Mutation$ProductType$PictureType extends JsonSerializable
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$PictureTypeToJson(this);
@@ -21182,6 +21784,7 @@ class DeleteProduct$Mutation$ProductType$InventoryCategoryType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -21216,6 +21819,7 @@ class DeleteProduct$Mutation$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$InventoryCategoryTypeToJson(this);
@@ -21241,6 +21845,7 @@ class DeleteProduct$Mutation$ProductType$ProductTaxesType$TaxType$TaxVaType
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -21263,6 +21868,7 @@ class DeleteProduct$Mutation$ProductType$ProductTaxesType$TaxType$CompanyType
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -21311,6 +21917,7 @@ class DeleteProduct$Mutation$ProductType$ProductTaxesType$TaxType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$ProductTaxesType$TaxTypeToJson(this);
@@ -21331,6 +21938,7 @@ class DeleteProduct$Mutation$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$ProductTaxesTypeToJson(this);
@@ -21361,6 +21969,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$PictureTypeToJson(this);
@@ -21392,6 +22001,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurren
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -21440,6 +22050,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurren
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -21464,6 +22075,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurren
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -21496,6 +22108,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -21518,6 +22131,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -21550,6 +22164,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -21598,6 +22213,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -21630,6 +22246,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -21678,6 +22295,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -21710,6 +22328,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -21772,6 +22391,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -21794,6 +22414,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -21817,6 +22438,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -21856,6 +22478,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressT
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -21888,6 +22511,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -21914,6 +22538,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -21936,6 +22561,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -21968,6 +22594,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -22016,6 +22643,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -22048,6 +22676,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -22096,6 +22725,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -22128,6 +22758,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -22190,6 +22821,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -22212,6 +22844,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -22235,6 +22868,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -22274,6 +22908,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -22298,6 +22933,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -22320,6 +22956,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -22352,6 +22989,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -22400,6 +23038,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -22432,6 +23071,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -22480,6 +23120,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -22512,6 +23153,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -22571,6 +23213,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -22593,6 +23236,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -22616,6 +23260,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -22655,6 +23300,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -22681,6 +23327,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -22713,6 +23360,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -22745,6 +23393,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -22801,6 +23450,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -22827,6 +23477,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -22860,6 +23511,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -22897,6 +23549,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -22923,6 +23576,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -22948,6 +23602,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -23011,6 +23666,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -23070,6 +23726,7 @@ class DeleteProduct$Mutation$ProductType$BrandType$ManufacturerType
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandType$ManufacturerTypeToJson(
@@ -23112,6 +23769,7 @@ class DeleteProduct$Mutation$ProductType$BrandType extends JsonSerializable
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$BrandTypeToJson(this);
@@ -23131,6 +23789,7 @@ class DeleteProduct$Mutation$ProductType$ProductAttributeType$AttributeType$Attr
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -23179,6 +23838,7 @@ class DeleteProduct$Mutation$ProductType$ProductAttributeType$AttributeType
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -23222,6 +23882,7 @@ class DeleteProduct$Mutation$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductType$ProductAttributeTypeToJson(this);
@@ -23310,6 +23971,7 @@ class DeleteProduct$Mutation$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$DeleteProduct$Mutation$ProductTypeToJson(this);
@@ -23326,6 +23988,7 @@ class DeleteProduct$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [deleteProduct];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteProduct$MutationToJson(this);
 }
@@ -23346,6 +24009,7 @@ class ListenForProductCreated$Subscription$ProductType$ProductSpecsType
 
   @override
   List<Object?> get props => [key, value];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$ProductSpecsTypeToJson(
@@ -23378,6 +24042,7 @@ class ListenForProductCreated$Subscription$ProductType$MediaType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$MediaType$PictureTypeToJson(
@@ -23404,6 +24069,7 @@ class ListenForProductCreated$Subscription$ProductType$MediaType
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$MediaTypeToJson(this);
@@ -23435,6 +24101,7 @@ class ListenForProductCreated$Subscription$ProductType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$PictureTypeToJson(
@@ -23467,6 +24134,7 @@ class ListenForProductCreated$Subscription$ProductType$InventoryCategoryType$Pic
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$InventoryCategoryType$PictureTypeToJson(
@@ -23503,6 +24171,7 @@ class ListenForProductCreated$Subscription$ProductType$InventoryCategoryType
   @override
   List<Object?> get props =>
       [id, name, rank, layer, createdAt, updatedAt, hasChildren, picture];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$InventoryCategoryTypeToJson(
@@ -23529,6 +24198,7 @@ class ListenForProductCreated$Subscription$ProductType$ProductTaxesType$TaxType$
 
   @override
   List<Object?> get props => [sign, value, type];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
@@ -23551,6 +24221,7 @@ class ListenForProductCreated$Subscription$ProductType$ProductTaxesType$TaxType$
 
   @override
   List<Object?> get props => [id, name];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
@@ -23600,6 +24271,7 @@ class ListenForProductCreated$Subscription$ProductType$ProductTaxesType$TaxType
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$ProductTaxesType$TaxTypeToJson(
@@ -23623,6 +24295,7 @@ class ListenForProductCreated$Subscription$ProductType$ProductTaxesType
 
   @override
   List<Object?> get props => [tax, rank];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$ProductTaxesTypeToJson(
@@ -23655,6 +24328,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$PictureType
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$PictureTypeToJson(
@@ -23687,6 +24361,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
@@ -23735,6 +24410,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
@@ -23759,6 +24435,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [currency, kw$default];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
@@ -23791,6 +24468,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
@@ -23813,6 +24491,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
@@ -23845,6 +24524,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
@@ -23893,6 +24573,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
@@ -23925,6 +24606,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -23973,6 +24655,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
@@ -24005,6 +24688,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
@@ -24067,6 +24751,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
@@ -24089,6 +24774,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -24112,6 +24798,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -24151,6 +24838,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
@@ -24183,6 +24871,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
@@ -24209,6 +24898,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [videos, deg360, pictures];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
@@ -24231,6 +24921,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
@@ -24263,6 +24954,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
@@ -24311,6 +25003,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
@@ -24343,6 +25036,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -24391,6 +25085,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
@@ -24423,6 +25118,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
@@ -24485,6 +25181,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
@@ -24507,6 +25204,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -24530,6 +25228,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -24569,6 +25268,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
@@ -24593,6 +25293,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [vat, register, licence];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
@@ -24615,6 +25316,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [type, coordinates];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
@@ -24647,6 +25349,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
@@ -24695,6 +25398,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
@@ -24727,6 +25431,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
@@ -24775,6 +25480,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
@@ -24807,6 +25513,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
@@ -24866,6 +25573,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         flagSquare,
         flagWide
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
@@ -24888,6 +25596,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [number, countryCode];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
@@ -24911,6 +25620,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [name, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
@@ -24950,6 +25660,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
   @override
   List<Object?> get props =>
       [city, address, postCode, addressLine, location, country, state, owner];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
@@ -24976,6 +25687,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [name, type, address];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
@@ -25008,6 +25720,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
@@ -25040,6 +25753,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
@@ -25096,6 +25810,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         size256,
         size512
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
@@ -25122,6 +25837,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [svg, png, icon];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
@@ -25155,6 +25871,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [id, name, code, bic, logo, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
@@ -25192,6 +25909,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
   @override
   List<Object?> get props =>
       [id, holder, account, iban, bank, externalId, createdAt, updatedAt];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
@@ -25218,6 +25936,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
@@ -25243,6 +25962,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
 
   @override
   List<Object?> get props => [website, email, phone];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
@@ -25306,6 +26026,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         createdAt,
         updatedAt
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
@@ -25365,6 +26086,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTyp
         address,
         company
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandType$ManufacturerTypeToJson(
@@ -25410,6 +26132,7 @@ class ListenForProductCreated$Subscription$ProductType$BrandType
         picture,
         manufacturer
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$BrandTypeToJson(this);
@@ -25429,6 +26152,7 @@ class ListenForProductCreated$Subscription$ProductType$ProductAttributeType$Attr
 
   @override
   List<Object?> get props => [pixelAttribute];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
@@ -25477,6 +26201,7 @@ class ListenForProductCreated$Subscription$ProductType$ProductAttributeType$Attr
         isMultipleChoice,
         pixel
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -25521,6 +26246,7 @@ class ListenForProductCreated$Subscription$ProductType$ProductAttributeType
         isMultipleChoice,
         attribute
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductType$ProductAttributeTypeToJson(
@@ -25613,6 +26339,7 @@ class ListenForProductCreated$Subscription$ProductType extends JsonSerializable
         brand,
         productAttributes
       ];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$Subscription$ProductTypeToJson(this);
@@ -25631,6 +26358,7 @@ class ListenForProductCreated$Subscription extends JsonSerializable
 
   @override
   List<Object?> get props => [listenForProductCreated];
+
   @override
   Map<String, dynamic> toJson() =>
       _$ListenForProductCreated$SubscriptionToJson(this);
@@ -25748,6 +26476,7 @@ class GetPriceTypesQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetPriceTypes$Query parse(Map<String, dynamic> json) =>
       GetPriceTypes$Query.fromJson(json);
@@ -29837,6 +30566,7 @@ class GetProductsQuery
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   GetProducts$Query parse(Map<String, dynamic> json) =>
       GetProducts$Query.fromJson(json);
@@ -29854,6 +30584,7 @@ class ProductArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$ProductArgumentsToJson(this);
 }
@@ -33959,6 +34690,7 @@ class ProductQuery extends GraphQLQuery<Product$Query, ProductArguments> {
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   Product$Query parse(Map<String, dynamic> json) =>
       Product$Query.fromJson(json);
@@ -33976,6 +34708,7 @@ class FindOneByEANArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [ean];
+
   @override
   Map<String, dynamic> toJson() => _$FindOneByEANArgumentsToJson(this);
 }
@@ -38082,6 +38815,7 @@ class FindOneByEANQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   FindOneByEAN$Query parse(Map<String, dynamic> json) =>
       FindOneByEAN$Query.fromJson(json);
@@ -38107,6 +38841,7 @@ class SearchProductArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pagination, catId, searchString];
+
   @override
   Map<String, dynamic> toJson() => _$SearchProductArgumentsToJson(this);
 }
@@ -42308,6 +43043,7 @@ class SearchProductQuery
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   SearchProduct$Query parse(Map<String, dynamic> json) =>
       SearchProduct$Query.fromJson(json);
@@ -42331,6 +43067,7 @@ class GetProductsByClassArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [pagination, kw$class];
+
   @override
   Map<String, dynamic> toJson() => _$GetProductsByClassArgumentsToJson(this);
 }
@@ -46524,6 +47261,7 @@ class GetProductsByClassQuery extends GraphQLQuery<GetProductsByClass$Query,
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetProductsByClass$Query parse(Map<String, dynamic> json) =>
       GetProductsByClass$Query.fromJson(json);
@@ -46542,6 +47280,7 @@ class GetProductsPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination];
+
   @override
   Map<String, dynamic> toJson() => _$GetProductsPaginationArgumentsToJson(this);
 }
@@ -50719,6 +51458,7 @@ class GetProductsPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetProductsPagination$Query parse(Map<String, dynamic> json) =>
       GetProductsPagination$Query.fromJson(json);
@@ -50743,6 +51483,7 @@ class GetProductsByCategoryPaginationArguments extends JsonSerializable
 
   @override
   List<Object?> get props => [pagination, category_ids];
+
   @override
   Map<String, dynamic> toJson() =>
       _$GetProductsByCategoryPaginationArgumentsToJson(this);
@@ -54940,6 +55681,7 @@ class GetProductsByCategoryPaginationQuery extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   GetProductsByCategoryPagination$Query parse(Map<String, dynamic> json) =>
       GetProductsByCategoryPagination$Query.fromJson(json);
@@ -54957,6 +55699,7 @@ class CreateProductArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input];
+
   @override
   Map<String, dynamic> toJson() => _$CreateProductArgumentsToJson(this);
 }
@@ -59063,6 +59806,7 @@ class CreateProductMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   CreateProduct$Mutation parse(Map<String, dynamic> json) =>
       CreateProduct$Mutation.fromJson(json);
@@ -59085,6 +59829,7 @@ class UpdateProductArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [input, id];
+
   @override
   Map<String, dynamic> toJson() => _$UpdateProductArgumentsToJson(this);
 }
@@ -63204,6 +63949,7 @@ class UpdateProductMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   UpdateProduct$Mutation parse(Map<String, dynamic> json) =>
       UpdateProduct$Mutation.fromJson(json);
@@ -63221,6 +63967,7 @@ class DeleteProductArguments extends JsonSerializable with EquatableMixin {
 
   @override
   List<Object?> get props => [id];
+
   @override
   Map<String, dynamic> toJson() => _$DeleteProductArgumentsToJson(this);
 }
@@ -67327,6 +68074,7 @@ class DeleteProductMutation
 
   @override
   List<Object?> get props => [document, operationName, variables];
+
   @override
   DeleteProduct$Mutation parse(Map<String, dynamic> json) =>
       DeleteProduct$Mutation.fromJson(json);
@@ -71420,6 +72168,7 @@ class ListenForProductCreatedSubscription extends GraphQLQuery<
 
   @override
   List<Object?> get props => [document, operationName];
+
   @override
   ListenForProductCreated$Subscription parse(Map<String, dynamic> json) =>
       ListenForProductCreated$Subscription.fromJson(json);
