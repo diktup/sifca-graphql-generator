@@ -1,0 +1,211 @@
+query getTaxes {
+  getTaxes {
+    id
+    label
+    externalId
+    value {
+      sign
+      value
+      type
+    }
+    use
+    product
+    company {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
+query tax($id: ID!) {
+  tax(id: $id) {
+    id
+    label
+    externalId
+    value {
+      sign
+      value
+      type
+    }
+    use
+    product
+    company {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getTaxesByCompany($company: ID!) {
+  getTaxesByCompany(company: $company) {
+    id
+    label
+    externalId
+    value {
+      sign
+      value
+      type
+    }
+    use
+    product
+    company {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getGlobalSalesTaxesByCompany($company: ID!) {
+  getGlobalSalesTaxesByCompany(company: $company) {
+    id
+    label
+    externalId
+    value {
+      sign
+      value
+      type
+    }
+    use
+    product
+    company {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getGlobalPurchasesTaxesByCompany($company: ID!) {
+  getGlobalPurchasesTaxesByCompany(company: $company) {
+    id
+    label
+    externalId
+    value {
+      sign
+      value
+      type
+    }
+    use
+    product
+    company {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getProductSalesTaxesByCompany($company: ID!) {
+  getProductSalesTaxesByCompany(company: $company) {
+    id
+    label
+    externalId
+    value {
+      sign
+      value
+      type
+    }
+    use
+    product
+    company {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getProductPurchasesTaxesByCompany($company: ID!) {
+  getProductPurchasesTaxesByCompany(company: $company) {
+    id
+    label
+    externalId
+    value {
+      sign
+      value
+      type
+    }
+    use
+    product
+    company {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getTaxesByCompanyPaginated($company: ID!, $searchString: String, $pagination: PaginationInput) {
+  getTaxesByCompanyPaginated(company: $company, searchString: $searchString, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      label
+      externalId
+      value {
+        sign
+        value
+        type
+      }
+      use
+      product
+      company {
+        id
+        name
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation createTax($input: TaxInput!) {
+  createTax(input: $input) {
+    id
+    label
+    externalId
+    value {
+      sign
+      value
+      type
+    }
+    use
+    product
+    company {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation updateTax($id: ID!, $input: TaxInput!) {
+  updateTax(id: $id, input: $input) {
+    id
+    label
+    externalId
+    value {
+      sign
+      value
+      type
+    }
+    use
+    product
+    company {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteTax($id: ID!) {
+  deleteTax(id: $id) {
+    success
+    message
+  }
+}
