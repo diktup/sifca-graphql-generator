@@ -7891,9 +7891,7 @@ GetSuppliers$Query$SupplierType _$GetSuppliers$Query$SupplierTypeFromJson(
       ..createdAt = DateTime.parse(json['createdAt'] as String)
       ..updatedAt = DateTime.parse(json['updatedAt'] as String)
       ..supplier = GetSuppliers$Query$SupplierType$TargetType.fromJson(
-          json['supplier'] as Map<String, dynamic>)
-      ..target = GetSuppliers$Query$SupplierType$TargetType.fromJson(
-          json['target'] as Map<String, dynamic>);
+          json['supplier'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetSuppliers$Query$SupplierTypeToJson(
         GetSuppliers$Query$SupplierType instance) =>
@@ -7904,7 +7902,6 @@ Map<String, dynamic> _$GetSuppliers$Query$SupplierTypeToJson(
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
       'supplier': instance.supplier.toJson(),
-      'target': instance.target.toJson(),
     };
 
 GetSuppliers$Query _$GetSuppliers$QueryFromJson(Map<String, dynamic> json) =>
@@ -15747,9 +15744,7 @@ Supplier$Query$SupplierType _$Supplier$Query$SupplierTypeFromJson(
       ..createdAt = DateTime.parse(json['createdAt'] as String)
       ..updatedAt = DateTime.parse(json['updatedAt'] as String)
       ..supplier = Supplier$Query$SupplierType$TargetType.fromJson(
-          json['supplier'] as Map<String, dynamic>)
-      ..target = Supplier$Query$SupplierType$TargetType.fromJson(
-          json['target'] as Map<String, dynamic>);
+          json['supplier'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Supplier$Query$SupplierTypeToJson(
         Supplier$Query$SupplierType instance) =>
@@ -15760,7 +15755,6 @@ Map<String, dynamic> _$Supplier$Query$SupplierTypeToJson(
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
       'supplier': instance.supplier.toJson(),
-      'target': instance.target.toJson(),
     };
 
 Supplier$Query _$Supplier$QueryFromJson(Map<String, dynamic> json) =>
@@ -23608,10 +23602,7 @@ GetPaginatedSuppliers$Query$PaginatedSupplierType$SupplierType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..supplier =
               GetPaginatedSuppliers$Query$PaginatedSupplierType$SupplierType$TargetType
-                  .fromJson(json['supplier'] as Map<String, dynamic>)
-          ..target =
-              GetPaginatedSuppliers$Query$PaginatedSupplierType$SupplierType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['supplier'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$GetPaginatedSuppliers$Query$PaginatedSupplierType$SupplierTypeToJson(
@@ -23624,7 +23615,6 @@ Map<String, dynamic>
           'createdAt': instance.createdAt.toIso8601String(),
           'updatedAt': instance.updatedAt.toIso8601String(),
           'supplier': instance.supplier.toJson(),
-          'target': instance.target.toJson(),
         };
 
 GetPaginatedSuppliers$Query$PaginatedSupplierType
@@ -31522,10 +31512,7 @@ FindSuppliersByTarget$Query$SupplierType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..supplier =
               FindSuppliersByTarget$Query$SupplierType$TargetType.fromJson(
-                  json['supplier'] as Map<String, dynamic>)
-          ..target =
-              FindSuppliersByTarget$Query$SupplierType$TargetType.fromJson(
-                  json['target'] as Map<String, dynamic>);
+                  json['supplier'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$FindSuppliersByTarget$Query$SupplierTypeToJson(
         FindSuppliersByTarget$Query$SupplierType instance) =>
@@ -31536,7 +31523,6 @@ Map<String, dynamic> _$FindSuppliersByTarget$Query$SupplierTypeToJson(
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
       'supplier': instance.supplier.toJson(),
-      'target': instance.target.toJson(),
     };
 
 FindSuppliersByTarget$Query _$FindSuppliersByTarget$QueryFromJson(
@@ -39413,10 +39399,7 @@ FindSuppliersByTargetPaginated$Query$PaginatedSupplierType$SupplierType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..supplier =
               FindSuppliersByTargetPaginated$Query$PaginatedSupplierType$SupplierType$TargetType
-                  .fromJson(json['supplier'] as Map<String, dynamic>)
-          ..target =
-              FindSuppliersByTargetPaginated$Query$PaginatedSupplierType$SupplierType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['supplier'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$FindSuppliersByTargetPaginated$Query$PaginatedSupplierType$SupplierTypeToJson(
@@ -39429,7 +39412,6 @@ Map<String, dynamic>
           'createdAt': instance.createdAt.toIso8601String(),
           'updatedAt': instance.updatedAt.toIso8601String(),
           'supplier': instance.supplier.toJson(),
-          'target': instance.target.toJson(),
         };
 
 FindSuppliersByTargetPaginated$Query$PaginatedSupplierType
@@ -47311,10 +47293,7 @@ SearchSupplierPaginated$Query$PaginatedSupplierType$SupplierType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..supplier =
               SearchSupplierPaginated$Query$PaginatedSupplierType$SupplierType$TargetType
-                  .fromJson(json['supplier'] as Map<String, dynamic>)
-          ..target =
-              SearchSupplierPaginated$Query$PaginatedSupplierType$SupplierType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['supplier'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$SearchSupplierPaginated$Query$PaginatedSupplierType$SupplierTypeToJson(
@@ -47327,7 +47306,6 @@ Map<String, dynamic>
           'createdAt': instance.createdAt.toIso8601String(),
           'updatedAt': instance.updatedAt.toIso8601String(),
           'supplier': instance.supplier.toJson(),
-          'target': instance.target.toJson(),
         };
 
 SearchSupplierPaginated$Query$PaginatedSupplierType
@@ -55203,9 +55181,7 @@ CreateSupplier$Mutation$SupplierType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..supplier = CreateSupplier$Mutation$SupplierType$TargetType.fromJson(
-              json['supplier'] as Map<String, dynamic>)
-          ..target = CreateSupplier$Mutation$SupplierType$TargetType.fromJson(
-              json['target'] as Map<String, dynamic>);
+              json['supplier'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateSupplier$Mutation$SupplierTypeToJson(
         CreateSupplier$Mutation$SupplierType instance) =>
@@ -55216,7 +55192,6 @@ Map<String, dynamic> _$CreateSupplier$Mutation$SupplierTypeToJson(
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
       'supplier': instance.supplier.toJson(),
-      'target': instance.target.toJson(),
     };
 
 CreateSupplier$Mutation _$CreateSupplier$MutationFromJson(
@@ -63079,9 +63054,7 @@ UpdateSupplier$Mutation$SupplierType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..supplier = UpdateSupplier$Mutation$SupplierType$TargetType.fromJson(
-              json['supplier'] as Map<String, dynamic>)
-          ..target = UpdateSupplier$Mutation$SupplierType$TargetType.fromJson(
-              json['target'] as Map<String, dynamic>);
+              json['supplier'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateSupplier$Mutation$SupplierTypeToJson(
         UpdateSupplier$Mutation$SupplierType instance) =>
@@ -63092,7 +63065,6 @@ Map<String, dynamic> _$UpdateSupplier$Mutation$SupplierTypeToJson(
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
       'supplier': instance.supplier.toJson(),
-      'target': instance.target.toJson(),
     };
 
 UpdateSupplier$Mutation _$UpdateSupplier$MutationFromJson(
