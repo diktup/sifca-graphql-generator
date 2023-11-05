@@ -200,5 +200,8 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/invoice.graphql
               output: lib/dart/invoice.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/supplier.graphql
+              output: lib/dart/supplier.graphql.dart
 
 
