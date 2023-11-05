@@ -194,3 +194,11 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/tax.graphql
               output: lib/dart/tax.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/delivery-note.graphql
+              output: lib/dart/delivery-note.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/invoice.graphql
+              output: lib/dart/invoice.graphql.dart
+
+
