@@ -189,19 +189,31 @@ targets:
               queries_glob: lib/graphql/target-plugins.graphql
               output: lib/dart/target-plugins.graphql.dart
             - schema: lib/schema.graphql
-              queries_glob: lib/graphql/order.graphql
-              output: lib/dart/order.graphql.dart            
+              queries_glob: lib/graphql/purchase-order.graphql
+              output: lib/dart/purchase-order.graphql.dart                   
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/sales-order.graphql
+              output: lib/dart/sales-order.graphql.dart            
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/tax.graphql
               output: lib/dart/tax.graphql.dart
             - schema: lib/schema.graphql
-              queries_glob: lib/graphql/delivery-note.graphql
-              output: lib/dart/delivery-note.graphql.dart
+              queries_glob: lib/graphql/purchase-delivery-note.graphql
+              output: lib/dart/purchase-delivery-note.graphql.dart
             - schema: lib/schema.graphql
-              queries_glob: lib/graphql/invoice.graphql
-              output: lib/dart/invoice.graphql.dart
+              queries_glob: lib/graphql/purchase-invoice.graphql
+              output: lib/dart/purchase-invoice.graphql.dart            
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/sales-invoice.graphql
+              output: lib/dart/sales-invoice.graphql.dart
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/supplier.graphql
               output: lib/dart/supplier.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/sales-issue-note.graphql
+              output: lib/dart/sales-issue-note.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/sales-delivery-note.graphql
+              output: lib/dart/sales-delivery-note.graphql.dart
 
 
