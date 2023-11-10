@@ -106,13 +106,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType
     _$SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentTypeFromJson(
@@ -148,12 +156,20 @@ SearchDepartmentsByTarget$Query$DepartmentPaginatedType
 
 Map<String, dynamic>
     _$SearchDepartmentsByTarget$Query$DepartmentPaginatedTypeToJson(
-            SearchDepartmentsByTarget$Query$DepartmentPaginatedType instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        SearchDepartmentsByTarget$Query$DepartmentPaginatedType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 SearchDepartmentsByTarget$Query _$SearchDepartmentsByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -174,11 +190,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 CreateDepartment$Mutation$DepartmentType
     _$CreateDepartment$Mutation$DepartmentTypeFromJson(
@@ -218,11 +242,20 @@ DepartmentInput _$DepartmentInputFromJson(Map<String, dynamic> json) =>
           : TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$DepartmentInputToJson(DepartmentInput instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'target': instance.target?.toJson(),
-    };
+Map<String, dynamic> _$DepartmentInputToJson(DepartmentInput instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', instance.target?.toJson());
+  return val;
+}
 
 UpdateDepartment$Mutation$DepartmentType
     _$UpdateDepartment$Mutation$DepartmentTypeFromJson(
@@ -316,12 +349,20 @@ SearchDepartmentsByTargetArguments _$SearchDepartmentsByTargetArgumentsFromJson(
     );
 
 Map<String, dynamic> _$SearchDepartmentsByTargetArgumentsToJson(
-        SearchDepartmentsByTargetArguments instance) =>
-    <String, dynamic>{
-      'searchString': instance.searchString,
-      'target': instance.target.toJson(),
-      'pagination': instance.pagination?.toJson(),
-    };
+    SearchDepartmentsByTargetArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('searchString', instance.searchString);
+  val['target'] = instance.target.toJson();
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 CreateDepartmentArguments _$CreateDepartmentArgumentsFromJson(
         Map<String, dynamic> json) =>

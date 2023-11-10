@@ -20,17 +20,25 @@ GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType$PictureTyp
 
 Map<String, dynamic>
     _$GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
-            GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType
     _$GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesTypeFromJson(
@@ -47,12 +55,20 @@ GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType
 
 Map<String, dynamic>
     _$GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesTypeToJson(
-            GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType
-                instance) =>
-        <String, dynamic>{
-          'square': instance.square?.toJson(),
-          'wide': instance.wide?.toJson(),
-        };
+        GetTargetPlugins$Query$TargetPluginType$PluginType$PluginPicturesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('square', instance.square?.toJson());
+  writeNotNull('wide', instance.wide?.toJson());
+  return val;
+}
 
 GetTargetPlugins$Query$TargetPluginType$PluginType
     _$GetTargetPlugins$Query$TargetPluginType$PluginTypeFromJson(
@@ -76,22 +92,31 @@ GetTargetPlugins$Query$TargetPluginType$PluginType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTargetPlugins$Query$TargetPluginType$PluginTypeToJson(
-        GetTargetPlugins$Query$TargetPluginType$PluginType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'code': instance.code,
-      'cost': instance.cost,
-      'url': instance.url,
-      'info': instance.info,
-      'category': instance.category,
-      'icon': instance.icon,
-      'recommended': instance.recommended,
-      'pictures': instance.pictures?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTargetPlugins$Query$TargetPluginType$PluginType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('code', instance.code);
+  writeNotNull('cost', instance.cost);
+  writeNotNull('url', instance.url);
+  writeNotNull('info', instance.info);
+  writeNotNull('category', instance.category);
+  writeNotNull('icon', instance.icon);
+  val['recommended'] = instance.recommended;
+  writeNotNull('pictures', instance.pictures?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTargetPlugins$Query$TargetPluginType
     _$GetTargetPlugins$Query$TargetPluginTypeFromJson(
@@ -142,17 +167,25 @@ TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType$PictureType
 
 Map<String, dynamic>
     _$TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
-            TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType
     _$TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesTypeFromJson(
@@ -169,12 +202,20 @@ TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType
 
 Map<String, dynamic>
     _$TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesTypeToJson(
-            TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType
-                instance) =>
-        <String, dynamic>{
-          'square': instance.square?.toJson(),
-          'wide': instance.wide?.toJson(),
-        };
+        TargetPlugin$Query$TargetPluginType$PluginType$PluginPicturesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('square', instance.square?.toJson());
+  writeNotNull('wide', instance.wide?.toJson());
+  return val;
+}
 
 TargetPlugin$Query$TargetPluginType$PluginType
     _$TargetPlugin$Query$TargetPluginType$PluginTypeFromJson(
@@ -198,22 +239,31 @@ TargetPlugin$Query$TargetPluginType$PluginType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$TargetPlugin$Query$TargetPluginType$PluginTypeToJson(
-        TargetPlugin$Query$TargetPluginType$PluginType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'code': instance.code,
-      'cost': instance.cost,
-      'url': instance.url,
-      'info': instance.info,
-      'category': instance.category,
-      'icon': instance.icon,
-      'recommended': instance.recommended,
-      'pictures': instance.pictures?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    TargetPlugin$Query$TargetPluginType$PluginType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('code', instance.code);
+  writeNotNull('cost', instance.cost);
+  writeNotNull('url', instance.url);
+  writeNotNull('info', instance.info);
+  writeNotNull('category', instance.category);
+  writeNotNull('icon', instance.icon);
+  val['recommended'] = instance.recommended;
+  writeNotNull('pictures', instance.pictures?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 TargetPlugin$Query$TargetPluginType
     _$TargetPlugin$Query$TargetPluginTypeFromJson(Map<String, dynamic> json) =>
@@ -257,17 +307,25 @@ FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesType
 
 Map<String, dynamic>
     _$FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
-            FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesType
     _$FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesTypeFromJson(
@@ -284,12 +342,20 @@ FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesType
 
 Map<String, dynamic>
     _$FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesTypeToJson(
-            FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesType
-                instance) =>
-        <String, dynamic>{
-          'square': instance.square?.toJson(),
-          'wide': instance.wide?.toJson(),
-        };
+        FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType$PluginPicturesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('square', instance.square?.toJson());
+  writeNotNull('wide', instance.wide?.toJson());
+  return val;
+}
 
 FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType
     _$FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginTypeFromJson(
@@ -314,23 +380,32 @@ FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType
 
 Map<String, dynamic>
     _$FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginTypeToJson(
-            FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'code': instance.code,
-          'cost': instance.cost,
-          'url': instance.url,
-          'info': instance.info,
-          'category': instance.category,
-          'icon': instance.icon,
-          'recommended': instance.recommended,
-          'pictures': instance.pictures?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        FindPluginByTargetAndPlugin$Query$TargetPluginType$PluginType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('code', instance.code);
+  writeNotNull('cost', instance.cost);
+  writeNotNull('url', instance.url);
+  writeNotNull('info', instance.info);
+  writeNotNull('category', instance.category);
+  writeNotNull('icon', instance.icon);
+  val['recommended'] = instance.recommended;
+  writeNotNull('pictures', instance.pictures?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 FindPluginByTargetAndPlugin$Query$TargetPluginType
     _$FindPluginByTargetAndPlugin$Query$TargetPluginTypeFromJson(
@@ -374,13 +449,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType$PictureType
     _$GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType$PictureTypeFromJson(
@@ -396,17 +479,25 @@ GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType$Pi
 
 Map<String, dynamic>
     _$GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
-            GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType
     _$GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesTypeFromJson(
@@ -423,12 +514,20 @@ GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType
 
 Map<String, dynamic>
     _$GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesTypeToJson(
-            GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType
-                instance) =>
-        <String, dynamic>{
-          'square': instance.square?.toJson(),
-          'wide': instance.wide?.toJson(),
-        };
+        GetTargetPluginsByTarget$Query$TargetPluginType$PluginType$PluginPicturesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('square', instance.square?.toJson());
+  writeNotNull('wide', instance.wide?.toJson());
+  return val;
+}
 
 GetTargetPluginsByTarget$Query$TargetPluginType$PluginType
     _$GetTargetPluginsByTarget$Query$TargetPluginType$PluginTypeFromJson(
@@ -451,24 +550,33 @@ GetTargetPluginsByTarget$Query$TargetPluginType$PluginType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String,
-    dynamic> _$GetTargetPluginsByTarget$Query$TargetPluginType$PluginTypeToJson(
-        GetTargetPluginsByTarget$Query$TargetPluginType$PluginType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'code': instance.code,
-      'cost': instance.cost,
-      'url': instance.url,
-      'info': instance.info,
-      'category': instance.category,
-      'icon': instance.icon,
-      'recommended': instance.recommended,
-      'pictures': instance.pictures?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic>
+    _$GetTargetPluginsByTarget$Query$TargetPluginType$PluginTypeToJson(
+        GetTargetPluginsByTarget$Query$TargetPluginType$PluginType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('code', instance.code);
+  writeNotNull('cost', instance.cost);
+  writeNotNull('url', instance.url);
+  writeNotNull('info', instance.info);
+  writeNotNull('category', instance.category);
+  writeNotNull('icon', instance.icon);
+  val['recommended'] = instance.recommended;
+  writeNotNull('pictures', instance.pictures?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTargetPluginsByTarget$Query$TargetPluginType
     _$GetTargetPluginsByTarget$Query$TargetPluginTypeFromJson(
@@ -519,17 +627,25 @@ CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType$Pictu
 
 Map<String, dynamic>
     _$CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
-            CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
     _$CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesTypeFromJson(
@@ -546,12 +662,20 @@ CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
 
 Map<String, dynamic>
     _$CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesTypeToJson(
-            CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
-                instance) =>
-        <String, dynamic>{
-          'square': instance.square?.toJson(),
-          'wide': instance.wide?.toJson(),
-        };
+        CreateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('square', instance.square?.toJson());
+  writeNotNull('wide', instance.wide?.toJson());
+  return val;
+}
 
 CreateTargetPlugin$Mutation$TargetPluginType$PluginType
     _$CreateTargetPlugin$Mutation$TargetPluginType$PluginTypeFromJson(
@@ -576,22 +700,31 @@ CreateTargetPlugin$Mutation$TargetPluginType$PluginType
 
 Map<String, dynamic>
     _$CreateTargetPlugin$Mutation$TargetPluginType$PluginTypeToJson(
-            CreateTargetPlugin$Mutation$TargetPluginType$PluginType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'code': instance.code,
-          'cost': instance.cost,
-          'url': instance.url,
-          'info': instance.info,
-          'category': instance.category,
-          'icon': instance.icon,
-          'recommended': instance.recommended,
-          'pictures': instance.pictures?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateTargetPlugin$Mutation$TargetPluginType$PluginType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('code', instance.code);
+  writeNotNull('cost', instance.cost);
+  writeNotNull('url', instance.url);
+  writeNotNull('info', instance.info);
+  writeNotNull('category', instance.category);
+  writeNotNull('icon', instance.icon);
+  val['recommended'] = instance.recommended;
+  writeNotNull('pictures', instance.pictures?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateTargetPlugin$Mutation$TargetPluginType
     _$CreateTargetPlugin$Mutation$TargetPluginTypeFromJson(
@@ -652,17 +785,25 @@ UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType$Pictu
 
 Map<String, dynamic>
     _$UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType$PictureTypeToJson(
-            UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
     _$UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesTypeFromJson(
@@ -679,12 +820,20 @@ UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
 
 Map<String, dynamic>
     _$UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesTypeToJson(
-            UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
-                instance) =>
-        <String, dynamic>{
-          'square': instance.square?.toJson(),
-          'wide': instance.wide?.toJson(),
-        };
+        UpdateTargetPlugin$Mutation$TargetPluginType$PluginType$PluginPicturesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('square', instance.square?.toJson());
+  writeNotNull('wide', instance.wide?.toJson());
+  return val;
+}
 
 UpdateTargetPlugin$Mutation$TargetPluginType$PluginType
     _$UpdateTargetPlugin$Mutation$TargetPluginType$PluginTypeFromJson(
@@ -709,22 +858,31 @@ UpdateTargetPlugin$Mutation$TargetPluginType$PluginType
 
 Map<String, dynamic>
     _$UpdateTargetPlugin$Mutation$TargetPluginType$PluginTypeToJson(
-            UpdateTargetPlugin$Mutation$TargetPluginType$PluginType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'code': instance.code,
-          'cost': instance.cost,
-          'url': instance.url,
-          'info': instance.info,
-          'category': instance.category,
-          'icon': instance.icon,
-          'recommended': instance.recommended,
-          'pictures': instance.pictures?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        UpdateTargetPlugin$Mutation$TargetPluginType$PluginType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('code', instance.code);
+  writeNotNull('cost', instance.cost);
+  writeNotNull('url', instance.url);
+  writeNotNull('info', instance.info);
+  writeNotNull('category', instance.category);
+  writeNotNull('icon', instance.icon);
+  val['recommended'] = instance.recommended;
+  writeNotNull('pictures', instance.pictures?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateTargetPlugin$Mutation$TargetPluginType
     _$UpdateTargetPlugin$Mutation$TargetPluginTypeFromJson(
@@ -770,12 +928,20 @@ TargetPluginUpdateInput _$TargetPluginUpdateInputFromJson(
     );
 
 Map<String, dynamic> _$TargetPluginUpdateInputToJson(
-        TargetPluginUpdateInput instance) =>
-    <String, dynamic>{
-      'plugin': instance.plugin,
-      'target': instance.target?.toJson(),
-      'id': instance.id,
-    };
+    TargetPluginUpdateInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('plugin', instance.plugin);
+  writeNotNull('target', instance.target?.toJson());
+  val['id'] = instance.id;
+  return val;
+}
 
 DeleteTargetPlugin$Mutation$DeleteResponseDtoType
     _$DeleteTargetPlugin$Mutation$DeleteResponseDtoTypeFromJson(

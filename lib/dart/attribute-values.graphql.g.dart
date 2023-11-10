@@ -14,11 +14,19 @@ GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType
 
 Map<String, dynamic>
     _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
     _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeFromJson(
@@ -41,19 +49,28 @@ GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType
 
 Map<String, dynamic>
     _$GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeToJson(
-            GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        GetAttributeValuesPagination$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 const _$ProductVarietyEnumEnumMap = {
   ProductVarietyEnum.product: 'PRODUCT',
@@ -103,13 +120,21 @@ GetAttributeValuesPagination$Query$AttributeValuePaginateType
 
 Map<String, dynamic>
     _$GetAttributeValuesPagination$Query$AttributeValuePaginateTypeToJson(
-            GetAttributeValuesPagination$Query$AttributeValuePaginateType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        GetAttributeValuesPagination$Query$AttributeValuePaginateType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetAttributeValuesPagination$Query _$GetAttributeValuesPagination$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -132,11 +157,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
     _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -146,11 +179,19 @@ GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeVa
 
 Map<String, dynamic>
     _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
     _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeFromJson(
@@ -173,19 +214,28 @@ GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeVa
 
 Map<String, dynamic>
     _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeToJson(
-            GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueType
     _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType$AttributeValueTypeFromJson(
@@ -227,13 +277,21 @@ GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType
 
 Map<String, dynamic>
     _$GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateTypeToJson(
-            GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        GetAttributeValuesByTargetPaginated$Query$AttributeValuePaginateType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetAttributeValuesByTargetPaginated$Query
     _$GetAttributeValuesByTargetPaginated$QueryFromJson(
@@ -259,13 +317,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 GetAttributeValues$Query$AttributeValueType$AttributeType$AttributePixelType
     _$GetAttributeValues$Query$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -275,11 +341,19 @@ GetAttributeValues$Query$AttributeValueType$AttributeType$AttributePixelType
 
 Map<String, dynamic>
     _$GetAttributeValues$Query$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            GetAttributeValues$Query$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        GetAttributeValues$Query$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 GetAttributeValues$Query$AttributeValueType$AttributeType
     _$GetAttributeValues$Query$AttributeValueType$AttributeTypeFromJson(
@@ -300,20 +374,29 @@ GetAttributeValues$Query$AttributeValueType$AttributeType
               : GetAttributeValues$Query$AttributeValueType$AttributeType$AttributePixelType
                   .fromJson(json['pixel'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$GetAttributeValues$Query$AttributeValueType$AttributeTypeToJson(
-        GetAttributeValues$Query$AttributeValueType$AttributeType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'isRequired': instance.isRequired,
-      'isMultipleChoice': instance.isMultipleChoice,
-      'pixel': instance.pixel?.toJson(),
-    };
+Map<String, dynamic>
+    _$GetAttributeValues$Query$AttributeValueType$AttributeTypeToJson(
+        GetAttributeValues$Query$AttributeValueType$AttributeType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 GetAttributeValues$Query$AttributeValueType
     _$GetAttributeValues$Query$AttributeValueTypeFromJson(
@@ -362,11 +445,19 @@ GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType$AttributePixel
 
 Map<String, dynamic>
     _$GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType
     _$GetAttributeValuesByTarget$Query$AttributeValueType$AttributeTypeFromJson(
@@ -389,19 +480,28 @@ GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType
 
 Map<String, dynamic>
     _$GetAttributeValuesByTarget$Query$AttributeValueType$AttributeTypeToJson(
-            GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        GetAttributeValuesByTarget$Query$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 GetAttributeValuesByTarget$Query$AttributeValueType
     _$GetAttributeValuesByTarget$Query$AttributeValueTypeFromJson(
@@ -453,11 +553,19 @@ GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType$AttributePi
 
 Map<String, dynamic>
     _$GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType
     _$GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeTypeFromJson(
@@ -480,19 +588,28 @@ GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType
 
 Map<String, dynamic>
     _$GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeTypeToJson(
-            GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        GetAttributeValuesByAttribute$Query$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 GetAttributeValuesByAttribute$Query$AttributeValueType
     _$GetAttributeValuesByAttribute$Query$AttributeValueTypeFromJson(
@@ -545,11 +662,19 @@ AttributeValue$Query$AttributeValueType$AttributeType$AttributePixelType
 
 Map<String, dynamic>
     _$AttributeValue$Query$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            AttributeValue$Query$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        AttributeValue$Query$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 AttributeValue$Query$AttributeValueType$AttributeType
     _$AttributeValue$Query$AttributeValueType$AttributeTypeFromJson(
@@ -572,18 +697,27 @@ AttributeValue$Query$AttributeValueType$AttributeType
 
 Map<String, dynamic>
     _$AttributeValue$Query$AttributeValueType$AttributeTypeToJson(
-            AttributeValue$Query$AttributeValueType$AttributeType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        AttributeValue$Query$AttributeValueType$AttributeType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 AttributeValue$Query$AttributeValueType
     _$AttributeValue$Query$AttributeValueTypeFromJson(
@@ -629,11 +763,19 @@ SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$Attribu
 
 Map<String, dynamic>
     _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
     _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeFromJson(
@@ -656,19 +798,28 @@ SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$Attribu
 
 Map<String, dynamic>
     _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeToJson(
-            SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueType
     _$SearchAttributeValue$Query$AttributeValuePaginateType$AttributeValueTypeFromJson(
@@ -710,12 +861,20 @@ SearchAttributeValue$Query$AttributeValuePaginateType
 
 Map<String, dynamic>
     _$SearchAttributeValue$Query$AttributeValuePaginateTypeToJson(
-            SearchAttributeValue$Query$AttributeValuePaginateType instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        SearchAttributeValue$Query$AttributeValuePaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 SearchAttributeValue$Query _$SearchAttributeValue$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -738,11 +897,19 @@ GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$Attribut
 
 Map<String, dynamic>
     _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
     _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeFromJson(
@@ -765,19 +932,28 @@ GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$Attribut
 
 Map<String, dynamic>
     _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeToJson(
-            GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueType
     _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType$AttributeValueTypeFromJson(
@@ -819,13 +995,21 @@ GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType
 
 Map<String, dynamic>
     _$GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateTypeToJson(
-            GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        GetAttributeValuesByAttributePaginated$Query$AttributeValuePaginateType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetAttributeValuesByAttributePaginated$Query
     _$GetAttributeValuesByAttributePaginated$QueryFromJson(
@@ -851,11 +1035,19 @@ SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType
 
 Map<String, dynamic>
     _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
     _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeFromJson(
@@ -878,19 +1070,28 @@ SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType
 
 Map<String, dynamic>
     _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeTypeToJson(
-            SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueType
     _$SearchAttributeValueByTarget$Query$AttributeValuePaginateType$AttributeValueTypeFromJson(
@@ -932,13 +1133,21 @@ SearchAttributeValueByTarget$Query$AttributeValuePaginateType
 
 Map<String, dynamic>
     _$SearchAttributeValueByTarget$Query$AttributeValuePaginateTypeToJson(
-            SearchAttributeValueByTarget$Query$AttributeValuePaginateType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        SearchAttributeValueByTarget$Query$AttributeValuePaginateType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 SearchAttributeValueByTarget$Query _$SearchAttributeValueByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -963,11 +1172,19 @@ FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeType$A
 
 Map<String, dynamic>
     _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeType
     _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeTypeFromJson(
@@ -990,19 +1207,28 @@ FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeType
 
 Map<String, dynamic>
     _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeTypeToJson(
-            FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 FindAttributeValueByExternalIdAndTarget$Query$AttributeValueType
     _$FindAttributeValueByExternalIdAndTarget$Query$AttributeValueTypeFromJson(
@@ -1054,11 +1280,19 @@ SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelTy
 
 Map<String, dynamic>
     _$SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType
     _$SyncOneAttributeValue$Mutation$AttributeValueType$AttributeTypeFromJson(
@@ -1081,19 +1315,28 @@ SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType
 
 Map<String, dynamic>
     _$SyncOneAttributeValue$Mutation$AttributeValueType$AttributeTypeToJson(
-            SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        SyncOneAttributeValue$Mutation$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 SyncOneAttributeValue$Mutation$AttributeValueType
     _$SyncOneAttributeValue$Mutation$AttributeValueTypeFromJson(
@@ -1157,11 +1400,19 @@ CreateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelTyp
 
 Map<String, dynamic>
     _$CreateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            CreateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        CreateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 CreateAttributeValue$Mutation$AttributeValueType$AttributeType
     _$CreateAttributeValue$Mutation$AttributeValueType$AttributeTypeFromJson(
@@ -1184,19 +1435,28 @@ CreateAttributeValue$Mutation$AttributeValueType$AttributeType
 
 Map<String, dynamic>
     _$CreateAttributeValue$Mutation$AttributeValueType$AttributeTypeToJson(
-            CreateAttributeValue$Mutation$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        CreateAttributeValue$Mutation$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 CreateAttributeValue$Mutation$AttributeValueType
     _$CreateAttributeValue$Mutation$AttributeValueTypeFromJson(
@@ -1243,11 +1503,19 @@ UpdateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelTyp
 
 Map<String, dynamic>
     _$UpdateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            UpdateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        UpdateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 UpdateAttributeValue$Mutation$AttributeValueType$AttributeType
     _$UpdateAttributeValue$Mutation$AttributeValueType$AttributeTypeFromJson(
@@ -1270,19 +1538,28 @@ UpdateAttributeValue$Mutation$AttributeValueType$AttributeType
 
 Map<String, dynamic>
     _$UpdateAttributeValue$Mutation$AttributeValueType$AttributeTypeToJson(
-            UpdateAttributeValue$Mutation$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        UpdateAttributeValue$Mutation$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 UpdateAttributeValue$Mutation$AttributeValueType
     _$UpdateAttributeValue$Mutation$AttributeValueTypeFromJson(
@@ -1330,12 +1607,20 @@ AttributeValueUpdateInput _$AttributeValueUpdateInputFromJson(
     );
 
 Map<String, dynamic> _$AttributeValueUpdateInputToJson(
-        AttributeValueUpdateInput instance) =>
-    <String, dynamic>{
-      'label': instance.label,
-      'attribute': instance.attribute,
-      'id': instance.id,
-    };
+    AttributeValueUpdateInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('attribute', instance.attribute);
+  val['id'] = instance.id;
+  return val;
+}
 
 DeleteAttributeValue$Mutation$DeleteResponseDtoType
     _$DeleteAttributeValue$Mutation$DeleteResponseDtoTypeFromJson(
@@ -1376,10 +1661,18 @@ GetAttributeValuesPaginationArguments
         );
 
 Map<String, dynamic> _$GetAttributeValuesPaginationArgumentsToJson(
-        GetAttributeValuesPaginationArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetAttributeValuesPaginationArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetAttributeValuesByTargetPaginatedArguments
     _$GetAttributeValuesByTargetPaginatedArgumentsFromJson(
@@ -1394,11 +1687,20 @@ GetAttributeValuesByTargetPaginatedArguments
         );
 
 Map<String, dynamic> _$GetAttributeValuesByTargetPaginatedArgumentsToJson(
-        GetAttributeValuesByTargetPaginatedArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetAttributeValuesByTargetPaginatedArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetAttributeValuesByTargetArguments
     _$GetAttributeValuesByTargetArgumentsFromJson(Map<String, dynamic> json) =>
@@ -1449,11 +1751,19 @@ SearchAttributeValueArguments _$SearchAttributeValueArgumentsFromJson(
     );
 
 Map<String, dynamic> _$SearchAttributeValueArgumentsToJson(
-        SearchAttributeValueArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-      'searchString': instance.searchString,
-    };
+    SearchAttributeValueArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  val['searchString'] = instance.searchString;
+  return val;
+}
 
 GetAttributeValuesByAttributePaginatedArguments
     _$GetAttributeValuesByAttributePaginatedArgumentsFromJson(
@@ -1467,11 +1777,19 @@ GetAttributeValuesByAttributePaginatedArguments
         );
 
 Map<String, dynamic> _$GetAttributeValuesByAttributePaginatedArgumentsToJson(
-        GetAttributeValuesByAttributePaginatedArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-      'attributId': instance.attributId,
-    };
+    GetAttributeValuesByAttributePaginatedArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  val['attributId'] = instance.attributId;
+  return val;
+}
 
 SearchAttributeValueByTargetArguments
     _$SearchAttributeValueByTargetArgumentsFromJson(
@@ -1487,12 +1805,20 @@ SearchAttributeValueByTargetArguments
         );
 
 Map<String, dynamic> _$SearchAttributeValueByTargetArgumentsToJson(
-        SearchAttributeValueByTargetArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-      'searchString': instance.searchString,
-      'target': instance.target.toJson(),
-    };
+    SearchAttributeValueByTargetArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  val['searchString'] = instance.searchString;
+  val['target'] = instance.target.toJson();
+  return val;
+}
 
 FindAttributeValueByExternalIdAndTargetArguments
     _$FindAttributeValueByExternalIdAndTargetArgumentsFromJson(

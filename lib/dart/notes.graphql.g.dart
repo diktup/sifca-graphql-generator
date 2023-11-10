@@ -17,15 +17,23 @@ GetNotes$Query$NotesType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$GetNotes$Query$NotesType$PictureTypeToJson(
-        GetNotes$Query$NotesType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-    };
+    GetNotes$Query$NotesType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetNotes$Query$NotesType$LabelType _$GetNotes$Query$NotesType$LabelTypeFromJson(
         Map<String, dynamic> json) =>
@@ -40,16 +48,25 @@ GetNotes$Query$NotesType$LabelType _$GetNotes$Query$NotesType$LabelTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetNotes$Query$NotesType$LabelTypeToJson(
-        GetNotes$Query$NotesType$LabelType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'icon': instance.icon,
-      'color': instance.color,
-      'category': _$LabelTypeEnumEnumMap[instance.category],
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetNotes$Query$NotesType$LabelType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  writeNotNull('color', instance.color);
+  writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$LabelTypeEnumEnumMap = {
   LabelTypeEnum.notes: 'NOTES',
@@ -76,17 +93,26 @@ GetNotes$Query$NotesType _$GetNotes$Query$NotesTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetNotes$Query$NotesTypeToJson(
-        GetNotes$Query$NotesType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'title': instance.title,
-      'isArchived': instance.isArchived,
-      'description': instance.description,
-      'picture': instance.picture?.toJson(),
-      'labels': instance.labels.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetNotes$Query$NotesType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+    'isArchived': instance.isArchived,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('picture', instance.picture?.toJson());
+  val['labels'] = instance.labels.map((e) => e.toJson()).toList();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetNotes$Query _$GetNotes$QueryFromJson(Map<String, dynamic> json) =>
     GetNotes$Query()
@@ -111,15 +137,23 @@ GetNote$Query$NotesType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$GetNote$Query$NotesType$PictureTypeToJson(
-        GetNote$Query$NotesType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-    };
+    GetNote$Query$NotesType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetNote$Query$NotesType$LabelType _$GetNote$Query$NotesType$LabelTypeFromJson(
         Map<String, dynamic> json) =>
@@ -134,16 +168,25 @@ GetNote$Query$NotesType$LabelType _$GetNote$Query$NotesType$LabelTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetNote$Query$NotesType$LabelTypeToJson(
-        GetNote$Query$NotesType$LabelType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'icon': instance.icon,
-      'color': instance.color,
-      'category': _$LabelTypeEnumEnumMap[instance.category],
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetNote$Query$NotesType$LabelType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  writeNotNull('color', instance.color);
+  writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetNote$Query$NotesType _$GetNote$Query$NotesTypeFromJson(
         Map<String, dynamic> json) =>
@@ -164,17 +207,26 @@ GetNote$Query$NotesType _$GetNote$Query$NotesTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetNote$Query$NotesTypeToJson(
-        GetNote$Query$NotesType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'title': instance.title,
-      'isArchived': instance.isArchived,
-      'description': instance.description,
-      'picture': instance.picture?.toJson(),
-      'labels': instance.labels.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetNote$Query$NotesType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+    'isArchived': instance.isArchived,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('picture', instance.picture?.toJson());
+  val['labels'] = instance.labels.map((e) => e.toJson()).toList();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetNote$Query _$GetNote$QueryFromJson(Map<String, dynamic> json) =>
     GetNote$Query()
@@ -198,15 +250,23 @@ GetNotesByTarget$Query$NotesType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$GetNotesByTarget$Query$NotesType$PictureTypeToJson(
-        GetNotesByTarget$Query$NotesType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-    };
+    GetNotesByTarget$Query$NotesType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetNotesByTarget$Query$NotesType$LabelType
     _$GetNotesByTarget$Query$NotesType$LabelTypeFromJson(
@@ -223,16 +283,25 @@ GetNotesByTarget$Query$NotesType$LabelType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetNotesByTarget$Query$NotesType$LabelTypeToJson(
-        GetNotesByTarget$Query$NotesType$LabelType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'icon': instance.icon,
-      'color': instance.color,
-      'category': _$LabelTypeEnumEnumMap[instance.category],
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetNotesByTarget$Query$NotesType$LabelType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  writeNotNull('color', instance.color);
+  writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetNotesByTarget$Query$NotesType _$GetNotesByTarget$Query$NotesTypeFromJson(
         Map<String, dynamic> json) =>
@@ -253,17 +322,26 @@ GetNotesByTarget$Query$NotesType _$GetNotesByTarget$Query$NotesTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetNotesByTarget$Query$NotesTypeToJson(
-        GetNotesByTarget$Query$NotesType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'title': instance.title,
-      'isArchived': instance.isArchived,
-      'description': instance.description,
-      'picture': instance.picture?.toJson(),
-      'labels': instance.labels.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetNotesByTarget$Query$NotesType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+    'isArchived': instance.isArchived,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('picture', instance.picture?.toJson());
+  val['labels'] = instance.labels.map((e) => e.toJson()).toList();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetNotesByTarget$Query _$GetNotesByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -288,13 +366,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 FindNotesByLabelAndTarget$Query$NotesType$PictureType
     _$FindNotesByLabelAndTarget$Query$NotesType$PictureTypeFromJson(
@@ -309,15 +395,23 @@ FindNotesByLabelAndTarget$Query$NotesType$PictureType
 
 Map<String, dynamic>
     _$FindNotesByLabelAndTarget$Query$NotesType$PictureTypeToJson(
-            FindNotesByLabelAndTarget$Query$NotesType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindNotesByLabelAndTarget$Query$NotesType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindNotesByLabelAndTarget$Query$NotesType$LabelType
     _$FindNotesByLabelAndTarget$Query$NotesType$LabelTypeFromJson(
@@ -335,16 +429,25 @@ FindNotesByLabelAndTarget$Query$NotesType$LabelType
 
 Map<String, dynamic>
     _$FindNotesByLabelAndTarget$Query$NotesType$LabelTypeToJson(
-            FindNotesByLabelAndTarget$Query$NotesType$LabelType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'icon': instance.icon,
-          'color': instance.color,
-          'category': _$LabelTypeEnumEnumMap[instance.category],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        FindNotesByLabelAndTarget$Query$NotesType$LabelType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  writeNotNull('color', instance.color);
+  writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 FindNotesByLabelAndTarget$Query$NotesType
     _$FindNotesByLabelAndTarget$Query$NotesTypeFromJson(
@@ -367,17 +470,26 @@ FindNotesByLabelAndTarget$Query$NotesType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$FindNotesByLabelAndTarget$Query$NotesTypeToJson(
-        FindNotesByLabelAndTarget$Query$NotesType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'title': instance.title,
-      'isArchived': instance.isArchived,
-      'description': instance.description,
-      'picture': instance.picture?.toJson(),
-      'labels': instance.labels.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    FindNotesByLabelAndTarget$Query$NotesType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+    'isArchived': instance.isArchived,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('picture', instance.picture?.toJson());
+  val['labels'] = instance.labels.map((e) => e.toJson()).toList();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 FindNotesByLabelAndTarget$Query _$FindNotesByLabelAndTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -407,15 +519,23 @@ CreateNote$Mutation$NotesType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$CreateNote$Mutation$NotesType$PictureTypeToJson(
-        CreateNote$Mutation$NotesType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-    };
+    CreateNote$Mutation$NotesType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 CreateNote$Mutation$NotesType$LabelType
     _$CreateNote$Mutation$NotesType$LabelTypeFromJson(
@@ -432,16 +552,25 @@ CreateNote$Mutation$NotesType$LabelType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateNote$Mutation$NotesType$LabelTypeToJson(
-        CreateNote$Mutation$NotesType$LabelType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'icon': instance.icon,
-      'color': instance.color,
-      'category': _$LabelTypeEnumEnumMap[instance.category],
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateNote$Mutation$NotesType$LabelType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  writeNotNull('color', instance.color);
+  writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateNote$Mutation$NotesType _$CreateNote$Mutation$NotesTypeFromJson(
         Map<String, dynamic> json) =>
@@ -462,17 +591,26 @@ CreateNote$Mutation$NotesType _$CreateNote$Mutation$NotesTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateNote$Mutation$NotesTypeToJson(
-        CreateNote$Mutation$NotesType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'title': instance.title,
-      'isArchived': instance.isArchived,
-      'description': instance.description,
-      'picture': instance.picture?.toJson(),
-      'labels': instance.labels.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateNote$Mutation$NotesType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+    'isArchived': instance.isArchived,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('picture', instance.picture?.toJson());
+  val['labels'] = instance.labels.map((e) => e.toJson()).toList();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateNote$Mutation _$CreateNote$MutationFromJson(Map<String, dynamic> json) =>
     CreateNote$Mutation()
@@ -495,26 +633,44 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
-    <String, dynamic>{
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-    };
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  val['baseUrl'] = instance.baseUrl;
+  val['path'] = instance.path;
+  return val;
+}
 
 TaskInput _$TaskInputFromJson(Map<String, dynamic> json) => TaskInput(
       title: json['title'] as String,
       done: json['done'] as bool?,
     );
 
-Map<String, dynamic> _$TaskInputToJson(TaskInput instance) => <String, dynamic>{
-      'title': instance.title,
-      'done': instance.done,
-    };
+Map<String, dynamic> _$TaskInputToJson(TaskInput instance) {
+  final val = <String, dynamic>{
+    'title': instance.title,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('done', instance.done);
+  return val;
+}
 
 UpdateNote$Mutation$NotesType$PictureType
     _$UpdateNote$Mutation$NotesType$PictureTypeFromJson(
@@ -528,15 +684,23 @@ UpdateNote$Mutation$NotesType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$UpdateNote$Mutation$NotesType$PictureTypeToJson(
-        UpdateNote$Mutation$NotesType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-    };
+    UpdateNote$Mutation$NotesType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 UpdateNote$Mutation$NotesType$LabelType
     _$UpdateNote$Mutation$NotesType$LabelTypeFromJson(
@@ -553,16 +717,25 @@ UpdateNote$Mutation$NotesType$LabelType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateNote$Mutation$NotesType$LabelTypeToJson(
-        UpdateNote$Mutation$NotesType$LabelType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'icon': instance.icon,
-      'color': instance.color,
-      'category': _$LabelTypeEnumEnumMap[instance.category],
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateNote$Mutation$NotesType$LabelType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  writeNotNull('color', instance.color);
+  writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateNote$Mutation$NotesType _$UpdateNote$Mutation$NotesTypeFromJson(
         Map<String, dynamic> json) =>
@@ -583,17 +756,26 @@ UpdateNote$Mutation$NotesType _$UpdateNote$Mutation$NotesTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateNote$Mutation$NotesTypeToJson(
-        UpdateNote$Mutation$NotesType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'title': instance.title,
-      'isArchived': instance.isArchived,
-      'description': instance.description,
-      'picture': instance.picture?.toJson(),
-      'labels': instance.labels.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateNote$Mutation$NotesType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+    'isArchived': instance.isArchived,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('picture', instance.picture?.toJson());
+  val['labels'] = instance.labels.map((e) => e.toJson()).toList();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateNote$Mutation _$UpdateNote$MutationFromJson(Map<String, dynamic> json) =>
     UpdateNote$Mutation()
@@ -681,17 +863,25 @@ CreateNoteArguments _$CreateNoteArgumentsFromJson(Map<String, dynamic> json) =>
       target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$CreateNoteArgumentsToJson(
-        CreateNoteArguments instance) =>
-    <String, dynamic>{
-      'title': instance.title,
-      'isArchived': instance.isArchived,
-      'description': instance.description,
-      'picture': instance.picture.toJson(),
-      'tasks': instance.tasks?.map((e) => e.toJson()).toList(),
-      'labels': instance.labels,
-      'target': instance.target.toJson(),
-    };
+Map<String, dynamic> _$CreateNoteArgumentsToJson(CreateNoteArguments instance) {
+  final val = <String, dynamic>{
+    'title': instance.title,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('isArchived', instance.isArchived);
+  val['description'] = instance.description;
+  val['picture'] = instance.picture.toJson();
+  writeNotNull('tasks', instance.tasks?.map((e) => e.toJson()).toList());
+  val['labels'] = instance.labels;
+  val['target'] = instance.target.toJson();
+  return val;
+}
 
 UpdateNoteArguments _$UpdateNoteArgumentsFromJson(Map<String, dynamic> json) =>
     UpdateNoteArguments(
@@ -708,18 +898,26 @@ UpdateNoteArguments _$UpdateNoteArgumentsFromJson(Map<String, dynamic> json) =>
       target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$UpdateNoteArgumentsToJson(
-        UpdateNoteArguments instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'title': instance.title,
-      'isArchived': instance.isArchived,
-      'description': instance.description,
-      'picture': instance.picture.toJson(),
-      'tasks': instance.tasks?.map((e) => e.toJson()).toList(),
-      'labels': instance.labels,
-      'target': instance.target.toJson(),
-    };
+Map<String, dynamic> _$UpdateNoteArgumentsToJson(UpdateNoteArguments instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('isArchived', instance.isArchived);
+  val['description'] = instance.description;
+  val['picture'] = instance.picture.toJson();
+  writeNotNull('tasks', instance.tasks?.map((e) => e.toJson()).toList());
+  writeNotNull('labels', instance.labels);
+  val['target'] = instance.target.toJson();
+  return val;
+}
 
 DeleteNoteArguments _$DeleteNoteArgumentsFromJson(Map<String, dynamic> json) =>
     DeleteNoteArguments(

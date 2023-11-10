@@ -19,16 +19,24 @@ CorporateRating$Query$CorporateRatingType$UserType$PictureType
 
 Map<String, dynamic>
     _$CorporateRating$Query$CorporateRatingType$UserType$PictureTypeToJson(
-            CorporateRating$Query$CorporateRatingType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        CorporateRating$Query$CorporateRatingType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 CorporateRating$Query$CorporateRatingType$UserType
     _$CorporateRating$Query$CorporateRatingType$UserTypeFromJson(
@@ -47,16 +55,25 @@ CorporateRating$Query$CorporateRatingType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CorporateRating$Query$CorporateRatingType$UserTypeToJson(
-        CorporateRating$Query$CorporateRatingType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'picture': instance.picture?.toJson(),
-    };
+    CorporateRating$Query$CorporateRatingType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 const _$GenderEnumMap = {
   Gender.male: 'MALE',
@@ -78,16 +95,24 @@ CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$PictureT
 
 Map<String, dynamic>
     _$CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
-            CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType
     _$CorporateRating$Query$CorporateRatingType$InternalProductType$MediaTypeFromJson(
@@ -109,13 +134,21 @@ CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$CorporateRating$Query$CorporateRatingType$InternalProductType$MediaTypeToJson(
-            CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CorporateRating$Query$CorporateRatingType$InternalProductType$DiscountDtoType
     _$CorporateRating$Query$CorporateRatingType$InternalProductType$DiscountDtoTypeFromJson(
@@ -128,12 +161,20 @@ CorporateRating$Query$CorporateRatingType$InternalProductType$DiscountDtoType
 
 Map<String, dynamic>
     _$CorporateRating$Query$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
-            CorporateRating$Query$CorporateRatingType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        CorporateRating$Query$CorporateRatingType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 const _$DiscountTypeEnumMap = {
   DiscountType.amount: 'AMOUNT',
@@ -154,16 +195,24 @@ CorporateRating$Query$CorporateRatingType$InternalProductType$PictureType
 
 Map<String, dynamic>
     _$CorporateRating$Query$CorporateRatingType$InternalProductType$PictureTypeToJson(
-            CorporateRating$Query$CorporateRatingType$InternalProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        CorporateRating$Query$CorporateRatingType$InternalProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType
     _$CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -174,12 +223,21 @@ CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategoryT
 
 Map<String, dynamic>
     _$CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
-            CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 CorporateRating$Query$CorporateRatingType$InternalProductType
     _$CorporateRating$Query$CorporateRatingType$InternalProductTypeFromJson(
@@ -230,29 +288,37 @@ CorporateRating$Query$CorporateRatingType$InternalProductType
 
 Map<String, dynamic>
     _$CorporateRating$Query$CorporateRatingType$InternalProductTypeToJson(
-            CorporateRating$Query$CorporateRatingType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        CorporateRating$Query$CorporateRatingType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$ProductStatusEnumEnumMap = {
   ProductStatusEnum.active: 'ACTIVE',
@@ -276,12 +342,20 @@ CorporateRating$Query$CorporateRatingType$CorporateRatingDefinitionType
 
 Map<String, dynamic>
     _$CorporateRating$Query$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
-            CorporateRating$Query$CorporateRatingType$CorporateRatingDefinitionType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'reviewType': instance.reviewType,
-        };
+        CorporateRating$Query$CorporateRatingType$CorporateRatingDefinitionType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('reviewType', instance.reviewType);
+  return val;
+}
 
 CorporateRating$Query$CorporateRatingType
     _$CorporateRating$Query$CorporateRatingTypeFromJson(
@@ -303,17 +377,26 @@ CorporateRating$Query$CorporateRatingType
                   .fromJson(json['reviewType'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CorporateRating$Query$CorporateRatingTypeToJson(
-        CorporateRating$Query$CorporateRatingType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'mark': instance.mark,
-      'comment': instance.comment,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user.toJson(),
-      'product': instance.product?.toJson(),
-      'reviewType': instance.reviewType.toJson(),
-    };
+    CorporateRating$Query$CorporateRatingType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'mark': instance.mark,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('comment', instance.comment);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['user'] = instance.user.toJson();
+  writeNotNull('product', instance.product?.toJson());
+  val['reviewType'] = instance.reviewType.toJson();
+  return val;
+}
 
 CorporateRating$Query _$CorporateRating$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -340,16 +423,24 @@ GetAllCorporateRatings$Query$CorporateRatingType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetAllCorporateRatings$Query$CorporateRatingType$UserType$PictureTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetAllCorporateRatings$Query$CorporateRatingType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetAllCorporateRatings$Query$CorporateRatingType$UserType
     _$GetAllCorporateRatings$Query$CorporateRatingType$UserTypeFromJson(
@@ -367,18 +458,27 @@ GetAllCorporateRatings$Query$CorporateRatingType$UserType
               : GetAllCorporateRatings$Query$CorporateRatingType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$GetAllCorporateRatings$Query$CorporateRatingType$UserTypeToJson(
-        GetAllCorporateRatings$Query$CorporateRatingType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'picture': instance.picture?.toJson(),
-    };
+Map<String, dynamic>
+    _$GetAllCorporateRatings$Query$CorporateRatingType$UserTypeToJson(
+        GetAllCorporateRatings$Query$CorporateRatingType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType$PictureType
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -393,16 +493,24 @@ GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType$P
 
 Map<String, dynamic>
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaTypeFromJson(
@@ -424,13 +532,21 @@ GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$DiscountDtoType
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$DiscountDtoTypeFromJson(
@@ -443,12 +559,20 @@ GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$DiscountDto
 
 Map<String, dynamic>
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$PictureType
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$PictureTypeFromJson(
@@ -463,16 +587,24 @@ GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$PictureType
 
 Map<String, dynamic>
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$PictureTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -483,12 +615,21 @@ GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCa
 
 Map<String, dynamic>
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductTypeFromJson(
@@ -539,29 +680,37 @@ GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType
 
 Map<String, dynamic>
     _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetAllCorporateRatings$Query$CorporateRatingType$CorporateRatingDefinitionType
     _$GetAllCorporateRatings$Query$CorporateRatingType$CorporateRatingDefinitionTypeFromJson(
@@ -572,12 +721,20 @@ GetAllCorporateRatings$Query$CorporateRatingType$CorporateRatingDefinitionType
 
 Map<String, dynamic>
     _$GetAllCorporateRatings$Query$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
-            GetAllCorporateRatings$Query$CorporateRatingType$CorporateRatingDefinitionType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'reviewType': instance.reviewType,
-        };
+        GetAllCorporateRatings$Query$CorporateRatingType$CorporateRatingDefinitionType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('reviewType', instance.reviewType);
+  return val;
+}
 
 GetAllCorporateRatings$Query$CorporateRatingType
     _$GetAllCorporateRatings$Query$CorporateRatingTypeFromJson(
@@ -599,17 +756,26 @@ GetAllCorporateRatings$Query$CorporateRatingType
                   .fromJson(json['reviewType'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetAllCorporateRatings$Query$CorporateRatingTypeToJson(
-        GetAllCorporateRatings$Query$CorporateRatingType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'mark': instance.mark,
-      'comment': instance.comment,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user.toJson(),
-      'product': instance.product?.toJson(),
-      'reviewType': instance.reviewType.toJson(),
-    };
+    GetAllCorporateRatings$Query$CorporateRatingType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'mark': instance.mark,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('comment', instance.comment);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['user'] = instance.user.toJson();
+  writeNotNull('product', instance.product?.toJson());
+  val['reviewType'] = instance.reviewType.toJson();
+  return val;
+}
 
 GetAllCorporateRatings$Query _$GetAllCorporateRatings$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -640,16 +806,24 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeFromJson(
@@ -669,17 +843,26 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureType
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -694,16 +877,24 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeFromJson(
@@ -725,13 +916,21 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoTypeFromJson(
@@ -744,12 +943,20 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureType
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureTypeFromJson(
@@ -764,16 +971,24 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -784,12 +999,21 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductTypeFromJson(
@@ -840,29 +1064,37 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionType
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionTypeFromJson(
@@ -873,12 +1105,20 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'reviewType': instance.reviewType,
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('reviewType', instance.reviewType);
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTypeFromJson(
@@ -902,18 +1142,27 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'mark': instance.mark,
-          'comment': instance.comment,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'user': instance.user.toJson(),
-          'product': instance.product?.toJson(),
-          'reviewType': instance.reviewType.toJson(),
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'mark': instance.mark,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('comment', instance.comment);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['user'] = instance.user.toJson();
+  writeNotNull('product', instance.product?.toJson());
+  val['reviewType'] = instance.reviewType.toJson();
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateTypeFromJson(
@@ -929,13 +1178,21 @@ GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType
 
 Map<String, dynamic>
     _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateTypeToJson(
-            GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetCorporateRatingsBytarget$Query _$GetCorporateRatingsBytarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -960,13 +1217,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
     PaginationInput(
@@ -974,11 +1239,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureTypeFromJson(
@@ -993,16 +1266,24 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserTy
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeFromJson(
@@ -1022,17 +1303,26 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserTy
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureType
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -1047,16 +1337,24 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$Intern
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeFromJson(
@@ -1078,13 +1376,21 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$Intern
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoTypeFromJson(
@@ -1097,12 +1403,20 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$Intern
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureType
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureTypeFromJson(
@@ -1117,16 +1431,24 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$Intern
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -1137,12 +1459,21 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$Intern
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductTypeFromJson(
@@ -1193,29 +1524,37 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$Intern
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionType
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionTypeFromJson(
@@ -1226,12 +1565,20 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$Corpor
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'reviewType': instance.reviewType,
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('reviewType', instance.reviewType);
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingTypeFromJson(
@@ -1255,18 +1602,27 @@ GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'mark': instance.mark,
-          'comment': instance.comment,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'user': instance.user.toJson(),
-          'product': instance.product?.toJson(),
-          'reviewType': instance.reviewType.toJson(),
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'mark': instance.mark,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('comment', instance.comment);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['user'] = instance.user.toJson();
+  writeNotNull('product', instance.product?.toJson());
+  val['reviewType'] = instance.reviewType.toJson();
+  return val;
+}
 
 GetCorporateRatings$Query$CorporateRatingPaginateType
     _$GetCorporateRatings$Query$CorporateRatingPaginateTypeFromJson(
@@ -1282,12 +1638,20 @@ GetCorporateRatings$Query$CorporateRatingPaginateType
 
 Map<String, dynamic>
     _$GetCorporateRatings$Query$CorporateRatingPaginateTypeToJson(
-            GetCorporateRatings$Query$CorporateRatingPaginateType instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatings$Query$CorporateRatingPaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetCorporateRatings$Query _$GetCorporateRatings$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -1315,16 +1679,24 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$Pictu
 
 Map<String, dynamic>
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PictureTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserTypeFromJson(
@@ -1344,17 +1716,26 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
 
 Map<String, dynamic>
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaType$PictureType
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -1369,16 +1750,24 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProduc
 
 Map<String, dynamic>
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaType
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaTypeFromJson(
@@ -1400,13 +1789,21 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProduc
 
 Map<String, dynamic>
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$DiscountDtoType
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$DiscountDtoTypeFromJson(
@@ -1419,12 +1816,20 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProduc
 
 Map<String, dynamic>
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$PictureType
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$PictureTypeFromJson(
@@ -1439,16 +1844,24 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProduc
 
 Map<String, dynamic>
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$PictureTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -1459,12 +1872,21 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProduc
 
 Map<String, dynamic>
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductTypeFromJson(
@@ -1515,29 +1937,37 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProduc
 
 Map<String, dynamic>
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$CorporateRatingDefinitionType
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$CorporateRatingDefinitionTypeFromJson(
@@ -1548,12 +1978,20 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$CorporateRatin
 
 Map<String, dynamic>
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$CorporateRatingDefinitionType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'reviewType': instance.reviewType,
-        };
+        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$CorporateRatingDefinitionType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('reviewType', instance.reviewType);
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingTypeFromJson(
@@ -1577,18 +2015,27 @@ GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType
 
 Map<String, dynamic>
     _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingTypeToJson(
-            GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'mark': instance.mark,
-          'comment': instance.comment,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'user': instance.user.toJson(),
-          'product': instance.product?.toJson(),
-          'reviewType': instance.reviewType.toJson(),
-        };
+        GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'mark': instance.mark,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('comment', instance.comment);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['user'] = instance.user.toJson();
+  writeNotNull('product', instance.product?.toJson());
+  val['reviewType'] = instance.reviewType.toJson();
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProduct$Query
     _$GetCurrentUserCorporateRatingsByProduct$QueryFromJson(
@@ -1619,16 +2066,24 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeFromJson(
@@ -1648,17 +2103,26 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureType
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -1673,16 +2137,24 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeFromJson(
@@ -1704,13 +2176,21 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoTypeFromJson(
@@ -1723,12 +2203,20 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureType
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureTypeFromJson(
@@ -1743,16 +2231,24 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -1763,12 +2259,21 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductTypeFromJson(
@@ -1819,29 +2324,37 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionType
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionTypeFromJson(
@@ -1852,12 +2365,20 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'reviewType': instance.reviewType,
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$CorporateRatingDefinitionType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('reviewType', instance.reviewType);
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTypeFromJson(
@@ -1881,18 +2402,27 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTy
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'mark': instance.mark,
-          'comment': instance.comment,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'user': instance.user.toJson(),
-          'product': instance.product?.toJson(),
-          'reviewType': instance.reviewType.toJson(),
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'mark': instance.mark,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('comment', instance.comment);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['user'] = instance.user.toJson();
+  writeNotNull('product', instance.product?.toJson());
+  val['reviewType'] = instance.reviewType.toJson();
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateTypeFromJson(
@@ -1908,13 +2438,21 @@ GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateTypeToJson(
-            GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetCorporateRatingsByProduct$Query _$GetCorporateRatingsByProduct$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -1944,16 +2482,24 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PictureTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserTypeFromJson(
@@ -1973,17 +2519,26 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaType$PictureType
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -1998,16 +2553,24 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaType
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaTypeFromJson(
@@ -2029,13 +2592,21 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$DiscountDtoType
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$DiscountDtoTypeFromJson(
@@ -2048,12 +2619,20 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$PictureType
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$PictureTypeFromJson(
@@ -2068,16 +2647,24 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$PictureTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategoryType
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -2088,12 +2675,21 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductTypeFromJson(
@@ -2144,29 +2740,37 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$CorporateRatingDefinitionType
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$CorporateRatingDefinitionTypeFromJson(
@@ -2177,12 +2781,20 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$CorporateRatingDefinitionType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'reviewType': instance.reviewType,
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$CorporateRatingDefinitionType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('reviewType', instance.reviewType);
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingTypeFromJson(
@@ -2206,18 +2818,27 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'mark': instance.mark,
-          'comment': instance.comment,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'user': instance.user.toJson(),
-          'product': instance.product?.toJson(),
-          'reviewType': instance.reviewType.toJson(),
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'mark': instance.mark,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('comment', instance.comment);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['user'] = instance.user.toJson();
+  writeNotNull('product', instance.product?.toJson());
+  val['reviewType'] = instance.reviewType.toJson();
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$ByMarkRatingType
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$ByMarkRatingTypeFromJson(
@@ -2254,14 +2875,22 @@ GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTyp
 
 Map<String, dynamic>
     _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedTypeToJson(
-            GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-          'stats': instance.stats?.map((e) => e.toJson()).toList(),
-        };
+        GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  writeNotNull('stats', instance.stats?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCorporateRatingsByProductWithStats$Query
     _$GetCorporateRatingsByProductWithStats$QueryFromJson(
@@ -2344,16 +2973,24 @@ CreateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateCorporateRating$Mutation$CorporateRatingType$UserType$PictureTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        CreateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 CreateCorporateRating$Mutation$CorporateRatingType$UserType
     _$CreateCorporateRating$Mutation$CorporateRatingType$UserTypeFromJson(
@@ -2373,17 +3010,25 @@ CreateCorporateRating$Mutation$CorporateRatingType$UserType
 
 Map<String, dynamic>
     _$CreateCorporateRating$Mutation$CorporateRatingType$UserTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        CreateCorporateRating$Mutation$CorporateRatingType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureType
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -2398,16 +3043,24 @@ CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaTypeFromJson(
@@ -2429,13 +3082,21 @@ CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoType
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoTypeFromJson(
@@ -2448,12 +3109,20 @@ CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountD
 
 Map<String, dynamic>
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureType
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureTypeFromJson(
@@ -2468,16 +3137,24 @@ CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureTy
 
 Map<String, dynamic>
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryType
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -2488,12 +3165,21 @@ CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Catalogue
 
 Map<String, dynamic>
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductTypeFromJson(
@@ -2544,29 +3230,37 @@ CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType
 
 Map<String, dynamic>
     _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionType
     _$CreateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionTypeFromJson(
@@ -2577,12 +3271,20 @@ CreateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionType
 
 Map<String, dynamic>
     _$CreateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
-            CreateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'reviewType': instance.reviewType,
-        };
+        CreateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('reviewType', instance.reviewType);
+  return val;
+}
 
 CreateCorporateRating$Mutation$CorporateRatingType
     _$CreateCorporateRating$Mutation$CorporateRatingTypeFromJson(
@@ -2604,17 +3306,26 @@ CreateCorporateRating$Mutation$CorporateRatingType
                   .fromJson(json['reviewType'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateCorporateRating$Mutation$CorporateRatingTypeToJson(
-        CreateCorporateRating$Mutation$CorporateRatingType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'mark': instance.mark,
-      'comment': instance.comment,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user.toJson(),
-      'product': instance.product?.toJson(),
-      'reviewType': instance.reviewType.toJson(),
-    };
+    CreateCorporateRating$Mutation$CorporateRatingType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'mark': instance.mark,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('comment', instance.comment);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['user'] = instance.user.toJson();
+  writeNotNull('product', instance.product?.toJson());
+  val['reviewType'] = instance.reviewType.toJson();
+  return val;
+}
 
 CreateCorporateRating$Mutation _$CreateCorporateRating$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -2640,14 +3351,23 @@ CorporateRatingInput _$CorporateRatingInputFromJson(
     );
 
 Map<String, dynamic> _$CorporateRatingInputToJson(
-        CorporateRatingInput instance) =>
-    <String, dynamic>{
-      'mark': instance.mark,
-      'comment': instance.comment,
-      'product': instance.product,
-      'reviewType': instance.reviewType,
-      'target': instance.target.toJson(),
-    };
+    CorporateRatingInput instance) {
+  final val = <String, dynamic>{
+    'mark': instance.mark,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('comment', instance.comment);
+  val['product'] = instance.product;
+  val['reviewType'] = instance.reviewType;
+  val['target'] = instance.target.toJson();
+  return val;
+}
 
 UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
     _$UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureTypeFromJson(
@@ -2662,16 +3382,24 @@ UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 UpdateCorporateRating$Mutation$CorporateRatingType$UserType
     _$UpdateCorporateRating$Mutation$CorporateRatingType$UserTypeFromJson(
@@ -2691,17 +3419,25 @@ UpdateCorporateRating$Mutation$CorporateRatingType$UserType
 
 Map<String, dynamic>
     _$UpdateCorporateRating$Mutation$CorporateRatingType$UserTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        UpdateCorporateRating$Mutation$CorporateRatingType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureType
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -2716,16 +3452,24 @@ UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaTypeFromJson(
@@ -2747,13 +3491,21 @@ UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoType
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoTypeFromJson(
@@ -2766,12 +3518,20 @@ UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountD
 
 Map<String, dynamic>
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureType
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureTypeFromJson(
@@ -2786,16 +3546,24 @@ UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureTy
 
 Map<String, dynamic>
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryType
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -2806,12 +3574,21 @@ UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Catalogue
 
 Map<String, dynamic>
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductTypeFromJson(
@@ -2862,29 +3639,37 @@ UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType
 
 Map<String, dynamic>
     _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionType
     _$UpdateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionTypeFromJson(
@@ -2895,12 +3680,20 @@ UpdateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionType
 
 Map<String, dynamic>
     _$UpdateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionTypeToJson(
-            UpdateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'reviewType': instance.reviewType,
-        };
+        UpdateCorporateRating$Mutation$CorporateRatingType$CorporateRatingDefinitionType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('reviewType', instance.reviewType);
+  return val;
+}
 
 UpdateCorporateRating$Mutation$CorporateRatingType
     _$UpdateCorporateRating$Mutation$CorporateRatingTypeFromJson(
@@ -2922,17 +3715,26 @@ UpdateCorporateRating$Mutation$CorporateRatingType
                   .fromJson(json['reviewType'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateCorporateRating$Mutation$CorporateRatingTypeToJson(
-        UpdateCorporateRating$Mutation$CorporateRatingType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'mark': instance.mark,
-      'comment': instance.comment,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user.toJson(),
-      'product': instance.product?.toJson(),
-      'reviewType': instance.reviewType.toJson(),
-    };
+    UpdateCorporateRating$Mutation$CorporateRatingType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'mark': instance.mark,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('comment', instance.comment);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['user'] = instance.user.toJson();
+  writeNotNull('product', instance.product?.toJson());
+  val['reviewType'] = instance.reviewType.toJson();
+  return val;
+}
 
 UpdateCorporateRating$Mutation _$UpdateCorporateRating$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -2956,12 +3758,20 @@ CorporateUpdateRatingInput _$CorporateUpdateRatingInputFromJson(
     );
 
 Map<String, dynamic> _$CorporateUpdateRatingInputToJson(
-        CorporateUpdateRatingInput instance) =>
-    <String, dynamic>{
-      'mark': instance.mark,
-      'comment': instance.comment,
-      'reviewType': instance.reviewType,
-    };
+    CorporateUpdateRatingInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('mark', instance.mark);
+  writeNotNull('comment', instance.comment);
+  writeNotNull('reviewType', instance.reviewType);
+  return val;
+}
 
 DeleteCorporateRating$Mutation$DeleteResponseDtoType
     _$DeleteCorporateRating$Mutation$DeleteResponseDtoTypeFromJson(
@@ -3015,11 +3825,20 @@ GetCorporateRatingsBytargetArguments
         );
 
 Map<String, dynamic> _$GetCorporateRatingsBytargetArgumentsToJson(
-        GetCorporateRatingsBytargetArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetCorporateRatingsBytargetArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetCorporateRatingsArguments _$GetCorporateRatingsArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -3031,10 +3850,18 @@ GetCorporateRatingsArguments _$GetCorporateRatingsArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetCorporateRatingsArgumentsToJson(
-        GetCorporateRatingsArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetCorporateRatingsArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetCurrentUserCorporateRatingsByProductArguments
     _$GetCurrentUserCorporateRatingsByProductArgumentsFromJson(
@@ -3061,11 +3888,20 @@ GetCorporateRatingsByProductArguments
         );
 
 Map<String, dynamic> _$GetCorporateRatingsByProductArgumentsToJson(
-        GetCorporateRatingsByProductArguments instance) =>
-    <String, dynamic>{
-      'productId': instance.productId,
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetCorporateRatingsByProductArguments instance) {
+  final val = <String, dynamic>{
+    'productId': instance.productId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetCorporateRatingsByProductWithStatsArguments
     _$GetCorporateRatingsByProductWithStatsArgumentsFromJson(
@@ -3079,11 +3915,20 @@ GetCorporateRatingsByProductWithStatsArguments
         );
 
 Map<String, dynamic> _$GetCorporateRatingsByProductWithStatsArgumentsToJson(
-        GetCorporateRatingsByProductWithStatsArguments instance) =>
-    <String, dynamic>{
-      'productId': instance.productId,
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetCorporateRatingsByProductWithStatsArguments instance) {
+  final val = <String, dynamic>{
+    'productId': instance.productId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetAverageCorporateProductRatingsByProductArguments
     _$GetAverageCorporateProductRatingsByProductArgumentsFromJson(
