@@ -446,13 +446,13 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -834,13 +834,13 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -2679,13 +2679,13 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -3067,13 +3067,13 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -4904,13 +4904,13 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -5299,13 +5299,13 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -7212,13 +7212,13 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -7607,13 +7607,13 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -9861,13 +9861,13 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -10255,13 +10255,13 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -12253,13 +12253,13 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -12647,13 +12647,13 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -14594,13 +14594,13 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$Stat
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -14989,13 +14989,13 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;

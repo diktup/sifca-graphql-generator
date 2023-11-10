@@ -414,13 +414,13 @@ class GetBrands$Query$BrandType$ManufacturerType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrands$Query$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -842,13 +842,13 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$Sta
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrands$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -1237,13 +1237,13 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$Ban
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrands$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -2251,13 +2251,13 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$FullAddressType$StateTy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrandsByTarget$Query$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -2681,13 +2681,13 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddress
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -3076,13 +3076,13 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetails
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -4119,13 +4119,13 @@ class Brand$Query$BrandType$ManufacturerType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Brand$Query$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -4544,13 +4544,13 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Brand$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -4939,13 +4939,13 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDet
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Brand$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -5952,13 +5952,13 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Ful
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -6382,13 +6382,13 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -6775,13 +6775,13 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -7846,13 +7846,13 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -8276,13 +8276,13 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -8669,13 +8669,13 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -9725,13 +9725,13 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddress
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -10155,13 +10155,13 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -10548,13 +10548,13 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -11596,13 +11596,13 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$FullAddres
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -12026,13 +12026,13 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -12421,13 +12421,13 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -13450,13 +13450,13 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SyncOneBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -13880,13 +13880,13 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -14275,13 +14275,13 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -15362,13 +15362,13 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -15792,13 +15792,13 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -16187,13 +16187,13 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -17202,13 +17202,13 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -17632,13 +17632,13 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -18027,13 +18027,13 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -19080,13 +19080,13 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$FullAddressT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ListenForBrandCreated$Subscription$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -19510,13 +19510,13 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -19905,13 +19905,13 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;

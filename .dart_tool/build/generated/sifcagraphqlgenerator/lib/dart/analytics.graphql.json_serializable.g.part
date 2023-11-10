@@ -6,8 +6,8 @@ GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType
     _$GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoTypeFromJson(
             Map<String, dynamic> json) =>
         GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType()
-          ..value = (json['value'] as num).toDouble()
-          ..percentage = (json['percentage'] as num).toDouble();
+          ..value = json['value'] as String
+          ..percentage = json['percentage'] as String;
 
 Map<String, dynamic>
     _$GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoTypeToJson(
@@ -30,31 +30,23 @@ GetAnalyticsStats$Query$AnalyticsStatsType
               ? null
               : GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType
                   .fromJson(json['sessions'] as Map<String, dynamic>)
-          ..visitDuration = json['visitDuration'] == null
+          ..impressions = json['impressions'] == null
               ? null
               : GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType
-                  .fromJson(json['visitDuration'] as Map<String, dynamic>)
-          ..bounceRate = json['bounceRate'] == null
+                  .fromJson(json['impressions'] as Map<String, dynamic>)
+          ..conversions = json['conversions'] == null
               ? null
               : GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType
-                  .fromJson(json['bounceRate'] as Map<String, dynamic>);
+                  .fromJson(json['conversions'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetAnalyticsStats$Query$AnalyticsStatsTypeToJson(
-    GetAnalyticsStats$Query$AnalyticsStatsType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('users', instance.users?.toJson());
-  writeNotNull('sessions', instance.sessions?.toJson());
-  writeNotNull('visitDuration', instance.visitDuration?.toJson());
-  writeNotNull('bounceRate', instance.bounceRate?.toJson());
-  return val;
-}
+        GetAnalyticsStats$Query$AnalyticsStatsType instance) =>
+    <String, dynamic>{
+      'users': instance.users?.toJson(),
+      'sessions': instance.sessions?.toJson(),
+      'impressions': instance.impressions?.toJson(),
+      'conversions': instance.conversions?.toJson(),
+    };
 
 GetAnalyticsStats$Query _$GetAnalyticsStats$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -79,21 +71,12 @@ AnalyticsDashboardInput _$AnalyticsDashboardInputFromJson(
     );
 
 Map<String, dynamic> _$AnalyticsDashboardInputToJson(
-    AnalyticsDashboardInput instance) {
-  final val = <String, dynamic>{
-    'to': instance.to.toIso8601String(),
-    'from': instance.from.toIso8601String(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
+        AnalyticsDashboardInput instance) =>
+    <String, dynamic>{
+      'to': instance.to.toIso8601String(),
+      'from': instance.from.toIso8601String(),
+      'target': instance.target?.toJson(),
+    };
 
 TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
     TargetACIInput(
@@ -103,21 +86,13 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
+    <String, dynamic>{
+      'pos': instance.pos,
+      'wholesaler': instance.wholesaler,
+      'manufacturer': instance.manufacturer,
+      'user': instance.user,
+    };
 
 GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType
     _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationTypeFromJson(
@@ -128,20 +103,12 @@ GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCoun
 
 Map<String, dynamic>
     _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationTypeToJson(
-        GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  return val;
-}
+            GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType
+                instance) =>
+        <String, dynamic>{
+          'lat': instance.lat,
+          'lng': instance.lng,
+        };
 
 GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersType
     _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersTypeFromJson(
@@ -155,20 +122,12 @@ GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCoun
 
 Map<String, dynamic>
     _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersTypeToJson(
-        GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('coordination', instance.coordination?.toJson());
-  writeNotNull('radius', instance.radius);
-  return val;
-}
+            GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountryLayersType
+                instance) =>
+        <String, dynamic>{
+          'coordination': instance.coordination?.toJson(),
+          'radius': instance.radius,
+        };
 
 GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountrySegmentsType
     _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountrySegmentsTypeFromJson(
@@ -180,21 +139,13 @@ GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCoun
 
 Map<String, dynamic>
     _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountrySegmentsTypeToJson(
-        GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountrySegmentsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('duration', instance.duration);
-  writeNotNull('sessions', instance.sessions);
-  writeNotNull('views', instance.views);
-  return val;
-}
+            GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType$AnalyticsUsersByCountrySegmentsType
+                instance) =>
+        <String, dynamic>{
+          'duration': instance.duration,
+          'sessions': instance.sessions,
+          'views': instance.views,
+        };
 
 GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType
     _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryTypeFromJson(
@@ -213,19 +164,12 @@ GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType
 
 Map<String, dynamic>
     _$GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryTypeToJson(
-        GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('layers', instance.layers?.map((e) => e.toJson()).toList());
-  writeNotNull('segments', instance.segments?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetAnalyticsUserByCountry$Query$AnalyticsUsersByCountryType
+                instance) =>
+        <String, dynamic>{
+          'layers': instance.layers?.map((e) => e.toJson()).toList(),
+          'segments': instance.segments?.map((e) => e.toJson()).toList(),
+        };
 
 GetAnalyticsUserByCountry$Query _$GetAnalyticsUserByCountry$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -254,25 +198,17 @@ GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryTy
 
 Map<String, dynamic>
     _$GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryType$PictureTypeToJson(
-        GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryType
     _$GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryTypeFromJson(
@@ -296,28 +232,19 @@ GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryTy
 
 Map<String, dynamic>
     _$GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryTypeToJson(
-        GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType
     _$GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesTypeFromJson(
@@ -332,21 +259,13 @@ GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType
 
 Map<String, dynamic>
     _$GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesTypeToJson(
-        GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('country', instance.country?.toJson());
-  writeNotNull('value', instance.value);
-  writeNotNull('color', instance.color);
-  return val;
-}
+            GetAnalyticsSessionsByCountries$Query$AnalyticsSessionsByCountriesType
+                instance) =>
+        <String, dynamic>{
+          'country': instance.country?.toJson(),
+          'value': instance.value,
+          'color': instance.color,
+        };
 
 GetAnalyticsSessionsByCountries$Query
     _$GetAnalyticsSessionsByCountries$QueryFromJson(
@@ -373,7 +292,7 @@ GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsRateComp
             Map<String, dynamic> json) =>
         GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsRateCompareType()
           ..rate = (json['rate'] as num).toDouble()
-          ..compare = (json['compare'] as num).toDouble();
+          ..compare = json['compare'] as String;
 
 Map<String, dynamic>
     _$GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsRateCompareTypeToJson(
@@ -416,10 +335,10 @@ GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType
               ? null
               : GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsRateCompareType
                   .fromJson(json['conversion'] as Map<String, dynamic>)
-          ..duration = json['duration'] == null
+          ..impressions = json['impressions'] == null
               ? null
               : GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsRateCompareType
-                  .fromJson(json['duration'] as Map<String, dynamic>)
+                  .fromJson(json['impressions'] as Map<String, dynamic>)
           ..chart = json['chart'] == null
               ? null
               : GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsAudienceMetricsChartType
@@ -427,22 +346,14 @@ GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType
 
 Map<String, dynamic>
     _$GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsTypeToJson(
-        GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('avgSession', instance.avgSession?.toJson());
-  writeNotNull('conversion', instance.conversion?.toJson());
-  writeNotNull('duration', instance.duration?.toJson());
-  writeNotNull('chart', instance.chart?.toJson());
-  return val;
-}
+            GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType
+                instance) =>
+        <String, dynamic>{
+          'avgSession': instance.avgSession?.toJson(),
+          'conversion': instance.conversion?.toJson(),
+          'impressions': instance.impressions?.toJson(),
+          'chart': instance.chart?.toJson(),
+        };
 
 GetAnalyticsAudienceMetrics$Query _$GetAnalyticsAudienceMetrics$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -468,20 +379,12 @@ GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryTy
 
 Map<String, dynamic>
     _$GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryType$AnalyticsAudienceSessionsByCountryChartDataTypeToJson(
-        GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryType$AnalyticsAudienceSessionsByCountryChartDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('week', instance.week);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryType$AnalyticsAudienceSessionsByCountryChartDataType
+                instance) =>
+        <String, dynamic>{
+          'week': instance.week,
+          'value': instance.value,
+        };
 
 GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryType
     _$GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryTypeFromJson(
@@ -497,20 +400,12 @@ GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryTy
 
 Map<String, dynamic>
     _$GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryTypeToJson(
-        GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('day', _$DaysEnumMap[instance.day]);
-  writeNotNull('data', instance.data?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetAnalyticsAudienceSessionsByCountry$Query$AnalyticsAudienceSessionsByCountryType
+                instance) =>
+        <String, dynamic>{
+          'day': _$DaysEnumMap[instance.day],
+          'data': instance.data?.map((e) => e.toJson()).toList(),
+        };
 
 const _$DaysEnumMap = {
   Days.monday: 'MONDAY',
@@ -547,25 +442,17 @@ GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDevic
     _$GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceTypeFromJson(
             Map<String, dynamic> json) =>
         GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceType()
-          ..value = json['value'] as int?
-          ..compare = (json['compare'] as num?)?.toDouble();
+          ..value = json['value'] as int
+          ..compare = json['compare'] as String;
 
 Map<String, dynamic>
     _$GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceTypeToJson(
-        GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  writeNotNull('compare', instance.compare);
-  return val;
-}
+            GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceType
+                instance) =>
+        <String, dynamic>{
+          'value': instance.value,
+          'compare': instance.compare,
+        };
 
 GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType
     _$GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceTypeFromJson(
@@ -582,24 +469,21 @@ GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType
           ..tablet = json['tablet'] == null
               ? null
               : GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceType
-                  .fromJson(json['tablet'] as Map<String, dynamic>);
+                  .fromJson(json['tablet'] as Map<String, dynamic>)
+          ..unknown = json['unknown'] == null
+              ? null
+              : GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceType
+                  .fromJson(json['unknown'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceTypeToJson(
-        GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('desktop', instance.desktop?.toJson());
-  writeNotNull('mobile', instance.mobile?.toJson());
-  writeNotNull('tablet', instance.tablet?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceTypeToJson(
+        GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType instance) =>
+    <String, dynamic>{
+      'desktop': instance.desktop?.toJson(),
+      'mobile': instance.mobile?.toJson(),
+      'tablet': instance.tablet?.toJson(),
+      'unknown': instance.unknown?.toJson(),
+    };
 
 GetAnalyticsUsersByDevice$Query _$GetAnalyticsUsersByDevice$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -614,75 +498,60 @@ Map<String, dynamic> _$GetAnalyticsUsersByDevice$QueryToJson(
       'getAnalyticsUsersByDevice': instance.getAnalyticsUsersByDevice.toJson(),
     };
 
-GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentType
-    _$GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentTypeFromJson(
+GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentType
+    _$GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentTypeFromJson(
             Map<String, dynamic> json) =>
-        GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentType()
-          ..source = json['source'] as String?
-          ..color = json['color'] as String?
-          ..value = (json['value'] as num?)?.toDouble();
+        GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentType()
+          ..source = json['source'] as String
+          ..color = json['color'] as String
+          ..value = json['value'] as String;
 
 Map<String, dynamic>
-    _$GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentTypeToJson(
-        GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentType
-            instance) {
-  final val = <String, dynamic>{};
+    _$GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentTypeToJson(
+            GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentType
+                instance) =>
+        <String, dynamic>{
+          'source': instance.source,
+          'color': instance.color,
+          'value': instance.value,
+        };
 
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('source', instance.source);
-  writeNotNull('color', instance.color);
-  writeNotNull('value', instance.value);
-  return val;
-}
-
-GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType
-    _$GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesTypeFromJson(
+GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType
+    _$GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsTypeFromJson(
             Map<String, dynamic> json) =>
-        GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType()
-          ..total = json['total'] as int?
-          ..compare = (json['compare'] as num?)?.toDouble()
-          ..segments = (json['segments'] as List<dynamic>?)
-              ?.map((e) =>
-                  GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentType
+        GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType()
+          ..total = json['total'] as int
+          ..compare = json['compare'] as String
+          ..segments = (json['segments'] as List<dynamic>)
+              .map((e) =>
+                  GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
 Map<String, dynamic>
-    _$GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesTypeToJson(
-        GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType
-            instance) {
-  final val = <String, dynamic>{};
+    _$GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsTypeToJson(
+            GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType
+                instance) =>
+        <String, dynamic>{
+          'total': instance.total,
+          'compare': instance.compare,
+          'segments': instance.segments.map((e) => e.toJson()).toList(),
+        };
 
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
+GetAnalyticsTopOperatingSystems$Query
+    _$GetAnalyticsTopOperatingSystems$QueryFromJson(
+            Map<String, dynamic> json) =>
+        GetAnalyticsTopOperatingSystems$Query()
+          ..getAnalyticsTopOperatingSystems =
+              GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType
+                  .fromJson(json['getAnalyticsTopOperatingSystems']
+                      as Map<String, dynamic>);
 
-  writeNotNull('total', instance.total);
-  writeNotNull('compare', instance.compare);
-  writeNotNull('segments', instance.segments?.map((e) => e.toJson()).toList());
-  return val;
-}
-
-GetAnalyticsTopReferralPages$Query _$GetAnalyticsTopReferralPages$QueryFromJson(
-        Map<String, dynamic> json) =>
-    GetAnalyticsTopReferralPages$Query()
-      ..getAnalyticsTopReferralPages =
-          GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType
-              .fromJson(
-                  json['getAnalyticsTopReferralPages'] as Map<String, dynamic>);
-
-Map<String, dynamic> _$GetAnalyticsTopReferralPages$QueryToJson(
-        GetAnalyticsTopReferralPages$Query instance) =>
+Map<String, dynamic> _$GetAnalyticsTopOperatingSystems$QueryToJson(
+        GetAnalyticsTopOperatingSystems$Query instance) =>
     <String, dynamic>{
-      'getAnalyticsTopReferralPages':
-          instance.getAnalyticsTopReferralPages.toJson(),
+      'getAnalyticsTopOperatingSystems':
+          instance.getAnalyticsTopOperatingSystems.toJson(),
     };
 
 GetAnalyticsTopPages$Query$AnalyticsTopPagesType
@@ -694,20 +563,12 @@ GetAnalyticsTopPages$Query$AnalyticsTopPagesType
           ..users = (json['users'] as num?)?.toDouble();
 
 Map<String, dynamic> _$GetAnalyticsTopPages$Query$AnalyticsTopPagesTypeToJson(
-    GetAnalyticsTopPages$Query$AnalyticsTopPagesType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('active', instance.active);
-  writeNotNull('users', instance.users);
-  return val;
-}
+        GetAnalyticsTopPages$Query$AnalyticsTopPagesType instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'active': instance.active,
+      'users': instance.users,
+    };
 
 GetAnalyticsTopPages$Query _$GetAnalyticsTopPages$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -804,16 +665,16 @@ Map<String, dynamic> _$GetAnalyticsUsersByDeviceArgumentsToJson(
       'input': instance.input.toJson(),
     };
 
-GetAnalyticsTopReferralPagesArguments
-    _$GetAnalyticsTopReferralPagesArgumentsFromJson(
+GetAnalyticsTopOperatingSystemsArguments
+    _$GetAnalyticsTopOperatingSystemsArgumentsFromJson(
             Map<String, dynamic> json) =>
-        GetAnalyticsTopReferralPagesArguments(
+        GetAnalyticsTopOperatingSystemsArguments(
           input: AnalyticsDashboardInput.fromJson(
               json['input'] as Map<String, dynamic>),
         );
 
-Map<String, dynamic> _$GetAnalyticsTopReferralPagesArgumentsToJson(
-        GetAnalyticsTopReferralPagesArguments instance) =>
+Map<String, dynamic> _$GetAnalyticsTopOperatingSystemsArgumentsToJson(
+        GetAnalyticsTopOperatingSystemsArguments instance) =>
     <String, dynamic>{
       'input': instance.input.toJson(),
     };

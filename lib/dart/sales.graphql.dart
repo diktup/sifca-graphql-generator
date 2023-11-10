@@ -16,9 +16,9 @@ class GetSalesAnalyticsStats$Query$SalesAnalyticsStatsType$AnalyticsStatsInfoTyp
       _$GetSalesAnalyticsStats$Query$SalesAnalyticsStatsType$AnalyticsStatsInfoTypeFromJson(
           json);
 
-  late double value;
+  late String value;
 
-  late double percentage;
+  late String percentage;
 
   @override
   List<Object?> get props => [value, percentage];

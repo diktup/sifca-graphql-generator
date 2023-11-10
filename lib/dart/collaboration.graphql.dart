@@ -16,9 +16,9 @@ class GetCollaborationAnalyticsStats$Query$CollaborationAnalyticsStatsType$Analy
       _$GetCollaborationAnalyticsStats$Query$CollaborationAnalyticsStatsType$AnalyticsStatsInfoTypeFromJson(
           json);
 
-  late double value;
+  late String value;
 
-  late double percentage;
+  late String percentage;
 
   @override
   List<Object?> get props => [value, percentage];

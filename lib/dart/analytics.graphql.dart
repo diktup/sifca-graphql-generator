@@ -16,9 +16,9 @@ class GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType
       _$GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoTypeFromJson(
           json);
 
-  late double value;
+  late String value;
 
-  late double percentage;
+  late String percentage;
 
   @override
   List<Object?> get props => [value, percentage];
@@ -43,12 +43,13 @@ class GetAnalyticsStats$Query$AnalyticsStatsType extends JsonSerializable
   GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType? sessions;
 
   GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType?
-      visitDuration;
+      impressions;
 
-  GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType? bounceRate;
+  GetAnalyticsStats$Query$AnalyticsStatsType$AnalyticsStatsInfoType?
+      conversions;
 
   @override
-  List<Object?> get props => [users, sessions, visitDuration, bounceRate];
+  List<Object?> get props => [users, sessions, impressions, conversions];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -378,7 +379,7 @@ class GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsRa
 
   late double rate;
 
-  late double compare;
+  late String compare;
 
   @override
   List<Object?> get props => [rate, compare];
@@ -429,13 +430,13 @@ class GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType
       conversion;
 
   GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsRateCompareType?
-      duration;
+      impressions;
 
   GetAnalyticsAudienceMetrics$Query$AnalyticsAudienceMetricsType$AnalyticsAudienceMetricsChartType?
       chart;
 
   @override
-  List<Object?> get props => [avgSession, conversion, duration, chart];
+  List<Object?> get props => [avgSession, conversion, impressions, chart];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -542,9 +543,9 @@ class GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersB
       _$GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceTypeFromJson(
           json);
 
-  int? value;
+  late int value;
 
-  double? compare;
+  late String compare;
 
   @override
   List<Object?> get props => [value, compare];
@@ -574,8 +575,11 @@ class GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType
   GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceType?
       tablet;
 
+  GetAnalyticsUsersByDevice$Query$AnalyticsUsersByDeviceType$AnalyticsUsersByDeviceDeviceType?
+      unknown;
+
   @override
-  List<Object?> get props => [desktop, mobile, tablet];
+  List<Object?> get props => [desktop, mobile, tablet, unknown];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -602,45 +606,46 @@ class GetAnalyticsUsersByDevice$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentType
+class GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentType
     extends JsonSerializable with EquatableMixin {
-  GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentType();
+  GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentType();
 
-  factory GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentType.fromJson(
+  factory GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentType.fromJson(
           Map<String, dynamic> json) =>
-      _$GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentTypeFromJson(
+      _$GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentTypeFromJson(
           json);
 
-  String? source;
+  late String source;
 
-  String? color;
+  late String color;
 
-  double? value;
+  late String value;
 
   @override
   List<Object?> get props => [source, color, value];
 
   @override
   Map<String, dynamic> toJson() =>
-      _$GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentTypeToJson(
+      _$GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentTypeToJson(
           this);
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType
+class GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType
     extends JsonSerializable with EquatableMixin {
-  GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType();
+  GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType();
 
-  factory GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType.fromJson(
+  factory GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType.fromJson(
           Map<String, dynamic> json) =>
-      _$GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesTypeFromJson(
+      _$GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsTypeFromJson(
           json);
 
-  int? total;
+  late int total;
 
-  double? compare;
+  late String compare;
 
-  List<GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType$AnalyticsTopReferralPagesSegmentType>?
+  late List<
+          GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType$AnalyticsTopOperatingSystemSegmentType>
       segments;
 
   @override
@@ -648,28 +653,28 @@ class GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType
 
   @override
   Map<String, dynamic> toJson() =>
-      _$GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesTypeToJson(
+      _$GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsTypeToJson(
           this);
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetAnalyticsTopReferralPages$Query extends JsonSerializable
+class GetAnalyticsTopOperatingSystems$Query extends JsonSerializable
     with EquatableMixin {
-  GetAnalyticsTopReferralPages$Query();
+  GetAnalyticsTopOperatingSystems$Query();
 
-  factory GetAnalyticsTopReferralPages$Query.fromJson(
+  factory GetAnalyticsTopOperatingSystems$Query.fromJson(
           Map<String, dynamic> json) =>
-      _$GetAnalyticsTopReferralPages$QueryFromJson(json);
+      _$GetAnalyticsTopOperatingSystems$QueryFromJson(json);
 
-  late GetAnalyticsTopReferralPages$Query$AnalyticsTopReferralPagesType
-      getAnalyticsTopReferralPages;
+  late GetAnalyticsTopOperatingSystems$Query$AnalyticsTopOperatingSystemsType
+      getAnalyticsTopOperatingSystems;
 
   @override
-  List<Object?> get props => [getAnalyticsTopReferralPages];
+  List<Object?> get props => [getAnalyticsTopOperatingSystems];
 
   @override
   Map<String, dynamic> toJson() =>
-      _$GetAnalyticsTopReferralPages$QueryToJson(this);
+      _$GetAnalyticsTopOperatingSystems$QueryToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -822,7 +827,7 @@ final GET_ANALYTICS_STATS_QUERY_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'visitDuration'),
+            name: NameNode(value: 'impressions'),
             alias: null,
             arguments: [],
             directives: [],
@@ -844,7 +849,7 @@ final GET_ANALYTICS_STATS_QUERY_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'bounceRate'),
+            name: NameNode(value: 'conversions'),
             alias: null,
             arguments: [],
             directives: [],
@@ -1399,7 +1404,7 @@ final GET_ANALYTICS_AUDIENCE_METRICS_QUERY_DOCUMENT =
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'duration'),
+            name: NameNode(value: 'impressions'),
             alias: null,
             arguments: [],
             directives: [],
@@ -1697,6 +1702,28 @@ final GET_ANALYTICS_USERS_BY_DEVICE_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
+          FieldNode(
+            name: NameNode(value: 'unknown'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'value'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'compare'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
         ]),
       )
     ]),
@@ -1726,14 +1753,14 @@ class GetAnalyticsUsersByDeviceQuery extends GraphQLQuery<
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetAnalyticsTopReferralPagesArguments extends JsonSerializable
+class GetAnalyticsTopOperatingSystemsArguments extends JsonSerializable
     with EquatableMixin {
-  GetAnalyticsTopReferralPagesArguments({required this.input});
+  GetAnalyticsTopOperatingSystemsArguments({required this.input});
 
   @override
-  factory GetAnalyticsTopReferralPagesArguments.fromJson(
+  factory GetAnalyticsTopOperatingSystemsArguments.fromJson(
           Map<String, dynamic> json) =>
-      _$GetAnalyticsTopReferralPagesArgumentsFromJson(json);
+      _$GetAnalyticsTopOperatingSystemsArgumentsFromJson(json);
 
   late AnalyticsDashboardInput input;
 
@@ -1742,16 +1769,16 @@ class GetAnalyticsTopReferralPagesArguments extends JsonSerializable
 
   @override
   Map<String, dynamic> toJson() =>
-      _$GetAnalyticsTopReferralPagesArgumentsToJson(this);
+      _$GetAnalyticsTopOperatingSystemsArgumentsToJson(this);
 }
 
-final GET_ANALYTICS_TOP_REFERRAL_PAGES_QUERY_DOCUMENT_OPERATION_NAME =
-    'getAnalyticsTopReferralPages';
-final GET_ANALYTICS_TOP_REFERRAL_PAGES_QUERY_DOCUMENT =
+final GET_ANALYTICS_TOP_OPERATING_SYSTEMS_QUERY_DOCUMENT_OPERATION_NAME =
+    'getAnalyticsTopOperatingSystems';
+final GET_ANALYTICS_TOP_OPERATING_SYSTEMS_QUERY_DOCUMENT =
     DocumentNode(definitions: [
   OperationDefinitionNode(
     type: OperationType.query,
-    name: NameNode(value: 'getAnalyticsTopReferralPages'),
+    name: NameNode(value: 'getAnalyticsTopOperatingSystems'),
     variableDefinitions: [
       VariableDefinitionNode(
         variable: VariableNode(name: NameNode(value: 'input')),
@@ -1766,7 +1793,7 @@ final GET_ANALYTICS_TOP_REFERRAL_PAGES_QUERY_DOCUMENT =
     directives: [],
     selectionSet: SelectionSetNode(selections: [
       FieldNode(
-        name: NameNode(value: 'getAnalyticsTopReferralPages'),
+        name: NameNode(value: 'getAnalyticsTopOperatingSystems'),
         alias: null,
         arguments: [
           ArgumentNode(
@@ -1825,26 +1852,28 @@ final GET_ANALYTICS_TOP_REFERRAL_PAGES_QUERY_DOCUMENT =
   )
 ]);
 
-class GetAnalyticsTopReferralPagesQuery extends GraphQLQuery<
-    GetAnalyticsTopReferralPages$Query, GetAnalyticsTopReferralPagesArguments> {
-  GetAnalyticsTopReferralPagesQuery({required this.variables});
+class GetAnalyticsTopOperatingSystemsQuery extends GraphQLQuery<
+    GetAnalyticsTopOperatingSystems$Query,
+    GetAnalyticsTopOperatingSystemsArguments> {
+  GetAnalyticsTopOperatingSystemsQuery({required this.variables});
 
   @override
-  final DocumentNode document = GET_ANALYTICS_TOP_REFERRAL_PAGES_QUERY_DOCUMENT;
+  final DocumentNode document =
+      GET_ANALYTICS_TOP_OPERATING_SYSTEMS_QUERY_DOCUMENT;
 
   @override
   final String operationName =
-      GET_ANALYTICS_TOP_REFERRAL_PAGES_QUERY_DOCUMENT_OPERATION_NAME;
+      GET_ANALYTICS_TOP_OPERATING_SYSTEMS_QUERY_DOCUMENT_OPERATION_NAME;
 
   @override
-  final GetAnalyticsTopReferralPagesArguments variables;
+  final GetAnalyticsTopOperatingSystemsArguments variables;
 
   @override
   List<Object?> get props => [document, operationName, variables];
 
   @override
-  GetAnalyticsTopReferralPages$Query parse(Map<String, dynamic> json) =>
-      GetAnalyticsTopReferralPages$Query.fromJson(json);
+  GetAnalyticsTopOperatingSystems$Query parse(Map<String, dynamic> json) =>
+      GetAnalyticsTopOperatingSystems$Query.fromJson(json);
 }
 
 @JsonSerializable(explicitToJson: true)

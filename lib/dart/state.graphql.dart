@@ -130,13 +130,13 @@ class FindStateById$Query$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindStateById$Query$StateType$CountryType? country;
 
@@ -308,13 +308,13 @@ class GetStates$Query$StateType extends JsonSerializable with EquatableMixin {
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetStates$Query$StateType$CountryType? country;
 
@@ -496,13 +496,13 @@ class FindStatesPagination$Query$StatePaginatedType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindStatesPagination$Query$StatePaginatedType$StateType$CountryType? country;
 
@@ -731,13 +731,13 @@ class FindStatesByCountryPagination$Query$StatePaginatedType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType?
       country;
@@ -943,13 +943,13 @@ class CreateState$Mutation$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateState$Mutation$StateType$CountryType? country;
 
@@ -1004,7 +1004,7 @@ class StateInput extends JsonSerializable with EquatableMixin {
     required this.name,
     required this.adminName,
     required this.capital,
-    required this.population,
+    this.population,
     required this.ascii,
     required this.lat,
     required this.lng,
@@ -1023,13 +1023,13 @@ class StateInput extends JsonSerializable with EquatableMixin {
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   late StateCapitalEnum capital;
 
-  late double population;
+  String? population;
 
   late String ascii;
 
-  late double lat;
+  late String lat;
 
-  late double lng;
+  late String lng;
 
   PictureInput? flagSquare;
 
@@ -1215,13 +1215,13 @@ class UpdateState$Mutation$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateState$Mutation$StateType$CountryType? country;
 

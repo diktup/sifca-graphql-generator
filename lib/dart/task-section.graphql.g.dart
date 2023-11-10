@@ -26,29 +26,20 @@ GetTaskSection$Query$TaskSectionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTaskSection$Query$TaskSectionTypeToJson(
-    GetTaskSection$Query$TaskSectionType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'rank': instance.rank,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tags', instance.tags);
-  val['title'] = instance.title;
-  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
-  val['archived'] = instance.archived;
-  val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
-  val['completed'] = instance.completed;
-  writeNotNull('description', instance.description);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        GetTaskSection$Query$TaskSectionType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'rank': instance.rank,
+      'tags': instance.tags,
+      'title': instance.title,
+      'dueDate': instance.dueDate?.toIso8601String(),
+      'archived': instance.archived,
+      'priority': _$TaskPriorityEnumEnumMap[instance.priority]!,
+      'completed': instance.completed,
+      'description': instance.description,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 const _$TaskPriorityEnumEnumMap = {
   TaskPriorityEnum.high: 'HIGH',
@@ -90,29 +81,20 @@ GetTaskSections$Query$TaskSectionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTaskSections$Query$TaskSectionTypeToJson(
-    GetTaskSections$Query$TaskSectionType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'rank': instance.rank,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tags', instance.tags);
-  val['title'] = instance.title;
-  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
-  val['archived'] = instance.archived;
-  val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
-  val['completed'] = instance.completed;
-  writeNotNull('description', instance.description);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        GetTaskSections$Query$TaskSectionType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'rank': instance.rank,
+      'tags': instance.tags,
+      'title': instance.title,
+      'dueDate': instance.dueDate?.toIso8601String(),
+      'archived': instance.archived,
+      'priority': _$TaskPriorityEnumEnumMap[instance.priority]!,
+      'completed': instance.completed,
+      'description': instance.description,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 GetTaskSections$Query _$GetTaskSections$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -137,21 +119,13 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
+    <String, dynamic>{
+      'pos': instance.pos,
+      'wholesaler': instance.wholesaler,
+      'manufacturer': instance.manufacturer,
+      'user': instance.user,
+    };
 
 GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$GenericTaskType
     _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$GenericTaskTypeFromJson(
@@ -175,30 +149,21 @@ GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$GenericTaskType
 
 Map<String, dynamic>
     _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$GenericTaskTypeToJson(
-        GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$GenericTaskType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'title': instance.title,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('description', instance.description);
-  writeNotNull('tags', instance.tags);
-  val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
-  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
-  val['completed'] = instance.completed;
-  val['archived'] = instance.archived;
-  val['rank'] = instance.rank;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType$GenericTaskType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'title': instance.title,
+          'description': instance.description,
+          'tags': instance.tags,
+          'priority': _$TaskPriorityEnumEnumMap[instance.priority]!,
+          'dueDate': instance.dueDate?.toIso8601String(),
+          'completed': instance.completed,
+          'archived': instance.archived,
+          'rank': instance.rank,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType
     _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksTypeFromJson(
@@ -227,30 +192,21 @@ GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType
 
 Map<String, dynamic>
     _$GetTaskSectionsWithTasks$Query$TaskSectionWithTasksTypeToJson(
-        GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'rank': instance.rank,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tags', instance.tags);
-  val['title'] = instance.title;
-  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
-  val['archived'] = instance.archived;
-  val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
-  val['completed'] = instance.completed;
-  writeNotNull('description', instance.description);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  val['tasks'] = instance.tasks.map((e) => e.toJson()).toList();
-  return val;
-}
+            GetTaskSectionsWithTasks$Query$TaskSectionWithTasksType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'rank': instance.rank,
+          'tags': instance.tags,
+          'title': instance.title,
+          'dueDate': instance.dueDate?.toIso8601String(),
+          'archived': instance.archived,
+          'priority': _$TaskPriorityEnumEnumMap[instance.priority]!,
+          'completed': instance.completed,
+          'description': instance.description,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'tasks': instance.tasks.map((e) => e.toJson()).toList(),
+        };
 
 GetTaskSectionsWithTasks$Query _$GetTaskSectionsWithTasks$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -291,30 +247,21 @@ GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType
 
 Map<String, dynamic>
     _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionTypeToJson(
-        GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'rank': instance.rank,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tags', instance.tags);
-  val['title'] = instance.title;
-  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
-  val['archived'] = instance.archived;
-  val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
-  val['completed'] = instance.completed;
-  writeNotNull('description', instance.description);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType$TaskSectionType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'rank': instance.rank,
+          'tags': instance.tags,
+          'title': instance.title,
+          'dueDate': instance.dueDate?.toIso8601String(),
+          'archived': instance.archived,
+          'priority': _$TaskPriorityEnumEnumMap[instance.priority]!,
+          'completed': instance.completed,
+          'description': instance.description,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType
     _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedTypeFromJson(
@@ -330,21 +277,13 @@ GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType
 
 Map<String, dynamic>
     _$GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedTypeToJson(
-        GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            GetTaskSectionsByTargetPaginated$Query$TaskSectionPaginatedType
+                instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 GetTaskSectionsByTargetPaginated$Query
     _$GetTaskSectionsByTargetPaginated$QueryFromJson(
@@ -368,19 +307,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 CreateTaskSection$Mutation$TaskSectionType
     _$CreateTaskSection$Mutation$TaskSectionTypeFromJson(
@@ -403,29 +334,20 @@ CreateTaskSection$Mutation$TaskSectionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateTaskSection$Mutation$TaskSectionTypeToJson(
-    CreateTaskSection$Mutation$TaskSectionType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'rank': instance.rank,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tags', instance.tags);
-  val['title'] = instance.title;
-  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
-  val['archived'] = instance.archived;
-  val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
-  val['completed'] = instance.completed;
-  writeNotNull('description', instance.description);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        CreateTaskSection$Mutation$TaskSectionType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'rank': instance.rank,
+      'tags': instance.tags,
+      'title': instance.title,
+      'dueDate': instance.dueDate?.toIso8601String(),
+      'archived': instance.archived,
+      'priority': _$TaskPriorityEnumEnumMap[instance.priority]!,
+      'completed': instance.completed,
+      'description': instance.description,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 CreateTaskSection$Mutation _$CreateTaskSection$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -460,29 +382,20 @@ ReorderTaskSections$Mutation$TaskSectionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$ReorderTaskSections$Mutation$TaskSectionTypeToJson(
-    ReorderTaskSections$Mutation$TaskSectionType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'rank': instance.rank,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tags', instance.tags);
-  val['title'] = instance.title;
-  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
-  val['archived'] = instance.archived;
-  val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
-  val['completed'] = instance.completed;
-  writeNotNull('description', instance.description);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        ReorderTaskSections$Mutation$TaskSectionType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'rank': instance.rank,
+      'tags': instance.tags,
+      'title': instance.title,
+      'dueDate': instance.dueDate?.toIso8601String(),
+      'archived': instance.archived,
+      'priority': _$TaskPriorityEnumEnumMap[instance.priority]!,
+      'completed': instance.completed,
+      'description': instance.description,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 ReorderTaskSections$Mutation _$ReorderTaskSections$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -520,29 +433,20 @@ UpdateTaskSection$Mutation$TaskSectionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateTaskSection$Mutation$TaskSectionTypeToJson(
-    UpdateTaskSection$Mutation$TaskSectionType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'rank': instance.rank,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tags', instance.tags);
-  val['title'] = instance.title;
-  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
-  val['archived'] = instance.archived;
-  val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
-  val['completed'] = instance.completed;
-  writeNotNull('description', instance.description);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        UpdateTaskSection$Mutation$TaskSectionType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'rank': instance.rank,
+      'tags': instance.tags,
+      'title': instance.title,
+      'dueDate': instance.dueDate?.toIso8601String(),
+      'archived': instance.archived,
+      'priority': _$TaskPriorityEnumEnumMap[instance.priority]!,
+      'completed': instance.completed,
+      'description': instance.description,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 UpdateTaskSection$Mutation _$UpdateTaskSection$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -615,20 +519,11 @@ GetTaskSectionsWithTasksArguments _$GetTaskSectionsWithTasksArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetTaskSectionsWithTasksArgumentsToJson(
-    GetTaskSectionsWithTasksArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('searchString', instance.searchString);
-  return val;
-}
+        GetTaskSectionsWithTasksArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'searchString': instance.searchString,
+    };
 
 GetTaskSectionsByTargetPaginatedArguments
     _$GetTaskSectionsByTargetPaginatedArgumentsFromJson(
@@ -643,20 +538,11 @@ GetTaskSectionsByTargetPaginatedArguments
         );
 
 Map<String, dynamic> _$GetTaskSectionsByTargetPaginatedArgumentsToJson(
-    GetTaskSectionsByTargetPaginatedArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetTaskSectionsByTargetPaginatedArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'pagination': instance.pagination?.toJson(),
+    };
 
 CreateTaskSectionArguments _$CreateTaskSectionArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -676,27 +562,18 @@ CreateTaskSectionArguments _$CreateTaskSectionArgumentsFromJson(
     );
 
 Map<String, dynamic> _$CreateTaskSectionArgumentsToJson(
-    CreateTaskSectionArguments instance) {
-  final val = <String, dynamic>{
-    'rank': instance.rank,
-    'title': instance.title,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tags', instance.tags);
-  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
-  writeNotNull('archived', instance.archived);
-  writeNotNull('completed', instance.completed);
-  writeNotNull('description', instance.description);
-  val['target'] = instance.target.toJson();
-  val['priority'] = _$TaskPriorityEnumEnumMap[instance.priority]!;
-  return val;
-}
+        CreateTaskSectionArguments instance) =>
+    <String, dynamic>{
+      'rank': instance.rank,
+      'title': instance.title,
+      'tags': instance.tags,
+      'dueDate': instance.dueDate?.toIso8601String(),
+      'archived': instance.archived,
+      'completed': instance.completed,
+      'description': instance.description,
+      'target': instance.target.toJson(),
+      'priority': _$TaskPriorityEnumEnumMap[instance.priority]!,
+    };
 
 ReorderTaskSectionsArguments _$ReorderTaskSectionsArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -730,27 +607,18 @@ UpdateTaskSectionArguments _$UpdateTaskSectionArgumentsFromJson(
     );
 
 Map<String, dynamic> _$UpdateTaskSectionArgumentsToJson(
-    UpdateTaskSectionArguments instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('rank', instance.rank);
-  writeNotNull('title', instance.title);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
-  writeNotNull('archived', instance.archived);
-  writeNotNull('completed', instance.completed);
-  writeNotNull('description', instance.description);
-  writeNotNull('priority', _$TaskPriorityEnumEnumMap[instance.priority]);
-  return val;
-}
+        UpdateTaskSectionArguments instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'rank': instance.rank,
+      'title': instance.title,
+      'tags': instance.tags,
+      'dueDate': instance.dueDate?.toIso8601String(),
+      'archived': instance.archived,
+      'completed': instance.completed,
+      'description': instance.description,
+      'priority': _$TaskPriorityEnumEnumMap[instance.priority],
+    };
 
 DeleteTaskSectionArguments _$DeleteTaskSectionArgumentsFromJson(
         Map<String, dynamic> json) =>

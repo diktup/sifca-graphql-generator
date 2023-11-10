@@ -16,21 +16,13 @@ GetComments$Query$CommentType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$GetComments$Query$CommentType$UserType$PhoneTypeToJson(
-    GetComments$Query$CommentType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+        GetComments$Query$CommentType$UserType$PhoneType instance) =>
+    <String, dynamic>{
+      'number': instance.number,
+      'isValid': instance.isValid,
+      'countryCode': instance.countryCode,
+      'validationNumber': instance.validationNumber,
+    };
 
 GetComments$Query$CommentType$UserType$PictureType
     _$GetComments$Query$CommentType$UserType$PictureTypeFromJson(
@@ -45,24 +37,16 @@ GetComments$Query$CommentType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetComments$Query$CommentType$UserType$PictureTypeToJson(
-    GetComments$Query$CommentType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+        GetComments$Query$CommentType$UserType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+    };
 
 GetComments$Query$CommentType$UserType
     _$GetComments$Query$CommentType$UserTypeFromJson(
@@ -85,26 +69,17 @@ GetComments$Query$CommentType$UserType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetComments$Query$CommentType$UserTypeToJson(
-    GetComments$Query$CommentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        GetComments$Query$CommentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 const _$GenderEnumMap = {
   Gender.male: 'MALE',
@@ -127,25 +102,17 @@ GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$C
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -162,20 +129,12 @@ GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$C
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -197,22 +156,14 @@ GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$C
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
     _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -228,23 +179,14 @@ GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetComments$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetComments$Query$CommentType$DocumentType$DocumentContentType
     _$GetComments$Query$CommentType$DocumentType$DocumentContentTypeFromJson(
@@ -257,19 +199,11 @@ GetComments$Query$CommentType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$DocumentType$DocumentContentTypeToJson(
-        GetComments$Query$CommentType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetComments$Query$CommentType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetComments$Query$CommentType$DocumentType$UserType$PhoneType
     _$GetComments$Query$CommentType$DocumentType$UserType$PhoneTypeFromJson(
@@ -282,22 +216,14 @@ GetComments$Query$CommentType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$DocumentType$UserType$PhoneTypeToJson(
-        GetComments$Query$CommentType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetComments$Query$CommentType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetComments$Query$CommentType$DocumentType$UserType$PictureType
     _$GetComments$Query$CommentType$DocumentType$UserType$PictureTypeFromJson(
@@ -313,25 +239,17 @@ GetComments$Query$CommentType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$DocumentType$UserType$PictureTypeToJson(
-        GetComments$Query$CommentType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetComments$Query$CommentType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetComments$Query$CommentType$DocumentType$UserType
     _$GetComments$Query$CommentType$DocumentType$UserTypeFromJson(
@@ -355,26 +273,17 @@ GetComments$Query$CommentType$DocumentType$UserType
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$DocumentType$UserTypeToJson(
-        GetComments$Query$CommentType$DocumentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetComments$Query$CommentType$DocumentType$UserType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetComments$Query$CommentType$DocumentType
     _$GetComments$Query$CommentType$DocumentTypeFromJson(
@@ -395,25 +304,16 @@ GetComments$Query$CommentType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetComments$Query$CommentType$DocumentTypeToJson(
-    GetComments$Query$CommentType$DocumentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        GetComments$Query$CommentType$DocumentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'content': instance.content?.toJson(),
+      'size': instance.size,
+      'owner': instance.owner?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 GetComments$Query$CommentType$CommentHolderType$TicketType
     _$GetComments$Query$CommentType$CommentHolderType$TicketTypeFromJson(
@@ -619,28 +519,20 @@ GetComments$Query$CommentType$CommentHolderType
                       json['purchaseDeliveryNote'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetComments$Query$CommentType$CommentHolderTypeToJson(
-    GetComments$Query$CommentType$CommentHolderType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+        GetComments$Query$CommentType$CommentHolderType instance) =>
+    <String, dynamic>{
+      'ticket': instance.ticket?.toJson(),
+      'card': instance.card?.toJson(),
+      'project': instance.project?.toJson(),
+      'quotation': instance.quotation?.toJson(),
+      'saleOrder': instance.saleOrder?.toJson(),
+      'saleInvoice': instance.saleInvoice?.toJson(),
+      'saleIssueNote': instance.saleIssueNote?.toJson(),
+      'purchaseOrder': instance.purchaseOrder?.toJson(),
+      'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+      'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+      'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+    };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeFromJson(
@@ -653,22 +545,14 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeFromJson(
@@ -684,25 +568,17 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTyp
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserTypeFromJson(
@@ -726,27 +602,18 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -762,25 +629,17 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$Docume
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -797,20 +656,12 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$Docume
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -832,22 +683,14 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$Docume
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -863,23 +706,14 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$Docume
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeFromJson(
@@ -892,19 +726,11 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$Docume
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeFromJson(
@@ -917,22 +743,14 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTy
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeFromJson(
@@ -948,25 +766,17 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTy
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeFromJson(
@@ -990,27 +800,18 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTy
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTypeFromJson(
@@ -1032,26 +833,17 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'content': instance.content?.toJson(),
+          'size': instance.size,
+          'owner': instance.owner?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeFromJson(
@@ -1259,29 +1051,21 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
+                instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 GetComments$Query$CommentType$FirstReplyType$CommentBaseType
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseTypeFromJson(
@@ -1307,26 +1091,17 @@ GetComments$Query$CommentType$FirstReplyType$CommentBaseType
 
 Map<String, dynamic>
     _$GetComments$Query$CommentType$FirstReplyType$CommentBaseTypeToJson(
-        GetComments$Query$CommentType$FirstReplyType$CommentBaseType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetComments$Query$CommentType$FirstReplyType$CommentBaseType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'user': instance.user?.toJson(),
+          'comment': instance.comment,
+          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+          'holder': instance.holder?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetComments$Query$CommentType$FirstReplyType
     _$GetComments$Query$CommentType$FirstReplyTypeFromJson(
@@ -1339,20 +1114,11 @@ GetComments$Query$CommentType$FirstReplyType
                   .fromJson(json['reply'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetComments$Query$CommentType$FirstReplyTypeToJson(
-    GetComments$Query$CommentType$FirstReplyType instance) {
-  final val = <String, dynamic>{
-    'hasMoreReplies': instance.hasMoreReplies,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('reply', instance.reply?.toJson());
-  return val;
-}
+        GetComments$Query$CommentType$FirstReplyType instance) =>
+    <String, dynamic>{
+      'hasMoreReplies': instance.hasMoreReplies,
+      'reply': instance.reply?.toJson(),
+    };
 
 GetComments$Query$CommentType _$GetComments$Query$CommentTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1379,27 +1145,17 @@ GetComments$Query$CommentType _$GetComments$Query$CommentTypeFromJson(
               json['firstReply'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetComments$Query$CommentTypeToJson(
-    GetComments$Query$CommentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('firstReply', instance.firstReply?.toJson());
-  return val;
-}
+        GetComments$Query$CommentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'user': instance.user?.toJson(),
+      'comment': instance.comment,
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'holder': instance.holder?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'firstReply': instance.firstReply?.toJson(),
+    };
 
 GetComments$Query _$GetComments$QueryFromJson(Map<String, dynamic> json) =>
     GetComments$Query()
@@ -1423,21 +1179,13 @@ Comment$Query$CommentType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$Comment$Query$CommentType$UserType$PhoneTypeToJson(
-    Comment$Query$CommentType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+        Comment$Query$CommentType$UserType$PhoneType instance) =>
+    <String, dynamic>{
+      'number': instance.number,
+      'isValid': instance.isValid,
+      'countryCode': instance.countryCode,
+      'validationNumber': instance.validationNumber,
+    };
 
 Comment$Query$CommentType$UserType$PictureType
     _$Comment$Query$CommentType$UserType$PictureTypeFromJson(
@@ -1452,24 +1200,16 @@ Comment$Query$CommentType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Comment$Query$CommentType$UserType$PictureTypeToJson(
-    Comment$Query$CommentType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+        Comment$Query$CommentType$UserType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+    };
 
 Comment$Query$CommentType$UserType _$Comment$Query$CommentType$UserTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1491,26 +1231,17 @@ Comment$Query$CommentType$UserType _$Comment$Query$CommentType$UserTypeFromJson(
               json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Comment$Query$CommentType$UserTypeToJson(
-    Comment$Query$CommentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        Comment$Query$CommentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -1526,25 +1257,17 @@ Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$Conte
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -1561,20 +1284,12 @@ Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$Conte
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -1596,22 +1311,14 @@ Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$Conte
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
     _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -1627,23 +1334,14 @@ Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 Comment$Query$CommentType$DocumentType$DocumentContentType
     _$Comment$Query$CommentType$DocumentType$DocumentContentTypeFromJson(
@@ -1654,20 +1352,12 @@ Comment$Query$CommentType$DocumentType$DocumentContentType
               : Comment$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
                   .fromJson(json['type'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$Comment$Query$CommentType$DocumentType$DocumentContentTypeToJson(
-        Comment$Query$CommentType$DocumentType$DocumentContentType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$Comment$Query$CommentType$DocumentType$DocumentContentTypeToJson(
+        Comment$Query$CommentType$DocumentType$DocumentContentType instance) =>
+    <String, dynamic>{
+      'type': instance.type?.toJson(),
+    };
 
 Comment$Query$CommentType$DocumentType$UserType$PhoneType
     _$Comment$Query$CommentType$DocumentType$UserType$PhoneTypeFromJson(
@@ -1678,23 +1368,15 @@ Comment$Query$CommentType$DocumentType$UserType$PhoneType
           ..countryCode = json['countryCode'] as String?
           ..validationNumber = json['validationNumber'] as int?;
 
-Map<String, dynamic>
-    _$Comment$Query$CommentType$DocumentType$UserType$PhoneTypeToJson(
-        Comment$Query$CommentType$DocumentType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+Map<String,
+    dynamic> _$Comment$Query$CommentType$DocumentType$UserType$PhoneTypeToJson(
+        Comment$Query$CommentType$DocumentType$UserType$PhoneType instance) =>
+    <String, dynamic>{
+      'number': instance.number,
+      'isValid': instance.isValid,
+      'countryCode': instance.countryCode,
+      'validationNumber': instance.validationNumber,
+    };
 
 Comment$Query$CommentType$DocumentType$UserType$PictureType
     _$Comment$Query$CommentType$DocumentType$UserType$PictureTypeFromJson(
@@ -1710,24 +1392,17 @@ Comment$Query$CommentType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$DocumentType$UserType$PictureTypeToJson(
-        Comment$Query$CommentType$DocumentType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Comment$Query$CommentType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Comment$Query$CommentType$DocumentType$UserType
     _$Comment$Query$CommentType$DocumentType$UserTypeFromJson(
@@ -1750,26 +1425,17 @@ Comment$Query$CommentType$DocumentType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Comment$Query$CommentType$DocumentType$UserTypeToJson(
-    Comment$Query$CommentType$DocumentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        Comment$Query$CommentType$DocumentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 Comment$Query$CommentType$DocumentType
     _$Comment$Query$CommentType$DocumentTypeFromJson(
@@ -1790,25 +1456,16 @@ Comment$Query$CommentType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Comment$Query$CommentType$DocumentTypeToJson(
-    Comment$Query$CommentType$DocumentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        Comment$Query$CommentType$DocumentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'content': instance.content?.toJson(),
+      'size': instance.size,
+      'owner': instance.owner?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 Comment$Query$CommentType$CommentHolderType$TicketType
     _$Comment$Query$CommentType$CommentHolderType$TicketTypeFromJson(
@@ -2010,28 +1667,20 @@ Comment$Query$CommentType$CommentHolderType
                       json['purchaseDeliveryNote'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Comment$Query$CommentType$CommentHolderTypeToJson(
-    Comment$Query$CommentType$CommentHolderType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+        Comment$Query$CommentType$CommentHolderType instance) =>
+    <String, dynamic>{
+      'ticket': instance.ticket?.toJson(),
+      'card': instance.card?.toJson(),
+      'project': instance.project?.toJson(),
+      'quotation': instance.quotation?.toJson(),
+      'saleOrder': instance.saleOrder?.toJson(),
+      'saleInvoice': instance.saleInvoice?.toJson(),
+      'saleIssueNote': instance.saleIssueNote?.toJson(),
+      'purchaseOrder': instance.purchaseOrder?.toJson(),
+      'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+      'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+      'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+    };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeFromJson(
@@ -2044,22 +1693,14 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeFromJson(
@@ -2075,25 +1716,17 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserTypeFromJson(
@@ -2117,27 +1750,18 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -2153,25 +1777,17 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -2188,20 +1804,12 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -2223,22 +1831,14 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -2254,23 +1854,14 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeFromJson(
@@ -2283,19 +1874,11 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeFromJson(
@@ -2308,22 +1891,14 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$P
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeFromJson(
@@ -2339,25 +1914,17 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$P
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeFromJson(
@@ -2381,27 +1948,18 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTypeFromJson(
@@ -2423,26 +1981,17 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'content': instance.content?.toJson(),
+          'size': instance.size,
+          'owner': instance.owner?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeFromJson(
@@ -2650,29 +2199,21 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
 
 Map<String, dynamic>
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            Comment$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
+                instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 Comment$Query$CommentType$FirstReplyType$CommentBaseType
     _$Comment$Query$CommentType$FirstReplyType$CommentBaseTypeFromJson(
@@ -2696,28 +2237,18 @@ Comment$Query$CommentType$FirstReplyType$CommentBaseType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String, dynamic>
-    _$Comment$Query$CommentType$FirstReplyType$CommentBaseTypeToJson(
-        Comment$Query$CommentType$FirstReplyType$CommentBaseType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+Map<String,
+    dynamic> _$Comment$Query$CommentType$FirstReplyType$CommentBaseTypeToJson(
+        Comment$Query$CommentType$FirstReplyType$CommentBaseType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'user': instance.user?.toJson(),
+      'comment': instance.comment,
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'holder': instance.holder?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 Comment$Query$CommentType$FirstReplyType
     _$Comment$Query$CommentType$FirstReplyTypeFromJson(
@@ -2730,20 +2261,11 @@ Comment$Query$CommentType$FirstReplyType
                   .fromJson(json['reply'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Comment$Query$CommentType$FirstReplyTypeToJson(
-    Comment$Query$CommentType$FirstReplyType instance) {
-  final val = <String, dynamic>{
-    'hasMoreReplies': instance.hasMoreReplies,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('reply', instance.reply?.toJson());
-  return val;
-}
+        Comment$Query$CommentType$FirstReplyType instance) =>
+    <String, dynamic>{
+      'hasMoreReplies': instance.hasMoreReplies,
+      'reply': instance.reply?.toJson(),
+    };
 
 Comment$Query$CommentType _$Comment$Query$CommentTypeFromJson(
         Map<String, dynamic> json) =>
@@ -2770,27 +2292,17 @@ Comment$Query$CommentType _$Comment$Query$CommentTypeFromJson(
               json['firstReply'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Comment$Query$CommentTypeToJson(
-    Comment$Query$CommentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('firstReply', instance.firstReply?.toJson());
-  return val;
-}
+        Comment$Query$CommentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'user': instance.user?.toJson(),
+      'comment': instance.comment,
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'holder': instance.holder?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'firstReply': instance.firstReply?.toJson(),
+    };
 
 Comment$Query _$Comment$QueryFromJson(Map<String, dynamic> json) =>
     Comment$Query()
@@ -2811,23 +2323,15 @@ GetCommentsByHolder$Query$CommentType$UserType$PhoneType
           ..countryCode = json['countryCode'] as String?
           ..validationNumber = json['validationNumber'] as int?;
 
-Map<String, dynamic>
-    _$GetCommentsByHolder$Query$CommentType$UserType$PhoneTypeToJson(
-        GetCommentsByHolder$Query$CommentType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+Map<String,
+    dynamic> _$GetCommentsByHolder$Query$CommentType$UserType$PhoneTypeToJson(
+        GetCommentsByHolder$Query$CommentType$UserType$PhoneType instance) =>
+    <String, dynamic>{
+      'number': instance.number,
+      'isValid': instance.isValid,
+      'countryCode': instance.countryCode,
+      'validationNumber': instance.validationNumber,
+    };
 
 GetCommentsByHolder$Query$CommentType$UserType$PictureType
     _$GetCommentsByHolder$Query$CommentType$UserType$PictureTypeFromJson(
@@ -2841,26 +2345,18 @@ GetCommentsByHolder$Query$CommentType$UserType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String, dynamic>
-    _$GetCommentsByHolder$Query$CommentType$UserType$PictureTypeToJson(
-        GetCommentsByHolder$Query$CommentType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+Map<String,
+    dynamic> _$GetCommentsByHolder$Query$CommentType$UserType$PictureTypeToJson(
+        GetCommentsByHolder$Query$CommentType$UserType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+    };
 
 GetCommentsByHolder$Query$CommentType$UserType
     _$GetCommentsByHolder$Query$CommentType$UserTypeFromJson(
@@ -2883,26 +2379,17 @@ GetCommentsByHolder$Query$CommentType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetCommentsByHolder$Query$CommentType$UserTypeToJson(
-    GetCommentsByHolder$Query$CommentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        GetCommentsByHolder$Query$CommentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -2918,25 +2405,17 @@ GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTy
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -2953,20 +2432,12 @@ GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTy
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -2988,22 +2459,14 @@ GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTy
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
     _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -3019,23 +2482,14 @@ GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTy
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType
     _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentTypeFromJson(
@@ -3048,19 +2502,11 @@ GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentTypeToJson(
-        GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PhoneType
     _$GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PhoneTypeFromJson(
@@ -3073,22 +2519,14 @@ GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PhoneTypeToJson(
-        GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PictureType
     _$GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PictureTypeFromJson(
@@ -3104,25 +2542,17 @@ GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PictureTypeToJson(
-        GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolder$Query$CommentType$DocumentType$UserType
     _$GetCommentsByHolder$Query$CommentType$DocumentType$UserTypeFromJson(
@@ -3146,26 +2576,18 @@ GetCommentsByHolder$Query$CommentType$DocumentType$UserType
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$DocumentType$UserTypeToJson(
-        GetCommentsByHolder$Query$CommentType$DocumentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$DocumentType
     _$GetCommentsByHolder$Query$CommentType$DocumentTypeFromJson(
@@ -3186,25 +2608,16 @@ GetCommentsByHolder$Query$CommentType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetCommentsByHolder$Query$CommentType$DocumentTypeToJson(
-    GetCommentsByHolder$Query$CommentType$DocumentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        GetCommentsByHolder$Query$CommentType$DocumentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'content': instance.content?.toJson(),
+      'size': instance.size,
+      'owner': instance.owner?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 GetCommentsByHolder$Query$CommentType$CommentHolderType$TicketType
     _$GetCommentsByHolder$Query$CommentType$CommentHolderType$TicketTypeFromJson(
@@ -3412,28 +2825,20 @@ GetCommentsByHolder$Query$CommentType$CommentHolderType
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$CommentHolderTypeToJson(
-        GetCommentsByHolder$Query$CommentType$CommentHolderType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$CommentHolderType instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeFromJson(
@@ -3446,22 +2851,14 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$Ph
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeFromJson(
@@ -3477,25 +2874,17 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$Pi
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserTypeFromJson(
@@ -3519,27 +2908,18 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -3555,25 +2935,17 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -3590,20 +2962,12 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -3625,22 +2989,14 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -3656,23 +3012,14 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeFromJson(
@@ -3685,19 +3032,11 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeFromJson(
@@ -3710,22 +3049,14 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeFromJson(
@@ -3741,25 +3072,17 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeFromJson(
@@ -3783,27 +3106,18 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTypeFromJson(
@@ -3825,26 +3139,17 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$DocumentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'content': instance.content?.toJson(),
+          'size': instance.size,
+          'owner': instance.owner?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeFromJson(
@@ -4052,29 +3357,21 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHold
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
+                instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseTypeFromJson(
@@ -4100,27 +3397,17 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType$CommentBaseType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'user': instance.user?.toJson(),
+          'comment': instance.comment,
+          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+          'holder': instance.holder?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetCommentsByHolder$Query$CommentType$FirstReplyType
     _$GetCommentsByHolder$Query$CommentType$FirstReplyTypeFromJson(
@@ -4134,20 +3421,11 @@ GetCommentsByHolder$Query$CommentType$FirstReplyType
 
 Map<String, dynamic>
     _$GetCommentsByHolder$Query$CommentType$FirstReplyTypeToJson(
-        GetCommentsByHolder$Query$CommentType$FirstReplyType instance) {
-  final val = <String, dynamic>{
-    'hasMoreReplies': instance.hasMoreReplies,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('reply', instance.reply?.toJson());
-  return val;
-}
+            GetCommentsByHolder$Query$CommentType$FirstReplyType instance) =>
+        <String, dynamic>{
+          'hasMoreReplies': instance.hasMoreReplies,
+          'reply': instance.reply?.toJson(),
+        };
 
 GetCommentsByHolder$Query$CommentType
     _$GetCommentsByHolder$Query$CommentTypeFromJson(
@@ -4176,27 +3454,17 @@ GetCommentsByHolder$Query$CommentType
                   json['firstReply'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetCommentsByHolder$Query$CommentTypeToJson(
-    GetCommentsByHolder$Query$CommentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('firstReply', instance.firstReply?.toJson());
-  return val;
-}
+        GetCommentsByHolder$Query$CommentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'user': instance.user?.toJson(),
+      'comment': instance.comment,
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'holder': instance.holder?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'firstReply': instance.firstReply?.toJson(),
+    };
 
 GetCommentsByHolder$Query _$GetCommentsByHolder$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -4228,28 +3496,20 @@ CommentHolderInput _$CommentHolderInputFromJson(Map<String, dynamic> json) =>
       purchaseOrder: json['purchaseOrder'] as String?,
     );
 
-Map<String, dynamic> _$CommentHolderInputToJson(CommentHolderInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('project', instance.project);
-  writeNotNull('card', instance.card);
-  writeNotNull('ticket', instance.ticket);
-  writeNotNull('quotation', instance.quotation);
-  writeNotNull('saleOrder', instance.saleOrder);
-  writeNotNull('saleIssueNote', instance.saleIssueNote);
-  writeNotNull('saleInvoice', instance.saleInvoice);
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote);
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote);
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice);
-  writeNotNull('purchaseOrder', instance.purchaseOrder);
-  return val;
-}
+Map<String, dynamic> _$CommentHolderInputToJson(CommentHolderInput instance) =>
+    <String, dynamic>{
+      'project': instance.project,
+      'card': instance.card,
+      'ticket': instance.ticket,
+      'quotation': instance.quotation,
+      'saleOrder': instance.saleOrder,
+      'saleIssueNote': instance.saleIssueNote,
+      'saleInvoice': instance.saleInvoice,
+      'saleDeliveryNote': instance.saleDeliveryNote,
+      'purchaseDeliveryNote': instance.purchaseDeliveryNote,
+      'purchaseInvoice': instance.purchaseInvoice,
+      'purchaseOrder': instance.purchaseOrder,
+    };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PhoneType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PhoneTypeFromJson(
@@ -4262,22 +3522,14 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PhoneTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PictureType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PictureTypeFromJson(
@@ -4293,25 +3545,17 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PictureTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$UserTypeFromJson(
@@ -4335,27 +3579,18 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$UserTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -4371,25 +3606,17 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -4406,20 +3633,12 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -4441,22 +3660,14 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -4472,23 +3683,14 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentTypeFromJson(
@@ -4501,19 +3703,11 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneTypeFromJson(
@@ -4526,22 +3720,14 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$P
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureTypeFromJson(
@@ -4557,25 +3743,17 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$P
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserTypeFromJson(
@@ -4599,27 +3777,18 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentTypeFromJson(
@@ -4641,26 +3810,17 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$DocumentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'content': instance.content?.toJson(),
+          'size': instance.size,
+          'owner': instance.owner?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$TicketType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType$TicketTypeFromJson(
@@ -4868,29 +4028,21 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$CommentHolderType
+                instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeFromJson(
@@ -4903,22 +4055,14 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeFromJson(
@@ -4934,25 +4078,17 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserTypeFromJson(
@@ -4976,27 +4112,18 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -5012,25 +4139,17 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -5047,20 +4166,12 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -5082,22 +4193,14 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -5113,23 +4216,14 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeFromJson(
@@ -5142,19 +4236,11 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeFromJson(
@@ -5167,22 +4253,14 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeFromJson(
@@ -5198,25 +4276,17 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeFromJson(
@@ -5240,27 +4310,18 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentTypeFromJson(
@@ -5282,26 +4343,17 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'content': instance.content?.toJson(),
+          'size': instance.size,
+          'owner': instance.owner?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeFromJson(
@@ -5509,29 +4561,21 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
+                instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseTypeFromJson(
@@ -5557,27 +4601,17 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentB
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'user': instance.user?.toJson(),
+          'comment': instance.comment,
+          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+          'holder': instance.holder?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyTypeFromJson(
@@ -5591,21 +4625,12 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType
 
 Map<String, dynamic>
     _$GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType
-            instance) {
-  final val = <String, dynamic>{
-    'hasMoreReplies': instance.hasMoreReplies,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('reply', instance.reply?.toJson());
-  return val;
-}
+            GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType
+                instance) =>
+        <String, dynamic>{
+          'hasMoreReplies': instance.hasMoreReplies,
+          'reply': instance.reply?.toJson(),
+        };
 
 GetCommentsReplies$Query$CommentPaginateType$CommentType
     _$GetCommentsReplies$Query$CommentPaginateType$CommentTypeFromJson(
@@ -5633,29 +4658,19 @@ GetCommentsReplies$Query$CommentPaginateType$CommentType
               : GetCommentsReplies$Query$CommentPaginateType$CommentType$FirstReplyType
                   .fromJson(json['firstReply'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$GetCommentsReplies$Query$CommentPaginateType$CommentTypeToJson(
-        GetCommentsReplies$Query$CommentPaginateType$CommentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('firstReply', instance.firstReply?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$GetCommentsReplies$Query$CommentPaginateType$CommentTypeToJson(
+        GetCommentsReplies$Query$CommentPaginateType$CommentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'user': instance.user?.toJson(),
+      'comment': instance.comment,
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'holder': instance.holder?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'firstReply': instance.firstReply?.toJson(),
+    };
 
 GetCommentsReplies$Query$CommentPaginateType
     _$GetCommentsReplies$Query$CommentPaginateTypeFromJson(
@@ -5670,20 +4685,12 @@ GetCommentsReplies$Query$CommentPaginateType
               .toList();
 
 Map<String, dynamic> _$GetCommentsReplies$Query$CommentPaginateTypeToJson(
-    GetCommentsReplies$Query$CommentPaginateType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+        GetCommentsReplies$Query$CommentPaginateType instance) =>
+    <String, dynamic>{
+      'count': instance.count,
+      'isLast': instance.isLast,
+      'objects': instance.objects.map((e) => e.toJson()).toList(),
+    };
 
 GetCommentsReplies$Query _$GetCommentsReplies$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -5704,19 +4711,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PhoneType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PhoneTypeFromJson(
@@ -5729,22 +4728,14 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$Phon
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PhoneTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PictureType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PictureTypeFromJson(
@@ -5760,25 +4751,17 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$Pict
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PictureTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserTypeFromJson(
@@ -5802,27 +4785,18 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -5838,25 +4812,17 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -5873,20 +4839,12 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -5908,22 +4866,14 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -5939,23 +4889,14 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentTypeFromJson(
@@ -5968,19 +4909,11 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneTypeFromJson(
@@ -5993,22 +4926,14 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureTypeFromJson(
@@ -6024,25 +4949,17 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserTypeFromJson(
@@ -6066,27 +4983,18 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentTypeFromJson(
@@ -6108,26 +5016,17 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$DocumentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'content': instance.content?.toJson(),
+          'size': instance.size,
+          'owner': instance.owner?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$TicketType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType$TicketTypeFromJson(
@@ -6335,29 +5234,21 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolder
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$CommentHolderType
+                instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeFromJson(
@@ -6370,22 +5261,14 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeFromJson(
@@ -6401,25 +5284,17 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserTypeFromJson(
@@ -6443,27 +5318,18 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -6479,25 +5345,17 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -6514,20 +5372,12 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -6549,22 +5399,14 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -6580,23 +5422,14 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeFromJson(
@@ -6609,19 +5442,11 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeFromJson(
@@ -6634,22 +5459,14 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeFromJson(
@@ -6665,25 +5482,17 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeFromJson(
@@ -6707,27 +5516,18 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentTypeFromJson(
@@ -6749,26 +5549,17 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$DocumentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'content': instance.content?.toJson(),
+          'size': instance.size,
+          'owner': instance.owner?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeFromJson(
@@ -6976,29 +5767,21 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
+                instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseTypeFromJson(
@@ -7024,27 +5807,17 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType$CommentBaseType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'user': instance.user?.toJson(),
+          'comment': instance.comment,
+          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+          'holder': instance.holder?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTypeFromJson(
@@ -7058,21 +5831,12 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTyp
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType
-            instance) {
-  final val = <String, dynamic>{
-    'hasMoreReplies': instance.hasMoreReplies,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('reply', instance.reply?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType$FirstReplyType
+                instance) =>
+        <String, dynamic>{
+          'hasMoreReplies': instance.hasMoreReplies,
+          'reply': instance.reply?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentTypeFromJson(
@@ -7102,28 +5866,18 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('firstReply', instance.firstReply?.toJson());
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType$CommentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'user': instance.user?.toJson(),
+          'comment': instance.comment,
+          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+          'holder': instance.holder?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'firstReply': instance.firstReply?.toJson(),
+        };
 
 GetCommentsByHolderPaginated$Query$CommentPaginateType
     _$GetCommentsByHolderPaginated$Query$CommentPaginateTypeFromJson(
@@ -7139,20 +5893,12 @@ GetCommentsByHolderPaginated$Query$CommentPaginateType
 
 Map<String, dynamic>
     _$GetCommentsByHolderPaginated$Query$CommentPaginateTypeToJson(
-        GetCommentsByHolderPaginated$Query$CommentPaginateType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            GetCommentsByHolderPaginated$Query$CommentPaginateType instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 GetCommentsByHolderPaginated$Query _$GetCommentsByHolderPaginated$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -7179,21 +5925,13 @@ CreateComment$Mutation$CommentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$UserType$PhoneTypeToJson(
-        CreateComment$Mutation$CommentType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            CreateComment$Mutation$CommentType$UserType$PhoneType instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 CreateComment$Mutation$CommentType$UserType$PictureType
     _$CreateComment$Mutation$CommentType$UserType$PictureTypeFromJson(
@@ -7209,24 +5947,16 @@ CreateComment$Mutation$CommentType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$UserType$PictureTypeToJson(
-        CreateComment$Mutation$CommentType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            CreateComment$Mutation$CommentType$UserType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 CreateComment$Mutation$CommentType$UserType
     _$CreateComment$Mutation$CommentType$UserTypeFromJson(
@@ -7249,26 +5979,17 @@ CreateComment$Mutation$CommentType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateComment$Mutation$CommentType$UserTypeToJson(
-    CreateComment$Mutation$CommentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        CreateComment$Mutation$CommentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -7284,25 +6005,17 @@ CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -7319,20 +6032,12 @@ CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -7354,22 +6059,14 @@ CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType
     _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -7385,23 +6082,14 @@ CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            CreateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 CreateComment$Mutation$CommentType$DocumentType$DocumentContentType
     _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentTypeFromJson(
@@ -7414,19 +6102,11 @@ CreateComment$Mutation$CommentType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$DocumentType$DocumentContentTypeToJson(
-        CreateComment$Mutation$CommentType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            CreateComment$Mutation$CommentType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 CreateComment$Mutation$CommentType$DocumentType$UserType$PhoneType
     _$CreateComment$Mutation$CommentType$DocumentType$UserType$PhoneTypeFromJson(
@@ -7439,22 +6119,14 @@ CreateComment$Mutation$CommentType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$DocumentType$UserType$PhoneTypeToJson(
-        CreateComment$Mutation$CommentType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            CreateComment$Mutation$CommentType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 CreateComment$Mutation$CommentType$DocumentType$UserType$PictureType
     _$CreateComment$Mutation$CommentType$DocumentType$UserType$PictureTypeFromJson(
@@ -7470,25 +6142,17 @@ CreateComment$Mutation$CommentType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$DocumentType$UserType$PictureTypeToJson(
-        CreateComment$Mutation$CommentType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            CreateComment$Mutation$CommentType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 CreateComment$Mutation$CommentType$DocumentType$UserType
     _$CreateComment$Mutation$CommentType$DocumentType$UserTypeFromJson(
@@ -7510,28 +6174,19 @@ CreateComment$Mutation$CommentType$DocumentType$UserType
               : CreateComment$Mutation$CommentType$DocumentType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$CreateComment$Mutation$CommentType$DocumentType$UserTypeToJson(
-        CreateComment$Mutation$CommentType$DocumentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$CreateComment$Mutation$CommentType$DocumentType$UserTypeToJson(
+        CreateComment$Mutation$CommentType$DocumentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 CreateComment$Mutation$CommentType$DocumentType
     _$CreateComment$Mutation$CommentType$DocumentTypeFromJson(
@@ -7552,25 +6207,16 @@ CreateComment$Mutation$CommentType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateComment$Mutation$CommentType$DocumentTypeToJson(
-    CreateComment$Mutation$CommentType$DocumentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        CreateComment$Mutation$CommentType$DocumentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'content': instance.content?.toJson(),
+      'size': instance.size,
+      'owner': instance.owner?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 CreateComment$Mutation$CommentType$CommentHolderType$TicketType
     _$CreateComment$Mutation$CommentType$CommentHolderType$TicketTypeFromJson(
@@ -7778,28 +6424,20 @@ CreateComment$Mutation$CommentType$CommentHolderType
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$CommentHolderTypeToJson(
-        CreateComment$Mutation$CommentType$CommentHolderType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            CreateComment$Mutation$CommentType$CommentHolderType instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeFromJson(
@@ -7812,22 +6450,14 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$Phone
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeFromJson(
@@ -7843,25 +6473,17 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$Pictu
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserTypeFromJson(
@@ -7885,27 +6507,18 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -7921,25 +6534,17 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$D
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -7956,20 +6561,12 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$D
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -7991,22 +6588,14 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$D
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -8022,23 +6611,14 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$D
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeFromJson(
@@ -8051,19 +6631,11 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$D
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeFromJson(
@@ -8076,22 +6648,14 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$U
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeFromJson(
@@ -8107,25 +6671,17 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$U
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeFromJson(
@@ -8149,27 +6705,18 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$U
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentTypeFromJson(
@@ -8191,26 +6738,17 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'content': instance.content?.toJson(),
+          'size': instance.size,
+          'owner': instance.owner?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeFromJson(
@@ -8418,29 +6956,21 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderT
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
+                instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseTypeFromJson(
@@ -8466,27 +6996,17 @@ CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType
 
 Map<String, dynamic>
     _$CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseTypeToJson(
-        CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            CreateComment$Mutation$CommentType$FirstReplyType$CommentBaseType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'user': instance.user?.toJson(),
+          'comment': instance.comment,
+          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+          'holder': instance.holder?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 CreateComment$Mutation$CommentType$FirstReplyType
     _$CreateComment$Mutation$CommentType$FirstReplyTypeFromJson(
@@ -8499,20 +7019,11 @@ CreateComment$Mutation$CommentType$FirstReplyType
                   .fromJson(json['reply'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateComment$Mutation$CommentType$FirstReplyTypeToJson(
-    CreateComment$Mutation$CommentType$FirstReplyType instance) {
-  final val = <String, dynamic>{
-    'hasMoreReplies': instance.hasMoreReplies,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('reply', instance.reply?.toJson());
-  return val;
-}
+        CreateComment$Mutation$CommentType$FirstReplyType instance) =>
+    <String, dynamic>{
+      'hasMoreReplies': instance.hasMoreReplies,
+      'reply': instance.reply?.toJson(),
+    };
 
 CreateComment$Mutation$CommentType _$CreateComment$Mutation$CommentTypeFromJson(
         Map<String, dynamic> json) =>
@@ -8539,27 +7050,17 @@ CreateComment$Mutation$CommentType _$CreateComment$Mutation$CommentTypeFromJson(
               json['firstReply'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateComment$Mutation$CommentTypeToJson(
-    CreateComment$Mutation$CommentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('firstReply', instance.firstReply?.toJson());
-  return val;
-}
+        CreateComment$Mutation$CommentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'user': instance.user?.toJson(),
+      'comment': instance.comment,
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'holder': instance.holder?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'firstReply': instance.firstReply?.toJson(),
+    };
 
 CreateComment$Mutation _$CreateComment$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -8585,22 +7086,14 @@ CommentInput _$CommentInputFromJson(Map<String, dynamic> json) => CommentInput(
           : CommentHolderInput.fromJson(json['holder'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$CommentInputToJson(CommentInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user);
-  writeNotNull('comment', instance.comment);
-  writeNotNull('replyTo', instance.replyTo);
-  writeNotNull('attachments', instance.attachments);
-  writeNotNull('holder', instance.holder?.toJson());
-  return val;
-}
+Map<String, dynamic> _$CommentInputToJson(CommentInput instance) =>
+    <String, dynamic>{
+      'user': instance.user,
+      'comment': instance.comment,
+      'replyTo': instance.replyTo,
+      'attachments': instance.attachments,
+      'holder': instance.holder?.toJson(),
+    };
 
 UpdateComment$Mutation$CommentType$UserType$PhoneType
     _$UpdateComment$Mutation$CommentType$UserType$PhoneTypeFromJson(
@@ -8613,21 +7106,13 @@ UpdateComment$Mutation$CommentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$UserType$PhoneTypeToJson(
-        UpdateComment$Mutation$CommentType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$UserType$PhoneType instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 UpdateComment$Mutation$CommentType$UserType$PictureType
     _$UpdateComment$Mutation$CommentType$UserType$PictureTypeFromJson(
@@ -8643,24 +7128,16 @@ UpdateComment$Mutation$CommentType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$UserType$PictureTypeToJson(
-        UpdateComment$Mutation$CommentType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$UserType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 UpdateComment$Mutation$CommentType$UserType
     _$UpdateComment$Mutation$CommentType$UserTypeFromJson(
@@ -8683,26 +7160,17 @@ UpdateComment$Mutation$CommentType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateComment$Mutation$CommentType$UserTypeToJson(
-    UpdateComment$Mutation$CommentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        UpdateComment$Mutation$CommentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -8718,25 +7186,17 @@ UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -8753,20 +7213,12 @@ UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -8788,22 +7240,14 @@ UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType
     _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -8819,23 +7263,14 @@ UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType
     _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentTypeFromJson(
@@ -8848,19 +7283,11 @@ UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$DocumentType$DocumentContentTypeToJson(
-        UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            UpdateComment$Mutation$CommentType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 UpdateComment$Mutation$CommentType$DocumentType$UserType$PhoneType
     _$UpdateComment$Mutation$CommentType$DocumentType$UserType$PhoneTypeFromJson(
@@ -8873,22 +7300,14 @@ UpdateComment$Mutation$CommentType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$DocumentType$UserType$PhoneTypeToJson(
-        UpdateComment$Mutation$CommentType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 UpdateComment$Mutation$CommentType$DocumentType$UserType$PictureType
     _$UpdateComment$Mutation$CommentType$DocumentType$UserType$PictureTypeFromJson(
@@ -8904,25 +7323,17 @@ UpdateComment$Mutation$CommentType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$DocumentType$UserType$PictureTypeToJson(
-        UpdateComment$Mutation$CommentType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 UpdateComment$Mutation$CommentType$DocumentType$UserType
     _$UpdateComment$Mutation$CommentType$DocumentType$UserTypeFromJson(
@@ -8944,28 +7355,19 @@ UpdateComment$Mutation$CommentType$DocumentType$UserType
               : UpdateComment$Mutation$CommentType$DocumentType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$UpdateComment$Mutation$CommentType$DocumentType$UserTypeToJson(
-        UpdateComment$Mutation$CommentType$DocumentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$UpdateComment$Mutation$CommentType$DocumentType$UserTypeToJson(
+        UpdateComment$Mutation$CommentType$DocumentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 UpdateComment$Mutation$CommentType$DocumentType
     _$UpdateComment$Mutation$CommentType$DocumentTypeFromJson(
@@ -8986,25 +7388,16 @@ UpdateComment$Mutation$CommentType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateComment$Mutation$CommentType$DocumentTypeToJson(
-    UpdateComment$Mutation$CommentType$DocumentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        UpdateComment$Mutation$CommentType$DocumentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'content': instance.content?.toJson(),
+      'size': instance.size,
+      'owner': instance.owner?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 UpdateComment$Mutation$CommentType$CommentHolderType$TicketType
     _$UpdateComment$Mutation$CommentType$CommentHolderType$TicketTypeFromJson(
@@ -9212,28 +7605,20 @@ UpdateComment$Mutation$CommentType$CommentHolderType
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$CommentHolderTypeToJson(
-        UpdateComment$Mutation$CommentType$CommentHolderType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            UpdateComment$Mutation$CommentType$CommentHolderType instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeFromJson(
@@ -9246,22 +7631,14 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$Phone
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeFromJson(
@@ -9277,25 +7654,17 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$Pictu
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserTypeFromJson(
@@ -9319,27 +7688,18 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -9355,25 +7715,17 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$D
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -9390,20 +7742,12 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$D
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -9425,22 +7769,14 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$D
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -9456,23 +7792,14 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$D
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeFromJson(
@@ -9485,19 +7812,11 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$D
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeFromJson(
@@ -9510,22 +7829,14 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$U
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeFromJson(
@@ -9541,25 +7852,17 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$U
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeFromJson(
@@ -9583,27 +7886,18 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$U
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentTypeFromJson(
@@ -9625,26 +7919,17 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$DocumentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'content': instance.content?.toJson(),
+          'size': instance.size,
+          'owner': instance.owner?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType$TicketTypeFromJson(
@@ -9852,29 +8137,21 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderT
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ticket', instance.ticket?.toJson());
-  writeNotNull('card', instance.card?.toJson());
-  writeNotNull('project', instance.project?.toJson());
-  writeNotNull('quotation', instance.quotation?.toJson());
-  writeNotNull('saleOrder', instance.saleOrder?.toJson());
-  writeNotNull('saleInvoice', instance.saleInvoice?.toJson());
-  writeNotNull('saleIssueNote', instance.saleIssueNote?.toJson());
-  writeNotNull('purchaseOrder', instance.purchaseOrder?.toJson());
-  writeNotNull('purchaseInvoice', instance.purchaseInvoice?.toJson());
-  writeNotNull('saleDeliveryNote', instance.saleDeliveryNote?.toJson());
-  writeNotNull('purchaseDeliveryNote', instance.purchaseDeliveryNote?.toJson());
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType$CommentHolderType
+                instance) =>
+        <String, dynamic>{
+          'ticket': instance.ticket?.toJson(),
+          'card': instance.card?.toJson(),
+          'project': instance.project?.toJson(),
+          'quotation': instance.quotation?.toJson(),
+          'saleOrder': instance.saleOrder?.toJson(),
+          'saleInvoice': instance.saleInvoice?.toJson(),
+          'saleIssueNote': instance.saleIssueNote?.toJson(),
+          'purchaseOrder': instance.purchaseOrder?.toJson(),
+          'purchaseInvoice': instance.purchaseInvoice?.toJson(),
+          'saleDeliveryNote': instance.saleDeliveryNote?.toJson(),
+          'purchaseDeliveryNote': instance.purchaseDeliveryNote?.toJson(),
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseTypeFromJson(
@@ -9900,27 +8177,17 @@ UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType
 
 Map<String, dynamic>
     _$UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseTypeToJson(
-        UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            UpdateComment$Mutation$CommentType$FirstReplyType$CommentBaseType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'user': instance.user?.toJson(),
+          'comment': instance.comment,
+          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+          'holder': instance.holder?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 UpdateComment$Mutation$CommentType$FirstReplyType
     _$UpdateComment$Mutation$CommentType$FirstReplyTypeFromJson(
@@ -9933,20 +8200,11 @@ UpdateComment$Mutation$CommentType$FirstReplyType
                   .fromJson(json['reply'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateComment$Mutation$CommentType$FirstReplyTypeToJson(
-    UpdateComment$Mutation$CommentType$FirstReplyType instance) {
-  final val = <String, dynamic>{
-    'hasMoreReplies': instance.hasMoreReplies,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('reply', instance.reply?.toJson());
-  return val;
-}
+        UpdateComment$Mutation$CommentType$FirstReplyType instance) =>
+    <String, dynamic>{
+      'hasMoreReplies': instance.hasMoreReplies,
+      'reply': instance.reply?.toJson(),
+    };
 
 UpdateComment$Mutation$CommentType _$UpdateComment$Mutation$CommentTypeFromJson(
         Map<String, dynamic> json) =>
@@ -9973,27 +8231,17 @@ UpdateComment$Mutation$CommentType _$UpdateComment$Mutation$CommentTypeFromJson(
               json['firstReply'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateComment$Mutation$CommentTypeToJson(
-    UpdateComment$Mutation$CommentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('comment', instance.comment);
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('holder', instance.holder?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('firstReply', instance.firstReply?.toJson());
-  return val;
-}
+        UpdateComment$Mutation$CommentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'user': instance.user?.toJson(),
+      'comment': instance.comment,
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'holder': instance.holder?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'firstReply': instance.firstReply?.toJson(),
+    };
 
 UpdateComment$Mutation _$UpdateComment$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -10067,20 +8315,11 @@ GetCommentsRepliesArguments _$GetCommentsRepliesArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetCommentsRepliesArgumentsToJson(
-    GetCommentsRepliesArguments instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetCommentsRepliesArguments instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'pagination': instance.pagination?.toJson(),
+    };
 
 GetCommentsByHolderPaginatedArguments
     _$GetCommentsByHolderPaginatedArgumentsFromJson(
@@ -10095,20 +8334,11 @@ GetCommentsByHolderPaginatedArguments
         );
 
 Map<String, dynamic> _$GetCommentsByHolderPaginatedArgumentsToJson(
-    GetCommentsByHolderPaginatedArguments instance) {
-  final val = <String, dynamic>{
-    'holder': instance.holder.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetCommentsByHolderPaginatedArguments instance) =>
+    <String, dynamic>{
+      'holder': instance.holder.toJson(),
+      'pagination': instance.pagination?.toJson(),
+    };
 
 CreateCommentArguments _$CreateCommentArgumentsFromJson(
         Map<String, dynamic> json) =>

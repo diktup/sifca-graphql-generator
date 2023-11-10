@@ -450,13 +450,13 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType?
       country;

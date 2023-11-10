@@ -457,13 +457,13 @@ class GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$StateTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCorporateUsersByTarget$Query$CorporateUserType$FullAddressType$StateType$CountryType?
       country;
@@ -1109,13 +1109,13 @@ class GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCorporateUsersByTarget$Query$CorporateUserType$UserWorkType$StateType$CountryType?
       country;
@@ -1324,13 +1324,13 @@ class GetCorporateUsersByTarget$Query$CorporateUserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCorporateUsersByTarget$Query$CorporateUserType$StateType$CountryType?
       country;
@@ -2006,13 +2006,13 @@ class LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   LoginForTarget$Query$LoginType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -2647,13 +2647,13 @@ class LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   LoginForTarget$Query$LoginType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -2858,13 +2858,13 @@ class LoginForTarget$Query$LoginType$UserType$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   LoginForTarget$Query$LoginType$UserType$StateType$CountryType? country;
 
@@ -3555,13 +3555,13 @@ class IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullA
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$FullAddressType$StateType$CountryType?
       country;
@@ -4207,13 +4207,13 @@ class IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserW
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$UserWorkType$StateType$CountryType?
       country;
@@ -4422,13 +4422,13 @@ class IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$State
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   IsLoginForTargetExist$Query$CorporateUserExistType$CorporateUserType$StateType$CountryType?
       country;
@@ -5140,13 +5140,13 @@ class SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUser
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$FullAddressType$StateType$CountryType?
       country;
@@ -5792,13 +5792,13 @@ class SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUser
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$UserWorkType$StateType$CountryType?
       country;
@@ -6007,13 +6007,13 @@ class SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUser
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchCorporateUsersByTarget$Query$CorporateUserPaginateType$CorporateUserType$StateType$CountryType?
       country;
@@ -6882,13 +6882,13 @@ class ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ValidateEmailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType?
       country;
@@ -7534,13 +7534,13 @@ class ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ValidateEmailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType?
       country;
@@ -7749,13 +7749,13 @@ class ValidateEmailForTarget$Mutation$CorporateUserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ValidateEmailForTarget$Mutation$CorporateUserType$StateType$CountryType?
       country;
@@ -8415,13 +8415,13 @@ class ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$Sta
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ProcessWelcomeMailForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType?
       country;
@@ -9067,13 +9067,13 @@ class ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ProcessWelcomeMailForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType?
       country;
@@ -9282,13 +9282,13 @@ class ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ProcessWelcomeMailForTarget$Mutation$CorporateUserType$StateType$CountryType?
       country;
@@ -9953,13 +9953,13 @@ class SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SaveCurrentCorporateUserStatus$Mutation$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -10605,13 +10605,13 @@ class SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SaveCurrentCorporateUserStatus$Mutation$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -10819,13 +10819,13 @@ class SaveCurrentCorporateUserStatus$Mutation$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SaveCurrentCorporateUserStatus$Mutation$UserType$StateType$CountryType?
       country;
@@ -11486,13 +11486,13 @@ class ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$StateTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ResetPasswordForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType?
       country;
@@ -12138,13 +12138,13 @@ class ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ResetPasswordForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType?
       country;
@@ -12353,13 +12353,13 @@ class ResetPasswordForTarget$Mutation$CorporateUserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ResetPasswordForTarget$Mutation$CorporateUserType$StateType$CountryType?
       country;
@@ -13071,13 +13071,13 @@ class RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   RegisterForTarget$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -13723,13 +13723,13 @@ class RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   RegisterForTarget$Mutation$LoginType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -13935,13 +13935,13 @@ class RegisterForTarget$Mutation$LoginType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   RegisterForTarget$Mutation$LoginType$UserType$StateType$CountryType? country;
 
@@ -15027,13 +15027,13 @@ class AddUserForTarget$Mutation$CorporateUserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   AddUserForTarget$Mutation$CorporateUserType$FullAddressType$StateType$CountryType?
       country;
@@ -15675,13 +15675,13 @@ class AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   AddUserForTarget$Mutation$CorporateUserType$UserWorkType$StateType$CountryType?
       country;
@@ -15886,13 +15886,13 @@ class AddUserForTarget$Mutation$CorporateUserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   AddUserForTarget$Mutation$CorporateUserType$StateType$CountryType? country;
 
@@ -16546,13 +16546,13 @@ class ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$Fu
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -17198,13 +17198,13 @@ class ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$Us
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -17413,13 +17413,13 @@ class ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$St
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ListenForCorporateUserStatusChanged$Subscription$UserStatsType$UserType$StateType$CountryType?
       country;

@@ -5,7 +5,7 @@ targets:
     builders:
       json_serializable:
         options:
-          include_if_null: false
+          include_if_null: true
       artemis:
         options:
           custom_parser_import: lib/time_parser.dart
@@ -215,5 +215,3 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/sales-delivery-note.graphql
               output: lib/dart/sales-delivery-note.graphql.dart
-
-

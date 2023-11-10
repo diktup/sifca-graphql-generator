@@ -3034,13 +3034,13 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -3464,13 +3464,13 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -3859,13 +3859,13 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -5664,13 +5664,13 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -6057,13 +6057,13 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -9595,13 +9595,13 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -10025,13 +10025,13 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -10420,13 +10420,13 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -12225,13 +12225,13 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -12618,13 +12618,13 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -15591,13 +15591,13 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -16019,13 +16019,13 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -16413,13 +16413,13 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -18393,13 +18393,13 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -18788,13 +18788,13 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;

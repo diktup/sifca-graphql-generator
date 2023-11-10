@@ -295,13 +295,13 @@ class GetCompanies$Query$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType? country;
 
@@ -680,13 +680,13 @@ class GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullA
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -1509,13 +1509,13 @@ class Company$Query$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Company$Query$CompanyType$FullAddressType$StateType$CountryType? country;
 
@@ -1892,13 +1892,13 @@ class Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddres
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -2732,13 +2732,13 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressTy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -3127,13 +3127,13 @@ class GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -4038,13 +4038,13 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -4433,13 +4433,13 @@ class GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDet
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -5344,13 +5344,13 @@ class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -5739,13 +5739,13 @@ class GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -6626,13 +6626,13 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -7021,13 +7021,13 @@ class SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDe
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -7905,13 +7905,13 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Full
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -8300,13 +8300,13 @@ class SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$Bank
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -9195,13 +9195,13 @@ class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -9590,13 +9590,13 @@ class SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -10482,13 +10482,13 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Full
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -10877,13 +10877,13 @@ class SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$Bank
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -11766,13 +11766,13 @@ class CreateCompany$Mutation$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -12154,13 +12154,13 @@ class CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -13338,13 +13338,13 @@ class UpdateCompany$Mutation$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -13726,13 +13726,13 @@ class UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$F
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -14636,13 +14636,13 @@ class BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -15029,13 +15029,13 @@ class BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHol
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -15969,13 +15969,13 @@ class ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -16364,13 +16364,13 @@ class ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetai
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;

@@ -36,19 +36,11 @@ GetJobDefinitions$Query$JobDefinitionType$JobSpecsType
 
 Map<String, dynamic>
     _$GetJobDefinitions$Query$JobDefinitionType$JobSpecsTypeToJson(
-        GetJobDefinitions$Query$JobDefinitionType$JobSpecsType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', _$JobDefinitionSpecEnumEnumMap[instance.key]);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetJobDefinitions$Query$JobDefinitionType$JobSpecsType instance) =>
+        <String, dynamic>{
+          'key': _$JobDefinitionSpecEnumEnumMap[instance.key],
+          'value': instance.value,
+        };
 
 const _$JobDefinitionSpecEnumEnumMap = {
   JobDefinitionSpecEnum.salary: 'SALARY',
@@ -71,19 +63,12 @@ GetJobDefinitions$Query$JobDefinitionType$JobDescriptionType
 
 Map<String, dynamic>
     _$GetJobDefinitions$Query$JobDefinitionType$JobDescriptionTypeToJson(
-        GetJobDefinitions$Query$JobDefinitionType$JobDescriptionType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('description', instance.description);
-  writeNotNull('descriptionList', instance.descriptionList);
-  return val;
-}
+            GetJobDefinitions$Query$JobDefinitionType$JobDescriptionType
+                instance) =>
+        <String, dynamic>{
+          'description': instance.description,
+          'descriptionList': instance.descriptionList,
+        };
 
 GetJobDefinitions$Query$JobDefinitionType
     _$GetJobDefinitions$Query$JobDefinitionTypeFromJson(
@@ -118,28 +103,19 @@ GetJobDefinitions$Query$JobDefinitionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetJobDefinitions$Query$JobDefinitionTypeToJson(
-    GetJobDefinitions$Query$JobDefinitionType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'title': instance.title,
-    'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
-    'department': instance.department.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('responsibility', instance.responsibility?.toJson());
-  writeNotNull('offer', instance.offer?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        GetJobDefinitions$Query$JobDefinitionType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
+      'department': instance.department.toJson(),
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'description': instance.description?.toJson(),
+      'responsibility': instance.responsibility?.toJson(),
+      'offer': instance.offer?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 const _$JobDefinitionStatusEnumEnumMap = {
   JobDefinitionStatusEnum.draft: 'DRAFT',
@@ -193,19 +169,11 @@ JobDefinition$Query$JobDefinitionType$JobSpecsType
           ..value = json['value'] as String?;
 
 Map<String, dynamic> _$JobDefinition$Query$JobDefinitionType$JobSpecsTypeToJson(
-    JobDefinition$Query$JobDefinitionType$JobSpecsType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', _$JobDefinitionSpecEnumEnumMap[instance.key]);
-  writeNotNull('value', instance.value);
-  return val;
-}
+        JobDefinition$Query$JobDefinitionType$JobSpecsType instance) =>
+    <String, dynamic>{
+      'key': _$JobDefinitionSpecEnumEnumMap[instance.key],
+      'value': instance.value,
+    };
 
 JobDefinition$Query$JobDefinitionType$JobDescriptionType
     _$JobDefinition$Query$JobDefinitionType$JobDescriptionTypeFromJson(
@@ -216,21 +184,13 @@ JobDefinition$Query$JobDefinitionType$JobDescriptionType
               ?.map((e) => e as String)
               .toList();
 
-Map<String, dynamic>
-    _$JobDefinition$Query$JobDefinitionType$JobDescriptionTypeToJson(
-        JobDefinition$Query$JobDefinitionType$JobDescriptionType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('description', instance.description);
-  writeNotNull('descriptionList', instance.descriptionList);
-  return val;
-}
+Map<String,
+    dynamic> _$JobDefinition$Query$JobDefinitionType$JobDescriptionTypeToJson(
+        JobDefinition$Query$JobDefinitionType$JobDescriptionType instance) =>
+    <String, dynamic>{
+      'description': instance.description,
+      'descriptionList': instance.descriptionList,
+    };
 
 JobDefinition$Query$JobDefinitionType
     _$JobDefinition$Query$JobDefinitionTypeFromJson(
@@ -265,28 +225,19 @@ JobDefinition$Query$JobDefinitionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$JobDefinition$Query$JobDefinitionTypeToJson(
-    JobDefinition$Query$JobDefinitionType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'title': instance.title,
-    'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
-    'department': instance.department.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('responsibility', instance.responsibility?.toJson());
-  writeNotNull('offer', instance.offer?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        JobDefinition$Query$JobDefinitionType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
+      'department': instance.department.toJson(),
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'description': instance.description?.toJson(),
+      'responsibility': instance.responsibility?.toJson(),
+      'offer': instance.offer?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 JobDefinition$Query _$JobDefinition$QueryFromJson(Map<String, dynamic> json) =>
     JobDefinition$Query()
@@ -330,20 +281,12 @@ GetJobDefinitionsByTarget$Query$JobDefinitionType$JobSpecsType
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobSpecsTypeToJson(
-        GetJobDefinitionsByTarget$Query$JobDefinitionType$JobSpecsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', _$JobDefinitionSpecEnumEnumMap[instance.key]);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetJobDefinitionsByTarget$Query$JobDefinitionType$JobSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': _$JobDefinitionSpecEnumEnumMap[instance.key],
+          'value': instance.value,
+        };
 
 GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDescriptionType
     _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDescriptionTypeFromJson(
@@ -356,20 +299,12 @@ GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDescriptionType
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDescriptionTypeToJson(
-        GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDescriptionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('description', instance.description);
-  writeNotNull('descriptionList', instance.descriptionList);
-  return val;
-}
+            GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDescriptionType
+                instance) =>
+        <String, dynamic>{
+          'description': instance.description,
+          'descriptionList': instance.descriptionList,
+        };
 
 GetJobDefinitionsByTarget$Query$JobDefinitionType
     _$GetJobDefinitionsByTarget$Query$JobDefinitionTypeFromJson(
@@ -404,28 +339,19 @@ GetJobDefinitionsByTarget$Query$JobDefinitionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetJobDefinitionsByTarget$Query$JobDefinitionTypeToJson(
-    GetJobDefinitionsByTarget$Query$JobDefinitionType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'title': instance.title,
-    'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
-    'department': instance.department.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('responsibility', instance.responsibility?.toJson());
-  writeNotNull('offer', instance.offer?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        GetJobDefinitionsByTarget$Query$JobDefinitionType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
+      'department': instance.department.toJson(),
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'description': instance.description?.toJson(),
+      'responsibility': instance.responsibility?.toJson(),
+      'offer': instance.offer?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 GetJobDefinitionsByTarget$Query _$GetJobDefinitionsByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -452,21 +378,13 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
+    <String, dynamic>{
+      'pos': instance.pos,
+      'wholesaler': instance.wholesaler,
+      'manufacturer': instance.manufacturer,
+      'user': instance.user,
+    };
 
 GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType
     _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentTypeFromJson(
@@ -499,20 +417,12 @@ GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefiniti
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobSpecsTypeToJson(
-        GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobSpecsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', _$JobDefinitionSpecEnumEnumMap[instance.key]);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': _$JobDefinitionSpecEnumEnumMap[instance.key],
+          'value': instance.value,
+        };
 
 GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType
     _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionTypeFromJson(
@@ -525,20 +435,12 @@ GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefiniti
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionTypeToJson(
-        GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('description', instance.description);
-  writeNotNull('descriptionList', instance.descriptionList);
-  return val;
-}
+            GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType
+                instance) =>
+        <String, dynamic>{
+          'description': instance.description,
+          'descriptionList': instance.descriptionList,
+        };
 
 GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType
     _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionTypeFromJson(
@@ -574,29 +476,20 @@ GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefiniti
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionTypeToJson(
-        GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'title': instance.title,
-    'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
-    'department': instance.department.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('responsibility', instance.responsibility?.toJson());
-  writeNotNull('offer', instance.offer?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'title': instance.title,
+          'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
+          'department': instance.department.toJson(),
+          'specs': instance.specs?.map((e) => e.toJson()).toList(),
+          'description': instance.description?.toJson(),
+          'responsibility': instance.responsibility?.toJson(),
+          'offer': instance.offer?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType
     _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedTypeFromJson(
@@ -612,21 +505,13 @@ GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedTypeToJson(
-        GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType
+                instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 GetJobDefinitionsByTargetPagination$Query
     _$GetJobDefinitionsByTargetPagination$QueryFromJson(
@@ -650,19 +535,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType
     _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentTypeFromJson(
@@ -695,20 +572,12 @@ SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$
 
 Map<String, dynamic>
     _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobSpecsTypeToJson(
-        SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobSpecsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', _$JobDefinitionSpecEnumEnumMap[instance.key]);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': _$JobDefinitionSpecEnumEnumMap[instance.key],
+          'value': instance.value,
+        };
 
 SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType
     _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionTypeFromJson(
@@ -721,20 +590,12 @@ SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$
 
 Map<String, dynamic>
     _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionTypeToJson(
-        SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('description', instance.description);
-  writeNotNull('descriptionList', instance.descriptionList);
-  return val;
-}
+            SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType
+                instance) =>
+        <String, dynamic>{
+          'description': instance.description,
+          'descriptionList': instance.descriptionList,
+        };
 
 SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType
     _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionTypeFromJson(
@@ -770,29 +631,20 @@ SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType
 
 Map<String, dynamic>
     _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionTypeToJson(
-        SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'title': instance.title,
-    'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
-    'department': instance.department.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('responsibility', instance.responsibility?.toJson());
-  writeNotNull('offer', instance.offer?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'title': instance.title,
+          'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
+          'department': instance.department.toJson(),
+          'specs': instance.specs?.map((e) => e.toJson()).toList(),
+          'description': instance.description?.toJson(),
+          'responsibility': instance.responsibility?.toJson(),
+          'offer': instance.offer?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType
     _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedTypeFromJson(
@@ -808,21 +660,13 @@ SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType
 
 Map<String, dynamic>
     _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedTypeToJson(
-        SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType
+                instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 SearchJobDefinitionsByTarget$Query _$SearchJobDefinitionsByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -870,20 +714,12 @@ GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$Jo
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobSpecsTypeToJson(
-        GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobSpecsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', _$JobDefinitionSpecEnumEnumMap[instance.key]);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': _$JobDefinitionSpecEnumEnumMap[instance.key],
+          'value': instance.value,
+        };
 
 GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType
     _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionTypeFromJson(
@@ -896,20 +732,12 @@ GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$Jo
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionTypeToJson(
-        GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('description', instance.description);
-  writeNotNull('descriptionList', instance.descriptionList);
-  return val;
-}
+            GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType
+                instance) =>
+        <String, dynamic>{
+          'description': instance.description,
+          'descriptionList': instance.descriptionList,
+        };
 
 GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType
     _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionTypeFromJson(
@@ -945,29 +773,20 @@ GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$Jo
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionTypeToJson(
-        GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'title': instance.title,
-    'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
-    'department': instance.department.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('responsibility', instance.responsibility?.toJson());
-  writeNotNull('offer', instance.offer?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'title': instance.title,
+          'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
+          'department': instance.department.toJson(),
+          'specs': instance.specs?.map((e) => e.toJson()).toList(),
+          'description': instance.description?.toJson(),
+          'responsibility': instance.responsibility?.toJson(),
+          'offer': instance.offer?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType
     _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedTypeFromJson(
@@ -983,21 +802,13 @@ GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedTypeToJson(
-        GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType
+                instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 GetJobDefinitionsByTargetAndStatusPagination$Query
     _$GetJobDefinitionsByTargetAndStatusPagination$QueryFromJson(
@@ -1022,18 +833,10 @@ GetJobDefinitionsByExcel$Query$InvoicePDFType
           ..content = json['content'] as String?;
 
 Map<String, dynamic> _$GetJobDefinitionsByExcel$Query$InvoicePDFTypeToJson(
-    GetJobDefinitionsByExcel$Query$InvoicePDFType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content);
-  return val;
-}
+        GetJobDefinitionsByExcel$Query$InvoicePDFType instance) =>
+    <String, dynamic>{
+      'content': instance.content,
+    };
 
 GetJobDefinitionsByExcel$Query _$GetJobDefinitionsByExcel$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -1120,19 +923,12 @@ CreateJobDefinition$Mutation$JobDefinitionType$JobSpecsType
 
 Map<String, dynamic>
     _$CreateJobDefinition$Mutation$JobDefinitionType$JobSpecsTypeToJson(
-        CreateJobDefinition$Mutation$JobDefinitionType$JobSpecsType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', _$JobDefinitionSpecEnumEnumMap[instance.key]);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            CreateJobDefinition$Mutation$JobDefinitionType$JobSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': _$JobDefinitionSpecEnumEnumMap[instance.key],
+          'value': instance.value,
+        };
 
 CreateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType
     _$CreateJobDefinition$Mutation$JobDefinitionType$JobDescriptionTypeFromJson(
@@ -1145,20 +941,12 @@ CreateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType
 
 Map<String, dynamic>
     _$CreateJobDefinition$Mutation$JobDefinitionType$JobDescriptionTypeToJson(
-        CreateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('description', instance.description);
-  writeNotNull('descriptionList', instance.descriptionList);
-  return val;
-}
+            CreateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType
+                instance) =>
+        <String, dynamic>{
+          'description': instance.description,
+          'descriptionList': instance.descriptionList,
+        };
 
 CreateJobDefinition$Mutation$JobDefinitionType
     _$CreateJobDefinition$Mutation$JobDefinitionTypeFromJson(
@@ -1193,28 +981,19 @@ CreateJobDefinition$Mutation$JobDefinitionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateJobDefinition$Mutation$JobDefinitionTypeToJson(
-    CreateJobDefinition$Mutation$JobDefinitionType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'title': instance.title,
-    'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
-    'department': instance.department.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('responsibility', instance.responsibility?.toJson());
-  writeNotNull('offer', instance.offer?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        CreateJobDefinition$Mutation$JobDefinitionType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
+      'department': instance.department.toJson(),
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'description': instance.description?.toJson(),
+      'responsibility': instance.responsibility?.toJson(),
+      'offer': instance.offer?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 CreateJobDefinition$Mutation _$CreateJobDefinition$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -1253,26 +1032,17 @@ JobDefinitionInput _$JobDefinitionInputFromJson(Map<String, dynamic> json) =>
       target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$JobDefinitionInputToJson(JobDefinitionInput instance) {
-  final val = <String, dynamic>{
-    'title': instance.title,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('status', _$JobDefinitionStatusEnumEnumMap[instance.status]);
-  val['department'] = instance.department;
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('responsibility', instance.responsibility?.toJson());
-  writeNotNull('offer', instance.offer?.toJson());
-  val['target'] = instance.target.toJson();
-  return val;
-}
+Map<String, dynamic> _$JobDefinitionInputToJson(JobDefinitionInput instance) =>
+    <String, dynamic>{
+      'title': instance.title,
+      'status': _$JobDefinitionStatusEnumEnumMap[instance.status],
+      'department': instance.department,
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'description': instance.description?.toJson(),
+      'responsibility': instance.responsibility?.toJson(),
+      'offer': instance.offer?.toJson(),
+      'target': instance.target.toJson(),
+    };
 
 JobSpecsInput _$JobSpecsInputFromJson(Map<String, dynamic> json) =>
     JobSpecsInput(
@@ -1333,19 +1103,12 @@ UpdateJobDefinition$Mutation$JobDefinitionType$JobSpecsType
 
 Map<String, dynamic>
     _$UpdateJobDefinition$Mutation$JobDefinitionType$JobSpecsTypeToJson(
-        UpdateJobDefinition$Mutation$JobDefinitionType$JobSpecsType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', _$JobDefinitionSpecEnumEnumMap[instance.key]);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            UpdateJobDefinition$Mutation$JobDefinitionType$JobSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': _$JobDefinitionSpecEnumEnumMap[instance.key],
+          'value': instance.value,
+        };
 
 UpdateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType
     _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDescriptionTypeFromJson(
@@ -1358,20 +1121,12 @@ UpdateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType
 
 Map<String, dynamic>
     _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDescriptionTypeToJson(
-        UpdateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('description', instance.description);
-  writeNotNull('descriptionList', instance.descriptionList);
-  return val;
-}
+            UpdateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType
+                instance) =>
+        <String, dynamic>{
+          'description': instance.description,
+          'descriptionList': instance.descriptionList,
+        };
 
 UpdateJobDefinition$Mutation$JobDefinitionType
     _$UpdateJobDefinition$Mutation$JobDefinitionTypeFromJson(
@@ -1406,28 +1161,19 @@ UpdateJobDefinition$Mutation$JobDefinitionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateJobDefinition$Mutation$JobDefinitionTypeToJson(
-    UpdateJobDefinition$Mutation$JobDefinitionType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'title': instance.title,
-    'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
-    'department': instance.department.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('responsibility', instance.responsibility?.toJson());
-  writeNotNull('offer', instance.offer?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        UpdateJobDefinition$Mutation$JobDefinitionType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
+      'department': instance.department.toJson(),
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'description': instance.description?.toJson(),
+      'responsibility': instance.responsibility?.toJson(),
+      'offer': instance.offer?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 UpdateJobDefinition$Mutation _$UpdateJobDefinition$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -1467,24 +1213,16 @@ JobDefinitionUpdateInput _$JobDefinitionUpdateInputFromJson(
     );
 
 Map<String, dynamic> _$JobDefinitionUpdateInputToJson(
-    JobDefinitionUpdateInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('title', instance.title);
-  writeNotNull('status', _$JobDefinitionStatusEnumEnumMap[instance.status]);
-  writeNotNull('department', instance.department);
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('description', instance.description?.toJson());
-  writeNotNull('responsibility', instance.responsibility?.toJson());
-  writeNotNull('offer', instance.offer?.toJson());
-  return val;
-}
+        JobDefinitionUpdateInput instance) =>
+    <String, dynamic>{
+      'title': instance.title,
+      'status': _$JobDefinitionStatusEnumEnumMap[instance.status],
+      'department': instance.department,
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'description': instance.description?.toJson(),
+      'responsibility': instance.responsibility?.toJson(),
+      'offer': instance.offer?.toJson(),
+    };
 
 DeleteJobDefinition$Mutation$DeleteResponseDtoType
     _$DeleteJobDefinition$Mutation$DeleteResponseDtoTypeFromJson(
@@ -1550,20 +1288,11 @@ GetJobDefinitionsByTargetPaginationArguments
         );
 
 Map<String, dynamic> _$GetJobDefinitionsByTargetPaginationArgumentsToJson(
-    GetJobDefinitionsByTargetPaginationArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetJobDefinitionsByTargetPaginationArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'pagination': instance.pagination?.toJson(),
+    };
 
 SearchJobDefinitionsByTargetArguments
     _$SearchJobDefinitionsByTargetArgumentsFromJson(
@@ -1583,26 +1312,15 @@ SearchJobDefinitionsByTargetArguments
         );
 
 Map<String, dynamic> _$SearchJobDefinitionsByTargetArgumentsToJson(
-    SearchJobDefinitionsByTargetArguments instance) {
-  final val = <String, dynamic>{
-    'searchString': instance.searchString,
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull(
-      'status',
-      instance.status
+        SearchJobDefinitionsByTargetArguments instance) =>
+    <String, dynamic>{
+      'searchString': instance.searchString,
+      'target': instance.target.toJson(),
+      'status': instance.status
           ?.map((e) => _$JobDefinitionStatusEnumEnumMap[e]!)
-          .toList());
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+          .toList(),
+      'pagination': instance.pagination?.toJson(),
+    };
 
 GetJobDefinitionsByTargetAndStatusPaginationArguments
     _$GetJobDefinitionsByTargetAndStatusPaginationArgumentsFromJson(
@@ -1620,21 +1338,12 @@ GetJobDefinitionsByTargetAndStatusPaginationArguments
 
 Map<String, dynamic>
     _$GetJobDefinitionsByTargetAndStatusPaginationArgumentsToJson(
-        GetJobDefinitionsByTargetAndStatusPaginationArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-    'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+            GetJobDefinitionsByTargetAndStatusPaginationArguments instance) =>
+        <String, dynamic>{
+          'target': instance.target.toJson(),
+          'status': _$JobDefinitionStatusEnumEnumMap[instance.status]!,
+          'pagination': instance.pagination?.toJson(),
+        };
 
 GetJobDefinitionsByExcelArguments _$GetJobDefinitionsByExcelArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -1649,26 +1358,15 @@ GetJobDefinitionsByExcelArguments _$GetJobDefinitionsByExcelArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetJobDefinitionsByExcelArgumentsToJson(
-    GetJobDefinitionsByExcelArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull(
-      'status',
-      instance.status
+        GetJobDefinitionsByExcelArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'status': instance.status
           ?.map((e) => _$JobDefinitionStatusEnumEnumMap[e]!)
-          .toList());
-  writeNotNull('searchString', instance.searchString);
-  writeNotNull('path', instance.path);
-  return val;
-}
+          .toList(),
+      'searchString': instance.searchString,
+      'path': instance.path,
+    };
 
 SendJobDefinitionsBymailArguments _$SendJobDefinitionsBymailArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -1684,27 +1382,16 @@ SendJobDefinitionsBymailArguments _$SendJobDefinitionsBymailArgumentsFromJson(
     );
 
 Map<String, dynamic> _$SendJobDefinitionsBymailArgumentsToJson(
-    SendJobDefinitionsBymailArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull(
-      'status',
-      instance.status
+        SendJobDefinitionsBymailArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'status': instance.status
           ?.map((e) => _$JobDefinitionStatusEnumEnumMap[e]!)
-          .toList());
-  writeNotNull('searchString', instance.searchString);
-  val['email'] = instance.email;
-  val['subject'] = instance.subject;
-  return val;
-}
+          .toList(),
+      'searchString': instance.searchString,
+      'email': instance.email,
+      'subject': instance.subject,
+    };
 
 CreateJobDefinitionArguments _$CreateJobDefinitionArgumentsFromJson(
         Map<String, dynamic> json) =>

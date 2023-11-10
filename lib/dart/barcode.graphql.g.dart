@@ -19,23 +19,15 @@ GetBarcodes$Query$BarcodeType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$MediaType$PictureTypeToJson(
-        GetBarcodes$Query$BarcodeType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$MediaType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodes$Query$BarcodeType$MediaType
     _$GetBarcodes$Query$BarcodeType$MediaTypeFromJson(
@@ -56,20 +48,12 @@ GetBarcodes$Query$BarcodeType$MediaType
               .toList();
 
 Map<String, dynamic> _$GetBarcodes$Query$BarcodeType$MediaTypeToJson(
-    GetBarcodes$Query$BarcodeType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        GetBarcodes$Query$BarcodeType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 GetBarcodes$Query$BarcodeType$DiscountDtoType
     _$GetBarcodes$Query$BarcodeType$DiscountDtoTypeFromJson(
@@ -81,19 +65,11 @@ GetBarcodes$Query$BarcodeType$DiscountDtoType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$GetBarcodes$Query$BarcodeType$DiscountDtoTypeToJson(
-    GetBarcodes$Query$BarcodeType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+        GetBarcodes$Query$BarcodeType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 const _$DiscountTypeEnumMap = {
   DiscountType.amount: 'AMOUNT',
@@ -110,20 +86,12 @@ GetBarcodes$Query$BarcodeType$ProductPriceListType$PriceType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductPriceListType$PriceTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductPriceListType$PriceType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductPriceListType$PriceType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+        };
 
 GetBarcodes$Query$BarcodeType$ProductPriceListType
     _$GetBarcodes$Query$BarcodeType$ProductPriceListTypeFromJson(
@@ -136,19 +104,11 @@ GetBarcodes$Query$BarcodeType$ProductPriceListType
           ..value = json['value'] as String?;
 
 Map<String, dynamic> _$GetBarcodes$Query$BarcodeType$ProductPriceListTypeToJson(
-    GetBarcodes$Query$BarcodeType$ProductPriceListType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('price', instance.price?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+        GetBarcodes$Query$BarcodeType$ProductPriceListType instance) =>
+    <String, dynamic>{
+      'price': instance.price?.toJson(),
+      'value': instance.value,
+    };
 
 GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -162,22 +122,13 @@ GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 const _$TaxSignEnumEnumMap = {
   TaxSignEnum.positive: 'POSITIVE',
@@ -194,21 +145,12 @@ GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType
     _$GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -233,26 +175,16 @@ GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductTaxesType$TaxType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 const _$TaxUseEnumEnumMap = {
   TaxUseEnum.sale: 'SALE',
@@ -271,19 +203,11 @@ GetBarcodes$Query$BarcodeType$ProductTaxesType
           ..rank = json['rank'] as int?;
 
 Map<String, dynamic> _$GetBarcodes$Query$BarcodeType$ProductTaxesTypeToJson(
-    GetBarcodes$Query$BarcodeType$ProductTaxesType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+        GetBarcodes$Query$BarcodeType$ProductTaxesType instance) =>
+    <String, dynamic>{
+      'tax': instance.tax?.toJson(),
+      'rank': instance.rank,
+    };
 
 GetBarcodes$Query$BarcodeType$BarcodePeriodCreditType
     _$GetBarcodes$Query$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -297,21 +221,12 @@ GetBarcodes$Query$BarcodeType$BarcodePeriodCreditType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$BarcodePeriodCreditTypeToJson(
-        GetBarcodes$Query$BarcodeType$BarcodePeriodCreditType instance) {
-  final val = <String, dynamic>{
-    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-    'periodValue': instance.periodValue,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$BarcodePeriodCreditType instance) =>
+        <String, dynamic>{
+          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+          'periodValue': instance.periodValue,
+          'amount': instance.amount,
+        };
 
 const _$RecurrenceTypeEnumMap = {
   RecurrenceType.hourly: 'HOURLY',
@@ -333,22 +248,13 @@ GetBarcodes$Query$BarcodeType$CatalogueCategoryType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$CatalogueCategoryTypeToJson(
-        GetBarcodes$Query$BarcodeType$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$CatalogueCategoryType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+        };
 
 GetBarcodes$Query$BarcodeType$PixelBarcodeType
     _$GetBarcodes$Query$BarcodeType$PixelBarcodeTypeFromJson(
@@ -357,18 +263,10 @@ GetBarcodes$Query$BarcodeType$PixelBarcodeType
           ..include = json['include'] as bool?;
 
 Map<String, dynamic> _$GetBarcodes$Query$BarcodeType$PixelBarcodeTypeToJson(
-    GetBarcodes$Query$BarcodeType$PixelBarcodeType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('include', instance.include);
-  return val;
-}
+        GetBarcodes$Query$BarcodeType$PixelBarcodeType instance) =>
+    <String, dynamic>{
+      'include': instance.include,
+    };
 
 GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -383,24 +281,16 @@ GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTyp
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-        GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType
     _$GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -420,26 +310,17 @@ GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-        GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 const _$GenderEnumMap = {
   Gender.male: 'MALE',
@@ -467,23 +348,16 @@ GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$InternalProductMaintenanceTypeToJson(
-        GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('active', instance.active);
-  writeNotNull('owner', instance.owner?.toJson());
-  writeNotNull('technician', instance.technician?.toJson());
-  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
-  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
-  writeNotNull('expectedMeantime', instance.expectedMeantime);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$InternalProductMaintenanceType
+                instance) =>
+        <String, dynamic>{
+          'active': instance.active,
+          'owner': instance.owner?.toJson(),
+          'technician': instance.technician?.toJson(),
+          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
+          'maintenanceDuration': instance.maintenanceDuration,
+          'expectedMeantime': instance.expectedMeantime,
+        };
 
 GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -493,19 +367,11 @@ GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValue
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-        GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -528,28 +394,19 @@ GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValue
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-        GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 const _$ProductVarietyEnumEnumMap = {
   ProductVarietyEnum.product: 'PRODUCT',
@@ -597,20 +454,12 @@ GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesTypeToJson(
-        GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('attributesValues',
-      instance.attributesValues?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$InternalProductAttributesValuesType
+                instance) =>
+        <String, dynamic>{
+          'attributesValues':
+              instance.attributesValues?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureType
     _$GetBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -625,24 +474,16 @@ GetBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-        GetBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodes$Query$BarcodeType$InternalProductType$MediaType
     _$GetBarcodes$Query$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -664,20 +505,13 @@ GetBarcodes$Query$BarcodeType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$InternalProductType$MediaTypeToJson(
-        GetBarcodes$Query$BarcodeType$InternalProductType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$InternalProductType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoType
     _$GetBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -690,20 +524,12 @@ GetBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-        GetBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 GetBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
     _$GetBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -714,21 +540,12 @@ GetBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-        GetBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetBarcodes$Query$BarcodeType$InternalProductType
     _$GetBarcodes$Query$BarcodeType$InternalProductTypeFromJson(
@@ -769,34 +586,26 @@ GetBarcodes$Query$BarcodeType$InternalProductType
               .toList();
 
 Map<String, dynamic> _$GetBarcodes$Query$BarcodeType$InternalProductTypeToJson(
-    GetBarcodes$Query$BarcodeType$InternalProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('sku', instance.sku);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('price', instance.price);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  return val;
-}
+        GetBarcodes$Query$BarcodeType$InternalProductType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'sku': instance.sku,
+      'name': instance.name,
+      'tags': instance.tags,
+      'price': instance.price,
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+      'descriptionList': instance.descriptionList,
+      'discount': instance.discount?.toJson(),
+      'priceBeforeReduction': instance.priceBeforeReduction,
+      'catalogueCategory':
+          instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+    };
 
 const _$ProductStatusEnumEnumMap = {
   ProductStatusEnum.active: 'ACTIVE',
@@ -818,21 +627,13 @@ GetBarcodes$Query$BarcodeType$ProductType$ProductSpecsType
           ..key = json['key'] as String?
           ..value = json['value'] as String?;
 
-Map<String, dynamic>
-    _$GetBarcodes$Query$BarcodeType$ProductType$ProductSpecsTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$ProductSpecsType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', instance.key);
-  writeNotNull('value', instance.value);
-  return val;
-}
+Map<String,
+    dynamic> _$GetBarcodes$Query$BarcodeType$ProductType$ProductSpecsTypeToJson(
+        GetBarcodes$Query$BarcodeType$ProductType$ProductSpecsType instance) =>
+    <String, dynamic>{
+      'key': instance.key,
+      'value': instance.value,
+    };
 
 GetBarcodes$Query$BarcodeType$ProductType$MediaType$PictureType
     _$GetBarcodes$Query$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -847,24 +648,16 @@ GetBarcodes$Query$BarcodeType$ProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$MediaType
     _$GetBarcodes$Query$BarcodeType$ProductType$MediaTypeFromJson(
@@ -886,20 +679,12 @@ GetBarcodes$Query$BarcodeType$ProductType$MediaType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$MediaTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$MediaType instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$PictureType
     _$GetBarcodes$Query$BarcodeType$ProductType$PictureTypeFromJson(
@@ -914,23 +699,15 @@ GetBarcodes$Query$BarcodeType$ProductType$PictureType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$PictureTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -945,24 +722,16 @@ GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType
     _$GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -982,27 +751,18 @@ GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-    'rank': instance.rank,
-    'layer': instance.layer,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'hasChildren': instance.hasChildren,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'hasChildren': instance.hasChildren,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -1016,22 +776,13 @@ GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -1042,21 +793,12 @@ GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -1081,27 +823,17 @@ GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -1113,21 +845,13 @@ GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType
                   .fromJson(json['tax'] as Map<String, dynamic>)
           ..rank = json['rank'] as int?;
 
-Map<String, dynamic>
-    _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+Map<String,
+    dynamic> _$GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesTypeToJson(
+        GetBarcodes$Query$BarcodeType$ProductType$ProductTaxesType instance) =>
+    <String, dynamic>{
+      'tax': instance.tax?.toJson(),
+      'rank': instance.rank,
+    };
 
 GetBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
     _$GetBarcodes$Query$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -1142,24 +866,16 @@ GetBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$BrandType
     _$GetBarcodes$Query$BarcodeType$ProductType$BrandTypeFromJson(
@@ -1178,24 +894,16 @@ GetBarcodes$Query$BarcodeType$ProductType$BrandType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$BrandTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$BrandType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('name', instance.name);
-  writeNotNull('website', instance.website);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$BrandType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'website': instance.website,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -1205,19 +913,11 @@ GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$Att
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -1240,28 +940,19 @@ GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
 
 Map<String, dynamic>
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-        GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeType
     _$GetBarcodes$Query$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -1358,42 +1049,34 @@ GetBarcodes$Query$BarcodeType$ProductType
               .toList();
 
 Map<String, dynamic> _$GetBarcodes$Query$BarcodeType$ProductTypeToJson(
-    GetBarcodes$Query$BarcodeType$ProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('ean', instance.ean);
-  writeNotNull('tax', instance.tax);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('class',
-      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
-  writeNotNull('price', instance.price);
-  writeNotNull('weight', instance.weight);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('factoryPrice', instance.factoryPrice);
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull('brand', instance.brand?.toJson());
-  writeNotNull('productAttributes',
-      instance.productAttributes?.map((e) => e.toJson()).toList());
-  return val;
-}
+        GetBarcodes$Query$BarcodeType$ProductType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'ean': instance.ean,
+      'tax': instance.tax,
+      'name': instance.name,
+      'tags': instance.tags,
+      'class':
+          instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList(),
+      'price': instance.price,
+      'weight': instance.weight,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'description': instance.description,
+      'factoryPrice': instance.factoryPrice,
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'media': instance.media?.toJson(),
+      'descriptionList': instance.descriptionList,
+      'wholesalerPrice': instance.wholesalerPrice,
+      'picture': instance.picture?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'category': instance.category?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'brand': instance.brand?.toJson(),
+      'productAttributes':
+          instance.productAttributes?.map((e) => e.toJson()).toList(),
+    };
 
 const _$ProductClassEnumEnumMap = {
   ProductClassEnum.topProducts: 'TOP_PRODUCTS',
@@ -1466,41 +1149,29 @@ GetBarcodes$Query$BarcodeType _$GetBarcodes$Query$BarcodeTypeFromJson(
               json['product'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetBarcodes$Query$BarcodeTypeToJson(
-    GetBarcodes$Query$BarcodeType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('price', instance.price);
-  val['barcode'] = instance.barcode;
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull(
-      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('maintenance', instance.maintenance?.toJson());
-  writeNotNull(
-      'productAttributesValues', instance.productAttributesValues?.toJson());
-  writeNotNull('internalProduct', instance.internalProduct?.toJson());
-  writeNotNull('product', instance.product?.toJson());
-  return val;
-}
+        GetBarcodes$Query$BarcodeType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'price': instance.price,
+      'barcode': instance.barcode,
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'media': instance.media?.toJson(),
+      'discount': instance.discount?.toJson(),
+      'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
+      'catalogueCategory':
+          instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+      'pixel': instance.pixel?.toJson(),
+      'maintenance': instance.maintenance?.toJson(),
+      'productAttributesValues': instance.productAttributesValues?.toJson(),
+      'internalProduct': instance.internalProduct?.toJson(),
+      'product': instance.product?.toJson(),
+    };
 
 GetBarcodes$Query _$GetBarcodes$QueryFromJson(Map<String, dynamic> json) =>
     GetBarcodes$Query()
@@ -1526,23 +1197,15 @@ Barcode$Query$BarcodeType$MediaType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$MediaType$PictureTypeToJson(
-    Barcode$Query$BarcodeType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        Barcode$Query$BarcodeType$MediaType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 Barcode$Query$BarcodeType$MediaType
     _$Barcode$Query$BarcodeType$MediaTypeFromJson(Map<String, dynamic> json) =>
@@ -1562,20 +1225,12 @@ Barcode$Query$BarcodeType$MediaType
               .toList();
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$MediaTypeToJson(
-    Barcode$Query$BarcodeType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        Barcode$Query$BarcodeType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 Barcode$Query$BarcodeType$DiscountDtoType
     _$Barcode$Query$BarcodeType$DiscountDtoTypeFromJson(
@@ -1587,19 +1242,11 @@ Barcode$Query$BarcodeType$DiscountDtoType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$DiscountDtoTypeToJson(
-    Barcode$Query$BarcodeType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+        Barcode$Query$BarcodeType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 Barcode$Query$BarcodeType$ProductPriceListType$PriceType
     _$Barcode$Query$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -1608,22 +1255,13 @@ Barcode$Query$BarcodeType$ProductPriceListType$PriceType
           ..id = json['id'] as String
           ..label = json['label'] as String?;
 
-Map<String, dynamic>
-    _$Barcode$Query$BarcodeType$ProductPriceListType$PriceTypeToJson(
-        Barcode$Query$BarcodeType$ProductPriceListType$PriceType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  return val;
-}
+Map<String,
+    dynamic> _$Barcode$Query$BarcodeType$ProductPriceListType$PriceTypeToJson(
+        Barcode$Query$BarcodeType$ProductPriceListType$PriceType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'label': instance.label,
+    };
 
 Barcode$Query$BarcodeType$ProductPriceListType
     _$Barcode$Query$BarcodeType$ProductPriceListTypeFromJson(
@@ -1636,19 +1274,11 @@ Barcode$Query$BarcodeType$ProductPriceListType
           ..value = json['value'] as String?;
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$ProductPriceListTypeToJson(
-    Barcode$Query$BarcodeType$ProductPriceListType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('price', instance.price?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+        Barcode$Query$BarcodeType$ProductPriceListType instance) =>
+    <String, dynamic>{
+      'price': instance.price?.toJson(),
+      'value': instance.value,
+    };
 
 Barcode$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$Barcode$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -1662,21 +1292,13 @@ Barcode$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        Barcode$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 Barcode$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
     _$Barcode$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -1687,21 +1309,12 @@ Barcode$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        Barcode$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 Barcode$Query$BarcodeType$ProductTaxesType$TaxType
     _$Barcode$Query$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -1725,26 +1338,16 @@ Barcode$Query$BarcodeType$ProductTaxesType$TaxType
                   .fromJson(json['company'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$ProductTaxesType$TaxTypeToJson(
-    Barcode$Query$BarcodeType$ProductTaxesType$TaxType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+        Barcode$Query$BarcodeType$ProductTaxesType$TaxType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'label': instance.label,
+      'externalId': instance.externalId,
+      'value': instance.value?.toJson(),
+      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+      'product': instance.product,
+      'company': instance.company?.toJson(),
+    };
 
 Barcode$Query$BarcodeType$ProductTaxesType
     _$Barcode$Query$BarcodeType$ProductTaxesTypeFromJson(
@@ -1757,19 +1360,11 @@ Barcode$Query$BarcodeType$ProductTaxesType
           ..rank = json['rank'] as int?;
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$ProductTaxesTypeToJson(
-    Barcode$Query$BarcodeType$ProductTaxesType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+        Barcode$Query$BarcodeType$ProductTaxesType instance) =>
+    <String, dynamic>{
+      'tax': instance.tax?.toJson(),
+      'rank': instance.rank,
+    };
 
 Barcode$Query$BarcodeType$BarcodePeriodCreditType
     _$Barcode$Query$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -1782,21 +1377,12 @@ Barcode$Query$BarcodeType$BarcodePeriodCreditType
           ..amount = json['amount'] as String?;
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$BarcodePeriodCreditTypeToJson(
-    Barcode$Query$BarcodeType$BarcodePeriodCreditType instance) {
-  final val = <String, dynamic>{
-    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-    'periodValue': instance.periodValue,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+        Barcode$Query$BarcodeType$BarcodePeriodCreditType instance) =>
+    <String, dynamic>{
+      'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+      'periodValue': instance.periodValue,
+      'amount': instance.amount,
+    };
 
 Barcode$Query$BarcodeType$CatalogueCategoryType
     _$Barcode$Query$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -1808,22 +1394,13 @@ Barcode$Query$BarcodeType$CatalogueCategoryType
           ..layer = json['layer'] as int;
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$CatalogueCategoryTypeToJson(
-    Barcode$Query$BarcodeType$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  return val;
-}
+        Barcode$Query$BarcodeType$CatalogueCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'rank': instance.rank,
+      'layer': instance.layer,
+    };
 
 Barcode$Query$BarcodeType$PixelBarcodeType
     _$Barcode$Query$BarcodeType$PixelBarcodeTypeFromJson(
@@ -1832,18 +1409,10 @@ Barcode$Query$BarcodeType$PixelBarcodeType
           ..include = json['include'] as bool?;
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$PixelBarcodeTypeToJson(
-    Barcode$Query$BarcodeType$PixelBarcodeType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('include', instance.include);
-  return val;
-}
+        Barcode$Query$BarcodeType$PixelBarcodeType instance) =>
+    <String, dynamic>{
+      'include': instance.include,
+    };
 
 Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -1858,24 +1427,16 @@ Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-        Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType
     _$Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -1895,26 +1456,17 @@ Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-        Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            Barcode$Query$BarcodeType$InternalProductMaintenanceType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 Barcode$Query$BarcodeType$InternalProductMaintenanceType
     _$Barcode$Query$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -1933,25 +1485,17 @@ Barcode$Query$BarcodeType$InternalProductMaintenanceType
           ..maintenanceDuration = json['maintenanceDuration'] as int?
           ..expectedMeantime = json['expectedMeantime'] as int?;
 
-Map<String, dynamic>
-    _$Barcode$Query$BarcodeType$InternalProductMaintenanceTypeToJson(
-        Barcode$Query$BarcodeType$InternalProductMaintenanceType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('active', instance.active);
-  writeNotNull('owner', instance.owner?.toJson());
-  writeNotNull('technician', instance.technician?.toJson());
-  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
-  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
-  writeNotNull('expectedMeantime', instance.expectedMeantime);
-  return val;
-}
+Map<String,
+    dynamic> _$Barcode$Query$BarcodeType$InternalProductMaintenanceTypeToJson(
+        Barcode$Query$BarcodeType$InternalProductMaintenanceType instance) =>
+    <String, dynamic>{
+      'active': instance.active,
+      'owner': instance.owner?.toJson(),
+      'technician': instance.technician?.toJson(),
+      'prevMaintenanceDuration': instance.prevMaintenanceDuration,
+      'maintenanceDuration': instance.maintenanceDuration,
+      'expectedMeantime': instance.expectedMeantime,
+    };
 
 Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -1961,19 +1505,11 @@ Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-        Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -1996,28 +1532,19 @@ Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-        Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$Barcode$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
@@ -2057,20 +1584,12 @@ Barcode$Query$BarcodeType$InternalProductAttributesValuesType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$InternalProductAttributesValuesTypeToJson(
-        Barcode$Query$BarcodeType$InternalProductAttributesValuesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('attributesValues',
-      instance.attributesValues?.map((e) => e.toJson()).toList());
-  return val;
-}
+            Barcode$Query$BarcodeType$InternalProductAttributesValuesType
+                instance) =>
+        <String, dynamic>{
+          'attributesValues':
+              instance.attributesValues?.map((e) => e.toJson()).toList(),
+        };
 
 Barcode$Query$BarcodeType$InternalProductType$MediaType$PictureType
     _$Barcode$Query$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -2085,24 +1604,16 @@ Barcode$Query$BarcodeType$InternalProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-        Barcode$Query$BarcodeType$InternalProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            Barcode$Query$BarcodeType$InternalProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 Barcode$Query$BarcodeType$InternalProductType$MediaType
     _$Barcode$Query$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -2124,20 +1635,12 @@ Barcode$Query$BarcodeType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$InternalProductType$MediaTypeToJson(
-        Barcode$Query$BarcodeType$InternalProductType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            Barcode$Query$BarcodeType$InternalProductType$MediaType instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 Barcode$Query$BarcodeType$InternalProductType$DiscountDtoType
     _$Barcode$Query$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -2150,20 +1653,12 @@ Barcode$Query$BarcodeType$InternalProductType$DiscountDtoType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-        Barcode$Query$BarcodeType$InternalProductType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            Barcode$Query$BarcodeType$InternalProductType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 Barcode$Query$BarcodeType$InternalProductType$CatalogueCategoryType
     _$Barcode$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -2174,21 +1669,12 @@ Barcode$Query$BarcodeType$InternalProductType$CatalogueCategoryType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-        Barcode$Query$BarcodeType$InternalProductType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            Barcode$Query$BarcodeType$InternalProductType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 Barcode$Query$BarcodeType$InternalProductType
     _$Barcode$Query$BarcodeType$InternalProductTypeFromJson(
@@ -2229,34 +1715,26 @@ Barcode$Query$BarcodeType$InternalProductType
               .toList();
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$InternalProductTypeToJson(
-    Barcode$Query$BarcodeType$InternalProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('sku', instance.sku);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('price', instance.price);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  return val;
-}
+        Barcode$Query$BarcodeType$InternalProductType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'sku': instance.sku,
+      'name': instance.name,
+      'tags': instance.tags,
+      'price': instance.price,
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+      'descriptionList': instance.descriptionList,
+      'discount': instance.discount?.toJson(),
+      'priceBeforeReduction': instance.priceBeforeReduction,
+      'catalogueCategory':
+          instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+    };
 
 Barcode$Query$BarcodeType$ProductType$ProductSpecsType
     _$Barcode$Query$BarcodeType$ProductType$ProductSpecsTypeFromJson(
@@ -2267,19 +1745,11 @@ Barcode$Query$BarcodeType$ProductType$ProductSpecsType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$ProductSpecsTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$ProductSpecsType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', instance.key);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$ProductSpecsType instance) =>
+        <String, dynamic>{
+          'key': instance.key,
+          'value': instance.value,
+        };
 
 Barcode$Query$BarcodeType$ProductType$MediaType$PictureType
     _$Barcode$Query$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -2294,23 +1764,16 @@ Barcode$Query$BarcodeType$ProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 Barcode$Query$BarcodeType$ProductType$MediaType
     _$Barcode$Query$BarcodeType$ProductType$MediaTypeFromJson(
@@ -2331,20 +1794,12 @@ Barcode$Query$BarcodeType$ProductType$MediaType
               .toList();
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$ProductType$MediaTypeToJson(
-    Barcode$Query$BarcodeType$ProductType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        Barcode$Query$BarcodeType$ProductType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 Barcode$Query$BarcodeType$ProductType$PictureType
     _$Barcode$Query$BarcodeType$ProductType$PictureTypeFromJson(
@@ -2358,23 +1813,15 @@ Barcode$Query$BarcodeType$ProductType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$ProductType$PictureTypeToJson(
-    Barcode$Query$BarcodeType$ProductType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        Barcode$Query$BarcodeType$ProductType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 Barcode$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$Barcode$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -2389,24 +1836,16 @@ Barcode$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 Barcode$Query$BarcodeType$ProductType$InventoryCategoryType
     _$Barcode$Query$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -2426,26 +1865,18 @@ Barcode$Query$BarcodeType$ProductType$InventoryCategoryType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$InventoryCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-    'rank': instance.rank,
-    'layer': instance.layer,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'hasChildren': instance.hasChildren,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$InventoryCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'hasChildren': instance.hasChildren,
+          'picture': instance.picture?.toJson(),
+        };
 
 Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -2459,22 +1890,13 @@ Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -2485,21 +1907,12 @@ Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -2524,27 +1937,17 @@ Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 Barcode$Query$BarcodeType$ProductType$ProductTaxesType
     _$Barcode$Query$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -2558,19 +1961,11 @@ Barcode$Query$BarcodeType$ProductType$ProductTaxesType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$ProductTaxesTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$ProductTaxesType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$ProductTaxesType instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 Barcode$Query$BarcodeType$ProductType$BrandType$PictureType
     _$Barcode$Query$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -2585,23 +1980,16 @@ Barcode$Query$BarcodeType$ProductType$BrandType$PictureType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$BrandType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$BrandType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 Barcode$Query$BarcodeType$ProductType$BrandType
     _$Barcode$Query$BarcodeType$ProductType$BrandTypeFromJson(
@@ -2619,24 +2007,16 @@ Barcode$Query$BarcodeType$ProductType$BrandType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$ProductType$BrandTypeToJson(
-    Barcode$Query$BarcodeType$ProductType$BrandType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('name', instance.name);
-  writeNotNull('website', instance.website);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        Barcode$Query$BarcodeType$ProductType$BrandType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'website': instance.website,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'picture': instance.picture?.toJson(),
+    };
 
 Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -2646,19 +2026,11 @@ Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$Attribu
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -2681,28 +2053,19 @@ Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
 
 Map<String, dynamic>
     _$Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-        Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            Barcode$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 Barcode$Query$BarcodeType$ProductType$ProductAttributeType
     _$Barcode$Query$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -2799,42 +2162,34 @@ Barcode$Query$BarcodeType$ProductType
               .toList();
 
 Map<String, dynamic> _$Barcode$Query$BarcodeType$ProductTypeToJson(
-    Barcode$Query$BarcodeType$ProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('ean', instance.ean);
-  writeNotNull('tax', instance.tax);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('class',
-      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
-  writeNotNull('price', instance.price);
-  writeNotNull('weight', instance.weight);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('factoryPrice', instance.factoryPrice);
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull('brand', instance.brand?.toJson());
-  writeNotNull('productAttributes',
-      instance.productAttributes?.map((e) => e.toJson()).toList());
-  return val;
-}
+        Barcode$Query$BarcodeType$ProductType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'ean': instance.ean,
+      'tax': instance.tax,
+      'name': instance.name,
+      'tags': instance.tags,
+      'class':
+          instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList(),
+      'price': instance.price,
+      'weight': instance.weight,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'description': instance.description,
+      'factoryPrice': instance.factoryPrice,
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'media': instance.media?.toJson(),
+      'descriptionList': instance.descriptionList,
+      'wholesalerPrice': instance.wholesalerPrice,
+      'picture': instance.picture?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'category': instance.category?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'brand': instance.brand?.toJson(),
+      'productAttributes':
+          instance.productAttributes?.map((e) => e.toJson()).toList(),
+    };
 
 Barcode$Query$BarcodeType _$Barcode$Query$BarcodeTypeFromJson(
         Map<String, dynamic> json) =>
@@ -2897,41 +2252,29 @@ Barcode$Query$BarcodeType _$Barcode$Query$BarcodeTypeFromJson(
               json['product'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Barcode$Query$BarcodeTypeToJson(
-    Barcode$Query$BarcodeType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('price', instance.price);
-  val['barcode'] = instance.barcode;
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull(
-      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('maintenance', instance.maintenance?.toJson());
-  writeNotNull(
-      'productAttributesValues', instance.productAttributesValues?.toJson());
-  writeNotNull('internalProduct', instance.internalProduct?.toJson());
-  writeNotNull('product', instance.product?.toJson());
-  return val;
-}
+        Barcode$Query$BarcodeType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'price': instance.price,
+      'barcode': instance.barcode,
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'media': instance.media?.toJson(),
+      'discount': instance.discount?.toJson(),
+      'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
+      'catalogueCategory':
+          instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+      'pixel': instance.pixel?.toJson(),
+      'maintenance': instance.maintenance?.toJson(),
+      'productAttributesValues': instance.productAttributesValues?.toJson(),
+      'internalProduct': instance.internalProduct?.toJson(),
+      'product': instance.product?.toJson(),
+    };
 
 Barcode$Query _$Barcode$QueryFromJson(Map<String, dynamic> json) =>
     Barcode$Query()
@@ -2954,25 +2297,17 @@ GetProductBarcodes$Query$BarcodeType$MediaType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String, dynamic>
-    _$GetProductBarcodes$Query$BarcodeType$MediaType$PictureTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+Map<String,
+    dynamic> _$GetProductBarcodes$Query$BarcodeType$MediaType$PictureTypeToJson(
+        GetProductBarcodes$Query$BarcodeType$MediaType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 GetProductBarcodes$Query$BarcodeType$MediaType
     _$GetProductBarcodes$Query$BarcodeType$MediaTypeFromJson(
@@ -2993,20 +2328,12 @@ GetProductBarcodes$Query$BarcodeType$MediaType
               .toList();
 
 Map<String, dynamic> _$GetProductBarcodes$Query$BarcodeType$MediaTypeToJson(
-    GetProductBarcodes$Query$BarcodeType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        GetProductBarcodes$Query$BarcodeType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 GetProductBarcodes$Query$BarcodeType$DiscountDtoType
     _$GetProductBarcodes$Query$BarcodeType$DiscountDtoTypeFromJson(
@@ -3019,19 +2346,11 @@ GetProductBarcodes$Query$BarcodeType$DiscountDtoType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$DiscountDtoTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$DiscountDtoType instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductPriceListType$PriceType
     _$GetProductBarcodes$Query$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -3042,21 +2361,12 @@ GetProductBarcodes$Query$BarcodeType$ProductPriceListType$PriceType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductPriceListType$PriceTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductPriceListType$PriceType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductPriceListType$PriceType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductPriceListType
     _$GetProductBarcodes$Query$BarcodeType$ProductPriceListTypeFromJson(
@@ -3068,21 +2378,13 @@ GetProductBarcodes$Query$BarcodeType$ProductPriceListType
                   .fromJson(json['price'] as Map<String, dynamic>)
           ..value = json['value'] as String?;
 
-Map<String, dynamic>
-    _$GetProductBarcodes$Query$BarcodeType$ProductPriceListTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductPriceListType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('price', instance.price?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+Map<String,
+    dynamic> _$GetProductBarcodes$Query$BarcodeType$ProductPriceListTypeToJson(
+        GetProductBarcodes$Query$BarcodeType$ProductPriceListType instance) =>
+    <String, dynamic>{
+      'price': instance.price?.toJson(),
+      'value': instance.value,
+    };
 
 GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -3096,22 +2398,13 @@ GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
     _$GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -3122,21 +2415,12 @@ GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType
     _$GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -3161,27 +2445,17 @@ GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductTaxesType
     _$GetProductBarcodes$Query$BarcodeType$ProductTaxesTypeFromJson(
@@ -3195,19 +2469,11 @@ GetProductBarcodes$Query$BarcodeType$ProductTaxesType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductTaxesTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductTaxesType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductTaxesType instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 GetProductBarcodes$Query$BarcodeType$BarcodePeriodCreditType
     _$GetProductBarcodes$Query$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -3221,21 +2487,13 @@ GetProductBarcodes$Query$BarcodeType$BarcodePeriodCreditType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$BarcodePeriodCreditTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$BarcodePeriodCreditType instance) {
-  final val = <String, dynamic>{
-    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-    'periodValue': instance.periodValue,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$BarcodePeriodCreditType
+                instance) =>
+        <String, dynamic>{
+          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+          'periodValue': instance.periodValue,
+          'amount': instance.amount,
+        };
 
 GetProductBarcodes$Query$BarcodeType$CatalogueCategoryType
     _$GetProductBarcodes$Query$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -3246,24 +2504,15 @@ GetProductBarcodes$Query$BarcodeType$CatalogueCategoryType
           ..rank = json['rank'] as int?
           ..layer = json['layer'] as int;
 
-Map<String, dynamic>
-    _$GetProductBarcodes$Query$BarcodeType$CatalogueCategoryTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  return val;
-}
+Map<String,
+    dynamic> _$GetProductBarcodes$Query$BarcodeType$CatalogueCategoryTypeToJson(
+        GetProductBarcodes$Query$BarcodeType$CatalogueCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'rank': instance.rank,
+      'layer': instance.layer,
+    };
 
 GetProductBarcodes$Query$BarcodeType$PixelBarcodeType
     _$GetProductBarcodes$Query$BarcodeType$PixelBarcodeTypeFromJson(
@@ -3273,18 +2522,10 @@ GetProductBarcodes$Query$BarcodeType$PixelBarcodeType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$PixelBarcodeTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$PixelBarcodeType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('include', instance.include);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$PixelBarcodeType instance) =>
+        <String, dynamic>{
+          'include': instance.include,
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -3299,24 +2540,16 @@ GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$Pic
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -3336,26 +2569,17 @@ GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -3376,24 +2600,16 @@ GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('active', instance.active);
-  writeNotNull('owner', instance.owner?.toJson());
-  writeNotNull('technician', instance.technician?.toJson());
-  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
-  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
-  writeNotNull('expectedMeantime', instance.expectedMeantime);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$InternalProductMaintenanceType
+                instance) =>
+        <String, dynamic>{
+          'active': instance.active,
+          'owner': instance.owner?.toJson(),
+          'technician': instance.technician?.toJson(),
+          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
+          'maintenanceDuration': instance.maintenanceDuration,
+          'expectedMeantime': instance.expectedMeantime,
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -3403,19 +2619,11 @@ GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$Attribu
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -3438,28 +2646,19 @@ GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$Attribu
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
@@ -3499,20 +2698,12 @@ GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('attributesValues',
-      instance.attributesValues?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$InternalProductAttributesValuesType
+                instance) =>
+        <String, dynamic>{
+          'attributesValues':
+              instance.attributesValues?.map((e) => e.toJson()).toList(),
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -3527,24 +2718,16 @@ GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -3566,21 +2749,13 @@ GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$InternalProductType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -3593,20 +2768,12 @@ GetProductBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$InternalProductType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -3617,21 +2784,12 @@ GetProductBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetProductBarcodes$Query$BarcodeType$InternalProductType
     _$GetProductBarcodes$Query$BarcodeType$InternalProductTypeFromJson(
@@ -3671,36 +2829,28 @@ GetProductBarcodes$Query$BarcodeType$InternalProductType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String, dynamic>
-    _$GetProductBarcodes$Query$BarcodeType$InternalProductTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$InternalProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('sku', instance.sku);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('price', instance.price);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String,
+    dynamic> _$GetProductBarcodes$Query$BarcodeType$InternalProductTypeToJson(
+        GetProductBarcodes$Query$BarcodeType$InternalProductType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'sku': instance.sku,
+      'name': instance.name,
+      'tags': instance.tags,
+      'price': instance.price,
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+      'descriptionList': instance.descriptionList,
+      'discount': instance.discount?.toJson(),
+      'priceBeforeReduction': instance.priceBeforeReduction,
+      'catalogueCategory':
+          instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+    };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$ProductSpecsType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductSpecsTypeFromJson(
@@ -3711,20 +2861,12 @@ GetProductBarcodes$Query$BarcodeType$ProductType$ProductSpecsType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductSpecsTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$ProductSpecsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', instance.key);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$ProductSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': instance.key,
+          'value': instance.value,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$MediaType$PictureType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -3739,24 +2881,16 @@ GetProductBarcodes$Query$BarcodeType$ProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$MediaType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$MediaTypeFromJson(
@@ -3776,22 +2910,14 @@ GetProductBarcodes$Query$BarcodeType$ProductType$MediaType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String, dynamic>
-    _$GetProductBarcodes$Query$BarcodeType$ProductType$MediaTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String,
+    dynamic> _$GetProductBarcodes$Query$BarcodeType$ProductType$MediaTypeToJson(
+        GetProductBarcodes$Query$BarcodeType$ProductType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$PictureType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$PictureTypeFromJson(
@@ -3806,23 +2932,16 @@ GetProductBarcodes$Query$BarcodeType$ProductType$PictureType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$PictureTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -3837,24 +2956,16 @@ GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTy
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -3874,27 +2985,18 @@ GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-    'rank': instance.rank,
-    'layer': instance.layer,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'hasChildren': instance.hasChildren,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$InventoryCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'hasChildren': instance.hasChildren,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -3908,22 +3010,13 @@ GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaT
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -3934,21 +3027,12 @@ GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$Compan
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -3973,27 +3057,17 @@ GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -4007,20 +3081,12 @@ GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$ProductTaxesType
+                instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -4035,24 +3101,16 @@ GetProductBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$BrandType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$BrandTypeFromJson(
@@ -4069,26 +3127,18 @@ GetProductBarcodes$Query$BarcodeType$ProductType$BrandType
               : GetProductBarcodes$Query$BarcodeType$ProductType$BrandType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$GetProductBarcodes$Query$BarcodeType$ProductType$BrandTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$BrandType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('name', instance.name);
-  writeNotNull('website', instance.website);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$GetProductBarcodes$Query$BarcodeType$ProductType$BrandTypeToJson(
+        GetProductBarcodes$Query$BarcodeType$ProductType$BrandType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'website': instance.website,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'picture': instance.picture?.toJson(),
+    };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -4098,19 +3148,11 @@ GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeT
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -4133,28 +3175,19 @@ GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeT
 
 Map<String, dynamic>
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-        GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeType
     _$GetProductBarcodes$Query$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -4252,42 +3285,34 @@ GetProductBarcodes$Query$BarcodeType$ProductType
               .toList();
 
 Map<String, dynamic> _$GetProductBarcodes$Query$BarcodeType$ProductTypeToJson(
-    GetProductBarcodes$Query$BarcodeType$ProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('ean', instance.ean);
-  writeNotNull('tax', instance.tax);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('class',
-      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
-  writeNotNull('price', instance.price);
-  writeNotNull('weight', instance.weight);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('factoryPrice', instance.factoryPrice);
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull('brand', instance.brand?.toJson());
-  writeNotNull('productAttributes',
-      instance.productAttributes?.map((e) => e.toJson()).toList());
-  return val;
-}
+        GetProductBarcodes$Query$BarcodeType$ProductType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'ean': instance.ean,
+      'tax': instance.tax,
+      'name': instance.name,
+      'tags': instance.tags,
+      'class':
+          instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList(),
+      'price': instance.price,
+      'weight': instance.weight,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'description': instance.description,
+      'factoryPrice': instance.factoryPrice,
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'media': instance.media?.toJson(),
+      'descriptionList': instance.descriptionList,
+      'wholesalerPrice': instance.wholesalerPrice,
+      'picture': instance.picture?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'category': instance.category?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'brand': instance.brand?.toJson(),
+      'productAttributes':
+          instance.productAttributes?.map((e) => e.toJson()).toList(),
+    };
 
 GetProductBarcodes$Query$BarcodeType
     _$GetProductBarcodes$Query$BarcodeTypeFromJson(Map<String, dynamic> json) =>
@@ -4354,41 +3379,29 @@ GetProductBarcodes$Query$BarcodeType
                   json['product'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetProductBarcodes$Query$BarcodeTypeToJson(
-    GetProductBarcodes$Query$BarcodeType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('price', instance.price);
-  val['barcode'] = instance.barcode;
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull(
-      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('maintenance', instance.maintenance?.toJson());
-  writeNotNull(
-      'productAttributesValues', instance.productAttributesValues?.toJson());
-  writeNotNull('internalProduct', instance.internalProduct?.toJson());
-  writeNotNull('product', instance.product?.toJson());
-  return val;
-}
+        GetProductBarcodes$Query$BarcodeType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'price': instance.price,
+      'barcode': instance.barcode,
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'media': instance.media?.toJson(),
+      'discount': instance.discount?.toJson(),
+      'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
+      'catalogueCategory':
+          instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+      'pixel': instance.pixel?.toJson(),
+      'maintenance': instance.maintenance?.toJson(),
+      'productAttributesValues': instance.productAttributesValues?.toJson(),
+      'internalProduct': instance.internalProduct?.toJson(),
+      'product': instance.product?.toJson(),
+    };
 
 GetProductBarcodes$Query _$GetProductBarcodes$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -4418,24 +3431,16 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType$PictureTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaTypeFromJson(
@@ -4457,20 +3462,13 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$DiscountDtoType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$DiscountDtoTypeFromJson(
@@ -4483,20 +3481,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$DiscountDtoType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$DiscountDtoTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType$PriceType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -4507,21 +3497,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType$PriceTyp
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType$PriceTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType$PriceType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType$PriceType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListTypeFromJson(
@@ -4535,20 +3516,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('price', instance.price?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductPriceListType
+                instance) =>
+        <String, dynamic>{
+          'price': instance.price?.toJson(),
+          'value': instance.value,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -4562,22 +3535,13 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$TaxV
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -4588,21 +3552,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$Comp
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -4627,27 +3582,17 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesTypeFromJson(
@@ -4661,20 +3606,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTaxesType
+                instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$BarcodePeriodCreditType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -4688,22 +3625,13 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$BarcodePeriodCreditType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$BarcodePeriodCreditTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$BarcodePeriodCreditType
-            instance) {
-  final val = <String, dynamic>{
-    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-    'periodValue': instance.periodValue,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$BarcodePeriodCreditType
+                instance) =>
+        <String, dynamic>{
+          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+          'periodValue': instance.periodValue,
+          'amount': instance.amount,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$CatalogueCategoryType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -4716,23 +3644,14 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$CatalogueCategoryType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$CatalogueCategoryTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$PixelBarcodeType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$PixelBarcodeTypeFromJson(
@@ -4742,19 +3661,11 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$PixelBarcodeType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$PixelBarcodeTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$PixelBarcodeType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('include', instance.include);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$PixelBarcodeType
+                instance) =>
+        <String, dynamic>{
+          'include': instance.include,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -4769,24 +3680,16 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceTyp
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -4806,26 +3709,17 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceTyp
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -4846,24 +3740,16 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceTyp
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('active', instance.active);
-  writeNotNull('owner', instance.owner?.toJson());
-  writeNotNull('technician', instance.technician?.toJson());
-  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
-  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
-  writeNotNull('expectedMeantime', instance.expectedMeantime);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductMaintenanceType
+                instance) =>
+        <String, dynamic>{
+          'active': instance.active,
+          'owner': instance.owner?.toJson(),
+          'technician': instance.technician?.toJson(),
+          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
+          'maintenanceDuration': instance.maintenanceDuration,
+          'expectedMeantime': instance.expectedMeantime,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -4873,19 +3759,11 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValu
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -4908,28 +3786,19 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValu
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
@@ -4969,20 +3838,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValu
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('attributesValues',
-      instance.attributesValues?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductAttributesValuesType
+                instance) =>
+        <String, dynamic>{
+          'attributesValues':
+              instance.attributesValues?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType$PictureType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -4997,24 +3858,16 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -5036,21 +3889,13 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$DiscountDtoType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -5063,20 +3908,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$DiscountD
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -5087,21 +3924,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$Catalogue
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductTypeFromJson(
@@ -5143,35 +3971,27 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('sku', instance.sku);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('price', instance.price);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$InternalProductType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'sku': instance.sku,
+          'name': instance.name,
+          'tags': instance.tags,
+          'price': instance.price,
+          'status': _$ProductStatusEnumEnumMap[instance.status],
+          'condition': _$ProductConditionEnumEnumMap[instance.condition],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'description': instance.description,
+          'media': instance.media?.toJson(),
+          'descriptionList': instance.descriptionList,
+          'discount': instance.discount?.toJson(),
+          'priceBeforeReduction': instance.priceBeforeReduction,
+          'catalogueCategory':
+              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductSpecsType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductSpecsTypeFromJson(
@@ -5182,20 +4002,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductSpecsType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductSpecsTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductSpecsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', instance.key);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': instance.key,
+          'value': instance.value,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType$PictureType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -5210,24 +4022,16 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType$Picture
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaTypeFromJson(
@@ -5249,21 +4053,13 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$PictureType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$PictureTypeFromJson(
@@ -5278,24 +4074,16 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$PictureType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$PictureTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -5310,24 +4098,16 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategory
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -5347,27 +4127,18 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategory
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-    'rank': instance.rank,
-    'layer': instance.layer,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'hasChildren': instance.hasChildren,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$InventoryCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'hasChildren': instance.hasChildren,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -5381,22 +4152,13 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -5407,21 +4169,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -5446,27 +4199,17 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -5480,20 +4223,12 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductTaxesType
+                instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType$PictureType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -5508,24 +4243,16 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType$Picture
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandTypeFromJson(
@@ -5544,25 +4271,17 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('name', instance.name);
-  writeNotNull('website', instance.website);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$BrandType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'website': instance.website,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -5572,19 +4291,11 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeT
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -5607,28 +4318,19 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeT
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -5727,43 +4429,36 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType
 
 Map<String, dynamic>
     _$GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductTypeToJson(
-        GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('ean', instance.ean);
-  writeNotNull('tax', instance.tax);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('class',
-      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
-  writeNotNull('price', instance.price);
-  writeNotNull('weight', instance.weight);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('factoryPrice', instance.factoryPrice);
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull('brand', instance.brand?.toJson());
-  writeNotNull('productAttributes',
-      instance.productAttributes?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodeByProductAndAttributes$Query$BarcodeType$ProductType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'ean': instance.ean,
+          'tax': instance.tax,
+          'name': instance.name,
+          'tags': instance.tags,
+          'class': instance.kw$class
+              ?.map((e) => _$ProductClassEnumEnumMap[e]!)
+              .toList(),
+          'price': instance.price,
+          'weight': instance.weight,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'description': instance.description,
+          'factoryPrice': instance.factoryPrice,
+          'specs': instance.specs?.map((e) => e.toJson()).toList(),
+          'media': instance.media?.toJson(),
+          'descriptionList': instance.descriptionList,
+          'wholesalerPrice': instance.wholesalerPrice,
+          'picture': instance.picture?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'category': instance.category?.map((e) => e.toJson()).toList(),
+          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+          'brand': instance.brand?.toJson(),
+          'productAttributes':
+              instance.productAttributes?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodeByProductAndAttributes$Query$BarcodeType
     _$GetBarcodeByProductAndAttributes$Query$BarcodeTypeFromJson(
@@ -5832,41 +4527,29 @@ GetBarcodeByProductAndAttributes$Query$BarcodeType
                   .fromJson(json['product'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetBarcodeByProductAndAttributes$Query$BarcodeTypeToJson(
-    GetBarcodeByProductAndAttributes$Query$BarcodeType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('price', instance.price);
-  val['barcode'] = instance.barcode;
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull(
-      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('maintenance', instance.maintenance?.toJson());
-  writeNotNull(
-      'productAttributesValues', instance.productAttributesValues?.toJson());
-  writeNotNull('internalProduct', instance.internalProduct?.toJson());
-  writeNotNull('product', instance.product?.toJson());
-  return val;
-}
+        GetBarcodeByProductAndAttributes$Query$BarcodeType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'price': instance.price,
+      'barcode': instance.barcode,
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'media': instance.media?.toJson(),
+      'discount': instance.discount?.toJson(),
+      'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
+      'catalogueCategory':
+          instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+      'pixel': instance.pixel?.toJson(),
+      'maintenance': instance.maintenance?.toJson(),
+      'productAttributesValues': instance.productAttributesValues?.toJson(),
+      'internalProduct': instance.internalProduct?.toJson(),
+      'product': instance.product?.toJson(),
+    };
 
 GetBarcodeByProductAndAttributes$Query
     _$GetBarcodeByProductAndAttributes$QueryFromJson(
@@ -5894,20 +4577,12 @@ BarcodeFindInput _$BarcodeFindInputFromJson(Map<String, dynamic> json) =>
               .toList(),
     );
 
-Map<String, dynamic> _$BarcodeFindInputToJson(BarcodeFindInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('product', instance.product);
-  writeNotNull('internalProduct', instance.internalProduct);
-  writeNotNull('productAttributesValues', instance.productAttributesValues);
-  return val;
-}
+Map<String, dynamic> _$BarcodeFindInputToJson(BarcodeFindInput instance) =>
+    <String, dynamic>{
+      'product': instance.product,
+      'internalProduct': instance.internalProduct,
+      'productAttributesValues': instance.productAttributesValues,
+    };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType$PictureType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -5922,24 +4597,16 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType$PictureTyp
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType$PictureTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaTypeFromJson(
@@ -5961,21 +4628,13 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$DiscountDtoType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$DiscountDtoTypeFromJson(
@@ -5988,20 +4647,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$DiscountDtoType
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$DiscountDtoTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType$PriceType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -6012,21 +4663,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType$PriceType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType$PriceType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListTypeFromJson(
@@ -6040,20 +4682,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('price', instance.price?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductPriceListType
+                instance) =>
+        <String, dynamic>{
+          'price': instance.price?.toJson(),
+          'value': instance.value,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -6067,22 +4701,13 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$Tax
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$CompanyType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -6093,21 +4718,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$Tax
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -6132,27 +4748,17 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$Tax
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesTypeFromJson(
@@ -6166,20 +4772,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTaxesType
+                instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$BarcodePeriodCreditType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -6193,22 +4791,13 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$BarcodePeriodCreditT
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$BarcodePeriodCreditTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$BarcodePeriodCreditType
-            instance) {
-  final val = <String, dynamic>{
-    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-    'periodValue': instance.periodValue,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$BarcodePeriodCreditType
+                instance) =>
+        <String, dynamic>{
+          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+          'periodValue': instance.periodValue,
+          'amount': instance.amount,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$CatalogueCategoryType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -6221,23 +4810,14 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$CatalogueCategoryTyp
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$CatalogueCategoryTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$PixelBarcodeType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$PixelBarcodeTypeFromJson(
@@ -6247,19 +4827,11 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$PixelBarcodeType
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$PixelBarcodeTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$PixelBarcodeType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('include', instance.include);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$PixelBarcodeType
+                instance) =>
+        <String, dynamic>{
+          'include': instance.include,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -6274,24 +4846,16 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaint
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -6311,26 +4875,17 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaint
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -6351,24 +4906,16 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaint
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('active', instance.active);
-  writeNotNull('owner', instance.owner?.toJson());
-  writeNotNull('technician', instance.technician?.toJson());
-  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
-  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
-  writeNotNull('expectedMeantime', instance.expectedMeantime);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductMaintenanceType
+                instance) =>
+        <String, dynamic>{
+          'active': instance.active,
+          'owner': instance.owner?.toJson(),
+          'technician': instance.technician?.toJson(),
+          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
+          'maintenanceDuration': instance.maintenanceDuration,
+          'expectedMeantime': instance.expectedMeantime,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -6378,19 +4925,11 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttri
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -6413,28 +4952,19 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttri
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
@@ -6474,20 +5004,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttri
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('attributesValues',
-      instance.attributesValues?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductAttributesValuesType
+                instance) =>
+        <String, dynamic>{
+          'attributesValues':
+              instance.attributesValues?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaType$PictureType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -6502,24 +5024,16 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -6541,21 +5055,13 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$DiscountDtoType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -6568,20 +5074,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$CatalogueCategoryType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -6592,21 +5090,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductTypeFromJson(
@@ -6648,35 +5137,27 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('sku', instance.sku);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('price', instance.price);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$InternalProductType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'sku': instance.sku,
+          'name': instance.name,
+          'tags': instance.tags,
+          'price': instance.price,
+          'status': _$ProductStatusEnumEnumMap[instance.status],
+          'condition': _$ProductConditionEnumEnumMap[instance.condition],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'description': instance.description,
+          'media': instance.media?.toJson(),
+          'descriptionList': instance.descriptionList,
+          'discount': instance.discount?.toJson(),
+          'priceBeforeReduction': instance.priceBeforeReduction,
+          'catalogueCategory':
+              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductSpecsType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductSpecsTypeFromJson(
@@ -6687,20 +5168,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductS
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductSpecsTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductSpecsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', instance.key);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': instance.key,
+          'value': instance.value,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaType$PictureType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -6715,24 +5188,16 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaTyp
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaTypeFromJson(
@@ -6754,21 +5219,13 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaTyp
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$PictureType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$PictureTypeFromJson(
@@ -6783,24 +5240,16 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$PictureT
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$PictureTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -6815,24 +5264,16 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Inventor
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -6852,27 +5293,18 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$Inventor
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-    'rank': instance.rank,
-    'layer': instance.layer,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'hasChildren': instance.hasChildren,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$InventoryCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'hasChildren': instance.hasChildren,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -6886,22 +5318,13 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductT
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -6912,21 +5335,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductT
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -6951,27 +5365,17 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductT
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -6985,20 +5389,12 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductT
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductTaxesType
+                instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandType$PictureType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -7013,24 +5409,16 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandTyp
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandTypeFromJson(
@@ -7049,25 +5437,17 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandTyp
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('name', instance.name);
-  writeNotNull('website', instance.website);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$BrandType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'website': instance.website,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -7077,19 +5457,11 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductA
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -7112,28 +5484,19 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductA
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -7232,43 +5595,36 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('ean', instance.ean);
-  writeNotNull('tax', instance.tax);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('class',
-      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
-  writeNotNull('price', instance.price);
-  writeNotNull('weight', instance.weight);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('factoryPrice', instance.factoryPrice);
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull('brand', instance.brand?.toJson());
-  writeNotNull('productAttributes',
-      instance.productAttributes?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType$ProductType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'ean': instance.ean,
+          'tax': instance.tax,
+          'name': instance.name,
+          'tags': instance.tags,
+          'class': instance.kw$class
+              ?.map((e) => _$ProductClassEnumEnumMap[e]!)
+              .toList(),
+          'price': instance.price,
+          'weight': instance.weight,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'description': instance.description,
+          'factoryPrice': instance.factoryPrice,
+          'specs': instance.specs?.map((e) => e.toJson()).toList(),
+          'media': instance.media?.toJson(),
+          'descriptionList': instance.descriptionList,
+          'wholesalerPrice': instance.wholesalerPrice,
+          'picture': instance.picture?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'category': instance.category?.map((e) => e.toJson()).toList(),
+          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+          'brand': instance.brand?.toJson(),
+          'productAttributes':
+              instance.productAttributes?.map((e) => e.toJson()).toList(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeTypeFromJson(
@@ -7338,41 +5694,30 @@ GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType
 
 Map<String, dynamic>
     _$GetBarcodesPagination$Query$BarcodePaginateType$BarcodeTypeToJson(
-        GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('price', instance.price);
-  val['barcode'] = instance.barcode;
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull(
-      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('maintenance', instance.maintenance?.toJson());
-  writeNotNull(
-      'productAttributesValues', instance.productAttributesValues?.toJson());
-  writeNotNull('internalProduct', instance.internalProduct?.toJson());
-  writeNotNull('product', instance.product?.toJson());
-  return val;
-}
+            GetBarcodesPagination$Query$BarcodePaginateType$BarcodeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'price': instance.price,
+          'barcode': instance.barcode,
+          'condition': _$ProductConditionEnumEnumMap[instance.condition],
+          'status': _$ProductStatusEnumEnumMap[instance.status],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'media': instance.media?.toJson(),
+          'discount': instance.discount?.toJson(),
+          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
+          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+          'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
+          'catalogueCategory':
+              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+          'pixel': instance.pixel?.toJson(),
+          'maintenance': instance.maintenance?.toJson(),
+          'productAttributesValues': instance.productAttributesValues?.toJson(),
+          'internalProduct': instance.internalProduct?.toJson(),
+          'product': instance.product?.toJson(),
+        };
 
 GetBarcodesPagination$Query$BarcodePaginateType
     _$GetBarcodesPagination$Query$BarcodePaginateTypeFromJson(
@@ -7387,20 +5732,12 @@ GetBarcodesPagination$Query$BarcodePaginateType
               .toList();
 
 Map<String, dynamic> _$GetBarcodesPagination$Query$BarcodePaginateTypeToJson(
-    GetBarcodesPagination$Query$BarcodePaginateType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+        GetBarcodesPagination$Query$BarcodePaginateType instance) =>
+    <String, dynamic>{
+      'count': instance.count,
+      'isLast': instance.isLast,
+      'objects': instance.objects.map((e) => e.toJson()).toList(),
+    };
 
 GetBarcodesPagination$Query _$GetBarcodesPagination$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -7421,19 +5758,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 UpdateBarcode$Mutation$BarcodeType$MediaType$PictureType
     _$UpdateBarcode$Mutation$BarcodeType$MediaType$PictureTypeFromJson(
@@ -7446,25 +5775,17 @@ UpdateBarcode$Mutation$BarcodeType$MediaType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String, dynamic>
-    _$UpdateBarcode$Mutation$BarcodeType$MediaType$PictureTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+Map<String,
+    dynamic> _$UpdateBarcode$Mutation$BarcodeType$MediaType$PictureTypeToJson(
+        UpdateBarcode$Mutation$BarcodeType$MediaType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 UpdateBarcode$Mutation$BarcodeType$MediaType
     _$UpdateBarcode$Mutation$BarcodeType$MediaTypeFromJson(
@@ -7485,20 +5806,12 @@ UpdateBarcode$Mutation$BarcodeType$MediaType
               .toList();
 
 Map<String, dynamic> _$UpdateBarcode$Mutation$BarcodeType$MediaTypeToJson(
-    UpdateBarcode$Mutation$BarcodeType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        UpdateBarcode$Mutation$BarcodeType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 UpdateBarcode$Mutation$BarcodeType$DiscountDtoType
     _$UpdateBarcode$Mutation$BarcodeType$DiscountDtoTypeFromJson(
@@ -7510,19 +5823,11 @@ UpdateBarcode$Mutation$BarcodeType$DiscountDtoType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$UpdateBarcode$Mutation$BarcodeType$DiscountDtoTypeToJson(
-    UpdateBarcode$Mutation$BarcodeType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+        UpdateBarcode$Mutation$BarcodeType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 UpdateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceType
     _$UpdateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -7533,21 +5838,12 @@ UpdateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductPriceListType
     _$UpdateBarcode$Mutation$BarcodeType$ProductPriceListTypeFromJson(
@@ -7561,19 +5857,11 @@ UpdateBarcode$Mutation$BarcodeType$ProductPriceListType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductPriceListTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductPriceListType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('price', instance.price?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductPriceListType instance) =>
+        <String, dynamic>{
+          'price': instance.price?.toJson(),
+          'value': instance.value,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -7587,22 +5875,13 @@ UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
     _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -7613,21 +5892,12 @@ UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType
     _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -7652,26 +5922,17 @@ UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductTaxesType
     _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesTypeFromJson(
@@ -7685,19 +5946,11 @@ UpdateBarcode$Mutation$BarcodeType$ProductTaxesType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductTaxesTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductTaxesType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductTaxesType instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$BarcodePeriodCreditType
     _$UpdateBarcode$Mutation$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -7709,23 +5962,14 @@ UpdateBarcode$Mutation$BarcodeType$BarcodePeriodCreditType
           ..periodValue = json['periodValue'] as int
           ..amount = json['amount'] as String?;
 
-Map<String, dynamic>
-    _$UpdateBarcode$Mutation$BarcodeType$BarcodePeriodCreditTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$BarcodePeriodCreditType instance) {
-  final val = <String, dynamic>{
-    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-    'periodValue': instance.periodValue,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+Map<String,
+    dynamic> _$UpdateBarcode$Mutation$BarcodeType$BarcodePeriodCreditTypeToJson(
+        UpdateBarcode$Mutation$BarcodeType$BarcodePeriodCreditType instance) =>
+    <String, dynamic>{
+      'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+      'periodValue': instance.periodValue,
+      'amount': instance.amount,
+    };
 
 UpdateBarcode$Mutation$BarcodeType$CatalogueCategoryType
     _$UpdateBarcode$Mutation$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -7736,24 +5980,15 @@ UpdateBarcode$Mutation$BarcodeType$CatalogueCategoryType
           ..rank = json['rank'] as int?
           ..layer = json['layer'] as int;
 
-Map<String, dynamic>
-    _$UpdateBarcode$Mutation$BarcodeType$CatalogueCategoryTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  return val;
-}
+Map<String,
+    dynamic> _$UpdateBarcode$Mutation$BarcodeType$CatalogueCategoryTypeToJson(
+        UpdateBarcode$Mutation$BarcodeType$CatalogueCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'rank': instance.rank,
+      'layer': instance.layer,
+    };
 
 UpdateBarcode$Mutation$BarcodeType$PixelBarcodeType
     _$UpdateBarcode$Mutation$BarcodeType$PixelBarcodeTypeFromJson(
@@ -7763,18 +5998,10 @@ UpdateBarcode$Mutation$BarcodeType$PixelBarcodeType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$PixelBarcodeTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$PixelBarcodeType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('include', instance.include);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$PixelBarcodeType instance) =>
+        <String, dynamic>{
+          'include': instance.include,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -7789,24 +6016,16 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$Pictu
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -7826,26 +6045,17 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -7866,24 +6076,16 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('active', instance.active);
-  writeNotNull('owner', instance.owner?.toJson());
-  writeNotNull('technician', instance.technician?.toJson());
-  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
-  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
-  writeNotNull('expectedMeantime', instance.expectedMeantime);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType
+                instance) =>
+        <String, dynamic>{
+          'active': instance.active,
+          'owner': instance.owner?.toJson(),
+          'technician': instance.technician?.toJson(),
+          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
+          'maintenanceDuration': instance.maintenanceDuration,
+          'expectedMeantime': instance.expectedMeantime,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -7893,19 +6095,11 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$Attribute
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -7928,28 +6122,19 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$Attribute
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
@@ -7989,20 +6174,12 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('attributesValues',
-      instance.attributesValues?.map((e) => e.toJson()).toList());
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType
+                instance) =>
+        <String, dynamic>{
+          'attributesValues':
+              instance.attributesValues?.map((e) => e.toJson()).toList(),
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -8017,24 +6194,16 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -8056,21 +6225,13 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -8083,20 +6244,12 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -8107,21 +6260,12 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$InternalProductType
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductTypeFromJson(
@@ -8163,34 +6307,26 @@ UpdateBarcode$Mutation$BarcodeType$InternalProductType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$InternalProductTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$InternalProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('sku', instance.sku);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('price', instance.price);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$InternalProductType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'sku': instance.sku,
+          'name': instance.name,
+          'tags': instance.tags,
+          'price': instance.price,
+          'status': _$ProductStatusEnumEnumMap[instance.status],
+          'condition': _$ProductConditionEnumEnumMap[instance.condition],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'description': instance.description,
+          'media': instance.media?.toJson(),
+          'descriptionList': instance.descriptionList,
+          'discount': instance.discount?.toJson(),
+          'priceBeforeReduction': instance.priceBeforeReduction,
+          'catalogueCategory':
+              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsTypeFromJson(
@@ -8201,20 +6337,12 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', instance.key);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': instance.key,
+          'value': instance.value,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -8229,24 +6357,16 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$MediaTypeFromJson(
@@ -8266,22 +6386,14 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String, dynamic>
-    _$UpdateBarcode$Mutation$BarcodeType$ProductType$MediaTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String,
+    dynamic> _$UpdateBarcode$Mutation$BarcodeType$ProductType$MediaTypeToJson(
+        UpdateBarcode$Mutation$BarcodeType$ProductType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$PictureType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$PictureTypeFromJson(
@@ -8294,25 +6406,17 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String, dynamic>
-    _$UpdateBarcode$Mutation$BarcodeType$ProductType$PictureTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+Map<String,
+    dynamic> _$UpdateBarcode$Mutation$BarcodeType$ProductType$PictureTypeToJson(
+        UpdateBarcode$Mutation$BarcodeType$ProductType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -8327,24 +6431,16 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -8364,27 +6460,18 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-    'rank': instance.rank,
-    'layer': instance.layer,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'hasChildren': instance.hasChildren,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'hasChildren': instance.hasChildren,
+          'picture': instance.picture?.toJson(),
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -8398,22 +6485,13 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTyp
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -8424,21 +6502,12 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyT
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -8463,27 +6532,17 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -8497,20 +6556,12 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType
+                instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -8525,24 +6576,16 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$BrandTypeFromJson(
@@ -8559,26 +6602,18 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType
               : UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$UpdateBarcode$Mutation$BarcodeType$ProductType$BrandTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('name', instance.name);
-  writeNotNull('website', instance.website);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$UpdateBarcode$Mutation$BarcodeType$ProductType$BrandTypeToJson(
+        UpdateBarcode$Mutation$BarcodeType$ProductType$BrandType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'website': instance.website,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'picture': instance.picture?.toJson(),
+    };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -8588,19 +6623,11 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTyp
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -8623,28 +6650,19 @@ UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTyp
 
 Map<String, dynamic>
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-        UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType
     _$UpdateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -8742,42 +6760,34 @@ UpdateBarcode$Mutation$BarcodeType$ProductType
               .toList();
 
 Map<String, dynamic> _$UpdateBarcode$Mutation$BarcodeType$ProductTypeToJson(
-    UpdateBarcode$Mutation$BarcodeType$ProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('ean', instance.ean);
-  writeNotNull('tax', instance.tax);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('class',
-      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
-  writeNotNull('price', instance.price);
-  writeNotNull('weight', instance.weight);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('factoryPrice', instance.factoryPrice);
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull('brand', instance.brand?.toJson());
-  writeNotNull('productAttributes',
-      instance.productAttributes?.map((e) => e.toJson()).toList());
-  return val;
-}
+        UpdateBarcode$Mutation$BarcodeType$ProductType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'ean': instance.ean,
+      'tax': instance.tax,
+      'name': instance.name,
+      'tags': instance.tags,
+      'class':
+          instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList(),
+      'price': instance.price,
+      'weight': instance.weight,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'description': instance.description,
+      'factoryPrice': instance.factoryPrice,
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'media': instance.media?.toJson(),
+      'descriptionList': instance.descriptionList,
+      'wholesalerPrice': instance.wholesalerPrice,
+      'picture': instance.picture?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'category': instance.category?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'brand': instance.brand?.toJson(),
+      'productAttributes':
+          instance.productAttributes?.map((e) => e.toJson()).toList(),
+    };
 
 UpdateBarcode$Mutation$BarcodeType _$UpdateBarcode$Mutation$BarcodeTypeFromJson(
         Map<String, dynamic> json) =>
@@ -8843,41 +6853,29 @@ UpdateBarcode$Mutation$BarcodeType _$UpdateBarcode$Mutation$BarcodeTypeFromJson(
               json['product'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateBarcode$Mutation$BarcodeTypeToJson(
-    UpdateBarcode$Mutation$BarcodeType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('price', instance.price);
-  val['barcode'] = instance.barcode;
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull(
-      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('maintenance', instance.maintenance?.toJson());
-  writeNotNull(
-      'productAttributesValues', instance.productAttributesValues?.toJson());
-  writeNotNull('internalProduct', instance.internalProduct?.toJson());
-  writeNotNull('product', instance.product?.toJson());
-  return val;
-}
+        UpdateBarcode$Mutation$BarcodeType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'price': instance.price,
+      'barcode': instance.barcode,
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'media': instance.media?.toJson(),
+      'discount': instance.discount?.toJson(),
+      'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
+      'catalogueCategory':
+          instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+      'pixel': instance.pixel?.toJson(),
+      'maintenance': instance.maintenance?.toJson(),
+      'productAttributesValues': instance.productAttributesValues?.toJson(),
+      'internalProduct': instance.internalProduct?.toJson(),
+      'product': instance.product?.toJson(),
+    };
 
 UpdateBarcode$Mutation _$UpdateBarcode$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -8938,37 +6936,27 @@ BarcodeUpdateInput _$BarcodeUpdateInputFromJson(Map<String, dynamic> json) =>
       id: json['id'] as String,
     );
 
-Map<String, dynamic> _$BarcodeUpdateInputToJson(BarcodeUpdateInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('product', instance.product);
-  writeNotNull('internalProduct', instance.internalProduct);
-  writeNotNull('productAttributesValues', instance.productAttributesValues);
-  writeNotNull('barcode', instance.barcode);
-  writeNotNull('name', instance.name);
-  writeNotNull('price', instance.price);
-  writeNotNull(
-      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('catalogueCategory', instance.catalogueCategory);
-  writeNotNull('maintenance', instance.maintenance?.toJson());
-  writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull(
-      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull('supplier', instance.supplier);
-  val['id'] = instance.id;
-  return val;
-}
+Map<String, dynamic> _$BarcodeUpdateInputToJson(BarcodeUpdateInput instance) =>
+    <String, dynamic>{
+      'product': instance.product,
+      'internalProduct': instance.internalProduct,
+      'productAttributesValues': instance.productAttributesValues,
+      'barcode': instance.barcode,
+      'name': instance.name,
+      'price': instance.price,
+      'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
+      'discount': instance.discount?.toJson(),
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'media': instance.media?.toJson(),
+      'catalogueCategory': instance.catalogueCategory,
+      'maintenance': instance.maintenance?.toJson(),
+      'pixel': instance.pixel?.toJson(),
+      'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'supplier': instance.supplier,
+      'id': instance.id,
+    };
 
 BarcodePeriodCreditInput _$BarcodePeriodCreditInputFromJson(
         Map<String, dynamic> json) =>
@@ -8980,21 +6968,12 @@ BarcodePeriodCreditInput _$BarcodePeriodCreditInputFromJson(
     );
 
 Map<String, dynamic> _$BarcodePeriodCreditInputToJson(
-    BarcodePeriodCreditInput instance) {
-  final val = <String, dynamic>{
-    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-    'periodValue': instance.periodValue,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+        BarcodePeriodCreditInput instance) =>
+    <String, dynamic>{
+      'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+      'periodValue': instance.periodValue,
+      'amount': instance.amount,
+    };
 
 DiscountDtoInput _$DiscountDtoInputFromJson(Map<String, dynamic> json) =>
     DiscountDtoInput(
@@ -9003,20 +6982,11 @@ DiscountDtoInput _$DiscountDtoInputFromJson(Map<String, dynamic> json) =>
       amount: json['amount'] as String?,
     );
 
-Map<String, dynamic> _$DiscountDtoInputToJson(DiscountDtoInput instance) {
-  final val = <String, dynamic>{
-    'discountType': _$DiscountTypeEnumMap[instance.discountType]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+Map<String, dynamic> _$DiscountDtoInputToJson(DiscountDtoInput instance) =>
+    <String, dynamic>{
+      'discountType': _$DiscountTypeEnumMap[instance.discountType]!,
+      'amount': instance.amount,
+    };
 
 MediaInput _$MediaInputFromJson(Map<String, dynamic> json) => MediaInput(
       videos:
@@ -9029,20 +6999,12 @@ MediaInput _$MediaInputFromJson(Map<String, dynamic> json) => MediaInput(
           .toList(),
     );
 
-Map<String, dynamic> _$MediaInputToJson(MediaInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$MediaInputToJson(MediaInput instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+    };
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -9054,24 +7016,16 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  val['baseUrl'] = instance.baseUrl;
-  val['path'] = instance.path;
-  return val;
-}
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
+    <String, dynamic>{
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+    };
 
 InternalProductMaintenanceInput _$InternalProductMaintenanceInputFromJson(
         Map<String, dynamic> json) =>
@@ -9085,41 +7039,25 @@ InternalProductMaintenanceInput _$InternalProductMaintenanceInputFromJson(
     );
 
 Map<String, dynamic> _$InternalProductMaintenanceInputToJson(
-    InternalProductMaintenanceInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('active', instance.active);
-  writeNotNull('owner', instance.owner);
-  writeNotNull('technician', instance.technician);
-  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
-  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
-  writeNotNull('expectedMeantime', instance.expectedMeantime);
-  return val;
-}
+        InternalProductMaintenanceInput instance) =>
+    <String, dynamic>{
+      'active': instance.active,
+      'owner': instance.owner,
+      'technician': instance.technician,
+      'prevMaintenanceDuration': instance.prevMaintenanceDuration,
+      'maintenanceDuration': instance.maintenanceDuration,
+      'expectedMeantime': instance.expectedMeantime,
+    };
 
 PixelBarcodeInput _$PixelBarcodeInputFromJson(Map<String, dynamic> json) =>
     PixelBarcodeInput(
       include: json['include'] as bool?,
     );
 
-Map<String, dynamic> _$PixelBarcodeInputToJson(PixelBarcodeInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('include', instance.include);
-  return val;
-}
+Map<String, dynamic> _$PixelBarcodeInputToJson(PixelBarcodeInput instance) =>
+    <String, dynamic>{
+      'include': instance.include,
+    };
 
 ProductPriceListInput _$ProductPriceListInputFromJson(
         Map<String, dynamic> json) =>
@@ -9129,20 +7067,11 @@ ProductPriceListInput _$ProductPriceListInputFromJson(
     );
 
 Map<String, dynamic> _$ProductPriceListInputToJson(
-    ProductPriceListInput instance) {
-  final val = <String, dynamic>{
-    'price': instance.price,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  return val;
-}
+        ProductPriceListInput instance) =>
+    <String, dynamic>{
+      'price': instance.price,
+      'value': instance.value,
+    };
 
 ProductTaxesInput _$ProductTaxesInputFromJson(Map<String, dynamic> json) =>
     ProductTaxesInput(
@@ -9169,24 +7098,16 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType$PictureTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaTypeFromJson(
@@ -9208,20 +7129,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$DiscountDtoType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$DiscountDtoTypeFromJson(
@@ -9234,19 +7147,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$DiscountDtoType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$DiscountDtoTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType$PriceType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -9257,21 +7163,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType$PriceType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType$PriceTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType$PriceType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType$PriceType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListTypeFromJson(
@@ -9285,20 +7182,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('price', instance.price?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductPriceListType
+                instance) =>
+        <String, dynamic>{
+          'price': instance.price?.toJson(),
+          'value': instance.value,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -9312,22 +7201,13 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -9338,21 +7218,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -9377,27 +7248,17 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesTypeFromJson(
@@ -9411,19 +7272,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTaxesType
+                instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$BarcodePeriodCreditType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -9437,22 +7291,13 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$BarcodePeriodCreditType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$BarcodePeriodCreditTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$BarcodePeriodCreditType
-            instance) {
-  final val = <String, dynamic>{
-    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-    'periodValue': instance.periodValue,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$BarcodePeriodCreditType
+                instance) =>
+        <String, dynamic>{
+          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+          'periodValue': instance.periodValue,
+          'amount': instance.amount,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$CatalogueCategoryType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -9465,23 +7310,14 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$CatalogueCategoryType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$CatalogueCategoryTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$PixelBarcodeType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$PixelBarcodeTypeFromJson(
@@ -9491,18 +7327,11 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$PixelBarcodeType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$PixelBarcodeTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$PixelBarcodeType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('include', instance.include);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$PixelBarcodeType
+                instance) =>
+        <String, dynamic>{
+          'include': instance.include,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -9517,24 +7346,16 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserT
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -9554,26 +7375,17 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserT
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -9594,24 +7406,16 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('active', instance.active);
-  writeNotNull('owner', instance.owner?.toJson());
-  writeNotNull('technician', instance.technician?.toJson());
-  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
-  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
-  writeNotNull('expectedMeantime', instance.expectedMeantime);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductMaintenanceType
+                instance) =>
+        <String, dynamic>{
+          'active': instance.active,
+          'owner': instance.owner?.toJson(),
+          'technician': instance.technician?.toJson(),
+          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
+          'maintenanceDuration': instance.maintenanceDuration,
+          'expectedMeantime': instance.expectedMeantime,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -9621,19 +7425,11 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -9656,28 +7452,19 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
@@ -9717,20 +7504,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('attributesValues',
-      instance.attributesValues?.map((e) => e.toJson()).toList());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductAttributesValuesType
+                instance) =>
+        <String, dynamic>{
+          'attributesValues':
+              instance.attributesValues?.map((e) => e.toJson()).toList(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -9745,24 +7524,16 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType$Pictur
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -9784,21 +7555,13 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$DiscountDtoType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -9811,20 +7574,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$DiscountDtoType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -9835,21 +7590,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$CatalogueCategor
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductTypeFromJson(
@@ -9891,35 +7637,27 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('sku', instance.sku);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('price', instance.price);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$InternalProductType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'sku': instance.sku,
+          'name': instance.name,
+          'tags': instance.tags,
+          'price': instance.price,
+          'status': _$ProductStatusEnumEnumMap[instance.status],
+          'condition': _$ProductConditionEnumEnumMap[instance.condition],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'description': instance.description,
+          'media': instance.media?.toJson(),
+          'descriptionList': instance.descriptionList,
+          'discount': instance.discount?.toJson(),
+          'priceBeforeReduction': instance.priceBeforeReduction,
+          'catalogueCategory':
+              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductSpecsType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductSpecsTypeFromJson(
@@ -9930,20 +7668,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductSpecsType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductSpecsTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductSpecsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', instance.key);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': instance.key,
+          'value': instance.value,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType$PictureType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -9958,24 +7688,16 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaTypeFromJson(
@@ -9997,21 +7719,13 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$PictureType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$PictureTypeFromJson(
@@ -10026,24 +7740,16 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$PictureTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -10058,24 +7764,16 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType$Pi
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -10095,27 +7793,18 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-    'rank': instance.rank,
-    'layer': instance.layer,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'hasChildren': instance.hasChildren,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$InventoryCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'hasChildren': instance.hasChildren,
+          'picture': instance.picture?.toJson(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -10129,22 +7818,13 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -10155,21 +7835,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -10194,27 +7865,17 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -10228,20 +7889,12 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductTaxesType
+                instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType$PictureType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -10256,24 +7909,16 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandTypeFromJson(
@@ -10292,25 +7937,17 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('name', instance.name);
-  writeNotNull('website', instance.website);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$BrandType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'website': instance.website,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'picture': instance.picture?.toJson(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -10320,19 +7957,11 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$Att
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -10355,28 +7984,19 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$Att
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -10475,42 +8095,35 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType
 
 Map<String, dynamic>
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductTypeToJson(
-        BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('ean', instance.ean);
-  writeNotNull('tax', instance.tax);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('class',
-      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
-  writeNotNull('price', instance.price);
-  writeNotNull('weight', instance.weight);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('factoryPrice', instance.factoryPrice);
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull('brand', instance.brand?.toJson());
-  writeNotNull('productAttributes',
-      instance.productAttributes?.map((e) => e.toJson()).toList());
-  return val;
-}
+            BulkUpdateBarcodeMedia$Mutation$BarcodeType$ProductType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'ean': instance.ean,
+          'tax': instance.tax,
+          'name': instance.name,
+          'tags': instance.tags,
+          'class': instance.kw$class
+              ?.map((e) => _$ProductClassEnumEnumMap[e]!)
+              .toList(),
+          'price': instance.price,
+          'weight': instance.weight,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'description': instance.description,
+          'factoryPrice': instance.factoryPrice,
+          'specs': instance.specs?.map((e) => e.toJson()).toList(),
+          'media': instance.media?.toJson(),
+          'descriptionList': instance.descriptionList,
+          'wholesalerPrice': instance.wholesalerPrice,
+          'picture': instance.picture?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'category': instance.category?.map((e) => e.toJson()).toList(),
+          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+          'brand': instance.brand?.toJson(),
+          'productAttributes':
+              instance.productAttributes?.map((e) => e.toJson()).toList(),
+        };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType
     _$BulkUpdateBarcodeMedia$Mutation$BarcodeTypeFromJson(
@@ -10579,41 +8192,29 @@ BulkUpdateBarcodeMedia$Mutation$BarcodeType
                   .fromJson(json['product'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$BulkUpdateBarcodeMedia$Mutation$BarcodeTypeToJson(
-    BulkUpdateBarcodeMedia$Mutation$BarcodeType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('price', instance.price);
-  val['barcode'] = instance.barcode;
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull(
-      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('maintenance', instance.maintenance?.toJson());
-  writeNotNull(
-      'productAttributesValues', instance.productAttributesValues?.toJson());
-  writeNotNull('internalProduct', instance.internalProduct?.toJson());
-  writeNotNull('product', instance.product?.toJson());
-  return val;
-}
+        BulkUpdateBarcodeMedia$Mutation$BarcodeType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'price': instance.price,
+      'barcode': instance.barcode,
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'media': instance.media?.toJson(),
+      'discount': instance.discount?.toJson(),
+      'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
+      'catalogueCategory':
+          instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+      'pixel': instance.pixel?.toJson(),
+      'maintenance': instance.maintenance?.toJson(),
+      'productAttributesValues': instance.productAttributesValues?.toJson(),
+      'internalProduct': instance.internalProduct?.toJson(),
+      'product': instance.product?.toJson(),
+    };
 
 BulkUpdateBarcodeMedia$Mutation _$BulkUpdateBarcodeMedia$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -10654,20 +8255,12 @@ SingleMediaInput _$SingleMediaInputFromJson(Map<String, dynamic> json) =>
           : PictureInput.fromJson(json['deg360'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$SingleMediaInputToJson(SingleMediaInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('pictures', instance.pictures?.toJson());
-  writeNotNull('deg360', instance.deg360?.toJson());
-  return val;
-}
+Map<String, dynamic> _$SingleMediaInputToJson(SingleMediaInput instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'pictures': instance.pictures?.toJson(),
+      'deg360': instance.deg360?.toJson(),
+    };
 
 CreateBarcode$Mutation$BarcodeType$MediaType$PictureType
     _$CreateBarcode$Mutation$BarcodeType$MediaType$PictureTypeFromJson(
@@ -10680,25 +8273,17 @@ CreateBarcode$Mutation$BarcodeType$MediaType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String, dynamic>
-    _$CreateBarcode$Mutation$BarcodeType$MediaType$PictureTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+Map<String,
+    dynamic> _$CreateBarcode$Mutation$BarcodeType$MediaType$PictureTypeToJson(
+        CreateBarcode$Mutation$BarcodeType$MediaType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 CreateBarcode$Mutation$BarcodeType$MediaType
     _$CreateBarcode$Mutation$BarcodeType$MediaTypeFromJson(
@@ -10719,20 +8304,12 @@ CreateBarcode$Mutation$BarcodeType$MediaType
               .toList();
 
 Map<String, dynamic> _$CreateBarcode$Mutation$BarcodeType$MediaTypeToJson(
-    CreateBarcode$Mutation$BarcodeType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        CreateBarcode$Mutation$BarcodeType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 CreateBarcode$Mutation$BarcodeType$DiscountDtoType
     _$CreateBarcode$Mutation$BarcodeType$DiscountDtoTypeFromJson(
@@ -10744,19 +8321,11 @@ CreateBarcode$Mutation$BarcodeType$DiscountDtoType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$CreateBarcode$Mutation$BarcodeType$DiscountDtoTypeToJson(
-    CreateBarcode$Mutation$BarcodeType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+        CreateBarcode$Mutation$BarcodeType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 CreateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceType
     _$CreateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -10767,21 +8336,12 @@ CreateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductPriceListType$PriceType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductPriceListType
     _$CreateBarcode$Mutation$BarcodeType$ProductPriceListTypeFromJson(
@@ -10795,19 +8355,11 @@ CreateBarcode$Mutation$BarcodeType$ProductPriceListType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductPriceListTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductPriceListType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('price', instance.price?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductPriceListType instance) =>
+        <String, dynamic>{
+          'price': instance.price?.toJson(),
+          'value': instance.value,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -10821,22 +8373,13 @@ CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
     _$CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -10847,21 +8390,12 @@ CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType
     _$CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -10886,26 +8420,17 @@ CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductTaxesType
     _$CreateBarcode$Mutation$BarcodeType$ProductTaxesTypeFromJson(
@@ -10919,19 +8444,11 @@ CreateBarcode$Mutation$BarcodeType$ProductTaxesType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductTaxesTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductTaxesType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductTaxesType instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 CreateBarcode$Mutation$BarcodeType$BarcodePeriodCreditType
     _$CreateBarcode$Mutation$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -10943,23 +8460,14 @@ CreateBarcode$Mutation$BarcodeType$BarcodePeriodCreditType
           ..periodValue = json['periodValue'] as int
           ..amount = json['amount'] as String?;
 
-Map<String, dynamic>
-    _$CreateBarcode$Mutation$BarcodeType$BarcodePeriodCreditTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$BarcodePeriodCreditType instance) {
-  final val = <String, dynamic>{
-    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-    'periodValue': instance.periodValue,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+Map<String,
+    dynamic> _$CreateBarcode$Mutation$BarcodeType$BarcodePeriodCreditTypeToJson(
+        CreateBarcode$Mutation$BarcodeType$BarcodePeriodCreditType instance) =>
+    <String, dynamic>{
+      'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+      'periodValue': instance.periodValue,
+      'amount': instance.amount,
+    };
 
 CreateBarcode$Mutation$BarcodeType$CatalogueCategoryType
     _$CreateBarcode$Mutation$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -10970,24 +8478,15 @@ CreateBarcode$Mutation$BarcodeType$CatalogueCategoryType
           ..rank = json['rank'] as int?
           ..layer = json['layer'] as int;
 
-Map<String, dynamic>
-    _$CreateBarcode$Mutation$BarcodeType$CatalogueCategoryTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  return val;
-}
+Map<String,
+    dynamic> _$CreateBarcode$Mutation$BarcodeType$CatalogueCategoryTypeToJson(
+        CreateBarcode$Mutation$BarcodeType$CatalogueCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'rank': instance.rank,
+      'layer': instance.layer,
+    };
 
 CreateBarcode$Mutation$BarcodeType$PixelBarcodeType
     _$CreateBarcode$Mutation$BarcodeType$PixelBarcodeTypeFromJson(
@@ -10997,18 +8496,10 @@ CreateBarcode$Mutation$BarcodeType$PixelBarcodeType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$PixelBarcodeTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$PixelBarcodeType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('include', instance.include);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$PixelBarcodeType instance) =>
+        <String, dynamic>{
+          'include': instance.include,
+        };
 
 CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType$PictureType
     _$CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType$PictureTypeFromJson(
@@ -11023,24 +8514,16 @@ CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType$PictureTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType
     _$CreateBarcode$Mutation$BarcodeType$CompanyType$MediaTypeFromJson(
@@ -11060,22 +8543,14 @@ CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String, dynamic>
-    _$CreateBarcode$Mutation$BarcodeType$CompanyType$MediaTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String,
+    dynamic> _$CreateBarcode$Mutation$BarcodeType$CompanyType$MediaTypeToJson(
+        CreateBarcode$Mutation$BarcodeType$CompanyType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 CreateBarcode$Mutation$BarcodeType$CompanyType
     _$CreateBarcode$Mutation$BarcodeType$CompanyTypeFromJson(
@@ -11090,22 +8565,13 @@ CreateBarcode$Mutation$BarcodeType$CompanyType
                   .fromJson(json['media'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateBarcode$Mutation$BarcodeType$CompanyTypeToJson(
-    CreateBarcode$Mutation$BarcodeType$CompanyType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  return val;
-}
+        CreateBarcode$Mutation$BarcodeType$CompanyType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+    };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeFromJson(
@@ -11118,22 +8584,14 @@ CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$Phone
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -11148,24 +8606,16 @@ CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$Pictu
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -11189,27 +8639,18 @@ CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -11230,24 +8671,16 @@ CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('active', instance.active);
-  writeNotNull('owner', instance.owner?.toJson());
-  writeNotNull('technician', instance.technician?.toJson());
-  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
-  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
-  writeNotNull('expectedMeantime', instance.expectedMeantime);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductMaintenanceType
+                instance) =>
+        <String, dynamic>{
+          'active': instance.active,
+          'owner': instance.owner?.toJson(),
+          'technician': instance.technician?.toJson(),
+          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
+          'maintenanceDuration': instance.maintenanceDuration,
+          'expectedMeantime': instance.expectedMeantime,
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -11257,19 +8690,11 @@ CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$Attribute
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -11292,28 +8717,19 @@ CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$Attribute
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
@@ -11353,20 +8769,12 @@ CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('attributesValues',
-      instance.attributesValues?.map((e) => e.toJson()).toList());
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductAttributesValuesType
+                instance) =>
+        <String, dynamic>{
+          'attributesValues':
+              instance.attributesValues?.map((e) => e.toJson()).toList(),
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -11381,24 +8789,16 @@ CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -11420,21 +8820,13 @@ CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -11447,20 +8839,12 @@ CreateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -11471,21 +8855,12 @@ CreateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 CreateBarcode$Mutation$BarcodeType$InternalProductType
     _$CreateBarcode$Mutation$BarcodeType$InternalProductTypeFromJson(
@@ -11527,34 +8902,26 @@ CreateBarcode$Mutation$BarcodeType$InternalProductType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$InternalProductTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$InternalProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('sku', instance.sku);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('price', instance.price);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$InternalProductType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'sku': instance.sku,
+          'name': instance.name,
+          'tags': instance.tags,
+          'price': instance.price,
+          'status': _$ProductStatusEnumEnumMap[instance.status],
+          'condition': _$ProductConditionEnumEnumMap[instance.condition],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'externalId': instance.externalId,
+          'description': instance.description,
+          'media': instance.media?.toJson(),
+          'descriptionList': instance.descriptionList,
+          'discount': instance.discount?.toJson(),
+          'priceBeforeReduction': instance.priceBeforeReduction,
+          'catalogueCategory':
+              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsTypeFromJson(
@@ -11565,20 +8932,12 @@ CreateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('key', instance.key);
-  writeNotNull('value', instance.value);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$ProductSpecsType
+                instance) =>
+        <String, dynamic>{
+          'key': instance.key,
+          'value': instance.value,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -11593,24 +8952,16 @@ CreateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$MediaType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$MediaTypeFromJson(
@@ -11630,22 +8981,14 @@ CreateBarcode$Mutation$BarcodeType$ProductType$MediaType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String, dynamic>
-    _$CreateBarcode$Mutation$BarcodeType$ProductType$MediaTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String,
+    dynamic> _$CreateBarcode$Mutation$BarcodeType$ProductType$MediaTypeToJson(
+        CreateBarcode$Mutation$BarcodeType$ProductType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$PictureType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$PictureTypeFromJson(
@@ -11658,25 +9001,17 @@ CreateBarcode$Mutation$BarcodeType$ProductType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String, dynamic>
-    _$CreateBarcode$Mutation$BarcodeType$ProductType$PictureTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+Map<String,
+    dynamic> _$CreateBarcode$Mutation$BarcodeType$ProductType$PictureTypeToJson(
+        CreateBarcode$Mutation$BarcodeType$ProductType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -11691,24 +9026,16 @@ CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -11728,27 +9055,18 @@ CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-    'rank': instance.rank,
-    'layer': instance.layer,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'hasChildren': instance.hasChildren,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$InventoryCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'hasChildren': instance.hasChildren,
+          'picture': instance.picture?.toJson(),
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -11762,22 +9080,13 @@ CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTyp
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-            instance) {
-  final val = <String, dynamic>{
-    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('value', instance.value);
-  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+                instance) =>
+        <String, dynamic>{
+          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+          'value': instance.value,
+          'type': _$DiscountTypeEnumMap[instance.type]!,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -11788,21 +9097,12 @@ CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyT
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -11827,27 +9127,17 @@ CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('label', instance.label);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('value', instance.value?.toJson());
-  writeNotNull(
-      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
-  writeNotNull('product', instance.product);
-  writeNotNull('company', instance.company?.toJson());
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType$TaxType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'value': instance.value?.toJson(),
+          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
+          'product': instance.product,
+          'company': instance.company?.toJson(),
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -11861,20 +9151,12 @@ CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('tax', instance.tax?.toJson());
-  writeNotNull('rank', instance.rank);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$ProductTaxesType
+                instance) =>
+        <String, dynamic>{
+          'tax': instance.tax?.toJson(),
+          'rank': instance.rank,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -11889,24 +9171,16 @@ CreateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$BrandType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$BrandTypeFromJson(
@@ -11923,26 +9197,18 @@ CreateBarcode$Mutation$BarcodeType$ProductType$BrandType
               : CreateBarcode$Mutation$BarcodeType$ProductType$BrandType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$CreateBarcode$Mutation$BarcodeType$ProductType$BrandTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$BrandType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('name', instance.name);
-  writeNotNull('website', instance.website);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$CreateBarcode$Mutation$BarcodeType$ProductType$BrandTypeToJson(
+        CreateBarcode$Mutation$BarcodeType$ProductType$BrandType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'website': instance.website,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'picture': instance.picture?.toJson(),
+    };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -11952,19 +9218,11 @@ CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTyp
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pixelAttribute', instance.pixelAttribute);
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+                instance) =>
+        <String, dynamic>{
+          'pixelAttribute': instance.pixelAttribute,
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -11987,28 +9245,19 @@ CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTyp
 
 Map<String, dynamic>
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-        CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'label': instance.label,
-    'externalId': instance.externalId,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isRequired', instance.isRequired);
-  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
-  writeNotNull('pixel', instance.pixel?.toJson());
-  return val;
-}
+            CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'label': instance.label,
+          'externalId': instance.externalId,
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isRequired': instance.isRequired,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'pixel': instance.pixel?.toJson(),
+        };
 
 CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeType
     _$CreateBarcode$Mutation$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -12106,42 +9355,34 @@ CreateBarcode$Mutation$BarcodeType$ProductType
               .toList();
 
 Map<String, dynamic> _$CreateBarcode$Mutation$BarcodeType$ProductTypeToJson(
-    CreateBarcode$Mutation$BarcodeType$ProductType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('ean', instance.ean);
-  writeNotNull('tax', instance.tax);
-  writeNotNull('name', instance.name);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('class',
-      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
-  writeNotNull('price', instance.price);
-  writeNotNull('weight', instance.weight);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('description', instance.description);
-  writeNotNull('factoryPrice', instance.factoryPrice);
-  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('descriptionList', instance.descriptionList);
-  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull('brand', instance.brand?.toJson());
-  writeNotNull('productAttributes',
-      instance.productAttributes?.map((e) => e.toJson()).toList());
-  return val;
-}
+        CreateBarcode$Mutation$BarcodeType$ProductType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'ean': instance.ean,
+      'tax': instance.tax,
+      'name': instance.name,
+      'tags': instance.tags,
+      'class':
+          instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList(),
+      'price': instance.price,
+      'weight': instance.weight,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'externalId': instance.externalId,
+      'description': instance.description,
+      'factoryPrice': instance.factoryPrice,
+      'specs': instance.specs?.map((e) => e.toJson()).toList(),
+      'media': instance.media?.toJson(),
+      'descriptionList': instance.descriptionList,
+      'wholesalerPrice': instance.wholesalerPrice,
+      'picture': instance.picture?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'category': instance.category?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'brand': instance.brand?.toJson(),
+      'productAttributes':
+          instance.productAttributes?.map((e) => e.toJson()).toList(),
+    };
 
 CreateBarcode$Mutation$BarcodeType _$CreateBarcode$Mutation$BarcodeTypeFromJson(
         Map<String, dynamic> json) =>
@@ -12211,42 +9452,30 @@ CreateBarcode$Mutation$BarcodeType _$CreateBarcode$Mutation$BarcodeTypeFromJson(
               json['product'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateBarcode$Mutation$BarcodeTypeToJson(
-    CreateBarcode$Mutation$BarcodeType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('price', instance.price);
-  val['barcode'] = instance.barcode;
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull(
-      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
-  writeNotNull('catalogueCategory',
-      instance.catalogueCategory?.map((e) => e.toJson()).toList());
-  writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull('supplier', instance.supplier?.toJson());
-  writeNotNull('maintenance', instance.maintenance?.toJson());
-  writeNotNull(
-      'productAttributesValues', instance.productAttributesValues?.toJson());
-  writeNotNull('internalProduct', instance.internalProduct?.toJson());
-  writeNotNull('product', instance.product?.toJson());
-  return val;
-}
+        CreateBarcode$Mutation$BarcodeType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'price': instance.price,
+      'barcode': instance.barcode,
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'media': instance.media?.toJson(),
+      'discount': instance.discount?.toJson(),
+      'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
+      'catalogueCategory':
+          instance.catalogueCategory?.map((e) => e.toJson()).toList(),
+      'pixel': instance.pixel?.toJson(),
+      'supplier': instance.supplier?.toJson(),
+      'maintenance': instance.maintenance?.toJson(),
+      'productAttributesValues': instance.productAttributesValues?.toJson(),
+      'internalProduct': instance.internalProduct?.toJson(),
+      'product': instance.product?.toJson(),
+    };
 
 CreateBarcode$Mutation _$CreateBarcode$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -12305,36 +9534,26 @@ BarcodeInput _$BarcodeInputFromJson(Map<String, dynamic> json) => BarcodeInput(
       supplier: json['supplier'] as String?,
     );
 
-Map<String, dynamic> _$BarcodeInputToJson(BarcodeInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('product', instance.product);
-  writeNotNull('internalProduct', instance.internalProduct);
-  writeNotNull('productAttributesValues', instance.productAttributesValues);
-  val['barcode'] = instance.barcode;
-  writeNotNull('name', instance.name);
-  writeNotNull('price', instance.price);
-  writeNotNull(
-      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
-  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('catalogueCategory', instance.catalogueCategory);
-  writeNotNull('maintenance', instance.maintenance?.toJson());
-  writeNotNull('pixel', instance.pixel?.toJson());
-  writeNotNull(
-      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
-  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
-  writeNotNull('supplier', instance.supplier);
-  return val;
-}
+Map<String, dynamic> _$BarcodeInputToJson(BarcodeInput instance) =>
+    <String, dynamic>{
+      'product': instance.product,
+      'internalProduct': instance.internalProduct,
+      'productAttributesValues': instance.productAttributesValues,
+      'barcode': instance.barcode,
+      'name': instance.name,
+      'price': instance.price,
+      'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
+      'discount': instance.discount?.toJson(),
+      'condition': _$ProductConditionEnumEnumMap[instance.condition],
+      'status': _$ProductStatusEnumEnumMap[instance.status],
+      'media': instance.media?.toJson(),
+      'catalogueCategory': instance.catalogueCategory,
+      'maintenance': instance.maintenance?.toJson(),
+      'pixel': instance.pixel?.toJson(),
+      'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
+      'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
+      'supplier': instance.supplier,
+    };
 
 TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
     TargetACIInput(
@@ -12344,21 +9563,13 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
+    <String, dynamic>{
+      'pos': instance.pos,
+      'wholesaler': instance.wholesaler,
+      'manufacturer': instance.manufacturer,
+      'user': instance.user,
+    };
 
 BarcodeArguments _$BarcodeArgumentsFromJson(Map<String, dynamic> json) =>
     BarcodeArguments(
@@ -12406,18 +9617,10 @@ GetBarcodesPaginationArguments _$GetBarcodesPaginationArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetBarcodesPaginationArgumentsToJson(
-    GetBarcodesPaginationArguments instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetBarcodesPaginationArguments instance) =>
+    <String, dynamic>{
+      'pagination': instance.pagination?.toJson(),
+    };
 
 UpdateBarcodeArguments _$UpdateBarcodeArgumentsFromJson(
         Map<String, dynamic> json) =>

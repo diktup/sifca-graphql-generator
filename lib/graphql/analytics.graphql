@@ -8,11 +8,11 @@ query getAnalyticsStats($input: AnalyticsDashboardInput!) {
       value
       percentage
     }
-    visitDuration {
+    impressions {
       value
       percentage
     }
-    bounceRate {
+    conversions {
       value
       percentage
     }
@@ -77,7 +77,7 @@ query getAnalyticsAudienceMetrics($input: AnalyticsDashboardInput!) {
       rate
       compare
     }
-    duration {
+    impressions {
       rate
       compare
     }
@@ -110,10 +110,14 @@ query getAnalyticsUsersByDevice($input: AnalyticsDashboardInput!) {
       value
       compare
     }
+    unknown {
+      value
+      compare
+    }
   }
 }
-query getAnalyticsTopReferralPages($input: AnalyticsDashboardInput!) {
-  getAnalyticsTopReferralPages(input: $input) {
+query getAnalyticsTopOperatingSystems($input: AnalyticsDashboardInput!) {
+  getAnalyticsTopOperatingSystems(input: $input) {
     total
     compare
     segments {

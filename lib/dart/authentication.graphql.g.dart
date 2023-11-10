@@ -17,22 +17,14 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$PhoneType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$PhoneTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$PictureType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$PictureTypeFromJson(
@@ -47,24 +39,16 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$PictureTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType$PictureType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType$PictureTypeFromJson(
@@ -79,24 +63,16 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType$PictureTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageTypeFromJson(
@@ -119,27 +95,18 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$LanguageType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType$PictureType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType$PictureTypeFromJson(
@@ -154,24 +121,16 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType$PictureTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryTypeFromJson(
@@ -195,28 +154,19 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLatType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -229,20 +179,12 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLatTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('coordinates', instance.coordinates);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLatType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type,
+          'coordinates': instance.coordinates,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -257,24 +199,16 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType$
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryTypeFromJson(
@@ -298,28 +232,19 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -335,25 +260,17 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$Co
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -377,28 +294,19 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$Co
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$PictureType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -414,25 +322,17 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$Pi
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$PictureTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateTypeFromJson(
@@ -444,10 +344,10 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType
           ..capital = $enumDecodeNullable(
               _$StateCapitalEnumEnumMap, json['capital'],
               unknownValue: StateCapitalEnum.artemisUnknown)
-          ..population = (json['population'] as num?)?.toDouble()
+          ..population = json['population'] as String?
           ..ascii = json['ascii'] as String?
-          ..lat = (json['lat'] as num?)?.toDouble()
-          ..lng = (json['lng'] as num?)?.toDouble()
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
           ..country = json['country'] == null
               ? null
               : UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType$CountryType
@@ -465,32 +365,23 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$StateType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'adminName': instance.adminName,
+          'capital': _$StateCapitalEnumEnumMap[instance.capital],
+          'population': instance.population,
+          'ascii': instance.ascii,
+          'lat': instance.lat,
+          'lng': instance.lng,
+          'country': instance.country?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 const _$StateCapitalEnumEnumMap = {
   StateCapitalEnum.primary: 'PRIMARY',
@@ -508,20 +399,12 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressO
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('countryCode', instance.countryCode);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'countryCode': instance.countryCode,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -535,20 +418,12 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressO
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('phone', instance.phone?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$FullAddressOwnerType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'phone': instance.phone?.toJson(),
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressTypeFromJson(
@@ -577,26 +452,18 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('city', instance.city);
-  writeNotNull('address', instance.address);
-  writeNotNull('postCode', instance.postCode);
-  writeNotNull('addressLine', instance.addressLine);
-  writeNotNull('location', instance.location?.toJson());
-  writeNotNull('country', instance.country?.toJson());
-  writeNotNull('state', instance.state?.toJson());
-  writeNotNull('owner', instance.owner?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType
+                instance) =>
+        <String, dynamic>{
+          'city': instance.city,
+          'address': instance.address,
+          'postCode': instance.postCode,
+          'addressLine': instance.addressLine,
+          'location': instance.location?.toJson(),
+          'country': instance.country?.toJson(),
+          'state': instance.state?.toJson(),
+          'owner': instance.owner?.toJson(),
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -611,24 +478,16 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$S
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -657,23 +516,15 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$S
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('size48', instance.size48?.toJson());
-  writeNotNull('size96', instance.size96?.toJson());
-  writeNotNull('size144', instance.size144?.toJson());
-  writeNotNull('size240', instance.size240?.toJson());
-  writeNotNull('size480', instance.size480?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                instance) =>
+        <String, dynamic>{
+          'size48': instance.size48?.toJson(),
+          'size96': instance.size96?.toJson(),
+          'size144': instance.size144?.toJson(),
+          'size240': instance.size240?.toJson(),
+          'size480': instance.size480?.toJson(),
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -690,20 +541,12 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$S
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('svg', instance.svg?.toJson());
-  writeNotNull('png', instance.png?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+                instance) =>
+        <String, dynamic>{
+          'svg': instance.svg?.toJson(),
+          'png': instance.png?.toJson(),
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -719,21 +562,12 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$S
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType
-            instance) {
-  final val = <String, dynamic>{
-    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType$SocialImagesType
+                instance) =>
+        <String, dynamic>{
+          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+          'images': instance.images?.map((e) => e.toJson()).toList(),
+        };
 
 const _$SocialImageStyleEnumEnumMap = {
   SocialImageStyleEnum.bubble: 'BUBBLE',
@@ -761,26 +595,17 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('fontIcon', instance.fontIcon);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType$SocialType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'fontIcon': instance.fontIcon,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'images': instance.images?.map((e) => e.toJson()).toList(),
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueTypeFromJson(
@@ -794,20 +619,12 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialValueType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name?.toJson(),
+          'value': instance.value,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -817,19 +634,11 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$OoredooD
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$OoredooDataType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -844,25 +653,16 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$Facebook
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  val['token'] = instance.token;
-  val['email'] = instance.email;
-  writeNotNull('last_name', instance.lastName);
-  writeNotNull('first_name', instance.firstName);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$FacebookDataType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'token': instance.token,
+          'email': instance.email,
+          'last_name': instance.lastName,
+          'first_name': instance.firstName,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -880,28 +680,19 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDa
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataType
-            instance) {
-  final val = <String, dynamic>{
-    'sub': instance.sub,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  val['email'] = instance.email;
-  val['token'] = instance.token;
-  writeNotNull('locale', instance.locale);
-  writeNotNull('picture', instance.picture);
-  writeNotNull('given_name', instance.givenName);
-  writeNotNull('family_name', instance.familyName);
-  writeNotNull('email_verified', instance.emailVerified);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$GoogleDataType
+                instance) =>
+        <String, dynamic>{
+          'sub': instance.sub,
+          'name': instance.name,
+          'email': instance.email,
+          'token': instance.token,
+          'locale': instance.locale,
+          'picture': instance.picture,
+          'given_name': instance.givenName,
+          'family_name': instance.familyName,
+          'email_verified': instance.emailVerified,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -917,25 +708,17 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$AppleDat
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('status', instance.status);
-  writeNotNull('givenName', instance.givenName);
-  writeNotNull('familyName', instance.familyName);
-  val['identityToken'] = instance.identityToken;
-  writeNotNull('userIdentifier', instance.userIdentifier);
-  writeNotNull('authorizationCode', instance.authorizationCode);
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType$AppleDataType
+                instance) =>
+        <String, dynamic>{
+          'email': instance.email,
+          'status': instance.status,
+          'givenName': instance.givenName,
+          'familyName': instance.familyName,
+          'identityToken': instance.identityToken,
+          'userIdentifier': instance.userIdentifier,
+          'authorizationCode': instance.authorizationCode,
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataTypeFromJson(
@@ -960,22 +743,14 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ooredoo', instance.ooredoo?.toJson());
-  writeNotNull('facebook', instance.facebook?.toJson());
-  writeNotNull('google', instance.google?.toJson());
-  writeNotNull('apple', instance.apple?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType$SocialLoginDataType
+                instance) =>
+        <String, dynamic>{
+          'ooredoo': instance.ooredoo?.toJson(),
+          'facebook': instance.facebook?.toJson(),
+          'google': instance.google?.toJson(),
+          'apple': instance.apple?.toJson(),
+        };
 
 UpdateCurrentUserLogins$Mutation$LoginType$UserType
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserTypeFromJson(
@@ -1074,60 +849,47 @@ UpdateCurrentUserLogins$Mutation$LoginType$UserType
 
 Map<String, dynamic>
     _$UpdateCurrentUserLogins$Mutation$LoginType$UserTypeToJson(
-        UpdateCurrentUserLogins$Mutation$LoginType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
-  writeNotNull('email', instance.email);
-  writeNotNull(
-      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
-  writeNotNull('title', instance.title);
-  writeNotNull('about', instance.about);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('locale', instance.locale);
-  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
-  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('plugged', instance.plugged);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isMailValid', instance.isMailValid);
-  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
-  writeNotNull('phoneNumber', instance.phoneNumber);
-  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
-  writeNotNull('placeOfBirth', instance.placeOfBirth);
-  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
-  writeNotNull('newsletterSubs', instance.newsletterSubs);
-  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'languages', instance.languages?.map((e) => e.toJson()).toList());
-  writeNotNull('nationality', instance.nationality?.toJson());
-  writeNotNull('billingAddress',
-      instance.billingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('shippingAddress',
-      instance.shippingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('residentialAddress',
-      instance.residentialAddress?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
-  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
-  return val;
-}
+            UpdateCurrentUserLogins$Mutation$LoginType$UserType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
+          'email': instance.email,
+          'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
+          'title': instance.title,
+          'about': instance.about,
+          'gender': _$GenderEnumMap[instance.gender],
+          'locale': instance.locale,
+          'source': _$SourcesEnumEnumMap[instance.source],
+          'status': _$UserStatusEnumMap[instance.status],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'plugged': instance.plugged,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isMailValid': instance.isMailValid,
+          'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
+          'phoneNumber': instance.phoneNumber,
+          'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
+          'placeOfBirth': instance.placeOfBirth,
+          'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
+          'newsletterSubs': instance.newsletterSubs,
+          'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'languages': instance.languages?.map((e) => e.toJson()).toList(),
+          'nationality': instance.nationality?.toJson(),
+          'billingAddress':
+              instance.billingAddress?.map((e) => e.toJson()).toList(),
+          'shippingAddress':
+              instance.shippingAddress?.map((e) => e.toJson()).toList(),
+          'residentialAddress':
+              instance.residentialAddress?.map((e) => e.toJson()).toList(),
+          'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
+          'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
+          'socialLoginData': instance.socialLoginData?.toJson(),
+        };
 
 const _$AppEnumMap = {
   App.bosk: 'BOSK',
@@ -1258,19 +1020,11 @@ IPhoneInput _$IPhoneInputFromJson(Map<String, dynamic> json) => IPhoneInput(
       countryCode: json['countryCode'] as String?,
     );
 
-Map<String, dynamic> _$IPhoneInputToJson(IPhoneInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('countryCode', instance.countryCode);
-  return val;
-}
+Map<String, dynamic> _$IPhoneInputToJson(IPhoneInput instance) =>
+    <String, dynamic>{
+      'number': instance.number,
+      'countryCode': instance.countryCode,
+    };
 
 LoginForApp$Query$LoginType _$LoginForApp$Query$LoginTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1303,20 +1057,12 @@ LoginInput _$LoginInputFromJson(Map<String, dynamic> json) => LoginInput(
       password: json['password'] as String,
     );
 
-Map<String, dynamic> _$LoginInputToJson(LoginInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('login', instance.login);
-  writeNotNull('phone', instance.phone?.toJson());
-  val['password'] = instance.password;
-  return val;
-}
+Map<String, dynamic> _$LoginInputToJson(LoginInput instance) =>
+    <String, dynamic>{
+      'login': instance.login,
+      'phone': instance.phone?.toJson(),
+      'password': instance.password,
+    };
 
 RegisterForApp$Mutation$LoginType _$RegisterForApp$Mutation$LoginTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1426,60 +1172,48 @@ UserInput _$UserInputFromJson(Map<String, dynamic> json) => UserInput(
       phoneNumber: json['phoneNumber'] as String?,
     );
 
-Map<String, dynamic> _$UserInputToJson(UserInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('username', instance.username);
-  writeNotNull('phone', instance.phone?.toJson());
-  val['password'] = instance.password;
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('covers', instance.covers?.map((e) => e.toJson()).toList());
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
-  writeNotNull('title', instance.title);
-  writeNotNull('about', instance.about);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('languages', instance.languages);
-  writeNotNull(
-      'education', instance.education?.map((e) => e.toJson()).toList());
-  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
-  writeNotNull('lived', instance.lived);
-  writeNotNull('hobbies', instance.hobbies);
-  writeNotNull('interests', instance.interests);
-  writeNotNull('isMailValid', instance.isMailValid);
-  writeNotNull('plugged', instance.plugged);
-  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
-  writeNotNull(
-      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
-  writeNotNull('nationality', instance.nationality);
-  writeNotNull('locale', instance.locale);
-  writeNotNull('placeOfBirth', instance.placeOfBirth);
-  writeNotNull('residentialAddress',
-      instance.residentialAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('shippingAddress',
-      instance.shippingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('billingAddress',
-      instance.billingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
-  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
-  writeNotNull('newsletterSubs', instance.newsletterSubs);
-  val['roles'] = instance.roles.map((e) => _$UserRoleEnumMap[e]!).toList();
-  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
-  writeNotNull('phoneNumber', instance.phoneNumber);
-  return val;
-}
+Map<String, dynamic> _$UserInputToJson(UserInput instance) => <String, dynamic>{
+      'email': instance.email,
+      'username': instance.username,
+      'phone': instance.phone?.toJson(),
+      'password': instance.password,
+      'picture': instance.picture?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'covers': instance.covers?.map((e) => e.toJson()).toList(),
+      'firstName': instance.firstName,
+      'status': _$UserStatusEnumMap[instance.status],
+      'title': instance.title,
+      'about': instance.about,
+      'lastName': instance.lastName,
+      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
+      'gender': _$GenderEnumMap[instance.gender],
+      'languages': instance.languages,
+      'education': instance.education?.map((e) => e.toJson()).toList(),
+      'work': instance.work?.map((e) => e.toJson()).toList(),
+      'lived': instance.lived,
+      'hobbies': instance.hobbies,
+      'interests': instance.interests,
+      'isMailValid': instance.isMailValid,
+      'plugged': instance.plugged,
+      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
+      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
+      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
+      'nationality': instance.nationality,
+      'locale': instance.locale,
+      'placeOfBirth': instance.placeOfBirth,
+      'residentialAddress':
+          instance.residentialAddress?.map((e) => e.toJson()).toList(),
+      'shippingAddress':
+          instance.shippingAddress?.map((e) => e.toJson()).toList(),
+      'billingAddress':
+          instance.billingAddress?.map((e) => e.toJson()).toList(),
+      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
+      'source': _$SourcesEnumEnumMap[instance.source],
+      'newsletterSubs': instance.newsletterSubs,
+      'roles': instance.roles.map((e) => _$UserRoleEnumMap[e]!).toList(),
+      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
+      'phoneNumber': instance.phoneNumber,
+    };
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -1491,24 +1225,16 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  val['baseUrl'] = instance.baseUrl;
-  val['path'] = instance.path;
-  return val;
-}
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
+    <String, dynamic>{
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+    };
 
 UserEducationInput _$UserEducationInputFromJson(Map<String, dynamic> json) =>
     UserEducationInput(
@@ -1523,24 +1249,16 @@ UserEducationInput _$UserEducationInputFromJson(Map<String, dynamic> json) =>
       graduated: json['graduated'] as bool?,
     );
 
-Map<String, dynamic> _$UserEducationInputToJson(UserEducationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('graduated', instance.graduated);
-  return val;
-}
+Map<String, dynamic> _$UserEducationInputToJson(UserEducationInput instance) =>
+    <String, dynamic>{
+      'level': _$AcademicLevelEnumMap[instance.level],
+      'name': instance.name,
+      'description': instance.description,
+      'tags': instance.tags,
+      'from': instance.from?.toIso8601String(),
+      'to': instance.to?.toIso8601String(),
+      'graduated': instance.graduated,
+    };
 
 const _$AcademicLevelEnumMap = {
   AcademicLevel.primary: 'PRIMARY',
@@ -1562,25 +1280,17 @@ UserWorkInput _$UserWorkInputFromJson(Map<String, dynamic> json) =>
       current: json['current'] as bool?,
     );
 
-Map<String, dynamic> _$UserWorkInputToJson(UserWorkInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('company', instance.company);
-  writeNotNull('position', instance.position);
-  writeNotNull('description', instance.description);
-  writeNotNull('city', instance.city);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('current', instance.current);
-  return val;
-}
+Map<String, dynamic> _$UserWorkInputToJson(UserWorkInput instance) =>
+    <String, dynamic>{
+      'company': instance.company,
+      'position': instance.position,
+      'description': instance.description,
+      'city': instance.city,
+      'tags': instance.tags,
+      'from': instance.from?.toIso8601String(),
+      'to': instance.to?.toIso8601String(),
+      'current': instance.current,
+    };
 
 SocialValueInput _$SocialValueInputFromJson(Map<String, dynamic> json) =>
     SocialValueInput(
@@ -1611,25 +1321,17 @@ FullAddressInput _$FullAddressInputFromJson(Map<String, dynamic> json) =>
           : LonLatInput.fromJson(json['location'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$FullAddressInputToJson(FullAddressInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('owner', instance.owner?.toJson());
-  writeNotNull('address', instance.address);
-  writeNotNull('postCode', instance.postCode);
-  writeNotNull('city', instance.city);
-  writeNotNull('country', instance.country);
-  writeNotNull('state', instance.state);
-  writeNotNull('addressLine', instance.addressLine);
-  writeNotNull('location', instance.location?.toJson());
-  return val;
-}
+Map<String, dynamic> _$FullAddressInputToJson(FullAddressInput instance) =>
+    <String, dynamic>{
+      'owner': instance.owner?.toJson(),
+      'address': instance.address,
+      'postCode': instance.postCode,
+      'city': instance.city,
+      'country': instance.country,
+      'state': instance.state,
+      'addressLine': instance.addressLine,
+      'location': instance.location?.toJson(),
+    };
 
 FullAddressOwnerInput _$FullAddressOwnerInputFromJson(
         Map<String, dynamic> json) =>
@@ -1642,19 +1344,11 @@ FullAddressOwnerInput _$FullAddressOwnerInputFromJson(
     );
 
 Map<String, dynamic> _$FullAddressOwnerInputToJson(
-    FullAddressOwnerInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('phone', instance.phone?.toJson());
-  return val;
-}
+        FullAddressOwnerInput instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'phone': instance.phone?.toJson(),
+    };
 
 FullAddressOwnerPhoneInput _$FullAddressOwnerPhoneInputFromJson(
         Map<String, dynamic> json) =>
@@ -1664,19 +1358,11 @@ FullAddressOwnerPhoneInput _$FullAddressOwnerPhoneInputFromJson(
     );
 
 Map<String, dynamic> _$FullAddressOwnerPhoneInputToJson(
-    FullAddressOwnerPhoneInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('countryCode', instance.countryCode);
-  return val;
-}
+        FullAddressOwnerPhoneInput instance) =>
+    <String, dynamic>{
+      'number': instance.number,
+      'countryCode': instance.countryCode,
+    };
 
 LonLatInput _$LonLatInputFromJson(Map<String, dynamic> json) => LonLatInput(
       type: json['type'] as String,
@@ -1700,20 +1386,12 @@ EmailTempVariablesBrandInput _$EmailTempVariablesBrandInputFromJson(
     );
 
 Map<String, dynamic> _$EmailTempVariablesBrandInputToJson(
-    EmailTempVariablesBrandInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('logo', instance.logo);
-  writeNotNull('website', instance.website);
-  writeNotNull('name', instance.name);
-  return val;
-}
+        EmailTempVariablesBrandInput instance) =>
+    <String, dynamic>{
+      'logo': instance.logo,
+      'website': instance.website,
+      'name': instance.name,
+    };
 
 UpdateCurrentUserLoginsArguments _$UpdateCurrentUserLoginsArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -1726,20 +1404,12 @@ UpdateCurrentUserLoginsArguments _$UpdateCurrentUserLoginsArgumentsFromJson(
     );
 
 Map<String, dynamic> _$UpdateCurrentUserLoginsArgumentsToJson(
-    UpdateCurrentUserLoginsArguments instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('username', instance.username);
-  writeNotNull('phone', instance.phone?.toJson());
-  return val;
-}
+        UpdateCurrentUserLoginsArguments instance) =>
+    <String, dynamic>{
+      'email': instance.email,
+      'username': instance.username,
+      'phone': instance.phone?.toJson(),
+    };
 
 LoginForAppArguments _$LoginForAppArgumentsFromJson(
         Map<String, dynamic> json) =>

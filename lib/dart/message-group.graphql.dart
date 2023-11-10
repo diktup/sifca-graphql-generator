@@ -3887,13 +3887,13 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Sta
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -4539,13 +4539,13 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType$StateT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetMessageGroupMembers$Query$UserPaginateType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -4754,13 +4754,13 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetMessageGroupMembers$Query$UserPaginateType$UserType$StateType$CountryType?
       country;

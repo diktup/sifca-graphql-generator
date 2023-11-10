@@ -446,13 +446,13 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -1085,13 +1085,13 @@ class GetCoupons$Query$CouponType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -1293,13 +1293,13 @@ class GetCoupons$Query$CouponType$UserType$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCoupons$Query$CouponType$UserType$StateType$CountryType? country;
 
@@ -1994,13 +1994,13 @@ class Coupon$Query$CouponType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -2627,13 +2627,13 @@ class Coupon$Query$CouponType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType? country;
 
@@ -2830,13 +2830,13 @@ class Coupon$Query$CouponType$UserType$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Coupon$Query$CouponType$UserType$StateType$CountryType? country;
 
@@ -3998,13 +3998,13 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -4650,13 +4650,13 @@ class FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -4862,13 +4862,13 @@ class FindCouponsByTarget$Query$CouponType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType? country;
 
@@ -5837,13 +5837,13 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -6489,13 +6489,13 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -6704,13 +6704,13 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType?
       country;

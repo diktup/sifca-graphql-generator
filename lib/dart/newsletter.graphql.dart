@@ -458,13 +458,13 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$S
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetSubscribersToNewsletter$Query$NewsletterType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -1110,13 +1110,13 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$Stat
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetSubscribersToNewsletter$Query$NewsletterType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -1325,13 +1325,13 @@ class GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetSubscribersToNewsletter$Query$NewsletterType$UserType$StateType$CountryType?
       country;
@@ -2052,13 +2052,13 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -2704,13 +2704,13 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -2919,13 +2919,13 @@ class GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$Newslet
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetSubscribersToNewsletterPaginated$Query$PaginatedNewslettersType$NewsletterType$UserType$StateType$CountryType?
       country;
@@ -3764,13 +3764,13 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$State
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   AddUserToNewsLetter$Mutation$NewsletterType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -4416,13 +4416,13 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   AddUserToNewsLetter$Mutation$NewsletterType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -4631,13 +4631,13 @@ class AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   AddUserToNewsLetter$Mutation$NewsletterType$UserType$StateType$CountryType?
       country;

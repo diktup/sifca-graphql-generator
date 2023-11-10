@@ -441,13 +441,13 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -1074,13 +1074,13 @@ class GetBlogs$Query$BlogType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType? country;
 
@@ -1277,13 +1277,13 @@ class GetBlogs$Query$BlogType$UserType$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetBlogs$Query$BlogType$UserType$StateType$CountryType? country;
 
@@ -2110,13 +2110,13 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -2762,13 +2762,13 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -2977,13 +2977,13 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType?
       country;
@@ -3869,13 +3869,13 @@ class Blog$Query$BlogType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType? country;
 
@@ -4498,13 +4498,13 @@ class Blog$Query$BlogType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType? country;
 
@@ -4699,13 +4699,13 @@ class Blog$Query$BlogType$UserType$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   Blog$Query$BlogType$UserType$StateType$CountryType? country;
 
@@ -5518,13 +5518,13 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -6163,13 +6163,13 @@ class FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -6374,13 +6374,13 @@ class FindBlogsByTarget$Query$BlogType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType? country;
 
@@ -7238,13 +7238,13 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -7890,13 +7890,13 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -8103,13 +8103,13 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType?
       country;
@@ -8956,13 +8956,13 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -9608,13 +9608,13 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -9823,13 +9823,13 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Stat
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType?
       country;
@@ -10714,13 +10714,13 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -11359,13 +11359,13 @@ class FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -11570,13 +11570,13 @@ class FindBlogsByAuthor$Query$BlogType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType? country;
 
@@ -12411,13 +12411,13 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -13063,13 +13063,13 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$User
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -13278,13 +13278,13 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Stat
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType?
       country;
@@ -14180,13 +14180,13 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -14832,13 +14832,13 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -15047,13 +15047,13 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType?
       country;
@@ -15918,13 +15918,13 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -16558,13 +16558,13 @@ class CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -16767,13 +16767,13 @@ class CreateBlog$Mutation$BlogType$UserType$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateBlog$Mutation$BlogType$UserType$StateType$CountryType? country;
 
@@ -17736,13 +17736,13 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -18377,13 +18377,13 @@ class PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -18588,13 +18588,13 @@ class PublishBlog$Mutation$BlogType$UserType$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   PublishBlog$Mutation$BlogType$UserType$StateType$CountryType? country;
 
@@ -19411,13 +19411,13 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -20051,13 +20051,13 @@ class UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -20260,13 +20260,13 @@ class UpdateBlog$Mutation$BlogType$UserType$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType? country;
 
@@ -21116,13 +21116,13 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -21756,13 +21756,13 @@ class DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -21965,13 +21965,13 @@ class DeleteBlog$Mutation$BlogType$UserType$StateType extends JsonSerializable
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType? country;
 

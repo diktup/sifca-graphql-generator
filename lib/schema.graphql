@@ -54,10 +54,10 @@ type StateType {
   name: String!
   adminName: String
   capital: StateCapitalEnum
-  population: Float
+  population: String
   ascii: String
-  lat: Float
-  lng: Float
+  lat: String
+  lng: String
   flagSquare: PictureType
   flagWide: PictureType
   country: CountryType
@@ -1845,6 +1845,7 @@ enum PredefinedActionsEnum {
 type ActivityTypeType {
   id: ID!
   title: String
+  code: String
   description: String
   icon: String
   theme: String
@@ -1858,6 +1859,7 @@ type ActivityTypeType {
 type ActivityTypeWithActiveStatusType {
   id: ID!
   title: String
+  code: String
   description: String
   icon: String
   theme: String
@@ -2667,7 +2669,7 @@ enum QuestionTypeEnum {
   SHORT_ANSWER
   PARAGRAPH
   MULTIPLE_CHOICE
-  CHECKBOXES
+  SINGLE_CHOICE
   DROPDOWN
   PICTURE
   DATE
@@ -5726,15 +5728,15 @@ type GoogleMapsAuditType {
 }
 
 type AnalyticsStatsInfoType {
-  value: Float!
-  percentage: Float!
+  value: String!
+  percentage: String!
 }
 
 type AnalyticsStatsType {
   users: AnalyticsStatsInfoType
   sessions: AnalyticsStatsInfoType
-  visitDuration: AnalyticsStatsInfoType
-  bounceRate: AnalyticsStatsInfoType
+  impressions: AnalyticsStatsInfoType
+  conversions: AnalyticsStatsInfoType
 }
 
 type AnalyticsUsersByCountryLayersType {
@@ -5761,7 +5763,7 @@ type AnalyticsSessionsByCountriesType {
 
 type AnalyticsRateCompareType {
   rate: Float!
-  compare: Float!
+  compare: String!
 }
 
 type AnalyticsAudienceMetricsChartType {
@@ -5772,7 +5774,7 @@ type AnalyticsAudienceMetricsChartType {
 type AnalyticsAudienceMetricsType {
   avgSession: AnalyticsRateCompareType
   conversion: AnalyticsRateCompareType
-  duration: AnalyticsRateCompareType
+  impressions: AnalyticsRateCompareType
   chart: AnalyticsAudienceMetricsChartType
 }
 
@@ -5787,26 +5789,27 @@ type AnalyticsAudienceSessionsByCountryType {
 }
 
 type AnalyticsUsersByDeviceDeviceType {
-  value: Int
-  compare: Float
+  value: Int!
+  compare: String!
 }
 
 type AnalyticsUsersByDeviceType {
   desktop: AnalyticsUsersByDeviceDeviceType
   mobile: AnalyticsUsersByDeviceDeviceType
   tablet: AnalyticsUsersByDeviceDeviceType
+  unknown: AnalyticsUsersByDeviceDeviceType
 }
 
-type AnalyticsTopReferralPagesSegmentType {
-  source: String
-  color: String
-  value: Float
+type AnalyticsTopOperatingSystemSegmentType {
+  source: String!
+  color: String!
+  value: String!
 }
 
-type AnalyticsTopReferralPagesType {
-  total: Int
-  compare: Float
-  segments: [AnalyticsTopReferralPagesSegmentType!]
+type AnalyticsTopOperatingSystemsType {
+  total: Int!
+  compare: String!
+  segments: [AnalyticsTopOperatingSystemSegmentType!]!
 }
 
 type AnalyticsTopPagesType {
@@ -11164,6 +11167,9 @@ type Query {
   getPredefinedActivityTypesPaginated(
     pagination: PaginationInput = { page: 0, limit: 20 }
   ): ActivityTypePaginateType!
+  getNonPredefinedActivityTypesPaginated(
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): ActivityTypePaginateType!
   getPredefinedActivityTypesByTargetPaginated(
     pagination: PaginationInput = { page: 0, limit: 20 }
     target: TargetACIInput!
@@ -12132,9 +12138,9 @@ type Query {
   getAnalyticsUsersByDevice(
     input: AnalyticsDashboardInput!
   ): AnalyticsUsersByDeviceType!
-  getAnalyticsTopReferralPages(
+  getAnalyticsTopOperatingSystems(
     input: AnalyticsDashboardInput!
-  ): AnalyticsTopReferralPagesType!
+  ): AnalyticsTopOperatingSystemsType!
   getAnalyticsTopPages(
     input: AnalyticsDashboardInput!
   ): [AnalyticsTopPagesType!]!
@@ -16353,8 +16359,8 @@ input RemunerationInput {
 }
 
 input QuestActivityInput {
-  title: String!
-  description: String!
+  title: String
+  description: String
   tags: [String!]
   media: MediaInput
   quest: ID!
@@ -16579,6 +16585,7 @@ input QuestTypeInput {
 
 input ActivityTypeInput {
   title: String
+  code: String
   description: String
   icon: String
   theme: String
@@ -16594,6 +16601,7 @@ input PredefinedActionInput {
 
 input ActivityTypeUpdateInput {
   title: String
+  code: String
   description: String
   icon: String
   theme: String
@@ -17301,10 +17309,10 @@ input StateInput {
   name: String!
   adminName: String!
   capital: StateCapitalEnum!
-  population: Float!
+  population: String
   ascii: String!
-  lat: Float!
-  lng: Float!
+  lat: String!
+  lng: String!
   flagSquare: PictureInput
   flagWide: PictureInput
   country: ID

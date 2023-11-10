@@ -19,24 +19,16 @@ GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType$Picture
 
 Map<String, dynamic>
     _$GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType$PictureTypeToJson(
-        GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType
     _$GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryTypeFromJson(
@@ -54,25 +46,16 @@ GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType
 
 Map<String, dynamic>
     _$GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryTypeToJson(
-        GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('mapPicture', instance.mapPicture);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetPOSCategoriesPagination$Query$POSCategoryPaginateType$POSCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'mapPicture': instance.mapPicture,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetPOSCategoriesPagination$Query$POSCategoryPaginateType
     _$GetPOSCategoriesPagination$Query$POSCategoryPaginateTypeFromJson(
@@ -86,22 +69,14 @@ GetPOSCategoriesPagination$Query$POSCategoryPaginateType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String, dynamic>
-    _$GetPOSCategoriesPagination$Query$POSCategoryPaginateTypeToJson(
-        GetPOSCategoriesPagination$Query$POSCategoryPaginateType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+Map<String,
+    dynamic> _$GetPOSCategoriesPagination$Query$POSCategoryPaginateTypeToJson(
+        GetPOSCategoriesPagination$Query$POSCategoryPaginateType instance) =>
+    <String, dynamic>{
+      'count': instance.count,
+      'isLast': instance.isLast,
+      'objects': instance.objects.map((e) => e.toJson()).toList(),
+    };
 
 GetPOSCategoriesPagination$Query _$GetPOSCategoriesPagination$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -123,19 +98,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 GetPOSCategories$Query$POSCategoryType$PictureType
     _$GetPOSCategories$Query$POSCategoryType$PictureTypeFromJson(
@@ -149,23 +116,15 @@ GetPOSCategories$Query$POSCategoryType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$GetPOSCategories$Query$POSCategoryType$PictureTypeToJson(
-    GetPOSCategories$Query$POSCategoryType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        GetPOSCategories$Query$POSCategoryType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 GetPOSCategories$Query$POSCategoryType
     _$GetPOSCategories$Query$POSCategoryTypeFromJson(
@@ -182,24 +141,15 @@ GetPOSCategories$Query$POSCategoryType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetPOSCategories$Query$POSCategoryTypeToJson(
-    GetPOSCategories$Query$POSCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('mapPicture', instance.mapPicture);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        GetPOSCategories$Query$POSCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'mapPicture': instance.mapPicture,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'picture': instance.picture?.toJson(),
+    };
 
 GetPOSCategories$Query _$GetPOSCategories$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -228,23 +178,15 @@ PosCategory$Query$POSCategoryType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$PosCategory$Query$POSCategoryType$PictureTypeToJson(
-    PosCategory$Query$POSCategoryType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        PosCategory$Query$POSCategoryType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 PosCategory$Query$POSCategoryType _$PosCategory$Query$POSCategoryTypeFromJson(
         Map<String, dynamic> json) =>
@@ -260,24 +202,15 @@ PosCategory$Query$POSCategoryType _$PosCategory$Query$POSCategoryTypeFromJson(
               json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$PosCategory$Query$POSCategoryTypeToJson(
-    PosCategory$Query$POSCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('mapPicture', instance.mapPicture);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        PosCategory$Query$POSCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'mapPicture': instance.mapPicture,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'picture': instance.picture?.toJson(),
+    };
 
 PosCategory$Query _$PosCategory$QueryFromJson(Map<String, dynamic> json) =>
     PosCategory$Query()
@@ -302,24 +235,16 @@ SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType$PictureType
 
 Map<String, dynamic>
     _$SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType$PictureTypeToJson(
-        SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType
     _$SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryTypeFromJson(
@@ -337,25 +262,16 @@ SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType
 
 Map<String, dynamic>
     _$SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryTypeToJson(
-        SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('mapPicture', instance.mapPicture);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            SearchPosCategory$Query$POSCategoryPaginateType$POSCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'mapPicture': instance.mapPicture,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'picture': instance.picture?.toJson(),
+        };
 
 SearchPosCategory$Query$POSCategoryPaginateType
     _$SearchPosCategory$Query$POSCategoryPaginateTypeFromJson(
@@ -370,20 +286,12 @@ SearchPosCategory$Query$POSCategoryPaginateType
               .toList();
 
 Map<String, dynamic> _$SearchPosCategory$Query$POSCategoryPaginateTypeToJson(
-    SearchPosCategory$Query$POSCategoryPaginateType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+        SearchPosCategory$Query$POSCategoryPaginateType instance) =>
+    <String, dynamic>{
+      'count': instance.count,
+      'isLast': instance.isLast,
+      'objects': instance.objects.map((e) => e.toJson()).toList(),
+    };
 
 SearchPosCategory$Query _$SearchPosCategory$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -411,23 +319,15 @@ CreatePOSCategory$Mutation$POSCategoryType$PictureType
 
 Map<String, dynamic>
     _$CreatePOSCategory$Mutation$POSCategoryType$PictureTypeToJson(
-        CreatePOSCategory$Mutation$POSCategoryType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreatePOSCategory$Mutation$POSCategoryType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreatePOSCategory$Mutation$POSCategoryType
     _$CreatePOSCategory$Mutation$POSCategoryTypeFromJson(
@@ -444,24 +344,15 @@ CreatePOSCategory$Mutation$POSCategoryType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreatePOSCategory$Mutation$POSCategoryTypeToJson(
-    CreatePOSCategory$Mutation$POSCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('mapPicture', instance.mapPicture);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        CreatePOSCategory$Mutation$POSCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'mapPicture': instance.mapPicture,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'picture': instance.picture?.toJson(),
+    };
 
 CreatePOSCategory$Mutation _$CreatePOSCategory$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -484,21 +375,12 @@ POSCategoryInput _$POSCategoryInputFromJson(Map<String, dynamic> json) =>
           : PictureInput.fromJson(json['picture'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$POSCategoryInputToJson(POSCategoryInput instance) {
-  final val = <String, dynamic>{
-    'name': instance.name,
-    'mapPicture': instance.mapPicture,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+Map<String, dynamic> _$POSCategoryInputToJson(POSCategoryInput instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'mapPicture': instance.mapPicture,
+      'picture': instance.picture?.toJson(),
+    };
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -510,24 +392,16 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  val['baseUrl'] = instance.baseUrl;
-  val['path'] = instance.path;
-  return val;
-}
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
+    <String, dynamic>{
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+    };
 
 UpdatePOSCategory$Mutation$POSCategoryType$PictureType
     _$UpdatePOSCategory$Mutation$POSCategoryType$PictureTypeFromJson(
@@ -542,23 +416,15 @@ UpdatePOSCategory$Mutation$POSCategoryType$PictureType
 
 Map<String, dynamic>
     _$UpdatePOSCategory$Mutation$POSCategoryType$PictureTypeToJson(
-        UpdatePOSCategory$Mutation$POSCategoryType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdatePOSCategory$Mutation$POSCategoryType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdatePOSCategory$Mutation$POSCategoryType
     _$UpdatePOSCategory$Mutation$POSCategoryTypeFromJson(
@@ -575,24 +441,15 @@ UpdatePOSCategory$Mutation$POSCategoryType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdatePOSCategory$Mutation$POSCategoryTypeToJson(
-    UpdatePOSCategory$Mutation$POSCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('mapPicture', instance.mapPicture);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        UpdatePOSCategory$Mutation$POSCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'mapPicture': instance.mapPicture,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'picture': instance.picture?.toJson(),
+    };
 
 UpdatePOSCategory$Mutation _$UpdatePOSCategory$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -619,23 +476,15 @@ DeletePOSCategory$Mutation$POSCategoryType$PictureType
 
 Map<String, dynamic>
     _$DeletePOSCategory$Mutation$POSCategoryType$PictureTypeToJson(
-        DeletePOSCategory$Mutation$POSCategoryType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            DeletePOSCategory$Mutation$POSCategoryType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 DeletePOSCategory$Mutation$POSCategoryType
     _$DeletePOSCategory$Mutation$POSCategoryTypeFromJson(
@@ -652,24 +501,15 @@ DeletePOSCategory$Mutation$POSCategoryType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$DeletePOSCategory$Mutation$POSCategoryTypeToJson(
-    DeletePOSCategory$Mutation$POSCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('mapPicture', instance.mapPicture);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        DeletePOSCategory$Mutation$POSCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'mapPicture': instance.mapPicture,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'picture': instance.picture?.toJson(),
+    };
 
 DeletePOSCategory$Mutation _$DeletePOSCategory$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -693,18 +533,10 @@ GetPOSCategoriesPaginationArguments
         );
 
 Map<String, dynamic> _$GetPOSCategoriesPaginationArgumentsToJson(
-    GetPOSCategoriesPaginationArguments instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetPOSCategoriesPaginationArguments instance) =>
+    <String, dynamic>{
+      'pagination': instance.pagination?.toJson(),
+    };
 
 PosCategoryArguments _$PosCategoryArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -729,19 +561,11 @@ SearchPosCategoryArguments _$SearchPosCategoryArgumentsFromJson(
     );
 
 Map<String, dynamic> _$SearchPosCategoryArgumentsToJson(
-    SearchPosCategoryArguments instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  val['searchString'] = instance.searchString;
-  return val;
-}
+        SearchPosCategoryArguments instance) =>
+    <String, dynamic>{
+      'pagination': instance.pagination?.toJson(),
+      'searchString': instance.searchString,
+    };
 
 CreatePOSCategoryArguments _$CreatePOSCategoryArgumentsFromJson(
         Map<String, dynamic> json) =>

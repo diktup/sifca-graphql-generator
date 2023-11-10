@@ -2160,13 +2160,13 @@ class GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$C
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetCurrentUserQuantitativeWallet$Query$WalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$CountryType?
       country;
@@ -3276,13 +3276,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$St
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$FullAddressType$StateType$CountryType?
       country;
@@ -3928,13 +3928,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType$State
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$UserWorkType$StateType$CountryType?
       country;
@@ -4143,13 +4143,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$UserType$StateType$CountryType?
       country;
@@ -4896,13 +4896,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddress
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType?
       country;
@@ -5502,13 +5502,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -5895,13 +5895,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -7145,13 +7145,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -7539,13 +7539,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -8599,13 +8599,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType?
       country;
@@ -9029,13 +9029,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -9422,13 +9422,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -10397,13 +10397,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddres
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -10827,13 +10827,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -11220,13 +11220,13 @@ class WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$OwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -13955,13 +13955,13 @@ class WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$Au
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   WalletByOwner$Query$WalletDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$CountryType?
       country;
@@ -15049,13 +15049,13 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$FullAddressType$StateType$CountryType?
       country;
@@ -15655,13 +15655,13 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -16050,13 +16050,13 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -17303,13 +17303,13 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -17698,13 +17698,13 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -20411,13 +20411,13 @@ class GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWit
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetPointOfSalesWithWalletsForModule$Query$POSWithWalletPaginateType$POSWithWalletType$OwnerLessWalletOnePocketDtoType$PocketType$ChallengeType$AudienceType$AudienceSegmentType$AudienceSegmentFilterType$AudienceSegmentFilterValuesType$StateType$CountryType?
       country;
@@ -21312,8 +21312,8 @@ enum QuestionTypeEnum {
   paragraph,
   @JsonValue('MULTIPLE_CHOICE')
   multipleChoice,
-  @JsonValue('CHECKBOXES')
-  checkboxes,
+  @JsonValue('SINGLE_CHOICE')
+  singleChoice,
   @JsonValue('DROPDOWN')
   dropdown,
   @JsonValue('PICTURE')

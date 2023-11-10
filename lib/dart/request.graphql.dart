@@ -293,13 +293,13 @@ class GetRequests$Query$RequestType$RequestCompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequests$Query$RequestType$RequestCompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -838,13 +838,13 @@ class GetRequest$Query$RequestType$RequestCompanyType$FullAddressType$StateType
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$RequestCompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -1598,13 +1598,13 @@ class GetRequest$Query$RequestType$TargetType$PointOfSaleType$FullAddressType$St
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$PointOfSaleType$FullAddressType$StateType$CountryType?
       country;
@@ -2204,13 +2204,13 @@ class GetRequest$Query$RequestType$TargetType$PointOfSaleType$CompanyType$FullAd
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -2597,13 +2597,13 @@ class GetRequest$Query$RequestType$TargetType$PointOfSaleType$CompanyType$BankDe
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -3847,13 +3847,13 @@ class GetRequest$Query$RequestType$TargetType$PointOfSaleType$POSLoyaltyType$Loy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -4241,13 +4241,13 @@ class GetRequest$Query$RequestType$TargetType$PointOfSaleType$POSLoyaltyType$Loy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -5297,13 +5297,13 @@ class GetRequest$Query$RequestType$TargetType$WholesalerType$FullAddressType$Sta
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$WholesalerType$FullAddressType$StateType$CountryType?
       country;
@@ -5727,13 +5727,13 @@ class GetRequest$Query$RequestType$TargetType$WholesalerType$CompanyType$FullAdd
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -6120,13 +6120,13 @@ class GetRequest$Query$RequestType$TargetType$WholesalerType$CompanyType$BankDet
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -7090,13 +7090,13 @@ class GetRequest$Query$RequestType$TargetType$ManufacturerType$FullAddressType$S
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$ManufacturerType$FullAddressType$StateType$CountryType?
       country;
@@ -7520,13 +7520,13 @@ class GetRequest$Query$RequestType$TargetType$ManufacturerType$CompanyType$FullA
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -7913,13 +7913,13 @@ class GetRequest$Query$RequestType$TargetType$ManufacturerType$CompanyType$BankD
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequest$Query$RequestType$TargetType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType?
       country;
@@ -8839,13 +8839,13 @@ class GetRequestsPaginated$Query$RequestPaginateType$RequestType$RequestCompanyT
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequestsPaginated$Query$RequestPaginateType$RequestType$RequestCompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -9444,13 +9444,13 @@ class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$RequestCo
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$RequestCompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -10034,13 +10034,13 @@ class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$RequestCompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -10741,13 +10741,13 @@ class CreateRequest$Mutation$RequestType$RequestCompanyType$FullAddressType$Stat
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   CreateRequest$Mutation$RequestType$RequestCompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -11539,13 +11539,13 @@ class UpdateRequestStatus$Mutation$RequestType$RequestCompanyType$FullAddressTyp
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   UpdateRequestStatus$Mutation$RequestType$RequestCompanyType$FullAddressType$StateType$CountryType?
       country;
@@ -12094,13 +12094,13 @@ class ListenForRequest$Subscription$RequestType$RequestCompanyType$FullAddressTy
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
   StateCapitalEnum? capital;
 
-  double? population;
+  String? population;
 
   String? ascii;
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   ListenForRequest$Subscription$RequestType$RequestCompanyType$FullAddressType$StateType$CountryType?
       country;
