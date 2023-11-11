@@ -15,20 +15,12 @@ GetOrderSettingsByTarget$Query$OrderSettingsFullType$TimeFromToType
 
 Map<String, dynamic>
     _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$TimeFromToTypeToJson(
-        GetOrderSettingsByTarget$Query$OrderSettingsFullType$TimeFromToType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('from', instance.from);
-  writeNotNull('to', instance.to);
-  return val;
-}
+            GetOrderSettingsByTarget$Query$OrderSettingsFullType$TimeFromToType
+                instance) =>
+        <String, dynamic>{
+          'from': instance.from,
+          'to': instance.to,
+        };
 
 GetOrderSettingsByTarget$Query$OrderSettingsFullType$MonthDaysType
     _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$MonthDaysTypeFromJson(
@@ -40,21 +32,12 @@ GetOrderSettingsByTarget$Query$OrderSettingsFullType$MonthDaysType
 
 Map<String, dynamic>
     _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$MonthDaysTypeToJson(
-        GetOrderSettingsByTarget$Query$OrderSettingsFullType$MonthDaysType
-            instance) {
-  final val = <String, dynamic>{
-    'month': instance.month,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('days', instance.days);
-  return val;
-}
+            GetOrderSettingsByTarget$Query$OrderSettingsFullType$MonthDaysType
+                instance) =>
+        <String, dynamic>{
+          'month': instance.month,
+          'days': instance.days,
+        };
 
 GetOrderSettingsByTarget$Query$OrderSettingsFullType
     _$GetOrderSettingsByTarget$Query$OrderSettingsFullTypeFromJson(
@@ -93,36 +76,27 @@ GetOrderSettingsByTarget$Query$OrderSettingsFullType
 
 Map<String, dynamic>
     _$GetOrderSettingsByTarget$Query$OrderSettingsFullTypeToJson(
-        GetOrderSettingsByTarget$Query$OrderSettingsFullType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('mobilePickup', instance.mobilePickup);
-  writeNotNull('portalPickup', instance.portalPickup);
-  writeNotNull('pickupTime', instance.pickupTime?.toJson());
-  writeNotNull('facebookPickup', instance.facebookPickup);
-  writeNotNull('mobileDelivery', instance.mobileDelivery);
-  writeNotNull('portalDelivery', instance.portalDelivery);
-  writeNotNull('showMenuInPortal', instance.showMenuInPortal);
-  writeNotNull('deliveryTime', instance.deliveryTime?.toJson());
-  writeNotNull('facebookDelivery', instance.facebookDelivery);
-  writeNotNull(
-      'nonPickupDays', instance.nonPickupDays?.map((e) => e.toJson()).toList());
-  writeNotNull('nonDeliveryDays',
-      instance.nonDeliveryDays?.map((e) => e.toJson()).toList());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetOrderSettingsByTarget$Query$OrderSettingsFullType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'pickup': instance.pickup,
+          'delivery': instance.delivery,
+          'mobilePickup': instance.mobilePickup,
+          'portalPickup': instance.portalPickup,
+          'pickupTime': instance.pickupTime?.toJson(),
+          'facebookPickup': instance.facebookPickup,
+          'mobileDelivery': instance.mobileDelivery,
+          'portalDelivery': instance.portalDelivery,
+          'showMenuInPortal': instance.showMenuInPortal,
+          'deliveryTime': instance.deliveryTime?.toJson(),
+          'facebookDelivery': instance.facebookDelivery,
+          'nonPickupDays':
+              instance.nonPickupDays?.map((e) => e.toJson()).toList(),
+          'nonDeliveryDays':
+              instance.nonDeliveryDays?.map((e) => e.toJson()).toList(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetOrderSettingsByTarget$Query _$GetOrderSettingsByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -145,21 +119,13 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
+    <String, dynamic>{
+      'pos': instance.pos,
+      'wholesaler': instance.wholesaler,
+      'manufacturer': instance.manufacturer,
+      'user': instance.user,
+    };
 
 CreateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToType
     _$CreateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToTypeFromJson(
@@ -170,20 +136,12 @@ CreateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToType
 
 Map<String, dynamic>
     _$CreateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToTypeToJson(
-        CreateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('from', instance.from);
-  writeNotNull('to', instance.to);
-  return val;
-}
+            CreateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToType
+                instance) =>
+        <String, dynamic>{
+          'from': instance.from,
+          'to': instance.to,
+        };
 
 CreateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
     _$CreateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysTypeFromJson(
@@ -195,21 +153,12 @@ CreateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
 
 Map<String, dynamic>
     _$CreateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysTypeToJson(
-        CreateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
-            instance) {
-  final val = <String, dynamic>{
-    'month': instance.month,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('days', instance.days);
-  return val;
-}
+            CreateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
+                instance) =>
+        <String, dynamic>{
+          'month': instance.month,
+          'days': instance.days,
+        };
 
 CreateOrderSettings$Mutation$OrderSettingsFullType
     _$CreateOrderSettings$Mutation$OrderSettingsFullTypeFromJson(
@@ -247,36 +196,26 @@ CreateOrderSettings$Mutation$OrderSettingsFullType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateOrderSettings$Mutation$OrderSettingsFullTypeToJson(
-    CreateOrderSettings$Mutation$OrderSettingsFullType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('mobilePickup', instance.mobilePickup);
-  writeNotNull('portalPickup', instance.portalPickup);
-  writeNotNull('pickupTime', instance.pickupTime?.toJson());
-  writeNotNull('facebookPickup', instance.facebookPickup);
-  writeNotNull('mobileDelivery', instance.mobileDelivery);
-  writeNotNull('portalDelivery', instance.portalDelivery);
-  writeNotNull('showMenuInPortal', instance.showMenuInPortal);
-  writeNotNull('deliveryTime', instance.deliveryTime?.toJson());
-  writeNotNull('facebookDelivery', instance.facebookDelivery);
-  writeNotNull(
-      'nonPickupDays', instance.nonPickupDays?.map((e) => e.toJson()).toList());
-  writeNotNull('nonDeliveryDays',
-      instance.nonDeliveryDays?.map((e) => e.toJson()).toList());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        CreateOrderSettings$Mutation$OrderSettingsFullType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'pickup': instance.pickup,
+      'delivery': instance.delivery,
+      'mobilePickup': instance.mobilePickup,
+      'portalPickup': instance.portalPickup,
+      'pickupTime': instance.pickupTime?.toJson(),
+      'facebookPickup': instance.facebookPickup,
+      'mobileDelivery': instance.mobileDelivery,
+      'portalDelivery': instance.portalDelivery,
+      'showMenuInPortal': instance.showMenuInPortal,
+      'deliveryTime': instance.deliveryTime?.toJson(),
+      'facebookDelivery': instance.facebookDelivery,
+      'nonPickupDays': instance.nonPickupDays?.map((e) => e.toJson()).toList(),
+      'nonDeliveryDays':
+          instance.nonDeliveryDays?.map((e) => e.toJson()).toList(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 CreateOrderSettings$Mutation _$CreateOrderSettings$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -319,34 +258,24 @@ OrderSettingsInput _$OrderSettingsInputFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$OrderSettingsInputToJson(OrderSettingsInput instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pickupTime', instance.pickupTime?.toJson());
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('showMenuInPortal', instance.showMenuInPortal);
-  writeNotNull('mobilePickup', instance.mobilePickup);
-  writeNotNull('portalPickup', instance.portalPickup);
-  writeNotNull('facebookPickup', instance.facebookPickup);
-  writeNotNull('deliveryTime', instance.deliveryTime?.toJson());
-  writeNotNull('mobileDelivery', instance.mobileDelivery);
-  writeNotNull('portalDelivery', instance.portalDelivery);
-  writeNotNull('facebookDelivery', instance.facebookDelivery);
-  writeNotNull('nonDeliveryDays',
-      instance.nonDeliveryDays?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'nonPickupDays', instance.nonPickupDays?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$OrderSettingsInputToJson(OrderSettingsInput instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'pickupTime': instance.pickupTime?.toJson(),
+      'pickup': instance.pickup,
+      'delivery': instance.delivery,
+      'showMenuInPortal': instance.showMenuInPortal,
+      'mobilePickup': instance.mobilePickup,
+      'portalPickup': instance.portalPickup,
+      'facebookPickup': instance.facebookPickup,
+      'deliveryTime': instance.deliveryTime?.toJson(),
+      'mobileDelivery': instance.mobileDelivery,
+      'portalDelivery': instance.portalDelivery,
+      'facebookDelivery': instance.facebookDelivery,
+      'nonDeliveryDays':
+          instance.nonDeliveryDays?.map((e) => e.toJson()).toList(),
+      'nonPickupDays': instance.nonPickupDays?.map((e) => e.toJson()).toList(),
+    };
 
 TimeFromToInput _$TimeFromToInputFromJson(Map<String, dynamic> json) =>
     TimeFromToInput(
@@ -354,19 +283,11 @@ TimeFromToInput _$TimeFromToInputFromJson(Map<String, dynamic> json) =>
       to: json['to'] as String?,
     );
 
-Map<String, dynamic> _$TimeFromToInputToJson(TimeFromToInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('from', instance.from);
-  writeNotNull('to', instance.to);
-  return val;
-}
+Map<String, dynamic> _$TimeFromToInputToJson(TimeFromToInput instance) =>
+    <String, dynamic>{
+      'from': instance.from,
+      'to': instance.to,
+    };
 
 MonthDaysInput _$MonthDaysInputFromJson(Map<String, dynamic> json) =>
     MonthDaysInput(
@@ -374,20 +295,11 @@ MonthDaysInput _$MonthDaysInputFromJson(Map<String, dynamic> json) =>
       days: (json['days'] as List<dynamic>?)?.map((e) => e as int).toList(),
     );
 
-Map<String, dynamic> _$MonthDaysInputToJson(MonthDaysInput instance) {
-  final val = <String, dynamic>{
-    'month': instance.month,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('days', instance.days);
-  return val;
-}
+Map<String, dynamic> _$MonthDaysInputToJson(MonthDaysInput instance) =>
+    <String, dynamic>{
+      'month': instance.month,
+      'days': instance.days,
+    };
 
 UpdateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToType
     _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToTypeFromJson(
@@ -398,20 +310,12 @@ UpdateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToType
 
 Map<String, dynamic>
     _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToTypeToJson(
-        UpdateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('from', instance.from);
-  writeNotNull('to', instance.to);
-  return val;
-}
+            UpdateOrderSettings$Mutation$OrderSettingsFullType$TimeFromToType
+                instance) =>
+        <String, dynamic>{
+          'from': instance.from,
+          'to': instance.to,
+        };
 
 UpdateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
     _$UpdateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysTypeFromJson(
@@ -423,21 +327,12 @@ UpdateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
 
 Map<String, dynamic>
     _$UpdateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysTypeToJson(
-        UpdateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
-            instance) {
-  final val = <String, dynamic>{
-    'month': instance.month,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('days', instance.days);
-  return val;
-}
+            UpdateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
+                instance) =>
+        <String, dynamic>{
+          'month': instance.month,
+          'days': instance.days,
+        };
 
 UpdateOrderSettings$Mutation$OrderSettingsFullType
     _$UpdateOrderSettings$Mutation$OrderSettingsFullTypeFromJson(
@@ -475,36 +370,26 @@ UpdateOrderSettings$Mutation$OrderSettingsFullType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateOrderSettings$Mutation$OrderSettingsFullTypeToJson(
-    UpdateOrderSettings$Mutation$OrderSettingsFullType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('mobilePickup', instance.mobilePickup);
-  writeNotNull('portalPickup', instance.portalPickup);
-  writeNotNull('pickupTime', instance.pickupTime?.toJson());
-  writeNotNull('facebookPickup', instance.facebookPickup);
-  writeNotNull('mobileDelivery', instance.mobileDelivery);
-  writeNotNull('portalDelivery', instance.portalDelivery);
-  writeNotNull('showMenuInPortal', instance.showMenuInPortal);
-  writeNotNull('deliveryTime', instance.deliveryTime?.toJson());
-  writeNotNull('facebookDelivery', instance.facebookDelivery);
-  writeNotNull(
-      'nonPickupDays', instance.nonPickupDays?.map((e) => e.toJson()).toList());
-  writeNotNull('nonDeliveryDays',
-      instance.nonDeliveryDays?.map((e) => e.toJson()).toList());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        UpdateOrderSettings$Mutation$OrderSettingsFullType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'pickup': instance.pickup,
+      'delivery': instance.delivery,
+      'mobilePickup': instance.mobilePickup,
+      'portalPickup': instance.portalPickup,
+      'pickupTime': instance.pickupTime?.toJson(),
+      'facebookPickup': instance.facebookPickup,
+      'mobileDelivery': instance.mobileDelivery,
+      'portalDelivery': instance.portalDelivery,
+      'showMenuInPortal': instance.showMenuInPortal,
+      'deliveryTime': instance.deliveryTime?.toJson(),
+      'facebookDelivery': instance.facebookDelivery,
+      'nonPickupDays': instance.nonPickupDays?.map((e) => e.toJson()).toList(),
+      'nonDeliveryDays':
+          instance.nonDeliveryDays?.map((e) => e.toJson()).toList(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 UpdateOrderSettings$Mutation _$UpdateOrderSettings$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -548,32 +433,23 @@ OrderSettingsUpdateInput _$OrderSettingsUpdateInputFromJson(
     );
 
 Map<String, dynamic> _$OrderSettingsUpdateInputToJson(
-    OrderSettingsUpdateInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pickupTime', instance.pickupTime?.toJson());
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('showMenuInPortal', instance.showMenuInPortal);
-  writeNotNull('mobilePickup', instance.mobilePickup);
-  writeNotNull('portalPickup', instance.portalPickup);
-  writeNotNull('facebookPickup', instance.facebookPickup);
-  writeNotNull('deliveryTime', instance.deliveryTime?.toJson());
-  writeNotNull('mobileDelivery', instance.mobileDelivery);
-  writeNotNull('portalDelivery', instance.portalDelivery);
-  writeNotNull('facebookDelivery', instance.facebookDelivery);
-  writeNotNull('nonDeliveryDays',
-      instance.nonDeliveryDays?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'nonPickupDays', instance.nonPickupDays?.map((e) => e.toJson()).toList());
-  return val;
-}
+        OrderSettingsUpdateInput instance) =>
+    <String, dynamic>{
+      'pickupTime': instance.pickupTime?.toJson(),
+      'pickup': instance.pickup,
+      'delivery': instance.delivery,
+      'showMenuInPortal': instance.showMenuInPortal,
+      'mobilePickup': instance.mobilePickup,
+      'portalPickup': instance.portalPickup,
+      'facebookPickup': instance.facebookPickup,
+      'deliveryTime': instance.deliveryTime?.toJson(),
+      'mobileDelivery': instance.mobileDelivery,
+      'portalDelivery': instance.portalDelivery,
+      'facebookDelivery': instance.facebookDelivery,
+      'nonDeliveryDays':
+          instance.nonDeliveryDays?.map((e) => e.toJson()).toList(),
+      'nonPickupDays': instance.nonPickupDays?.map((e) => e.toJson()).toList(),
+    };
 
 GetOrderSettingsByTargetArguments _$GetOrderSettingsByTargetArgumentsFromJson(
         Map<String, dynamic> json) =>

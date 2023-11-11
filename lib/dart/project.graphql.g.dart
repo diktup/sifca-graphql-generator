@@ -19,23 +19,15 @@ GetProjects$Query$ProjectType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetProjects$Query$ProjectType$MediaType$PictureTypeToJson(
-        GetProjects$Query$ProjectType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjects$Query$ProjectType$MediaType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjects$Query$ProjectType$MediaType
     _$GetProjects$Query$ProjectType$MediaTypeFromJson(
@@ -56,20 +48,12 @@ GetProjects$Query$ProjectType$MediaType
               .toList();
 
 Map<String, dynamic> _$GetProjects$Query$ProjectType$MediaTypeToJson(
-    GetProjects$Query$ProjectType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        GetProjects$Query$ProjectType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 GetProjects$Query$ProjectType$PictureType
     _$GetProjects$Query$ProjectType$PictureTypeFromJson(
@@ -83,23 +67,15 @@ GetProjects$Query$ProjectType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$GetProjects$Query$ProjectType$PictureTypeToJson(
-    GetProjects$Query$ProjectType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        GetProjects$Query$ProjectType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureType
     _$GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -114,24 +90,16 @@ GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-        GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjects$Query$ProjectType$ProjectMemberType$UserType
     _$GetProjects$Query$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -149,27 +117,18 @@ GetProjects$Query$ProjectType$ProjectMemberType$UserType
               : GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$GetProjects$Query$ProjectType$ProjectMemberType$UserTypeToJson(
-        GetProjects$Query$ProjectType$ProjectMemberType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$GetProjects$Query$ProjectType$ProjectMemberType$UserTypeToJson(
+        GetProjects$Query$ProjectType$ProjectMemberType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'picture': instance.picture?.toJson(),
+    };
 
 const _$GenderEnumMap = {
   Gender.male: 'MALE',
@@ -190,19 +149,11 @@ GetProjects$Query$ProjectType$ProjectMemberType
               unknownValue: ProjectRoleEnum.artemisUnknown);
 
 Map<String, dynamic> _$GetProjects$Query$ProjectType$ProjectMemberTypeToJson(
-    GetProjects$Query$ProjectType$ProjectMemberType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('member', instance.member?.toJson());
-  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
-  return val;
-}
+        GetProjects$Query$ProjectType$ProjectMemberType instance) =>
+    <String, dynamic>{
+      'member': instance.member?.toJson(),
+      'role': _$ProjectRoleEnumEnumMap[instance.role],
+    };
 
 const _$ProjectRoleEnumEnumMap = {
   ProjectRoleEnum.lead: 'LEAD',
@@ -223,24 +174,16 @@ GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$C
 
 Map<String, dynamic>
     _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -257,20 +200,12 @@ GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$C
 
 Map<String, dynamic>
     _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -292,22 +227,14 @@ GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$C
 
 Map<String, dynamic>
     _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -323,23 +250,14 @@ GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
 
 Map<String, dynamic>
     _$GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetProjects$Query$ProjectType$DocumentType$DocumentContentType
     _$GetProjects$Query$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -352,19 +270,11 @@ GetProjects$Query$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetProjects$Query$ProjectType$DocumentType$DocumentContentTypeToJson(
-        GetProjects$Query$ProjectType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetProjects$Query$ProjectType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetProjects$Query$ProjectType$DocumentType$UserType$PictureType
     _$GetProjects$Query$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -379,24 +289,16 @@ GetProjects$Query$ProjectType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetProjects$Query$ProjectType$DocumentType$UserType$PictureTypeToJson(
-        GetProjects$Query$ProjectType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjects$Query$ProjectType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjects$Query$ProjectType$DocumentType$UserType
     _$GetProjects$Query$ProjectType$DocumentType$UserTypeFromJson(
@@ -416,25 +318,16 @@ GetProjects$Query$ProjectType$DocumentType$UserType
 
 Map<String, dynamic>
     _$GetProjects$Query$ProjectType$DocumentType$UserTypeToJson(
-        GetProjects$Query$ProjectType$DocumentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetProjects$Query$ProjectType$DocumentType$UserType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetProjects$Query$ProjectType$DocumentType
     _$GetProjects$Query$ProjectType$DocumentTypeFromJson(
@@ -455,25 +348,16 @@ GetProjects$Query$ProjectType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetProjects$Query$ProjectType$DocumentTypeToJson(
-    GetProjects$Query$ProjectType$DocumentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        GetProjects$Query$ProjectType$DocumentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'content': instance.content?.toJson(),
+      'size': instance.size,
+      'owner': instance.owner?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 GetProjects$Query$ProjectType _$GetProjects$Query$ProjectTypeFromJson(
         Map<String, dynamic> json) =>
@@ -519,36 +403,25 @@ GetProjects$Query$ProjectType _$GetProjects$Query$ProjectTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetProjects$Query$ProjectTypeToJson(
-    GetProjects$Query$ProjectType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('deadline', instance.deadline?.toIso8601String());
-  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
-  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
-  writeNotNull('color', instance.color);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'resources', instance.resources?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        GetProjects$Query$ProjectType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
+      'tags': instance.tags,
+      'deadline': instance.deadline?.toIso8601String(),
+      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
+      'status': _$ProjectStatusEnumEnumMap[instance.status],
+      'color': instance.color,
+      'picture': instance.picture?.toJson(),
+      'members': instance.members?.map((e) => e.toJson()).toList(),
+      'resources': instance.resources?.map((e) => e.toJson()).toList(),
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 const _$ProjectPrivacyEnumEnumMap = {
   ProjectPrivacyEnum.private: 'PRIVATE',
@@ -596,23 +469,15 @@ Project$Query$ProjectType$MediaType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$Project$Query$ProjectType$MediaType$PictureTypeToJson(
-    Project$Query$ProjectType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        Project$Query$ProjectType$MediaType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 Project$Query$ProjectType$MediaType
     _$Project$Query$ProjectType$MediaTypeFromJson(Map<String, dynamic> json) =>
@@ -632,20 +497,12 @@ Project$Query$ProjectType$MediaType
               .toList();
 
 Map<String, dynamic> _$Project$Query$ProjectType$MediaTypeToJson(
-    Project$Query$ProjectType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        Project$Query$ProjectType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 Project$Query$ProjectType$PictureType
     _$Project$Query$ProjectType$PictureTypeFromJson(
@@ -659,23 +516,15 @@ Project$Query$ProjectType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$Project$Query$ProjectType$PictureTypeToJson(
-    Project$Query$ProjectType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        Project$Query$ProjectType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 Project$Query$ProjectType$ProjectMemberType$UserType$PictureType
     _$Project$Query$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -690,24 +539,16 @@ Project$Query$ProjectType$ProjectMemberType$UserType$PictureType
 
 Map<String, dynamic>
     _$Project$Query$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-        Project$Query$ProjectType$ProjectMemberType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            Project$Query$ProjectType$ProjectMemberType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 Project$Query$ProjectType$ProjectMemberType$UserType
     _$Project$Query$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -727,25 +568,16 @@ Project$Query$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$Project$Query$ProjectType$ProjectMemberType$UserTypeToJson(
-        Project$Query$ProjectType$ProjectMemberType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            Project$Query$ProjectType$ProjectMemberType$UserType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 Project$Query$ProjectType$ProjectMemberType
     _$Project$Query$ProjectType$ProjectMemberTypeFromJson(
@@ -759,19 +591,11 @@ Project$Query$ProjectType$ProjectMemberType
               unknownValue: ProjectRoleEnum.artemisUnknown);
 
 Map<String, dynamic> _$Project$Query$ProjectType$ProjectMemberTypeToJson(
-    Project$Query$ProjectType$ProjectMemberType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('member', instance.member?.toJson());
-  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
-  return val;
-}
+        Project$Query$ProjectType$ProjectMemberType instance) =>
+    <String, dynamic>{
+      'member': instance.member?.toJson(),
+      'role': _$ProjectRoleEnumEnumMap[instance.role],
+    };
 
 Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -786,24 +610,16 @@ Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$Conte
 
 Map<String, dynamic>
     _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -820,20 +636,12 @@ Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$Conte
 
 Map<String, dynamic>
     _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -855,22 +663,14 @@ Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$Conte
 
 Map<String, dynamic>
     _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -886,23 +686,14 @@ Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
 
 Map<String, dynamic>
     _$Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 Project$Query$ProjectType$DocumentType$DocumentContentType
     _$Project$Query$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -913,20 +704,12 @@ Project$Query$ProjectType$DocumentType$DocumentContentType
               : Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
                   .fromJson(json['type'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$Project$Query$ProjectType$DocumentType$DocumentContentTypeToJson(
-        Project$Query$ProjectType$DocumentType$DocumentContentType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$Project$Query$ProjectType$DocumentType$DocumentContentTypeToJson(
+        Project$Query$ProjectType$DocumentType$DocumentContentType instance) =>
+    <String, dynamic>{
+      'type': instance.type?.toJson(),
+    };
 
 Project$Query$ProjectType$DocumentType$UserType$PictureType
     _$Project$Query$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -941,23 +724,16 @@ Project$Query$ProjectType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$Project$Query$ProjectType$DocumentType$UserType$PictureTypeToJson(
-        Project$Query$ProjectType$DocumentType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            Project$Query$ProjectType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 Project$Query$ProjectType$DocumentType$UserType
     _$Project$Query$ProjectType$DocumentType$UserTypeFromJson(
@@ -976,25 +752,16 @@ Project$Query$ProjectType$DocumentType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Project$Query$ProjectType$DocumentType$UserTypeToJson(
-    Project$Query$ProjectType$DocumentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        Project$Query$ProjectType$DocumentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'picture': instance.picture?.toJson(),
+    };
 
 Project$Query$ProjectType$DocumentType
     _$Project$Query$ProjectType$DocumentTypeFromJson(
@@ -1015,25 +782,16 @@ Project$Query$ProjectType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Project$Query$ProjectType$DocumentTypeToJson(
-    Project$Query$ProjectType$DocumentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        Project$Query$ProjectType$DocumentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'content': instance.content?.toJson(),
+      'size': instance.size,
+      'owner': instance.owner?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 Project$Query$ProjectType _$Project$Query$ProjectTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1079,36 +837,25 @@ Project$Query$ProjectType _$Project$Query$ProjectTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Project$Query$ProjectTypeToJson(
-    Project$Query$ProjectType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('deadline', instance.deadline?.toIso8601String());
-  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
-  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
-  writeNotNull('color', instance.color);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'resources', instance.resources?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        Project$Query$ProjectType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
+      'tags': instance.tags,
+      'deadline': instance.deadline?.toIso8601String(),
+      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
+      'status': _$ProjectStatusEnumEnumMap[instance.status],
+      'color': instance.color,
+      'picture': instance.picture?.toJson(),
+      'members': instance.members?.map((e) => e.toJson()).toList(),
+      'resources': instance.resources?.map((e) => e.toJson()).toList(),
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 Project$Query _$Project$QueryFromJson(Map<String, dynamic> json) =>
     Project$Query()
@@ -1133,23 +880,16 @@ GetProjectsByTarget$Query$ProjectType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$MediaType$PictureTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjectsByTarget$Query$ProjectType$MediaType
     _$GetProjectsByTarget$Query$ProjectType$MediaTypeFromJson(
@@ -1170,20 +910,12 @@ GetProjectsByTarget$Query$ProjectType$MediaType
               .toList();
 
 Map<String, dynamic> _$GetProjectsByTarget$Query$ProjectType$MediaTypeToJson(
-    GetProjectsByTarget$Query$ProjectType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        GetProjectsByTarget$Query$ProjectType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 GetProjectsByTarget$Query$ProjectType$PictureType
     _$GetProjectsByTarget$Query$ProjectType$PictureTypeFromJson(
@@ -1197,23 +929,15 @@ GetProjectsByTarget$Query$ProjectType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$GetProjectsByTarget$Query$ProjectType$PictureTypeToJson(
-    GetProjectsByTarget$Query$ProjectType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        GetProjectsByTarget$Query$ProjectType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PictureType
     _$GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -1228,24 +952,16 @@ GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType
     _$GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -1265,26 +981,17 @@ GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetProjectsByTarget$Query$ProjectType$ProjectMemberType
     _$GetProjectsByTarget$Query$ProjectType$ProjectMemberTypeFromJson(
@@ -1299,19 +1006,11 @@ GetProjectsByTarget$Query$ProjectType$ProjectMemberType
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$ProjectMemberTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$ProjectMemberType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('member', instance.member?.toJson());
-  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$ProjectMemberType instance) =>
+        <String, dynamic>{
+          'member': instance.member?.toJson(),
+          'role': _$ProjectRoleEnumEnumMap[instance.role],
+        };
 
 GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -1326,24 +1025,16 @@ GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTy
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -1360,20 +1051,12 @@ GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTy
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -1395,22 +1078,14 @@ GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTy
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -1426,23 +1101,14 @@ GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTy
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -1455,19 +1121,11 @@ GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureType
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -1482,24 +1140,16 @@ GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjectsByTarget$Query$ProjectType$DocumentType$UserType
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$UserTypeFromJson(
@@ -1519,25 +1169,17 @@ GetProjectsByTarget$Query$ProjectType$DocumentType$UserType
 
 Map<String, dynamic>
     _$GetProjectsByTarget$Query$ProjectType$DocumentType$UserTypeToJson(
-        GetProjectsByTarget$Query$ProjectType$DocumentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetProjectsByTarget$Query$ProjectType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetProjectsByTarget$Query$ProjectType$DocumentType
     _$GetProjectsByTarget$Query$ProjectType$DocumentTypeFromJson(
@@ -1558,25 +1200,16 @@ GetProjectsByTarget$Query$ProjectType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetProjectsByTarget$Query$ProjectType$DocumentTypeToJson(
-    GetProjectsByTarget$Query$ProjectType$DocumentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        GetProjectsByTarget$Query$ProjectType$DocumentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'content': instance.content?.toJson(),
+      'size': instance.size,
+      'owner': instance.owner?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 GetProjectsByTarget$Query$ProjectType
     _$GetProjectsByTarget$Query$ProjectTypeFromJson(
@@ -1627,36 +1260,25 @@ GetProjectsByTarget$Query$ProjectType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetProjectsByTarget$Query$ProjectTypeToJson(
-    GetProjectsByTarget$Query$ProjectType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('deadline', instance.deadline?.toIso8601String());
-  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
-  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
-  writeNotNull('color', instance.color);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'resources', instance.resources?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        GetProjectsByTarget$Query$ProjectType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
+      'tags': instance.tags,
+      'deadline': instance.deadline?.toIso8601String(),
+      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
+      'status': _$ProjectStatusEnumEnumMap[instance.status],
+      'color': instance.color,
+      'picture': instance.picture?.toJson(),
+      'members': instance.members?.map((e) => e.toJson()).toList(),
+      'resources': instance.resources?.map((e) => e.toJson()).toList(),
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 GetProjectsByTarget$Query _$GetProjectsByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -1681,21 +1303,13 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
+    <String, dynamic>{
+      'pos': instance.pos,
+      'wholesaler': instance.wholesaler,
+      'manufacturer': instance.manufacturer,
+      'user': instance.user,
+    };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType$PictureType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType$PictureTypeFromJson(
@@ -1710,24 +1324,16 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType$Pi
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType$PictureTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaTypeFromJson(
@@ -1749,21 +1355,13 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaType
+                instance) =>
+        <String, dynamic>{
+          'videos': instance.videos,
+          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$PictureType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$PictureTypeFromJson(
@@ -1778,24 +1376,16 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$PictureType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$PictureTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PictureType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -1810,24 +1400,16 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMembe
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -1847,26 +1429,17 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMembe
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberTypeFromJson(
@@ -1881,20 +1454,12 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMembe
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('member', instance.member?.toJson());
-  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType
+                instance) =>
+        <String, dynamic>{
+          'member': instance.member?.toJson(),
+          'role': _$ProjectRoleEnumEnumMap[instance.role],
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -1909,24 +1474,16 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -1943,20 +1500,12 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -1978,22 +1527,14 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -2009,23 +1550,14 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -2038,19 +1570,11 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PictureType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -2065,24 +1589,16 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserTypeFromJson(
@@ -2102,26 +1618,17 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentTypeFromJson(
@@ -2143,26 +1650,17 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'content': instance.content?.toJson(),
+          'size': instance.size,
+          'owner': instance.owner?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectTypeFromJson(
@@ -2214,37 +1712,26 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('deadline', instance.deadline?.toIso8601String());
-  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
-  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
-  writeNotNull('color', instance.color);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'resources', instance.resources?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'description': instance.description,
+          'media': instance.media?.toJson(),
+          'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
+          'tags': instance.tags,
+          'deadline': instance.deadline?.toIso8601String(),
+          'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
+          'status': _$ProjectStatusEnumEnumMap[instance.status],
+          'color': instance.color,
+          'picture': instance.picture?.toJson(),
+          'members': instance.members?.map((e) => e.toJson()).toList(),
+          'resources': instance.resources?.map((e) => e.toJson()).toList(),
+          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+        };
 
 GetProjectsByTargetWithFilter$Query$ProjectPaginateType
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateTypeFromJson(
@@ -2260,20 +1747,12 @@ GetProjectsByTargetWithFilter$Query$ProjectPaginateType
 
 Map<String, dynamic>
     _$GetProjectsByTargetWithFilter$Query$ProjectPaginateTypeToJson(
-        GetProjectsByTargetWithFilter$Query$ProjectPaginateType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            GetProjectsByTargetWithFilter$Query$ProjectPaginateType instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 GetProjectsByTargetWithFilter$Query
     _$GetProjectsByTargetWithFilter$QueryFromJson(Map<String, dynamic> json) =>
@@ -2311,26 +1790,20 @@ ProjectFilterInput _$ProjectFilterInputFromJson(Map<String, dynamic> json) =>
       to: json['to'] == null ? null : DateTime.parse(json['to'] as String),
     );
 
-Map<String, dynamic> _$ProjectFilterInputToJson(ProjectFilterInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('privacy',
-      instance.privacy?.map((e) => _$ProjectPrivacyEnumEnumMap[e]!).toList());
-  writeNotNull('status',
-      instance.status?.map((e) => _$ProjectStatusEnumEnumMap[e]!).toList());
-  writeNotNull('priority',
-      instance.priority?.map((e) => _$ProjectPriorityEnumEnumMap[e]!).toList());
-  writeNotNull('members', instance.members);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  return val;
-}
+Map<String, dynamic> _$ProjectFilterInputToJson(ProjectFilterInput instance) =>
+    <String, dynamic>{
+      'privacy': instance.privacy
+          ?.map((e) => _$ProjectPrivacyEnumEnumMap[e]!)
+          .toList(),
+      'status':
+          instance.status?.map((e) => _$ProjectStatusEnumEnumMap[e]!).toList(),
+      'priority': instance.priority
+          ?.map((e) => _$ProjectPriorityEnumEnumMap[e]!)
+          .toList(),
+      'members': instance.members,
+      'from': instance.from?.toIso8601String(),
+      'to': instance.to?.toIso8601String(),
+    };
 
 PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
     PaginationInput(
@@ -2338,19 +1811,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 CreateProject$Mutation$ProjectType$MediaType$PictureType
     _$CreateProject$Mutation$ProjectType$MediaType$PictureTypeFromJson(
@@ -2363,25 +1828,17 @@ CreateProject$Mutation$ProjectType$MediaType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String, dynamic>
-    _$CreateProject$Mutation$ProjectType$MediaType$PictureTypeToJson(
-        CreateProject$Mutation$ProjectType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+Map<String,
+    dynamic> _$CreateProject$Mutation$ProjectType$MediaType$PictureTypeToJson(
+        CreateProject$Mutation$ProjectType$MediaType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 CreateProject$Mutation$ProjectType$MediaType
     _$CreateProject$Mutation$ProjectType$MediaTypeFromJson(
@@ -2402,20 +1859,12 @@ CreateProject$Mutation$ProjectType$MediaType
               .toList();
 
 Map<String, dynamic> _$CreateProject$Mutation$ProjectType$MediaTypeToJson(
-    CreateProject$Mutation$ProjectType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        CreateProject$Mutation$ProjectType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 CreateProject$Mutation$ProjectType$PictureType
     _$CreateProject$Mutation$ProjectType$PictureTypeFromJson(
@@ -2429,23 +1878,15 @@ CreateProject$Mutation$ProjectType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$CreateProject$Mutation$ProjectType$PictureTypeToJson(
-    CreateProject$Mutation$ProjectType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        CreateProject$Mutation$ProjectType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
     _$CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -2460,24 +1901,16 @@ CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-        CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateProject$Mutation$ProjectType$ProjectMemberType$UserType
     _$CreateProject$Mutation$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -2497,26 +1930,17 @@ CreateProject$Mutation$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$CreateProject$Mutation$ProjectType$ProjectMemberType$UserTypeToJson(
-        CreateProject$Mutation$ProjectType$ProjectMemberType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            CreateProject$Mutation$ProjectType$ProjectMemberType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 CreateProject$Mutation$ProjectType$ProjectMemberType
     _$CreateProject$Mutation$ProjectType$ProjectMemberTypeFromJson(
@@ -2531,19 +1955,11 @@ CreateProject$Mutation$ProjectType$ProjectMemberType
 
 Map<String, dynamic>
     _$CreateProject$Mutation$ProjectType$ProjectMemberTypeToJson(
-        CreateProject$Mutation$ProjectType$ProjectMemberType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('member', instance.member?.toJson());
-  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
-  return val;
-}
+            CreateProject$Mutation$ProjectType$ProjectMemberType instance) =>
+        <String, dynamic>{
+          'member': instance.member?.toJson(),
+          'role': _$ProjectRoleEnumEnumMap[instance.role],
+        };
 
 CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -2558,24 +1974,16 @@ CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -2592,20 +2000,12 @@ CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -2627,22 +2027,14 @@ CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -2658,23 +2050,14 @@ CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType
     _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -2687,19 +2070,11 @@ CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$CreateProject$Mutation$ProjectType$DocumentType$DocumentContentTypeToJson(
-        CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
     _$CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -2714,24 +2089,16 @@ CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureTypeToJson(
-        CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateProject$Mutation$ProjectType$DocumentType$UserType
     _$CreateProject$Mutation$ProjectType$DocumentType$UserTypeFromJson(
@@ -2749,27 +2116,18 @@ CreateProject$Mutation$ProjectType$DocumentType$UserType
               : CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$CreateProject$Mutation$ProjectType$DocumentType$UserTypeToJson(
-        CreateProject$Mutation$ProjectType$DocumentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$CreateProject$Mutation$ProjectType$DocumentType$UserTypeToJson(
+        CreateProject$Mutation$ProjectType$DocumentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'picture': instance.picture?.toJson(),
+    };
 
 CreateProject$Mutation$ProjectType$DocumentType
     _$CreateProject$Mutation$ProjectType$DocumentTypeFromJson(
@@ -2790,25 +2148,16 @@ CreateProject$Mutation$ProjectType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateProject$Mutation$ProjectType$DocumentTypeToJson(
-    CreateProject$Mutation$ProjectType$DocumentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        CreateProject$Mutation$ProjectType$DocumentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'content': instance.content?.toJson(),
+      'size': instance.size,
+      'owner': instance.owner?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 CreateProject$Mutation$ProjectType _$CreateProject$Mutation$ProjectTypeFromJson(
         Map<String, dynamic> json) =>
@@ -2855,36 +2204,25 @@ CreateProject$Mutation$ProjectType _$CreateProject$Mutation$ProjectTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateProject$Mutation$ProjectTypeToJson(
-    CreateProject$Mutation$ProjectType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('deadline', instance.deadline?.toIso8601String());
-  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
-  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
-  writeNotNull('color', instance.color);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'resources', instance.resources?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        CreateProject$Mutation$ProjectType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
+      'tags': instance.tags,
+      'deadline': instance.deadline?.toIso8601String(),
+      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
+      'status': _$ProjectStatusEnumEnumMap[instance.status],
+      'color': instance.color,
+      'picture': instance.picture?.toJson(),
+      'members': instance.members?.map((e) => e.toJson()).toList(),
+      'resources': instance.resources?.map((e) => e.toJson()).toList(),
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 CreateProject$Mutation _$CreateProject$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -2934,32 +2272,24 @@ ProjectInput _$ProjectInputFromJson(Map<String, dynamic> json) => ProjectInput(
           : TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$ProjectInputToJson(ProjectInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('deadline', instance.deadline?.toIso8601String());
-  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
-  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
-  writeNotNull('color', instance.color);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  writeNotNull('resources', instance.resources);
-  writeNotNull('attachments', instance.attachments);
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
+Map<String, dynamic> _$ProjectInputToJson(ProjectInput instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
+      'tags': instance.tags,
+      'deadline': instance.deadline?.toIso8601String(),
+      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
+      'status': _$ProjectStatusEnumEnumMap[instance.status],
+      'color': instance.color,
+      'externalId': instance.externalId,
+      'picture': instance.picture?.toJson(),
+      'members': instance.members?.map((e) => e.toJson()).toList(),
+      'resources': instance.resources,
+      'attachments': instance.attachments,
+      'target': instance.target?.toJson(),
+    };
 
 MediaInput _$MediaInputFromJson(Map<String, dynamic> json) => MediaInput(
       videos:
@@ -2972,20 +2302,12 @@ MediaInput _$MediaInputFromJson(Map<String, dynamic> json) => MediaInput(
           .toList(),
     );
 
-Map<String, dynamic> _$MediaInputToJson(MediaInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String, dynamic> _$MediaInputToJson(MediaInput instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+    };
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -2997,24 +2319,16 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  val['baseUrl'] = instance.baseUrl;
-  val['path'] = instance.path;
-  return val;
-}
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
+    <String, dynamic>{
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+    };
 
 ProjectMemberInput _$ProjectMemberInputFromJson(Map<String, dynamic> json) =>
     ProjectMemberInput(
@@ -3023,19 +2337,11 @@ ProjectMemberInput _$ProjectMemberInputFromJson(Map<String, dynamic> json) =>
           unknownValue: ProjectRoleEnum.artemisUnknown),
     );
 
-Map<String, dynamic> _$ProjectMemberInputToJson(ProjectMemberInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('member', instance.member);
-  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
-  return val;
-}
+Map<String, dynamic> _$ProjectMemberInputToJson(ProjectMemberInput instance) =>
+    <String, dynamic>{
+      'member': instance.member,
+      'role': _$ProjectRoleEnumEnumMap[instance.role],
+    };
 
 UpdateProject$Mutation$ProjectType$MediaType$PictureType
     _$UpdateProject$Mutation$ProjectType$MediaType$PictureTypeFromJson(
@@ -3048,25 +2354,17 @@ UpdateProject$Mutation$ProjectType$MediaType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String, dynamic>
-    _$UpdateProject$Mutation$ProjectType$MediaType$PictureTypeToJson(
-        UpdateProject$Mutation$ProjectType$MediaType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+Map<String,
+    dynamic> _$UpdateProject$Mutation$ProjectType$MediaType$PictureTypeToJson(
+        UpdateProject$Mutation$ProjectType$MediaType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 UpdateProject$Mutation$ProjectType$MediaType
     _$UpdateProject$Mutation$ProjectType$MediaTypeFromJson(
@@ -3087,20 +2385,12 @@ UpdateProject$Mutation$ProjectType$MediaType
               .toList();
 
 Map<String, dynamic> _$UpdateProject$Mutation$ProjectType$MediaTypeToJson(
-    UpdateProject$Mutation$ProjectType$MediaType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('videos', instance.videos);
-  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        UpdateProject$Mutation$ProjectType$MediaType instance) =>
+    <String, dynamic>{
+      'videos': instance.videos,
+      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 UpdateProject$Mutation$ProjectType$PictureType
     _$UpdateProject$Mutation$ProjectType$PictureTypeFromJson(
@@ -3114,23 +2404,15 @@ UpdateProject$Mutation$ProjectType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$UpdateProject$Mutation$ProjectType$PictureTypeToJson(
-    UpdateProject$Mutation$ProjectType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        UpdateProject$Mutation$ProjectType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
     _$UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -3145,24 +2427,16 @@ UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-        UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType
     _$UpdateProject$Mutation$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -3182,26 +2456,17 @@ UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$UpdateProject$Mutation$ProjectType$ProjectMemberType$UserTypeToJson(
-        UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'picture': instance.picture?.toJson(),
+        };
 
 UpdateProject$Mutation$ProjectType$ProjectMemberType
     _$UpdateProject$Mutation$ProjectType$ProjectMemberTypeFromJson(
@@ -3216,19 +2481,11 @@ UpdateProject$Mutation$ProjectType$ProjectMemberType
 
 Map<String, dynamic>
     _$UpdateProject$Mutation$ProjectType$ProjectMemberTypeToJson(
-        UpdateProject$Mutation$ProjectType$ProjectMemberType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('member', instance.member?.toJson());
-  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
-  return val;
-}
+            UpdateProject$Mutation$ProjectType$ProjectMemberType instance) =>
+        <String, dynamic>{
+          'member': instance.member?.toJson(),
+          'role': _$ProjectRoleEnumEnumMap[instance.role],
+        };
 
 UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -3243,24 +2500,16 @@ UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-        UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -3277,20 +2526,12 @@ UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-        UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('png', instance.png?.toJson());
-  writeNotNull('svg', instance.svg?.toJson());
-  return val;
-}
+            UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+                instance) =>
+        <String, dynamic>{
+          'png': instance.png?.toJson(),
+          'svg': instance.svg?.toJson(),
+        };
 
 UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -3312,22 +2553,14 @@ UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-        UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('background', instance.background?.toJson());
-  writeNotNull('black', instance.black?.toJson());
-  writeNotNull('white', instance.white?.toJson());
-  writeNotNull('icon', instance.icon);
-  return val;
-}
+            UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+                instance) =>
+        <String, dynamic>{
+          'background': instance.background?.toJson(),
+          'black': instance.black?.toJson(),
+          'white': instance.white?.toJson(),
+          'icon': instance.icon,
+        };
 
 UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -3343,23 +2576,14 @@ UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeT
 
 Map<String, dynamic>
     _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-        UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('image', instance.image?.toJson());
-  return val;
-}
+            UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'type': instance.type,
+          'image': instance.image?.toJson(),
+        };
 
 UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType
     _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -3372,19 +2596,11 @@ UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentTypeToJson(
-        UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type?.toJson());
-  return val;
-}
+            UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type?.toJson(),
+        };
 
 UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
     _$UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -3399,24 +2615,16 @@ UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureTypeToJson(
-        UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateProject$Mutation$ProjectType$DocumentType$UserType
     _$UpdateProject$Mutation$ProjectType$DocumentType$UserTypeFromJson(
@@ -3434,27 +2642,18 @@ UpdateProject$Mutation$ProjectType$DocumentType$UserType
               : UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$UpdateProject$Mutation$ProjectType$DocumentType$UserTypeToJson(
-        UpdateProject$Mutation$ProjectType$DocumentType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$UpdateProject$Mutation$ProjectType$DocumentType$UserTypeToJson(
+        UpdateProject$Mutation$ProjectType$DocumentType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'picture': instance.picture?.toJson(),
+    };
 
 UpdateProject$Mutation$ProjectType$DocumentType
     _$UpdateProject$Mutation$ProjectType$DocumentTypeFromJson(
@@ -3475,25 +2674,16 @@ UpdateProject$Mutation$ProjectType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateProject$Mutation$ProjectType$DocumentTypeToJson(
-    UpdateProject$Mutation$ProjectType$DocumentType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content?.toJson());
-  writeNotNull('size', instance.size);
-  writeNotNull('owner', instance.owner?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        UpdateProject$Mutation$ProjectType$DocumentType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'content': instance.content?.toJson(),
+      'size': instance.size,
+      'owner': instance.owner?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 UpdateProject$Mutation$ProjectType _$UpdateProject$Mutation$ProjectTypeFromJson(
         Map<String, dynamic> json) =>
@@ -3540,36 +2730,25 @@ UpdateProject$Mutation$ProjectType _$UpdateProject$Mutation$ProjectTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateProject$Mutation$ProjectTypeToJson(
-    UpdateProject$Mutation$ProjectType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('deadline', instance.deadline?.toIso8601String());
-  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
-  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
-  writeNotNull('color', instance.color);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'resources', instance.resources?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  return val;
-}
+        UpdateProject$Mutation$ProjectType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
+      'tags': instance.tags,
+      'deadline': instance.deadline?.toIso8601String(),
+      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
+      'status': _$ProjectStatusEnumEnumMap[instance.status],
+      'color': instance.color,
+      'picture': instance.picture?.toJson(),
+      'members': instance.members?.map((e) => e.toJson()).toList(),
+      'resources': instance.resources?.map((e) => e.toJson()).toList(),
+      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
 
 UpdateProject$Mutation _$UpdateProject$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -3621,33 +2800,25 @@ ProjectUpdateInput _$ProjectUpdateInputFromJson(Map<String, dynamic> json) =>
       id: json['id'] as String,
     );
 
-Map<String, dynamic> _$ProjectUpdateInputToJson(ProjectUpdateInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('media', instance.media?.toJson());
-  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('deadline', instance.deadline?.toIso8601String());
-  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
-  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
-  writeNotNull('color', instance.color);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  writeNotNull('resources', instance.resources);
-  writeNotNull('attachments', instance.attachments);
-  writeNotNull('target', instance.target?.toJson());
-  val['id'] = instance.id;
-  return val;
-}
+Map<String, dynamic> _$ProjectUpdateInputToJson(ProjectUpdateInput instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'description': instance.description,
+      'media': instance.media?.toJson(),
+      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
+      'tags': instance.tags,
+      'deadline': instance.deadline?.toIso8601String(),
+      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
+      'status': _$ProjectStatusEnumEnumMap[instance.status],
+      'color': instance.color,
+      'externalId': instance.externalId,
+      'picture': instance.picture?.toJson(),
+      'members': instance.members?.map((e) => e.toJson()).toList(),
+      'resources': instance.resources,
+      'attachments': instance.attachments,
+      'target': instance.target?.toJson(),
+      'id': instance.id,
+    };
 
 DeleteProject$Mutation$DeleteResponseDtoType
     _$DeleteProject$Mutation$DeleteResponseDtoTypeFromJson(
@@ -3715,21 +2886,13 @@ GetProjectsByTargetWithFilterArguments
         );
 
 Map<String, dynamic> _$GetProjectsByTargetWithFilterArgumentsToJson(
-    GetProjectsByTargetWithFilterArguments instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('searchString', instance.searchString);
-  val['target'] = instance.target.toJson();
-  writeNotNull('filter', instance.filter?.toJson());
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetProjectsByTargetWithFilterArguments instance) =>
+    <String, dynamic>{
+      'searchString': instance.searchString,
+      'target': instance.target.toJson(),
+      'filter': instance.filter?.toJson(),
+      'pagination': instance.pagination?.toJson(),
+    };
 
 CreateProjectArguments _$CreateProjectArgumentsFromJson(
         Map<String, dynamic> json) =>

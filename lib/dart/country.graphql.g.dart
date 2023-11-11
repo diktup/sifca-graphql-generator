@@ -18,23 +18,15 @@ GetCountries$Query$CountryType$PictureType
           ..y = json['y'] as int?;
 
 Map<String, dynamic> _$GetCountries$Query$CountryType$PictureTypeToJson(
-    GetCountries$Query$CountryType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+        GetCountries$Query$CountryType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 GetCountries$Query$CountryType _$GetCountries$Query$CountryTypeFromJson(
         Map<String, dynamic> json) =>
@@ -56,27 +48,18 @@ GetCountries$Query$CountryType _$GetCountries$Query$CountryTypeFromJson(
               json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetCountries$Query$CountryTypeToJson(
-    GetCountries$Query$CountryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+        GetCountries$Query$CountryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'code': instance.code,
+      'dialCode': instance.dialCode,
+      'iconFlag': instance.iconFlag,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 GetCountries$Query _$GetCountries$QueryFromJson(Map<String, dynamic> json) =>
     GetCountries$Query()
@@ -103,24 +86,16 @@ FindCountriesPagination$Query$CountryPaginatedType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindCountriesPagination$Query$CountryPaginatedType$CountryType$PictureTypeToJson(
-        FindCountriesPagination$Query$CountryPaginatedType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            FindCountriesPagination$Query$CountryPaginatedType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 FindCountriesPagination$Query$CountryPaginatedType$CountryType
     _$FindCountriesPagination$Query$CountryPaginatedType$CountryTypeFromJson(
@@ -144,28 +119,19 @@ FindCountriesPagination$Query$CountryPaginatedType$CountryType
 
 Map<String, dynamic>
     _$FindCountriesPagination$Query$CountryPaginatedType$CountryTypeToJson(
-        FindCountriesPagination$Query$CountryPaginatedType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCountriesPagination$Query$CountryPaginatedType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCountriesPagination$Query$CountryPaginatedType
     _$FindCountriesPagination$Query$CountryPaginatedTypeFromJson(
@@ -180,20 +146,12 @@ FindCountriesPagination$Query$CountryPaginatedType
               .toList();
 
 Map<String, dynamic> _$FindCountriesPagination$Query$CountryPaginatedTypeToJson(
-    FindCountriesPagination$Query$CountryPaginatedType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+        FindCountriesPagination$Query$CountryPaginatedType instance) =>
+    <String, dynamic>{
+      'count': instance.count,
+      'isLast': instance.isLast,
+      'objects': instance.objects.map((e) => e.toJson()).toList(),
+    };
 
 FindCountriesPagination$Query _$FindCountriesPagination$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -214,19 +172,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 FindCountriesPaginationArguments _$FindCountriesPaginationArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -238,15 +188,7 @@ FindCountriesPaginationArguments _$FindCountriesPaginationArgumentsFromJson(
     );
 
 Map<String, dynamic> _$FindCountriesPaginationArgumentsToJson(
-    FindCountriesPaginationArguments instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        FindCountriesPaginationArguments instance) =>
+    <String, dynamic>{
+      'pagination': instance.pagination?.toJson(),
+    };

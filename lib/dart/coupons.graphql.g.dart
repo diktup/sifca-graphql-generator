@@ -16,21 +16,13 @@ GetCoupons$Query$CouponType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$GetCoupons$Query$CouponType$UserType$PhoneTypeToJson(
-    GetCoupons$Query$CouponType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+        GetCoupons$Query$CouponType$UserType$PhoneType instance) =>
+    <String, dynamic>{
+      'number': instance.number,
+      'isValid': instance.isValid,
+      'countryCode': instance.countryCode,
+      'validationNumber': instance.validationNumber,
+    };
 
 GetCoupons$Query$CouponType$UserType$PictureType
     _$GetCoupons$Query$CouponType$UserType$PictureTypeFromJson(
@@ -45,24 +37,16 @@ GetCoupons$Query$CouponType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetCoupons$Query$CouponType$UserType$PictureTypeToJson(
-    GetCoupons$Query$CouponType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+        GetCoupons$Query$CouponType$UserType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+    };
 
 GetCoupons$Query$CouponType$UserType$LanguageType$PictureType
     _$GetCoupons$Query$CouponType$UserType$LanguageType$PictureTypeFromJson(
@@ -78,25 +62,17 @@ GetCoupons$Query$CouponType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$LanguageType$PictureTypeToJson(
-        GetCoupons$Query$CouponType$UserType$LanguageType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$LanguageType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCoupons$Query$CouponType$UserType$LanguageType
     _$GetCoupons$Query$CouponType$UserType$LanguageTypeFromJson(
@@ -118,26 +94,17 @@ GetCoupons$Query$CouponType$UserType$LanguageType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetCoupons$Query$CouponType$UserType$LanguageTypeToJson(
-    GetCoupons$Query$CouponType$UserType$LanguageType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+        GetCoupons$Query$CouponType$UserType$LanguageType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'code': instance.code,
+      'iconFlag': instance.iconFlag,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 GetCoupons$Query$CouponType$UserType$CountryType$PictureType
     _$GetCoupons$Query$CouponType$UserType$CountryType$PictureTypeFromJson(
@@ -153,24 +120,17 @@ GetCoupons$Query$CouponType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$CountryType$PictureTypeToJson(
-        GetCoupons$Query$CouponType$UserType$CountryType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCoupons$Query$CouponType$UserType$CountryType
     _$GetCoupons$Query$CouponType$UserType$CountryTypeFromJson(
@@ -193,27 +153,18 @@ GetCoupons$Query$CouponType$UserType$CountryType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetCoupons$Query$CouponType$UserType$CountryTypeToJson(
-    GetCoupons$Query$CouponType$UserType$CountryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+        GetCoupons$Query$CouponType$UserType$CountryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'code': instance.code,
+      'dialCode': instance.dialCode,
+      'iconFlag': instance.iconFlag,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatType
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -226,20 +177,12 @@ GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatTypeToJson(
-        GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('coordinates', instance.coordinates);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type,
+          'coordinates': instance.coordinates,
+        };
 
 GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -255,25 +198,17 @@ GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-        GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$CountryTypeFromJson(
@@ -297,28 +232,19 @@ GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$CountryTypeToJson(
-        GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -334,25 +260,17 @@ GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType$Pictu
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-        GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -376,28 +294,19 @@ GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeToJson(
-        GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$PictureType
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -413,25 +322,17 @@ GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeToJson(
-        GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$FullAddressType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCoupons$Query$CouponType$UserType$FullAddressType$StateType
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateTypeFromJson(
@@ -464,32 +365,23 @@ GetCoupons$Query$CouponType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$StateTypeToJson(
-        GetCoupons$Query$CouponType$UserType$FullAddressType$StateType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$FullAddressType$StateType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'adminName': instance.adminName,
+          'capital': _$StateCapitalEnumEnumMap[instance.capital],
+          'population': instance.population,
+          'ascii': instance.ascii,
+          'lat': instance.lat,
+          'lng': instance.lng,
+          'country': instance.country?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 const _$StateCapitalEnumEnumMap = {
   StateCapitalEnum.primary: 'PRIMARY',
@@ -507,20 +399,12 @@ GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAd
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-        GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('countryCode', instance.countryCode);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'countryCode': instance.countryCode,
+        };
 
 GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -534,20 +418,12 @@ GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-        GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('phone', instance.phone?.toJson());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'phone': instance.phone?.toJson(),
+        };
 
 GetCoupons$Query$CouponType$UserType$FullAddressType
     _$GetCoupons$Query$CouponType$UserType$FullAddressTypeFromJson(
@@ -576,25 +452,17 @@ GetCoupons$Query$CouponType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$FullAddressTypeToJson(
-        GetCoupons$Query$CouponType$UserType$FullAddressType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('city', instance.city);
-  writeNotNull('address', instance.address);
-  writeNotNull('postCode', instance.postCode);
-  writeNotNull('addressLine', instance.addressLine);
-  writeNotNull('location', instance.location?.toJson());
-  writeNotNull('country', instance.country?.toJson());
-  writeNotNull('state', instance.state?.toJson());
-  writeNotNull('owner', instance.owner?.toJson());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$FullAddressType instance) =>
+        <String, dynamic>{
+          'city': instance.city,
+          'address': instance.address,
+          'postCode': instance.postCode,
+          'addressLine': instance.addressLine,
+          'location': instance.location?.toJson(),
+          'country': instance.country?.toJson(),
+          'state': instance.state?.toJson(),
+          'owner': instance.owner?.toJson(),
+        };
 
 GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -610,25 +478,17 @@ GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -657,23 +517,15 @@ GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('size48', instance.size48?.toJson());
-  writeNotNull('size96', instance.size96?.toJson());
-  writeNotNull('size144', instance.size144?.toJson());
-  writeNotNull('size240', instance.size240?.toJson());
-  writeNotNull('size480', instance.size480?.toJson());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                instance) =>
+        <String, dynamic>{
+          'size48': instance.size48?.toJson(),
+          'size96': instance.size96?.toJson(),
+          'size144': instance.size144?.toJson(),
+          'size240': instance.size240?.toJson(),
+          'size480': instance.size480?.toJson(),
+        };
 
 GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -690,20 +542,12 @@ GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('svg', instance.svg?.toJson());
-  writeNotNull('png', instance.png?.toJson());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+                instance) =>
+        <String, dynamic>{
+          'svg': instance.svg?.toJson(),
+          'png': instance.png?.toJson(),
+        };
 
 GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
     _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -719,21 +563,12 @@ GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
-            instance) {
-  final val = <String, dynamic>{
-    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
+                instance) =>
+        <String, dynamic>{
+          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+          'images': instance.images?.map((e) => e.toJson()).toList(),
+        };
 
 const _$SocialImageStyleEnumEnumMap = {
   SocialImageStyleEnum.bubble: 'BUBBLE',
@@ -761,26 +596,17 @@ GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$SocialValueType$SocialTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('fontIcon', instance.fontIcon);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$SocialValueType$SocialType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'fontIcon': instance.fontIcon,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'images': instance.images?.map((e) => e.toJson()).toList(),
+        };
 
 GetCoupons$Query$CouponType$UserType$SocialValueType
     _$GetCoupons$Query$CouponType$UserType$SocialValueTypeFromJson(
@@ -794,19 +620,11 @@ GetCoupons$Query$CouponType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$SocialValueTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialValueType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$SocialValueType instance) =>
+        <String, dynamic>{
+          'name': instance.name?.toJson(),
+          'value': instance.value,
+        };
 
 GetCoupons$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
     _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -816,19 +634,11 @@ GetCoupons$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+        };
 
 GetCoupons$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
     _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -843,25 +653,16 @@ GetCoupons$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  val['token'] = instance.token;
-  val['email'] = instance.email;
-  writeNotNull('last_name', instance.lastName);
-  writeNotNull('first_name', instance.firstName);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'token': instance.token,
+          'email': instance.email,
+          'last_name': instance.lastName,
+          'first_name': instance.firstName,
+        };
 
 GetCoupons$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
     _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -879,28 +680,19 @@ GetCoupons$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
-            instance) {
-  final val = <String, dynamic>{
-    'sub': instance.sub,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  val['email'] = instance.email;
-  val['token'] = instance.token;
-  writeNotNull('locale', instance.locale);
-  writeNotNull('picture', instance.picture);
-  writeNotNull('given_name', instance.givenName);
-  writeNotNull('family_name', instance.familyName);
-  writeNotNull('email_verified', instance.emailVerified);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
+                instance) =>
+        <String, dynamic>{
+          'sub': instance.sub,
+          'name': instance.name,
+          'email': instance.email,
+          'token': instance.token,
+          'locale': instance.locale,
+          'picture': instance.picture,
+          'given_name': instance.givenName,
+          'family_name': instance.familyName,
+          'email_verified': instance.emailVerified,
+        };
 
 GetCoupons$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
     _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -916,25 +708,17 @@ GetCoupons$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('status', instance.status);
-  writeNotNull('givenName', instance.givenName);
-  writeNotNull('familyName', instance.familyName);
-  val['identityToken'] = instance.identityToken;
-  writeNotNull('userIdentifier', instance.userIdentifier);
-  writeNotNull('authorizationCode', instance.authorizationCode);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
+                instance) =>
+        <String, dynamic>{
+          'email': instance.email,
+          'status': instance.status,
+          'givenName': instance.givenName,
+          'familyName': instance.familyName,
+          'identityToken': instance.identityToken,
+          'userIdentifier': instance.userIdentifier,
+          'authorizationCode': instance.authorizationCode,
+        };
 
 GetCoupons$Query$CouponType$UserType$SocialLoginDataType
     _$GetCoupons$Query$CouponType$UserType$SocialLoginDataTypeFromJson(
@@ -957,23 +741,15 @@ GetCoupons$Query$CouponType$UserType$SocialLoginDataType
               : GetCoupons$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
                   .fromJson(json['apple'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$GetCoupons$Query$CouponType$UserType$SocialLoginDataTypeToJson(
-        GetCoupons$Query$CouponType$UserType$SocialLoginDataType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ooredoo', instance.ooredoo?.toJson());
-  writeNotNull('facebook', instance.facebook?.toJson());
-  writeNotNull('google', instance.google?.toJson());
-  writeNotNull('apple', instance.apple?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$GetCoupons$Query$CouponType$UserType$SocialLoginDataTypeToJson(
+        GetCoupons$Query$CouponType$UserType$SocialLoginDataType instance) =>
+    <String, dynamic>{
+      'ooredoo': instance.ooredoo?.toJson(),
+      'facebook': instance.facebook?.toJson(),
+      'google': instance.google?.toJson(),
+      'apple': instance.apple?.toJson(),
+    };
 
 GetCoupons$Query$CouponType$UserType$UserEducationType
     _$GetCoupons$Query$CouponType$UserType$UserEducationTypeFromJson(
@@ -994,24 +770,16 @@ GetCoupons$Query$CouponType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$UserEducationTypeToJson(
-        GetCoupons$Query$CouponType$UserType$UserEducationType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('graduated', instance.graduated);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$UserEducationType instance) =>
+        <String, dynamic>{
+          'level': _$AcademicLevelEnumMap[instance.level],
+          'name': instance.name,
+          'description': instance.description,
+          'tags': instance.tags,
+          'from': instance.from?.toIso8601String(),
+          'to': instance.to?.toIso8601String(),
+          'graduated': instance.graduated,
+        };
 
 const _$AcademicLevelEnumMap = {
   AcademicLevel.primary: 'PRIMARY',
@@ -1034,25 +802,17 @@ GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureT
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-        GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType
     _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -1076,28 +836,19 @@ GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeToJson(
-        GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$PictureType
     _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -1113,25 +864,17 @@ GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeToJson(
-        GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$UserWorkType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCoupons$Query$CouponType$UserType$UserWorkType$StateType
     _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateTypeFromJson(
@@ -1164,31 +907,23 @@ GetCoupons$Query$CouponType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$UserWorkType$StateTypeToJson(
-        GetCoupons$Query$CouponType$UserType$UserWorkType$StateType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$UserWorkType$StateType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'adminName': instance.adminName,
+          'capital': _$StateCapitalEnumEnumMap[instance.capital],
+          'population': instance.population,
+          'ascii': instance.ascii,
+          'lat': instance.lat,
+          'lng': instance.lng,
+          'country': instance.country?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 GetCoupons$Query$CouponType$UserType$UserWorkType
     _$GetCoupons$Query$CouponType$UserType$UserWorkTypeFromJson(
@@ -1211,25 +946,17 @@ GetCoupons$Query$CouponType$UserType$UserWorkType
           ..current = json['current'] as bool?;
 
 Map<String, dynamic> _$GetCoupons$Query$CouponType$UserType$UserWorkTypeToJson(
-    GetCoupons$Query$CouponType$UserType$UserWorkType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('company', instance.company);
-  writeNotNull('position', instance.position);
-  writeNotNull('description', instance.description);
-  writeNotNull('city', instance.city?.toJson());
-  writeNotNull('tags', instance.tags);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('current', instance.current);
-  return val;
-}
+        GetCoupons$Query$CouponType$UserType$UserWorkType instance) =>
+    <String, dynamic>{
+      'company': instance.company,
+      'position': instance.position,
+      'description': instance.description,
+      'city': instance.city?.toJson(),
+      'tags': instance.tags,
+      'from': instance.from?.toIso8601String(),
+      'to': instance.to?.toIso8601String(),
+      'current': instance.current,
+    };
 
 GetCoupons$Query$CouponType$UserType$StateType$CountryType$PictureType
     _$GetCoupons$Query$CouponType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -1245,25 +972,17 @@ GetCoupons$Query$CouponType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$GetCoupons$Query$CouponType$UserType$StateType$CountryType$PictureTypeToJson(
-        GetCoupons$Query$CouponType$UserType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetCoupons$Query$CouponType$UserType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetCoupons$Query$CouponType$UserType$StateType$CountryType
     _$GetCoupons$Query$CouponType$UserType$StateType$CountryTypeFromJson(
@@ -1285,29 +1004,20 @@ GetCoupons$Query$CouponType$UserType$StateType$CountryType
               : GetCoupons$Query$CouponType$UserType$StateType$CountryType$PictureType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$GetCoupons$Query$CouponType$UserType$StateType$CountryTypeToJson(
-        GetCoupons$Query$CouponType$UserType$StateType$CountryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$GetCoupons$Query$CouponType$UserType$StateType$CountryTypeToJson(
+        GetCoupons$Query$CouponType$UserType$StateType$CountryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'code': instance.code,
+      'dialCode': instance.dialCode,
+      'iconFlag': instance.iconFlag,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 GetCoupons$Query$CouponType$UserType$StateType$PictureType
     _$GetCoupons$Query$CouponType$UserType$StateType$PictureTypeFromJson(
@@ -1321,26 +1031,18 @@ GetCoupons$Query$CouponType$UserType$StateType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String, dynamic>
-    _$GetCoupons$Query$CouponType$UserType$StateType$PictureTypeToJson(
-        GetCoupons$Query$CouponType$UserType$StateType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+Map<String,
+    dynamic> _$GetCoupons$Query$CouponType$UserType$StateType$PictureTypeToJson(
+        GetCoupons$Query$CouponType$UserType$StateType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+    };
 
 GetCoupons$Query$CouponType$UserType$StateType
     _$GetCoupons$Query$CouponType$UserType$StateTypeFromJson(
@@ -1372,31 +1074,22 @@ GetCoupons$Query$CouponType$UserType$StateType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetCoupons$Query$CouponType$UserType$StateTypeToJson(
-    GetCoupons$Query$CouponType$UserType$StateType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+        GetCoupons$Query$CouponType$UserType$StateType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'adminName': instance.adminName,
+      'capital': _$StateCapitalEnumEnumMap[instance.capital],
+      'population': instance.population,
+      'ascii': instance.ascii,
+      'lat': instance.lat,
+      'lng': instance.lng,
+      'country': instance.country?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 GetCoupons$Query$CouponType$UserType
     _$GetCoupons$Query$CouponType$UserTypeFromJson(Map<String, dynamic> json) =>
@@ -1514,66 +1207,52 @@ GetCoupons$Query$CouponType$UserType
               .toList();
 
 Map<String, dynamic> _$GetCoupons$Query$CouponType$UserTypeToJson(
-    GetCoupons$Query$CouponType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
-  writeNotNull('email', instance.email);
-  writeNotNull(
-      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
-  writeNotNull('title', instance.title);
-  writeNotNull('about', instance.about);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('locale', instance.locale);
-  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
-  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('plugged', instance.plugged);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isMailValid', instance.isMailValid);
-  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
-  writeNotNull('phoneNumber', instance.phoneNumber);
-  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
-  writeNotNull('placeOfBirth', instance.placeOfBirth);
-  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
-  writeNotNull('newsletterSubs', instance.newsletterSubs);
-  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'languages', instance.languages?.map((e) => e.toJson()).toList());
-  writeNotNull('nationality', instance.nationality?.toJson());
-  writeNotNull('billingAddress',
-      instance.billingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('shippingAddress',
-      instance.shippingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('residentialAddress',
-      instance.residentialAddress?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
-  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
-  writeNotNull(
-      'education', instance.education?.map((e) => e.toJson()).toList());
-  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
-  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
-  writeNotNull('hobbies', instance.hobbies);
-  writeNotNull('interests', instance.interests);
-  return val;
-}
+        GetCoupons$Query$CouponType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
+      'email': instance.email,
+      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
+      'title': instance.title,
+      'about': instance.about,
+      'gender': _$GenderEnumMap[instance.gender],
+      'locale': instance.locale,
+      'source': _$SourcesEnumEnumMap[instance.source],
+      'status': _$UserStatusEnumMap[instance.status],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'plugged': instance.plugged,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'isMailValid': instance.isMailValid,
+      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
+      'phoneNumber': instance.phoneNumber,
+      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
+      'placeOfBirth': instance.placeOfBirth,
+      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
+      'newsletterSubs': instance.newsletterSubs,
+      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'languages': instance.languages?.map((e) => e.toJson()).toList(),
+      'nationality': instance.nationality?.toJson(),
+      'billingAddress':
+          instance.billingAddress?.map((e) => e.toJson()).toList(),
+      'shippingAddress':
+          instance.shippingAddress?.map((e) => e.toJson()).toList(),
+      'residentialAddress':
+          instance.residentialAddress?.map((e) => e.toJson()).toList(),
+      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
+      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
+      'socialLoginData': instance.socialLoginData?.toJson(),
+      'education': instance.education?.map((e) => e.toJson()).toList(),
+      'work': instance.work?.map((e) => e.toJson()).toList(),
+      'lived': instance.lived?.map((e) => e.toJson()).toList(),
+      'hobbies': instance.hobbies,
+      'interests': instance.interests,
+    };
 
 const _$AppEnumMap = {
   App.bosk: 'BOSK',
@@ -1679,19 +1358,11 @@ GetCoupons$Query$CouponType$DiscountDtoType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$GetCoupons$Query$CouponType$DiscountDtoTypeToJson(
-    GetCoupons$Query$CouponType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+        GetCoupons$Query$CouponType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 const _$DiscountTypeEnumMap = {
   DiscountType.amount: 'AMOUNT',
@@ -1720,27 +1391,18 @@ GetCoupons$Query$CouponType _$GetCoupons$Query$CouponTypeFromJson(
               json['discount'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetCoupons$Query$CouponTypeToJson(
-    GetCoupons$Query$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+        GetCoupons$Query$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 GetCoupons$Query _$GetCoupons$QueryFromJson(Map<String, dynamic> json) =>
     GetCoupons$Query()
@@ -1764,21 +1426,13 @@ Coupon$Query$CouponType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$Coupon$Query$CouponType$UserType$PhoneTypeToJson(
-    Coupon$Query$CouponType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+        Coupon$Query$CouponType$UserType$PhoneType instance) =>
+    <String, dynamic>{
+      'number': instance.number,
+      'isValid': instance.isValid,
+      'countryCode': instance.countryCode,
+      'validationNumber': instance.validationNumber,
+    };
 
 Coupon$Query$CouponType$UserType$PictureType
     _$Coupon$Query$CouponType$UserType$PictureTypeFromJson(
@@ -1793,24 +1447,16 @@ Coupon$Query$CouponType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Coupon$Query$CouponType$UserType$PictureTypeToJson(
-    Coupon$Query$CouponType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+        Coupon$Query$CouponType$UserType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+    };
 
 Coupon$Query$CouponType$UserType$LanguageType$PictureType
     _$Coupon$Query$CouponType$UserType$LanguageType$PictureTypeFromJson(
@@ -1824,26 +1470,18 @@ Coupon$Query$CouponType$UserType$LanguageType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String, dynamic>
-    _$Coupon$Query$CouponType$UserType$LanguageType$PictureTypeToJson(
-        Coupon$Query$CouponType$UserType$LanguageType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+Map<String,
+    dynamic> _$Coupon$Query$CouponType$UserType$LanguageType$PictureTypeToJson(
+        Coupon$Query$CouponType$UserType$LanguageType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+    };
 
 Coupon$Query$CouponType$UserType$LanguageType
     _$Coupon$Query$CouponType$UserType$LanguageTypeFromJson(
@@ -1865,26 +1503,17 @@ Coupon$Query$CouponType$UserType$LanguageType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Coupon$Query$CouponType$UserType$LanguageTypeToJson(
-    Coupon$Query$CouponType$UserType$LanguageType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+        Coupon$Query$CouponType$UserType$LanguageType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'code': instance.code,
+      'iconFlag': instance.iconFlag,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 Coupon$Query$CouponType$UserType$CountryType$PictureType
     _$Coupon$Query$CouponType$UserType$CountryType$PictureTypeFromJson(
@@ -1898,26 +1527,18 @@ Coupon$Query$CouponType$UserType$CountryType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String, dynamic>
-    _$Coupon$Query$CouponType$UserType$CountryType$PictureTypeToJson(
-        Coupon$Query$CouponType$UserType$CountryType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+Map<String,
+    dynamic> _$Coupon$Query$CouponType$UserType$CountryType$PictureTypeToJson(
+        Coupon$Query$CouponType$UserType$CountryType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+    };
 
 Coupon$Query$CouponType$UserType$CountryType
     _$Coupon$Query$CouponType$UserType$CountryTypeFromJson(
@@ -1940,27 +1561,18 @@ Coupon$Query$CouponType$UserType$CountryType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Coupon$Query$CouponType$UserType$CountryTypeToJson(
-    Coupon$Query$CouponType$UserType$CountryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+        Coupon$Query$CouponType$UserType$CountryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'code': instance.code,
+      'dialCode': instance.dialCode,
+      'iconFlag': instance.iconFlag,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 Coupon$Query$CouponType$UserType$FullAddressType$LonLatType
     _$Coupon$Query$CouponType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -1973,19 +1585,12 @@ Coupon$Query$CouponType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$FullAddressType$LonLatTypeToJson(
-        Coupon$Query$CouponType$UserType$FullAddressType$LonLatType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('coordinates', instance.coordinates);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$FullAddressType$LonLatType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type,
+          'coordinates': instance.coordinates,
+        };
 
 Coupon$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
     _$Coupon$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -2001,25 +1606,17 @@ Coupon$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-        Coupon$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Coupon$Query$CouponType$UserType$FullAddressType$CountryType
     _$Coupon$Query$CouponType$UserType$FullAddressType$CountryTypeFromJson(
@@ -2043,27 +1640,19 @@ Coupon$Query$CouponType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$FullAddressType$CountryTypeToJson(
-        Coupon$Query$CouponType$UserType$FullAddressType$CountryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$FullAddressType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -2079,25 +1668,17 @@ Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTy
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-        Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType
     _$Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -2121,28 +1702,19 @@ Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeToJson(
-        Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$FullAddressType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 Coupon$Query$CouponType$UserType$FullAddressType$StateType$PictureType
     _$Coupon$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -2158,25 +1730,17 @@ Coupon$Query$CouponType$UserType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeToJson(
-        Coupon$Query$CouponType$UserType$FullAddressType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$FullAddressType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Coupon$Query$CouponType$UserType$FullAddressType$StateType
     _$Coupon$Query$CouponType$UserType$FullAddressType$StateTypeFromJson(
@@ -2207,33 +1771,24 @@ Coupon$Query$CouponType$UserType$FullAddressType$StateType
               : Coupon$Query$CouponType$UserType$FullAddressType$StateType$PictureType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$Coupon$Query$CouponType$UserType$FullAddressType$StateTypeToJson(
-        Coupon$Query$CouponType$UserType$FullAddressType$StateType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$Coupon$Query$CouponType$UserType$FullAddressType$StateTypeToJson(
+        Coupon$Query$CouponType$UserType$FullAddressType$StateType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'adminName': instance.adminName,
+      'capital': _$StateCapitalEnumEnumMap[instance.capital],
+      'population': instance.population,
+      'ascii': instance.ascii,
+      'lat': instance.lat,
+      'lng': instance.lng,
+      'country': instance.country?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -2244,20 +1799,12 @@ Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddres
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-        Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('countryCode', instance.countryCode);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'countryCode': instance.countryCode,
+        };
 
 Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
     _$Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -2271,20 +1818,12 @@ Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-        Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('phone', instance.phone?.toJson());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'phone': instance.phone?.toJson(),
+        };
 
 Coupon$Query$CouponType$UserType$FullAddressType
     _$Coupon$Query$CouponType$UserType$FullAddressTypeFromJson(
@@ -2312,25 +1851,17 @@ Coupon$Query$CouponType$UserType$FullAddressType
                   .fromJson(json['owner'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Coupon$Query$CouponType$UserType$FullAddressTypeToJson(
-    Coupon$Query$CouponType$UserType$FullAddressType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('city', instance.city);
-  writeNotNull('address', instance.address);
-  writeNotNull('postCode', instance.postCode);
-  writeNotNull('addressLine', instance.addressLine);
-  writeNotNull('location', instance.location?.toJson());
-  writeNotNull('country', instance.country?.toJson());
-  writeNotNull('state', instance.state?.toJson());
-  writeNotNull('owner', instance.owner?.toJson());
-  return val;
-}
+        Coupon$Query$CouponType$UserType$FullAddressType instance) =>
+    <String, dynamic>{
+      'city': instance.city,
+      'address': instance.address,
+      'postCode': instance.postCode,
+      'addressLine': instance.addressLine,
+      'location': instance.location?.toJson(),
+      'country': instance.country?.toJson(),
+      'state': instance.state?.toJson(),
+      'owner': instance.owner?.toJson(),
+    };
 
 Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -2346,25 +1877,17 @@ Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$Soc
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-        Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -2393,23 +1916,15 @@ Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$Soc
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-        Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('size48', instance.size48?.toJson());
-  writeNotNull('size96', instance.size96?.toJson());
-  writeNotNull('size144', instance.size144?.toJson());
-  writeNotNull('size240', instance.size240?.toJson());
-  writeNotNull('size480', instance.size480?.toJson());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                instance) =>
+        <String, dynamic>{
+          'size48': instance.size48?.toJson(),
+          'size96': instance.size96?.toJson(),
+          'size144': instance.size144?.toJson(),
+          'size240': instance.size240?.toJson(),
+          'size480': instance.size480?.toJson(),
+        };
 
 Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -2426,20 +1941,12 @@ Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$Soc
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-        Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('svg', instance.svg?.toJson());
-  writeNotNull('png', instance.png?.toJson());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+                instance) =>
+        <String, dynamic>{
+          'svg': instance.svg?.toJson(),
+          'png': instance.png?.toJson(),
+        };
 
 Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
     _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -2455,21 +1962,12 @@ Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-        Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
-            instance) {
-  final val = <String, dynamic>{
-    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
+                instance) =>
+        <String, dynamic>{
+          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+          'images': instance.images?.map((e) => e.toJson()).toList(),
+        };
 
 Coupon$Query$CouponType$UserType$SocialValueType$SocialType
     _$Coupon$Query$CouponType$UserType$SocialValueType$SocialTypeFromJson(
@@ -2489,25 +1987,17 @@ Coupon$Query$CouponType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$SocialValueType$SocialTypeToJson(
-        Coupon$Query$CouponType$UserType$SocialValueType$SocialType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('fontIcon', instance.fontIcon);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$SocialValueType$SocialType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'fontIcon': instance.fontIcon,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'images': instance.images?.map((e) => e.toJson()).toList(),
+        };
 
 Coupon$Query$CouponType$UserType$SocialValueType
     _$Coupon$Query$CouponType$UserType$SocialValueTypeFromJson(
@@ -2520,19 +2010,11 @@ Coupon$Query$CouponType$UserType$SocialValueType
           ..value = json['value'] as String?;
 
 Map<String, dynamic> _$Coupon$Query$CouponType$UserType$SocialValueTypeToJson(
-    Coupon$Query$CouponType$UserType$SocialValueType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+        Coupon$Query$CouponType$UserType$SocialValueType instance) =>
+    <String, dynamic>{
+      'name': instance.name?.toJson(),
+      'value': instance.value,
+    };
 
 Coupon$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
     _$Coupon$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -2542,19 +2024,11 @@ Coupon$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-        Coupon$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+        };
 
 Coupon$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
     _$Coupon$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -2569,25 +2043,16 @@ Coupon$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-        Coupon$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  val['token'] = instance.token;
-  val['email'] = instance.email;
-  writeNotNull('last_name', instance.lastName);
-  writeNotNull('first_name', instance.firstName);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'token': instance.token,
+          'email': instance.email,
+          'last_name': instance.lastName,
+          'first_name': instance.firstName,
+        };
 
 Coupon$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
     _$Coupon$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -2605,28 +2070,19 @@ Coupon$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-        Coupon$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
-            instance) {
-  final val = <String, dynamic>{
-    'sub': instance.sub,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  val['email'] = instance.email;
-  val['token'] = instance.token;
-  writeNotNull('locale', instance.locale);
-  writeNotNull('picture', instance.picture);
-  writeNotNull('given_name', instance.givenName);
-  writeNotNull('family_name', instance.familyName);
-  writeNotNull('email_verified', instance.emailVerified);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
+                instance) =>
+        <String, dynamic>{
+          'sub': instance.sub,
+          'name': instance.name,
+          'email': instance.email,
+          'token': instance.token,
+          'locale': instance.locale,
+          'picture': instance.picture,
+          'given_name': instance.givenName,
+          'family_name': instance.familyName,
+          'email_verified': instance.emailVerified,
+        };
 
 Coupon$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
     _$Coupon$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -2642,25 +2098,17 @@ Coupon$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-        Coupon$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('status', instance.status);
-  writeNotNull('givenName', instance.givenName);
-  writeNotNull('familyName', instance.familyName);
-  val['identityToken'] = instance.identityToken;
-  writeNotNull('userIdentifier', instance.userIdentifier);
-  writeNotNull('authorizationCode', instance.authorizationCode);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
+                instance) =>
+        <String, dynamic>{
+          'email': instance.email,
+          'status': instance.status,
+          'givenName': instance.givenName,
+          'familyName': instance.familyName,
+          'identityToken': instance.identityToken,
+          'userIdentifier': instance.userIdentifier,
+          'authorizationCode': instance.authorizationCode,
+        };
 
 Coupon$Query$CouponType$UserType$SocialLoginDataType
     _$Coupon$Query$CouponType$UserType$SocialLoginDataTypeFromJson(
@@ -2685,21 +2133,13 @@ Coupon$Query$CouponType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$SocialLoginDataTypeToJson(
-        Coupon$Query$CouponType$UserType$SocialLoginDataType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ooredoo', instance.ooredoo?.toJson());
-  writeNotNull('facebook', instance.facebook?.toJson());
-  writeNotNull('google', instance.google?.toJson());
-  writeNotNull('apple', instance.apple?.toJson());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$SocialLoginDataType instance) =>
+        <String, dynamic>{
+          'ooredoo': instance.ooredoo?.toJson(),
+          'facebook': instance.facebook?.toJson(),
+          'google': instance.google?.toJson(),
+          'apple': instance.apple?.toJson(),
+        };
 
 Coupon$Query$CouponType$UserType$UserEducationType
     _$Coupon$Query$CouponType$UserType$UserEducationTypeFromJson(
@@ -2719,24 +2159,16 @@ Coupon$Query$CouponType$UserType$UserEducationType
           ..graduated = json['graduated'] as bool?;
 
 Map<String, dynamic> _$Coupon$Query$CouponType$UserType$UserEducationTypeToJson(
-    Coupon$Query$CouponType$UserType$UserEducationType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('graduated', instance.graduated);
-  return val;
-}
+        Coupon$Query$CouponType$UserType$UserEducationType instance) =>
+    <String, dynamic>{
+      'level': _$AcademicLevelEnumMap[instance.level],
+      'name': instance.name,
+      'description': instance.description,
+      'tags': instance.tags,
+      'from': instance.from?.toIso8601String(),
+      'to': instance.to?.toIso8601String(),
+      'graduated': instance.graduated,
+    };
 
 Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -2752,25 +2184,17 @@ Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-        Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType
     _$Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -2794,28 +2218,19 @@ Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeToJson(
-        Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$UserWorkType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 Coupon$Query$CouponType$UserType$UserWorkType$StateType$PictureType
     _$Coupon$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -2831,25 +2246,17 @@ Coupon$Query$CouponType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeToJson(
-        Coupon$Query$CouponType$UserType$UserWorkType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$UserWorkType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Coupon$Query$CouponType$UserType$UserWorkType$StateType
     _$Coupon$Query$CouponType$UserType$UserWorkType$StateTypeFromJson(
@@ -2882,31 +2289,22 @@ Coupon$Query$CouponType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$UserWorkType$StateTypeToJson(
-        Coupon$Query$CouponType$UserType$UserWorkType$StateType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$UserWorkType$StateType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'adminName': instance.adminName,
+          'capital': _$StateCapitalEnumEnumMap[instance.capital],
+          'population': instance.population,
+          'ascii': instance.ascii,
+          'lat': instance.lat,
+          'lng': instance.lng,
+          'country': instance.country?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 Coupon$Query$CouponType$UserType$UserWorkType
     _$Coupon$Query$CouponType$UserType$UserWorkTypeFromJson(
@@ -2929,25 +2327,17 @@ Coupon$Query$CouponType$UserType$UserWorkType
           ..current = json['current'] as bool?;
 
 Map<String, dynamic> _$Coupon$Query$CouponType$UserType$UserWorkTypeToJson(
-    Coupon$Query$CouponType$UserType$UserWorkType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('company', instance.company);
-  writeNotNull('position', instance.position);
-  writeNotNull('description', instance.description);
-  writeNotNull('city', instance.city?.toJson());
-  writeNotNull('tags', instance.tags);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('current', instance.current);
-  return val;
-}
+        Coupon$Query$CouponType$UserType$UserWorkType instance) =>
+    <String, dynamic>{
+      'company': instance.company,
+      'position': instance.position,
+      'description': instance.description,
+      'city': instance.city?.toJson(),
+      'tags': instance.tags,
+      'from': instance.from?.toIso8601String(),
+      'to': instance.to?.toIso8601String(),
+      'current': instance.current,
+    };
 
 Coupon$Query$CouponType$UserType$StateType$CountryType$PictureType
     _$Coupon$Query$CouponType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -2963,25 +2353,17 @@ Coupon$Query$CouponType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$StateType$CountryType$PictureTypeToJson(
-        Coupon$Query$CouponType$UserType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Coupon$Query$CouponType$UserType$StateType$CountryType
     _$Coupon$Query$CouponType$UserType$StateType$CountryTypeFromJson(
@@ -3005,27 +2387,18 @@ Coupon$Query$CouponType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$StateType$CountryTypeToJson(
-        Coupon$Query$CouponType$UserType$StateType$CountryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            Coupon$Query$CouponType$UserType$StateType$CountryType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 Coupon$Query$CouponType$UserType$StateType$PictureType
     _$Coupon$Query$CouponType$UserType$StateType$PictureTypeFromJson(
@@ -3041,24 +2414,16 @@ Coupon$Query$CouponType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$Coupon$Query$CouponType$UserType$StateType$PictureTypeToJson(
-        Coupon$Query$CouponType$UserType$StateType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            Coupon$Query$CouponType$UserType$StateType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 Coupon$Query$CouponType$UserType$StateType
     _$Coupon$Query$CouponType$UserType$StateTypeFromJson(
@@ -3090,31 +2455,22 @@ Coupon$Query$CouponType$UserType$StateType
                   json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Coupon$Query$CouponType$UserType$StateTypeToJson(
-    Coupon$Query$CouponType$UserType$StateType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+        Coupon$Query$CouponType$UserType$StateType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'adminName': instance.adminName,
+      'capital': _$StateCapitalEnumEnumMap[instance.capital],
+      'population': instance.population,
+      'ascii': instance.ascii,
+      'lat': instance.lat,
+      'lng': instance.lng,
+      'country': instance.country?.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 Coupon$Query$CouponType$UserType _$Coupon$Query$CouponType$UserTypeFromJson(
         Map<String, dynamic> json) =>
@@ -3227,66 +2583,52 @@ Coupon$Query$CouponType$UserType _$Coupon$Query$CouponType$UserTypeFromJson(
           .toList();
 
 Map<String, dynamic> _$Coupon$Query$CouponType$UserTypeToJson(
-    Coupon$Query$CouponType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
-  writeNotNull('email', instance.email);
-  writeNotNull(
-      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
-  writeNotNull('title', instance.title);
-  writeNotNull('about', instance.about);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('locale', instance.locale);
-  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
-  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('plugged', instance.plugged);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isMailValid', instance.isMailValid);
-  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
-  writeNotNull('phoneNumber', instance.phoneNumber);
-  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
-  writeNotNull('placeOfBirth', instance.placeOfBirth);
-  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
-  writeNotNull('newsletterSubs', instance.newsletterSubs);
-  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'languages', instance.languages?.map((e) => e.toJson()).toList());
-  writeNotNull('nationality', instance.nationality?.toJson());
-  writeNotNull('billingAddress',
-      instance.billingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('shippingAddress',
-      instance.shippingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('residentialAddress',
-      instance.residentialAddress?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
-  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
-  writeNotNull(
-      'education', instance.education?.map((e) => e.toJson()).toList());
-  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
-  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
-  writeNotNull('hobbies', instance.hobbies);
-  writeNotNull('interests', instance.interests);
-  return val;
-}
+        Coupon$Query$CouponType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
+      'email': instance.email,
+      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
+      'title': instance.title,
+      'about': instance.about,
+      'gender': _$GenderEnumMap[instance.gender],
+      'locale': instance.locale,
+      'source': _$SourcesEnumEnumMap[instance.source],
+      'status': _$UserStatusEnumMap[instance.status],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'plugged': instance.plugged,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'isMailValid': instance.isMailValid,
+      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
+      'phoneNumber': instance.phoneNumber,
+      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
+      'placeOfBirth': instance.placeOfBirth,
+      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
+      'newsletterSubs': instance.newsletterSubs,
+      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'languages': instance.languages?.map((e) => e.toJson()).toList(),
+      'nationality': instance.nationality?.toJson(),
+      'billingAddress':
+          instance.billingAddress?.map((e) => e.toJson()).toList(),
+      'shippingAddress':
+          instance.shippingAddress?.map((e) => e.toJson()).toList(),
+      'residentialAddress':
+          instance.residentialAddress?.map((e) => e.toJson()).toList(),
+      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
+      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
+      'socialLoginData': instance.socialLoginData?.toJson(),
+      'education': instance.education?.map((e) => e.toJson()).toList(),
+      'work': instance.work?.map((e) => e.toJson()).toList(),
+      'lived': instance.lived?.map((e) => e.toJson()).toList(),
+      'hobbies': instance.hobbies,
+      'interests': instance.interests,
+    };
 
 Coupon$Query$CouponType$DiscountDtoType
     _$Coupon$Query$CouponType$DiscountDtoTypeFromJson(
@@ -3298,19 +2640,11 @@ Coupon$Query$CouponType$DiscountDtoType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$Coupon$Query$CouponType$DiscountDtoTypeToJson(
-    Coupon$Query$CouponType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+        Coupon$Query$CouponType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 Coupon$Query$CouponType _$Coupon$Query$CouponTypeFromJson(
         Map<String, dynamic> json) =>
@@ -3333,27 +2667,18 @@ Coupon$Query$CouponType _$Coupon$Query$CouponTypeFromJson(
               json['discount'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Coupon$Query$CouponTypeToJson(
-    Coupon$Query$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+        Coupon$Query$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 Coupon$Query _$Coupon$QueryFromJson(Map<String, dynamic> json) => Coupon$Query()
   ..coupon =
@@ -3375,22 +2700,14 @@ IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PhoneType
 
 Map<String, dynamic>
     _$IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PhoneTypeToJson(
-        IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PictureType
     _$IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PictureTypeFromJson(
@@ -3406,25 +2723,17 @@ IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PictureType
 
 Map<String, dynamic>
     _$IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PictureTypeToJson(
-        IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 IsCouponValid$Query$IsCouponValidType$CouponType$UserType
     _$IsCouponValid$Query$IsCouponValidType$CouponType$UserTypeFromJson(
@@ -3446,28 +2755,19 @@ IsCouponValid$Query$IsCouponValidType$CouponType$UserType
               : IsCouponValid$Query$IsCouponValidType$CouponType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$IsCouponValid$Query$IsCouponValidType$CouponType$UserTypeToJson(
-        IsCouponValid$Query$IsCouponValidType$CouponType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$IsCouponValid$Query$IsCouponValidType$CouponType$UserTypeToJson(
+        IsCouponValid$Query$IsCouponValidType$CouponType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 IsCouponValid$Query$IsCouponValidType$CouponType$DiscountDtoType
     _$IsCouponValid$Query$IsCouponValidType$CouponType$DiscountDtoTypeFromJson(
@@ -3480,20 +2780,12 @@ IsCouponValid$Query$IsCouponValidType$CouponType$DiscountDtoType
 
 Map<String, dynamic>
     _$IsCouponValid$Query$IsCouponValidType$CouponType$DiscountDtoTypeToJson(
-        IsCouponValid$Query$IsCouponValidType$CouponType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            IsCouponValid$Query$IsCouponValidType$CouponType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 IsCouponValid$Query$IsCouponValidType$CouponType
     _$IsCouponValid$Query$IsCouponValidType$CouponTypeFromJson(
@@ -3519,27 +2811,18 @@ IsCouponValid$Query$IsCouponValidType$CouponType
                   .fromJson(json['discount'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$IsCouponValid$Query$IsCouponValidType$CouponTypeToJson(
-    IsCouponValid$Query$IsCouponValidType$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+        IsCouponValid$Query$IsCouponValidType$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 IsCouponValid$Query$IsCouponValidType
     _$IsCouponValid$Query$IsCouponValidTypeFromJson(
@@ -3552,20 +2835,11 @@ IsCouponValid$Query$IsCouponValidType
                   json['coupon'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$IsCouponValid$Query$IsCouponValidTypeToJson(
-    IsCouponValid$Query$IsCouponValidType instance) {
-  final val = <String, dynamic>{
-    'isValid': instance.isValid,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('coupon', instance.coupon?.toJson());
-  return val;
-}
+        IsCouponValid$Query$IsCouponValidType instance) =>
+    <String, dynamic>{
+      'isValid': instance.isValid,
+      'coupon': instance.coupon?.toJson(),
+    };
 
 IsCouponValid$Query _$IsCouponValid$QueryFromJson(Map<String, dynamic> json) =>
     IsCouponValid$Query()
@@ -3586,21 +2860,13 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
+    <String, dynamic>{
+      'pos': instance.pos,
+      'wholesaler': instance.wholesaler,
+      'manufacturer': instance.manufacturer,
+      'user': instance.user,
+    };
 
 GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PhoneType
     _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PhoneTypeFromJson(
@@ -3613,22 +2879,14 @@ GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PhoneTypeToJson(
-        GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PictureType
     _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PictureTypeFromJson(
@@ -3644,25 +2902,17 @@ GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PictureTypeToJson(
-        GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType
     _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserTypeFromJson(
@@ -3686,27 +2936,18 @@ GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType
 
 Map<String, dynamic>
     _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserTypeToJson(
-        GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoType
     _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoTypeFromJson(
@@ -3719,20 +2960,12 @@ GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoType
 
 Map<String, dynamic>
     _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoTypeToJson(
-        GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 GetPaginatedCoupons$Query$PaginatedCouponType$CouponType
     _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponTypeFromJson(
@@ -3757,29 +2990,20 @@ GetPaginatedCoupons$Query$PaginatedCouponType$CouponType
               : GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoType
                   .fromJson(json['discount'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponTypeToJson(
-        GetPaginatedCoupons$Query$PaginatedCouponType$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponTypeToJson(
+        GetPaginatedCoupons$Query$PaginatedCouponType$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 GetPaginatedCoupons$Query$PaginatedCouponType
     _$GetPaginatedCoupons$Query$PaginatedCouponTypeFromJson(
@@ -3794,20 +3018,12 @@ GetPaginatedCoupons$Query$PaginatedCouponType
               .toList();
 
 Map<String, dynamic> _$GetPaginatedCoupons$Query$PaginatedCouponTypeToJson(
-    GetPaginatedCoupons$Query$PaginatedCouponType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+        GetPaginatedCoupons$Query$PaginatedCouponType instance) =>
+    <String, dynamic>{
+      'count': instance.count,
+      'isLast': instance.isLast,
+      'objects': instance.objects.map((e) => e.toJson()).toList(),
+    };
 
 GetPaginatedCoupons$Query _$GetPaginatedCoupons$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -3828,19 +3044,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 FindCouponsByTarget$Query$CouponType$UserType$PhoneType
     _$FindCouponsByTarget$Query$CouponType$UserType$PhoneTypeFromJson(
@@ -3853,21 +3061,13 @@ FindCouponsByTarget$Query$CouponType$UserType$PhoneType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$PhoneTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$PhoneType instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$PictureTypeFromJson(
@@ -3881,26 +3081,18 @@ FindCouponsByTarget$Query$CouponType$UserType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String, dynamic>
-    _$FindCouponsByTarget$Query$CouponType$UserType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+Map<String,
+    dynamic> _$FindCouponsByTarget$Query$CouponType$UserType$PictureTypeToJson(
+        FindCouponsByTarget$Query$CouponType$UserType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+    };
 
 FindCouponsByTarget$Query$CouponType$UserType$LanguageType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$LanguageType$PictureTypeFromJson(
@@ -3916,25 +3108,17 @@ FindCouponsByTarget$Query$CouponType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$LanguageType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$LanguageType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$LanguageType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$LanguageType
     _$FindCouponsByTarget$Query$CouponType$UserType$LanguageTypeFromJson(
@@ -3955,28 +3139,19 @@ FindCouponsByTarget$Query$CouponType$UserType$LanguageType
               : FindCouponsByTarget$Query$CouponType$UserType$LanguageType$PictureType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$FindCouponsByTarget$Query$CouponType$UserType$LanguageTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$LanguageType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$FindCouponsByTarget$Query$CouponType$UserType$LanguageTypeToJson(
+        FindCouponsByTarget$Query$CouponType$UserType$LanguageType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'code': instance.code,
+      'iconFlag': instance.iconFlag,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 FindCouponsByTarget$Query$CouponType$UserType$CountryType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$CountryType$PictureTypeFromJson(
@@ -3992,25 +3167,17 @@ FindCouponsByTarget$Query$CouponType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$CountryType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$CountryType
     _$FindCouponsByTarget$Query$CouponType$UserType$CountryTypeFromJson(
@@ -4032,29 +3199,20 @@ FindCouponsByTarget$Query$CouponType$UserType$CountryType
               : FindCouponsByTarget$Query$CouponType$UserType$CountryType$PictureType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$FindCouponsByTarget$Query$CouponType$UserType$CountryTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$CountryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$FindCouponsByTarget$Query$CouponType$UserType$CountryTypeToJson(
+        FindCouponsByTarget$Query$CouponType$UserType$CountryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'code': instance.code,
+      'dialCode': instance.dialCode,
+      'iconFlag': instance.iconFlag,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'flagSquare': instance.flagSquare?.toJson(),
+      'flagWide': instance.flagWide?.toJson(),
+    };
 
 FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatType
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -4067,20 +3225,12 @@ FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('coordinates', instance.coordinates);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type,
+          'coordinates': instance.coordinates,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -4096,25 +3246,17 @@ FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType$Pictur
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryTypeFromJson(
@@ -4138,28 +3280,19 @@ FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -4175,25 +3308,17 @@ FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryT
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryType
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -4217,28 +3342,19 @@ FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryT
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -4254,25 +3370,17 @@ FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$PictureT
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateTypeFromJson(
@@ -4305,32 +3413,23 @@ FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$StateType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'adminName': instance.adminName,
+          'capital': _$StateCapitalEnumEnumMap[instance.capital],
+          'population': instance.population,
+          'ascii': instance.ascii,
+          'lat': instance.lat,
+          'lng': instance.lng,
+          'country': instance.country?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -4341,20 +3440,12 @@ FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTy
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('countryCode', instance.countryCode);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'countryCode': instance.countryCode,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -4368,20 +3459,12 @@ FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTy
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('phone', instance.phone?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'phone': instance.phone?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$FullAddressType
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressTypeFromJson(
@@ -4410,26 +3493,18 @@ FindCouponsByTarget$Query$CouponType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$FullAddressType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('city', instance.city);
-  writeNotNull('address', instance.address);
-  writeNotNull('postCode', instance.postCode);
-  writeNotNull('addressLine', instance.addressLine);
-  writeNotNull('location', instance.location?.toJson());
-  writeNotNull('country', instance.country?.toJson());
-  writeNotNull('state', instance.state?.toJson());
-  writeNotNull('owner', instance.owner?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$FullAddressType
+                instance) =>
+        <String, dynamic>{
+          'city': instance.city,
+          'address': instance.address,
+          'postCode': instance.postCode,
+          'addressLine': instance.addressLine,
+          'location': instance.location?.toJson(),
+          'country': instance.country?.toJson(),
+          'state': instance.state?.toJson(),
+          'owner': instance.owner?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -4445,25 +3520,17 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialI
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -4492,23 +3559,15 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialI
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('size48', instance.size48?.toJson());
-  writeNotNull('size96', instance.size96?.toJson());
-  writeNotNull('size144', instance.size144?.toJson());
-  writeNotNull('size240', instance.size240?.toJson());
-  writeNotNull('size480', instance.size480?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                instance) =>
+        <String, dynamic>{
+          'size48': instance.size48?.toJson(),
+          'size96': instance.size96?.toJson(),
+          'size144': instance.size144?.toJson(),
+          'size240': instance.size240?.toJson(),
+          'size480': instance.size480?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -4525,20 +3584,12 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialI
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('svg', instance.svg?.toJson());
-  writeNotNull('png', instance.png?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+                instance) =>
+        <String, dynamic>{
+          'svg': instance.svg?.toJson(),
+          'png': instance.png?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -4554,21 +3605,12 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialI
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
-            instance) {
-  final val = <String, dynamic>{
-    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
+                instance) =>
+        <String, dynamic>{
+          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+          'images': instance.images?.map((e) => e.toJson()).toList(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialTypeFromJson(
@@ -4588,26 +3630,17 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('fontIcon', instance.fontIcon);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialValueType$SocialType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'fontIcon': instance.fontIcon,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'images': instance.images?.map((e) => e.toJson()).toList(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialValueType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueTypeFromJson(
@@ -4621,20 +3654,12 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialValueTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialValueType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialValueType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name?.toJson(),
+          'value': instance.value,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -4644,19 +3669,11 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTyp
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -4671,25 +3688,16 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTy
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  val['token'] = instance.token;
-  val['email'] = instance.email;
-  writeNotNull('last_name', instance.lastName);
-  writeNotNull('first_name', instance.firstName);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'token': instance.token,
+          'email': instance.email,
+          'last_name': instance.lastName,
+          'first_name': instance.firstName,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -4707,28 +3715,19 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
-            instance) {
-  final val = <String, dynamic>{
-    'sub': instance.sub,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  val['email'] = instance.email;
-  val['token'] = instance.token;
-  writeNotNull('locale', instance.locale);
-  writeNotNull('picture', instance.picture);
-  writeNotNull('given_name', instance.givenName);
-  writeNotNull('family_name', instance.familyName);
-  writeNotNull('email_verified', instance.emailVerified);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
+                instance) =>
+        <String, dynamic>{
+          'sub': instance.sub,
+          'name': instance.name,
+          'email': instance.email,
+          'token': instance.token,
+          'locale': instance.locale,
+          'picture': instance.picture,
+          'given_name': instance.givenName,
+          'family_name': instance.familyName,
+          'email_verified': instance.emailVerified,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -4744,25 +3743,17 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('status', instance.status);
-  writeNotNull('givenName', instance.givenName);
-  writeNotNull('familyName', instance.familyName);
-  val['identityToken'] = instance.identityToken;
-  writeNotNull('userIdentifier', instance.userIdentifier);
-  writeNotNull('authorizationCode', instance.authorizationCode);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
+                instance) =>
+        <String, dynamic>{
+          'email': instance.email,
+          'status': instance.status,
+          'givenName': instance.givenName,
+          'familyName': instance.familyName,
+          'identityToken': instance.identityToken,
+          'userIdentifier': instance.userIdentifier,
+          'authorizationCode': instance.authorizationCode,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataTypeFromJson(
@@ -4787,22 +3778,14 @@ FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ooredoo', instance.ooredoo?.toJson());
-  writeNotNull('facebook', instance.facebook?.toJson());
-  writeNotNull('google', instance.google?.toJson());
-  writeNotNull('apple', instance.apple?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$SocialLoginDataType
+                instance) =>
+        <String, dynamic>{
+          'ooredoo': instance.ooredoo?.toJson(),
+          'facebook': instance.facebook?.toJson(),
+          'google': instance.google?.toJson(),
+          'apple': instance.apple?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$UserEducationType
     _$FindCouponsByTarget$Query$CouponType$UserType$UserEducationTypeFromJson(
@@ -4823,25 +3806,17 @@ FindCouponsByTarget$Query$CouponType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$UserEducationTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$UserEducationType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('graduated', instance.graduated);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$UserEducationType
+                instance) =>
+        <String, dynamic>{
+          'level': _$AcademicLevelEnumMap[instance.level],
+          'name': instance.name,
+          'description': instance.description,
+          'tags': instance.tags,
+          'from': instance.from?.toIso8601String(),
+          'to': instance.to?.toIso8601String(),
+          'graduated': instance.graduated,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -4857,25 +3832,17 @@ FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType
     _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -4899,28 +3866,19 @@ FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -4936,25 +3894,17 @@ FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType
     _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateTypeFromJson(
@@ -4987,32 +3937,23 @@ FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$UserWorkType$StateType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'adminName': instance.adminName,
+          'capital': _$StateCapitalEnumEnumMap[instance.capital],
+          'population': instance.population,
+          'ascii': instance.ascii,
+          'lat': instance.lat,
+          'lng': instance.lng,
+          'country': instance.country?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$UserWorkType
     _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkTypeFromJson(
@@ -5034,27 +3975,19 @@ FindCouponsByTarget$Query$CouponType$UserType$UserWorkType
               json['to'] == null ? null : DateTime.parse(json['to'] as String)
           ..current = json['current'] as bool?;
 
-Map<String, dynamic>
-    _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$UserWorkType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('company', instance.company);
-  writeNotNull('position', instance.position);
-  writeNotNull('description', instance.description);
-  writeNotNull('city', instance.city?.toJson());
-  writeNotNull('tags', instance.tags);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('current', instance.current);
-  return val;
-}
+Map<String,
+    dynamic> _$FindCouponsByTarget$Query$CouponType$UserType$UserWorkTypeToJson(
+        FindCouponsByTarget$Query$CouponType$UserType$UserWorkType instance) =>
+    <String, dynamic>{
+      'company': instance.company,
+      'position': instance.position,
+      'description': instance.description,
+      'city': instance.city?.toJson(),
+      'tags': instance.tags,
+      'from': instance.from?.toIso8601String(),
+      'to': instance.to?.toIso8601String(),
+      'current': instance.current,
+    };
 
 FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -5070,25 +4003,17 @@ FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType
     _$FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryTypeFromJson(
@@ -5112,28 +4037,19 @@ FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$StateType$PictureType
     _$FindCouponsByTarget$Query$CouponType$UserType$StateType$PictureTypeFromJson(
@@ -5149,25 +4065,17 @@ FindCouponsByTarget$Query$CouponType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$StateType$PictureTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType$StateType
     _$FindCouponsByTarget$Query$CouponType$UserType$StateTypeFromJson(
@@ -5200,31 +4108,22 @@ FindCouponsByTarget$Query$CouponType$UserType$StateType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$UserType$StateTypeToJson(
-        FindCouponsByTarget$Query$CouponType$UserType$StateType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$UserType$StateType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'adminName': instance.adminName,
+          'capital': _$StateCapitalEnumEnumMap[instance.capital],
+          'population': instance.population,
+          'ascii': instance.ascii,
+          'lat': instance.lat,
+          'lng': instance.lng,
+          'country': instance.country?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponsByTarget$Query$CouponType$UserType
     _$FindCouponsByTarget$Query$CouponType$UserTypeFromJson(
@@ -5343,66 +4242,52 @@ FindCouponsByTarget$Query$CouponType$UserType
               .toList();
 
 Map<String, dynamic> _$FindCouponsByTarget$Query$CouponType$UserTypeToJson(
-    FindCouponsByTarget$Query$CouponType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
-  writeNotNull('email', instance.email);
-  writeNotNull(
-      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
-  writeNotNull('title', instance.title);
-  writeNotNull('about', instance.about);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('locale', instance.locale);
-  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
-  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('plugged', instance.plugged);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isMailValid', instance.isMailValid);
-  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
-  writeNotNull('phoneNumber', instance.phoneNumber);
-  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
-  writeNotNull('placeOfBirth', instance.placeOfBirth);
-  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
-  writeNotNull('newsletterSubs', instance.newsletterSubs);
-  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'languages', instance.languages?.map((e) => e.toJson()).toList());
-  writeNotNull('nationality', instance.nationality?.toJson());
-  writeNotNull('billingAddress',
-      instance.billingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('shippingAddress',
-      instance.shippingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('residentialAddress',
-      instance.residentialAddress?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
-  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
-  writeNotNull(
-      'education', instance.education?.map((e) => e.toJson()).toList());
-  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
-  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
-  writeNotNull('hobbies', instance.hobbies);
-  writeNotNull('interests', instance.interests);
-  return val;
-}
+        FindCouponsByTarget$Query$CouponType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
+      'email': instance.email,
+      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
+      'title': instance.title,
+      'about': instance.about,
+      'gender': _$GenderEnumMap[instance.gender],
+      'locale': instance.locale,
+      'source': _$SourcesEnumEnumMap[instance.source],
+      'status': _$UserStatusEnumMap[instance.status],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'plugged': instance.plugged,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'isMailValid': instance.isMailValid,
+      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
+      'phoneNumber': instance.phoneNumber,
+      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
+      'placeOfBirth': instance.placeOfBirth,
+      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
+      'newsletterSubs': instance.newsletterSubs,
+      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'languages': instance.languages?.map((e) => e.toJson()).toList(),
+      'nationality': instance.nationality?.toJson(),
+      'billingAddress':
+          instance.billingAddress?.map((e) => e.toJson()).toList(),
+      'shippingAddress':
+          instance.shippingAddress?.map((e) => e.toJson()).toList(),
+      'residentialAddress':
+          instance.residentialAddress?.map((e) => e.toJson()).toList(),
+      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
+      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
+      'socialLoginData': instance.socialLoginData?.toJson(),
+      'education': instance.education?.map((e) => e.toJson()).toList(),
+      'work': instance.work?.map((e) => e.toJson()).toList(),
+      'lived': instance.lived?.map((e) => e.toJson()).toList(),
+      'hobbies': instance.hobbies,
+      'interests': instance.interests,
+    };
 
 FindCouponsByTarget$Query$CouponType$DiscountDtoType
     _$FindCouponsByTarget$Query$CouponType$DiscountDtoTypeFromJson(
@@ -5415,19 +4300,11 @@ FindCouponsByTarget$Query$CouponType$DiscountDtoType
 
 Map<String, dynamic>
     _$FindCouponsByTarget$Query$CouponType$DiscountDtoTypeToJson(
-        FindCouponsByTarget$Query$CouponType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            FindCouponsByTarget$Query$CouponType$DiscountDtoType instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 FindCouponsByTarget$Query$CouponType
     _$FindCouponsByTarget$Query$CouponTypeFromJson(Map<String, dynamic> json) =>
@@ -5452,27 +4329,18 @@ FindCouponsByTarget$Query$CouponType
                   json['discount'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$FindCouponsByTarget$Query$CouponTypeToJson(
-    FindCouponsByTarget$Query$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+        FindCouponsByTarget$Query$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 FindCouponsByTarget$Query _$FindCouponsByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -5500,22 +4368,14 @@ FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$User
 
 Map<String, dynamic>
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType$PhoneTypeToJson(
-        FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType$PictureType
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType$PictureTypeFromJson(
@@ -5531,25 +4391,17 @@ FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$User
 
 Map<String, dynamic>
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType$PictureTypeToJson(
-        FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserTypeFromJson(
@@ -5573,27 +4425,18 @@ FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$User
 
 Map<String, dynamic>
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserTypeToJson(
-        FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'email': instance.email,
+          'gender': _$GenderEnumMap[instance.gender],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+        };
 
 FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$DiscountDtoType
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$DiscountDtoTypeFromJson(
@@ -5606,20 +4449,12 @@ FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$Disc
 
 Map<String, dynamic>
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$DiscountDtoTypeToJson(
-        FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$DiscountDtoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$DiscountDtoType
+                instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTypeFromJson(
@@ -5646,28 +4481,19 @@ FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType
 
 Map<String, dynamic>
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTypeToJson(
-        FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+            FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'to': instance.to?.toIso8601String(),
+          'from': instance.from?.toIso8601String(),
+          'redeemed': instance.redeemed,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'couponCode': instance.couponCode,
+          'user': instance.user?.toJson(),
+          'discount': instance.discount?.toJson(),
+        };
 
 FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponTypeFromJson(
@@ -5683,21 +4509,13 @@ FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType
 
 Map<String, dynamic>
     _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponTypeToJson(
-        FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType
+                instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 FindCouponsByTargetWithFilterPaginated$Query
     _$FindCouponsByTargetWithFilterPaginated$QueryFromJson(
@@ -5725,21 +4543,13 @@ CouponFilterInput _$CouponFilterInputFromJson(Map<String, dynamic> json) =>
       couponCode: json['couponCode'] as String?,
     );
 
-Map<String, dynamic> _$CouponFilterInputToJson(CouponFilterInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  writeNotNull('expired', instance.expired);
-  writeNotNull('redeemed', instance.redeemed);
-  writeNotNull('couponCode', instance.couponCode);
-  return val;
-}
+Map<String, dynamic> _$CouponFilterInputToJson(CouponFilterInput instance) =>
+    <String, dynamic>{
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+      'expired': instance.expired,
+      'redeemed': instance.redeemed,
+      'couponCode': instance.couponCode,
+    };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$PhoneType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$PhoneTypeFromJson(
@@ -5752,22 +4562,14 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$PhoneType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$PhoneTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$PhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$PhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$PictureTypeFromJson(
@@ -5783,25 +4585,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$PictureType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType$PictureTypeFromJson(
@@ -5817,25 +4611,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageTypeFromJson(
@@ -5858,27 +4644,18 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType$PictureTypeFromJson(
@@ -5894,25 +4671,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$CountryTypeFromJson(
@@ -5936,28 +4705,19 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$CountryTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLatType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -5970,20 +4730,12 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLatTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLatType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('type', instance.type);
-  writeNotNull('coordinates', instance.coordinates);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLatType
+                instance) =>
+        <String, dynamic>{
+          'type': instance.type,
+          'coordinates': instance.coordinates,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -5999,25 +4751,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType$
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryTypeFromJson(
@@ -6041,28 +4785,19 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -6078,25 +4813,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$Co
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -6120,28 +4847,19 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$Co
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -6157,25 +4875,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$Pi
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateTypeFromJson(
@@ -6208,32 +4918,23 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$StateType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'adminName': instance.adminName,
+          'capital': _$StateCapitalEnumEnumMap[instance.capital],
+          'population': instance.population,
+          'ascii': instance.ascii,
+          'lat': instance.lat,
+          'lng': instance.lng,
+          'country': instance.country?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -6244,20 +4945,12 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressO
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('countryCode', instance.countryCode);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'countryCode': instance.countryCode,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -6271,20 +4964,12 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressO
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('phone', instance.phone?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$FullAddressOwnerType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'phone': instance.phone?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressTypeFromJson(
@@ -6313,26 +4998,18 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('city', instance.city);
-  writeNotNull('address', instance.address);
-  writeNotNull('postCode', instance.postCode);
-  writeNotNull('addressLine', instance.addressLine);
-  writeNotNull('location', instance.location?.toJson());
-  writeNotNull('country', instance.country?.toJson());
-  writeNotNull('state', instance.state?.toJson());
-  writeNotNull('owner', instance.owner?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType
+                instance) =>
+        <String, dynamic>{
+          'city': instance.city,
+          'address': instance.address,
+          'postCode': instance.postCode,
+          'addressLine': instance.addressLine,
+          'location': instance.location?.toJson(),
+          'country': instance.country?.toJson(),
+          'state': instance.state?.toJson(),
+          'owner': instance.owner?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -6348,25 +5025,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$S
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -6395,23 +5064,15 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$S
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('size48', instance.size48?.toJson());
-  writeNotNull('size96', instance.size96?.toJson());
-  writeNotNull('size144', instance.size144?.toJson());
-  writeNotNull('size240', instance.size240?.toJson());
-  writeNotNull('size480', instance.size480?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                instance) =>
+        <String, dynamic>{
+          'size48': instance.size48?.toJson(),
+          'size96': instance.size96?.toJson(),
+          'size144': instance.size144?.toJson(),
+          'size240': instance.size240?.toJson(),
+          'size480': instance.size480?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -6428,20 +5089,12 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$S
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('svg', instance.svg?.toJson());
-  writeNotNull('png', instance.png?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+                instance) =>
+        <String, dynamic>{
+          'svg': instance.svg?.toJson(),
+          'png': instance.png?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -6457,21 +5110,12 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$S
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
-            instance) {
-  final val = <String, dynamic>{
-    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType$SocialImagesType
+                instance) =>
+        <String, dynamic>{
+          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+          'images': instance.images?.map((e) => e.toJson()).toList(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialTypeFromJson(
@@ -6491,26 +5135,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('fontIcon', instance.fontIcon);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType$SocialType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'fontIcon': instance.fontIcon,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'images': instance.images?.map((e) => e.toJson()).toList(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueTypeFromJson(
@@ -6524,20 +5159,12 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialValueType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name?.toJson(),
+          'value': instance.value,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -6547,19 +5174,11 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$OoredooD
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$OoredooDataType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -6574,25 +5193,16 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$Facebook
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  val['token'] = instance.token;
-  val['email'] = instance.email;
-  writeNotNull('last_name', instance.lastName);
-  writeNotNull('first_name', instance.firstName);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$FacebookDataType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'token': instance.token,
+          'email': instance.email,
+          'last_name': instance.lastName,
+          'first_name': instance.firstName,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -6610,28 +5220,19 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$GoogleDa
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
-            instance) {
-  final val = <String, dynamic>{
-    'sub': instance.sub,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  val['email'] = instance.email;
-  val['token'] = instance.token;
-  writeNotNull('locale', instance.locale);
-  writeNotNull('picture', instance.picture);
-  writeNotNull('given_name', instance.givenName);
-  writeNotNull('family_name', instance.familyName);
-  writeNotNull('email_verified', instance.emailVerified);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$GoogleDataType
+                instance) =>
+        <String, dynamic>{
+          'sub': instance.sub,
+          'name': instance.name,
+          'email': instance.email,
+          'token': instance.token,
+          'locale': instance.locale,
+          'picture': instance.picture,
+          'given_name': instance.givenName,
+          'family_name': instance.familyName,
+          'email_verified': instance.emailVerified,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -6647,25 +5248,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$AppleDat
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('status', instance.status);
-  writeNotNull('givenName', instance.givenName);
-  writeNotNull('familyName', instance.familyName);
-  val['identityToken'] = instance.identityToken;
-  writeNotNull('userIdentifier', instance.userIdentifier);
-  writeNotNull('authorizationCode', instance.authorizationCode);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType$AppleDataType
+                instance) =>
+        <String, dynamic>{
+          'email': instance.email,
+          'status': instance.status,
+          'givenName': instance.givenName,
+          'familyName': instance.familyName,
+          'identityToken': instance.identityToken,
+          'userIdentifier': instance.userIdentifier,
+          'authorizationCode': instance.authorizationCode,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataTypeFromJson(
@@ -6690,22 +5283,14 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('ooredoo', instance.ooredoo?.toJson());
-  writeNotNull('facebook', instance.facebook?.toJson());
-  writeNotNull('google', instance.google?.toJson());
-  writeNotNull('apple', instance.apple?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$SocialLoginDataType
+                instance) =>
+        <String, dynamic>{
+          'ooredoo': instance.ooredoo?.toJson(),
+          'facebook': instance.facebook?.toJson(),
+          'google': instance.google?.toJson(),
+          'apple': instance.apple?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$UserEducationType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserEducationTypeFromJson(
@@ -6726,25 +5311,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserEducationTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$UserEducationType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
-  writeNotNull('name', instance.name);
-  writeNotNull('description', instance.description);
-  writeNotNull('tags', instance.tags);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('graduated', instance.graduated);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$UserEducationType
+                instance) =>
+        <String, dynamic>{
+          'level': _$AcademicLevelEnumMap[instance.level],
+          'name': instance.name,
+          'description': instance.description,
+          'tags': instance.tags,
+          'from': instance.from?.toIso8601String(),
+          'to': instance.to?.toIso8601String(),
+          'graduated': instance.graduated,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -6760,25 +5337,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$Count
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -6802,28 +5371,19 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$Count
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -6839,25 +5399,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$Pictu
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateTypeFromJson(
@@ -6890,32 +5442,23 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType$StateType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'adminName': instance.adminName,
+          'capital': _$StateCapitalEnumEnumMap[instance.capital],
+          'population': instance.population,
+          'ascii': instance.ascii,
+          'lat': instance.lat,
+          'lng': instance.lng,
+          'country': instance.country?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkTypeFromJson(
@@ -6939,26 +5482,18 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('company', instance.company);
-  writeNotNull('position', instance.position);
-  writeNotNull('description', instance.description);
-  writeNotNull('city', instance.city?.toJson());
-  writeNotNull('tags', instance.tags);
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('current', instance.current);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$UserWorkType
+                instance) =>
+        <String, dynamic>{
+          'company': instance.company,
+          'position': instance.position,
+          'description': instance.description,
+          'city': instance.city?.toJson(),
+          'tags': instance.tags,
+          'from': instance.from?.toIso8601String(),
+          'to': instance.to?.toIso8601String(),
+          'current': instance.current,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -6974,25 +5509,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType$Pictur
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryTypeFromJson(
@@ -7016,28 +5543,19 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$PictureType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$PictureTypeFromJson(
@@ -7053,25 +5571,17 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$PictureTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$StateType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType$StateType
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateTypeFromJson(
@@ -7104,32 +5614,23 @@ FindCouponByTargetAndCode$Query$CouponType$UserType$StateType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserType$StateTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType$StateType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adminName', instance.adminName);
-  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
-  writeNotNull('population', instance.population);
-  writeNotNull('ascii', instance.ascii);
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  writeNotNull('country', instance.country?.toJson());
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType$StateType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'adminName': instance.adminName,
+          'capital': _$StateCapitalEnumEnumMap[instance.capital],
+          'population': instance.population,
+          'ascii': instance.ascii,
+          'lat': instance.lat,
+          'lng': instance.lng,
+          'country': instance.country?.toJson(),
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$UserType
     _$FindCouponByTargetAndCode$Query$CouponType$UserTypeFromJson(
@@ -7249,66 +5750,52 @@ FindCouponByTargetAndCode$Query$CouponType$UserType
 
 Map<String, dynamic>
     _$FindCouponByTargetAndCode$Query$CouponType$UserTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
-  writeNotNull('email', instance.email);
-  writeNotNull(
-      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
-  writeNotNull('title', instance.title);
-  writeNotNull('about', instance.about);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('locale', instance.locale);
-  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
-  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('plugged', instance.plugged);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('isMailValid', instance.isMailValid);
-  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
-  writeNotNull('phoneNumber', instance.phoneNumber);
-  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
-  writeNotNull('placeOfBirth', instance.placeOfBirth);
-  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
-  writeNotNull('newsletterSubs', instance.newsletterSubs);
-  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'languages', instance.languages?.map((e) => e.toJson()).toList());
-  writeNotNull('nationality', instance.nationality?.toJson());
-  writeNotNull('billingAddress',
-      instance.billingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('shippingAddress',
-      instance.shippingAddress?.map((e) => e.toJson()).toList());
-  writeNotNull('residentialAddress',
-      instance.residentialAddress?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
-  writeNotNull(
-      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
-  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
-  writeNotNull(
-      'education', instance.education?.map((e) => e.toJson()).toList());
-  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
-  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
-  writeNotNull('hobbies', instance.hobbies);
-  writeNotNull('interests', instance.interests);
-  return val;
-}
+            FindCouponByTargetAndCode$Query$CouponType$UserType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
+          'email': instance.email,
+          'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
+          'title': instance.title,
+          'about': instance.about,
+          'gender': _$GenderEnumMap[instance.gender],
+          'locale': instance.locale,
+          'source': _$SourcesEnumEnumMap[instance.source],
+          'status': _$UserStatusEnumMap[instance.status],
+          'lastName': instance.lastName,
+          'username': instance.username,
+          'firstName': instance.firstName,
+          'plugged': instance.plugged,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'isMailValid': instance.isMailValid,
+          'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
+          'phoneNumber': instance.phoneNumber,
+          'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
+          'placeOfBirth': instance.placeOfBirth,
+          'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
+          'newsletterSubs': instance.newsletterSubs,
+          'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
+          'phone': instance.phone?.toJson(),
+          'picture': instance.picture?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'languages': instance.languages?.map((e) => e.toJson()).toList(),
+          'nationality': instance.nationality?.toJson(),
+          'billingAddress':
+              instance.billingAddress?.map((e) => e.toJson()).toList(),
+          'shippingAddress':
+              instance.shippingAddress?.map((e) => e.toJson()).toList(),
+          'residentialAddress':
+              instance.residentialAddress?.map((e) => e.toJson()).toList(),
+          'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
+          'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
+          'socialLoginData': instance.socialLoginData?.toJson(),
+          'education': instance.education?.map((e) => e.toJson()).toList(),
+          'work': instance.work?.map((e) => e.toJson()).toList(),
+          'lived': instance.lived?.map((e) => e.toJson()).toList(),
+          'hobbies': instance.hobbies,
+          'interests': instance.interests,
+        };
 
 FindCouponByTargetAndCode$Query$CouponType$DiscountDtoType
     _$FindCouponByTargetAndCode$Query$CouponType$DiscountDtoTypeFromJson(
@@ -7319,21 +5806,13 @@ FindCouponByTargetAndCode$Query$CouponType$DiscountDtoType
               _$DiscountTypeEnumMap, json['discountType'],
               unknownValue: DiscountType.artemisUnknown);
 
-Map<String, dynamic>
-    _$FindCouponByTargetAndCode$Query$CouponType$DiscountDtoTypeToJson(
-        FindCouponByTargetAndCode$Query$CouponType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+Map<String,
+    dynamic> _$FindCouponByTargetAndCode$Query$CouponType$DiscountDtoTypeToJson(
+        FindCouponByTargetAndCode$Query$CouponType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 FindCouponByTargetAndCode$Query$CouponType
     _$FindCouponByTargetAndCode$Query$CouponTypeFromJson(
@@ -7359,27 +5838,18 @@ FindCouponByTargetAndCode$Query$CouponType
                   .fromJson(json['discount'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$FindCouponByTargetAndCode$Query$CouponTypeToJson(
-    FindCouponByTargetAndCode$Query$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+        FindCouponByTargetAndCode$Query$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 FindCouponByTargetAndCode$Query _$FindCouponByTargetAndCode$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -7401,18 +5871,10 @@ GetCouponsByExcel$Query$InvoicePDFType
           ..content = json['content'] as String?;
 
 Map<String, dynamic> _$GetCouponsByExcel$Query$InvoicePDFTypeToJson(
-    GetCouponsByExcel$Query$InvoicePDFType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('content', instance.content);
-  return val;
-}
+        GetCouponsByExcel$Query$InvoicePDFType instance) =>
+    <String, dynamic>{
+      'content': instance.content,
+    };
 
 GetCouponsByExcel$Query _$GetCouponsByExcel$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -7477,21 +5939,13 @@ CreateCoupon$Mutation$CouponType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateCoupon$Mutation$CouponType$UserType$PhoneTypeToJson(
-        CreateCoupon$Mutation$CouponType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            CreateCoupon$Mutation$CouponType$UserType$PhoneType instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 CreateCoupon$Mutation$CouponType$UserType$PictureType
     _$CreateCoupon$Mutation$CouponType$UserType$PictureTypeFromJson(
@@ -7507,24 +5961,16 @@ CreateCoupon$Mutation$CouponType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateCoupon$Mutation$CouponType$UserType$PictureTypeToJson(
-        CreateCoupon$Mutation$CouponType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            CreateCoupon$Mutation$CouponType$UserType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 CreateCoupon$Mutation$CouponType$UserType
     _$CreateCoupon$Mutation$CouponType$UserTypeFromJson(
@@ -7547,26 +5993,17 @@ CreateCoupon$Mutation$CouponType$UserType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateCoupon$Mutation$CouponType$UserTypeToJson(
-    CreateCoupon$Mutation$CouponType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        CreateCoupon$Mutation$CouponType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 CreateCoupon$Mutation$CouponType$DiscountDtoType
     _$CreateCoupon$Mutation$CouponType$DiscountDtoTypeFromJson(
@@ -7578,19 +6015,11 @@ CreateCoupon$Mutation$CouponType$DiscountDtoType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$CreateCoupon$Mutation$CouponType$DiscountDtoTypeToJson(
-    CreateCoupon$Mutation$CouponType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+        CreateCoupon$Mutation$CouponType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 CreateCoupon$Mutation$CouponType _$CreateCoupon$Mutation$CouponTypeFromJson(
         Map<String, dynamic> json) =>
@@ -7613,27 +6042,18 @@ CreateCoupon$Mutation$CouponType _$CreateCoupon$Mutation$CouponTypeFromJson(
               json['discount'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateCoupon$Mutation$CouponTypeToJson(
-    CreateCoupon$Mutation$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+        CreateCoupon$Mutation$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 CreateCoupon$Mutation _$CreateCoupon$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -7656,22 +6076,13 @@ CouponInput _$CouponInputFromJson(Map<String, dynamic> json) => CouponInput(
       to: json['to'] == null ? null : DateTime.parse(json['to'] as String),
     );
 
-Map<String, dynamic> _$CouponInputToJson(CouponInput instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-    'discount': instance.discount.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  return val;
-}
+Map<String, dynamic> _$CouponInputToJson(CouponInput instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'discount': instance.discount.toJson(),
+      'from': instance.from?.toIso8601String(),
+      'to': instance.to?.toIso8601String(),
+    };
 
 DiscountDtoInput _$DiscountDtoInputFromJson(Map<String, dynamic> json) =>
     DiscountDtoInput(
@@ -7680,20 +6091,11 @@ DiscountDtoInput _$DiscountDtoInputFromJson(Map<String, dynamic> json) =>
       amount: json['amount'] as String?,
     );
 
-Map<String, dynamic> _$DiscountDtoInputToJson(DiscountDtoInput instance) {
-  final val = <String, dynamic>{
-    'discountType': _$DiscountTypeEnumMap[instance.discountType]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  return val;
-}
+Map<String, dynamic> _$DiscountDtoInputToJson(DiscountDtoInput instance) =>
+    <String, dynamic>{
+      'discountType': _$DiscountTypeEnumMap[instance.discountType]!,
+      'amount': instance.amount,
+    };
 
 UpdateCoupon$Mutation$CouponType$UserType$PhoneType
     _$UpdateCoupon$Mutation$CouponType$UserType$PhoneTypeFromJson(
@@ -7706,21 +6108,13 @@ UpdateCoupon$Mutation$CouponType$UserType$PhoneType
 
 Map<String, dynamic>
     _$UpdateCoupon$Mutation$CouponType$UserType$PhoneTypeToJson(
-        UpdateCoupon$Mutation$CouponType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            UpdateCoupon$Mutation$CouponType$UserType$PhoneType instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 UpdateCoupon$Mutation$CouponType$UserType$PictureType
     _$UpdateCoupon$Mutation$CouponType$UserType$PictureTypeFromJson(
@@ -7736,24 +6130,16 @@ UpdateCoupon$Mutation$CouponType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateCoupon$Mutation$CouponType$UserType$PictureTypeToJson(
-        UpdateCoupon$Mutation$CouponType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            UpdateCoupon$Mutation$CouponType$UserType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 UpdateCoupon$Mutation$CouponType$UserType
     _$UpdateCoupon$Mutation$CouponType$UserTypeFromJson(
@@ -7776,26 +6162,17 @@ UpdateCoupon$Mutation$CouponType$UserType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateCoupon$Mutation$CouponType$UserTypeToJson(
-    UpdateCoupon$Mutation$CouponType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        UpdateCoupon$Mutation$CouponType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 UpdateCoupon$Mutation$CouponType$DiscountDtoType
     _$UpdateCoupon$Mutation$CouponType$DiscountDtoTypeFromJson(
@@ -7807,19 +6184,11 @@ UpdateCoupon$Mutation$CouponType$DiscountDtoType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$UpdateCoupon$Mutation$CouponType$DiscountDtoTypeToJson(
-    UpdateCoupon$Mutation$CouponType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+        UpdateCoupon$Mutation$CouponType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 UpdateCoupon$Mutation$CouponType _$UpdateCoupon$Mutation$CouponTypeFromJson(
         Map<String, dynamic> json) =>
@@ -7842,27 +6211,18 @@ UpdateCoupon$Mutation$CouponType _$UpdateCoupon$Mutation$CouponTypeFromJson(
               json['discount'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateCoupon$Mutation$CouponTypeToJson(
-    UpdateCoupon$Mutation$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+        UpdateCoupon$Mutation$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 UpdateCoupon$Mutation _$UpdateCoupon$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -7886,20 +6246,12 @@ UpdateCouponInput _$UpdateCouponInputFromJson(Map<String, dynamic> json) =>
       to: json['to'] == null ? null : DateTime.parse(json['to'] as String),
     );
 
-Map<String, dynamic> _$UpdateCouponInputToJson(UpdateCouponInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('discount', instance.discount?.toJson());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  return val;
-}
+Map<String, dynamic> _$UpdateCouponInputToJson(UpdateCouponInput instance) =>
+    <String, dynamic>{
+      'discount': instance.discount?.toJson(),
+      'from': instance.from?.toIso8601String(),
+      'to': instance.to?.toIso8601String(),
+    };
 
 GenerateCoupons$Mutation$CouponType$UserType$PhoneType
     _$GenerateCoupons$Mutation$CouponType$UserType$PhoneTypeFromJson(
@@ -7912,21 +6264,13 @@ GenerateCoupons$Mutation$CouponType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GenerateCoupons$Mutation$CouponType$UserType$PhoneTypeToJson(
-        GenerateCoupons$Mutation$CouponType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            GenerateCoupons$Mutation$CouponType$UserType$PhoneType instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 GenerateCoupons$Mutation$CouponType$UserType$PictureType
     _$GenerateCoupons$Mutation$CouponType$UserType$PictureTypeFromJson(
@@ -7940,26 +6284,18 @@ GenerateCoupons$Mutation$CouponType$UserType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String, dynamic>
-    _$GenerateCoupons$Mutation$CouponType$UserType$PictureTypeToJson(
-        GenerateCoupons$Mutation$CouponType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+Map<String,
+    dynamic> _$GenerateCoupons$Mutation$CouponType$UserType$PictureTypeToJson(
+        GenerateCoupons$Mutation$CouponType$UserType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+    };
 
 GenerateCoupons$Mutation$CouponType$UserType
     _$GenerateCoupons$Mutation$CouponType$UserTypeFromJson(
@@ -7982,26 +6318,17 @@ GenerateCoupons$Mutation$CouponType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GenerateCoupons$Mutation$CouponType$UserTypeToJson(
-    GenerateCoupons$Mutation$CouponType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        GenerateCoupons$Mutation$CouponType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 GenerateCoupons$Mutation$CouponType$DiscountDtoType
     _$GenerateCoupons$Mutation$CouponType$DiscountDtoTypeFromJson(
@@ -8014,19 +6341,11 @@ GenerateCoupons$Mutation$CouponType$DiscountDtoType
 
 Map<String, dynamic>
     _$GenerateCoupons$Mutation$CouponType$DiscountDtoTypeToJson(
-        GenerateCoupons$Mutation$CouponType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+            GenerateCoupons$Mutation$CouponType$DiscountDtoType instance) =>
+        <String, dynamic>{
+          'amount': instance.amount,
+          'discountType': _$DiscountTypeEnumMap[instance.discountType],
+        };
 
 GenerateCoupons$Mutation$CouponType
     _$GenerateCoupons$Mutation$CouponTypeFromJson(Map<String, dynamic> json) =>
@@ -8051,27 +6370,18 @@ GenerateCoupons$Mutation$CouponType
                   json['discount'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GenerateCoupons$Mutation$CouponTypeToJson(
-    GenerateCoupons$Mutation$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+        GenerateCoupons$Mutation$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 GenerateCoupons$Mutation _$GenerateCoupons$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -8098,23 +6408,14 @@ CouponsInput _$CouponsInputFromJson(Map<String, dynamic> json) => CouponsInput(
       quantity: json['quantity'] as int,
     );
 
-Map<String, dynamic> _$CouponsInputToJson(CouponsInput instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-    'discount': instance.discount.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('to', instance.to?.toIso8601String());
-  val['quantity'] = instance.quantity;
-  return val;
-}
+Map<String, dynamic> _$CouponsInputToJson(CouponsInput instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'discount': instance.discount.toJson(),
+      'from': instance.from?.toIso8601String(),
+      'to': instance.to?.toIso8601String(),
+      'quantity': instance.quantity,
+    };
 
 RedeemCoupon$Mutation$CouponType$UserType$PhoneType
     _$RedeemCoupon$Mutation$CouponType$UserType$PhoneTypeFromJson(
@@ -8127,21 +6428,13 @@ RedeemCoupon$Mutation$CouponType$UserType$PhoneType
 
 Map<String, dynamic>
     _$RedeemCoupon$Mutation$CouponType$UserType$PhoneTypeToJson(
-        RedeemCoupon$Mutation$CouponType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            RedeemCoupon$Mutation$CouponType$UserType$PhoneType instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 RedeemCoupon$Mutation$CouponType$UserType$PictureType
     _$RedeemCoupon$Mutation$CouponType$UserType$PictureTypeFromJson(
@@ -8157,24 +6450,16 @@ RedeemCoupon$Mutation$CouponType$UserType$PictureType
 
 Map<String, dynamic>
     _$RedeemCoupon$Mutation$CouponType$UserType$PictureTypeToJson(
-        RedeemCoupon$Mutation$CouponType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            RedeemCoupon$Mutation$CouponType$UserType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 RedeemCoupon$Mutation$CouponType$UserType
     _$RedeemCoupon$Mutation$CouponType$UserTypeFromJson(
@@ -8197,26 +6482,17 @@ RedeemCoupon$Mutation$CouponType$UserType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$RedeemCoupon$Mutation$CouponType$UserTypeToJson(
-    RedeemCoupon$Mutation$CouponType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        RedeemCoupon$Mutation$CouponType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 RedeemCoupon$Mutation$CouponType$DiscountDtoType
     _$RedeemCoupon$Mutation$CouponType$DiscountDtoTypeFromJson(
@@ -8228,19 +6504,11 @@ RedeemCoupon$Mutation$CouponType$DiscountDtoType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$RedeemCoupon$Mutation$CouponType$DiscountDtoTypeToJson(
-    RedeemCoupon$Mutation$CouponType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+        RedeemCoupon$Mutation$CouponType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 RedeemCoupon$Mutation$CouponType _$RedeemCoupon$Mutation$CouponTypeFromJson(
         Map<String, dynamic> json) =>
@@ -8263,27 +6531,18 @@ RedeemCoupon$Mutation$CouponType _$RedeemCoupon$Mutation$CouponTypeFromJson(
               json['discount'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$RedeemCoupon$Mutation$CouponTypeToJson(
-    RedeemCoupon$Mutation$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+        RedeemCoupon$Mutation$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 RedeemCoupon$Mutation _$RedeemCoupon$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -8308,21 +6567,13 @@ DisableCoupon$Mutation$CouponType$UserType$PhoneType
 
 Map<String, dynamic>
     _$DisableCoupon$Mutation$CouponType$UserType$PhoneTypeToJson(
-        DisableCoupon$Mutation$CouponType$UserType$PhoneType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('number', instance.number);
-  writeNotNull('isValid', instance.isValid);
-  writeNotNull('countryCode', instance.countryCode);
-  writeNotNull('validationNumber', instance.validationNumber);
-  return val;
-}
+            DisableCoupon$Mutation$CouponType$UserType$PhoneType instance) =>
+        <String, dynamic>{
+          'number': instance.number,
+          'isValid': instance.isValid,
+          'countryCode': instance.countryCode,
+          'validationNumber': instance.validationNumber,
+        };
 
 DisableCoupon$Mutation$CouponType$UserType$PictureType
     _$DisableCoupon$Mutation$CouponType$UserType$PictureTypeFromJson(
@@ -8338,24 +6589,16 @@ DisableCoupon$Mutation$CouponType$UserType$PictureType
 
 Map<String, dynamic>
     _$DisableCoupon$Mutation$CouponType$UserType$PictureTypeToJson(
-        DisableCoupon$Mutation$CouponType$UserType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            DisableCoupon$Mutation$CouponType$UserType$PictureType instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 DisableCoupon$Mutation$CouponType$UserType
     _$DisableCoupon$Mutation$CouponType$UserTypeFromJson(
@@ -8378,26 +6621,17 @@ DisableCoupon$Mutation$CouponType$UserType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$DisableCoupon$Mutation$CouponType$UserTypeToJson(
-    DisableCoupon$Mutation$CouponType$UserType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('email', instance.email);
-  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
-  writeNotNull('lastName', instance.lastName);
-  writeNotNull('username', instance.username);
-  writeNotNull('firstName', instance.firstName);
-  writeNotNull('phone', instance.phone?.toJson());
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+        DisableCoupon$Mutation$CouponType$UserType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'email': instance.email,
+      'gender': _$GenderEnumMap[instance.gender],
+      'lastName': instance.lastName,
+      'username': instance.username,
+      'firstName': instance.firstName,
+      'phone': instance.phone?.toJson(),
+      'picture': instance.picture?.toJson(),
+    };
 
 DisableCoupon$Mutation$CouponType$DiscountDtoType
     _$DisableCoupon$Mutation$CouponType$DiscountDtoTypeFromJson(
@@ -8409,19 +6643,11 @@ DisableCoupon$Mutation$CouponType$DiscountDtoType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$DisableCoupon$Mutation$CouponType$DiscountDtoTypeToJson(
-    DisableCoupon$Mutation$CouponType$DiscountDtoType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('amount', instance.amount);
-  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
-  return val;
-}
+        DisableCoupon$Mutation$CouponType$DiscountDtoType instance) =>
+    <String, dynamic>{
+      'amount': instance.amount,
+      'discountType': _$DiscountTypeEnumMap[instance.discountType],
+    };
 
 DisableCoupon$Mutation$CouponType _$DisableCoupon$Mutation$CouponTypeFromJson(
         Map<String, dynamic> json) =>
@@ -8444,27 +6670,18 @@ DisableCoupon$Mutation$CouponType _$DisableCoupon$Mutation$CouponTypeFromJson(
               json['discount'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$DisableCoupon$Mutation$CouponTypeToJson(
-    DisableCoupon$Mutation$CouponType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('to', instance.to?.toIso8601String());
-  writeNotNull('from', instance.from?.toIso8601String());
-  writeNotNull('redeemed', instance.redeemed);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('couponCode', instance.couponCode);
-  writeNotNull('user', instance.user?.toJson());
-  writeNotNull('discount', instance.discount?.toJson());
-  return val;
-}
+        DisableCoupon$Mutation$CouponType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'to': instance.to?.toIso8601String(),
+      'from': instance.from?.toIso8601String(),
+      'redeemed': instance.redeemed,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'couponCode': instance.couponCode,
+      'user': instance.user?.toJson(),
+      'discount': instance.discount?.toJson(),
+    };
 
 DisableCoupon$Mutation _$DisableCoupon$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -8512,18 +6729,10 @@ GetPaginatedCouponsArguments _$GetPaginatedCouponsArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetPaginatedCouponsArgumentsToJson(
-    GetPaginatedCouponsArguments instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetPaginatedCouponsArguments instance) =>
+    <String, dynamic>{
+      'pagination': instance.pagination?.toJson(),
+    };
 
 FindCouponsByTargetArguments _$FindCouponsByTargetArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -8555,21 +6764,13 @@ FindCouponsByTargetWithFilterPaginatedArguments
         );
 
 Map<String, dynamic> _$FindCouponsByTargetWithFilterPaginatedArgumentsToJson(
-    FindCouponsByTargetWithFilterPaginatedArguments instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  writeNotNull('searchString', instance.searchString);
-  writeNotNull('filter', instance.filter?.toJson());
-  val['target'] = instance.target.toJson();
-  return val;
-}
+        FindCouponsByTargetWithFilterPaginatedArguments instance) =>
+    <String, dynamic>{
+      'pagination': instance.pagination?.toJson(),
+      'searchString': instance.searchString,
+      'filter': instance.filter?.toJson(),
+      'target': instance.target.toJson(),
+    };
 
 FindCouponByTargetAndCodeArguments _$FindCouponByTargetAndCodeArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -8597,22 +6798,13 @@ GetCouponsByExcelArguments _$GetCouponsByExcelArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetCouponsByExcelArgumentsToJson(
-    GetCouponsByExcelArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('filter', instance.filter?.toJson());
-  writeNotNull('searchString', instance.searchString);
-  writeNotNull('path', instance.path);
-  return val;
-}
+        GetCouponsByExcelArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'filter': instance.filter?.toJson(),
+      'searchString': instance.searchString,
+      'path': instance.path,
+    };
 
 SendCouponsBymailArguments _$SendCouponsBymailArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -8628,23 +6820,14 @@ SendCouponsBymailArguments _$SendCouponsBymailArgumentsFromJson(
     );
 
 Map<String, dynamic> _$SendCouponsBymailArgumentsToJson(
-    SendCouponsBymailArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('filter', instance.filter?.toJson());
-  writeNotNull('searchString', instance.searchString);
-  writeNotNull('emails', instance.emails);
-  val['subject'] = instance.subject;
-  return val;
-}
+        SendCouponsBymailArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'filter': instance.filter?.toJson(),
+      'searchString': instance.searchString,
+      'emails': instance.emails,
+      'subject': instance.subject,
+    };
 
 CreateCouponArguments _$CreateCouponArgumentsFromJson(
         Map<String, dynamic> json) =>

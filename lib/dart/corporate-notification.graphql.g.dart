@@ -19,24 +19,16 @@ SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$Corp
 
 Map<String, dynamic>
     _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeToJson(
-        SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType
     _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationTypeFromJson(
@@ -51,21 +43,13 @@ SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$Corp
 
 Map<String, dynamic>
     _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationTypeToJson(
-        SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('title', instance.title);
-  writeNotNull('description', instance.description);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType
+                instance) =>
+        <String, dynamic>{
+          'title': instance.title,
+          'description': instance.description,
+          'picture': instance.picture?.toJson(),
+        };
 
 SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType
     _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionTypeFromJson(
@@ -78,19 +62,11 @@ SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$Corp
 
 Map<String, dynamic>
     _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionTypeToJson(
-        SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adhocNotification', instance.adhocNotification?.toJson());
-  return val;
-}
+            SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType$CorporateActionType
+                instance) =>
+        <String, dynamic>{
+          'adhocNotification': instance.adhocNotification?.toJson(),
+        };
 
 SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType
     _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestTypeFromJson(
@@ -109,22 +85,14 @@ SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType
 
 Map<String, dynamic>
     _$SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestTypeToJson(
-        SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('event', _$EventTypeEnumEnumMap[instance.event]);
-  writeNotNull('executed', instance.executed);
-  writeNotNull('executedAt', instance.executedAt?.toIso8601String());
-  writeNotNull('action', instance.action?.toJson());
-  return val;
-}
+            SendAdhocCorporateNotificationTest$Query$AdhocCorporateNotificationTestType
+                instance) =>
+        <String, dynamic>{
+          'event': _$EventTypeEnumEnumMap[instance.event],
+          'executed': instance.executed,
+          'executedAt': instance.executedAt?.toIso8601String(),
+          'action': instance.action?.toJson(),
+        };
 
 const _$EventTypeEnumEnumMap = {
   EventTypeEnum.questFulfilled: 'QUEST_FULFILLED',
@@ -185,24 +153,15 @@ CorporateNotificationInput _$CorporateNotificationInputFromJson(
     );
 
 Map<String, dynamic> _$CorporateNotificationInputToJson(
-    CorporateNotificationInput instance) {
-  final val = <String, dynamic>{
-    'title': instance.title,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('userIds', instance.userIds);
-  val['description'] = instance.description;
-  writeNotNull('picture', instance.picture?.toJson());
-  val['target'] = instance.target.toJson();
-  writeNotNull('executedAt', instance.executedAt?.toIso8601String());
-  return val;
-}
+        CorporateNotificationInput instance) =>
+    <String, dynamic>{
+      'title': instance.title,
+      'userIds': instance.userIds,
+      'description': instance.description,
+      'picture': instance.picture?.toJson(),
+      'target': instance.target.toJson(),
+      'executedAt': instance.executedAt?.toIso8601String(),
+    };
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -214,24 +173,16 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  val['baseUrl'] = instance.baseUrl;
-  val['path'] = instance.path;
-  return val;
-}
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
+    <String, dynamic>{
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+    };
 
 TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
     TargetACIInput(
@@ -241,21 +192,13 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
+    <String, dynamic>{
+      'pos': instance.pos,
+      'wholesaler': instance.wholesaler,
+      'manufacturer': instance.manufacturer,
+      'user': instance.user,
+    };
 
 GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationType$PictureType
     _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeFromJson(
@@ -270,24 +213,16 @@ GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$Corporat
 
 Map<String, dynamic>
     _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeToJson(
-        GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationType
     _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationTypeFromJson(
@@ -302,21 +237,13 @@ GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$Corporat
 
 Map<String, dynamic>
     _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationTypeToJson(
-        GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('title', instance.title);
-  writeNotNull('description', instance.description);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType$AdhocCorporateNotificationType
+                instance) =>
+        <String, dynamic>{
+          'title': instance.title,
+          'description': instance.description,
+          'picture': instance.picture?.toJson(),
+        };
 
 GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType
     _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionTypeFromJson(
@@ -329,19 +256,11 @@ GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$Corporat
 
 Map<String, dynamic>
     _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionTypeToJson(
-        GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adhocNotification', instance.adhocNotification?.toJson());
-  return val;
-}
+            GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType$CorporateActionType
+                instance) =>
+        <String, dynamic>{
+          'adhocNotification': instance.adhocNotification?.toJson(),
+        };
 
 GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType
     _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationTypeFromJson(
@@ -362,25 +281,16 @@ GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$Corporat
 
 Map<String, dynamic>
     _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationTypeToJson(
-        GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('seen', instance.seen);
-  writeNotNull('event', _$EventTypeEnumEnumMap[instance.event]);
-  writeNotNull('executed', instance.executed);
-  writeNotNull('executedAt', instance.executedAt?.toIso8601String());
-  writeNotNull('action', instance.action?.toJson());
-  return val;
-}
+            GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType$CorporateNotificationType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'seen': instance.seen,
+          'event': _$EventTypeEnumEnumMap[instance.event],
+          'executed': instance.executed,
+          'executedAt': instance.executedAt?.toIso8601String(),
+          'action': instance.action?.toJson(),
+        };
 
 GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType
     _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateTypeFromJson(
@@ -396,21 +306,13 @@ GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType
 
 Map<String, dynamic>
     _$GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateTypeToJson(
-        GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            GetCorporateNotificationsByUser$Query$CorporateNotificationPaginateType
+                instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 GetCorporateNotificationsByUser$Query
     _$GetCorporateNotificationsByUser$QueryFromJson(
@@ -434,19 +336,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType$PictureType
     _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeFromJson(
@@ -461,24 +355,16 @@ CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$Corporat
 
 Map<String, dynamic>
     _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeToJson(
-        CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType
     _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationTypeFromJson(
@@ -493,21 +379,13 @@ CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$Corporat
 
 Map<String, dynamic>
     _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationTypeToJson(
-        CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('title', instance.title);
-  writeNotNull('description', instance.description);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType
+                instance) =>
+        <String, dynamic>{
+          'title': instance.title,
+          'description': instance.description,
+          'picture': instance.picture?.toJson(),
+        };
 
 CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType
     _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionTypeFromJson(
@@ -520,19 +398,11 @@ CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$Corporat
 
 Map<String, dynamic>
     _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionTypeToJson(
-        CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adhocNotification', instance.adhocNotification?.toJson());
-  return val;
-}
+            CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType$CorporateActionType
+                instance) =>
+        <String, dynamic>{
+          'adhocNotification': instance.adhocNotification?.toJson(),
+        };
 
 CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType
     _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullTypeFromJson(
@@ -553,25 +423,16 @@ CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType
 
 Map<String, dynamic>
     _$CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullTypeToJson(
-        CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('seen', instance.seen);
-  writeNotNull('event', _$EventTypeEnumEnumMap[instance.event]);
-  writeNotNull('executed', instance.executed);
-  writeNotNull('executedAt', instance.executedAt?.toIso8601String());
-  writeNotNull('action', instance.action?.toJson());
-  return val;
-}
+            CreateAdhocCorporateNotification$Mutation$CorporateNotificationFullType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'seen': instance.seen,
+          'event': _$EventTypeEnumEnumMap[instance.event],
+          'executed': instance.executed,
+          'executedAt': instance.executedAt?.toIso8601String(),
+          'action': instance.action?.toJson(),
+        };
 
 CreateAdhocCorporateNotification$Mutation
     _$CreateAdhocCorporateNotification$MutationFromJson(
@@ -637,24 +498,16 @@ ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullTyp
 
 Map<String, dynamic>
     _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeToJson(
-        ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType
     _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationTypeFromJson(
@@ -669,21 +522,13 @@ ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullTyp
 
 Map<String, dynamic>
     _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationTypeToJson(
-        ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('title', instance.title);
-  writeNotNull('description', instance.description);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType$AdhocCorporateNotificationType
+                instance) =>
+        <String, dynamic>{
+          'title': instance.title,
+          'description': instance.description,
+          'picture': instance.picture?.toJson(),
+        };
 
 ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType
     _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionTypeFromJson(
@@ -696,19 +541,11 @@ ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullTyp
 
 Map<String, dynamic>
     _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionTypeToJson(
-        ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adhocNotification', instance.adhocNotification?.toJson());
-  return val;
-}
+            ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType$CorporateActionType
+                instance) =>
+        <String, dynamic>{
+          'adhocNotification': instance.adhocNotification?.toJson(),
+        };
 
 ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType
     _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullTypeFromJson(
@@ -729,25 +566,16 @@ ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullTyp
 
 Map<String, dynamic>
     _$ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullTypeToJson(
-        ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('seen', instance.seen);
-  writeNotNull('event', _$EventTypeEnumEnumMap[instance.event]);
-  writeNotNull('executed', instance.executed);
-  writeNotNull('executedAt', instance.executedAt?.toIso8601String());
-  writeNotNull('action', instance.action?.toJson());
-  return val;
-}
+            ListenForNewAdhocCorporateNotification$Subscription$CorporateNotificationFullType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'seen': instance.seen,
+          'event': _$EventTypeEnumEnumMap[instance.event],
+          'executed': instance.executed,
+          'executedAt': instance.executedAt?.toIso8601String(),
+          'action': instance.action?.toJson(),
+        };
 
 ListenForNewAdhocCorporateNotification$Subscription
     _$ListenForNewAdhocCorporateNotification$SubscriptionFromJson(
@@ -779,24 +607,16 @@ ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificat
 
 Map<String, dynamic>
     _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType$PictureTypeToJson(
-        ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType
     _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationTypeFromJson(
@@ -811,21 +631,13 @@ ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificat
 
 Map<String, dynamic>
     _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationTypeToJson(
-        ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('title', instance.title);
-  writeNotNull('description', instance.description);
-  writeNotNull('picture', instance.picture?.toJson());
-  return val;
-}
+            ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType$AdhocCorporateNotificationType
+                instance) =>
+        <String, dynamic>{
+          'title': instance.title,
+          'description': instance.description,
+          'picture': instance.picture?.toJson(),
+        };
 
 ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType
     _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionTypeFromJson(
@@ -838,19 +650,11 @@ ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificat
 
 Map<String, dynamic>
     _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionTypeToJson(
-        ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('adhocNotification', instance.adhocNotification?.toJson());
-  return val;
-}
+            ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType$CorporateActionType
+                instance) =>
+        <String, dynamic>{
+          'adhocNotification': instance.adhocNotification?.toJson(),
+        };
 
 ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType
     _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestTypeFromJson(
@@ -869,22 +673,14 @@ ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificat
 
 Map<String, dynamic>
     _$ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestTypeToJson(
-        ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('event', _$EventTypeEnumEnumMap[instance.event]);
-  writeNotNull('executed', instance.executed);
-  writeNotNull('executedAt', instance.executedAt?.toIso8601String());
-  writeNotNull('action', instance.action?.toJson());
-  return val;
-}
+            ListenForSendAdhocCorporateNotificationTest$Subscription$AdhocCorporateNotificationTestType
+                instance) =>
+        <String, dynamic>{
+          'event': _$EventTypeEnumEnumMap[instance.event],
+          'executed': instance.executed,
+          'executedAt': instance.executedAt?.toIso8601String(),
+          'action': instance.action?.toJson(),
+        };
 
 ListenForSendAdhocCorporateNotificationTest$Subscription
     _$ListenForSendAdhocCorporateNotificationTest$SubscriptionFromJson(
@@ -930,20 +726,11 @@ GetCorporateNotificationsByUserArguments
         );
 
 Map<String, dynamic> _$GetCorporateNotificationsByUserArgumentsToJson(
-    GetCorporateNotificationsByUserArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetCorporateNotificationsByUserArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'pagination': instance.pagination?.toJson(),
+    };
 
 CreateAdhocCorporateNotificationArguments
     _$CreateAdhocCorporateNotificationArgumentsFromJson(

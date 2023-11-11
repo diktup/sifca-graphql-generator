@@ -15,20 +15,12 @@ GetCorporateRatingDefinitions$Query$CorporateRatingDefinitionPaginateType$Corpor
 
 Map<String, dynamic>
     _$GetCorporateRatingDefinitions$Query$CorporateRatingDefinitionPaginateType$CorporateRatingDefinitionTypeToJson(
-        GetCorporateRatingDefinitions$Query$CorporateRatingDefinitionPaginateType$CorporateRatingDefinitionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('reviewType', instance.reviewType);
-  return val;
-}
+            GetCorporateRatingDefinitions$Query$CorporateRatingDefinitionPaginateType$CorporateRatingDefinitionType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'reviewType': instance.reviewType,
+        };
 
 GetCorporateRatingDefinitions$Query$CorporateRatingDefinitionPaginateType
     _$GetCorporateRatingDefinitions$Query$CorporateRatingDefinitionPaginateTypeFromJson(
@@ -44,21 +36,13 @@ GetCorporateRatingDefinitions$Query$CorporateRatingDefinitionPaginateType
 
 Map<String, dynamic>
     _$GetCorporateRatingDefinitions$Query$CorporateRatingDefinitionPaginateTypeToJson(
-        GetCorporateRatingDefinitions$Query$CorporateRatingDefinitionPaginateType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            GetCorporateRatingDefinitions$Query$CorporateRatingDefinitionPaginateType
+                instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 GetCorporateRatingDefinitions$Query _$GetCorporateRatingDefinitions$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -81,19 +65,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 GetAllCorporateRatingDefinitions$Query$CorporateRatingDefinitionType
     _$GetAllCorporateRatingDefinitions$Query$CorporateRatingDefinitionTypeFromJson(
@@ -104,20 +80,12 @@ GetAllCorporateRatingDefinitions$Query$CorporateRatingDefinitionType
 
 Map<String, dynamic>
     _$GetAllCorporateRatingDefinitions$Query$CorporateRatingDefinitionTypeToJson(
-        GetAllCorporateRatingDefinitions$Query$CorporateRatingDefinitionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('reviewType', instance.reviewType);
-  return val;
-}
+            GetAllCorporateRatingDefinitions$Query$CorporateRatingDefinitionType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'reviewType': instance.reviewType,
+        };
 
 GetAllCorporateRatingDefinitions$Query
     _$GetAllCorporateRatingDefinitions$QueryFromJson(
@@ -148,20 +116,12 @@ CorporateRatingDefinition$Query$CorporateRatingDefinitionType
 
 Map<String, dynamic>
     _$CorporateRatingDefinition$Query$CorporateRatingDefinitionTypeToJson(
-        CorporateRatingDefinition$Query$CorporateRatingDefinitionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('reviewType', instance.reviewType);
-  return val;
-}
+            CorporateRatingDefinition$Query$CorporateRatingDefinitionType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'reviewType': instance.reviewType,
+        };
 
 CorporateRatingDefinition$Query _$CorporateRatingDefinition$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -186,20 +146,12 @@ GetCorporateRatingDefinitionByReviewType$Query$CorporateRatingDefinitionType
 
 Map<String, dynamic>
     _$GetCorporateRatingDefinitionByReviewType$Query$CorporateRatingDefinitionTypeToJson(
-        GetCorporateRatingDefinitionByReviewType$Query$CorporateRatingDefinitionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('reviewType', instance.reviewType);
-  return val;
-}
+            GetCorporateRatingDefinitionByReviewType$Query$CorporateRatingDefinitionType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'reviewType': instance.reviewType,
+        };
 
 GetCorporateRatingDefinitionByReviewType$Query
     _$GetCorporateRatingDefinitionByReviewType$QueryFromJson(
@@ -226,20 +178,12 @@ CreateCorporateRatingDefinition$Mutation$CorporateRatingDefinitionType
 
 Map<String, dynamic>
     _$CreateCorporateRatingDefinition$Mutation$CorporateRatingDefinitionTypeToJson(
-        CreateCorporateRatingDefinition$Mutation$CorporateRatingDefinitionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('reviewType', instance.reviewType);
-  return val;
-}
+            CreateCorporateRatingDefinition$Mutation$CorporateRatingDefinitionType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'reviewType': instance.reviewType,
+        };
 
 CreateCorporateRatingDefinition$Mutation
     _$CreateCorporateRatingDefinition$MutationFromJson(
@@ -266,20 +210,12 @@ UpdateCorporateRatingDefinition$Mutation$CorporateRatingDefinitionType
 
 Map<String, dynamic>
     _$UpdateCorporateRatingDefinition$Mutation$CorporateRatingDefinitionTypeToJson(
-        UpdateCorporateRatingDefinition$Mutation$CorporateRatingDefinitionType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('id', instance.id);
-  writeNotNull('reviewType', instance.reviewType);
-  return val;
-}
+            UpdateCorporateRatingDefinition$Mutation$CorporateRatingDefinitionType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'reviewType': instance.reviewType,
+        };
 
 UpdateCorporateRatingDefinition$Mutation
     _$UpdateCorporateRatingDefinition$MutationFromJson(
@@ -340,18 +276,10 @@ GetCorporateRatingDefinitionsArguments
         );
 
 Map<String, dynamic> _$GetCorporateRatingDefinitionsArgumentsToJson(
-    GetCorporateRatingDefinitionsArguments instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetCorporateRatingDefinitionsArguments instance) =>
+    <String, dynamic>{
+      'pagination': instance.pagination?.toJson(),
+    };
 
 CorporateRatingDefinitionArguments _$CorporateRatingDefinitionArgumentsFromJson(
         Map<String, dynamic> json) =>

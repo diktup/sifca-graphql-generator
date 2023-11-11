@@ -15,20 +15,12 @@ GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoType$Meta
 
 Map<String, dynamic>
     _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoType
     _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -45,23 +37,15 @@ GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoType
 
 Map<String, dynamic>
     _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategories$Query$CatalogueCategoryType$PictureType
     _$GetCatalogueCategories$Query$CatalogueCategoryType$PictureTypeFromJson(
@@ -76,24 +60,16 @@ GetCatalogueCategories$Query$CatalogueCategoryType$PictureType
 
 Map<String, dynamic>
     _$GetCatalogueCategories$Query$CatalogueCategoryType$PictureTypeToJson(
-        GetCatalogueCategories$Query$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategories$Query$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategories$Query$CatalogueCategoryType
     _$GetCatalogueCategories$Query$CatalogueCategoryTypeFromJson(
@@ -126,34 +102,25 @@ GetCatalogueCategories$Query$CatalogueCategoryType
               .toList();
 
 Map<String, dynamic> _$GetCatalogueCategories$Query$CatalogueCategoryTypeToJson(
-    GetCatalogueCategories$Query$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        GetCatalogueCategories$Query$CatalogueCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'rank': instance.rank,
+      'layer': instance.layer,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+      'externalId': instance.externalId,
+      'hasChildren': instance.hasChildren,
+      'description': instance.description,
+      'portal': instance.portal,
+      'pickup': instance.pickup,
+      'booking': instance.booking,
+      'delivery': instance.delivery,
+      'seo': instance.seo?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 const _$ProductVarietyEnumEnumMap = {
   ProductVarietyEnum.product: 'PRODUCT',
@@ -188,21 +155,13 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
+    <String, dynamic>{
+      'pos': instance.pos,
+      'wholesaler': instance.wholesaler,
+      'manufacturer': instance.manufacturer,
+      'user': instance.user,
+    };
 
 CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
     _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
@@ -213,20 +172,12 @@ CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywo
 
 Map<String, dynamic>
     _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType
     _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -243,23 +194,15 @@ CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType
 
 Map<String, dynamic>
     _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 CatalogueCategory$Query$CatalogueCategoryType$PictureType
     _$CatalogueCategory$Query$CatalogueCategoryType$PictureTypeFromJson(
@@ -272,25 +215,17 @@ CatalogueCategory$Query$CatalogueCategoryType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String, dynamic>
-    _$CatalogueCategory$Query$CatalogueCategoryType$PictureTypeToJson(
-        CatalogueCategory$Query$CatalogueCategoryType$PictureType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+Map<String,
+    dynamic> _$CatalogueCategory$Query$CatalogueCategoryType$PictureTypeToJson(
+        CatalogueCategory$Query$CatalogueCategoryType$PictureType instance) =>
+    <String, dynamic>{
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+    };
 
 CatalogueCategory$Query$CatalogueCategoryType
     _$CatalogueCategory$Query$CatalogueCategoryTypeFromJson(
@@ -323,34 +258,25 @@ CatalogueCategory$Query$CatalogueCategoryType
               .toList();
 
 Map<String, dynamic> _$CatalogueCategory$Query$CatalogueCategoryTypeToJson(
-    CatalogueCategory$Query$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+        CatalogueCategory$Query$CatalogueCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'rank': instance.rank,
+      'layer': instance.layer,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+      'externalId': instance.externalId,
+      'hasChildren': instance.hasChildren,
+      'description': instance.description,
+      'portal': instance.portal,
+      'pickup': instance.pickup,
+      'booking': instance.booking,
+      'delivery': instance.delivery,
+      'seo': instance.seo?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 CatalogueCategory$Query _$CatalogueCategory$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -374,20 +300,12 @@ GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoType$Me
 
 Map<String, dynamic>
     _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoType
     _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -404,23 +322,15 @@ GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoType
 
 Map<String, dynamic>
     _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureType
     _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureTypeFromJson(
@@ -435,24 +345,16 @@ GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureType
 
 Map<String, dynamic>
     _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureTypeToJson(
-        GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoryPath$Query$CatalogueCategoryType
     _$GetCatalogueCategoryPath$Query$CatalogueCategoryTypeFromJson(
@@ -486,34 +388,25 @@ GetCatalogueCategoryPath$Query$CatalogueCategoryType
 
 Map<String, dynamic>
     _$GetCatalogueCategoryPath$Query$CatalogueCategoryTypeToJson(
-        GetCatalogueCategoryPath$Query$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoryPath$Query$CatalogueCategoryType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoryPath$Query _$GetCatalogueCategoryPath$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -541,20 +434,12 @@ GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCat
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -571,23 +456,15 @@ GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCat
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$PictureType
     _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$PictureTypeFromJson(
@@ -602,24 +479,16 @@ GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$PictureType
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$PictureTypeToJson(
-        GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType
     _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryTypeFromJson(
@@ -653,35 +522,26 @@ GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryTypeToJson(
-        GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetForPortal$Query
     _$GetCatalogueCategoriesByTargetForPortal$QueryFromJson(
@@ -712,20 +572,12 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeFromJson(
@@ -742,23 +594,15 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$PictureType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$PictureTypeFromJson(
@@ -773,24 +617,16 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$PictureTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
@@ -801,20 +637,12 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeFromJson(
@@ -831,23 +659,15 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeFromJson(
@@ -862,24 +682,16 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
@@ -890,20 +702,12 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeFromJson(
@@ -920,23 +724,15 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeFromJson(
@@ -951,24 +747,16 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
@@ -979,20 +767,12 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeFromJson(
@@ -1009,23 +789,15 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeFromJson(
@@ -1040,24 +812,16 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
@@ -1068,20 +832,12 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeFromJson(
@@ -1098,23 +854,15 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeFromJson(
@@ -1129,24 +877,16 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
@@ -1157,20 +897,12 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeFromJson(
@@ -1187,23 +919,15 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeFromJson(
@@ -1218,24 +942,16 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeFromJson(
@@ -1269,35 +985,26 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeFromJson(
@@ -1336,36 +1043,27 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('children', instance.children?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'children': instance.children?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeFromJson(
@@ -1404,36 +1102,27 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('children', instance.children?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'children': instance.children?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeFromJson(
@@ -1472,36 +1161,27 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('children', instance.children?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'children': instance.children?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeFromJson(
@@ -1540,36 +1220,27 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('children', instance.children?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'children': instance.children?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTypeFromJson(
@@ -1608,36 +1279,27 @@ GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTy
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenTypeToJson(
-        GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('children', instance.children?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'children': instance.children?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetWithChildren$Query
     _$GetCatalogueCategoriesByTargetWithChildren$QueryFromJson(
@@ -1669,20 +1331,12 @@ GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCat
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -1699,23 +1353,15 @@ GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCat
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$PictureType
     _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$PictureTypeFromJson(
@@ -1730,24 +1376,16 @@ GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$PictureType
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$PictureTypeToJson(
-        GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType
     _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryTypeFromJson(
@@ -1781,35 +1419,26 @@ GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryTypeToJson(
-        GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetAndUrlKey$Query
     _$GetCatalogueCategoriesByTargetAndUrlKey$QueryFromJson(
@@ -1836,20 +1465,12 @@ GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$Cata
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -1866,23 +1487,15 @@ GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$Cata
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureType
     _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureTypeFromJson(
@@ -1897,24 +1510,16 @@ GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$Cata
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureTypeToJson(
-        GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType
     _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryTypeFromJson(
@@ -1948,35 +1553,26 @@ GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$Cata
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryTypeToJson(
-        GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType
     _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTypeFromJson(
@@ -1992,21 +1588,13 @@ GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTypeToJson(
-        GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType
+                instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByTargetPaginated$Query
     _$GetCatalogueCategoriesByTargetPaginated$QueryFromJson(
@@ -2030,19 +1618,11 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('page', instance.page);
-  writeNotNull('limit', instance.limit);
-  return val;
-}
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
+    <String, dynamic>{
+      'page': instance.page,
+      'limit': instance.limit,
+    };
 
 GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
@@ -2053,20 +1633,12 @@ GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCate
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -2083,23 +1655,15 @@ GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCate
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$PictureType
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$PictureTypeFromJson(
@@ -2114,24 +1678,16 @@ GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$PictureType
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$PictureTypeToJson(
-        GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsType
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
@@ -2142,20 +1698,12 @@ GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCate
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoTypeFromJson(
@@ -2172,23 +1720,15 @@ GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCate
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureType
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureTypeFromJson(
@@ -2203,24 +1743,16 @@ GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCate
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureTypeToJson(
-        GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseTypeFromJson(
@@ -2254,35 +1786,26 @@ GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCate
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseTypeToJson(
-        GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryTypeFromJson(
@@ -2320,36 +1843,27 @@ GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryTypeToJson(
-        GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('parent', instance.parent?.toJson());
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+          'parent': instance.parent?.toJson(),
+        };
 
 GetCatalogueCategoriesByLayerAndParent$Query
     _$GetCatalogueCategoriesByLayerAndParent$QueryFromJson(
@@ -2380,20 +1894,12 @@ GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$Cata
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType
     _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -2410,23 +1916,15 @@ GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$Cata
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$PictureType
     _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$PictureTypeFromJson(
@@ -2441,24 +1939,16 @@ GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$Pict
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$PictureTypeToJson(
-        GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType
     _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTypeFromJson(
@@ -2492,35 +1982,26 @@ GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType
 
 Map<String, dynamic>
     _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTypeToJson(
-        GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 GetCatalogueCategoriesByLayerAndParentForPortal$Query
     _$GetCatalogueCategoriesByLayerAndParentForPortal$QueryFromJson(
@@ -2553,20 +2034,12 @@ SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryT
 
 Map<String, dynamic>
     _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType
     _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -2583,23 +2056,15 @@ SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryT
 
 Map<String, dynamic>
     _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureType
     _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureTypeFromJson(
@@ -2614,24 +2079,16 @@ SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryT
 
 Map<String, dynamic>
     _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureTypeToJson(
-        SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType
     _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryTypeFromJson(
@@ -2665,35 +2122,26 @@ SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryT
 
 Map<String, dynamic>
     _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryTypeToJson(
-        SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 SearchCatalogueCategories$Query$CatalogueCategoryPaginateType
     _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateTypeFromJson(
@@ -2709,21 +2157,13 @@ SearchCatalogueCategories$Query$CatalogueCategoryPaginateType
 
 Map<String, dynamic>
     _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateTypeToJson(
-        SearchCatalogueCategories$Query$CatalogueCategoryPaginateType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('count', instance.count);
-  writeNotNull('isLast', instance.isLast);
-  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
-  return val;
-}
+            SearchCatalogueCategories$Query$CatalogueCategoryPaginateType
+                instance) =>
+        <String, dynamic>{
+          'count': instance.count,
+          'isLast': instance.isLast,
+          'objects': instance.objects.map((e) => e.toJson()).toList(),
+        };
 
 SearchCatalogueCategories$Query _$SearchCatalogueCategories$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -2748,20 +2188,12 @@ CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$
 
 Map<String, dynamic>
     _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
     _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -2778,23 +2210,15 @@ CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
 
 Map<String, dynamic>
     _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
     _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureTypeFromJson(
@@ -2809,24 +2233,16 @@ CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
 
 Map<String, dynamic>
     _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureTypeToJson(
-        CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 CreateCatalogueCategory$Mutation$CatalogueCategoryType
     _$CreateCatalogueCategory$Mutation$CatalogueCategoryTypeFromJson(
@@ -2860,34 +2276,25 @@ CreateCatalogueCategory$Mutation$CatalogueCategoryType
 
 Map<String, dynamic>
     _$CreateCatalogueCategory$Mutation$CatalogueCategoryTypeToJson(
-        CreateCatalogueCategory$Mutation$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            CreateCatalogueCategory$Mutation$CatalogueCategoryType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 CreateCatalogueCategory$Mutation _$CreateCatalogueCategory$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -2927,30 +2334,22 @@ CatalogueCategoryInput _$CatalogueCategoryInputFromJson(
     );
 
 Map<String, dynamic> _$CatalogueCategoryInputToJson(
-    CatalogueCategoryInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('parent', instance.parent);
-  writeNotNull('description', instance.description);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['name'] = instance.name;
-  val['target'] = instance.target.toJson();
-  val['layer'] = instance.layer;
-  return val;
-}
+        CatalogueCategoryInput instance) =>
+    <String, dynamic>{
+      'portal': instance.portal,
+      'pickup': instance.pickup,
+      'booking': instance.booking,
+      'delivery': instance.delivery,
+      'parent': instance.parent,
+      'description': instance.description,
+      'externalId': instance.externalId,
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'seo': instance.seo?.toJson(),
+      'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+      'name': instance.name,
+      'target': instance.target.toJson(),
+      'layer': instance.layer,
+    };
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -2962,24 +2361,16 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  val['baseUrl'] = instance.baseUrl;
-  val['path'] = instance.path;
-  return val;
-}
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
+    <String, dynamic>{
+      'width': instance.width,
+      'height': instance.height,
+      'x': instance.x,
+      'y': instance.y,
+      'alt': instance.alt,
+      'baseUrl': instance.baseUrl,
+      'path': instance.path,
+    };
 
 CatalogueCategorySeoInput _$CatalogueCategorySeoInputFromJson(
         Map<String, dynamic> json) =>
@@ -2993,22 +2384,13 @@ CatalogueCategorySeoInput _$CatalogueCategorySeoInputFromJson(
     );
 
 Map<String, dynamic> _$CatalogueCategorySeoInputToJson(
-    CatalogueCategorySeoInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+        CatalogueCategorySeoInput instance) =>
+    <String, dynamic>{
+      'urlKey': instance.urlKey,
+      'metaTitle': instance.metaTitle,
+      'metaDesription': instance.metaDesription,
+      'metaKeywords': instance.metaKeywords?.map((e) => e.toJson()).toList(),
+    };
 
 MetaKeywordsInput _$MetaKeywordsInputFromJson(Map<String, dynamic> json) =>
     MetaKeywordsInput(
@@ -3016,19 +2398,11 @@ MetaKeywordsInput _$MetaKeywordsInputFromJson(Map<String, dynamic> json) =>
       content: json['content'] as String?,
     );
 
-Map<String, dynamic> _$MetaKeywordsInputToJson(MetaKeywordsInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+Map<String, dynamic> _$MetaKeywordsInputToJson(MetaKeywordsInput instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'content': instance.content,
+    };
 
 UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
     _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
@@ -3039,20 +2413,12 @@ UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$
 
 Map<String, dynamic>
     _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
     _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -3069,23 +2435,15 @@ UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
 
 Map<String, dynamic>
     _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
     _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureTypeFromJson(
@@ -3100,24 +2458,16 @@ UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
 
 Map<String, dynamic>
     _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureTypeToJson(
-        UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 UpdateCatalogueCategory$Mutation$CatalogueCategoryType
     _$UpdateCatalogueCategory$Mutation$CatalogueCategoryTypeFromJson(
@@ -3151,34 +2501,25 @@ UpdateCatalogueCategory$Mutation$CatalogueCategoryType
 
 Map<String, dynamic>
     _$UpdateCatalogueCategory$Mutation$CatalogueCategoryTypeToJson(
-        UpdateCatalogueCategory$Mutation$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            UpdateCatalogueCategory$Mutation$CatalogueCategoryType instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 UpdateCatalogueCategory$Mutation _$UpdateCatalogueCategory$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -3218,30 +2559,22 @@ CatalogueCategoryUpdateInput _$CatalogueCategoryUpdateInputFromJson(
     );
 
 Map<String, dynamic> _$CatalogueCategoryUpdateInputToJson(
-    CatalogueCategoryUpdateInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('parent', instance.parent);
-  writeNotNull('description', instance.description);
-  writeNotNull('externalId', instance.externalId);
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  val['id'] = instance.id;
-  writeNotNull('name', instance.name);
-  writeNotNull('layer', instance.layer);
-  return val;
-}
+        CatalogueCategoryUpdateInput instance) =>
+    <String, dynamic>{
+      'portal': instance.portal,
+      'pickup': instance.pickup,
+      'booking': instance.booking,
+      'delivery': instance.delivery,
+      'parent': instance.parent,
+      'description': instance.description,
+      'externalId': instance.externalId,
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+      'seo': instance.seo?.toJson(),
+      'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+      'id': instance.id,
+      'name': instance.name,
+      'layer': instance.layer,
+    };
 
 DeleteCatalogueCategory$Mutation$DeleteResponseDtoType
     _$DeleteCatalogueCategory$Mutation$DeleteResponseDtoTypeFromJson(
@@ -3280,20 +2613,12 @@ ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoTy
 
 Map<String, dynamic>
     _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
     _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -3310,23 +2635,15 @@ ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoTy
 
 Map<String, dynamic>
     _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureType
     _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureTypeFromJson(
@@ -3341,24 +2658,16 @@ ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureType
 
 Map<String, dynamic>
     _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureTypeToJson(
-        ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  return val;
-}
+            ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+        };
 
 ReorderCatalogueCategories$Mutation$CatalogueCategoryType
     _$ReorderCatalogueCategories$Mutation$CatalogueCategoryTypeFromJson(
@@ -3390,36 +2699,27 @@ ReorderCatalogueCategories$Mutation$CatalogueCategoryType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String, dynamic>
-    _$ReorderCatalogueCategories$Mutation$CatalogueCategoryTypeToJson(
-        ReorderCatalogueCategories$Mutation$CatalogueCategoryType instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+Map<String,
+    dynamic> _$ReorderCatalogueCategories$Mutation$CatalogueCategoryTypeToJson(
+        ReorderCatalogueCategories$Mutation$CatalogueCategoryType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'name': instance.name,
+      'rank': instance.rank,
+      'layer': instance.layer,
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+      'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+      'externalId': instance.externalId,
+      'hasChildren': instance.hasChildren,
+      'description': instance.description,
+      'portal': instance.portal,
+      'pickup': instance.pickup,
+      'booking': instance.booking,
+      'delivery': instance.delivery,
+      'seo': instance.seo?.toJson(),
+      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+    };
 
 ReorderCatalogueCategories$Mutation
     _$ReorderCatalogueCategories$MutationFromJson(Map<String, dynamic> json) =>
@@ -3532,20 +2832,11 @@ GetCatalogueCategoriesByTargetPaginatedArguments
         );
 
 Map<String, dynamic> _$GetCatalogueCategoriesByTargetPaginatedArgumentsToJson(
-    GetCatalogueCategoriesByTargetPaginatedArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  return val;
-}
+        GetCatalogueCategoriesByTargetPaginatedArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'pagination': instance.pagination?.toJson(),
+    };
 
 GetCatalogueCategoriesByLayerAndParentArguments
     _$GetCatalogueCategoriesByLayerAndParentArgumentsFromJson(
@@ -3561,22 +2852,13 @@ GetCatalogueCategoriesByLayerAndParentArguments
         );
 
 Map<String, dynamic> _$GetCatalogueCategoriesByLayerAndParentArgumentsToJson(
-    GetCatalogueCategoriesByLayerAndParentArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-    'layer': instance.layer,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('parent', instance.parent);
-  return val;
-}
+        GetCatalogueCategoriesByLayerAndParentArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'layer': instance.layer,
+      'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+      'parent': instance.parent,
+    };
 
 GetCatalogueCategoriesByLayerAndParentForPortalArguments
     _$GetCatalogueCategoriesByLayerAndParentForPortalArgumentsFromJson(
@@ -3588,23 +2870,14 @@ GetCatalogueCategoriesByLayerAndParentForPortalArguments
           parent: json['parent'] as String?,
         );
 
-Map<String, dynamic>
-    _$GetCatalogueCategoriesByLayerAndParentForPortalArgumentsToJson(
-        GetCatalogueCategoriesByLayerAndParentForPortalArguments instance) {
-  final val = <String, dynamic>{
-    'target': instance.target.toJson(),
-    'layer': instance.layer,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('parent', instance.parent);
-  return val;
-}
+Map<String,
+    dynamic> _$GetCatalogueCategoriesByLayerAndParentForPortalArgumentsToJson(
+        GetCatalogueCategoriesByLayerAndParentForPortalArguments instance) =>
+    <String, dynamic>{
+      'target': instance.target.toJson(),
+      'layer': instance.layer,
+      'parent': instance.parent,
+    };
 
 SearchCatalogueCategoriesArguments _$SearchCatalogueCategoriesArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -3617,19 +2890,11 @@ SearchCatalogueCategoriesArguments _$SearchCatalogueCategoriesArgumentsFromJson(
     );
 
 Map<String, dynamic> _$SearchCatalogueCategoriesArgumentsToJson(
-    SearchCatalogueCategoriesArguments instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pagination', instance.pagination?.toJson());
-  writeNotNull('searchString', instance.searchString);
-  return val;
-}
+        SearchCatalogueCategoriesArguments instance) =>
+    <String, dynamic>{
+      'pagination': instance.pagination?.toJson(),
+      'searchString': instance.searchString,
+    };
 
 CreateCatalogueCategoryArguments _$CreateCatalogueCategoryArgumentsFromJson(
         Map<String, dynamic> json) =>

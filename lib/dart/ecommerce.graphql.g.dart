@@ -43,23 +43,15 @@ GetEcommerceAnalyticsStats$Query$SalesAnalyticsStatsType
               : GetEcommerceAnalyticsStats$Query$SalesAnalyticsStatsType$AnalyticsStatsInfoType
                   .fromJson(json['balance'] as Map<String, dynamic>);
 
-Map<String, dynamic>
-    _$GetEcommerceAnalyticsStats$Query$SalesAnalyticsStatsTypeToJson(
-        GetEcommerceAnalyticsStats$Query$SalesAnalyticsStatsType instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('totalEarnings', instance.totalEarnings?.toJson());
-  writeNotNull('orders', instance.orders?.toJson());
-  writeNotNull('customers', instance.customers?.toJson());
-  writeNotNull('balance', instance.balance?.toJson());
-  return val;
-}
+Map<String,
+    dynamic> _$GetEcommerceAnalyticsStats$Query$SalesAnalyticsStatsTypeToJson(
+        GetEcommerceAnalyticsStats$Query$SalesAnalyticsStatsType instance) =>
+    <String, dynamic>{
+      'totalEarnings': instance.totalEarnings?.toJson(),
+      'orders': instance.orders?.toJson(),
+      'customers': instance.customers?.toJson(),
+      'balance': instance.balance?.toJson(),
+    };
 
 GetEcommerceAnalyticsStats$Query _$GetEcommerceAnalyticsStats$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -86,21 +78,12 @@ AnalyticsDashboardInput _$AnalyticsDashboardInputFromJson(
     );
 
 Map<String, dynamic> _$AnalyticsDashboardInputToJson(
-    AnalyticsDashboardInput instance) {
-  final val = <String, dynamic>{
-    'to': instance.to.toIso8601String(),
-    'from': instance.from.toIso8601String(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
+        AnalyticsDashboardInput instance) =>
+    <String, dynamic>{
+      'to': instance.to.toIso8601String(),
+      'from': instance.from.toIso8601String(),
+      'target': instance.target?.toJson(),
+    };
 
 TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
     TargetACIInput(
@@ -110,21 +93,13 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos);
-  writeNotNull('wholesaler', instance.wholesaler);
-  writeNotNull('manufacturer', instance.manufacturer);
-  writeNotNull('user', instance.user);
-  return val;
-}
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
+    <String, dynamic>{
+      'pos': instance.pos,
+      'wholesaler': instance.wholesaler,
+      'manufacturer': instance.manufacturer,
+      'user': instance.user,
+    };
 
 GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType$SalesAnalyticsRevenueStatsChartType
     _$GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType$SalesAnalyticsRevenueStatsChartTypeFromJson(
@@ -142,21 +117,13 @@ GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType$SalesAnalytic
 
 Map<String, dynamic>
     _$GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType$SalesAnalyticsRevenueStatsChartTypeToJson(
-        GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType$SalesAnalyticsRevenueStatsChartType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('orders', instance.orders);
-  writeNotNull('earnings', instance.earnings);
-  writeNotNull('refunds', instance.refunds);
-  return val;
-}
+            GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType$SalesAnalyticsRevenueStatsChartType
+                instance) =>
+        <String, dynamic>{
+          'orders': instance.orders,
+          'earnings': instance.earnings,
+          'refunds': instance.refunds,
+        };
 
 GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType
     _$GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsTypeFromJson(
@@ -173,23 +140,15 @@ GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType
 
 Map<String, dynamic>
     _$GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsTypeToJson(
-        GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('orders', instance.orders);
-  writeNotNull('earnings', instance.earnings);
-  writeNotNull('refunds', instance.refunds);
-  writeNotNull('conversions', instance.conversions);
-  writeNotNull('chart', instance.chart?.toJson());
-  return val;
-}
+            GetEcommerceRevenueChartStats$Query$SalesAnalyticsRevenueStatsType
+                instance) =>
+        <String, dynamic>{
+          'orders': instance.orders,
+          'earnings': instance.earnings,
+          'refunds': instance.refunds,
+          'conversions': instance.conversions,
+          'chart': instance.chart?.toJson(),
+        };
 
 GetEcommerceRevenueChartStats$Query
     _$GetEcommerceRevenueChartStats$QueryFromJson(Map<String, dynamic> json) =>
@@ -215,20 +174,12 @@ GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUser
 
 Map<String, dynamic>
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationTypeToJson(
-        GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('lat', instance.lat);
-  writeNotNull('lng', instance.lng);
-  return val;
-}
+            GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType
+                instance) =>
+        <String, dynamic>{
+          'lat': instance.lat,
+          'lng': instance.lng,
+        };
 
 GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersTypeFromJson(
@@ -242,20 +193,12 @@ GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUser
 
 Map<String, dynamic>
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersTypeToJson(
-        GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('coordination', instance.coordination?.toJson());
-  writeNotNull('radius', instance.radius);
-  return val;
-}
+            GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType
+                instance) =>
+        <String, dynamic>{
+          'coordination': instance.coordination?.toJson(),
+          'radius': instance.radius,
+        };
 
 GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryType$PictureType
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryType$PictureTypeFromJson(
@@ -271,25 +214,17 @@ GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalytic
 
 Map<String, dynamic>
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryType$PictureTypeToJson(
-        GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryType
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryTypeFromJson(
@@ -313,28 +248,19 @@ GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalytic
 
 Map<String, dynamic>
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryTypeToJson(
-        GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'name': instance.name,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('code', instance.code);
-  writeNotNull('dialCode', instance.dialCode);
-  writeNotNull('iconFlag', instance.iconFlag);
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('flagSquare', instance.flagSquare?.toJson());
-  writeNotNull('flagWide', instance.flagWide?.toJson());
-  return val;
-}
+            GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType$CountryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'code': instance.code,
+          'dialCode': instance.dialCode,
+          'iconFlag': instance.iconFlag,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'flagSquare': instance.flagSquare?.toJson(),
+          'flagWide': instance.flagWide?.toJson(),
+        };
 
 GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsTypeFromJson(
@@ -348,20 +274,12 @@ GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalytic
 
 Map<String, dynamic>
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsTypeToJson(
-        GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('country', instance.country?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$SalesAnalyticsSalesByCountrySegmentsType
+                instance) =>
+        <String, dynamic>{
+          'country': instance.country?.toJson(),
+          'value': instance.value,
+        };
 
 GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryTypeFromJson(
@@ -380,20 +298,12 @@ GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType
 
 Map<String, dynamic>
     _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryTypeToJson(
-        GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('layers', instance.layers?.map((e) => e.toJson()).toList());
-  writeNotNull('segments', instance.segments?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType
+                instance) =>
+        <String, dynamic>{
+          'layers': instance.layers?.map((e) => e.toJson()).toList(),
+          'segments': instance.segments?.map((e) => e.toJson()).toList(),
+        };
 
 GetEcommerceSalesByLocation$Query _$GetEcommerceSalesByLocation$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -419,20 +329,12 @@ GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesTyp
 
 Map<String, dynamic>
     _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-        GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('content', instance.content);
-  return val;
-}
+            GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
+                instance) =>
+        <String, dynamic>{
+          'name': instance.name,
+          'content': instance.content,
+        };
 
 GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$CatalogueCategorySeoType
     _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$CatalogueCategorySeoTypeFromJson(
@@ -449,23 +351,15 @@ GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesTyp
 
 Map<String, dynamic>
     _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$CatalogueCategorySeoTypeToJson(
-        GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$CatalogueCategorySeoType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('urlKey', instance.urlKey);
-  writeNotNull('metaTitle', instance.metaTitle);
-  writeNotNull('metaDesription', instance.metaDesription);
-  writeNotNull(
-      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$CatalogueCategorySeoType
+                instance) =>
+        <String, dynamic>{
+          'urlKey': instance.urlKey,
+          'metaTitle': instance.metaTitle,
+          'metaDesription': instance.metaDesription,
+          'metaKeywords':
+              instance.metaKeywords?.map((e) => e.toJson()).toList(),
+        };
 
 GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$PictureType
     _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$PictureTypeFromJson(
@@ -481,25 +375,17 @@ GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesTyp
 
 Map<String, dynamic>
     _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$PictureTypeToJson(
-        GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$PictureType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('baseUrl', instance.baseUrl);
-  writeNotNull('path', instance.path);
-  writeNotNull('width', instance.width);
-  writeNotNull('height', instance.height);
-  writeNotNull('x', instance.x);
-  writeNotNull('y', instance.y);
-  writeNotNull('alt', instance.alt);
-  return val;
-}
+            GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType$PictureType
+                instance) =>
+        <String, dynamic>{
+          'baseUrl': instance.baseUrl,
+          'path': instance.path,
+          'width': instance.width,
+          'height': instance.height,
+          'x': instance.x,
+          'y': instance.y,
+          'alt': instance.alt,
+        };
 
 GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType
     _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryTypeFromJson(
@@ -533,35 +419,26 @@ GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesTyp
 
 Map<String, dynamic>
     _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryTypeToJson(
-        GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('name', instance.name);
-  writeNotNull('rank', instance.rank);
-  val['layer'] = instance.layer;
-  val['createdAt'] = instance.createdAt.toIso8601String();
-  val['updatedAt'] = instance.updatedAt.toIso8601String();
-  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
-  writeNotNull('externalId', instance.externalId);
-  val['hasChildren'] = instance.hasChildren;
-  writeNotNull('description', instance.description);
-  writeNotNull('portal', instance.portal);
-  writeNotNull('pickup', instance.pickup);
-  writeNotNull('booking', instance.booking);
-  writeNotNull('delivery', instance.delivery);
-  writeNotNull('seo', instance.seo?.toJson());
-  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
-  return val;
-}
+            GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType$CatalogueCategoryType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'name': instance.name,
+          'rank': instance.rank,
+          'layer': instance.layer,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
+          'externalId': instance.externalId,
+          'hasChildren': instance.hasChildren,
+          'description': instance.description,
+          'portal': instance.portal,
+          'pickup': instance.pickup,
+          'booking': instance.booking,
+          'delivery': instance.delivery,
+          'seo': instance.seo?.toJson(),
+          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
+        };
 
 const _$ProductVarietyEnumEnumMap = {
   ProductVarietyEnum.product: 'PRODUCT',
@@ -583,20 +460,12 @@ GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesTyp
 
 Map<String, dynamic>
     _$GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesTypeToJson(
-        GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('category', instance.category?.toJson());
-  writeNotNull('value', instance.value);
-  return val;
-}
+            GetEcommerceTopCatalogueCategories$Query$SalesAnalyticsTopCatalogueCategoriesType
+                instance) =>
+        <String, dynamic>{
+          'category': instance.category?.toJson(),
+          'value': instance.value,
+        };
 
 GetEcommerceTopCatalogueCategories$Query
     _$GetEcommerceTopCatalogueCategories$QueryFromJson(
